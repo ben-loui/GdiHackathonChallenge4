@@ -1,0 +1,6 @@
+jupyterlab>=4,<5
+requests>=2.31,<3
+geopandas>=1,<2
+shapely>=2,<3
+folium>=0.17,<1
+OWSLib>=0.32,<1

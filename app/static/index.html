@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zuständigkeitsfinder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+  <header class="topbar">
+    <a class="brand" href="/" data-i18n="brand">Zuständigkeitsfinder</a>
+    <details class="settings">
+      <summary class="settings-toggle" data-i18n-aria="settings" aria-label="Einstellungen" title="Einstellungen">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8.7a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6Z"/><path d="m19.4 13.5 1.1.8-1 1.8-1.3-.4a7.3 7.3 0 0 1-1.3.8l-.2 1.4h-2l-.4-1.3a7.3 7.3 0 0 1-1.5 0l-.5 1.3h-2l-.2-1.4a7.3 7.3 0 0 1-1.3-.8l-1.3.4-1-1.8 1.1-.8a7.9 7.9 0 0 1 0-1.6l-1.1-.8 1-1.8 1.3.4a7.3 7.3 0 0 1 1.3-.8l.2-1.4h2l.5 1.3a7.3 7.3 0 0 1 1.5 0l.4-1.3h2l.2 1.4a7.3 7.3 0 0 1 1.3.8l1.3-.4 1 1.8-1.1.8c.1.5.1 1.1 0 1.6Z" transform="translate(-1 -2) scale(1.08)"/></svg>
+      </summary>
+      <div class="settings-panel">
+        <h2 data-i18n="settings">Einstellungen</h2>
+        <label for="provider" data-i18n="provider">Adresssuchdienst</label>
+        <select id="provider"><option value="nominatim">Nominatim (OpenStreetMap)</option><option value="photon">Photon (Komoot)</option></select>
+        <p id="provider-note" class="field-note"></p>
+        <div class="setting-row"><span data-i18n="languageLabel">Sprache</span><button id="language" class="text-button" type="button" lang="en">English</button></div>
+      </div>
+    </details>
+  </header>
+  <main id="main" class="shell">
+    <section class="search-area" aria-labelledby="search-title">
+      <div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 27s8-6.8 8-14a8 8 0 1 0-16 0c0 7.2 8 14 8 14Z" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="13" r="2.7" stroke="currentColor" stroke-width="1.8"/></svg></div>
+      <h1 id="search-title" data-i18n="title">Behördenzuständigkeit finden.</h1>
+      <p class="subtitle" data-i18n="subtitle">Anliegen und Standort eingeben.</p>
+      <form id="search-form" role="search">
+        <label for="concern" class="input-label" data-i18n="concernLabel">Anliegen</label>
+        <div class="search-box"><svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4 4" stroke-linecap="round"/></svg><input id="concern" type="search" maxlength="150" placeholder="z. B. Auto anmelden" required></div>
+        <label for="address" class="input-label" data-i18n="addressLabel">Ort oder Adresse</label>
+        <div class="search-box"><svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.2"/></svg><input id="address" type="search" maxlength="200" autocomplete="off" placeholder="Ort, Postleitzahl oder Adresse"><button type="button" id="address-button" data-i18n="addressSearch">Ort suchen</button></div>
+        <div id="candidates" class="candidates" aria-live="polite"></div>
+        <div class="under-search"><div class="info-wrap"><button class="info-button" type="button" aria-expanded="false" aria-controls="privacy-info" data-i18n-aria="privacyInfo" aria-label="Informationen zur Suche">i</button><div id="privacy-info" class="info-popover" role="note"><p data-i18n="privacy">Der Suchtext wird an den Portalverbund, die Adresse an den ausgewählten Adresssuchdienst gesendet. Keine vertraulichen Daten eingeben.</p></div></div><p id="location" class="location" aria-live="polite" data-i18n="noLocation">Noch kein Standort ausgewählt</p></div>
+        <button id="lookup" class="primary" type="submit" data-i18n="find">Zuständigkeit finden</button>
+      </form>
+    </section>
+    <details id="map-details" class="map-section">
+      <summary><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6ZM9 3v15M15 6v15"/></svg><span data-i18n="chooseMap">Standort auf der Karte wählen</span><span class="chevron" aria-hidden="true">⌄</span></summary>
+      <div class="map-body"><p class="map-help" data-i18n="mapHelp">Standort durch Klicken auswählen</p><div id="map" aria-label="Karte" data-i18n-aria="map"></div><div id="map-error" class="map-error" hidden data-i18n="mapError">Karte nicht verfügbar. Internetverbindung prüfen.</div></div>
+    </details>
+    <section id="result-section" class="result-section" aria-labelledby="result-title" hidden><h2 id="result-title" class="sr-only" data-i18n="resultTitle">Zuständigkeit im Überblick</h2><div id="result" aria-live="polite"></div></section>
+  </main>
+  <footer><p><span data-i18n="sources">Quellen</span>: <a href="https://pvog.fitko.de/">Portalverbund</a> · <a href="https://gdz.bkg.bund.de/index.php/default/open-data/wfs-verwaltungsgebiete-1-250-000-stand-01-01-wfs-vg250.html">BKG VG250</a> (<a href="https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf">Datenquellen VG</a>) · <a href="https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_topplusopen.html">TopPlusOpen</a> · <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://www.bkg.bund.de">BKG</a> (<span id="year"></span>) <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a> · <span data-i18n="modified">Zuständigkeitsflächen ausgewählt und hervorgehoben.</span></p></footer>
+</body>
+</html>
