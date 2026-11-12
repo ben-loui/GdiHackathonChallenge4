@@ -1,0 +1,28 @@
+# Start:        docker compose up -d                    -> http://localhost:8000/mcp
+# Mit Tunnel:   docker compose --profile tunnel up -d   -> öffentliche HTTPS-URL
+#               docker compose logs tunnel | grep -o 'https://.*trycloudflare.com'   (dann /mcp anhängen)
+services:
+  mcp:
+    build: .
+    image: zustaendigkeitsfinder-mcp
+    ports:
+      - "8000:8000"
+    environment:
+      ZF_VORLADEN: "1"
+      # ZF_USER_AGENT: "MeinProjekt/1.0 (kontakt: team@example.org)"
+      # ZF_ALLOWED_HOSTS: "meine-domain.de"
+    volumes:
+      - zf-data:/data
+    restart: unless-stopped
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    command: tunnel --no-autoupdate --url http://mcp:8000
+    depends_on:
+      mcp:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  zf-data:
