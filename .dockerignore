@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+__pycache__
+.pytest_cache
+*.pdf
+*.ipynb
+notebooks
+docs
+examples
+scripts
+*.html

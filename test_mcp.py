@@ -62,3 +62,12 @@ def test_cli_standardwerte(monkeypatch):
     assert (args.transport, args.port) == ("http", 8000)
     monkeypatch.setenv("PORT", "9000")
     assert mcp_server._argumente(["--transport", "stdio"]).port == 9000
+
+
+def test_health_endpunkt():
+    from starlette.testclient import TestClient
+
+    with TestClient(mcp_server.server.streamable_http_app()) as c:
+        r = c.get("/health")
+    assert r.status_code == 200
+    assert r.json()["status"] == "ok" and r.json()["mcp_endpunkt"] == "/mcp"

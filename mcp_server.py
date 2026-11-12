@@ -20,6 +20,8 @@ from mcp.server.mcpserver import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 from mcp.server.transport_security import TransportSecuritySettings
 from mcp.types import ToolAnnotations
+from starlette.requests import Request
+from starlette.responses import JSONResponse
 
 import zustaendigkeit as zf
 
@@ -110,6 +112,18 @@ def zustaendigkeit_finden(
     except zf.ZustaendigkeitError as e:
         raise ToolError(f"Datendienst gerade nicht verfügbar: {e}") from e
     return _kompakt(erg)
+
+
+@server.custom_route("/health", methods=["GET"], include_in_schema=False)
+async def health(_request: Request) -> JSONResponse:
+    """Für Docker-Healthcheck, Tunnel und Hosting-Plattformen. Prüft nur den Server, nicht den WFS."""
+    return JSONResponse({
+        "status": "ok",
+        "server": server.name,
+        "version": server.version,
+        "mcp_endpunkt": "/mcp",
+        "geladene_layer": sorted(zf._flaechen),
+    })
 
 
 def _vorladen():
