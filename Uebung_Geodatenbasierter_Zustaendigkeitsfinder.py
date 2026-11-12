@@ -1,0 +1,363 @@
+# Zed-REPL-Version von Uebung_Geodatenbasierter_Zustaendigkeitsfinder.ipynb
+# Zellen sind durch `# %%` getrennt. Ausführen: ctrl-shift-enter (Zelle ausführen) / shift-enter (ausführen & weiter).
+# Voraussetzung: Kernel mit ipykernel (z. B. `Python (hack4gdi .venv)`) und Internetzugang.
+
+# %% [markdown]
+# <a href="https://www.gdi-de.org/" target="_blank"><img src="https://www.gdi-de.org/download/logo_gdi_1_0.png" alt="Logo GDI-DE" width="300" style="max-width:100%;height:auto;display:block;" /></a>
+#
+# # Übung: Geodatenbasierter Zuständigkeitsfinder
+#
+# <div style="width: 100%; border-bottom: 2px solid red;"></div>
+#
+# *Praxisübung · Python · Jupyter Notebook · WFS · GeoPandas · Leafmap · WMS · CSW*
+#
+# ### Szenario
+#
+# **Welche Behörde oder öffentliche Stelle ist für eine bestimmte Adresse zuständig?** Entwickelt einen geodatenbasierten Zuständigkeitsfinder. Als Einstieg verwendet ihr sieben Zuständigkeitsbereiche der **Bundesagentur für Arbeit und der Gerichte** aus dem offenen WFS *Behördenzuständigkeitsbereiche Open* des Bundesamts für Kartographie und Geodäsie (BKG). Die Lösung soll grundsätzlich auf weitere Behördenarten und später auch auf andere WFS-Anbieter übertragbar sein.
+#
+# Ihr untersucht den WFS, ladet Zuständigkeitsflächen, ermittelt die Position einer Adresse und prüft, in welchem Zuständigkeitsgebiet sie liegt. Anschließend erstellt ihr eine interaktive Karte und exportiert eine **eigenständige HTML-Webanwendung** im abgestimmten GDI-DE-Design (türkis-transparente Zuständigkeitsflächen, schwarze Überschriften und türkise Bedienelemente) mit Adresssuche und dem BKG-WMS **TopPlusOpen Grau** als Hintergrundkarte.
+#
+# ### Lernziele
+#
+# - Einen WFS über **GetCapabilities** untersuchen, alle angebotenen Feature-Typen entdecken und einen auswählen.
+# - Geodaten als **GeoJSON** abrufen, in GeoPandas verarbeiten und das Koordinatensystem prüfen.
+# - Adressen mit **Nominatim** geokodieren und den Treffer kontrollieren.
+# - Mit **Shapely/GeoPandas** die räumlich zuständige Behörde ermitteln.
+# - Zuständigkeitsgebiete und Suchergebnis in **Leafmap/Folium** visualisieren.
+# - Eine eigenständige **HTML-Anwendung** mit WMS-Hintergrundkarte, Adresssuche, dynamischer Layerauswahl und GeoJSON-Export aus dem Notebook erzeugen.
+# - Als Zusatzaufgabe **ISO-Metadaten über CSW** und die zugehörigen Nutzungsbedingungen auswerten.
+#
+# ### Datenquellen und Hinweise
+#
+# - [BKG WFS Behördenzuständigkeitsbereiche Open – Dienstinformation](https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html)
+# - [WFS GetCapabilities](https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&request=GetCapabilities)
+# - [BKG WMS TopPlusOpen – Dienstinformation](https://gdz.bkg.bund.de/index.php/default/wms-topplusopen-wms-topplus-open.html)
+# - [BKG-Datenquellenverzeichnis](https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf)
+# - [Geodatenkatalog.de](https://www.geoportal.de/)
+# - [Nominatim-Such-API](https://nominatim.org/release-docs/latest/api/Search/) · [Nutzungsrichtlinie](https://operations.osmfoundation.org/policies/nominatim/)
+#
+# **Hinweis:** Verwendet für die Adresssuche möglichst eine vollständige Adresse mit Straße und Hausnummer. Prüft den gefundenen Geokodierungstreffer. Die öffentliche Nominatim-API ist nicht für umfangreiche oder automatisierte Massenabfragen vorgesehen.
+#
+# ### Arbeitsauftrag
+#
+# Bearbeitet die Abschnitte **1–8** der Reihe nach. Führt die Python-Zellen aus und ergänzt die markierten Aufgaben. Prüft zunächst beispielhaft **Mainz**, verwendet anschließend eine weitere Adresse und vergleicht die ermittelte Zuständigkeit. Erstellt zum Abschluss aus dem Notebook die Datei `Zustaendigkeitsfinder_hack4GDI_DE_2026.html` und testet sie im Browser.
+#
+# Die bereitgestellte HTML-Vorlage bildet das gewünschte Design bereits ab. Eure Aufgabe ist es, die **Geodatenverarbeitung nachzuvollziehen**, die Konfiguration zu prüfen und die Anwendung korrekt zu erzeugen – nicht, die gesamte JavaScript-Oberfläche neu zu programmieren.
+#
+# ### Zusatzaufgabe · Metadaten und Quellenvermerk
+#
+# Recherchiert den **ISO-19139-Metadatensatz** des WFS über die CSW-Schnittstelle des Geodatenkatalog.de. Gebt Titel, Metadatensatz-ID, Nutzungsbedingungen, Zugriffsbeschränkungen und Lizenzverweise aus; kennzeichnet fehlende Angaben ausdrücklich. Vergleicht den Quellenvermerk des Metadatensatzes mit den Angaben in der HTML-Anwendung.
+#
+# Die Kartenattribution soll **Leaflet | Kartengrundlage: © Bundesamt für Kartographie und Geodäsie (2026) · dl-de/by-2-0** enthalten. Die weiterführenden Datenquellen stehen im Footer der Webanwendung.
+#
+# **Verfügbare Bereiche:** Arbeitsagenturen, Geschäftsstellen, Jobcenter, Regionaldirektionen, Amtsgerichte, Landgerichte und Oberlandesgerichte. Die HTML-Anwendung liest die aktuelle Layerliste über GetCapabilities ein; bei Ausfall werden diese sieben Layer als Rückfalloption angeboten.
+
+# %% [markdown]
+# ## 1 · Bibliotheken installieren
+
+# %%
+# Einmalig im Terminal ausführen (statt !pip): pip install -q requests geopandas shapely leafmap folium owslib pyogrio beautifulsoup4
+
+# %% [markdown]
+# ## 2 · Konfiguration
+
+# %%
+import requests
+import geopandas as gpd
+import leafmap.foliumap as leafmap
+import folium
+from shapely.geometry import Point
+from IPython.display import display
+
+WFS_URL = "https://sgx.geodatenzentrum.de/wfs_bzb_open"
+LAYER = "bzb-open:ba_arbeitsagenturen"  # Zuständigkeitsbereiche der Arbeitsagenturen
+ADRESSE = "Jakob-Welder-Weg 18"  # besser eine vollständige Straßenadresse
+USER_AGENT = "hack4GDI-DE-Zustaendigkeitsfinder/1.0 (kontakt: jupyter@hack4gdi.de)"
+
+# %% [markdown]
+# ## 3 · WFS-GetCapabilities auswerten
+
+# %%
+# Aufgabe 3: Stellt mit OWSLib eine Verbindung zum WFS her.
+# Gebt Diensttitel, Anbieter und die verfügbaren Feature-Typen aus.
+# Prüft, ob LAYER vorhanden ist.
+# Aufgabe 3: Stellt mit OWSLib eine Verbindung zum WFS her.
+# Gebt Diensttitel, Anbieter und die verfügbaren Feature-Typen aus.
+# Prüft, ob LAYER vorhanden ist.
+from owslib.wfs import WebFeatureService
+
+# Verbindung zum WFS herstellen
+wfs = WebFeatureService(url=WFS_URL, version='1.1.0')
+
+# Diensttitel und Anbieter ausgeben
+print(f"Diensttitel: {wfs.identification.title}")
+print(f"Anbieter: {wfs.provider.name}")
+
+# Verfügbare Feature-Typen ausgeben
+print("Verfügbare Feature-Typen:")
+for feature_type in wfs.contents:
+    print(f"- {feature_type}")
+
+# Prüfen, ob LAYER vorhanden ist
+if LAYER in wfs.contents:
+    print(f"LAYER '{LAYER}' ist vorhanden.")
+else:
+    print(f"LAYER '{LAYER}' ist nicht vorhanden.")
+
+# %% [markdown]
+# ## 4 · Zuständigkeitsflächen als GeoJSON abrufen
+
+# %%
+# Aufgabe 4: Ruft den Feature-Typ LAYER über WFS GetFeature als GeoJSON ab.
+# Erstellt daraus ein GeoDataFrame gdf und prüft Anzahl, Attribute, CRS und Bounds.
+# Achtet auf die korrekte Interpretation von EPSG:4326.
+
+# WFS-GetFeature-Anfrage für den gewünschten Layer
+wfs_getfeature_url = f"{WFS_URL}?service=WFS&version=1.1.0&request=GetFeature&typeName={LAYER}&outputFormat=application/json"
+
+# GeoJSON-Daten abrufen
+response = requests.get(wfs_getfeature_url)
+response.raise_for_status()  # Fehler bei HTTP-Anfragen abfangen
+
+# GeoDataFrame erstellen
+import geopandas as gpd
+from io import StringIO
+
+# GeoJSON-Daten in ein GeoDataFrame laden
+gdf = gpd.read_file(StringIO(response.text))
+
+# Anzahl der Features ausgeben
+print(f"Anzahl der Zuständigkeitsflächen: {len(gdf)}")
+
+# Attribute ausgeben
+print("Attribute:", gdf.columns.tolist())
+
+# CRS ausgeben
+print("CRS:", gdf.crs)
+
+# Bounds ausgeben
+print("Bounds:", gdf.total_bounds)
+
+# Prüfen, ob EPSG:4326 korrekt interpretiert wird
+# CRS prüfen und ggf. setzen bzw. umrechnen
+if gdf.crs is None:
+    gdf = gdf.set_crs(epsg=4326)          # GeoJSON ist per Spezifikation WGS84
+    print("CRS fehlte und wurde auf EPSG:4326 gesetzt.")
+elif gdf.crs.to_epsg() != 4326:
+    gdf = gdf.to_crs(epsg=4326)
+    print("CRS wurde zu EPSG:4326 konvertiert.")
+else:
+    print("CRS ist korrekt als EPSG:4326 interpretiert.")
+
+# %% [markdown]
+# ## 5 · Adresse geokodieren
+
+# %%
+# Aufgabe 5: Fragt ADRESSE über Nominatim ab.
+# Prüft den Treffer und erstellt aus lon/lat einen Shapely-Punkt `punkt`.
+
+# Nominatim-API-URL
+nominatim_url = "https://nominatim.openstreetmap.org/search"
+
+# Parameter für die Nominatim-Abfrage
+params = {
+    "q": ADRESSE,
+    "format": "json",
+    "limit": 1,
+    "addressdetails": 1,
+    "accept-language": "de",
+}
+
+# User-Agent-Header hinzufügen
+headers = {
+    "User-Agent": USER_AGENT,
+}
+
+# Nominatim-API aufrufen
+response = requests.get(nominatim_url, params=params, headers=headers)
+response.raise_for_status()  # Fehler bei HTTP-Anfragen abfangen
+
+# Antwort als JSON parsen
+geocode_result = response.json()
+
+# Prüfen, ob ein Treffer gefunden wurde
+if not geocode_result:
+    raise ValueError(f"Kein Geokodierungstreffer für die Adresse: {ADRESSE}")
+
+# Ersten Treffer auswählen
+first_result = geocode_result[0]
+
+# Koordinaten aus dem Treffer extrahieren
+lon = float(first_result["lon"])
+lat = float(first_result["lat"])
+
+# Shapely-Punkt erstellen
+punkt = Point(lon, lat)
+
+# Treffer ausgeben
+print(f"Geokodierungstreffer für {ADRESSE}:")
+print(f"Koordinaten: {lon}, {lat}")
+print(f"Adresse: {first_result.get('display_name', 'Keine Adresse gefunden')}")
+
+# %% [markdown]
+# ## 6 · Zuständigkeitsbereich bestimmen
+
+# %%
+# Aufgabe 6: Bestimmt mit `gdf.geometry.covers(punkt)` die passenden Flächen.
+# Speichert das Ergebnis als `treffer` und gebt Name und Anzahl aus.
+
+# Bestimme die Zuständigkeitsflächen, die den Punkt enthalten
+# Mit `gdf.geometry.covers(punkt)` wird geprüft, ob der Punkt innerhalb einer Fläche liegt
+# `any()` wird verwendet, um zu überprüfen, ob mindestens eine Fläche den Punkt enthält
+treffer = gdf[gdf.geometry.covers(punkt)]
+if len(treffer) > 0:
+    # Gebe den Namen und die Anzahl der passenden Flächen aus
+    print(f"Zuständigkeitsbereich: {treffer['name'].values[0]}")
+    print(f"Anzahl der passenden Flächen: {len(treffer)}")
+else:
+    print("Kein Zuständigkeitsbereich gefunden.")
+
+# %% [markdown]
+# ## 7 · Interaktive Karte im abgestimmten Farbschema
+
+# %%
+# Aufgabe 7: Erstellt eine Leafmap/Folium-Karte mit TopPlusOpen Grau (WMS).
+# Zeichnet alle Zuständigkeitsbereiche in Türkis (#008b95) mit transparenter Füllung, den Treffer hervorgehoben und den Adresspunkt ein.
+# Hinterlegt den BKG-Quellenvermerk direkt in der Kartenattribution.
+# Speichert die Karte als `zustaendigkeitsfinder_karte.html`.
+
+# WMS-URL für TopPlusOpen Grau
+wms_url = "https://sgx.geodatenzentrum.de/wms_topplus_open"
+attribution = (
+    'Leaflet | Kartengrundlage: &copy; <a href="https://www.bkg.bund.de">'
+    'Bundesamt für Kartographie und Geodäsie</a> (2026) · dl-de/by-2-0'
+)
+
+# Karte mit Leafmap erstellen, zentriert auf den Adresspunkt
+m = leafmap.Map(center=[punkt.y, punkt.x], zoom=9)
+
+# TopPlusOpen Grau als WMS-Hintergrund hinzufügen
+m.add_wms_layer(
+    url=wms_url,
+    layers="web_grau",
+    name="TopPlusOpen Grau",
+    format="image/png",
+    transparent=True,
+    attribution=attribution,
+)
+
+# Alle Zuständigkeitsbereiche in Türkis mit transparenter Füllung
+m.add_gdf(
+    gdf,
+    layer_name="Zuständigkeitsbereiche",
+    style={"color": "#008b95", "weight": 1, "fillColor": "#008b95", "fillOpacity": 0.15},
+    info_mode="on_click",
+)
+
+# Treffer hervorgehoben
+if len(treffer) > 0:
+    m.add_gdf(
+        treffer,
+        layer_name="Treffer",
+        style={"color": "#008b95", "weight": 4, "fillColor": "#008b95", "fillOpacity": 0.4},
+        info_mode="on_click",
+    )
+
+# Adresspunkt hinzufügen
+m.add_marker(location=[punkt.y, punkt.x], draggable=False)
+
+# Karte speichern und anzeigen
+m.to_html("zustaendigkeitsfinder_karte.html")
+m
+
+# %% [markdown]
+# ## 8 · Finale HTML-Anwendung aus dem Notebook erzeugen
+#
+# **Aufgabe:** Erstellt die vollständige Webanwendung **„Geodatenbasierter Zuständigkeitsfinder“** direkt aus dem Notebook. Die fertige HTML-Vorlage ist bereits eingebettet; eine zusätzliche Datei wird nicht benötigt.
+#
+# 1. Prüft die Einstellungen `WFS_BROWSER`, `STANDARD_LAYER`, `STANDARD_HINTERGRUND` und `BEISPIEL_ADRESSE`.
+# 2. Verwendet **TopPlusOpen Grau** als Standardhintergrund. Die Karte wird über den **BKG-WMS** geladen.
+# 3. Führt die Zelle aus, öffnet die erzeugte HTML-Datei im Browser und testet die Suche mit Mainz und einer zweiten Adresse.
+# 4. Prüft die dynamische Layerauswahl (WFS-GetCapabilities), die Kartenattribution, den Footer und den GeoJSON-Export. Vergleicht außerdem die Darstellung mit der freigegebenen HTML-Vorlage: rote GDI-DE-Navigation, schwarze Überschriften, türkis-transparente Zuständigkeitsflächen, türkiser Suchbutton sowie mittelgraue Hintergrundkartenauswahl.
+#
+# **Hinweis:** Die HTML-/JavaScript-Vorlage ist für diese Übung vorbereitet. Die Konfiguration könnt ihr anpassen; für weitere WFS-Anbieter wäre später eine Erweiterung der Layer-Konfiguration nötig.
+#
+# **Gestaltung:** Die HTML-Datei wird aus der final abgestimmten Vorlage erzeugt. Änderungen an den Farben erfolgen bei Bedarf im eingebetteten HTML/CSS, nicht an der Geodatenverarbeitung.
+
+# %%
+# Konfiguration für die aus dem Notebook erzeugte Webanwendung.
+# Aufgabe: Prüft oder ändert die folgenden Einstellungen.
+WFS_BROWSER = "https://sgx.geodatenzentrum.de/wfs_bzb_open"
+STANDARD_LAYER = "bzb-open:ba_arbeitsagenturen"
+STANDARD_HINTERGRUND = "grau"  # "grau" oder "farbe"
+BEISPIEL_ADRESSE = "Mainz, Rheinland-Pfalz, Deutschland"
+HTML_DATEI = "Zustaendigkeitsfinder_hack4GDI_DE_2026.html"
+
+# Die finale HTML-Vorlage „Geodatenbasierter Zuständigkeitsfinder“ ist platzsparend im Notebook enthalten.
+# So kann das Notebook die vollständige HTML-Datei ohne zusätzliche Vorlagendatei erstellen.
+# Für die Übung müsst ihr den HTML-/JavaScript-Quelltext nicht vollständig neu schreiben.
+import base64
+import zlib
+from pathlib import Path
+from html import escape
+from IPython.display import IFrame, display, FileLink
+
+_VORLAGE_KOMPRIMIERT = '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'
+
+def erstelle_html_datei():
+    if STANDARD_HINTERGRUND not in ("grau", "farbe"):
+        raise ValueError("STANDARD_HINTERGRUND muss 'grau' oder 'farbe' sein")
+    if STANDARD_LAYER not in (
+        "bzb-open:ba_arbeitsagenturen",
+        "bzb-open:ba_geschaeftsstellen",
+        "bzb-open:ba_regionaldirektionen",
+        "bzb-open:ba_jobcenter",
+        "bzb-open:gerichte_amtsgerichte",
+        "bzb-open:gerichte_landgerichte",
+        "bzb-open:gerichte_oberlandesgerichte",
+    ):
+        raise ValueError("STANDARD_LAYER ist nicht in der HTML-Vorlage enthalten")
+
+    vorlage = zlib.decompress(base64.b64decode(_VORLAGE_KOMPRIMIERT)).decode("utf-8")
+    vorlage = vorlage.replace(
+        'const WFS="https://sgx.geodatenzentrum.de/wfs_bzb_open";',
+        'const WFS=' + __import__('json').dumps(WFS_BROWSER, ensure_ascii=True) + ';',
+    )
+    # Das ausgewählte <option>-Element wird zum Standard.
+    import re
+    vorlage = re.sub(r'(<option value="[^"]+") selected', r'\1', vorlage)
+    vorlage = vorlage.replace('<option value="' + STANDARD_LAYER + '">',
+                              '<option value="' + STANDARD_LAYER + '" selected>')
+    vorlage = vorlage.replace('value="Mainz, Rheinland-Pfalz, Deutschland"',
+                              'value="' + escape(BEISPIEL_ADRESSE, quote=True) + '"')
+    if STANDARD_HINTERGRUND == "farbe":
+        vorlage = vorlage.replace('grau.addTo(map);', 'farbe.addTo(map);')
+    datei = Path(HTML_DATEI)
+    datei.write_text(vorlage, encoding="utf-8")
+    print(f"HTML-Datei erstellt: {datei.resolve()} ({datei.stat().st_size:,} Bytes)")
+    import webbrowser  # Zed-REPL: kein FileLink/IFrame, daher direkt im Browser öffnen
+    webbrowser.open(datei.resolve().as_uri())
+    return datei
+
+html_pfad = erstelle_html_datei()
+
+# %% [markdown]
+# ### HTML-Anwendung testen
+#
+# Öffnet die erzeugte HTML-Datei über den Dateibrowser von JupyterLab oder über den ausgegebenen Downloadlink im Browser. Die folgende Vorschau kann in JupyterHub wegen Browser-Sicherheitsrichtlinien für externe Dienste eingeschränkt sein; die heruntergeladene HTML-Datei ist der maßgebliche Test.
+
+# %%
+# Vorschau im Notebook (optional):
+# display(IFrame(src=html_pfad.name, width="100%", height=700))
+print("Bitte die HTML-Datei im Browser öffnen und die Adresssuche testen.")
+
+# %% [markdown]
+# ## Zusatzaufgabe · Metadatenabfrage über CSW
+#
+# Recherchiert den ISO-19139-Metadatensatz des WFS über den Geodatenkatalog.de und gebt die tatsächlich hinterlegten Nutzungsbedingungen, Zugriffsbeschränkungen und Lizenzverweise aus. Vergleicht den Quellenvermerk aus dem Metadatensatz mit der für die Karte vorgegebenen Attribution.
+
+# %%
+# Zusatzaufgabe: Recherchiert über den CSW des Geodatenkatalog.de den
+# ISO-19139-Metadatensatz des WFS.
+# Gebt Titel, ID, Nutzungsbedingungen, Zugriffsbeschränkungen und
+# Lizenzverweise aus. Vergleicht die Quellenangaben mit der HTML-Anwendung.
