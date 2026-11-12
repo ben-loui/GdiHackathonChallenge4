@@ -2,3 +2,5 @@
 -r requirements.txt
 pytest>=8
 httpx>=0.27
+# für examples/claude_chat.py (offizielles Anthropic-SDK mit MCP-Hilfen)
+anthropic[mcp]>=2
