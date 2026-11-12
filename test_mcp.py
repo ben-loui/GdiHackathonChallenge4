@@ -1,6 +1,8 @@
-import json, pytest, anyio
+"""Tests des MCP-Servers (Fixture `zf` aus conftest.py)."""
+import json
+
+import anyio
 from mcp.client import Client
-from test_zf import zf  # Fixture mit Mock-WFS
 import mcp_server
 
 def _call(name, args):
