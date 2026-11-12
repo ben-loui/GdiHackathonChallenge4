@@ -1,31 +1,50 @@
-# Data sources
+# Datenquellen
 
-Source notes checked on 10 November 2026.
+Der MCP-Server nutzt zwei externe Dienste: BZB-Open des BKG für die Zuständigkeitsflächen und Nominatim (OpenStreetMap) für die Geokodierung.
 
-## Services and authorities
+## Zuständigkeitsflächen: BZB-Open (BKG)
 
-The [Portalverbund Online-Gateway (PVOG)](https://pvog.fitko.de/) combines records from federal and state administrative portals. Its [search API](https://docs.fitko.de/pvog/docs/suchdienst/technisches_design/schnittstellen/if_010_if_016/) is accessible without authentication. The app searches by task and official regional key (ARS), then retrieves the selected service and associated authorities.
+| | |
+|---|---|
+| Produkt | [Behördenzuständigkeitsbereiche Open (BZB-Open)](https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html) |
+| Dienst | WFS `https://sgx.geodatenzentrum.de/wfs_bzb_open` (Abruf als GeoJSON, `EPSG:4326`) |
+| Inhalt | Agenturen für Arbeit, deren Geschäftsstellen, Jobcenter, Regionaldirektionen der BA, Amtsgerichte, Landgerichte, Oberlandesgerichte |
+| Lizenz | [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) |
+| Quellenvermerk | © BKG (Jahr des Abrufs), dl-de/by-2-0, [Datenquellen BZB-Open](https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf) |
 
-Coverage and detail vary. Some records lack contacts or opening hours; others identify a municipality or several offices rather than a specific counter. Source timestamps describe record updates, not a guarantee that every detail is current. Follow the linked source portal when checking or reusing its content. Official text is kept in its original wording and may only be available in German.
+So nutzt `zustaendigkeit.py` den Dienst:
 
-The [BayernPortal API](https://www.bayernportal-webservices.bayern.de/restapi.htm) requires a user account and is not connected directly. Bavarian records can be returned through PVOG.
+- **Layer:** `ba_arbeitsagenturen` ist fest eingetragen. Die übrigen Layer werden per Namenssuche aus `GetCapabilities` ermittelt. Benennt das BKG Layer um, meldet das Tool einen Fehler für diesen Behördentyp, statt ein falsches Ergebnis zu liefern.
+- **Abruf:** Ein Layer wird beim ersten Bedarf vollständig geladen, seitenweise zu je 1000 Features. Fehlen Features gegenüber `totalFeatures`, bricht der Abruf mit Fehler ab.
+- **Cache:** Die Flächen liegen 30 Tage als GeoJSON in `ZF_CACHE_DIR` (Standard `~/.cache/zustaendigkeit`). Die Punkt-in-Polygon-Abfrage läuft danach lokal, ohne weitere Anfragen ans BKG. Zum Aktualisieren den Cache-Ordner löschen.
+- **Achsen:** Vertauschte lat/lon-Achsen und Meterkoordinaten werden erkannt und korrigiert. Liegen die Daten nicht in Deutschland, gibt es einen Fehler.
+- **Grenzlage:** Liegt ein Punkt auf einer Grenze oder in überlappenden Flächen, werden alle Treffer mit Hinweis zurückgegeben.
 
-## Boundaries and map
+**Grenzen der Daten:** BZB-Open bildet örtliche Zuständigkeiten ab, aber keine Sonderzuständigkeiten (z. B. zentrale Mahngerichte oder konzentrierte Registergerichte) und keine Anschriften oder Öffnungszeiten. Stand und Genauigkeit stehen in der Quellenübersicht des BKG. Verbindlich ist immer die Auskunft der Behörde.
 
-| Source | Use | Source notice |
-| --- | --- | --- |
-| [BKG VG250 WFS](https://gdz.bkg.bund.de/index.php/default/open-data/wfs-verwaltungsgebiete-1-250-000-stand-01-01-wfs-vg250.html) | Municipal boundaries and ARS. The product page listed 1 January 2025 as its data date when checked. | © BKG, year of access, dl-de/by-2-0; [VG data sources](https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf). |
-| [BKG TopPlusOpen WMS](https://gdz.bkg.bund.de/index.php/default/wms-topplusopen-wms-topplus-open.html) | Grey background map, layer `web_grau`. | © BKG, year of access, dl-de/by-2-0; [TopPlusOpen data sources](https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_topplusopen.html). |
+## Geokodierung: Nominatim (OpenStreetMap)
 
-Both use [Data licence Germany – attribution 2.0](https://www.govdata.de/dl-de/by-2-0). The app links [BKG](https://www.bkg.bund.de), the licence and source directories. It selects boundary features for matching and reports geometry repairs. VG250 is generalised for 1:250,000 and may differ from current or detailed boundaries. WMS images provide the background, not the analysis geometry.
+| | |
+|---|---|
+| Dienst | `https://nominatim.openstreetmap.org/search` (auf Deutschland beschränkt) |
+| Daten | © [OpenStreetMap-Mitwirkende](https://www.openstreetmap.org/copyright), ODbL |
+| Regeln | [Nominatim Usage Policy](https://operations.osmfoundation.org/policies/nominatim/): höchstens 1 Anfrage pro Sekunde, aussagekräftiger User-Agent, keine Autovervollständigung |
 
-The separate notebook and older lookup endpoint use [BZB-Open](https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html), covering seven employment-administration and court categories. Its [source directory](https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf) and attribution apply when that work is reused.
+Der Server reiht Anfragen in einem Prozess nacheinander ein (1,1 s Abstand) und hält bis zu 1024 Ergebnisse im Speicher. Mehrere Prozesse oder Installationen stimmen sich dabei nicht ab. Für eine öffentliche Demo `ZF_USER_AGENT` mit einem echten Kontakt setzen. Für den Produktivbetrieb einen eigenen Geocoder verwenden, z. B. den [BKG-Geokodierungsdienst](https://gdz.bkg.bund.de/index.php/default/geokodierungsdienst-fur-adressen-und-geonamen-wfs-g.html) oder eine eigene Nominatim-Instanz.
 
-## Address search
+Ist die Adresse nur auf Ortsebene gefunden worden, enthält das Ergebnis einen Hinweis. Innerhalb eines Ortes kann die Zuständigkeit wechseln.
 
-- **[Public Nominatim](https://operations.osmfoundation.org/policies/nominatim/):** no autocomplete, at most one request per second across the application, and an identifying application header. The local server serializes requests and caches results briefly in memory. This does not coordinate multiple server processes or installations.
-- **[Photon demo server](https://github.com/komoot/photon#demo-server):** supports suggestions but requires moderate use and can throttle or block traffic. A compatible own instance can be configured.
+## Datenschutz
 
-Both use OpenStreetMap data; [OpenStreetMap attribution](https://www.openstreetmap.org/copyright) is linked in the footer. Check the provider terms before changing the deployment or traffic level.
+- **Adresse:** Die eingegebene Adresse geht an Nominatim, nicht an das BKG. Das BKG erhält nur Layer-Abrufe ohne Bezug zur Anfrage.
+- **Speicherung:** Der Server speichert Adressen nicht auf Platte. Sie stehen nur kurz im Speicher-Cache und gegebenenfalls in Zugriffslogs von Tunnel, Hosting und Nominatim.
+- **LLM-Anbieter:** Wer den Server über einen Chat nutzt, gibt die Adresse auch an den jeweiligen LLM-Anbieter weiter.
+- Keine vertraulichen Angaben in Suchanfragen verwenden.
 
-Address text goes to the chosen geocoder, the task and ARS go to PVOG, and the selected point goes to BKG. The geocoder cache holds up to 100 searches for five minutes; expired entries are removed on the next request. Searches are not intentionally saved to disk, but providers and hosting infrastructure may keep logs. Avoid confidential information in searches.
+## Kandidaten für Erweiterungen
+
+Diese Quellen kommen für weitere Behördentypen in Frage. Vor einer Anbindung sind Abdeckung, Aktualität und Lizenz zu prüfen:
+
+- **[Portalverbund Online-Gateway (PVOG)](https://pvog.fitko.de/):** Leistungen und zuständige Stellen aus den Verwaltungsportalen, z. B. für Kfz-Zulassung oder Bürgeramt. Zuordnung über den Amtlichen Regionalschlüssel (ARS); die Suchschnittstelle ist ohne Anmeldung nutzbar.
+- **[BKG VG250](https://gdz.bkg.bund.de/index.php/default/open-data/wfs-verwaltungsgebiete-1-250-000-stand-01-01-wfs-vg250.html):** Gemeindegrenzen mit ARS, um eine Koordinate einer Gemeinde zuzuordnen.
+- **BZSt-Finanzamtsuche** und Landesportale, wie in `Challenge.pdf` genannt.
