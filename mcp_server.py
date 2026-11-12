@@ -1,15 +1,18 @@
 """
 MCP-Server: Zuständigkeitsfinder als Werkzeug für Chat-LLMs (z. B. Claude als Custom Connector).
 
-Start:     python mcp_server.py            -> http://0.0.0.0:8000/mcp
-Umgebung:  PORT (8000), ZF_VORLADEN=1 (Flächen beim Start laden),
+Start:     python mcp_server.py                     -> http://localhost:8000/mcp (Streamable HTTP)
+           python mcp_server.py --transport stdio   -> für lokale Clients, die den Server selbst starten
+Umgebung:  PORT (8000), HOST (0.0.0.0), ZF_TRANSPORT (http|stdio), ZF_VORLADEN=1 (Flächen beim Start laden),
            ZF_ALLOWED_HOSTS="meine-domain.de,abc.trycloudflare.com" (optionaler Host-Header-Schutz)
 Benötigt:  mcp>=2 (Python-SDK), zustaendigkeit.py im selben Ordner
 """
 from __future__ import annotations
 
+import argparse
 import logging
 import os
+import sys
 import threading
 from typing import Literal
 
@@ -118,10 +121,32 @@ def _vorladen():
             log.warning("Vorladen %s fehlgeschlagen: %s", typ, e)
 
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    if os.environ.get("ZF_VORLADEN") == "1":
+def _argumente(argv: list[str] | None = None) -> argparse.Namespace:
+    p = argparse.ArgumentParser(
+        description="Zuständigkeitsfinder als MCP-Server.",
+        epilog="Beispiele: 'python mcp_server.py' (HTTP auf Port 8000), "
+               "'python mcp_server.py --transport stdio' (für Claude Desktop, Cursor, LM Studio).",
+    )
+    p.add_argument("--transport", choices=["http", "stdio"],
+                   default=os.environ.get("ZF_TRANSPORT", "http"),
+                   help="http = Streamable HTTP unter /mcp (Standard), stdio = Unterprozess eines lokalen Clients")
+    p.add_argument("--host", default=os.environ.get("HOST", "0.0.0.0"), help="Nur für http (Standard 0.0.0.0)")
+    p.add_argument("--port", type=int, default=int(os.environ.get("PORT", "8000")), help="Nur für http (Standard 8000)")
+    p.add_argument("--vorladen", action="store_true", default=os.environ.get("ZF_VORLADEN") == "1",
+                   help="Alle Zuständigkeitsflächen beim Start im Hintergrund laden")
+    return p.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> None:
+    args = _argumente(argv)
+    # Logs immer nach stderr: bei stdio gehört stdout ausschließlich dem MCP-Protokoll.
+    logging.basicConfig(level=logging.INFO, stream=sys.stderr)
+    if args.vorladen:
         threading.Thread(target=_vorladen, daemon=True).start()
+
+    if args.transport == "stdio":
+        server.run(transport="stdio")
+        return
 
     hosts = [h.strip() for h in os.environ.get("ZF_ALLOWED_HOSTS", "").split(",") if h.strip()]
     security = (
@@ -129,11 +154,16 @@ if __name__ == "__main__":
                                   allowed_hosts=hosts + ["localhost:*", "127.0.0.1:*"])
         if hosts else TransportSecuritySettings(enable_dns_rebinding_protection=False)
     )
+    log.info("MCP-Endpunkt: http://%s:%d/mcp", "localhost" if args.host == "0.0.0.0" else args.host, args.port)
     server.run(
         transport="streamable-http",
-        host="0.0.0.0",
-        port=int(os.environ.get("PORT", "8000")),
+        host=args.host,
+        port=args.port,
         stateless_http=True,
         json_response=True,
         transport_security=security,
     )
+
+
+if __name__ == "__main__":
+    main()
