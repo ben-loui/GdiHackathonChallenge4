@@ -1,6 +1,12 @@
+# Zusätzlich für die Notebooks und ihre .py-Fassungen (Jupyter oder Zed-REPL)
+-r ../requirements.txt
+ipykernel>=6
 jupyterlab>=4,<5
-requests>=2.31,<3
-geopandas>=1,<2
-shapely>=2,<3
 folium>=0.17,<1
 OWSLib>=0.32,<1
+leafmap>=0.40
+beautifulsoup4>=4.12
+pandas>=2
+matplotlib>=3.8
+seaborn>=0.13
+pillow>=10

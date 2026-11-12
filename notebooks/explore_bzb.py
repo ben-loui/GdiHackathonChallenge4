@@ -8,7 +8,7 @@
 # It is separate from the application's VG250/PVOG search and requires internet access.
 #
 # Install the optional dependencies (plus ipykernel) in the project venv, from the project root:
-# `python -m pip install -r notebooks/requirements.txt ipykernel`
+# `python -m pip install -r notebooks/requirements.txt`
 
 # %%
 import requests

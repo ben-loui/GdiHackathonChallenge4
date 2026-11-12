@@ -1,8 +1,7 @@
-geopandas>=1.0
-shapely>=2.0
-requests
-folium
-owslib
-fastapi
-uvicorn
-mcp>=2
+# Laufzeit: Kernlogik, MCP-Server und HTTP-API (Python 3.11+)
+geopandas>=1.0,<2
+shapely>=2.0,<3
+requests>=2.31,<3
+mcp>=2,<3
+fastapi>=0.110
+uvicorn>=0.29

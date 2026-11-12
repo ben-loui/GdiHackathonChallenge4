@@ -32,7 +32,7 @@ Nutzer:in fragt im Chat ──► LLM ──► MCP-Tool `zustaendigkeit_finden`
 
 ## Lokal starten
 
-Benötigt wird Python 3.10 oder neuer.
+Benötigt wird Python 3.11 oder neuer. Für Tests `requirements-dev.txt`, für die Notebooks `notebooks/requirements.txt` installieren.
 
 ```bash
 python3 -m venv .venv
