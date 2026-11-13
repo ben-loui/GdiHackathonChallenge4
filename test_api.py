@@ -36,7 +36,7 @@ def test_adresse_nicht_gefunden_404(zf, monkeypatch):
 
 
 def test_dienstfehler_502(zf, monkeypatch):
-    def kaputt(params):
+    def kaputt(quelle, params):
         raise zf.DienstFehler("WFS nicht erreichbar")
 
     monkeypatch.setattr(zf, "_get", kaputt)

@@ -1,0 +1,98 @@
+# BZB als WFS/WMS im lokalen Netz: PostGIS + GeoServer
+#
+#   ./start.sh                 legt .env mit Zufallspasswörtern an, startet alles, zeigt Zugangsdaten
+#   docker compose down        stoppen (Daten bleiben in den Volumes)
+#   docker compose down -v     stoppen und alles löschen
+#
+# Ablauf beim Start: db -> laden (Shapefiles -> PostGIS, einmalig je Start)
+#                    -> geoserver -> einrichten (REST-Konfiguration, idempotent)
+# Erreichbar im LAN nur GeoServer (Port WFS_PORT). Die Datenbank lauscht nur auf 127.0.0.1.
+name: bzb-wfs
+
+x-pg: &pg
+  PGHOST: db
+  PGDATABASE: bzb
+  PGUSER: postgres
+  PGPASSWORD: ${POSTGRES_PASSWORD:?.env fehlt – ./start.sh ausführen}
+
+services:
+  db:
+    image: imresamu/postgis:17-3.5.4-alpine3.22
+    environment:
+      POSTGRES_DB: bzb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?.env fehlt – ./start.sh ausführen}
+    volumes:
+      - db-daten:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:${DB_PORT:-5433}:5432"   # nur lokal, z. B. für QGIS oder psql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d bzb"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+
+  laden:
+    build:
+      context: docker
+      dockerfile: werkzeug.Dockerfile
+    image: bzb-werkzeug:gdal-3.11.3
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      <<: *pg
+      BZB_DATEN: /bzb-bund/bzb/de
+      GEOSERVER_DB_PASSWORD: ${GEOSERVER_DB_PASSWORD:?}
+      DB_LESEROLLE: ${DB_LESEROLLE:-bzb_leser}
+    volumes:
+      - ./:/bzb-db:ro
+      - ${BZB_LIEFERUNG:-../bzb-bund}:/bzb-bund:ro
+    command: ["bash", "/bzb-db/docker/datenbank-laden.sh"]
+    restart: "no"
+
+  geoserver:
+    image: kartoza/geoserver:2.28.5--v2026.10.01
+    depends_on:
+      laden:
+        condition: service_completed_successfully
+    environment:
+      GEOSERVER_ADMIN_USER: admin
+      GEOSERVER_ADMIN_PASSWORD: ${GEOSERVER_ADMIN_PASSWORD:?}
+      SAMPLE_DATA: "false"
+      INITIAL_MEMORY: 512M
+      MAXIMUM_MEMORY: 2G
+      TOMCAT_EXTRAS: "false"
+      ROOT_WEBAPP_REDIRECT: "true"   # http://host:8080/ -> /geoserver
+    volumes:
+      - geoserver-daten:/opt/geoserver/data_dir
+    ports:
+      - "${WFS_PORT:-8080}:8080"   # alle Netzwerkschnittstellen -> im LAN erreichbar
+    restart: unless-stopped
+
+  einrichten:
+    image: bzb-werkzeug:gdal-3.11.3
+    depends_on:
+      laden:
+        condition: service_completed_successfully
+      geoserver:
+        condition: service_started
+    environment:
+      <<: *pg
+      GS_URL: http://geoserver:8080/geoserver
+      GEOSERVER_ADMIN_USER: admin
+      GEOSERVER_ADMIN_PASSWORD: ${GEOSERVER_ADMIN_PASSWORD:?}
+      GEOSERVER_DB_PASSWORD: ${GEOSERVER_DB_PASSWORD:?}
+      WFS_BENUTZER: ${WFS_BENUTZER:-kollege}
+      WFS_PASSWORT: ${WFS_PASSWORT:?}
+      WFS_OEFFENTLICH: ${WFS_OEFFENTLICH:-0}
+      KATALOG_MODUS: ${KATALOG_MODUS:-CHALLENGE}
+    volumes:
+      - ./docker:/skripte:ro
+    command: ["bash", "/skripte/geoserver-einrichten.sh"]
+    restart: "no"
+
+volumes:
+  db-daten:
+  geoserver-daten:
