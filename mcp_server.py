@@ -24,6 +24,7 @@ from mcp.types import ToolAnnotations
 from starlette.requests import Request
 from starlette.responses import JSONResponse
 
+import behoerdenfinder as bf
 import zustaendigkeit as zf
 
 log = logging.getLogger("zustaendigkeit.mcp")
@@ -40,23 +41,28 @@ _quellen_kurz = _aufzaehlung([q.name for q in zf.QUELLEN.values()])
 _anliegen_text = "\n".join(f"- {a} -> {t}" for a, t in zf.ANLIEGEN.items()) or "- (keine Beispiele konfiguriert)"
 _vermerke = "; ".join(q.quellenvermerk for q in zf.QUELLEN.values())
 
-INSTRUCTIONS = f"""\
-Dieser Server ermittelt die örtlich zuständige Stelle in Deutschland anhand amtlicher
-Zuständigkeitsflächen ({_quellen_kurz}).
+_kategorien_text = ", ".join(f"{k.key} ({k.label})" for k in bf.KATEGORIEN.values())
 
-Abgedeckt sind NUR: {_labels}.
-Für andere Behörden (z. B. Bürgeramt, Kfz-Zulassung, Finanzamt, Ausländerbehörde) liefert der Server
-nichts – sag das offen, statt ein Ergebnis zu konstruieren.
+INSTRUCTIONS = f"""\
+Dieser Server ermittelt die örtlich zuständige Stelle in Deutschland aus amtlichen Daten.
+
+Werkzeuge:
+- behoerde_finden (erste Wahl): Behördenkategorie + Adresse -> zuständige Stelle MIT Anschrift, Telefon,
+  E-Mail, Öffnungszeiten und Onlinediensten (Zuständigkeitsflächen + Portalverbund PVOG).
+  Kategorien: {_kategorien_text}.
+- zustaendigkeit_finden: nur der Name aus amtlichen Zuständigkeitsflächen ({_quellen_kurz}) für:
+  {_labels}.
 
 Vorgehen:
-1. Leite aus dem Anliegen den passenden Behördentyp ab. Beispiele:
+1. Leite aus dem Anliegen die Behördenkategorie ab. Beispiele:
 {_anliegen_text}
+   Für Behörden außerhalb der Kategorien liefert der Server nichts – sag das offen.
 2. Ohne vollständige Straßenadresse (Straße, Hausnummer, PLZ oder Ort) frage nach. Nur ein Ortsname
    kann zu einem falschen Ergebnis führen, weil Zuständigkeiten innerhalb eines Ortes wechseln.
-3. Gib den Namen der zuständigen Stelle an und weise auf Hinweise im Ergebnis hin (Grenzlage,
-   ungenaue Adresse). Das Ergebnis enthält keine Anschriften oder Öffnungszeiten; die musst du
-   ggf. anderweitig recherchieren und als solche kennzeichnen.
-4. Nenne als Quelle die Angabe im Feld "quelle" des Ergebnisses (z. B. {_vermerke}).
+3. Gib Name und Kontaktdaten genau so wieder, wie sie geliefert werden; erfinde keine Anschriften,
+   Telefonnummern oder Öffnungszeiten. Ist "eindeutig" false, nenne die in Frage kommenden Stellen
+   und dass die Zuständigkeit z. B. vom Stadtteil abhängen kann. Weise auf "hinweise" hin.
+4. Nenne als Quelle die Angabe im Feld "quelle" des Ergebnisses (z. B. {_vermerke}; PVOG).
 """
 
 server = MCPServer(
@@ -123,6 +129,55 @@ def zustaendigkeit_finden(
     return _kompakt(erg)
 
 
+_OHNE = {"pvog_id", "titel_original"}
+
+
+@server.tool(
+    name="behoerde_finden",
+    title="Zuständige Behörde mit Kontaktdaten finden",
+    description=f"""Ermittelt zu einer Behördenkategorie und einer Adresse in Deutschland die örtlich zuständige
+Stelle mit Anschrift, Telefon, E-Mail, Öffnungszeiten und Onlinediensten.
+
+Args:
+    kategorie: Schlüsselwort der Behördenkategorie, z. B. "finanzamt", "buergeramt", "zulassungsstelle".
+        Erlaubt: {", ".join(bf.KATEGORIEN)}.
+    adresse: Vollständige Straßenadresse, z. B. "Schillerplatz 1, 55116 Mainz".
+    lat: Breitengrad (WGS84), alternativ zur Adresse; nur zusammen mit lon.
+    lon: Längengrad (WGS84), alternativ zur Adresse; nur zusammen mit lat.
+    leika: Optional: LeiKa-Leistungsschlüssel (14-stellig) der konkreten Leistung, falls bekannt.
+""",
+    annotations=ToolAnnotations(read_only_hint=True, destructive_hint=False,
+                                idempotent_hint=True, open_world_hint=True),
+)
+def behoerde_finden(
+    kategorie: str,
+    adresse: str | None = None,
+    lat: float | None = None,
+    lon: float | None = None,
+    leika: list[str] | None = None,
+) -> dict:
+    try:
+        a = bf.finde_behoerde(kategorie, adresse, lat=lat, lon=lon, leika=leika)
+    except zf.AdresseNichtGefunden as e:
+        raise ToolError(f"{e} Bitte Straße, Hausnummer und PLZ oder Ort prüfen.") from e
+    except ValueError as e:
+        raise ToolError(str(e)) from e
+    except zf.ZustaendigkeitError as e:
+        raise ToolError(f"Datendienst gerade nicht verfügbar: {e}") from e
+    ort = a["ort"] and {"gefunden_als": a["ort"]["anzeige"], "gemeinde": a["ort"].get("gemeinde"),
+                        "hinweise": a["ort"]["hinweise"]}
+    return {
+        "kategorie": a["kategorie"]["label"],
+        "ort": ort,
+        "stellen": [{k: v for k, v in s.items() if k not in _OHNE} for s in a["stellen"]],
+        "eindeutig": a["eindeutig"],
+        "leistung": a["leistung"] and a["leistung"]["name"],
+        "onlinedienste": a["onlinedienste"],
+        "hinweise": a["hinweise"],
+        "quelle": "; ".join(q["quellenvermerk"] for q in a["quellen"]),
+    }
+
+
 @server.custom_route("/health", methods=["GET"], include_in_schema=False)
 async def health(_request: Request) -> JSONResponse:
     """Für Docker-Healthcheck, Tunnel und Hosting-Plattformen. Prüft nur den Server, nicht den WFS."""
@@ -138,6 +193,8 @@ async def health(_request: Request) -> JSONResponse:
 
 def _vorladen():
     for typ in zf.BEHOERDENTYPEN:
+        if not zf.vorladbar(typ):  # Punktabfrage, z. B. VG250-Gemeinden
+            continue
         try:
             zf.lade_flaechen_fuer(typ)
             log.info("Vorgeladen: %s", typ)

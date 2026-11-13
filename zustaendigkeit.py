@@ -90,6 +90,9 @@ class Datenquelle:
     crs_fallback: str = "EPSG:25832"  # gilt für Meterkoordinaten ohne CRS-Angabe in der Antwort
     seitengroesse: int | None = None
     auth_env: str | None = None  # Umgebungsvariable mit "benutzer:passwort" für HTTP-Basic-Auth
+    # "layer": Layer einmal komplett laden und lokal abfragen (Standard, für bis ca. 1000 Flächen)
+    # "punkt": je Abfrage nur die Flächen am Punkt per BBOX-Filter holen (große Layer, z. B. 11 000 Gemeinden)
+    abfrage: str = "layer"
 
     @property
     def name(self) -> str:
@@ -112,6 +115,7 @@ class Behoerdentyp:
     layer_suche: str | None = None  # sonst: Suche in GetCapabilities
     name_attribut: str | None = None  # Attribut mit dem Namen der Stelle (sonst Heuristik)
     uebergeordnet_attribut: str | None = None
+    name_vorlage: str | None = None  # z. B. "{bez} {gen}" -> "Landkreis Mainz-Bingen"
     anliegen: tuple[str, ...] = ()
 
 
@@ -149,6 +153,8 @@ def _quelle_aus(daten: dict, wo: str) -> Datenquelle:
         raise KonfigurationsFehler(f"{wo}: wfs_url muss mit http:// oder https:// beginnen.")
     if q.seitengroesse is not None and (not isinstance(q.seitengroesse, int) or q.seitengroesse < 1):
         raise KonfigurationsFehler(f"{wo}: seitengroesse muss eine positive Ganzzahl sein.")
+    if q.abfrage not in ("layer", "punkt"):
+        raise KonfigurationsFehler(f"{wo}: abfrage muss 'layer' oder 'punkt' sein.")
     return q
 
 
@@ -230,6 +236,7 @@ def konfigurieren(pfade: str | Path | Iterable[str | Path] | None = None) -> Non
     ANLIEGEN.clear()
     ANLIEGEN.update({a: t.key for t in typen.values() for a in t.anliegen})
     verfuegbare_layer.cache_clear()
+    _punkt_abruf.cache_clear()
     with _flaechen_lock:
         _flaechen.clear()
 
@@ -380,25 +387,33 @@ def layer_fuer(typ: str) -> str:
     )
 
 
+def _geojson(quelle: Datenquelle, layer: str, r) -> dict:
+    try:
+        return r.json()
+    except ValueError as e:
+        auszug = getattr(r, "text", "")[:300]
+        raise DienstFehler(
+            f"{quelle.name}/{layer}: Antwort ist kein GeoJSON (output_format "
+            f"'{quelle.output_format}' prüfen). Antwort: {auszug}"
+        ) from e
+
+
+def _getfeature_params(quelle: Datenquelle, layer: str, anzahl: int) -> dict:
+    wfs2 = quelle.wfs_version.startswith("2")
+    return {
+        "service": "WFS", "version": quelle.wfs_version, "request": "GetFeature",
+        ("typeNames" if wfs2 else "typeName"): layer, "outputFormat": quelle.output_format,
+        "srsName": quelle.srs, ("count" if wfs2 else "maxFeatures"): anzahl,
+    }
+
+
 def _hole_geojson(quelle: Datenquelle, layer: str) -> dict:
     """Alle Features eines Layers holen; bei Server-Limit seitenweise."""
     groesse = quelle.seitengroesse or SEITENGROESSE
-    wfs2 = quelle.wfs_version.startswith("2")
     features, start, crs, gesehen = [], 0, None, set()
     for _ in range(200):
-        r = _get(quelle, {
-            "service": "WFS", "version": quelle.wfs_version, "request": "GetFeature",
-            ("typeNames" if wfs2 else "typeName"): layer, "outputFormat": quelle.output_format,
-            "srsName": quelle.srs, ("count" if wfs2 else "maxFeatures"): groesse, "startIndex": start,
-        })
-        try:
-            data = r.json()
-        except ValueError as e:
-            auszug = getattr(r, "text", "")[:300]
-            raise DienstFehler(
-                f"{quelle.name}/{layer}: Antwort ist kein GeoJSON (output_format "
-                f"'{quelle.output_format}' prüfen). Antwort: {auszug}"
-            ) from e
+        r = _get(quelle, {**_getfeature_params(quelle, layer, groesse), "startIndex": start})
+        data = _geojson(quelle, layer, r)
         seite = data.get("features", [])
         crs = crs or data.get("crs")
         neu = [f for f in seite if f.get("id") is None or f["id"] not in gesehen]
@@ -480,6 +495,32 @@ def lade_flaechen(quelle_id: str, layer: str, neu_laden: bool = False) -> gpd.Ge
         return gdf
 
 
+_PUNKT_PUFFER = 1e-5  # Grad, ca. 1 m: BBOX um den Punkt
+
+
+@lru_cache(maxsize=4096)
+def _punkt_abruf(quelle_id: str, layer: str, lat: float, lon: float) -> bytes:
+    """GetFeature mit BBOX um den Punkt (Achsenfolge lat/lon gemäß urn:ogc:def:crs:EPSG::4326)."""
+    q = _quelle(quelle_id)
+    d = _PUNKT_PUFFER
+    r = _get(q, {**_getfeature_params(q, layer, q.seitengroesse or SEITENGROESSE),
+                 "bbox": f"{lat - d},{lon - d},{lat + d},{lon + d},urn:ogc:def:crs:EPSG::4326"})
+    return json.dumps(_geojson(q, layer, r)).encode("utf-8")
+
+
+def _flaechen_am_punkt(quelle: Datenquelle, layer: str, lat: float, lon: float) -> gpd.GeoDataFrame | None:
+    """Kandidaten-Flächen am Punkt (Modus "punkt"); None, wenn der Dienst keine liefert."""
+    roh = _punkt_abruf(quelle.id, layer, round(lat, 6), round(lon, 6))
+    if not json.loads(roh).get("features"):
+        return None
+    return _achsen_korrigieren(gpd.read_file(BytesIO(roh)), quelle.crs_fallback)
+
+
+def vorladbar(typ: str) -> bool:
+    """Ob sich der Layer eines Typs komplett laden lässt (nicht bei abfrage = "punkt")."""
+    return _quelle(_typ(typ).quelle).abfrage == "layer"
+
+
 def lade_flaechen_fuer(typ: str, neu_laden: bool = False) -> gpd.GeoDataFrame:
     return lade_flaechen(_typ(typ).quelle, layer_fuer(typ), neu_laden)
 
@@ -519,16 +560,36 @@ def _anzeigename(attr: dict, bevorzugt: str | None = None) -> str | None:
     return next((v for v in attr.values() if isinstance(v, str) and v.strip()), None)
 
 
+def _vorlage(vorlage: str | None, attr: dict) -> str | None:
+    """Name aus Attributen, z. B. "{bez} {gen}"; fehlende Attribute bleiben leer."""
+    if not vorlage:
+        return None
+    werte = _LeerDict({k: ("" if v is None else v) for k, v in attr.items()})
+    text = vorlage.format_map(werte)
+    return re.sub(r"\s+", " ", text).strip() or None
+
+
+class _LeerDict(dict):
+    def __missing__(self, key):
+        return ""
+
+
 def zustaendigkeit_an_punkt(lat: float, lon: float, typ: str, mit_geometrie: bool = False) -> list[dict]:
     t = _typ(typ)
-    flaechen = lade_flaechen_fuer(typ)
     punkt = Point(lon, lat)
-    idx = flaechen.sindex.query(punkt, predicate="intersects")
+    if vorladbar(typ):
+        flaechen = lade_flaechen_fuer(typ)
+        idx = flaechen.sindex.query(punkt, predicate="intersects")
+    else:
+        flaechen = _flaechen_am_punkt(_quelle(t.quelle), layer_fuer(typ), lat, lon)
+        if flaechen is None:
+            return []
+        idx = [i for i, g in enumerate(flaechen.geometry) if g is not None and g.intersects(punkt)]
     treffer = []
     for pos in idx:
         zeile = flaechen.iloc[int(pos)]
         attr = {k: _json_sicher(v) for k, v in zeile.drop(labels="geometry").items()}
-        eintrag = {"name": _anzeigename(attr, t.name_attribut)}
+        eintrag = {"name": _vorlage(t.name_vorlage, attr) or _anzeigename(attr, t.name_attribut)}
         if t.uebergeordnet_attribut:
             eintrag["uebergeordnet"] = _text(attr, t.uebergeordnet_attribut)
         eintrag["attribute"] = attr
@@ -536,6 +597,21 @@ def zustaendigkeit_an_punkt(lat: float, lon: float, typ: str, mit_geometrie: boo
             eintrag["geometrie"] = mapping(zeile.geometry.simplify(0.0005))
         treffer.append(eintrag)
     return treffer
+
+
+def ort_bestimmen(adresse: str | None = None, lat: float | None = None, lon: float | None = None) -> Ort:
+    """lat/lon (geprüft) oder Adresse (Nominatim) -> Ort."""
+    if lat is not None and lon is not None:
+        x0, y0, x1, y1 = DEUTSCHLAND_BBOX
+        if not (y0 <= lat <= y1 and x0 <= lon <= x1):
+            raise ValueError("Koordinate liegt außerhalb Deutschlands (lat/lon vertauscht?).")
+        return Ort(lat, lon, adresse or f"{lat:.5f}, {lon:.5f}")
+    if adresse:
+        return geocode(adresse)
+    raise ValueError("Adresse oder lat und lon angeben.")
+
+
+GEOCODING_VERMERK = "© OpenStreetMap-Mitwirkende (Nominatim)"
 
 
 def finde_zustaendigkeit(
@@ -555,16 +631,7 @@ def finde_zustaendigkeit(
     unbekannt = [t for t in typen if t not in BEHOERDENTYPEN]
     if unbekannt:
         raise ValueError(f"Unbekannte Behördentypen: {', '.join(unbekannt)}")
-
-    if lat is not None and lon is not None:
-        x0, y0, x1, y1 = DEUTSCHLAND_BBOX
-        if not (y0 <= lat <= y1 and x0 <= lon <= x1):
-            raise ValueError("Koordinate liegt außerhalb Deutschlands (lat/lon vertauscht?).")
-        ort = Ort(lat, lon, adresse or f"{lat:.5f}, {lon:.5f}")
-    elif adresse:
-        ort = geocode(adresse)
-    else:
-        raise ValueError("Adresse oder lat und lon angeben.")
+    ort = ort_bestimmen(adresse, lat, lon)
 
     ergebnisse = []
     for typ in typen:
@@ -586,7 +653,7 @@ def finde_zustaendigkeit(
         "ort": asdict(ort),
         "ergebnisse": ergebnisse,
         "quellen": [QUELLEN[q].info() for q in genutzt],
-        "geocoding": "© OpenStreetMap-Mitwirkende (Nominatim)" if adresse and lat is None else None,
+        "geocoding": GEOCODING_VERMERK if adresse and lat is None else None,
     }
 
 

@@ -1,0 +1,243 @@
+# Behördenkategorien (36, projektspezifisch) -> Datenquellen
+#
+# key         Schlüsselwort, wie es die semantische Suche (Elasticsearch) liefert
+# label       Anzeigename; Teile mit "/" gelten zusätzlich als Synonyme
+# synonyme    weitere Schreibweisen (Groß-/Kleinschreibung, Umlaute und Satzzeichen egal)
+# flaechen    Behördentypen aus quellen/*.toml: Name der Stelle aus der Zuständigkeitsfläche.
+#             Nicht konfigurierte Typen (z. B. ohne quellen/bzb-eigen.toml) werden übersprungen.
+# leistungen  LeiKa-Schlüssel typischer Leistungen ("Leitleistungen"). PVOG wird mit dem ARS der
+#             Gemeinde der Reihe nach abgefragt, bis eine Leistung zuständige Stellen liefert.
+#             Ein vom Aufrufer übergebener Leistungsschlüssel wird immer zuerst versucht.
+# raeumlich   false: Zuständigkeit hängt nicht vom Wohnort ab (z. B. eigene Krankenkasse)
+# hinweis     wird jeder Antwort dieser Kategorie mitgegeben
+#
+# Die Leitleistungen wurden am 13.11.2026 gegen PVOG in Mainz, Ingelheim (Lkr. Mainz-Bingen),
+# München, Hamburg und Köln geprüft. Fachlich vor Produktivbetrieb prüfen lassen.
+
+[[kategorie]]
+key = "finanzamt"
+label = "Finanzamt"
+leistungen = ["99102002060001", "99102002060002", "99102008002000", "99102019120000", "99102051013000"]  # Kinderfreibeträge, ESt-Festsetzung, steuerl. Erfassung, Lohnsteuer
+hinweis = "In größeren Städten sind je nach Stadtteil oder Steuerart verschiedene Finanzämter zuständig."
+
+[[kategorie]]
+key = "stadtverwaltung"
+label = "Stadtverwaltung / Gemeindeverwaltung"
+synonyme = ["Rathaus", "Gemeinde", "Stadt"]
+flaechen = ["gemeinde"]
+leistungen = ["99008001012000"]  # Personalausweis: Meldebehörde der Gemeinde als Kontakt
+hinweis = "Kontaktdaten stammen vom Bürgerservice der Gemeinde. In Verbandsgemeinden, Ämtern oder Samtgemeinden führt die gemeinsame Verwaltung die Geschäfte."
+
+[[kategorie]]
+key = "ordnungsamt"
+label = "Ordnungsamt"
+leistungen = ["99089017261000"]  # Fundsachen melden
+
+[[kategorie]]
+key = "buergeramt"
+label = "Bürgeramt / Bürgerbüro"
+synonyme = ["Bürgerservice", "Meldeamt", "Einwohnermeldeamt", "Bürgerbuero"]
+leistungen = ["99008001012000"]  # Personalausweis beantragen
+
+[[kategorie]]
+key = "standesamt"
+label = "Standesamt"
+leistungen = ["99059001104000"]  # Eheschließung anmelden
+
+[[kategorie]]
+key = "auslaenderbehoerde"
+label = "Ausländerbehörde"
+synonyme = ["Ausländeramt", "Welcome Center"]
+leistungen = ["99010020020005", "99010019001000"]  # Aufenthaltserlaubnis
+
+[[kategorie]]
+key = "amtsgericht"
+label = "Amtsgericht"
+flaechen = ["amtsgericht"]
+leistungen = ["99046010001000", "99043008080000"]  # Erbschein, Grundbucheinsicht
+hinweis = "Sonderzuständigkeiten (z. B. zentrale Mahngerichte, Register- oder Insolvenzgerichte) weichen vom örtlichen Amtsgericht ab."
+
+[[kategorie]]
+key = "landgericht"
+label = "Landgericht"
+flaechen = ["landgericht"]
+
+[[kategorie]]
+key = "verwaltungsgericht"
+label = "Verwaltungsgericht"
+hinweis = "Für Verwaltungsgerichtsbezirke ist noch keine Datenquelle angebunden. Das zuständige Gericht steht in der Rechtsbehelfsbelehrung des Bescheids."
+
+[[kategorie]]
+key = "polizei"
+label = "Polizei"
+synonyme = ["Polizeidienststelle", "Polizeiinspektion", "Polizeirevier", "Wache"]
+flaechen = ["bundespolizeiinspektion"]
+leistungen = ["99089036034000"]  # Strafanzeige stellen
+hinweis = "Im Notfall 110 wählen. Zuständig ist in der Regel die Landespolizei (PVOG). Die Bundespolizei ist nur für Bahnanlagen, Flughäfen und Grenzgebiete zuständig."
+
+[[kategorie]]
+key = "staatsanwaltschaft"
+label = "Staatsanwaltschaft"
+flaechen = ["staatsanwaltschaft"]
+hinweis = "Strafanzeigen nimmt auch jede Polizeidienststelle entgegen."
+
+[[kategorie]]
+key = "zoll"
+label = "Hauptzollamt / Zoll"
+synonyme = ["Zollamt", "Hauptzollamt"]
+flaechen = ["hauptzollamt"]
+leistungen = ["99102015111000"]  # Kraftfahrzeugsteuer
+hinweis = "PVOG nennt für die Kfz-Steuer die Generalzolldirektion; das örtliche Hauptzollamt kommt aus den Zuständigkeitsflächen (eigener BZB-Dienst)."
+
+[[kategorie]]
+key = "jugendamt"
+label = "Jugendamt"
+leistungen = ["99107021017000"]  # Unterhaltsvorschuss
+
+[[kategorie]]
+key = "sozialamt"
+label = "Sozialamt"
+leistungen = ["99107009017000"]  # Grundsicherung im Alter
+
+[[kategorie]]
+key = "jobcenter"
+label = "Jobcenter"
+flaechen = ["jobcenter"]
+leistungen = ["99107108017000"]  # Bürgergeld / Grundsicherungsgeld
+hinweis = "Das örtliche Jobcenter kommt aus BZB-Open; PVOG nennt teils nur die Bundesagentur für Arbeit allgemein."
+
+[[kategorie]]
+key = "arbeitsagentur"
+label = "Agentur für Arbeit"
+synonyme = ["Arbeitsamt", "Bundesagentur für Arbeit"]
+flaechen = ["arbeitsagentur"]
+leistungen = ["99038001017000"]  # Arbeitslosengeld
+hinweis = "Die örtliche Agentur kommt aus BZB-Open; PVOG nennt die Bundesagentur für Arbeit allgemein."
+
+[[kategorie]]
+key = "familienkasse"
+label = "Familienkasse"
+synonyme = ["Kindergeldkasse"]
+leistungen = ["99041008017000"]  # Kindergeld
+hinweis = "Die Familienkasse gehört zur Bundesagentur für Arbeit; Anträge gehen online oder an die Familienkasse der Region."
+
+[[kategorie]]
+key = "wohngeldstelle"
+label = "Wohngeldstelle"
+synonyme = ["Wohngeldamt", "Wohngeldbehörde"]
+leistungen = ["99107023037000", "99107023011001"]
+
+[[kategorie]]
+key = "bauamt"
+label = "Bauamt / Bauaufsichtsbehörde"
+synonyme = ["Bauaufsicht", "Baubehörde", "Bauordnungsamt"]
+leistungen = ["99012070006000", "99012070006001"]  # Baugenehmigung
+
+[[kategorie]]
+key = "strassenverkehrsbehoerde"
+label = "Straßenverkehrsbehörde"
+synonyme = ["Straßenverkehrsamt", "Verkehrsbehörde"]
+leistungen = ["99108001001000"]  # Bewohnerparkausweis
+
+[[kategorie]]
+key = "zulassungsstelle"
+label = "Kfz-Zulassungsstelle"
+synonyme = ["Zulassungsstelle", "Kfz-Zulassung", "Zulassungsbehörde"]
+leistungen = ["99036020001000", "99036047001000"]
+
+[[kategorie]]
+key = "gesundheitsamt"
+label = "Gesundheitsamt"
+leistungen = ["99003002022000", "99003013018000", "99003012018000"]  # Infektionsschutzbelehrung, Beratung, Impfen
+
+[[kategorie]]
+key = "veterinaeramt"
+label = "Veterinäramt"
+synonyme = ["Veterinär- und Lebensmittelüberwachung", "Amtstierarzt"]
+leistungen = ["99110061261001", "99089024178000", "99110066007000"]  # Viehhaltung, Tierschutz, Tiertransport
+hinweis = "PVOG kennt das Veterinäramt nicht in allen Gemeinden; dann ist meist der Landkreis bzw. die kreisfreie Stadt zuständig."
+
+[[kategorie]]
+key = "umweltamt"
+label = "Umweltamt / Untere Umweltbehörde"
+synonyme = ["Untere Wasserbehörde", "Untere Naturschutzbehörde", "Umweltbehörde"]
+leistungen = ["99129089261000", "99129086261000"]  # Heizölverbraucheranlage, Trinkwasseranlage
+
+[[kategorie]]
+key = "gewerbeamt"
+label = "Gewerbeamt"
+synonyme = ["Gewerbemeldestelle"]
+leistungen = ["99050012104000"]  # Gewerbe anmelden
+
+[[kategorie]]
+key = "ihk"
+label = "Industrie- und Handelskammer"
+synonyme = ["IHK", "Handelskammer"]
+leistungen = ["99050031012000", "99040005076000"]
+
+[[kategorie]]
+key = "handwerkskammer"
+label = "Handwerkskammer"
+synonyme = ["HWK"]
+leistungen = ["99058007060000", "99058068261000", "99058007060015"]
+
+[[kategorie]]
+key = "rentenversicherung"
+label = "Deutsche Rentenversicherung"
+synonyme = ["Rentenversicherung", "DRV", "Rentenkasse"]
+leistungen = ["99114034101000", "99114045017001"]  # Rentenauskunft, Regelaltersrente (99114… = DRV; 99158… wäre die landwirtschaftl. Alterskasse)
+hinweis = "Welcher Träger zuständig ist (Deutsche Rentenversicherung Bund, ein Regionalträger oder Knappschaft-Bahn-See), steht im Versicherungsverlauf und hängt nicht vom Wohnort ab."
+
+[[kategorie]]
+key = "krankenkasse"
+label = "Gesetzliche Krankenkasse"
+synonyme = ["Krankenkasse", "Krankenversicherung"]
+raeumlich = false
+hinweis = "Zuständig ist die eigene Krankenkasse, unabhängig vom Wohnort."
+
+[[kategorie]]
+key = "pflegekasse"
+label = "Pflegekasse"
+raeumlich = false
+hinweis = "Die Pflegekasse ist bei der eigenen Krankenkasse angesiedelt. Beratung vor Ort bieten Pflegestützpunkte."
+
+[[kategorie]]
+key = "bafoegamt"
+label = "Amt für Ausbildungsförderung"
+synonyme = ["BAföG-Amt", "BAföG"]
+leistungen = ["99022001017002", "99022001000000"]  # BAföG Schulbesuch
+hinweis = "Diese Auskunft gilt für Schüler-BAföG. Für ein Studium ist das Amt für Ausbildungsförderung beim Studierendenwerk der Hochschule zuständig."
+
+[[kategorie]]
+key = "schulamt"
+label = "Schulamt / Schulbehörde"
+synonyme = ["Schulbehörde", "Staatliches Schulamt", "Schulaufsicht"]
+leistungen = ["99088062007000", "99088012005000", "99088006010000"]
+hinweis = "Die Schulaufsicht ist je nach Land unterschiedlich organisiert (staatliches Schulamt, Kreis oder Bezirksregierung)."
+
+[[kategorie]]
+key = "kreisverwaltung"
+label = "Kreisverwaltung / Landratsamt"
+synonyme = ["Landratsamt", "Kreisverwaltung", "Landkreis", "Kreishaus"]
+flaechen = ["kreis"]
+leistungen = ["99036020001000"]  # Kfz-Neuzulassung: Kreis bzw. kreisfreie Stadt (Waffenschein wäre in NRW/HH die Polizei)
+hinweis = "In kreisfreien Städten übernimmt die Stadtverwaltung die Aufgaben der Kreisverwaltung. Kontaktdaten stammen von der Kfz-Zulassungsbehörde."
+
+[[kategorie]]
+key = "regierungsprs"
+label = "Regierungspräsidium / Bezirksregierung"
+synonyme = ["Regierungspräsidium", "Bezirksregierung"]
+flaechen = ["regierungsbezirk"]
+hinweis = "Regierungsbezirke gibt es nur in Baden-Württemberg, Bayern, Hessen und Nordrhein-Westfalen. In den übrigen Ländern nehmen Landesämter oder -direktionen diese Aufgaben wahr."
+
+[[kategorie]]
+key = "bundesamt_migration"
+label = "Bundesamt für Migration und Flüchtlinge"
+synonyme = ["BAMF"]
+leistungen = ["99010022001007"]  # Asyl beantragen
+
+[[kategorie]]
+key = "bundesverwaltungsamt"
+label = "Bundesverwaltungsamt"
+synonyme = ["BVA"]
+leistungen = ["99097003012000", "99022001047000"]  # Spätaussiedlerbescheinigung, BAföG-Darlehen

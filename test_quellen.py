@@ -94,14 +94,14 @@ def test_anliegen_und_typen_aus_allen_quellen(zf_zwei_quellen):
     assert zf.ANLIEGEN["Anzeige am Bahnhof"] == "bundespolizeiinspektion"
     assert zf.ANLIEGEN["Berufsberatung"] == "arbeitsagentur"
     assert {"key": "zoll_fks", "label": "Zoll – Finanzkontrolle Schwarzarbeit", "quelle": "eigen"} in zf.typen()
-    assert [q["id"] for q in zf.quellen()] == ["bzb_open", "eigen"]
+    assert [q["id"] for q in zf.quellen()] == ["bzb_open", "vg250", "eigen"]
 
 
 # --------------------------------------------------------------------------- #
 # Konfiguration
 # --------------------------------------------------------------------------- #
 def test_standardordner_laedt_keine_beispieldateien(zf):
-    assert list(zf.QUELLEN) == ["bzb_open"]
+    assert list(zf.QUELLEN) == ["bzb_open", "vg250"]
     assert "staatsanwaltschaft" not in zf.BEHOERDENTYPEN
 
 
@@ -109,7 +109,7 @@ def test_beispielkonfiguration_bzb_eigen_ist_gueltig(zf, tmp_path):
     ziel = tmp_path / "bzb-eigen.toml"
     shutil.copy(BEISPIEL, ziel)
     quellen, typen = zf.lade_konfiguration([zf.QUELLEN_STANDARD, ziel])
-    assert set(quellen) == {"bzb_open", "bzb_eigen"}
+    assert set(quellen) == {"bzb_open", "vg250", "bzb_eigen"}
     assert {"staatsanwaltschaft", "thw_regionalstelle", "zoll_vollstreckung"} <= set(typen)
     assert all(t.name_attribut for t in typen.values() if t.quelle == "bzb_eigen")
 
@@ -117,7 +117,7 @@ def test_beispielkonfiguration_bzb_eigen_ist_gueltig(zf, tmp_path):
 def test_zf_quellen_umgebungsvariable(zf, eigen_toml, monkeypatch):
     monkeypatch.setenv("ZF_QUELLEN", f"{eigen_toml}, {zf.QUELLEN_STANDARD}")
     quellen, _ = zf.lade_konfiguration()
-    assert list(quellen) == ["eigen", "bzb_open"]
+    assert list(quellen) == ["eigen", "bzb_open", "vg250"]
 
 
 @pytest.mark.parametrize("toml, meldung", [

@@ -1,0 +1,42 @@
+# Datenquelle: Verwaltungsgebiete 1:250 000 (VG250) des BKG
+#
+# Liefert zu einer Koordinate Gemeinde, Kreis und Regierungsbezirk mit Amtlichem
+# Regionalschlüssel (ARS). Der ARS der Gemeinde ist der Schlüssel für die PVOG-Abfrage
+# der zuständigen Stellen (siehe behoerdenfinder.py).
+#
+# abfrage = "punkt": Die Gemeinden (über 11 000 Flächen) werden nicht komplett geladen,
+# sondern je Anfrage per BBOX-Filter am Punkt abgefragt.
+
+[quelle]
+id = "vg250"
+kurzname = "VG250"
+titel = "Verwaltungsgebiete 1:250 000 (VG250)"
+herausgeber = "Bundesamt für Kartographie und Geodäsie (BKG)"
+wfs_url = "https://sgx.geodatenzentrum.de/wfs_vg250"
+lizenz = "dl-de/by-2-0"
+quellenvermerk = "VG250 © BKG (dl-de/by-2-0)"
+info_url = "https://gdz.bkg.bund.de/index.php/default/open-data/wfs-verwaltungsgebiete-1-250-000-stand-01-01-wfs-vg250.html"
+wfs_version = "2.0.0"
+abfrage = "punkt"
+seitengroesse = 50
+
+[[behoerdentyp]]
+key = "gemeinde"
+label = "Gemeinde bzw. Stadt"
+layer = "vg250:vg250_gem"
+name_attribut = "gen"
+name_vorlage = "{bez} {gen}"
+
+[[behoerdentyp]]
+key = "kreis"
+label = "Landkreis bzw. kreisfreie Stadt"
+layer = "vg250:vg250_krs"
+name_attribut = "gen"
+name_vorlage = "{bez} {gen}"
+
+[[behoerdentyp]]
+key = "regierungsbezirk"
+label = "Regierungsbezirk"
+layer = "vg250:vg250_rbz"
+name_attribut = "gen"
+name_vorlage = "{bez} {gen}"
