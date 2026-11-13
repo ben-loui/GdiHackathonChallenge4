@@ -19,6 +19,8 @@ Das Projekt ist aus Challenge 4 „Zuständigkeitsfinder“ des [hack4GDI-DE](do
 
 **Abgedeckt (Standard):** Agentur für Arbeit und Geschäftsstellen, Jobcenter, Regionaldirektionen der BA, Amtsgerichte, Landgerichte, Oberlandesgerichte. Für andere Behörden liefert der Server bewusst nichts, und das LLM wird angewiesen, das offen zu sagen.
 
+**Behördenfinder (neu):** Zu 36 Behördenkategorien (Finanzamt, Bürgeramt, Standesamt, Zulassungsstelle …) und einer Adresse liefert `GET/POST /behoerde` bzw. das MCP-Tool `behoerde_finden` die zuständige Stelle **mit Anschrift, Telefon, Öffnungszeiten und Onlinediensten**. Dafür werden Zuständigkeitsflächen mit dem Portalverbund-Onlinegateway (PVOG) kombiniert. Siehe [Behördenfinder](docs/behoerdenfinder.md).
+
 **Erweiterbar:** Weitere WFS, auch selbst betriebene, werden per TOML-Datei in `quellen/` angebunden, ohne Code zu ändern. Siehe [Datenquellen anbinden](docs/datenquellen-anbinden.md).
 
 ## Schnellstart (5 Minuten)
@@ -66,7 +68,9 @@ Die Antwort enthält den gefundenen Ort, pro Behördentyp die zuständige(n) Ste
 | Datei / Ordner | Zweck |
 |---|---|
 | `zustaendigkeit.py` | Kernlogik: Quellen-Konfiguration, Geokodierung, WFS-Abruf mit Cache, Punkt-in-Polygon |
-| `quellen/` | Datenquellen als TOML: `bzb-open.toml` (Standard), `bzb-eigen.toml.example` (eigener BZB-WFS) |
+| `behoerdenfinder.py`, `kategorien.toml` | Behördenkategorie + Ort → Stelle mit Kontakt (Flächen + PVOG) |
+| `pvog.py` | Client für den PVOG-Suchdienst (zuständige Stellen, Kontaktdaten, Onlinedienste) |
+| `quellen/` | Datenquellen als TOML: `bzb-open.toml`, `vg250.toml` (Gemeinden mit ARS), `bzb-eigen.toml.example` (eigener BZB-WFS) |
 | `mcp_server.py` | MCP-Server, Streamable HTTP (`/mcp`, `/health`) oder `--transport stdio` |
 | `api.py` | Optionale REST-API (FastAPI) mit OpenAPI unter `/docs`, z. B. für GPT Actions |
 | `examples/` | Beispiel-Chats für OpenAI-kompatible APIs und die Claude-API |
@@ -82,7 +86,7 @@ Die Antwort enthält den gefundenen Ort, pro Behördentyp die zuständige(n) Ste
 make test                                            # Tests, offline
 docker compose up -d                                 # Container auf Port 8000
 docker compose --profile tunnel up -d                # zusätzlich öffentliche URL (docker compose logs tunnel)
-uvicorn api:app --port 8001                          # REST-API statt MCP (/zustaendigkeit, /typen, /quellen)
+uvicorn api:app --port 8001                          # REST-API statt MCP (/behoerde, /kategorien, /zustaendigkeit, /quellen)
 ```
 
 | Variable | Wirkung |
@@ -91,6 +95,7 @@ uvicorn api:app --port 8001                          # REST-API statt MCP (/zust
 | `ZF_TRANSPORT` | `http` (Standard) oder `stdio` |
 | `ZF_VORLADEN=1` | Lädt alle Flächen beim Start, damit schon die erste Antwort schnell kommt |
 | `ZF_QUELLEN` | Quellen-Konfiguration: Dateien oder Ordner, kommagetrennt (Standard `quellen/`) |
+| `ZF_PVOG_URL`, `ZF_PVOG_CLIENT_ID` | PVOG-Suchdienst (Standard `https://pvog.fitko.net/suchdienst/api`) und optionale Client-ID |
 | `ZF_CACHE_DIR` | Ort des Flächen-Caches, ein Unterordner je Quelle (Standard `~/.cache/zustaendigkeit`, 30 Tage gültig) |
 | `ZF_USER_AGENT` | User-Agent für Nominatim und WFS. Für öffentliche Demos einen echten Kontakt eintragen |
 | `ZF_ALLOWED_HOSTS` | Erlaubte Host-Header, kommagetrennt (Schutz vor DNS-Rebinding bei festem Hosting) |
@@ -101,11 +106,11 @@ API-Keys für die Beispiel-Chats stehen in `.env.example`.
 ## Vertrauenswürdigkeit und Grenzen
 
 - **Quellen:** Zuständigkeitsflächen standardmäßig aus [BZB-Open](docs/data-sources.md) des BKG (dl-de/by-2-0), Geokodierung über OpenStreetMap/Nominatim. Jede Antwort nennt die genutzten Quellen mit Quellenvermerk.
-- **Keine Kontaktdaten:** Das Tool liefert keine Anschriften oder Öffnungszeiten. Ergänzt ein LLM sie, sollen sie als nicht aus dem Tool stammend gekennzeichnet sein.
+- **Kontaktdaten:** `behoerde_finden` liefert Anschriften, Telefon und Öffnungszeiten aus PVOG, soweit die Länder sie dort pflegen; `zustaendigkeit_finden` liefert nur Namen. Das LLM ist angewiesen, nichts zu ergänzen.
 - **Adressgenauigkeit:** Ein bloßer Ortsname kann falsch zugeordnet werden. Das Tool weist darauf hin, und das LLM soll nachfragen.
 - **Sonderfälle:** Sonderzuständigkeiten (z. B. zentrale Mahngerichte) sind nicht abgebildet. Verbindlich ist die Auskunft der Behörde.
 - **Nominatim:** höchstens eine Anfrage pro Sekunde. Für den Produktivbetrieb einen eigenen Geocoder einsetzen.
-- **Datenschutz:** Adressen gehen an Nominatim und an den genutzten LLM-Anbieter, siehe [Datenquellen](docs/data-sources.md#datenschutz).
+- **Datenschutz:** Adressen gehen an Nominatim und an den genutzten LLM-Anbieter. PVOG erhält nur den Gemeindeschlüssel (ARS) und den Leistungsschlüssel, keine Adresse. Siehe [Datenquellen](docs/data-sources.md#datenschutz).
 
 ## Weiterentwickeln
 

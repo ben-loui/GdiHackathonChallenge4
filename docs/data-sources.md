@@ -34,9 +34,18 @@ Der Server reiht Anfragen in einem Prozess nacheinander ein (1,1 s Abstand) und 
 
 Ist die Adresse nur auf Ortsebene gefunden worden, enthält das Ergebnis einen Hinweis. Innerhalb eines Ortes kann die Zuständigkeit wechseln.
 
+## Kontaktdaten: Portalverbund-Onlinegateway (PVOG)
+
+| | |
+|---|---|
+| Dienst | Suchdienst-REST-API `https://pvog.fitko.net/suchdienst/api` ([Doku](https://produktportal.pvog.fitko.de/api/suchdienst/)), ohne Anmeldung, optionale Client-ID |
+| Inhalt | Verwaltungsleistungen von Bund, Ländern und Kommunen mit zuständigen Organisationseinheiten, Anschriften, Kommunikationsdaten, Öffnungszeiten und Onlinediensten |
+| Abfrage | Gemeindeschlüssel (ARS, aus VG250) + LeiKa-Leistungsschlüssel, siehe [Behördenfinder](behoerdenfinder.md) |
+| Hinweis | Die alte Adresse `pvog.fitko.de` ist seit 01.08.2026 abgeschaltet. Der PVOG-Endpunkt „Ort zu Koordinate“ lieferte im Test Fehler; den ARS ermitteln wir deshalb selbst über VG250 |
+
 ## Datenschutz
 
-- **Adresse:** Die eingegebene Adresse geht an Nominatim, nicht an das BKG oder andere WFS-Betreiber. Diese erhalten nur Layer-Abrufe ohne Bezug zur Anfrage.
+- **Adresse:** Die eingegebene Adresse geht an Nominatim, nicht an das BKG oder andere WFS-Betreiber. Diese erhalten nur Layer-Abrufe ohne Bezug zur Anfrage. VG250 (BKG) erhält bei der Punktabfrage die Koordinate (nicht die Adresse), PVOG nur den Gemeindeschlüssel und den Leistungsschlüssel.
 - **Speicherung:** Der Server speichert Adressen nicht auf Platte. Sie stehen nur kurz im Speicher-Cache und gegebenenfalls in Zugriffslogs von Tunnel, Hosting und Nominatim.
 - **LLM-Anbieter:** Wer den Server über einen Chat nutzt, gibt die Adresse auch an den jeweiligen LLM-Anbieter weiter.
 - Keine vertraulichen Angaben in Suchanfragen verwenden.
