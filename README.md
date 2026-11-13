@@ -23,6 +23,20 @@ Das Projekt ist aus Challenge 4 „Zuständigkeitsfinder“ des [hack4GDI-DE](do
 
 **Erweiterbar:** Weitere WFS, auch selbst betriebene, werden per TOML-Datei in `quellen/` angebunden, ohne Code zu ändern. Siehe [Datenquellen anbinden](docs/datenquellen-anbinden.md).
 
+## Für die Anbindung an die semantische Suche (Elasticsearch)
+
+Die Suche liefert eine Behördenkategorie (z. B. `finanzamt`), der Behördenfinder die zuständige Stelle mit Kontakt:
+
+```bash
+git clone -b feature/mehrere-wfs-quellen https://github.com/ben-loui/GdiHackathonChallenge4.git
+cd GdiHackathonChallenge4
+make install && make api           # oder: docker compose --profile api up -d --build
+curl -s -X POST localhost:8001/behoerde -H 'Content-Type: application/json' \
+     -d '{"kategorie": "finanzamt", "adresse": "Schillerplatz 1, 55116 Mainz"}'
+```
+
+Schnittstelle, Antwortfelder und Abdeckung der 36 Kategorien: **[docs/behoerdenfinder.md](docs/behoerdenfinder.md)**, interaktiv unter `http://localhost:8001/docs`. Ohne eigenen BZB-WFS fehlen nur Staatsanwaltschaft, örtliches Hauptzollamt und Bundespolizei. Mit WFS: [`bzb-db/`](bzb-db/README.md) (die BZB-Lieferung des BKG ist nicht im Repository).
+
 ## Schnellstart (5 Minuten)
 
 Voraussetzung: Python 3.11 oder neuer.
@@ -70,6 +84,7 @@ Die Antwort enthält den gefundenen Ort, pro Behördentyp die zuständige(n) Ste
 | `zustaendigkeit.py` | Kernlogik: Quellen-Konfiguration, Geokodierung, WFS-Abruf mit Cache, Punkt-in-Polygon |
 | `behoerdenfinder.py`, `kategorien.toml` | Behördenkategorie + Ort → Stelle mit Kontakt (Flächen + PVOG) |
 | `pvog.py` | Client für den PVOG-Suchdienst (zuständige Stellen, Kontaktdaten, Onlinedienste) |
+| `bzb-db/` | Eigener BZB-WFS: PostGIS-Schema, Ladeskript, Docker mit GeoServer (`./start.sh`); Daten separat |
 | `quellen/` | Datenquellen als TOML: `bzb-open.toml`, `vg250.toml` (Gemeinden mit ARS), `bzb-eigen.toml.example` (eigener BZB-WFS) |
 | `mcp_server.py` | MCP-Server, Streamable HTTP (`/mcp`, `/health`) oder `--transport stdio` |
 | `api.py` | Optionale REST-API (FastAPI) mit OpenAPI unter `/docs`, z. B. für GPT Actions |

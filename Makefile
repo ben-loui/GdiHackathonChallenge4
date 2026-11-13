@@ -1,8 +1,9 @@
 # Kurzbefehle. Alle Ziele nutzen das virtuelle Environment .venv.
 PY := .venv/bin/python
 PORT ?= 8000
+API_PORT ?= 8001
 
-.PHONY: install server stdio smoke tunnel test docker clean-cache
+.PHONY: install server api stdio smoke tunnel test docker clean-cache
 
 install:            ## .venv anlegen und alles für Server, Tests und Beispiele installieren
 	python3 -m venv .venv
@@ -11,6 +12,9 @@ install:            ## .venv anlegen und alles für Server, Tests und Beispiele 
 
 server:             ## MCP-Server auf http://localhost:$(PORT)/mcp
 	$(PY) mcp_server.py --port $(PORT) --vorladen
+
+api:                ## REST-API (u. a. /behoerde für die semantische Suche) auf http://0.0.0.0:$(API_PORT), Doku unter /docs
+	$(PY) -m uvicorn api:app --host 0.0.0.0 --port $(API_PORT)
 
 smoke:              ## Beispielabfrage gegen den laufenden Server (URL=... für Tunnel)
 	$(PY) scripts/smoke_test.py $(or $(URL),http://localhost:$(PORT)/mcp)

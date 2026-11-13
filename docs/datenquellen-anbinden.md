@@ -93,7 +93,7 @@ Im Container: Ordner einbinden und `ZF_QUELLEN` setzen, siehe Kommentare in `doc
 
 Das PostGIS-Schema `bzb_ows` aus `bzb-db` (Bundespolizei, Staatsanwaltschaften, THW, Zoll) lässt sich mit Docker als WFS im lokalen Netz bereitstellen:
 
-1. Im Projekt `bzb-db`: `./start.sh`. Das startet PostGIS und GeoServer, lädt die Shapefiles und richtet einen login-geschützten WFS ein (Details im README von `bzb-db`).
+1. Im Ordner [`bzb-db`](../bzb-db/README.md): `./start.sh`. Das startet PostGIS und GeoServer, lädt die Shapefiles und richtet einen login-geschützten WFS ein (Details im README von `bzb-db`).
 2. Die dabei erzeugte `bzb-db/weitergeben/bzb-eigen.toml` (mit der LAN-Adresse) nach `quellen/` kopieren.
 3. `export ZF_BZB_EIGEN_AUTH='benutzer:passwort'` mit den Zugangsdaten, die `start.sh` anzeigt, und den Server neu starten.
 

@@ -1,6 +1,6 @@
 # Beispiel: eigener WFS mit den Behördenzuständigkeitsbereichen (BZB, nicht Open) des BKG
 #
-# Datenbasis: PostGIS-Schema bzb_ows aus dem Projekt bzb-db (eine View je Feature Type),
+# Datenbasis: PostGIS-Schema bzb_ows aus dem Ordner bzb-db (eine View je Feature Type),
 # veröffentlicht z. B. mit GeoServer im Workspace "bzb".
 #
 # Aktivieren:  cp quellen/bzb-eigen.toml.example quellen/bzb-eigen.toml  und wfs_url anpassen.

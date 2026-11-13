@@ -19,6 +19,18 @@ services:
       # - ./quellen-eigen:/quellen-eigen:ro
     restart: unless-stopped
 
+  # REST-API (u. a. POST /behoerde): docker compose --profile api up -d  -> http://localhost:8001/docs
+  api:
+    image: zustaendigkeitsfinder-mcp
+    build: .
+    profiles: ["api"]
+    command: ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8001"]
+    ports:
+      - "8001:8001"
+    volumes:
+      - zf-data:/data
+    restart: unless-stopped
+
   tunnel:
     image: cloudflare/cloudflared:latest
     profiles: ["tunnel"]
