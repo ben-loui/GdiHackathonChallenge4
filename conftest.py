@@ -70,6 +70,12 @@ EIGEN_FEATURES = {
     "bzb:bpol_inspektionen_250": [
         _feature("BPOLI F", None, _rechteck_utm(8, 50, 9, 51), ins_lang="NICHT VERWENDEN (Übersicht)"),
     ],
+    # Bundespolizei See: Fläche in der AWZ der Nordsee (bis ca. 3,1° O) – muss als Deutschland gelten.
+    # In Grad, wie GeoServer sie nach Umprojektion auf das angeforderte EPSG:4326 liefert.
+    "bzb:bpol_direktionen": [
+        _feature("BPOLD BBS See", None, _rechteck(3.1, 53.5, 8.0, 55.9), dir_lang="Bundespolizeidirektion Bad Bramstedt (See)"),
+        _feature("BPOLD KO", None, _rechteck(8, 50, 9, 51), dir_lang="Bundespolizeidirektion Koblenz"),
+    ],
     "bzb:zoll_fks": [
         _feature("fks.1", None, _rechteck_utm(8, 50, 9, 51), hza_lang="Hauptzollamt Gießen",
                  zst_lang="FKS Standort Frankfurt"),
@@ -96,6 +102,12 @@ EIGEN_TOML = textwrap.dedent(f"""\
     name_attribut = "ins_lang"
     uebergeordnet_attribut = "dir_lang"
     anliegen = ["Anzeige am Bahnhof"]
+
+    [[behoerdentyp]]
+    key = "bundespolizeidirektion"
+    label = "Bundespolizeidirektion"
+    layer_suche = "bpol_direktionen"
+    name_attribut = "dir_lang"
 
     [[behoerdentyp]]
     key = "zoll_fks"

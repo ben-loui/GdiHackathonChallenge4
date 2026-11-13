@@ -91,11 +91,13 @@ Im Container: Ordner einbinden und `ZF_QUELLEN` setzen, siehe Kommentare in `doc
 
 ## Beispiel: eigene BZB-Datenbank (`bzb-db`)
 
-Das PostGIS-Schema `bzb_ows` aus `bzb-db` (Bundespolizei, Staatsanwaltschaften, THW, Zoll) ist mit GeoServer sofort als WFS nutzbar:
+Das PostGIS-Schema `bzb_ows` aus `bzb-db` (Bundespolizei, Staatsanwaltschaften, THW, Zoll) lässt sich mit Docker als WFS im lokalen Netz bereitstellen:
 
-1. Datenbank laden: `bzb-db/laden.sh`
-2. GeoServer: Workspace `bzb`, PostGIS-Store auf Schema `bzb_ows` mit Dienstkonto (z. B. Rolle `bzb_leser`), Layer aus den Views außer `datensatz` veröffentlichen.
-3. `cp quellen/bzb-eigen.toml.example quellen/bzb-eigen.toml`, `wfs_url` anpassen, bei geschütztem Dienst `auth_env` setzen.
+1. Im Projekt `bzb-db`: `./start.sh`. Das startet PostGIS und GeoServer, lädt die Shapefiles und richtet einen login-geschützten WFS ein (Details im README von `bzb-db`).
+2. Die dabei erzeugte `bzb-db/weitergeben/bzb-eigen.toml` (mit der LAN-Adresse) nach `quellen/` kopieren.
+3. `export ZF_BZB_EIGEN_AUTH='benutzer:passwort'` mit den Zugangsdaten, die `start.sh` anzeigt, und den Server neu starten.
+
+Ohne Docker: GeoServer selbst einrichten (Workspace `bzb`, PostGIS-Store auf `bzb_ows`) und `quellen/bzb-eigen.toml.example` als Vorlage nehmen.
 
 Die Beispieldatei enthält 16 Behördentypen mit passenden `name_attribut`- und `uebergeordnet_attribut`-Werten, z. B. `zst_lang`/`hza_lang` für Zollstellen.
 

@@ -42,6 +42,9 @@ CACHE_MAX_AGE_TAGE = 30  # Zuständigkeitsflächen ändern sich selten
 TIMEOUT = 60
 SEITENGROESSE = 1000  # Features pro WFS-Request, wenn die Quelle nichts anderes festlegt
 QUELLEN_STANDARD = Path(__file__).with_name("quellen")
+# Grobe Plausibilitätsgrenze (lon/lat) für Deutschland einschließlich der AWZ in Nord- und Ostsee
+# (Bundespolizei See reicht bis etwa 3,1° O).
+DEUTSCHLAND_BBOX = (2.5, 46.5, 16.0, 56.0)
 
 
 # --------------------------------------------------------------------------- #
@@ -424,8 +427,9 @@ def _achsen_korrigieren(gdf: gpd.GeoDataFrame, crs_fallback: str = "EPSG:25832")
     if not all(map(math.isfinite, (minx, miny, maxx, maxy))):
         raise DienstFehler("Ungültige Geometrien im Layer.")
 
-    def lonlat(a, b, c, d):  # grob: Deutschland inkl. Ränder
-        return 5 <= a and c <= 16 and 46.5 <= b and d <= 56
+    def lonlat(a, b, c, d):
+        x0, y0, x1, y1 = DEUTSCHLAND_BBOX
+        return x0 <= a and c <= x1 and y0 <= b and d <= y1
 
     if max(abs(minx), abs(maxx), abs(miny), abs(maxy)) > 1000:  # Meter statt Grad
         if gdf.crs is None or gdf.crs.is_geographic:  # Meterwerte mit Grad-CRS: Angabe falsch
@@ -553,7 +557,8 @@ def finde_zustaendigkeit(
         raise ValueError(f"Unbekannte Behördentypen: {', '.join(unbekannt)}")
 
     if lat is not None and lon is not None:
-        if not (46.5 <= lat <= 56 and 5 <= lon <= 16):
+        x0, y0, x1, y1 = DEUTSCHLAND_BBOX
+        if not (y0 <= lat <= y1 and x0 <= lon <= x1):
             raise ValueError("Koordinate liegt außerhalb Deutschlands (lat/lon vertauscht?).")
         ort = Ort(lat, lon, adresse or f"{lat:.5f}, {lon:.5f}")
     elif adresse:

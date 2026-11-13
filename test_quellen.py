@@ -47,6 +47,14 @@ def test_meterkoordinaten_ohne_crs_werden_umgerechnet(zf_zwei_quellen):
     assert zf_zwei_quellen.zustaendigkeit_an_punkt(50.5, 8.5, "zoll_fks")[0]["name"] == "FKS Standort Frankfurt"
 
 
+def test_flaechen_in_der_awz_gelten_als_deutschland(zf_zwei_quellen):
+    # Regression: Bundespolizei See reicht bis ca. 3,1° O; die Prüfung begann früher bei 5° O.
+    gdf = zf_zwei_quellen.lade_flaechen_fuer("bundespolizeidirektion")
+    assert gdf.total_bounds[0] < 3.2
+    t = zf_zwei_quellen.zustaendigkeit_an_punkt(50.5, 8.5, "bundespolizeidirektion")
+    assert [x["name"] for x in t] == ["Bundespolizeidirektion Koblenz"]
+
+
 def test_exakter_layername_schlaegt_teilstring(zf_zwei_quellen):
     # "bpol_inspektionen" steckt auch in "bpol_inspektionen_250"
     assert zf_zwei_quellen.layer_fuer("bundespolizeiinspektion") == "bzb:bpol_inspektionen"
