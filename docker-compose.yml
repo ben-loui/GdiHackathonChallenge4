@@ -11,8 +11,12 @@ services:
       ZF_VORLADEN: "1"
       # ZF_USER_AGENT: "MeinProjekt/1.0 (kontakt: team@example.org)"
       # ZF_ALLOWED_HOSTS: "meine-domain.de"
+      # Eigene Datenquellen: Ordner einbinden und ZF_QUELLEN setzen (siehe docs/datenquellen-anbinden.md)
+      # ZF_QUELLEN: "/app/quellen,/quellen-eigen"
+      # ZF_BZB_EIGEN_AUTH: "benutzer:passwort"
     volumes:
       - zf-data:/data
+      # - ./quellen-eigen:/quellen-eigen:ro
     restart: unless-stopped
 
   tunnel:

@@ -4,6 +4,7 @@ MCP-Server: Zuständigkeitsfinder als Werkzeug für Chat-LLMs (z. B. Claude als 
 Start:     python mcp_server.py                     -> http://localhost:8000/mcp (Streamable HTTP)
            python mcp_server.py --transport stdio   -> für lokale Clients, die den Server selbst starten
 Umgebung:  PORT (8000), HOST (0.0.0.0), ZF_TRANSPORT (http|stdio), ZF_VORLADEN=1 (Flächen beim Start laden),
+           ZF_QUELLEN (Quellen-Konfiguration, Standard: Ordner quellen/),
            ZF_ALLOWED_HOSTS="meine-domain.de,abc.trycloudflare.com" (optionaler Host-Header-Schutz)
 Benötigt:  mcp>=2 (Python-SDK), zustaendigkeit.py im selben Ordner
 """
@@ -27,19 +28,23 @@ import zustaendigkeit as zf
 
 log = logging.getLogger("zustaendigkeit.mcp")
 
-Behoerdentyp = Literal[
-    "arbeitsagentur", "geschaeftsstelle", "jobcenter", "regionaldirektion",
-    "amtsgericht", "landgericht", "oberlandesgericht",
-]
+Behoerdentyp = Literal[tuple(zf.BEHOERDENTYPEN)]  # aus quellen/*.toml
 
-_anliegen_text = "\n".join(f"- {a} -> {t}" for a, t in zf.ANLIEGEN.items())
+
+def _aufzaehlung(teile: list[str]) -> str:
+    return teile[0] if len(teile) == 1 else ", ".join(teile[:-1]) + " und " + teile[-1]
+
+
+_labels = _aufzaehlung([t.label for t in zf.BEHOERDENTYPEN.values()])
+_quellen_kurz = _aufzaehlung([q.name for q in zf.QUELLEN.values()])
+_anliegen_text = "\n".join(f"- {a} -> {t}" for a, t in zf.ANLIEGEN.items()) or "- (keine Beispiele konfiguriert)"
+_vermerke = "; ".join(q.quellenvermerk for q in zf.QUELLEN.values())
 
 INSTRUCTIONS = f"""\
 Dieser Server ermittelt die örtlich zuständige Stelle in Deutschland anhand amtlicher
-Zuständigkeitsflächen (BZB-Open des BKG).
+Zuständigkeitsflächen ({_quellen_kurz}).
 
-Abgedeckt sind NUR: Agentur für Arbeit, deren Geschäftsstellen, Jobcenter, Regionaldirektionen der
-Bundesagentur für Arbeit sowie Amtsgerichte, Landgerichte und Oberlandesgerichte.
+Abgedeckt sind NUR: {_labels}.
 Für andere Behörden (z. B. Bürgeramt, Kfz-Zulassung, Finanzamt, Ausländerbehörde) liefert der Server
 nichts – sag das offen, statt ein Ergebnis zu konstruieren.
 
@@ -51,40 +56,53 @@ Vorgehen:
 3. Gib den Namen der zuständigen Stelle an und weise auf Hinweise im Ergebnis hin (Grenzlage,
    ungenaue Adresse). Das Ergebnis enthält keine Anschriften oder Öffnungszeiten; die musst du
    ggf. anderweitig recherchieren und als solche kennzeichnen.
-4. Nenne als Quelle: BZB-Open © BKG; Geocoding © OpenStreetMap-Mitwirkende.
+4. Nenne als Quelle die Angabe im Feld "quelle" des Ergebnisses (z. B. {_vermerke}).
 """
 
 server = MCPServer(
     name="zustaendigkeitsfinder",
-    title="Zuständigkeitsfinder (BZB-Open)",
-    description="Örtlich zuständige Arbeitsagentur, Jobcenter oder Gericht zu einer Adresse in Deutschland.",
+    title=f"Zuständigkeitsfinder ({_quellen_kurz})",
+    description=f"Örtlich zuständige Stelle zu einer Adresse in Deutschland: {_labels}.",
     instructions=INSTRUCTIONS,
-    version="0.1.0",
+    version="0.2.0",
 )
 
 
 def _kompakt(erg: dict) -> dict:
     """Ergebnis fürs LLM: Name zuerst, Rohattribute behalten, Geometrie weglassen."""
+    def eintrag(e: dict) -> dict:
+        treffer = e.get("treffer", [])
+        out = {"behoerde": e["label"], "zustaendig": [t["name"] for t in treffer]}
+        if any("uebergeordnet" in t for t in treffer):
+            out["uebergeordnet"] = [t.get("uebergeordnet") for t in treffer]
+        out["details"] = [t["attribute"] for t in treffer]
+        for k in ("hinweis", "fehler"):
+            if e.get(k):
+                out[k] = e[k]
+        return out
+
+    vermerke = [q["quellenvermerk"] for q in erg["quellen"]]
+    if erg.get("geocoding"):
+        vermerke.append("Geocoding " + erg["geocoding"])
     return {
         "ort": {"gefunden_als": erg["ort"]["anzeige"], "lat": erg["ort"]["lat"],
                 "lon": erg["ort"]["lon"], "hinweise": erg["ort"]["hinweise"]},
-        "ergebnisse": [
-            {
-                "behoerde": e["label"],
-                "zustaendig": [t["name"] for t in e.get("treffer", [])],
-                "details": [t["attribute"] for t in e.get("treffer", [])],
-                **({"hinweis": e["hinweis"]} if e.get("hinweis") else {}),
-                **({"fehler": e["fehler"]} if e.get("fehler") else {}),
-            }
-            for e in erg["ergebnisse"]
-        ],
-        "quelle": "BZB-Open © BKG (dl-de/by-2-0); Geocoding © OpenStreetMap-Mitwirkende",
+        "ergebnisse": [eintrag(e) for e in erg["ergebnisse"]],
+        "quelle": "; ".join(vermerke),
     }
 
 
 @server.tool(
     name="zustaendigkeit_finden",
     title="Zuständige Stelle zu einer Adresse finden",
+    description=f"""Ermittelt für eine Adresse in Deutschland die örtlich zuständige Stelle: {_labels}.
+
+Args:
+    adresse: Vollständige Straßenadresse, z. B. "Jakob-Welder-Weg 18, 55128 Mainz".
+    behoerdentypen: Welche Behörden gesucht werden. Ohne Angabe: alle. Möglichst nur die zum Anliegen passenden.
+    lat: Breitengrad (WGS84), alternativ zur Adresse; nur zusammen mit lon.
+    lon: Längengrad (WGS84), alternativ zur Adresse; nur zusammen mit lat.
+""",
     annotations=ToolAnnotations(read_only_hint=True, destructive_hint=False,
                                 idempotent_hint=True, open_world_hint=True),
 )
@@ -94,15 +112,6 @@ def zustaendigkeit_finden(
     lat: float | None = None,
     lon: float | None = None,
 ) -> dict:
-    """Ermittelt für eine Adresse in Deutschland die örtlich zuständige Agentur für Arbeit,
-    Geschäftsstelle, Jobcenter, Regionaldirektion, Amtsgericht, Landgericht oder Oberlandesgericht.
-
-    Args:
-        adresse: Vollständige Straßenadresse, z. B. "Jakob-Welder-Weg 18, 55128 Mainz".
-        behoerdentypen: Welche Behörden gesucht werden. Ohne Angabe: alle. Möglichst nur die zum Anliegen passenden.
-        lat: Breitengrad (WGS84), alternativ zur Adresse; nur zusammen mit lon.
-        lon: Längengrad (WGS84), alternativ zur Adresse; nur zusammen mit lat.
-    """
     try:
         erg = zf.finde_zustaendigkeit(adresse, lat=lat, lon=lon, typen=behoerdentypen)
     except zf.AdresseNichtGefunden as e:
@@ -122,14 +131,15 @@ async def health(_request: Request) -> JSONResponse:
         "server": server.name,
         "version": server.version,
         "mcp_endpunkt": "/mcp",
-        "geladene_layer": sorted(zf._flaechen),
+        "quellen": sorted(zf.QUELLEN),
+        "geladene_layer": zf.geladene_layer(),
     })
 
 
 def _vorladen():
     for typ in zf.BEHOERDENTYPEN:
         try:
-            zf.lade_flaechen(zf.layer_fuer(typ))
+            zf.lade_flaechen_fuer(typ)
             log.info("Vorgeladen: %s", typ)
         except Exception as e:  # Start nicht blockieren
             log.warning("Vorladen %s fehlgeschlagen: %s", typ, e)

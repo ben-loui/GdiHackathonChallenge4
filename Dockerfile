@@ -5,6 +5,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY zustaendigkeit.py mcp_server.py api.py ./
+COPY quellen ./quellen
 
 ENV PORT=8000 \
     ZF_VORLADEN=1 \

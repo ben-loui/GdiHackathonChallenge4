@@ -14,8 +14,9 @@ import zustaendigkeit as zf
 
 app = FastAPI(
     title="Zuständigkeitsfinder",
-    version="0.1.0",
-    description="Adresse + Behördentyp → zuständige Stelle. Daten: BZB-Open (BKG).",
+    version="0.2.0",
+    description="Adresse + Behördentyp → zuständige Stelle. Daten: "
+                + ", ".join(q.titel for q in zf.QUELLEN.values()) + ".",
 )
 app.add_middleware(
     CORSMiddleware,
@@ -28,6 +29,12 @@ app.add_middleware(
 def typen():
     """Verfügbare Behördentypen."""
     return zf.typen()
+
+
+@app.get("/quellen")
+def quellen():
+    """Konfigurierte Datenquellen (WFS) mit Lizenz und Quellenvermerk."""
+    return zf.quellen()
 
 
 @app.get("/anliegen")

@@ -13,8 +13,10 @@ def test_eindeutiger_treffer(zf):
     assert [t["name"] for t in e["treffer"]] == ["AG West"]
     assert e["treffer"][0]["attribute"]["dst_nr"] == "111"
     assert "hinweis" not in e
-    assert erg["quelle"]["herausgeber"].startswith("Bundesamt")
-    assert erg["quelle"]["geocoding"] is None
+    assert [q["id"] for q in erg["quellen"]] == ["bzb_open"]
+    assert erg["quellen"][0]["herausgeber"].startswith("Bundesamt")
+    assert e["quelle"] == "bzb_open"
+    assert erg["geocoding"] is None
 
 
 def test_grenzlage_liefert_beide_flaechen_und_hinweis(zf):
@@ -48,16 +50,16 @@ def test_vertauschte_achsen_werden_korrigiert(zf):
 
 def test_paging_laedt_alle_features(zf, mock_wfs, monkeypatch):
     monkeypatch.setattr(zf, "SEITENGROESSE", 2)
-    gdf = zf.lade_flaechen("bzb-open:justiz_landgerichte")
+    gdf = zf.lade_flaechen("bzb_open", "bzb-open:justiz_landgerichte")
     assert len(gdf) == 5
     seiten = [a for a in mock_wfs.aufrufe if a["request"] == "GetFeature"]
     assert [a["startIndex"] for a in seiten] == [0, 2, 4]
 
 
 def test_dateicache_verhindert_erneuten_abruf(zf, mock_wfs):
-    zf.lade_flaechen("bzb-open:ba_arbeitsagenturen")
+    zf.lade_flaechen("bzb_open", "bzb-open:ba_arbeitsagenturen")
     zf._flaechen.clear()  # Speicher leeren, Datei bleibt
-    zf.lade_flaechen("bzb-open:ba_arbeitsagenturen")
+    zf.lade_flaechen("bzb_open", "bzb-open:ba_arbeitsagenturen")
     assert sum(a["request"] == "GetFeature" for a in mock_wfs.aufrufe) == 1
 
 
@@ -81,7 +83,7 @@ def test_adresse_wird_geokodiert(zf, monkeypatch):
     erg = zf.finde_zustaendigkeit("Teststraße 1", typen=["arbeitsagentur"])
     assert erg["ort"]["anzeige"] == "Teststraße 1, Testort"
     assert erg["ort"]["hinweise"] == ["Hinweis"]
-    assert "OpenStreetMap" in erg["quelle"]["geocoding"]
+    assert "OpenStreetMap" in erg["geocoding"]
     assert erg["ergebnisse"][0]["treffer"][0]["name"] == "AG West"
 
 

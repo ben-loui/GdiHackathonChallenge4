@@ -1,0 +1,59 @@
+# Datenquelle: Behördenzuständigkeitsbereiche Open (BZB-Open) des BKG
+#
+# Eine Datei je WFS. Alle *.toml in diesem Ordner werden geladen (siehe ZF_QUELLEN).
+# Aufbau und alle Felder: docs/datenquellen-anbinden.md
+
+[quelle]
+id = "bzb_open"
+kurzname = "BZB-Open"
+titel = "Behördenzuständigkeitsbereiche Open (BZB-Open)"
+herausgeber = "Bundesamt für Kartographie und Geodäsie (BKG)"
+wfs_url = "https://sgx.geodatenzentrum.de/wfs_bzb_open"
+lizenz = "dl-de/by-2-0"
+quellenvermerk = "BZB-Open © BKG (dl-de/by-2-0)"
+info_url = "https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf"
+
+# layer       = fester Feature-Type-Name (kein GetCapabilities nötig)
+# layer_suche = Name ohne Namensraum oder Teilstring, wird in GetCapabilities gesucht
+# anliegen    = Beispiele, mit denen das LLM vom Anliegen auf den Typ schließt.
+#               Vor Produktivbetrieb fachlich prüfen lassen.
+
+[[behoerdentyp]]
+key = "arbeitsagentur"
+label = "Agentur für Arbeit"
+layer = "bzb-open:ba_arbeitsagenturen"
+anliegen = ["Arbeitslosengeld beantragen / arbeitsuchend melden", "Berufsberatung"]
+
+[[behoerdentyp]]
+key = "geschaeftsstelle"
+label = "Geschäftsstelle der Agentur für Arbeit"
+layer_suche = "geschaeftsstellen"
+
+[[behoerdentyp]]
+key = "jobcenter"
+label = "Jobcenter"
+layer_suche = "jobcenter"
+anliegen = ["Grundsicherung für Arbeitsuchende beantragen"]
+
+[[behoerdentyp]]
+key = "regionaldirektion"
+label = "Regionaldirektion der Bundesagentur für Arbeit"
+layer_suche = "regionaldirektionen"
+
+[[behoerdentyp]]
+key = "amtsgericht"
+label = "Amtsgericht"
+layer_suche = "amtsgerichte"
+anliegen = ["Betreuung, Nachlass, Familiensachen, Grundbuch"]
+
+[[behoerdentyp]]
+key = "landgericht"
+label = "Landgericht"
+layer_suche = "landgerichte"
+anliegen = ["Zivilklage mit hohem Streitwert"]
+
+[[behoerdentyp]]
+key = "oberlandesgericht"
+label = "Oberlandesgericht"
+layer_suche = "oberlandesgerichte"
+anliegen = ["Berufung gegen ein Urteil des Landgerichts"]

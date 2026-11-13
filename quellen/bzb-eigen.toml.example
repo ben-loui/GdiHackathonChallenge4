@@ -1,0 +1,148 @@
+# Beispiel: eigener WFS mit den Behördenzuständigkeitsbereichen (BZB, nicht Open) des BKG
+#
+# Datenbasis: PostGIS-Schema bzb_ows aus dem Projekt bzb-db (eine View je Feature Type),
+# veröffentlicht z. B. mit GeoServer im Workspace "bzb".
+#
+# Aktivieren:  cp quellen/bzb-eigen.toml.example quellen/bzb-eigen.toml  und wfs_url anpassen.
+#
+# ACHTUNG Lizenz: BZB ist nur für Bundesbehörden und Nutzungsberechtigte nach § 4 V GeoBund
+# freigegeben, je nach Vertrag nur für einzelne Themen. Einen öffentlich erreichbaren
+# MCP-Server nicht mit dieser Quelle betreiben, wenn das nicht ausdrücklich erlaubt ist.
+
+[quelle]
+id = "bzb_eigen"
+kurzname = "BZB"
+titel = "Behördenzuständigkeitsbereiche (BZB)"
+herausgeber = "Bundesamt für Kartographie und Geodäsie (BKG), eigener Dienst"
+wfs_url = "http://localhost:8080/geoserver/bzb/ows"
+lizenz = "Nutzungsbedingungen BZB (BKG), nur für Nutzungsberechtigte"
+quellenvermerk = "BZB © BKG (2026), Datenquellen: sg.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb.pdf"
+info_url = "https://sg.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb.pdf"
+
+# Optional, Standardwerte passen für GeoServer:
+# wfs_version   = "1.1.0"            # "2.0.0" nutzt typeNames/count statt typeName/maxFeatures
+# output_format = "application/json" # MapServer: "geojson", QGIS Server: "application/vnd.geo+json"
+# seitengroesse = 1000
+crs_fallback = "EPSG:25832"          # Speicher-CRS der Views, falls die Antwort kein CRS nennt
+# HTTP-Basic-Auth: Name einer Umgebungsvariable mit "benutzer:passwort" (nie das Passwort hier eintragen)
+# auth_env = "ZF_BZB_EIGEN_AUTH"
+
+# layer_suche trifft bei GeoServer "bzb:<view>" über den Namen ohne Namensraum genau.
+# name_attribut / uebergeordnet_attribut: Attribute mit dem Namen der zuständigen bzw. übergeordneten Stelle.
+
+# ------------------------------------------------------------------ Bundespolizei
+[[behoerdentyp]]
+key = "bundespolizeidirektion"
+label = "Bundespolizeidirektion"
+layer_suche = "bpol_direktionen"
+name_attribut = "dir_lang"
+
+[[behoerdentyp]]
+key = "bundespolizeiinspektion"
+label = "Bundespolizeiinspektion"
+layer_suche = "bpol_inspektionen"
+name_attribut = "ins_lang"
+uebergeordnet_attribut = "dir_lang"
+anliegen = ["Anzeige zu einem Vorfall am Bahnhof oder Flughafen erstatten"]
+
+[[behoerdentyp]]
+key = "bundespolizei_grenze_aut"
+label = "Bundespolizeiinspektion (30-km-Zone Österreich)"
+layer_suche = "bpol_deu_aut"
+name_attribut = "ins_lang"
+uebergeordnet_attribut = "dir_lang"
+
+# ------------------------------------------------------------ Staatsanwaltschaften
+[[behoerdentyp]]
+key = "staatsanwaltschaft"
+label = "Staatsanwaltschaft"
+layer_suche = "sta_staatsanwaltschaften"
+name_attribut = "name"
+uebergeordnet_attribut = "uebergeord"
+anliegen = ["Strafanzeige schriftlich bei der Staatsanwaltschaft einreichen"]
+
+# ---------------------------------------------------------------------------- THW
+[[behoerdentyp]]
+key = "thw_landesverband"
+label = "THW-Landesverband"
+layer_suche = "thw_landesverband"
+name_attribut = "lv_lang"
+
+[[behoerdentyp]]
+key = "thw_regionalstelle"
+label = "THW-Regionalstelle"
+layer_suche = "thw_regionalstellen"
+name_attribut = "rst_lang"
+uebergeordnet_attribut = "lv_lang"
+anliegen = ["Ehrenamtlich beim THW mitmachen"]
+
+# --------------------------------------------------------------------------- Zoll
+[[behoerdentyp]]
+key = "hauptzollamt"
+label = "Hauptzollamt"
+layer_suche = "zoll_hauptza"
+name_attribut = "hza_lang"
+
+[[behoerdentyp]]
+key = "zollfahndungsamt"
+label = "Zollfahndungsamt"
+layer_suche = "zoll_zfa"
+name_attribut = "zfa_lang"
+
+[[behoerdentyp]]
+key = "zoll_agrardiesel"
+label = "Zoll – Agrardieselvergütung"
+layer_suche = "zoll_agrar"
+name_attribut = "zst_lang"
+uebergeordnet_attribut = "hza_lang"
+anliegen = ["Agrardiesel-Vergütung beantragen"]
+
+[[behoerdentyp]]
+key = "zoll_ausfuhr"
+label = "Zoll – Ausfuhrzollstelle"
+layer_suche = "zoll_ausfuhr"
+name_attribut = "zst_lang"
+uebergeordnet_attribut = "hza_lang"
+anliegen = ["Ware für den Export anmelden"]
+
+[[behoerdentyp]]
+key = "zoll_fks"
+label = "Zoll – Finanzkontrolle Schwarzarbeit"
+layer_suche = "zoll_fks"
+name_attribut = "zst_lang"
+uebergeordnet_attribut = "hza_lang"
+anliegen = ["Schwarzarbeit oder Mindestlohnverstoß melden"]
+
+[[behoerdentyp]]
+key = "zoll_kfzsteuer"
+label = "Zoll – Kfz-Steuer (Hauptzollamt)"
+layer_suche = "zoll_kfzsteuer"
+name_attribut = "hza_lang"
+anliegen = ["Frage zum Kfz-Steuerbescheid"]
+
+[[behoerdentyp]]
+key = "zoll_kfzsteuer_festsetzung"
+label = "Zoll – Kfz-Steuer-Festsetzungsstelle"
+layer_suche = "zoll_kfzsteuerfest"
+name_attribut = "zst_lang"
+uebergeordnet_attribut = "hza_lang"
+
+[[behoerdentyp]]
+key = "zoll_strabu"
+label = "Zoll – Straf- und Bußgeldstelle"
+layer_suche = "zoll_strabu"
+name_attribut = "hza_lang"
+
+[[behoerdentyp]]
+key = "zoll_verwertung"
+label = "Zoll – Verwertungsstelle"
+layer_suche = "zoll_verwertung"
+name_attribut = "zst_lang"
+uebergeordnet_attribut = "hza_lang"
+
+[[behoerdentyp]]
+key = "zoll_vollstreckung"
+label = "Zoll – Vollstreckungsstelle"
+layer_suche = "zoll_vollstreckung"
+name_attribut = "zst_lang"
+uebergeordnet_attribut = "hza_lang"
