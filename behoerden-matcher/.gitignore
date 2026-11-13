@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+data/fim.jsonl
+data/fim-land.jsonl
+data/normalisiert.jsonl
+data/*.tmp
+.env

@@ -1,0 +1,395 @@
+{
+  "categories": [
+    "bafoegamt",
+    "bundesamt_migration",
+    "bundesverwaltungsamt"
+  ],
+  "queries": [
+    {
+      "q": "\"Amt Ausbildungsförderung BAföG\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"BAMF Außenstellen\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Bundesverwaltungsamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    }
+  ]
+}
+BAföG - Bundesgesetz über individuelle Förderung der Ausbildung (https://www.gesetze-im-internet.de/baf_g/BJNR014090971.html)
+citeturn27search0 [wordlim: 200] Published: 55.3 years ago; Crawled: yesterday; # Bundesgesetz über individuelle Förderung der Ausbildung (Bundesausbildungsförderungsgesetz - BAföG) ... (3) Jedes Land bestimmt die zuständigen Behörden für die Entscheidungen nach § 2 Absatz 2 und § 3 Absatz 4 hinsichtlich der Ausbildungsstätten und Fernlehrinstitute, die ihren Sitz in diesem Land haben. ... Die Länder können bestimmen, dass das an einer staatlichen Hochschule errichtete Amt für Ausbildungsförderung auch zuständig ist für Auszubildende, die an anderen Hochschulen immatrikuliert sind, und andere Auszubildende, die Ausbildungsförderung wie Studierende an Hochschulen erhalten. ... Das Bundesministerium für Bildung und Forschung bestimmt durch Rechtsverordnung ohne Zustimmung des Bundesrates, welches Land das für alle Auszubildenden, die die in einem anderen Staat gelegenen Ausbildungsstätten besuchen, örtlich zuständige Amt bestimmt. ... der jeweilige Arbeitgeber auf Verlangen dem Auszubildenden, seinen Eltern und seinem Ehegatten oder Lebenspartner sowie dem Amt für Ausbildungsförderung eine Bescheinigung über den Arbeitslohn und den als Lohnsteuerabzugsmerkmal mitgeteilten Freibetrag auszustellen,
+
+Nichtamtliches Inhaltsverzeichnis
+
+### § 40 Ämter für Ausbildungsförderung
+
+(1) Die Länder errichten für jeden Kreis und jede kreisfreie Stadt ein Amt für Ausbildungsförderung. Die Länder können für mehrere Kreise oder kreisfreie Städte ein gemeinsames Amt für Ausbildungsförderung errichten. Im Land Berlin können mehrere Ämter für Ausbildungsförderung errichtet werden. In den Ländern Berlin, Bremen und Hamburg kann davon abgesehen werden, Ämter für Ausbildungsförderung zu errichten.
+
+(2) Für Auszubildende, die eine im Inland gelegene Hochschule besuchen, richten die Länder abweichend von Absatz 1 Ämter für Ausbildungsförderung bei staatlichen Hochschulen oder bei Studentenwerken ein; diesen kann auch die Zuständigkeit für andere Auszubildende übertragen werden, die Ausbildungsförderung wie Studierende an Hochschulen erhalten. Die Länder können bestimmen, dass ein bei einer staatlichen Hochschule errichtetes Amt für Ausbildungsförderung ein Studentenwerk zur Durchführung seiner Aufgaben heranzieht. 
+## Abschnitt IX
+Verfahren
+
+Nichtamtliches Inhaltsverzeichnis
+
+### § 45 Örtliche Zuständigkeit
+
+(1) Für die Entscheidung über die Ausbildungsförderung ist das Amt für Ausbildungsförderung zuständig, in dessen Bezirk die Eltern des Auszubildenden oder, wenn nur noch ein Elternteil lebt, dieser den ständigen Wohnsitz haben. Das Amt für Ausbildungsförderung, in dessen Bezirk der Auszubildende seinen ständigen Wohnsitz hat, ist zuständig, wenn
+
+1.
+    
+
+der Auszubildende verheiratet oder in einer Lebenspartnerschaft verbunden ist oder war,
+
+2.
+    
+
+seine Eltern nicht mehr leben,
+
+3.
+    
+
+dem überlebenden Elternteil die elterliche Sorge nicht zusteht oder bei Erreichen der Volljährigkeit des Auszubildenden nicht zustand,
+
+4.
+    
+
+nicht beide Elternteile ihren ständigen Wohnsitz in dem Bezirk desselben Amtes für Ausbildungsförderung haben,
+
+5.
+    
+
+kein Elternteil einen Wohnsitz im Inland hat,
+
+6.
+    
+
+der Auszubildende eine Fachschulklasse besucht, deren Besuch eine abgeschlossene Berufsausbildung voraussetzt,
+
+7.
+    
+
+der Auszubildende Ausbildungsförderung für die Teilnahme an Fernunterrichtslehrgängen erhält (§ 3).
+
+Hat in den Fällen des Satzes 2 der Auszubildende im Inland keinen ständigen Wohnsitz, so ist das Amt für Ausbildungsförderung zuständig, in dessen Bezirk die Ausbildungsstätte liegt.
+
+(2) Abweichend von Absatz 1 ist für die Auszubildenden an
+
+1.
+    
+
+Abendgymnasien und Kollegs,
+
+2.
+    
+
+Höheren Fachschulen und Akademien
+
+das Amt für Ausbildungsförderung zuständig, in dessen Bezirk die Ausbildungsstätte gelegen ist, die der Auszubildende besucht.
+
+(3) Abweichend von den Absätzen 1 und 2 ist das bei einer staatlichen Hochschule errichtete Amt für Ausbildungsförderung für die an dieser Hochschule immatrikulierten Auszubildenden zuständig; diese Zuständigkeit gilt auch für Auszubildende, die im Zusammenhang mit dem Hochschulbesuch ein Vor- oder Nachpraktikum ableisten. Die Länder können bestimmen, dass das an einer staatlichen Hochschule errichtete Amt für Ausbildungsförderung auch zuständig ist für Auszubildende, die an anderen Hochschulen immatrikuliert sind, und andere Auszubildende, die Ausbildungsförderung wie Studierende an Hochschulen erhalten. Ist das Amt für Ausbildungsförderung bei einem Studentenwerk errichtet, so wird dessen örtliche Zuständigkeit durch das Land bestimmt.
+
+(4) Für die Entscheidung über Ausbildungsförderung für eine Ausbildung im Ausland nach § 5 Absatz 2 und 5 sowie § 6 ist ausschließlich das durch das zuständige Land bestimmte Amt für Ausbildungsförderung örtlich zuständig. Das Bundesministerium für Bildung und Forschung bestimmt durch Rechtsverordnung ohne Zustimmung des Bundesrates, welches Land das für alle Auszubildenden, die die in einem anderen Staat gelegenen Ausbildungsstätten besuchen, örtlich zuständige Amt bestimmt.
+
+### § 45a Wechsel in der Zuständigkeit
+
+(1) Wird ein anderes Amt für Ausbildungsförderung zuständig, so tritt dieses Amt für sämtliche Verwaltungshandlungen einschließlich des Vorverfahrens an die Stelle des bisher zuständigen Amtes. § 2 Absatz 2 des Zehnten Buches Sozialgesetzbuch bleibt unberührt.
+
+(2) Hat die örtliche Zuständigkeit gewechselt, muss das bisher zuständige Amt die Leistungen noch solange erbringen, bis sie von dem nunmehr zuständigen Amt fortgesetzt werden.
+
+(3) Sobald ein Amt zuständig ist, das in einem anderen Land liegt, gehen die Ansprüche nach § 50 Absatz 1 des Zehnten Buches Sozialgesetzbuch und § 20 auf dieses Land über.
+
+Nichtamtliches Inhaltsverzeichnis
+
+### § 46 Antrag
+
+(1) Über die Leistung von Ausbildungsförderung wird auf schriftlichen oder elektronischen Antrag entschieden.
+
+(2) Der Antrag ist an das örtlich zuständige Amt für Ausbildungsförderung zu richten. Die zur Feststellung des Anspruchs erforderlichen Tatsachen sind auf den Formblättern anzugeben, soweit solche vorgesehen sind.
+--------------------------------------------------------------------------------
+BayAGBAföG: Art. 1 Zuständigkeit der Kreisverwaltung - Bürgerservice (https://www.gesetze-bayern.de/Content/Document/BayAGBAfoeG-1)
+citeturn27search1 [wordlim: 200] Crawled: 3 weeks ago; (1) ^{1}Für jede kreisfreie Gemeinde und für jeden Landkreis wird bei der Kreisverwaltungsbehörde ein Amt für Ausbildungsförderung errichtet. ... (2) Die kreisfreien Gemeinden vollziehen die den Ämtern für Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz (BAföG)^{1)} und diesem Gesetz obliegenden Aufgaben als Angelegenheit des übertragenen Wirkungskreises. ... 5 BAföG abgeleisteter Praktika ist das Amt für Ausbildungsförderung der Landeshauptstadt München zuständig.
+
+BayAGBAföG
+
+Text gilt ab: 01.01.2023
+
+Fassung: 27.06.1980
+
+Art. 1
+
+Zuständigkeit der Kreisverwaltung
+
+(1) ^{1}Für jede kreisfreie Gemeinde und für jeden Landkreis wird bei der Kreisverwaltungsbehörde ein Amt für Ausbildungsförderung errichtet. ^{2}Durch gemeinsame Rechtsverordnung des Staatsministeriums des Innern, für Sport und Integration und des Staatsministeriums für Wissenschaft und Kunst (Staatsministerium) kann ein Amt für Ausbildungsförderung als für mehrere kreisfreie Gemeinden und Landkreise zuständig erklärt werden.
+
+(2) Die kreisfreien Gemeinden vollziehen die den Ämtern für Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz (BAföG)^{1)} und diesem Gesetz obliegenden Aufgaben als Angelegenheit des übertragenen Wirkungskreises.
+
+(3) Für die Förderung des Besuchs einer im Gebiet der Republik Österreich gelegenen Ausbildungsstätte nach § 5 Abs. 2 und § 6 BAföG sowie für die Förderung dort nach § 5 Abs. 5 BAföG abgeleisteter Praktika ist das Amt für Ausbildungsförderung der Landeshauptstadt München zuständig.
+
+(4) Fachaufsichtsbehörde für alle Ämter für Ausbildungsförderung ist die Regierung von Niederbayern.
+
+^{1) }[Amtl. Anm.:] BGBl. FN 2171-2--------------------------------------------------------------------------------
+Durchführung des Bundesausbildungsförderungsgesetzes mit Hilfe der automatisierten Datenverarbeitung (Arbeitsanweisung zum BAföG-ADV-Verfahren) Gem. RdErl. des Ministeriums für Schule und Weiterbildung 225.2.06.11.01-75396/09- - u. d. Ministeriums für Inn | RECHT.NRW.DE (https://recht.nrw.de/lrmb/verwaltungsvorschrift/durchfuehrung-des-bundesausbildungsfoerderungsgesetzes-mit-hilfe-der-0/)
+citeturn27search2 [wordlim: 200] Published: 17.8 years ago; Crawled: last month; Die Ermittlung der Daten und ihre Eingabe in das maschinelle Verfahren obliegen ausschließlich dem zuständigen Amt für Ausbildungsförderung. ... -   aufgrund der mitgeteilten Daten die Förderungsleistungen zu berechnen und zahlbar zu machen, ... Der IT NRW - Niederlassung Köln ist für Erstellung, Pflege und Fortentwicklung der in Zusammenhang mit der Durchführung des BAföG erforderlichen Programme unter Zugrundelegen der vom Bundesministerium für Bildung und Forschung zur Verfügung gestellten Programmablaufpläne und Programme in ihrer jeweils geltenden Fassung zuständig.
+
+2
+Zuständigkeiten
+
+2.1
+Ämter für Ausbildungsförderung
+
+Die Ermittlung der Daten und ihre Eingabe in das maschinelle Verfahren obliegen ausschließlich dem zuständigen Amt für Ausbildungsförderung.
+
+Die Erfassung der Daten und ihre Übermittlung an den IT.NRW beinhalten die Entscheidung des zuständigen Amtes für Ausbildungsförderung über den Antrag auf Ausbildungsförderung und ggf. den Auftrag,
+
+-   aufgrund der mitgeteilten Daten die Förderungsleistungen zu berechnen und zahlbar zu machen,
+
+-   den Bescheid über Ausbildungsförderung im Namen des Amtes für Ausbildungsförderung zu fertigen und an den Empfänger zu versenden und
+
+-   die aufgrund von Rückforderungsansprüchen, übergeleiteten Ansprüchen und Ersatzansprüchen eingezahlten Beträge beim Haushaltstitel zu vereinnahmen.
+
+2.2
+Landesbetrieb Information und Technik (IT.NRW)
+
+Der IT.NRW führt die Be-, Rück- und Abrechnung der Förderungsleistungen unter Zugrundelegen der vom IT.NRW - Niederlassung Köln zur Verfügung gestellten Programme durch.
+
+Darüber hinaus obliegt ihm die Meldung der Daten für die Bundesstatistik nach § 55 BAföG.
+
+2.3
+Landesbetrieb Information und Technik - Niederlassung Köln (IT.NRW - Niederlassung Köln)
+
+--------------------------------------------------------------------------------
+Datenbestände zum BAföG - Verwaltungsdaten-Informationsplattform (https://www.verwaltungsdaten-informationsplattform.de/register/74)
+citeturn27search3 [wordlim: 200] Crawled: last month; Im Bundesausbildungsförderungsgesetz (BAföG) wird die staatliche Unterstützung für die Ausbildung von Schülerinnen und Schülern an berufsbildenden Schulen sowie Studierenden geregelt. ... Daher wird die steuerliche Identifikationsnummer künftig als zusätzliches eindeutiges Ordnungsmerkmal eingeführt bzw. (beziehungsweise) verwendet, um die Zuordnung und den Abgleich von Datensätzen einer Person im Zusammenhang mit der Erbringung von digitalen Verwaltungsleistungen zu ermöglichen. ... Ehegatten oder Lebenspartner der nach BAföG (Bundesausbildungsförderungsgesetz) geförderten auszubildenden Person. ... ### Zuständigkeiten ... Ausbildungsförderung nach dem BAföG (Bundesausbildungsförderungsgesetz) wird seit dem Wintersemester 2019 / 2020 nicht mehr als verzinsliches Bankdarlehen gewährt, d. h. (das heißt) das Amt übermittelt der KfW (Kreditanstalt für Wiederaufbau) auch keine Daten mehr. ...   * Gebiet(e)Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Niedersachsen, Saarland, Sachsen-Anhalt, Schleswig-Holstein, Thüringen:Unterschiede
+## Administrative Registerführung
+
+### Vergleichbare Verwaltungsebene
+
+Kommunal
+
+### Ressort
+
+### Zuständigkeiten
+
+Im Auftrag des Bundes bestimmen die Länder für jeden Kreis oder jede kreisfreie Stadt oder im Verbund kommunale Ämter für Ausbildungsförderung bzw. (beziehungsweise) Studierendenwerke an den Hochschulen.
+
+Daneben kann jedes Land Landesämter für Ausbildungsförderung errichten.
+
+Fachlich-inhaltlich werden die Daten von den Ämtern für Ausbildungsförderung bzw. (beziehungsweise) Studierendenwerken verwaltet.
+
+Technisch werden die Daten in externen zentralen Rechenzentren gehostet.
+
+### Öffentliche Datenbereitstellung
+
+Kein
+
+### Nicht-öffentlicher Datenzugang
+
+Einsichtnahmen in die einzelnen Bewilligungsvorgänge durch Betroffene oder dritte Bevollmächtigte sind entsprechend den dafür geltenden gesetzlichen Vorschriften möglich.
+
+### Datenlieferungen (eingehend/ ausgehend)
+
+Eingehende Datenlieferungen erfolgen bei Antragstellung, Aktualisierungsanträgen sowie bei Änderungsmitteilungen.
+
+Die Daten werden aus den papierenen BAföG (Bundesausbildungsförderungsgesetz)-Anträgen (auch bei Vorausleistungsanträgen) manuell in die Fachanwendung eingepflegt. Anträge, die über den bundesweit einheitlichen Antragsassistenten „BAföG (Bundesausbildungsförderungsgesetz) Digital“ gestellt werden, können durch die jeweiligen BAföG (Bundesausbildungsförderungsgesetz)-Ämter in die Fachverfahren importiert werden.
+
+Die Ämter für Ausbildungsförderung dürfen Personen, die Leistungen nach BAföG (Bundesausbildungsförderungsgesetz) beziehen, auch regelmäßig im Wege des automatisierten Datenabgleichs daraufhin überprüfen, ob und welche Daten nach § 45d Abs. (Absatz) 1 des Einkommensteuergesetzes dem Bundeszentralamt für Steuern übermittelt worden sind. Die Ämter für Ausbildungsförderung dürfen zu diesem Zweck Namen, Vornamen, Geburtsdatum und Anschrift der Personen, die Leistungen nach diesem Gesetz beziehen, sowie die Amts- und Förderungsnummer an das Bundeszentralamt für Steuern übermitteln. 
+keyboard_arrow_down
+
+  * Gebiet(e)Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Niedersachsen, Saarland, Sachsen-Anhalt, Schleswig-Holstein, Thüringen:Unterschiede
+
+### Standards zur Datenhaltung
+
+Bundeslandübergreifend wird der Standard XML (Extensible Markup Language) für den Datenaustausch verwendet.
+
+Länderspezifische Unterschiede
+
+Details anzeigen
+
+keyboard_arrow_down
+
+  * Gebiet(e)Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Niedersachsen, Saarland, Sachsen-Anhalt, Schleswig-Holstein, Thüringen:Unterschiede
+
+Nutzung der Fachanwendung BAFSYS, welches die Daten XÖV (Extensible Markup Language in der öffentlichen Verwaltung)-konform speichert.
+
+BAFSYS konvertiert die über „BAföG (Bundesausbildungsförderungsgesetz) Digital“ eingehenden Bilddateien in das PDF (Portable Document Format)-Format. Die über den Antragsassistenten „BAföG (Bundesausbildungsförderungsgesetz) Digital“ eingereichten Unterlagen werden in Form von PDF (Portable Document Format)- oder Bilddateien an die Fachverfahren übermittelt, die Datenübertragung erfolgt über das XML (Extensible Markup Language)-basierte Format XBafoeg (XÖV (Extensible Markup Language in der öffentlichen Verwaltung)-Konformität ist in Arbeit).
+
+### Fachanwendungen & Anbieter (Werte)
+
+Länderspezifische Unterschiede
+
+Details anzeigen
+
+keyboard_arrow_down
+
+  * Gebiet(e)Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Niedersachsen, Saarland, Sachsen-Anhalt, Schleswig-Holstein, Thüringen:Unterschiede
+
+  * Gebiet(e)Rheinland-Pfalz, Baden-Württemberg, Sachsen:Unterschiede
+
+### Fachanwendungen & Anbieter
+
+Seit Herbst 2021 können mit dem digitalen Antragsassistenten "BAföG (Bundesausbildungsförderungsgesetz) Digital" bundesweit als erstes föderales digitales Verwaltungsangebot aus dem OZG (Onlinezugangsgesetz)-Leistungen online beantragt werden.
+
+--------------------------------------------------------------------------------
+Amt für Ausbildungsförderung - Verwaltungsportal Hessen (https://verwaltungsportal.hessen.de/behoerde?org_id=L100001_440848710)
+citeturn27search4 [wordlim: 200] Crawled: 2 weeks ago; # Amt für Ausbildungsförderung ...   * Zuständigkeits-Finder für Schülerinnen und Schüler auf der Startseite von BAföG Digital unter "Sie suchen Ihr zuständiges BAföG-Amt?"
+# Amt für Ausbildungsförderung
+
+## Internet
+
+  * Zuständigkeits-Finder für Schülerinnen und Schüler auf der Internetseite des BAföG
+  * Zuständigkeits-Finder für Schülerinnen und Schüler auf der Startseite von BAföG Digital unter "Sie suchen Ihr zuständiges BAföG-Amt?"
+
+## Zuständigkeit für
+
+### Hessen
+
+  * BAföG für einen Schulbesuch oder ein Praktikum beantragen
+--------------------------------------------------------------------------------
+Bürgerservice (https://www.gesetze-bayern.de/Content/Pdf/BayAGBAfoeG-1?all=False)
+citeturn27search12 [wordlim: 200] Published: 4 months ago; (1) 1Für jede kreisfreie Gemeinde und für jeden Landkreis wird bei der Kreisverwaltungsbehörde ein Amt für ... Bundesausbildungsförderungsgesetz (BAföG)1) und diesem Gesetz obliegenden Aufgaben als ... ist das Amt für Ausbildungsförderung der Landeshauptstadt München zuständig.
+(4) Fachaufsichtsbehörde für alle Ämter für Ausbildungsförderung ist die Regierung von Niederbayern.
+BayAGBAföG: Art. 1 Zuständigkeit der Kreisverwaltung
+Art. 1  Zuständigkeit der Kreisverwaltung 
+ 
+(1) 1Für jede kreisfreie Gemeinde und für jeden Landkreis wird bei der Kreisverwaltungsbehörde ein Amt für 
+Ausbildungsförderung errichtet. 2Durch gemeinsame Rechtsverordnung des Staatsministeriums des Innern, 
+für Sport und Integration und des Staatsministeriums für Wissenschaft und Kunst (Staatsministerium) kann 
+ein Amt für Ausbildungsförderung als für mehrere kreisfreie Gemeinden und Landkreise zuständig erklärt 
+werden.
+(2) Die kreisfreien Gemeinden vollziehen die den Ämtern für Ausbildungsförderung nach dem 
+Bundesausbildungsförderungsgesetz (BAföG)1) und diesem Gesetz obliegenden Aufgaben als 
+Angelegenheit des übertragenen Wirkungskreises.
+(3) Für die Förderung des Besuchs einer im Gebiet der Republik Österreich gelegenen Ausbildungsstätte 
+nach § 5 Abs. 2 und § 6 BAföG sowie für die Förderung dort nach § 5 Abs. 5 BAföG abgeleisteter Praktika 
+ist das Amt für Ausbildungsförderung der Landeshauptstadt München zuständig.
+(4) Fachaufsichtsbehörde für alle Ämter für Ausbildungsförderung ist die Regierung von Niederbayern.
+1) [Amtl. Anm.:] BGBl. FN 2171-2--------------------------------------------------------------------------------
+Datenexport - Verwaltungsdaten-Informationsplattform (https://verwaltungsdaten-informationsplattform.de/datenexport)
+citeturn27search5 [wordlim: 200] Crawled: 3 weeks ago; Gemäß § 12a EGovG (E-Government-Gesetz) stellt das Statistische Bundesamt als Bundesbehörde allen Nutzerinnen und Nutzern den Datensatz der Verwaltungsdaten-Informationsplattform im CSV (Comma-separated values)- und XML (Extensible Markup Language)-Format als Open Data zum Herunterladen in Echtzeit bereit. ... Zusätzlich informiert die Datensatzbeschreibung, welche obenstehend zum Download bereitsteht, über den Aufbau des Datensatzes in beiden Formaten sowie über den Aufbau der einzelnen Tabellen. ... Den Datensatz der gemeinsam mit dem Team der Registerlandkarte des BVA (Bundesverwaltungsamt) betriebenen Datenbank erreichen Sie unter der folgenden Datenschnittstelle:
+
+# Datenexport zur Weiterverarbeitung
+
+Gemäß § 12a EGovG (E-Government-Gesetz) stellt das Statistische Bundesamt als Bundesbehörde allen Nutzerinnen und Nutzern den Datensatz der Verwaltungsdaten-Informationsplattform im CSV (Comma-separated values)- und XML (Extensible Markup Language)-Format als Open Data zum Herunterladen in Echtzeit bereit.
+
+Der Datensatz steht unter den Bedingungen der Datenlizenz Deutschland - Namensnennung - Version 2.0 zur Weiterverarbeitung zur Verfügung.
+
+## Downloads
+
+### Datensatzbeschreibung
+
+draft DatensatzbeschreibungDownload
+
+### Gesamtexport
+
+draft CSV-DateiformatDownload
+
+draft XML-DateiformatDownload
+
+Sollten Sie Fragen oder Anregungen zum Datenexport haben, erreichen Sie uns gern per E-Mail unter VIP@destatis.de.
+
+## Weitere Hinweise
+
+Empfohlene Zitierweise des Quellennachweises:
+
+Datenquelle: Statistisches Bundesamt (Destatis), Verwaltungsdaten-Informationsplattform (VIP), <optional> Abrufdatum; Datenlizenz by-2-0
+Quellenvermerk bei eigener Darstellung:
+
+Datenquelle: Statistisches Bundesamt (Destatis), Verwaltungsdaten-Informationsplattform (VIP), <optional> Abrufdatum; Datenlizenz by-2-0; eigene Darstellung
+
+Zusätzlich informiert die Datensatzbeschreibung, welche obenstehend zum Download bereitsteht, über den Aufbau des Datensatzes in beiden Formaten sowie über den Aufbau der einzelnen Tabellen.
+--------------------------------------------------------------------------------
+Zeile
+Förderungsnummer (falls vorhanden)
+Stand 202 (https://www.bafoeg-digital.de/ams/BAFOEG/download/file/6223)
+citeturn27search13 [wordlim: 200] Published: 10 months ago; nach dem Bundesausbildungsförderungsgesetz (BAföG) ... Grundverordnung (DSGVO) erhalten Sie beim Amt für Ausbildungsförderung oder unter ... Ämter für Ausbildungs förderung zuständig ... Im schulischen  Bereich ... Staat inter national gebräuchlichen Buchsta­ ... Ich wohne während der Ausbildung, für die ich hier Ausbildungsförderung
+Zeile
+Förderungsnummer (falls vorhanden)
+Stand 2025
+01 – Antrag auf Ausbildungsförderung 
+nach dem Bundesausbildungsförderungsgesetz (BAföG)
+Tipp: Statt auf Papier, Antrag online 
+auf www.bafög-digital.de stellen.
+Einfach hier klicken und loslegen.
+WICHTIGE HINWEISE
+Bitte füllen Sie diesen Antrag sorgfältig und vollständig aus und kreuzen Sie Zutreffendes an.  
+  Bitte achten Sie auf Ihre Unterschrift oder 
+Namensangabe auf Seite 6.
+Sie sind nach § 60 Erstes Buch Sozialgesetzbuch (SGB I) verpflichtet, alle Tatsachen anzugeben, 
+die für die Sachaufklärung erforderlich sind, und die verlangten Nachweise vorzulegen.  
+Ihre Angaben sind gemäß den Vorschriften des Bundesausbildungsförderungsgesetzes (BAföG) 
+für die Entscheidung über den Antrag notwendig. 
+  
+Dieses Symbol auf der linken Seite 
+weist darauf hin, dass Sie Nach­
+weise in Kopie (keine Originale) 
+vorlegen müssen. Entsprechende 
+Erläuterungen finden Sie im  Anhang 
+auf  Seite 1.
+Hinweise zu Ihren datenschutzrechtlichen Informationsrechten nach Art. --------------------------------------------------------------------------------
+Charlottenburg-Wilmersdorf                                                                 3981 (https://www.berlin.de/sen/finanzen/haushalt/downloads/haushaltsplaene-der-bezirke/34_ba_charlottenburg-wilmersdorf_26_27.pdf?ts=1771317905)
+citeturn27search14 [wordlim: 200] Published: 10 months ago; Dieses Kapitel enthält die Einnahmen und Ausgaben des Fachbereiches 2 -Amt für Ausbildungsförderung- des Amtes Soziales des Geschäftsbereiches Bürgerdienste und Soziales. ... - Leistungen nach dem Bundesausbildungsförderungsgesetz (BAföG) für alle Studenten der Bundesrepublik Deutschland, die in Italien, Vatikanstadt und San Marino studieren bzw. ihre Ausbildung betreiben.
+Charlottenburg-Wilmersdorf                                                                 3981  
+                                                                                          2026/2027
+
+# Ausbildungsförderung
+
+## Allgemeine Erläuterung
+
+Dieses Kapitel enthält die Einnahmen und Ausgaben des Fachbereiches 2 -Amt für Ausbildungsförderung- des Amtes Soziales des Geschäftsbereiches Bürgerdienste und Soziales. Es besteht überregionale Zuständigkeit für die Bezirke Charlottenburg-Wilmersdorf, Friedrichshain-Kreuzberg, Mitte, Spandau, Steglitz-Zehlendorf und Tempelhof-Schöneberg.  
+Vom Amt für Ausbildungsförderung werden folgende Leistungen erbracht:  
+- Leistungen nach dem Bundesausbildungsförderungsgesetz (BAföG) für Schüler der o. a. Berliner Bezirke  
+- Leistungen nach dem Aufstiegsfortbildungsförderungsgesetz (AFBG, sog. Meister-BAföG) für Antragsteller aus den o. a. Berliner Bezirken  
+- Leistungen nach dem Bundesausbildungsförderungsgesetz (BAföG) für alle Studenten der Bundesrepublik Deutschland, die in Italien, Vatikanstadt und San Marino studieren bzw. ihre Ausbildung betreiben.
+
+## Produktgruppen mit Bezeichnung
+
+<table id="e1">
+  <tr>
+    <td>Produktbereich</td>
+    <td>880</td>
+    <td>Materielle Hilfen Soziales</td>
+  </tr>
+  <tr>
+    <td>Produktgruppen</td>
+    <td>4238</td>
+    <td>Ausbildungsförderung/„Meister-BAföG“</td>
+  </tr>
+</table>
+
+277--------------------------------------------------------------------------------
+BAföG für Meister und Schüler | Regierungspräsidien Baden-Württemberg (https://rp.baden-wuerttemberg.de/ua/themen/gesellschaft/berufliche-bildung/ausbildung-fortbildung-und-weiterbildung/bafoeg-fuer-meister-und-schueler/)
+citeturn27search6 [wordlim: 200] Crawled: 2 months ago; Bei diesen Ämtern wird über Anträge auf Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz (BAföG) für Schüler und über Anträge auf Förderung von Fortbildungen nach dem Aufstiegsfortbildungsförderungsgesetz (AFBG) - sogenanntes Aufstiegs-BAföG - entschieden. ... Zuständig ist das Amt für Ausbildungsförderung, in dessen Bezirk der Lehrgangsteilnehmer oder die Lehrgangsteilnehmerin den ständigen Wohnsitz hat.
+--------------------------------------------------------------------------------
+Förderorganisationen - zuständiges Amt für Ausbildungsförderung (https://www.foerderdatenbank.de/FDB/Content/DE/Kontakt/_Uebergeordnet/Z/zustaendiges-amt-fuer-ausbildungsfoerderung.html)
+citeturn27search7 [wordlim: 200] Crawled: last month; # zuständiges Amt für Ausbildungsförderung ... BAföG
+--------------------------------------------------------------------------------
+Ausbildungsförderung - Verwaltungsportal Hessen (https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_361722687&regschl=064380001001)
+citeturn27search8 [wordlim: 200] Published: 9.3 years ago; Crawled: 5 months ago; Als Auszubildende/r (Schüler/in oder Student/in) können Sie Leistungen nach dem Bundesausbildungsförderungsgesetz (BAföG) erhalten, wenn Ihre Ausbildung förderungsfähig ist und wenn Ihnen die für Ihren Lebensunterhalt und Ihre Ausbildung erforderlichen Mittel anderweitig nicht zur Verfügung stehen. ... Für Auszubildende an Abendgymnasien, Kollegs, höheren Fachschulen und Akademien ist das Amt für Ausbildungsförderung zuständig, in dessen Bezirk sich die Ausbildungsstätte befindet. ... Auf der Internetseite www.bafög.de können Sie nach dem für Ihre Förderung zuständigen Amt für Ausbildungsförderung suchen.
+--------------------------------------------------------------------------------
+LRMB - Landesrecht Ministerialblatt (https://recht.nrw.de/system/files/pdf/state-law-ministerial-gazette/2009/06/01/9a6cb4/durchfuehrung-des-bundesausbildungsfoerderungsgese.pdf)
+citeturn27search15 [wordlim: 200] Published: 9 months ago; Zuständigkeiten ... dem zuständigen Amt für Ausbildungsförderung. ... -   aufgrund der mitgeteilten Daten die Förderungsleistungen zu berechnen und zahlbar zu ma- ... Darüber hinaus obliegt ihm die Meldung der Daten für die Bundesstatistik nach § 55 BAföG.
+--------------------------------------------------------------------------------
+NOOTS-Anschluss-Status IDNrG Nr. 36A_Datenbestände zu BAföG-Leistungsempfängern - Wissensplattform (https://info.noots.gov.de/anschluss/status-der-register/36a-datenbestaende-zu-bafoeg-leistungsempfaengern)
+citeturn27search9 [wordlim: 200] Crawled: last month; Bei den Ämtern für Ausbildungsförderung und dem Bundesverwaltungsamt nach den §§ 39 und 40 des Bundesausbildungsförderungsgesetzes systematisch geführte personenbezogene Datenbestände zu Leistungsempfängern (BAföG) ...   * Bundesgesetz über individuelle Förderung der Ausbildung (Bundesausbildungsförderungsgesetz) ... Fachlich Verantwortliche mit Vollzugszuständigkeit - gemäß Landesrecht zuständige Stellen (Amt für Ausbildungsförderung) ... Sollten Sie sich bereits in der Umsetzung befinden, geht es hier zum internen Bereich (Confluence) - Hinweis: Login erforderlich.
+--------------------------------------------------------------------------------
+Datenschutzerklärung (https://studentenwerk-halle.de/footer-navigation/euer-studentenwerk-halle/datenschutzerklaerung)
+citeturn27search10 [wordlim: 200] Crawled: today; Die zuständige Stelle für die Erhebung der Daten im Rahmen der Beantragung von Ausbildungsförderung nach dem Bundesausbildungsförderungsgesetz (BAföG) ist das für den Auszubildenden zuständige Amt für Ausbildungsförderung. ... Die Kontaktdaten des für das Studentenwerk Halle - Amt für Ausbildungsförderung - zuständigen Datenschutzbeauftragten sind weiter unten auf dieser Webseite genannt. ...   * Die im Rahmen des Antrags gemachten Angaben zum Einkommen der antragstellenden Person können beim zuständigen Sozialleistungsträger, beim Finanzamt und bei dem Arbeitgeber des Antragstellenden durch eine Kontenabfrage nach § 93 Abs. ... Ministerium für Wirtschaft, Wissenschaft und Digitalisierung des Landes Sachsen-Anhalt
+--------------------------------------------------------------------------------
+Ausbildungsförderung (https://www.rheingau-taunus.de/informieren-beantragen/schule-bildung/ausbildungsfoerderung/)
+citeturn27search11 [wordlim: 200] Crawled: 2 weeks ago; Nach dem BAföG wird individuelle Ausbildungsförderung gewährt, wenn Auszubildenden die erforderlichen Mittel für ihren Lebensunterhalt und ihre Ausbildung anderweitig nicht zur Verfügung stehen. ... Das Amt für Ausbildungsförderung des Rheingau-Taunus-Kreises ist zuständig, wenn die/der Auszubildende eine der in Nummer 1 bis 8 genannten Schulen besucht und die Eltern im RTK wohnen.
+--------------------------------------------------------------------------------
+Förderungsnummer (falls vorhanden) (https://www.havelland.de/fileadmin/dateien/amt50/BAfoeG/formblatt_1.pdf)
+citeturn27search16 [wordlim: 200] Published: 7 months ago; land nur die für den ausländischen Staat ... Bitte füllen Sie diesen Bereich nur aus, wenn Sie nicht bei Ihren Eltern / einem Elternteil wohnen und Sie eine der folgenden Schulen besuchen: ... Hinweise dazu, welches Amt für Sie zuständig ist, finden Sie auf ... Ausbildungsende, -wechsel und -abbruch (auch der Geschwister), unverzüglich dem Amt für Ausbildungs­ ... • dass die im Rahmen dieses Antrags gemachten Angaben zu meinem Einkommen beim zuständigen Sozialleistungsträger, beim Finanzamt, ... Die Hinweise zum Datenschutz sind beim Amt für Ausbildungsförderung erhältlich oder unter https://www.bafög.de/hinweis einzusehen.
+--------------------------------------------------------------------------------
+Statistisches Bundesamt (https://d-nb.info/1231278250/34)
+citeturn27search17 [wordlim: 200] Published: last year; Ausländerbehörden die mit kreisübergreifendem Zuständigkeitsbereich arbeiten. ... Zuständigkeitsbereiche der BAMF-Außenstellen sind hingegen nicht immer kreisspezifisch. ... Die einer BAMF-Außenstelle ... das AuslG Aufenthaltstitel ohne eindeutige Zweckbindung vorsah, können alle Aufenthaltstitel, die auf Grundlage des ... Gesetz bekommen die Statistischen Ämter von Bund und Länder die Daten in pseudonymisierter Form.
+--------------------------------------------------------------------------------
+Bundesamt für Migration und Flüchtlinge (https://de.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Migration_und_Fl%C3%BCchtlinge)
+citeturn27search18 [wordlim: 200] Crawled: last month; Das Bundesamt für Migration und Flüchtlinge hat neben der Zentrale in Nürnberg noch folgende Außenstellen: ... * Gießen (Außenstelle im Ankunftszentrum/Bereich Integration) ... Ulrike B. gab zu, unerlaubt Daten weitergegeben und Dienstgeheimnisse verraten zu haben. ... Die Generalstaatsanwaltschaft von Brandenburg beantragte im September 2016 die Herausgabe von Datensätzen des BAMF für eine erneute Prüfung, nachdem sich herausgestellt hatte, dass zuvor in Asylverfahren vorgelegte Pässe angeblich syrischer Geflüchteter mit Gutachten vom BAMF als echt eingestuft worden waren, obwohl es sich um Fälschungen handelte. ... Im Mai 2018 forderte der BAMF-Gesamtpersonalrat in einem offenen Brief an die Behördenleitung Mut zur Wahrheit und einen Neuanfang: „Wir fordern Sie auf, alle sogenannte Führungskräfte zur Rechenschaft zu ziehen, die ein rechtsstaatliches Asylverfahren mittels entsprechender Vorgaben von Anhörungen und Bescheiden verhindert haben.“ ... Im Februar 2023 entschied das Bundesverwaltungsgericht, dass das BAMF Daten auf Mobiltelefonen von Asylbewerbern ohne Pässe nicht anlasslos auslesen und auswerten darf.
+--------------------------------------------------------------------------------
+Bundesausbildungsförderungsgesetz (https://de.wikipedia.org/wiki/Bundesausbildungsf%C3%B6rderungsgesetz)
+citeturn27search19 [wordlim: 200] Crawled: last month;  Titel: | Bundesgesetz über individuelle Förderung der Ausbildung ... Das Bundes­ausbildungs­förderungs­gesetz (BAföG) regelt die staatliche Unterstützung für die Ausbildung von Schülern und Studenten in Deutschland. ... Dabei werden dem Amt für Ausbildungsförderung Personen gemeldet, die im Vorjahr Kapitalerträge von mehr als 100 € erhielten. ... Zusätzlich werden Merkmale von dem Ehegatten oder Lebenspartner sowie der Eltern des Geförderten gespeichert. ... Sobald die Daten den Behörden zur Erfüllung ihrer Aufgaben nicht mehr erforderlich sind, sind die Daten ebenfalls zu löschen.
+--------------------------------------------------------------------------------
+Bundesverwaltungsamt (https://de.wikipedia.org/wiki/Bundesverwaltungsamt)
+citeturn27search20 [wordlim: 200] Crawled: 2 months ago; Das Bundesverwaltungsamt (BVA) ist eine deutsche Bundesoberbehörde im Geschäftsbereich des Bundesministeriums des Innern mit Sitz in Köln und an 22 weiteren Standorten. ... Alle Abteilungen sind in zwei bis vier Referatsgruppen gegliedert mit Ausnahme der Abteilung SQ. Jede Referatsgruppe und die Abteilung SQ bestehen aus fünf bis elf Referaten. ... Commons: Bundesverwaltungsamt – Sammlung von Bildern, Videos und Audiodateien ... Es ist unter anderem für die Rückforderung der BAföG-Darlehen sowie die Bewilligung und Einziehung des Bildungskredites im Rahmen der Förderbestimmungen des Bundesministeriums für Bildung und Forschung zuständig. ... Darüber hinaus nehmen die von den Bundesbehörden des Ausbildungsverbundes Köln/Bonn, des Frankfurter Ausbildungsrings bzw. des Ausbildungsverbundes Berlin eingestellten Auszubildenden zum/zur Kaufmann/-frau für Büromanagement; zum/zur Fachinformatiker, zum/zur Fachangestellten für Medien und Informationsdienste und zum Verwaltungsfachangestellten im Bundesverwaltungsamt an theoretischen und praxisbezogenen Lehrveranstaltungsphasen teil.
+

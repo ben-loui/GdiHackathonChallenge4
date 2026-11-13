@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "he_schulamt",
+    "kind": "authority",
+    "scope": "DE-HE",
+    "format": "csv_mapping",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "schulamt"
+      }
+    ],
+    "documentation": "https://schulaemter.hessen.de/ueber-uns/schulamtsbezirke",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; amtliche Behördennamen und sachliche Zuordnung aus verlinkter Quelle.",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2026-11-13 (assignment reviewed)",
+    "boundary_source": "vg25_krs",
+    "mapping_file": "he_schulaemter.csv",
+    "mapping_sha256": "632c0464a81dc194e9a9a651aabef80aa2abf376da04f09d2927ef68958721a5",
+    "name_rule": "Reviewed explicit authority-to-named-region assignment; exact official region keys, no nearest-location inference"
+  },
+  "completed_at": "2026-11-13T17:19:28.911129+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "schulamt": 15
+  },
+  "records_sha256": "feb0b131a4074080728c4239ed94c8b3932e86a9e7cd8805fcc007521d373471",
+  "requests": [],
+  "national_authority_coverage_guaranteed": false,
+  "derivation_complete": true,
+  "mapping_sha256": "632c0464a81dc194e9a9a651aabef80aa2abf376da04f09d2927ef68958721a5",
+  "parent_snapshot": "vg25_krs--20261113T164048673383Z"
+}

@@ -1,0 +1,1 @@
+[out:json][timeout:30];nwr(around:10000,50,8.27)["office"="government"];out center tags;

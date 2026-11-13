@@ -1,0 +1,129 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "bzb_jobcenter",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:ba_jobcenter",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "jobcenter",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:39:39.424303+00:00",
+  "completed_at": "2026-11-13T16:39:47.492270+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 404,
+  "expected_features": 404,
+  "terminal_empty_page": false,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "jobcenter": 404
+  },
+  "source_subgroups": {
+    "n/a": 404
+  },
+  "records_sha256": "72fbf5ed01f278c2bd940293802e7e407e4bdd39b15600b382d02ff5efc05687",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:39:39.909065+00:00",
+      "response_sha256": "24c2cc600a9c59844ad62af20239000bfe6883203d4990c1f940b25d6fe0832b",
+      "bytes": 97447
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_jobcenter",
+      "retrieved_at": "2026-11-13T16:39:39.909305+00:00",
+      "response_sha256": "b9a312a16f9fc9ef182864508aa5022c8e10e0f58cffe5f41609fcaf15f8c2ce",
+      "bytes": 1229
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:39.949990+00:00",
+      "response_sha256": "341856d9866ef8ce8a754ab3fc8dfddd40939acdde5efc53367886bcb63ebea7",
+      "bytes": 159361
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:40.998707+00:00",
+      "response_sha256": "f80e3862da205156ef35901b316512a3a8d80a9bfe1ac637f1854b63810e95f5",
+      "bytes": 1895280
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=50&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:42.071593+00:00",
+      "response_sha256": "37cf021f38f5f1735a482612b7d8c09837e98386c02c1bdfc2c1cffcca878c65",
+      "bytes": 1169807
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=100&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:42.950364+00:00",
+      "response_sha256": "70ebde653ba4a8a8bb0bf43d085c5bca1f75fa6416f154e8c73f2c97e4f3bc6c",
+      "bytes": 980821
+    },
+    {
+      "path": "raw/page-000150.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=150&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:43.686263+00:00",
+      "response_sha256": "4e3dacdaa02e8750dc895ded527dace46d89ebf946f8bfdd47650687b0902ffd",
+      "bytes": 772340
+    },
+    {
+      "path": "raw/page-000200.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=200&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:44.373341+00:00",
+      "response_sha256": "d548e3d3ac2534f1b9e247b4ea89eb16c1ba9e2dce1385ed6526e816ca888e5f",
+      "bytes": 821414
+    },
+    {
+      "path": "raw/page-000250.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=250&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:45.160484+00:00",
+      "response_sha256": "3cad75c2f0dbb7b7b84f6b7ddac8ab6cbc2a470f12b271b08f36ac6a1cc83a3a",
+      "bytes": 1086291
+    },
+    {
+      "path": "raw/page-000300.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=300&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:46.091464+00:00",
+      "response_sha256": "716924a5e08980616e41b346fbc85fc92a5d55efe410687099984e0f84e6d59d",
+      "bytes": 1236162
+    },
+    {
+      "path": "raw/page-000350.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=350&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:47.024145+00:00",
+      "response_sha256": "6b7a4e558b41d7852d13128809378a731c06a9867ee031f8e7b369c26eed1d30",
+      "bytes": 1220298
+    },
+    {
+      "path": "raw/page-000400.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=400&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:47.468384+00:00",
+      "response_sha256": "afdcd34a7f573e5a714e8e611a83d8ae666c245c7466a82554548ea3b90e3f24",
+      "bytes": 44631
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

@@ -1,0 +1,101 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_finanzamt_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs",
+    "layer": "stmfh:SteuerverwaltungStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "finanzamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "finanzaemter",
+            "finanzaemter-aussenstellen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Finanzen und für Heimat.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:35.707889+00:00",
+  "completed_at": "2026-11-13T17:44:36.463591+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 107,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "finanzamt": 101
+  },
+  "source_subgroups": {
+    "bayerisches-staatsministerium-der-finanzen": 1,
+    "landesamt-steuern": 1,
+    "finanzaemter": 68,
+    "finanzaemter-aussenstellen": 33,
+    "landesamt-steuern-aussenstellen": 2,
+    "landesfinanzschule": 1,
+    "bayerisches-staatsministerium-der-finanzen-aussenstellen": 1
+  },
+  "records_sha256": "2a3cf4877d6ce34eebbc66cb51372aff28373246e465967be965d854f839a994",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:36.143676+00:00",
+      "response_sha256": "cbcd09bdb5e72bcb7b75aa51888c51240c1d05a2b5196ce29c904bd99ef299a8",
+      "bytes": 63689
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmfh%3ASteuerverwaltungStandort",
+      "retrieved_at": "2026-11-13T17:44:36.143959+00:00",
+      "response_sha256": "6c9b005b231dca1d4d0b91fb40008e0db9b759111e737f385dc836f691338ffd",
+      "bytes": 19376
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:36.144125+00:00",
+      "response_sha256": "a617b9f5bef6dcc1f70e00178458b108f7037beeae06bb56ce6ac413bcb508e5",
+      "bytes": 3021
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:36.282953+00:00",
+      "response_sha256": "6d787937d286662ad0684f8d3c79ef78ed5a46a5934ce63b1cb2a0d076eed927",
+      "bytes": 185701
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungStandort&srsName=EPSG%3A3857&startIndex=100&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:36.386916+00:00",
+      "response_sha256": "3f1be45a91e9594f6d58cee801f535e0742b0b8efb9518313454b38467c075f5",
+      "bytes": 14293
+    },
+    {
+      "path": "raw/page-000107.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungStandort&srsName=EPSG%3A3857&startIndex=107&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:36.462938+00:00",
+      "response_sha256": "3d5793b60e4294f94ce06b604f3476c7dd9881515d51d25eb211760503e2b2b5",
+      "bytes": 1041
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

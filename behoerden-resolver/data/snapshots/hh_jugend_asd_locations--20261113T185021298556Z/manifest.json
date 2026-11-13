@@ -1,0 +1,81 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "hh_jugend_asd_locations",
+    "kind": "authority_point",
+    "scope": "DE-HH",
+    "format": "gml",
+    "default_import": true,
+    "active": true,
+    "endpoint": "https://geodienste.hamburg.de/HH_WFS_ASD",
+    "layer": "de.hh.up:standorte",
+    "request_crs": "EPSG:3857",
+    "sort_by": "einrichtung_name",
+    "geometry_field": "geom",
+    "routes": [
+      {
+        "category": "jugendamt",
+        "name_field": "einrichtung_name"
+      }
+    ],
+    "documentation": "https://suche.transparenz.hamburg.de/dataset/allgemeiner-sozialer-dienst-asd-hamburg16",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Freie und Hansestadt Hamburg, Behörde für Schule, Familie und Berufsbildung, dl-de/by-2-0",
+    "source_quality": "official",
+    "coverage_claim": "Actual ASD office locations. ASD is explicitly part of the district Fachamt Jugend- und Familienhilfe. No jurisdiction inferred from point.",
+    "modifications": "Transform from EPSG:3857 to EPSG:4326, preserve original point attributes."
+  },
+  "started_at": "2026-11-13T18:50:20.269903+00:00",
+  "completed_at": "2026-11-13T18:50:21.296596+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 36,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "jugendamt": 36
+  },
+  "source_subgroups": {
+    "n/a": 36
+  },
+  "records_sha256": "ec25e944dd639225fc4b21d0ed334908e2d5e0e31c5c9f900734e4f0b0ca24d8",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_ASD?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T18:50:21.022326+00:00",
+      "response_sha256": "025acd9325a7a9b0656e08e044cad060caefe9be22348a906c348367ad067ea2",
+      "bytes": 28365
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_ASD?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=de.hh.up%3Astandorte",
+      "retrieved_at": "2026-11-13T18:50:21.023459+00:00",
+      "response_sha256": "300950b900bc0ecbe68034203d26da1206aab0b790f1b8b04f323047ff195b76",
+      "bytes": 1318
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_ASD?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Astandorte&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=einrichtung_name",
+      "retrieved_at": "2026-11-13T18:50:21.025231+00:00",
+      "response_sha256": "da2ffc0de403974960f867f5fb38765b38aeb3cc3a056f16c92f544991772224",
+      "bytes": 2064
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_ASD?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Astandorte&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=einrichtung_name",
+      "retrieved_at": "2026-11-13T18:50:21.157079+00:00",
+      "response_sha256": "fe5c01a1644065b99dd9fc6111063f431071ea7e866f075ec0e25786ded07a1c",
+      "bytes": 37100
+    },
+    {
+      "path": "raw/page-000036.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_ASD?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Astandorte&srsName=EPSG%3A3857&startIndex=36&count=100&sortBy=einrichtung_name",
+      "retrieved_at": "2026-11-13T18:50:21.295279+00:00",
+      "response_sha256": "fb4ac6e182138188f1be39b502acae4c8fddf49192558d71cfd3e135268a3974",
+      "bytes": 1042
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

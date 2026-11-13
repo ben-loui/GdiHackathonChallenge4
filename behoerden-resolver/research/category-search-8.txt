@@ -1,0 +1,267 @@
+{
+  "categories": [
+    "bauamt",
+    "strassenverkehrsbehoerde",
+    "zulassungsstelle",
+    "gesundheitsamt"
+  ],
+  "queries": [
+    {
+      "q": "\"Bauaufsichtsbehörde\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Straßenverkehrsbehörde\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Kfz Zulassungsbehörde\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Gesundheitsamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    }
+  ]
+}
+Nichtamtliche Lesefassung - Stand 11.11.2025 (https://www.hamburg.de/resource/blob/1120198/bec6020a970b8b8ea59b9ed7fec2ffc0/bauvorlvo-nichtamtliche-lesefassung-data.pdf)
+citeturn24search12 [wordlim: 200] Published: last year; Crawled: last week; **(1)** Die Bauaufsichtsbehörde ist berechtigt, folgende Daten nach Maßgabe des Absatzes 2 an Dritte zu deren Aufgabenerfüllung zu übermitteln: ...    a) zuständigen Behörden oder Stellen für Landesplanung, Stadterneuerung und Gesundheitsschutz, Brandschutz und Notfallrettung, Luftverkehr, Verkehr und Straßenwesen, Eisenbahnwesen, Denkmalschutz, Zollrecht, Gewerberecht, Bergrecht, Wohnungswesen, Waldrecht, Wasserrecht, Abwasserrecht, Bodenordnung, Umweltschutz, Naturschutz, Immissionsschutz, Arbeitsschutz, Hafenentwicklung und für andere Rechtsbereiche, soweit diese für das Vorhaben beachtlich sind, ...    b) Verkehrsunternehmen bei Vorhaben im Nahbereich eines Verkehrsweges, ...    d) für den Bauarbeiterschutz zuständige Behörde zum Zweck der Erfüllung der Aufgaben zum Schutz von Personen bei der Bauausführung,
+Nichtamtliche Lesefassung - Stand 11.11.2025
+
+**Anlage 3**  
+(zu § 16)
+
+# Datenschutz
+
+## Abschnitt 1  
+### Übermittlung von Daten zur Aufgabenerfüllung anderer Stellen
+
+**(1)** Die Bauaufsichtsbehörde ist berechtigt, folgende Daten nach Maßgabe des Absatzes 2 an Dritte zu deren Aufgabenerfüllung zu übermitteln:
+
+1. Name, Anschrift und sonstige Kontaktdaten  
+   a) der am Bau Beteiligten nach §§ 52 bis 56 HBauO,  
+   b) der Grundstückseigentümerin bzw. des Grundstückseigentümers sowie der Erbbau- und Nießbrauchberechtigten,
+
+2. Lage des Grundstücks, genaue Flurstücksbezeichnung und Hausnummer,
+
+3. Bauvorlagen nach den §§ 3 bis 6.
+
+4. Baugenehmigungsbescheid mit allen Anlagen
+
+**(2)** Die Bauaufsichtsbehörde ist berechtigt, folgende Daten zu übermitteln:
+
+1. bei Eingang eines Antrags Daten nach Absatz 1 an die  
+   a) zuständigen Behörden oder Stellen für Landesplanung, Stadterneuerung und Gesundheitsschutz, Brandschutz und Notfallrettung, Luftverkehr, Verkehr und Straßenwesen, Eisenbahnwesen, Denkmalschutz, Zollrecht, Gewerberecht, Bergrecht, Wohnungswesen, Waldrecht, Wasserrecht, Abwasserrecht, Bodenordnung, Umweltschutz, Naturschutz, Immissionsschutz, Arbeitsschutz, Hafenentwicklung und für andere Rechtsbereiche, soweit diese für das Vorhaben beachtlich sind,
+--------------------------------------------------------------------------------
+Transparenzportal Hamburg (https://suche.transparenz.hamburg.de/dataset?extras_registerobject_type=geodat&forceWeb=true&groups=transport-und-verkehr&page=4&res_format=gml&sort=score+desc%2Ctitle_sort+asc&type=dataset)
+citeturn24search0 [wordlim: 200] Crawled: last week; Flächen, für die im amtlichen Liegenschaftskataster als Eigentümer diese Einträge erfasst sind: Bundesrepublik Deutschland (Bundeseisenbahnvermögen), Deutsche Bahn AG, DB Energie GmbH, DB Netz AG, DB Fernverkehr AG, DB Regio AG, DB Regio Aktiengesellschaft, DB InfraGo Aktiengesellschaft, DB Station & Service AG, Bundeseisenbahnvermögen Bundesrepublik Deutschland (Bundesfinanzverwaltung) Bundesrepublik Deutschland (Bundesmonopolverwaltung für Branntwein) Bundesrepublik Deutschland (Zivilschutz) Bundesrepublik Deutschland (Auswärtiges Amt) Bundesrepublik Deutschland (Deutscher Wetterdienst) Bundesrepublik Deutschland (Bundesverkehrsministerium) Bundesanstalt für Immobilienangaben - ÄöR Bundesanstalt für Arbeit Bundeanstalt für Arbeitsvermittlung und Arbeitslosenversicherung Flurstücke, für die im amtlichen Liegenschaftskataster (ALKIS) als Eigentümer die Bundesstraßenverwaltung, die Bundesfernstraßenverwaltung, bzw. die Bundeswasserstraßenverwaltung geführt sind. ... Die Behörde für Verkehr und Mobilitätswende übernimmt keine Gewähr für die Verfügbarkeit, Richtigkeit oder Vollständigkeit der Daten und haftet nicht für Ansprüche Dritter, insbesondere aus der gesetzlichen Haftpflicht, die durch oder infolge der Übernahme oder Verwendung der vorliegenden Geodaten entstehen. ... Der Datensatz beruht weitgehend auf einer Erfassung aus Befahrungsbildern aus dem Jahr 2023 mit punktuellen Aktualisierungen aus Befahrungsbildern des Jahres 2025 sowie Nachträgen aus aktuellen straßenverkehrsbehördlichen Anordnungen.
+Aus der Veröffentlichung der Daten nach dem Hamburgischen Transparenzgesetz entstehen keinerlei Ansprüche an die Rechtssicherheit der Daten. Der Datensatz beruht weitgehend auf einer Erfassung aus Befahrungsbildern aus dem Jahr 2023 mit punktuellen Aktualisierungen aus Befahrungsbildern des Jahres 2025 sowie Nachträgen aus aktuellen straßenverkehrsbehördlichen Anordnungen. Der Datensatz wird regelmäßig aktualisiert. Durch einen Klick auf den Fußpunkt des skizzierten Pfostens (nicht auf das Verkehrszeichen selbst) können weitere Informationen zu jedem Verkehrszeichen abgerufen werden. Durch die Häufung von Verkehrszeichen an manchen Standorten sind Überlagerungen in Einzelfällen unvermeidlich, zur präzisen Nutzung steht alternativ der WFS-Dienst zur Einbindung in eine GIS-Software zur Verfügung. Das Datenmodell sieht vor, dass an einem Standort mehrere VZ aufgestellt sein können. Die Reihenfolge ist im Feld Sortierung erkenntlich (Sortierung=1 ist das oberste Verkehrszeichen). Im Feld Azimut ist die Richtung des Verkehrszeichens mit einer Gradzahl angegeben (0°= Nord, 90°=Ost, 180°=Süd, 270°=West). --------------------------------------------------------------------------------
+Dynamisches Koordinierungsnetz Hamburg (https://suche.transparenz.hamburg.de/dataset/dynamisches-koordinierungsnetz-hamburg12)
+citeturn24search1 [wordlim: 200] Published: 1.8 years ago; Crawled: last month; Das zusätzlich zu koordinierende Netz wird in Abstimmung mit den Bezirksämtern, der Straßenverkehrsbehörde und weitere Beteiligten festgelegt und dynamisch angepasst. ... Baustellen, Baustellenkoordinierung, Geodaten, Hauptverkehrsstraßen, Koordinierung, Straßen ... Download Download WFS-Schemadatei für Dynamisches Koordinierungsnetz Hamburg (XSD) (Format: XML) Download WFS-Schemadatei für Dynamisches Koordinierungsnetz Hamburg (XSD) ... Datensatz
+OAF (Größe: 4.5 KB)
+
+Download Download Dynamisches Koordinierungsnetz Hamburg (CSV) (Format: HTML) Download Dynamisches Koordinierungsnetz Hamburg (CSV)
+HTML (Größe: 1.1 MB)
+
+Download Download Dynamisches Koordinierungsnetz Hamburg (GeoJSON) (Format: HTML) Download Dynamisches Koordinierungsnetz Hamburg (GeoJSON)
+HTML (Größe: 2.0 MB)
+
+Download Metadatenbeschreibung aus dem MetaVer (Format: HTML) Metadatenbeschreibung aus dem MetaVer
+HTML (Größe: 0.13 MB)
+
+### Datentyp
+
+Datensatz
+
+### Informations­gegenstand
+
+Geodaten
+
+### Kategorie
+
+  * Transport & Verkehr
+
+### Metadaten nach ODG
+
+  * Download (JSON)
+
+### Metadaten nach DCAT-AP.de
+
+  * Download (N3)
+  * Download (RDF)
+  * Download (TTL)
+  * Download (XML)
+  * Download (JSONLD)
+
+### Lizenz
+
+Datenlizenz Deutschland Namensnennung 2.0
+
+### Namensnennung
+
+Freie und Hansestadt Hamburg, zuständige Behörde
+
+### Ältere Version
+
+08.08.2024
+
+### Neuere Version
+
+22.04.2025--------------------------------------------------------------------------------
+GIS-Doku Stadt Chemnitz - Baulasten (https://www-11.stadt-chemnitz.de/wss/service/MetaDoku/guest/Internet/HTML/Baulasten.html)
+citeturn24search2 [wordlim: 200] Published: 4.7 years ago; Crawled: last month; Beschreibung  | In das Baulastenverzeichnis der Bauaufsichtsbehörde eingetragende Baulasten, Rechtsgrundlage § 83 Sächsische Bauordnung ... Ressourcenart  | Datensatz ... Freigabe  | zum Download freigegeben (Open Data) ... Geodaten: E-Mail-Kontaktadresse  | buva@stadt-chemnitz.de ... Label ]  | Typ  | Wertebereich  | Bedeutung
+
+ | Baulasten  | Stand: 23.02.2022
+ 
+Beschreibung  | In das Baulastenverzeichnis der Bauaufsichtsbehörde eingetragende Baulasten, Rechtsgrundlage § 83 Sächsische Bauordnung
+ 
+Zusammenfassung  | Es sind noch nicht alle Datenbestände erfasst. Es besteht akutell Rückstau. Außerdem müssen alle vorhanden Datenbestände hinsichtlich der Lagegenauigkeit überprüft und nahezu flächendeckend angepasst werden.
+ 
+Ressourcenart  | Datensatz
+ 
+Ressourcensprache  | Deutsch
+ 
+Themenkategorie  | Geowissenschaftlich
+ 
+Schlüsselwörter  | Chemnitz
+Baulasten
+Bauordnungsrecht
+ 
+Räumliche Auflösung [m]  | 0.1
+ 
+Geografisches Begrenzungsrechteck (WGS 84)  | 12.709822
+13.065435
+50.710742
+50.935434
+ 
+Referenzsystem  | 25833, ETRS89 / UTM Zone 33N
+Namensraum  | EPSG
+ 
+Zeitbezug  | 1990-01-01
+Datum Erstellung  | 2006-12-19
+Datum Veröffentlichung  | 2022-02-23
+Datum letzte Überarbeitung  | 2022-02-10
+ 
+Herkunft  | Digitalisierung der Baulastflächen auf Grundlage von Lageplänen und der (damals) analogen Stadtgrundkarte mit GISObjekteditor (Fachschale Geomedia), Daten migriert nach ArcGIS und künftige Bearbeitung mit ArcGIS Desktop
+ 
+Freigabe  | zum Download freigegeben (Open Data)
+Lizenz  | Datenlizenz Deutschland Namensnennung 2.0 - Stadt Chemnitz
+ 
+Geodaten: Zuständige Stelle
+(Fachlicher Ansprechpartner)  | Stadt Chemnitz, Amt 62
+Geodaten: E-Mail-Kontaktadresse  | buva@stadt-chemnitz.de
+Geodaten: Funktion der zuständigen Stelle  | Herausgeber
+ 
+Geodaten: Zuständige Stelle (Technischer Ansprechpartner)  | Stadt Chemnitz, Amt 18
+Geodaten: E-Mail-Kontaktadresse  | gdi@stadt-chemnitz.de
+Geodaten: Funktion der zuständigen Stelle  | Anbieter
+ 
+Metadaten: Zuständige Stelle  | Stadt Chemnitz, Amt 62
+Metadaten: E-Mail-Kontaktadresse  | buva@stadt-chemnitz.de
+Metadaten: Datum  | 2023-05-04
+Metadaten: Sprache  | Deutsch
+ 
+Laufendhaltung  | monatlich
+ 
+Zusatzbemerkungen  | Geschützter Datenbestand. Derzeit nur sichtbar für GeoZAV-Anwender.
+ 
+Freigabe-Stufe  | Attributname
+[ + abweich. Label ]  | Typ  | Wertebereich  | Bedeutung--------------------------------------------------------------------------------
+- Gesundheitsamt: Die Datenquelle bei den Einschulungsuntersuchungen ist Octoware_TN KJGD. Diese Daten werden jährlich an die Senatsverwaltung für Wissenschaft, Gesundheit und Pflege geliefert und entsprechend ausgewertet - Produktnr. 79369. Diese Daten fließen über den Fachbereich QPK in den Sozialraumbericht ein. Die Geodaten für die Plattform Agilis werden händisch eingetragen. (https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24920.pdf)
+citeturn24search13 [wordlim: 200] Published: 9 months ago; Crawled: 8 months ago; - Gesundheitsamt: Die Datenquelle bei den Einschulungsuntersuchungen ist Octoware_TN KJGD. Diese Daten werden jährlich an die Senatsverwaltung für Wissenschaft, Gesundheit und Pflege geliefert und entsprechend ausgewertet - Produktnr. ... Diese Daten fließen über den Fachbereich QPK in den Sozialraumbericht ein. Die Geodaten für die Plattform Agilis werden händisch eingetragen. ... Die LOR werden in der OE SPK Treptow-Köpenick im Rahmen der Erstellung von Bezirksregionenprofilen und Kurzprofilen genutzt.
+- Gesundheitsamt: Die Datenquelle bei den Einschulungsuntersuchungen ist Octoware_TN KJGD. Diese Daten werden jährlich an die Senatsverwaltung für Wissenschaft, Gesundheit und Pflege geliefert und entsprechend ausgewertet - Produktnr. 79369. Diese Daten fließen über den Fachbereich QPK in den Sozialraumbericht ein. Die Geodaten für die Plattform Agilis werden händisch eingetragen.
+
+- QPK: Siehe Antwort zu Frage 1. Eine detaillierte Aufschlüsselung in der gewünschten Tiefe ist in der Kürze der Zeit nicht möglich. Die Gesundheitsberichte mit den entsprechenden Angaben sind abrufbar unter:
+
+https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/stelle-fuer-qualitaets-
+entwicklung-planung-und-koordination/gesundheits-und-sozialberichterstattung-
+143578.php
+
+Bezirksamt Treptow-Köpenick
+
+Die LOR werden in der OE SPK Treptow-Köpenick im Rahmen der Erstellung von Bezirksregionenprofilen und Kurzprofilen genutzt. Hierfür werden die Kernindikatoren für BZRP und integrierte Stadt(teil)entwicklung (KID) und die Demografischen Grundzahlen (DG) aus dem abgestimmten Datenpool des Amts für Statistik Berlin-Brandenburg verwendet.
+
+Bezirksamt Pankow
+
+Die LOR werden in der OE SPK Pankow im Rahmen der Erstellung von Bezirksregionenprofilen und Kurzprofilen genutzt. Hierfür werden die Kernindikatoren für BZRP und integrierte Stadt(teil)entwicklung (KID) und die Demografischen Grundzahlen (DG) aus dem abgestimmten Datenpool des Amts für Statistik Berlin-Brandenburg verwendet.
+
+Stadtentwicklungsamt Pankow, Stabstelle KIS (Koordination Infrastruktur- und Standortentwicklung) LOR-Ebene: Bezirksregion-, Prognoseraum- und Bezirksebene je nach Einrichtungsart; Veröffentlichung und Fortschreibung alle 6-8 Jahre, Datenaktualisierung alle 2-3 Jahre nach Vorgaben von Senstadt.
+
+Seite 27 von 69--------------------------------------------------------------------------------
+Transparenzportal Hamburg (https://suche.transparenz.hamburg.de/dataset?groups=transport-und-verkehr&page=1&res_format=wfs&sort=publishing_date+asc%2Ctitle_sort+asc)
+citeturn24search3 [wordlim: 200] Crawled: last month; ### WFS Taxenstände Hamburg ... Die entsprechenden Daten/Fakten/Änderungen werden von den einzelnen Polizeikommissariaten und den Wasserschutzpolizeikommissariaten mitgeteilt. ... Zur genaueren Beschreibung der Daten und Datenverantwortung nutzen Sie bitte den Verweis zur Datensatzbeschreibung. ... Der Datensatz enthält Informationen zu Nutzung und Oberflächenmaterial der einzelnen Flächen im Straßenraum der Bezirks- und Hauptverkehrsstraßen. ... Flächen im Zuständigkeitsbereich der Autobahn GmbH und des Hafens sind nicht enthalten. ... Die Pflege der Daten erfolgt seit 2022 kontinuierlich anhand von Planunterlagen, Luft- und Befahrungsbildern durch den Landesbetrieb Geoinformation und Vermessung im Auftrag der Behörde für Verkehr und Mobilitätswende.
+Die Ersterfassung der Feinkartierung Straßen erfolgte auf Grundlage einer Luftbilddigitalisierung in den einzelnen Bezirken zwischen 2013 und 2021. Die Pflege der Daten erfolgt seit 2022 kontinuierlich anhand von Planunterlagen, Luft- und Befahrungsbildern durch den Landesbetrieb Geoinformation und Vermessung im Auftrag der Behörde für Verkehr und Mobilitätswende. Die Aktualität der jeweiligen Fortführung des Objektes ist den Attributen zu entnehmen. Die Datengrundlage weist jedoch einen älteren Stand auf, als der Tag der Fortführung. Auch Baustellen aus den Vorjahren werden u.U. erst in späteren Jahrgängen umgewandelt, sodass anhand des Datensatzes keine Analyse möglich ist, wie viele Flächenänderungen in einem Jahr im Straßenraum erfolgt sind. Insbesondere die Punkt- und Linienobjekte erheben keinen Anspruch auf Vollständigkeit, da sie z.T. bereits bei der Ersterfassung nicht vollständig erfasst wurden und Aufstell- und Abbauprozesse der datenpflegenden Stelle in der Regel nicht gemeldet werden. Es kann keine Gewähr für die Richtigkeit aller Daten übernommen werden. Aufgrund der Aktualität des Datensatzes kann keine rechtssichere bzw. tagesaktuelle Aussage getroffen werden. Sollten Sie Anmerkungen zum Datensatz haben oder Korrekturen melden wollen, schicken Sie diese bitte an fachdatenmanagement@gv.hamburg.de.
+
+Formate: wfs, wms, gml, oaf, html
+
+Datensatz 07.08.2025
+
+--------------------------------------------------------------------------------
+Zentrales Fahrzeugregister (ZFZR) - Verwaltungsdaten-Informationsplattform (https://www.verwaltungsdaten-informationsplattform.de/register/151?cms_deeplink=1850544)
+citeturn24search4 [wordlim: 200] Crawled: yesterday; Für die inhaltliche und technische Führung des Zentralen Fahrzeugregisters ist das Kraftfahrt-Bundesamt zuständig. ... Die Erteilung von Auskünften aus dem ZFZR (Zentrales Fahrzeugregister) erfolgt zunächst an Behörden oder sonstige öffentliche Stellen im Inland und zuständige Stellen im Ausland. §§ 35 ff. (folgende) Straßenverkehrsgesetz (StVG (Straßenverkehrsgesetz)) regelt nähere Übermittlungsvorschriften. ... Die örtlichen Zulassungsbehörden, Versicherer und technischen Überwachungsinstitutionen liefern dem KBA (Kraftfahrt-Bundesamt) alle zu übermittelnden Daten. ...   * für die Zulassung und Überwachung von Fahrzeugen,
+  * für Maßnahmen zur Gewährleistung des Versicherungsschutzes im Rahmen der Kraftfahrzeughaftpflichtversicherung, ... Aggregierte Informationen des Datenbestandes sind auf GovData ( nationales Metadatenportal für Open Government Data) verzeichnet und werden in der Mobilithek des BMV (Bundesministerium für Verkehr) als Open Data bereitgestellt.
+B. (zum Beispiel) Zulassungsbehörden, Polizei oder Zollverwaltung berechtigt.
+
+### Datenlieferungen (eingehend/ ausgehend)
+
+Die örtlichen Zulassungsbehörden, Versicherer und technischen Überwachungsinstitutionen liefern dem KBA (Kraftfahrt-Bundesamt) alle zu übermittelnden Daten. Zusätzlich erhält das KBA (Kraftfahrt-Bundesamt) Daten des Bundeskriminalamts (sog. (sogenannte) Suchvermerke).
+
+Daten aus dem ZFZR (Zentrales Fahrzeugregister) werden über das Zentrale Verkehrsinformationssystem (ZEVIS (Zentrales Verkehrsinformationssystem)) und EUCARIS (European Car and Driving Licence Information System ( europäische Fahrzeug- und Führerscheininformationssystem)) von berechtigten Stellen online abgerufen. Auskünfte können zusätzlich über teilautomatisierte Verfahren erteilt werden.
+
+### Verwendung der Registerdaten
+
+Die Registerdaten werden genutzt
+
+  * für die Zulassung und Überwachung von Fahrzeugen,
+  * für Maßnahmen zur Gewährleistung des Versicherungsschutzes im Rahmen der Kraftfahrzeughaftpflichtversicherung,
+--------------------------------------------------------------------------------
+XKfz-Spezifikation - Version 5.4 (https://www.xrepository.de/api/xrepository/urn%3Axoev-de%3Akba%3Astandard%3Axkfz_5.4%3Adokument%3ASpezifikation_XKfz_5.4%3Adatei%3Aspezifikation.pdf)
+citeturn24search14 [wordlim: 200] Published: 5.5 years ago; <tr><td>Auslöser</td><td>Die Zulassungsbehörde, an die ein elektronischer Zulassungsantrag übermittelt wurde, ist für dessen Bearbeitung nicht zuständig.</td></tr> ... <tr><td>Vorbedingungen</td><td>Geschäftsbeziehungen zwischen den Kommunikationspartnern müssen etabliert sein.<br><br>Der elektronische Zulassungsantrag wurde an die unzuständige Kfz-Zulassungsbehörde oder das Vorsystem (B) übermittelt.<br><br>Der unzuständigen Kfz-Zulassungsbehörde liegen Informationen über die für die Bearbeitung zuständige Behörde vor.</td></tr>
+--------------------------------------------------------------------------------
+Geoportal der Stadt Finsterwalde / Stadt Finsterwalde (https://www.finsterwalde.de/Wirtschaft-Bauen/Stadtentwicklung/Geoportal/)
+citeturn24search5 [wordlim: 200] Published: 2.4 years ago; Crawled: today; Die untere Bauaufsichtsbehörde des Landkreises Elbe-Elster hat im Rahmen der Beratungen der Bauamtsleiter, zuletzt am 29.05.2024, erläutert, dass derartige Bebauungspläne nicht mehr angewendet werden können. ... Dies bedeutet, dass künftige Bauvorhaben in diesen Gebieten nur noch auf der Grundlage der gesetzlichen Regelungen, in der Regel nach § 35 BauGB (Bauen im Außenbereich) oder vereinzelt möglicherweise auch nach § 34 BauGB (Zulässigkeit von Vorhaben innerhalb der im Zusammenhang bebauter Ortsteile) zu beurteilen sind. ... Weiterhin können über einen WMS-Dienst sowie einen WFS-Dienst diese Daten in eine andere Website eingebunden werden. ... Die Stadt Finsterwalde hat zusammen mit Mitteln des Europäischen Fonds für Regionale Entwicklung (EFRE) die vorhandenen Bauleitplanungsdaten digital aufbereitet und ein Geoportal aufgebaut, welches als Teil der Geodateninfrastruktur Berlin-Brandenburg der Öffentlichkeit zur Verfügung gestellt wird.
+--------------------------------------------------------------------------------
+Kfz-Haftfplichtversicherung (https://www.landkreis-badkissingen.de/buerger--politik/buergerservice/fachbereiche-und-abteilungen/mobilitaet--verkehr/auto--verkehr/kfz-zulassung/kfz-haftpflichtversicherung/index.html?_dc=6aee4d944a764)
+citeturn24search6 [wordlim: 200] Crawled: 6 days ago; Neuzulassung, Umschreibung, ... In diesem Fall übersendet der Versicherer eine Datensatz an ... Sollten Sie Ihre Kfz-Haftpflichtversicherung wechseln, achten Sie bitte darauf, dass
+
+die neue eVB der neuen Versicherung der Zulassungsbehörde übermittelt wird, bevor
+--------------------------------------------------------------------------------
+Information zur Verarbeitung personenbezogener Daten durch (https://www.frankfurt-oder.de/PDF/Informationsblatt_DSGVO_f%C3%BCr_die_Kfz_Zulasungsbeh%C3%B6rde.PDF?Ext=PDF&ObjID=11390&ObjLa=1&ObjSvrID=2616&WTR=1&_ts=1659334749)
+citeturn24search15 [wordlim: 200] Published: 4.3 years ago; a) beim Gesamtverband der Deutschen Versicherungswirtschaft (GDV) zur Verifizierung der ... der Zulassung von Fahrzeugen bei rückständigen Gebühren und Auslagen ... Die gesetzlichen Pflichtaufgaben der Kfz-Zulassungsbehörde können nicht erfüllt werden. ... Die verantwortliche Stelle legt personenbezogene Daten ausschließlich auf Grundlage gesetzli- ... übermittelt werden, die für die Verfolgung von Straftaten, von Ordnungswidrigkeiten und Ver-
+kehrskontrollen nach §§ 35, 37 StVG zuständig sind. ... an welche Behörden und öffentlichen Stellen im Geltungsbereich dieses Gesetzes sowie im
+--------------------------------------------------------------------------------
+Baustelle - Arbeitsstelle sichern und Verkehr regeln am Standort Straßenverkehrsbehörde Marzahn-Hellersdorf (https://service.berlin.de/dienstleistung/329908/standort/324677/pdf/)
+citeturn24search16 [wordlim: 200] Published: 6 months ago; ALKIS Daten im Geoportal Berlin (Senatsverwaltung für ... Abteilung VI - Verkehrsmanagement zuständig. ... Ordnungsgesetz (siehe "Rechtsgrundlagen")
+Straßenverkehrsbehörden der Bezirke
+--------------------------------------------------------------------------------
+Transparenzportal Hamburg (https://suche.transparenz.hamburg.de/dataset?extras_registerobject_type=geodat&forceWeb=true&license_id=dl-de-by-2.0&page=15&res_format=gml)
+citeturn24search7 [wordlim: 200] Crawled: last month; Der Datensatz enthält die Hauptverkehrsstraßen der Stadt Hamburg. ... Formate: gml, wfs, wms, oaf, html ...   * Image: Geografie, Geologie und Geodaten Geografie, Geologie & Geodaten
+--------------------------------------------------------------------------------
+VOIS | KFZ – VOIS-Software (https://www.vois.org/fachverfahren/vois-kfz/)
+citeturn24search8 [wordlim: 200] Crawled: 2 months ago; Download PDF ... Das Fachverfahren deckt alle Aufgabenbereiche einer Kraftfahrzeug-Zulassungsbehörde ab. ... Elektronische Kommunikation und automatischer Datenaustausch mit angeschlossenen Behörden wie dem Kraftfahrtbundesamt, dem GDV, den Prüforganisationen und den Meldebehörden vereinfachen die Abwicklung in den Zulassungsbehörden. Funktionen wie Flottenzulassung, einem Warenwirtschaftssystem, einer Plakettenverwaltung oder einem i-Kfz Portal inkl. einer Paymentlösung runden die Lösung ab. ... Zentrales Querschnittsverfahren für die Verbindung zwischen Fachverfahren und Geodaten ... Der Vorgangsraum
+--------------------------------------------------------------------------------
+Bauaufsicht Landkreis Harz (https://www.kreis-hz.de/de/bauaufsicht.html)
+citeturn24search9 [wordlim: 200] Crawled: 4 weeks ago; Die Untere Bauaufsichtsbehörde hat die Einhaltung der öffentlich-rechtlichen Vorschriften und die auf Grund dieser Vorschriften erlassenen Anordnungen bei der Errichtung, Änderung, Nutzungsänderung, Nutzung, Instandhaltung sowie den Abbruch einer baulichen Anlage zu überwachen. ... Formulare zum Download sowie Hinweis zur Beantragung einer Baugenehmigung in Sachsen-Anhalt finden Sie auf den Seiten des Ministeriums für Infrastruktur und Digitales. ... Ansprechpartner und Zuständigkeitsbereiche
+--------------------------------------------------------------------------------
+Behindertenstellplätze Hamburg (https://suche.transparenz.hamburg.de/dataset/behindertenstellplatze-hamburg2)
+citeturn24search10 [wordlim: 200] Published: 10.6 years ago; Crawled: 4 weeks ago; Die Anordnungen der Polizei/Straßenverkehrsbehörden werden zur Umsetzung an die zuständigen Bezirksämter abverfügt. ... Behinderte, Behindertenstellplätze, Geodaten, Innenstadt, Parken, Parkplatz, Parkraumbewirtschaftung, Stadtkern, Stellplätze, Transport networks, inspireidentifiziert ... Download Dienst "WFS Verkehrsdaten (OpenData)" (GetCapabilities) (Format: XML) Dienst "WFS Verkehrsdaten (OpenData)" (GetCapabilities) ... Datensatz ... Freie und Hansestadt Hamburg, Behörde für Wirtschaft, Verkehr und Innovation
+--------------------------------------------------------------------------------
+FZV - Verordnung über die Zulassung von Fahrzeugen zum Straßenverkehr (https://www.gesetze-im-internet.juris.de/fzv_2023/BJNR0C70B0023.html)
+citeturn24search11 [wordlim: 200] Published: 3.3 years ago; Crawled: today; Ergibt sich innerhalb dieser Frist der Bedarf für eine längere Speicherung zum Zweck der Datenschutzkontrolle oder der Datensicherheit, so sind die Protokolldaten unverzüglich nach Fortfall dieses Bedarfs zu löschen. ... Sofern die Zulassungsbehörde die Daten nicht durch Direkteinstellung nach § 60 Absatz 3 ändert, ist die Übermittlung der Daten nach Satz 1 Nummer 4 nur notwendig, sofern der Wechsel in den Bereich einer anderen Zulassungsbehörde erfolgt. ... (4) Ein Antrag kann mit Zustimmung der örtlich zuständigen Verwaltungsbehörde von einer gleichgeordneten auswärtigen Behörde, mit Zustimmung der zuständigen obersten Landesbehörden oder der von ihnen bestimmten oder nach Landesrecht zuständigen Stellen auch in einem anderen Land, behandelt und erledigt werden. ... (6) Die Zuständigkeiten der Verwaltungsbehörden auf Grund dieser Verordnung sind für die Dienstbereiche der Bundeswehr, der Bundespolizei, des Bundeskriminalamts, der Zollverwaltung, der Bundesanstalt Technisches Hilfswerk und der Polizeien der Länder durch deren Dienststellen nach Bestimmung der Fachminister und Fachministerinnen wahrzunehmen.
+--------------------------------------------------------------------------------
+Kraftfahrzeug-Zulassungsbehörde (https://de.wikipedia.org/wiki/Kraftfahrzeug-Zulassungsbeh%C3%B6rde)
+citeturn24search17 [wordlim: 200] Crawled: last week; Als Zulassungsstelle oder Kfz-Zulassungsbehörde wird in Deutschland und Österreich jene Zulassungsbehörde bezeichnet, die für die Ausstellung von Betriebserlaubnissen und andere relevante Dokumente sowie für die Zulassung von Kraftfahrzeugen zuständig ist. ... Keine Zuständigkeit besteht unter anderem für Fahrzeuge des THW, der Bundeswehr, der Bundespolizei und der Bundeszollverwaltung. ... In Deutschland werden die Zulassungsbehörden als Teil der Landkreise, Landratsämter, Gemeindeverbände und Gemeinden verwaltet. ... Das Kraftfahrt-Bundesamt führt ein Anschriftenverzeichnis der Zulassungsstellen. ... Wegen Verdachts auf Bestechungs- und Urkundendelikten bei Kfz-Zulassungen ließ die Staatsanwaltschaft München am 14. ... Für die Zulassung seines Fahrzeuges benötigt man in Österreich einen amtlichen Lichtbildausweis, einen Nachweis des Hauptwohnsitzes, eine Versicherungsbestätigung und einen Genehmigungsnachweis bzw. ein Genehmigungsdokument. ... *  Bundesrecht konsolidiert: Gesamte Rechtsvorschrift für Zulassungsstellenverordnung, Fassung vom 11.04.2025.
+--------------------------------------------------------------------------------
+Zulassungsbehörde (https://de.wikipedia.org/wiki/Zulassungsbeh%C3%B6rde)
+citeturn24search18 [wordlim: 200] Crawled: 1.2 years ago; 1 FZV einen Antrag auf Zulassung und erteilt eine Zulassungsbescheinigung Teil II. ... Gemäß § 24 FZV informiert die Zulassungsbehörde den Versicherer per Datensatz über die Zuteilung des Kennzeichens. Darüber hinaus teilt die Zulassungsbehörde dem Versicherer auch Anschriftenänderungen des Halters, Änderungen der Fahrzeugklasse und die Reservierung des Kennzeichens nach einer Außerbetriebsetzung mit.
+--------------------------------------------------------------------------------
+Zulassung von Fahrzeugen zum Straßenverkehr (https://de.wikipedia.org/wiki/Zulassung_von_Fahrzeugen_zum_Stra%C3%9Fenverkehr)
+citeturn24search19 [wordlim: 200] Crawled: 1.3 years ago; Zuständig für die Zulassung der meisten Kfz sind als untere Verwaltungsbehörden im Rahmen der Auftragsverwaltung für den Bund die Kraftfahrzeug-Zulassungsbehörden. ... Die überwiegende Zuständigkeit kommunaler Zulassungsstellen wird – davon abweichend – für die Zulassung der Dienstfahrzeuge bestimmter oberster und oberer Bundesbehörden und bevorrechtigter internationaler Organisationen von Bundesbehörden wahrgenommen; für die Dienstfahrzeuge der Bundespolizei und der Bundesanstalt Technisches Hilfswerk durch das Beschaffungsamt des Bundesministeriums des Innern, für die Bundes-Wasser- und Schifffahrtsverwaltung durch deren Wasser- und Schifffahrtsdirektionen, für die Dienstfahrzeuge der Bundeswehr und der auf Grund des Nordatlantikvertrages errichteten internationalen militärischen Hauptquartiere, die ihren regelmäßigen Standort im Inland haben, durch das Zentrum Kraftfahrwesen der Bundeswehr (ZKfWBw) in Mönchengladbach-Rheindahlen.
+--------------------------------------------------------------------------------
+Straßenverkehrsbehörde (https://de.wikipedia.org/wiki/Stra%C3%9Fenverkehrsbeh%C3%B6rde)
+citeturn24search20 [wordlim: 200] Crawled: 8 months ago; Die Straßenverkehrsbehörde (kurz StrVB, umgangssprachlich teils auch Verkehrsrechtsbehörde) ist in Deutschland die nach § 44 der nationalen Straßenverkehrs-Ordnung (StVO) durch Landesrecht bestimmte und zur Ausführung und Überwachung der Straßenverkehrs-Ordnung zuständige Verwaltungsbehörde: Ihr obliegt mit der Verkehrsregelungspflicht die Pflicht, Verkehrseinrichtungen und Verkehrszeichen so anzubringen, dass der Verkehr auf öffentlichen Straßen, Wegen und Plätzen gefahrlos, sicher und zügig fließe. 
+
+Die Straßenverkehrsbehörde hat beim Vollzug des Straßenverkehrsrechts eine ordnungsrechtliche Funktion und ist als Ordnungsbehörde ein Teil der öffentlichen Verwaltung. ... Die Straßenverkehrsbehörde ist zuständig für die Anordnungen von Verkehrszeichen und Straßenmarkierungen (soweit sie von der StVO definiert sind), Verkehrsbeschränkungen wie Geschwindigkeitsbeschränkungen, Umleitungen, Sperren, Einbahnstraße und Lichtzeichenanlagen.
+--------------------------------------------------------------------------------
+Gesundheitsamt (https://de.wikipedia.org/wiki/Gesundheitsamt)
+citeturn24search21 [wordlim: 200] Crawled: 1.3 years ago; Das Gesundheitsamt ist in Deutschland als am Ort tätige Behörde Teil des öffentlichen Gesundheitsdienstes. ... Gesetzliche Grundlage für die Arbeit von Gesundheitsämtern sind die in den meisten Ländern in den letzten Jahren neu verabschiedeten Landesgesetze über den öffentlichen Gesundheitsdienst bzw. rechtliche Vorschriften auf Bundesebene wie das Infektionsschutzgesetz und die Trinkwasserverordnung. ... So werden etwa im Rahmen der Gefahrenabwehr Maßnahmen zur Verhütung übertragbarer Krankheiten oder Schutzmaßnahmen zu deren Bekämpfung von der zuständigen Behörde auf Vorschlag des Gesundheitsamtes angeordnet (§ 16 Abs. ...   HE | 19 Landkreise, 4 kreisfreie Städte und ein Zweckverband als untere Gesundheitsbehörden (Gesundheitsämter), sowie eine Landesbehörde (HLfGP) als mittlere Gesundheitsbehörde: § 2 HGöGD | 21 Landkreise und 5 kreisfreie Städte ... *  Wissenschaftliche Dienste des Deutschen Bundestages: Die Gesundheitsdienstgesetze der Länder (WD 9 - 3000 - 027/14) ... *  Satzung des Zweckverbandes „Verwaltungsverband für das Gesundheitsamt der Stadt Darmstadt und des Landkreises Darmstadt-Dieburg“
+--------------------------------------------------------------------------------
+Bauaufsichtsbehörde (https://de.wikipedia.org/wiki/Bauaufsichtsbeh%C3%B6rde)
+citeturn24search22 [wordlim: 200] Crawled: 2.4 years ago; Im Bundesland und Stadtstaat Berlin wurde ein entsprechendes Informationsportal für alle Bauaufsichtsbehörden des Landes aufgebaut. ... Den Bauordnungsbehörden – historisch auch Baupolizeibehörden oder Baupolizeiämter, in Baden-Württemberg Baurechtsbehörden – wird durch das deutsche Verwaltungsrecht die Abwehr der Gefahren für die öffentliche Sicherheit und Ordnung auf dem Gebiet des öffentlichen Baurechts übertragen. ... * Die Oberste Bauaufsichtsbehörde: (Fachministerium) ist zuständig für den Erlass von Rechts- und Verwaltungsvorschriften, die Einführung technischer Baubestimmungen, die Zulassung neuer Bauarten, Baustoffe und Bauteile etc. ... * Die Untere Bauaufsichtsbehörde: (Landratsamt/Kreisverwaltung, kreisfreie Städte, weitere Städte und Gemeinden gemäß Sonderregelung der Bundesländer) überwacht alle Bauvorhaben in ihrem Bereich und überprüft und genehmigt Bauanträge. ... Die technische Prüfung der Anträge obliegt Bediensteten mit gehobener technischer Ausbildung.
+

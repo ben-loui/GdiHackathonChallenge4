@@ -1,0 +1,87 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_regierung_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:RegierungenStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "regierungsprs",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "regierungen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:37.094052+00:00",
+  "completed_at": "2026-11-13T17:44:37.563615+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 7,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "regierungsprs": 7
+  },
+  "source_subgroups": {
+    "regierungen": 7
+  },
+  "records_sha256": "62d2417b6d2bc5c82b8dbfefcc403f292a5cbd46dca526addeca105adcb51370",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:37.391662+00:00",
+      "response_sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c",
+      "bytes": 89094
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3ARegierungenStandort",
+      "retrieved_at": "2026-11-13T17:44:37.392426+00:00",
+      "response_sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378",
+      "bytes": 28008
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3ARegierungenStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:37.392843+00:00",
+      "response_sha256": "e1dfbe87f87f8f7316ed6f5605c4e58a09c2686da6e6f18149146b27feaf9367",
+      "bytes": 2937
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3ARegierungenStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:37.485170+00:00",
+      "response_sha256": "cf41c16d1f6f56e171254ba1f11ee8860c3c23d65c209bda53f1939a63ce830e",
+      "bytes": 14309
+    },
+    {
+      "path": "raw/page-000007.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3ARegierungenStandort&srsName=EPSG%3A3857&startIndex=7&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:37.563104+00:00",
+      "response_sha256": "a3df1901ce9115603c1fe1e6a7d7a46298d5e61d763a0a52a80b0d6853ac137d",
+      "bytes": 1031
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

@@ -1,0 +1,194 @@
+{
+  "format_version": 1,
+  "source": {
+    "scope": "DE-BB",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Land Brandenburg, Serviceportal Brandenburg, dl-de/by-2-0",
+    "source_date": "No per-record date supplied; retrieval date retained separately",
+    "request_crs": "EPSG:25833",
+    "coordinate_crs_evidence": "Published UTM east/north values interpreted in Brandenburg UTM zone 33; BKG CRS registry and state reference-system rule, cross-checked for Potsdam. https://sg.geodatenzentrum.de/web_registry/crs-gdz/coordinateReferenceSystem/UTM33.html",
+    "modifications": "Strip repeated UTF-8 BOM; retain string identifiers and original records; transform actual UTM coordinates, do not geocode or infer points from town centroids.",
+    "name_rule": "Unchanged explicit authority designation in the public official registry; reviewed source categories",
+    "id": "bb_registry_locations",
+    "kind": "authority_point",
+    "format": "bb_registry_points",
+    "routes": [
+      {
+        "category": "finanzamt",
+        "ids": [
+          "{E5F0335D-B423-D476-8399-FE8065909A22}",
+          "{DAFC4425-9221-527A-D072-9BC57C95323F}",
+          "{6CBEBFA2-8DBA-714E-A6EE-74C7E29E9080}",
+          "{7D3F8056-DC10-EB4E-637E-0E3510F9918A}",
+          "{B1DD5B6C-3099-3854-323F-9A4F687AC8D2}",
+          "{02DC120C-0F8C-CEB1-9FF2-9FAA55802CF0}",
+          "{BECB6356-476C-BA29-C53B-8612C5C45ED2}",
+          "{F5D62E13-A076-E7ED-E6BF-649E9172B06F}",
+          "{926B516D-1776-311B-BB3D-797C16EC212A}",
+          "{AF47741C-7ED1-FB0C-806C-1AE5FE62755C}",
+          "{7A4EFE2B-428F-0930-33A1-A9EBC6CC4C79}",
+          "{6C0D20AA-D7DC-1DA3-6CC1-77102E02FA43}",
+          "{3405F1F0-C1A0-DEA8-BBBB-0D2653828110}"
+        ],
+        "name_pattern_reviewed": "^Finanzamt "
+      },
+      {
+        "category": "amtsgericht",
+        "ids": [
+          "{45EC9F0E-B96C-8310-A8B3-897D6E3E628B}",
+          "{D17A300D-FFBE-BCBF-7B7B-2876E1F27A54}",
+          "{9AB31787-8697-DD30-9E07-99F87F2EEC0C}",
+          "{8B83C76C-BD8F-3EE5-9C3A-65062DF604EA}",
+          "{0D6CA38B-2E40-2D7D-7A57-8D55C3D83243}",
+          "{D4A7AE5B-478F-FACE-EE25-33D99563CE04}",
+          "{B4D54FEE-5DF6-F396-EBA5-42874978F706}",
+          "{2CAAF020-2303-2B31-7364-F40866265A83}",
+          "{F29C5E8D-4697-BD9A-2E9B-297D10BD200F}",
+          "{B75AA2B7-BA5C-26B5-78B7-80E7FBE66BDF}",
+          "{C8C216DF-8BA8-802A-6D0A-2D1EEA1EF589}",
+          "{246A40DE-083F-7608-0220-AFEB46F2CBDB}",
+          "{08AEBA07-832E-1DE3-47CE-07E59B133C56}",
+          "{CE4A80F2-6F3A-BA94-360A-9F399E156139}",
+          "{4B5E4BE3-FAC2-D45F-3E72-15FF60CC3DB7}",
+          "{9F74F8AF-DB1F-BDD1-A02D-DA6DCE14739B}",
+          "{D1D5CA07-EBA2-103D-CC51-65B5445A8574}",
+          "{5062CC3C-CE63-B0E3-8803-993C2CE7F1DE}",
+          "{A46D6E9A-A480-847A-395C-4722BBC44940}",
+          "{73049A80-24A5-25B2-1B4E-CE8CA9387F64}",
+          "{4DA3118A-4CFA-F25D-6B11-380B27E5F805}",
+          "{108707E0-BF3A-5A66-2867-1DF714169A11}",
+          "{4AC0C195-3081-3783-75C1-1E1DA59ED18C}",
+          "{F29F5E9E-649D-1D53-FDB3-C441C9CAAB39}",
+          "{AECF8757-BB4A-2FFC-582C-D523A8256C5D}"
+        ],
+        "name_pattern_reviewed": "^Amtsgericht "
+      },
+      {
+        "category": "landgericht",
+        "ids": [
+          "{0252452B-300C-11F6-4DE6-E526096EA506}",
+          "{0191BBD7-09A5-7635-9190-40A966340007}",
+          "{8A1D3C9C-DF6B-1B5B-F16C-EAFB5A365765}",
+          "{0200915D-76D9-6829-4C2D-7E0F00430495}"
+        ],
+        "name_pattern_reviewed": "^Landgericht "
+      },
+      {
+        "category": "verwaltungsgericht",
+        "ids": [
+          "{F5939871-2AEE-2044-7AEF-0505C955DFEE}",
+          "{53A6CA70-6EE6-6973-5807-ECF22585DFC0}",
+          "{6A6FCE7D-F114-BBD2-CE8C-6A77526FA532}"
+        ],
+        "name_pattern_reviewed": "^Verwaltungsgericht "
+      },
+      {
+        "category": "staatsanwaltschaft",
+        "ids": [
+          "{67003C5E-6E32-D093-5566-E18F9339C095}",
+          "{E7273D25-E030-057D-41E1-701CB7C807A0}",
+          "{692197B3-3135-2715-0F12-4AF81D0BAE1B}",
+          "{92704514-AFC3-39E4-4931-D0D23E6F7EB9}",
+          "{9E2E12A6-7DD8-F9A2-4FB6-42B97CD68E56}"
+        ],
+        "name_pattern_reviewed": "^Staatsanwaltschaft "
+      },
+      {
+        "category": "handwerkskammer",
+        "ids": [
+          "{41C1E81B-913D-E884-DA6C-192F35635883}",
+          "{DDFFE8FE-995B-EE03-9077-12EE1AAE3056}",
+          "{31E37DE6-6FF7-C57A-EA51-F59C03CD3CD5}"
+        ],
+        "name_pattern_reviewed": "^Handwerkskammer "
+      },
+      {
+        "category": "ihk",
+        "ids": [
+          "{A25F9575-A9CE-137A-E1A0-99E1D9BC5189}",
+          "{015153B7-64DA-BCCF-600B-001EF588F236}",
+          "{4EE13800-0DD1-0DA8-75E5-F5157D219E6B}"
+        ],
+        "name_pattern_reviewed": "^Industrie- und Handelskammer "
+      },
+      {
+        "category": "schulamt",
+        "ids": [
+          "{AE120621-4882-E698-BDE8-FA16D9C0220E}",
+          "{D637E200-BEDA-08B2-B577-CEA58F534568}",
+          "{F39A228C-EB7A-2485-EE92-336386DA0317}",
+          "{9DA8DC1D-3406-4011-BFEC-69B6BAE8CAA7}"
+        ],
+        "name_pattern_reviewed": "^Staatliches Schulamt "
+      },
+      {
+        "category": "auslaenderbehoerde",
+        "ids": [
+          "{173099ED-82B0-16E8-4943-052C17AF1811}"
+        ],
+        "name_pattern_reviewed": "^Zentrale Ausländerbehörde$"
+      },
+      {
+        "category": "pflegekasse",
+        "ids": [
+          "{730F91B7-5C2C-311E-A38D-307E5F798034}",
+          "{66468C7E-0634-C9A8-FA50-42E100F32539}"
+        ],
+        "name_pattern_reviewed": " als Pflegekasse$"
+      },
+      {
+        "category": "krankenkasse",
+        "ids": [
+          "{A5B279FA-D02B-B703-43BC-6BD651E5C349}"
+        ],
+        "name_pattern_reviewed": "^Innungskrankenkasse Brandenburg und Berlin Hauptverwaltung$"
+      },
+      {
+        "category": "rentenversicherung",
+        "ids": [
+          "{C7895723-BB03-0A72-4410-AA261E2C4668}"
+        ],
+        "name_pattern_reviewed": "^Deutsche Rentenversicherung "
+      }
+    ],
+    "documentation": "https://service.brandenburg.de/service/de/adressen/behoerdenverzeichnis/~329004",
+    "download_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/bvdaten.csv",
+    "coverage_claim": "Filtered actual office locations in the Brandenburg official authority register. Includes specialised Zentrale Ausländerbehörde, not universal local immigration competence; insurers not determined by residence."
+  },
+  "completed_at": "2026-11-13T18:59:54.699361+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "amtsgericht": 25,
+    "pflegekasse": 2,
+    "rentenversicherung": 1,
+    "finanzamt": 13,
+    "handwerkskammer": 3,
+    "ihk": 3,
+    "krankenkasse": 1,
+    "landgericht": 4,
+    "schulamt": 4,
+    "staatsanwaltschaft": 5,
+    "verwaltungsgericht": 3,
+    "auslaenderbehoerde": 1
+  },
+  "records_sha256": "a18717bd8b0af54b08e06042fbb351aaa70150895b49e30de6b6c5be8eb527e7",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/bvdaten.csv",
+      "retrieved_at": "2026-11-13T18:59:54.696139+00:00",
+      "response_sha256": "11a4a5f795a531592a430694e9ef84be3fbf7a9d4a2d738c5f8537b074562ebe",
+      "bytes": 129644
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_directory_rows": 408,
+  "classification_audit": {
+    "excluded_other_institution_type": 343
+  },
+  "source_input": "verified HTTPS download"
+}

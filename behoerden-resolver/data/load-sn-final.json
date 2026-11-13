@@ -1,0 +1,11 @@
+[
+  {
+    "source_id": "sn_kreis",
+    "snapshot": "data/snapshots/sn_kreis--20261113T175957242616Z",
+    "status": "imported",
+    "run_id": 51,
+    "records_per_category": {
+      "kreisverwaltung": 10
+    }
+  }
+]

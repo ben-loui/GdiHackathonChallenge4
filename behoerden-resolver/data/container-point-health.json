@@ -1,0 +1,64 @@
+{
+  "category": "gesundheitsamt",
+  "point": {
+    "lon": 11.589,
+    "lat": 50.927
+  },
+  "limitations": "Landratsamt-Geometrien werden nicht ohne amtliche Fachzuordnung zu Gesundheitsämtern umgedeutet.",
+  "matches": [
+    {
+      "authority_name": "Stadtverwaltung Jena - Gesundheitsamt",
+      "category": "gesundheitsamt",
+      "source_id": "th_health_locations",
+      "source_key": "GovernmentalService_DETH11595093StadtverwaltungJenaGesundheitsamt",
+      "scope": "DE-TH",
+      "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+      "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+      "properties": {
+        "service_type": "administrationForHealth",
+        "source_quality": "official",
+        "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11595093StadtverwaltungJenaGesundheitsamt\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Stadtverwaltung Jena - Gesundheitsamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11595093StadtverwaltungJenaGesundheitsamt</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Jena</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>3</ns6:locatorDesignator>\n              <ns6:postCode>07743</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Lutherplatz</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:telephoneVoice>03641 - 49 31- 20/-21</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>682114.0637275898 5645269.391726813</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+        "geometry_completeness": "location_only_no_jurisdiction_polygon"
+      },
+      "name_rule": {
+        "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+      },
+      "run_id": 83,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.59164,
+          50.93027
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "attribution": "© GDI-Th, CC BY 4.0",
+      "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+      "source_quality": "official",
+      "distance_m": 408.39146203,
+      "geometry_repaired": false,
+      "kind": "authority_point",
+      "territorial_match_verified": false,
+      "case_competence_verified": false,
+      "geometry_completeness": "location_only_no_jurisdiction_polygon",
+      "match_type": "nearest_point_fallback",
+      "jurisdiction_verified": false
+    }
+  ],
+  "national_coverage_guaranteed": false,
+  "status": "nearby_candidate",
+  "boundary_references": [],
+  "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+  "configured_sources": [],
+  "backend": "local_point_fallback",
+  "requested_backend": "local",
+  "fallback_used": true,
+  "area_search_status": "no_local_data",
+  "point_search": {
+    "radius_km": 40.0,
+    "count": 1,
+    "limit": 1
+  },
+  "fallback_reason": "No matching jurisdiction polygon was found in the completed area search.",
+  "warning": "Nahegelegener Standort. Zuständigkeit nicht durch eine Fläche belegt; Nähe begründet keine fachliche oder persönliche Zuständigkeit."
+}

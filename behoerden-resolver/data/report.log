@@ -1,0 +1,108 @@
+Measure amtsgericht
+Measure arbeitsagentur
+Measure finanzamt
+Measure handwerkskammer
+Measure ihk
+Measure jobcenter
+Measure kreisverwaltung
+Measure landgericht
+Measure polizei
+Measure regierungsprs
+Measure schulamt
+Measure staatsanwaltschaft
+Measure stadtverwaltung
+Measure verwaltungsgericht
+{
+  "generated_at": "2026-11-13T18:05:56.709169+00:00",
+  "authority_records": 6376,
+  "location_records": 767,
+  "boundary_records": 11396,
+  "categories_with_authorities": 14,
+  "categories_with_locations": 22,
+  "categories_total": 36,
+  "national_coverage_guaranteed": false,
+  "geometry_checks": {
+    "authorities": {
+      "records": 6376,
+      "repaired": 2508,
+      "invalid": 0
+    },
+    "boundaries": {
+      "records": 11396,
+      "repaired": 6122,
+      "invalid": 0
+    },
+    "locations": {
+      "records": 767,
+      "repaired": 0,
+      "invalid": 0
+    }
+  },
+  "reference_municipalities": 10974,
+  "reference_municipalities_by_state": [
+    {
+      "state": "BB",
+      "municipalities": 413
+    },
+    {
+      "state": "BE",
+      "municipalities": 1
+    },
+    {
+      "state": "BW",
+      "municipalities": 1103
+    },
+    {
+      "state": "BY",
+      "municipalities": 2221
+    },
+    {
+      "state": "HB",
+      "municipalities": 2
+    },
+    {
+      "state": "HE",
+      "municipalities": 425
+    },
+    {
+      "state": "HH",
+      "municipalities": 1
+    },
+    {
+      "state": "MV",
+      "municipalities": 724
+    },
+    {
+      "state": "NI",
+      "municipalities": 964
+    },
+    {
+      "state": "NW",
+      "municipalities": 396
+    },
+    {
+      "state": "RP",
+      "municipalities": 2324
+    },
+    {
+      "state": "SH",
+      "municipalities": 1106
+    },
+    {
+      "state": "SL",
+      "municipalities": 53
+    },
+    {
+      "state": "SN",
+      "municipalities": 418
+    },
+    {
+      "state": "ST",
+      "municipalities": 218
+    },
+    {
+      "state": "TH",
+      "municipalities": 605
+    }
+  ]
+}

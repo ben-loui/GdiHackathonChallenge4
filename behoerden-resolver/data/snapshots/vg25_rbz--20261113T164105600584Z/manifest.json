@@ -1,0 +1,73 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "vg25_rbz",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+    "layer": "vg25:vg25_rbz",
+    "scope": "DE",
+    "kind": "boundary_reference",
+    "routes": [
+      {
+        "category": "regierungsprs",
+        "name_field": "gen"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "objid",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:40:48.676537+00:00",
+  "completed_at": "2026-11-13T16:41:05.598097+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 19,
+  "expected_features": 19,
+  "terminal_empty_page": false,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "regierungsprs": 19
+  },
+  "source_subgroups": {
+    "n/a": 19
+  },
+  "records_sha256": "75264a7f23e273dbff8edbeb997e0a77553fb4ea5cbbd59f6afd6c27b759fb63",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:40:49.984869+00:00",
+      "response_sha256": "4c6aaa20a4e25262a794aa88f5902b9becffad9e68b5fe4af2b6b9da644ab767",
+      "bytes": 106604
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_rbz",
+      "retrieved_at": "2026-11-13T16:40:49.985106+00:00",
+      "response_sha256": "8e53a1f76ef217417a6e0d735643fbae1a97716630820f4a39c4fd4877fc26fa",
+      "bytes": 3365
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_rbz&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:50.082072+00:00",
+      "response_sha256": "6b86f6bee3dce689eabce034c3e3ce8eac68fc68675993c12ccaeabe50135e9f",
+      "bytes": 439563
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_rbz&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:41:00.239102+00:00",
+      "response_sha256": "ddb35d922f954310694479c84a51ea9c524ee8dfac83f71e1ed282384ad7fecb",
+      "bytes": 10072658
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

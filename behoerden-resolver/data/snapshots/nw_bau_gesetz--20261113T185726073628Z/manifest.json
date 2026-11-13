@@ -1,0 +1,82 @@
+{
+  "format_version": 1,
+  "source": {
+    "kind": "authority",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Explicit reviewed statutory assignment to existing official polygons; preserve all original source fields, mark geometry repairs.",
+    "id": "nw_bau_gesetz",
+    "format": "statutory_nw_bau",
+    "scope": "DE-NW",
+    "routes": [
+      {
+        "category": "bauamt"
+      }
+    ],
+    "download_url": "https://dateien.open.nrw/download/kontaktdaten_ubab_nrw_stand_04.2024_0.xlsx",
+    "legal_basis": "https://recht.nrw.de/lrgv/gesetz/01092026-landesbauordnung-2018-bauo-nrw-2018/",
+    "required_legal_clause": "die Kreise für die übrigen kreisangehörigen Gemeinden.",
+    "documentation": "https://www.govdata.de/suche/daten/kontaktdaten-der-unteren-bauaufsichtsbehorden-in-nordrhein-westfalen-stand-april-2024",
+    "license": "Directory CC0-1.0 + VG25 CC-BY-4.0 + statutory assignment (§5 UrhG)",
+    "attribution": "Ministerium für Heimat, Kommunales, Bau und Digitalisierung des Landes NRW, CC0 1.0; © BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "source_date": "2024-07 (inside source spreadsheet; metadata title says April 2024)",
+    "mapping_reviewed_at": "2026-11-13",
+    "mapping_file": "nw_bau.csv",
+    "mapping_sha256": "f5a9cf84673957ea0d7946b8a97de0f572f4bdbf8f0cb9293f5681b9eebd1ce7",
+    "name_rule": "Original municipal institution name and department from the public directory, exact reviewed VG25 AGS/ARS mapping; counties exclude autonomous cities",
+    "coverage_claim": "General local lower building supervision, special competences excluded. Directory is dated 2024 and contains 211 rows although metadata advertise 212; audit preserves discrepancy. Current autonomous-city exceptions checked separately against statutory city list. Missing directory cities remain uncovered; never assigned to counties.",
+    "city_status_url": "https://recht.nrw.de/lrgv/rechtsverordnung/01012025-verordnung-zur-bestimmung-der-grossen-kreisangehoerigen-staedte-und/",
+    "city_status_file": "nw_city_status.csv",
+    "city_status_sha256": "95fd5023d22f1f4be3f18df1f6dcc792a954f3d4aa15d503adcbe40a2a6e379c"
+  },
+  "completed_at": "2026-11-13T18:57:26.071958+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "bauamt": 211
+  },
+  "records_sha256": "87025f4059d300ac8c8e73455353879e815a66fa7b0c2c803ef3f30507aa4e9c",
+  "requests": [
+    {
+      "path": "raw/directory.gz",
+      "request_url": "https://dateien.open.nrw/download/kontaktdaten_ubab_nrw_stand_04.2024_0.xlsx",
+      "retrieved_at": "2026-11-13T18:57:21.907263+00:00",
+      "response_sha256": "1cdec5cba0888e263ad4b50b731a928edf27d47dd9ce60df9c5371f5f9d51460",
+      "bytes": 2009575
+    },
+    {
+      "path": "raw/legal_basis.gz",
+      "request_url": "https://recht.nrw.de/lrgv/gesetz/01092026-landesbauordnung-2018-bauo-nrw-2018/",
+      "retrieved_at": "2026-11-13T18:57:21.917522+00:00",
+      "response_sha256": "cb4cf07347b5e31886ca35d350fefaf0e936b1dfc6036e6ed0bb6bc02941f68a",
+      "bytes": 584801
+    },
+    {
+      "path": "raw/city_status.gz",
+      "request_url": "https://recht.nrw.de/lrgv/rechtsverordnung/01012025-verordnung-zur-bestimmung-der-grossen-kreisangehoerigen-staedte-und/",
+      "retrieved_at": "2026-11-13T18:57:21.919104+00:00",
+      "response_sha256": "8b9ac2239e02de4937126f1486c672c31173f87480db180880948651bcdf1caa",
+      "bytes": 45853
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "assignment_audit": {
+    "source_advertised_count": 212,
+    "actual_directory_rows": 211,
+    "source_file_date": "2024-07 (inside spreadsheet)",
+    "covered_municipalities": 389,
+    "uncovered_ags": [
+      "05162028",
+      "05166028",
+      "05370028",
+      "05754016",
+      "05774036",
+      "05954020",
+      "05966004"
+    ],
+    "note": "Missing current autonomous cities stay uncovered, never assigned to counties. Directory metadata and actual row counts differ."
+  },
+  "mapping_sha256": "f5a9cf84673957ea0d7946b8a97de0f572f4bdbf8f0cb9293f5681b9eebd1ce7",
+  "parent_records_sha256": "9e4447d1825a1874891645a49c68044784066cdd6c230cb6a303e7e9c5e4044c"
+}

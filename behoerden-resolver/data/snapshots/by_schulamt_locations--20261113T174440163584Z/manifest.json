@@ -1,0 +1,89 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_schulamt_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs",
+    "layer": "stmuk:SchulaemterStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "schulamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "schulaemter-landkreise",
+            "schulaemter-kreisfreie-staedte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium für Unterricht und Kultus.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:39.559348+00:00",
+  "completed_at": "2026-11-13T17:44:40.163343+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 96,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "schulamt": 96
+  },
+  "source_subgroups": {
+    "schulaemter-kreisfreie-staedte": 25,
+    "schulaemter-landkreise": 71
+  },
+  "records_sha256": "cf2298a3d05f3c5833bef28a83b4d8aa4c50c6431402edd9b3e2ad2ac3126678",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:39.891084+00:00",
+      "response_sha256": "af9f86d7fd3db2e22ea1a882763df45cb27de04d6791b59cc62ccdc30b8851a1",
+      "bytes": 48656
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmuk%3ASchulaemterStandort",
+      "retrieved_at": "2026-11-13T17:44:39.891929+00:00",
+      "response_sha256": "15e07eaeb868cdf30c49ee51ecf1bd6c54e16c46f27594ad7dfa606b0a45f158",
+      "bytes": 14579
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:39.892358+00:00",
+      "response_sha256": "c6be6a2b720d129983d5dc1a3a74c4cfcc538aa676ba9f992ea344fe8cd3547e",
+      "bytes": 2989
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.075820+00:00",
+      "response_sha256": "14c64a79b83284bd554cdcb19df4ae644f3fb046ef631654ff3d39b9550f2311",
+      "bytes": 188164
+    },
+    {
+      "path": "raw/page-000096.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterStandort&srsName=EPSG%3A3857&startIndex=96&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.162876+00:00",
+      "response_sha256": "8856228eec20ee2bac9029d11b052d044d37b649c4731bbfdc4590345dc9d7f0",
+      "bytes": 1036
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

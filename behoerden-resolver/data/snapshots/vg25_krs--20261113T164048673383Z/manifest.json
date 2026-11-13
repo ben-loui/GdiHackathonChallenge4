@@ -1,0 +1,129 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "vg25_krs",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+    "layer": "vg25:vg25_krs",
+    "scope": "DE",
+    "kind": "boundary_reference",
+    "routes": [
+      {
+        "category": "kreisverwaltung",
+        "name_field": "gen"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "objid",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:39:52.783040+00:00",
+  "completed_at": "2026-11-13T16:40:48.667108+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 403,
+  "expected_features": 403,
+  "terminal_empty_page": false,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "kreisverwaltung": 403
+  },
+  "source_subgroups": {
+    "n/a": 403
+  },
+  "records_sha256": "276b8b855f205156e79c99051c472a6202ca3f46caf4cd1da889d10d1ae1fbca",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:39:53.162363+00:00",
+      "response_sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6",
+      "bytes": 106604
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_krs",
+      "retrieved_at": "2026-11-13T16:39:53.162666+00:00",
+      "response_sha256": "c6145c602a3729783a9cd1df359c4f32e17e90b5199bd3de5343678beb7c3659",
+      "bytes": 3365
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:53.171797+00:00",
+      "response_sha256": "6439163f8a14a4a34242ed2be778589511a9e9981499d3b9a90a86d19ccea5ff",
+      "bytes": 38241
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:56.689040+00:00",
+      "response_sha256": "c7aac67b13966ddc83d779d536e7edf1e7dddac485c177e818a28e49f8897996",
+      "bytes": 5738697
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=50&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:02.783026+00:00",
+      "response_sha256": "fbd529e7280a5bb783a3869780d85218cd1d1b64355aa59029e966527493953c",
+      "bytes": 5503718
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=100&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:08.589984+00:00",
+      "response_sha256": "b4a55c3f056950f3b12cc85df1e85f056986d21e7181afb16a3689a5c542db5a",
+      "bytes": 5344927
+    },
+    {
+      "path": "raw/page-000150.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=150&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:14.102356+00:00",
+      "response_sha256": "6bf7ececdbf793bca5e7f5f63f8c385d3341eb66ff630f89fbf6ec40df3a00c2",
+      "bytes": 4550120
+    },
+    {
+      "path": "raw/page-000200.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=200&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:19.704786+00:00",
+      "response_sha256": "1bff65adfbf55e841244c5903925aff0f62d62b24cba0f7894e07dc0e1a2005c",
+      "bytes": 5964214
+    },
+    {
+      "path": "raw/page-000250.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=250&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:27.069769+00:00",
+      "response_sha256": "38fc532a21985fa18e1038b1dd77be75a2d20a828bc4194dcce8534dbb5a83cb",
+      "bytes": 7746872
+    },
+    {
+      "path": "raw/page-000300.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=300&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:35.453707+00:00",
+      "response_sha256": "d021ae81bf524b106937ab68a4b7e484e730d614b709e9a8b3072c393ced403b",
+      "bytes": 7467212
+    },
+    {
+      "path": "raw/page-000350.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=350&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:44.175337+00:00",
+      "response_sha256": "319937c516e6bfe246d5a529ffd38a31c9fc68f37a420cbe07f715a11f7239b0",
+      "bytes": 6884542
+    },
+    {
+      "path": "raw/page-000400.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=400&count=50&sortBy=objid&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:40:48.548779+00:00",
+      "response_sha256": "3142f8846abd34371d584593a8642c3e841d77fe3aea17cb954b8f615b11d015",
+      "bytes": 218438
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source_id": "hh_finanzamt",
+    "snapshot": "data/snapshots/hh_finanzamt--20261113T171923098603Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "bb_polizei",
+    "snapshot": "data/snapshots/bb_polizei--20261113T171925741955Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "th_schulamt",
+    "snapshot": "data/snapshots/th_schulamt--20261113T171927635309Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "he_schulamt",
+    "snapshot": "data/snapshots/he_schulamt--20261113T171928911801Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "regierung_vg25",
+    "snapshot": "data/snapshots/regierung_vg25--20261113T171930847328Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "sn_kreis",
+    "snapshot": "data/snapshots/sn_kreis--20261113T171932528972Z",
+    "status": "downloaded"
+  }
+]

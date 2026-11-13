@@ -1,0 +1,108 @@
+[
+  {
+    "source_id": "by_finanzamt",
+    "run_id": 1,
+    "records_per_category": {
+      "finanzamt": 101
+    }
+  },
+  {
+    "source_id": "by_handwerkskammer",
+    "run_id": 2,
+    "records_per_category": {
+      "handwerkskammer": 7
+    }
+  },
+  {
+    "source_id": "by_ihk",
+    "run_id": 3,
+    "records_per_category": {
+      "ihk": 10
+    }
+  },
+  {
+    "source_id": "by_kreis",
+    "run_id": 4,
+    "records_per_category": {
+      "stadtverwaltung": 25,
+      "kreisverwaltung": 71
+    }
+  },
+  {
+    "source_id": "by_polizei",
+    "run_id": 5,
+    "records_per_category": {
+      "polizei": 263
+    }
+  },
+  {
+    "source_id": "by_regierung",
+    "run_id": 6,
+    "records_per_category": {
+      "regierungsprs": 7
+    }
+  },
+  {
+    "source_id": "by_schulamt",
+    "run_id": 7,
+    "records_per_category": {
+      "schulamt": 96
+    }
+  },
+  {
+    "source_id": "by_staatsanwaltschaft",
+    "run_id": 8,
+    "records_per_category": {
+      "staatsanwaltschaft": 22
+    }
+  },
+  {
+    "source_id": "by_verwaltungsgericht_gesetz",
+    "run_id": 9,
+    "records_per_category": {
+      "verwaltungsgericht": 6
+    }
+  },
+  {
+    "source_id": "bzb_amtsgericht",
+    "run_id": 10,
+    "records_per_category": {
+      "amtsgericht": 650
+    }
+  },
+  {
+    "source_id": "bzb_arbeitsagentur",
+    "run_id": 11,
+    "records_per_category": {
+      "arbeitsagentur": 146
+    }
+  },
+  {
+    "source_id": "bzb_jobcenter",
+    "run_id": 12,
+    "records_per_category": {
+      "jobcenter": 404
+    }
+  },
+  {
+    "source_id": "bzb_landgericht",
+    "run_id": 13,
+    "records_per_category": {
+      "landgericht": 115
+    }
+  },
+  {
+    "source_id": "vg25_krs",
+    "run_id": 14,
+    "records_per_category": {
+      "kreisverwaltung": 403
+    }
+  },
+  {
+    "source_id": "vg25_rbz",
+    "run_id": 15,
+    "records_per_category": {
+      "regierungsprs": 19
+    }
+  }
+]

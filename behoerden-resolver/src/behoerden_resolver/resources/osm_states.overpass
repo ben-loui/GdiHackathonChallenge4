@@ -1,0 +1,1 @@
+[out:json][timeout:180];area["ISO3166-2"="{STATE}"]["boundary"="administrative"]->.a;(nwr(area.a)["office"="government"];nwr(area.a)["office"~"^(insurance|association)$"];nwr(area.a)["amenity"~"^(police|courthouse|townhall)$"];);out center tags;

@@ -1,0 +1,88 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_staatsanwaltschaft_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs",
+    "layer": "stmj:LandgerichteStaatsanwaltschaftenStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "staatsanwaltschaft",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "staatsanwaltschaften"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Justiz.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:39.036748+00:00",
+  "completed_at": "2026-11-13T17:44:39.558270+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 44,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "staatsanwaltschaft": 22
+  },
+  "source_subgroups": {
+    "landgerichte": 22,
+    "staatsanwaltschaften": 22
+  },
+  "records_sha256": "9d51f7fc5670509740fa45e2df8242e6776aa57c2e88a87b54d627709741dba4",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:39.330455+00:00",
+      "response_sha256": "6fbf8023f615450bf28d861af76e040c9d6b85dfd032532ddd1d1e2632bce0a1",
+      "bytes": 40634
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenStandort",
+      "retrieved_at": "2026-11-13T17:44:39.331329+00:00",
+      "response_sha256": "0c03e8158dfe8b9b659706771b4667fc7e7cf18ee90671456a2bfe27550c374a",
+      "bytes": 12780
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:39.331871+00:00",
+      "response_sha256": "f9bfb669fc69d378022a9bfb156ef66943c3412dfb9d596be763387fc6333611",
+      "bytes": 3045
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:39.469685+00:00",
+      "response_sha256": "5bec679a8aac98118cf3ae5fe561632f50b703cd7a4dc7dd1f6a57be3eade091",
+      "bytes": 88904
+    },
+    {
+      "path": "raw/page-000044.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenStandort&srsName=EPSG%3A3857&startIndex=44&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:39.557172+00:00",
+      "response_sha256": "02e4850f081948c232cfdd27f4e013acd2c712c8edad4f4de617a1191f1cbb25",
+      "bytes": 1052
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

@@ -1,0 +1,94 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_schulamt",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs",
+    "layer": "stmuk:SchulaemterFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "schulamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "schulaemter-landkreise",
+            "schulaemter-kreisfreie-staedte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium für Unterricht und Kultus.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:42:14.568729+00:00",
+  "completed_at": "2026-11-13T16:42:24.821182+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 96,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "schulamt": 96
+  },
+  "source_subgroups": {
+    "schulaemter-kreisfreie-staedte": 25,
+    "schulaemter-landkreise": 71
+  },
+  "records_sha256": "4239a164eeb0d2b56e347ae3394bf9c0757564487dae52b12bee075e113cc6b7",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:42:14.881153+00:00",
+      "response_sha256": "af9f86d7fd3db2e22ea1a882763df45cb27de04d6791b59cc62ccdc30b8851a1",
+      "bytes": 48656
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmuk%3ASchulaemterFlaeche",
+      "retrieved_at": "2026-11-13T16:42:14.881389+00:00",
+      "response_sha256": "15e07eaeb868cdf30c49ee51ecf1bd6c54e16c46f27594ad7dfa606b0a45f158",
+      "bytes": 14579
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:14.891319+00:00",
+      "response_sha256": "cefe925ff5cb69bc270615d1fd7f67b10aaef74cb3a262a8149035704ca6ce93",
+      "bytes": 81237
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterFlaeche&srsName=EPSG%3A3857&startIndex=0&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:17.871092+00:00",
+      "response_sha256": "fae28de9806397beecaca562da9879adfb2b5a98fa73d59cac242f41515604e7",
+      "bytes": 17770348
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterFlaeche&srsName=EPSG%3A3857&startIndex=50&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:22.756494+00:00",
+      "response_sha256": "5c33fdfc7ba18c22165c8171b5926df032ebb964c8aa17396c2e4f6ceb84c808",
+      "bytes": 13607680
+    },
+    {
+      "path": "raw/page-000096.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterFlaeche&srsName=EPSG%3A3857&startIndex=96&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:24.813471+00:00",
+      "response_sha256": "309f9bdc25ff1c116af05aeff342f09adb63df5b84cfae59cdd481dc1a1a06db",
+      "bytes": 1035
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

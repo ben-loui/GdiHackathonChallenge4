@@ -1,0 +1,82 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_handwerkskammer_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:HandwerkskammernStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "handwerkskammer",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:40.623229+00:00",
+  "completed_at": "2026-11-13T17:44:41.048121+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 7,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "handwerkskammer": 7
+  },
+  "source_subgroups": {
+    "hwk": 7
+  },
+  "records_sha256": "4e81bd09cc163212ce6e74952383c77a0bbe4faf6589eb568c5d33306cdd914d",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:40.880572+00:00",
+      "response_sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306",
+      "bytes": 35744
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AHandwerkskammernStandort",
+      "retrieved_at": "2026-11-13T17:44:40.881416+00:00",
+      "response_sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289",
+      "bytes": 7576
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.881967+00:00",
+      "response_sha256": "9cad53e569c7920f34d714c396a604518b469caf2685dce798b6ad87c955cccf",
+      "bytes": 3058
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.973731+00:00",
+      "response_sha256": "d496656356b98d66b58fe4c8d6c0a29f0b7a8543e9801ab7ad6c0f825bd79b67",
+      "bytes": 14873
+    },
+    {
+      "path": "raw/page-000007.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernStandort&srsName=EPSG%3A3857&startIndex=7&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:41.047846+00:00",
+      "response_sha256": "95ace6694d2bc54236da2a0da5e0904fa1b009c759e101d82174fd709b5a1266",
+      "bytes": 1070
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

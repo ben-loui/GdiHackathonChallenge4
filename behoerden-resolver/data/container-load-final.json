@@ -1,0 +1,266 @@
+[
+  {
+    "source_id": "bb_polizei",
+    "run_id": 53,
+    "records_per_category": {
+      "polizei": 16
+    }
+  },
+  {
+    "source_id": "bb_polizei_locations",
+    "run_id": 54,
+    "records_per_category": {
+      "polizei": 80
+    }
+  },
+  {
+    "source_id": "by_finanzamt",
+    "run_id": 55,
+    "records_per_category": {
+      "finanzamt": 101
+    }
+  },
+  {
+    "source_id": "by_finanzamt_locations",
+    "run_id": 56,
+    "records_per_category": {
+      "finanzamt": 101
+    }
+  },
+  {
+    "source_id": "by_handwerkskammer",
+    "run_id": 57,
+    "records_per_category": {
+      "handwerkskammer": 7
+    }
+  },
+  {
+    "source_id": "by_handwerkskammer_locations",
+    "run_id": 58,
+    "records_per_category": {
+      "handwerkskammer": 7
+    }
+  },
+  {
+    "source_id": "by_ihk",
+    "run_id": 59,
+    "records_per_category": {
+      "ihk": 10
+    }
+  },
+  {
+    "source_id": "by_ihk_locations",
+    "run_id": 60,
+    "records_per_category": {
+      "ihk": 10
+    }
+  },
+  {
+    "source_id": "by_kreis",
+    "run_id": 61,
+    "records_per_category": {
+      "stadtverwaltung": 25,
+      "kreisverwaltung": 71
+    }
+  },
+  {
+    "source_id": "by_kreis_locations",
+    "run_id": 62,
+    "records_per_category": {
+      "stadtverwaltung": 25,
+      "kreisverwaltung": 71
+    }
+  },
+  {
+    "source_id": "by_polizei",
+    "run_id": 63,
+    "records_per_category": {
+      "polizei": 263
+    }
+  },
+  {
+    "source_id": "by_polizei_locations",
+    "run_id": 64,
+    "records_per_category": {
+      "polizei": 241
+    }
+  },
+  {
+    "source_id": "by_regierung",
+    "run_id": 65,
+    "records_per_category": {
+      "regierungsprs": 7
+    }
+  },
+  {
+    "source_id": "by_regierung_locations",
+    "run_id": 66,
+    "records_per_category": {
+      "regierungsprs": 7
+    }
+  },
+  {
+    "source_id": "by_schulamt",
+    "run_id": 67,
+    "records_per_category": {
+      "schulamt": 96
+    }
+  },
+  {
+    "source_id": "by_schulamt_locations",
+    "run_id": 68,
+    "records_per_category": {
+      "schulamt": 96
+    }
+  },
+  {
+    "source_id": "by_staatsanwaltschaft",
+    "run_id": 69,
+    "records_per_category": {
+      "staatsanwaltschaft": 22
+    }
+  },
+  {
+    "source_id": "by_staatsanwaltschaft_locations",
+    "run_id": 70,
+    "records_per_category": {
+      "staatsanwaltschaft": 22
+    }
+  },
+  {
+    "source_id": "by_verwaltungsgericht_gesetz",
+    "run_id": 71,
+    "records_per_category": {
+      "verwaltungsgericht": 6
+    }
+  },
+  {
+    "source_id": "by_verwaltungsgericht_locations",
+    "run_id": 72,
+    "records_per_category": {
+      "verwaltungsgericht": 6
+    }
+  },
+  {
+    "source_id": "bzb_amtsgericht",
+    "run_id": 73,
+    "records_per_category": {
+      "amtsgericht": 650
+    }
+  },
+  {
+    "source_id": "bzb_arbeitsagentur",
+    "run_id": 74,
+    "records_per_category": {
+      "arbeitsagentur": 146
+    }
+  },
+  {
+    "source_id": "bzb_jobcenter",
+    "run_id": 75,
+    "records_per_category": {
+      "jobcenter": 404
+    }
+  },
+  {
+    "source_id": "bzb_landgericht",
+    "run_id": 76,
+    "records_per_category": {
+      "landgericht": 115
+    }
+  },
+  {
+    "source_id": "gemfa_vg25",
+    "run_id": 77,
+    "records_per_category": {
+      "stadtverwaltung": 3966,
+      "finanzamt": 411
+    }
+  },
+  {
+    "source_id": "he_schulamt",
+    "run_id": 78,
+    "records_per_category": {
+      "schulamt": 15
+    }
+  },
+  {
+    "source_id": "hh_finanzamt",
+    "run_id": 79,
+    "records_per_category": {
+      "finanzamt": 18
+    }
+  },
+  {
+    "source_id": "osm_locations",
+    "run_id": 80,
+    "records_per_category": {
+      "stadtverwaltung": 6,
+      "standesamt": 3,
+      "gesundheitsamt": 2,
+      "jobcenter": 2,
+      "jugendamt": 1,
+      "zoll": 3,
+      "rentenversicherung": 1,
+      "strassenverkehrsbehoerde": 1,
+      "umweltamt": 4,
+      "finanzamt": 3,
+      "ordnungsamt": 1,
+      "sozialamt": 2,
+      "zulassungsstelle": 2,
+      "veterinaeramt": 1,
+      "polizei": 1
+    }
+  },
+  {
+    "source_id": "regierung_vg25",
+    "run_id": 81,
+    "records_per_category": {
+      "regierungsprs": 12
+    }
+  },
+  {
+    "source_id": "sn_kreis",
+    "run_id": 82,
+    "records_per_category": {
+      "kreisverwaltung": 10
+    }
+  },
+  {
+    "source_id": "th_health_locations",
+    "run_id": 83,
+    "records_per_category": {
+      "gesundheitsamt": 23,
+      "jugendamt": 23,
+      "veterinaeramt": 22
+    }
+  },
+  {
+    "source_id": "th_schulamt",
+    "run_id": 84,
+    "records_per_category": {
+      "schulamt": 5
+    }
+  },
+  {
+    "source_id": "vg25_gem",
+    "run_id": 85,
+    "records_per_category": {
+      "stadtverwaltung": 10974
+    }
+  },
+  {
+    "source_id": "vg25_krs",
+    "run_id": 86,
+    "records_per_category": {
+      "kreisverwaltung": 403
+    }
+  },
+  {
+    "source_id": "vg25_rbz",
+    "run_id": 87,
+    "records_per_category": {
+      "regierungsprs": 19
+    }
+  }
+]

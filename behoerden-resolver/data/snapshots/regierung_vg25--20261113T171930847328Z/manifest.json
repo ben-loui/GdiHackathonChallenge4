@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "regierung_vg25",
+    "kind": "authority",
+    "scope": "DE-BW|DE-HE|DE-NW",
+    "format": "csv_mapping",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "regierungsprs"
+      }
+    ],
+    "documentation": "https://www.baden-wuerttemberg.de/de/unser-land/von-der-gemeinde-bis-zum-ministerium",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; amtliche Behördennamen und sachliche Zuordnung aus verlinkter Quelle.",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2026-11-13 (assignment reviewed)",
+    "boundary_source": "vg25_rbz",
+    "mapping_file": "regierung_vg25.csv",
+    "mapping_sha256": "290a94804ac6f41378b798f5cf2e156ecb6b8716d46cd1f019b47c60b2308aa7",
+    "name_rule": "Reviewed explicit authority-to-named-region assignment; exact official region keys, no nearest-location inference"
+  },
+  "completed_at": "2026-11-13T17:19:30.846503+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "regierungsprs": 12
+  },
+  "records_sha256": "6610c5c9ed01ffd08fc4d65940dfd818c1a44b214ac03c16cc424bbea179328d",
+  "requests": [],
+  "national_authority_coverage_guaranteed": false,
+  "derivation_complete": true,
+  "mapping_sha256": "290a94804ac6f41378b798f5cf2e156ecb6b8716d46cd1f019b47c60b2308aa7",
+  "parent_snapshot": "vg25_rbz--20261113T164105600584Z"
+}

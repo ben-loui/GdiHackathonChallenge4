@@ -1,0 +1,87 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "bzb_arbeitsagentur",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:ba_arbeitsagenturen",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "arbeitsagentur",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:39:47.494654+00:00",
+  "completed_at": "2026-11-13T16:39:52.779222+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 146,
+  "expected_features": 146,
+  "terminal_empty_page": false,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "arbeitsagentur": 146
+  },
+  "source_subgroups": {
+    "n/a": 146
+  },
+  "records_sha256": "2fda7d938c3a5c2b0d3a17849b139e39d254a4e45b119f5d99dcc4e88ed477d0",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:39:48.069185+00:00",
+      "response_sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f",
+      "bytes": 97447
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_arbeitsagenturen",
+      "retrieved_at": "2026-11-13T16:39:48.069491+00:00",
+      "response_sha256": "4e28d7a08cccd9cc1fa6921f4bff25d0685f7722e83c0c8e9f23d3dfc9a57b94",
+      "bytes": 1250
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_arbeitsagenturen&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:48.100530+00:00",
+      "response_sha256": "4a8b6d3b2a896e607880a0bdd57b58fcddde7e3b012815031495111504a9cee5",
+      "bytes": 159365
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_arbeitsagenturen&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:49.483056+00:00",
+      "response_sha256": "68096bb1a9ebba22152eb987b10ceb21f755c427a13a739e6c3ee746a307a173",
+      "bytes": 2678872
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_arbeitsagenturen&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=50&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:50.814920+00:00",
+      "response_sha256": "64a2015cfdf977842ba11e6ff05638769752f16356d4a5339a87785887df02cc",
+      "bytes": 1227578
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_arbeitsagenturen&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=100&count=50&sortBy=id&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:52.260541+00:00",
+      "response_sha256": "a7ef92b72386f4c97d65e3101111b83f54f7664f4aa2fbbe1c322405d8a256a3",
+      "bytes": 2123903
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

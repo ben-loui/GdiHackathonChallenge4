@@ -1,0 +1,81 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "bb_polizei_locations",
+    "kind": "authority_point",
+    "scope": "DE-BB",
+    "format": "gml",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "standort_name"
+      }
+    ],
+    "documentation": "https://www.govdata.de/suche/daten/zustandigkeitsbereiche-der-polizei-brandenburgedb67",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Zentraldienst der Polizei Brandenburg (ZDPol), dl-de/by-2-0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Police office locations in Brandenburg, no jurisdiction polygons.",
+    "source_date": "see original source record",
+    "endpoint": "https://inspire.brandenburg.de/services/polbb_wfs",
+    "layer": "app:standorte",
+    "request_crs": "EPSG:3857",
+    "sort_by": "standort_name",
+    "geometry_field": "the_geom",
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:41.048714+00:00",
+  "completed_at": "2026-11-13T17:44:41.902242+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 80,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "polizei": 80
+  },
+  "source_subgroups": {
+    "n/a": 80
+  },
+  "records_sha256": "4cbe1ccc4f9fea7f5a13fae8a0d15384426c5ce83c7380b9f6f960df00ea2403",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:41.493620+00:00",
+      "response_sha256": "95b29cbb2909c66c0e3e768398901f1954f5ee01903c9e1f83153bee0e92caa1",
+      "bytes": 40009
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=app%3Astandorte",
+      "retrieved_at": "2026-11-13T17:44:41.493857+00:00",
+      "response_sha256": "a4bc08bdd30a6e39a3d8d2a90720bf17dfa2ffd4e60a3825f28ada9ed650d523",
+      "bytes": 4264
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Astandorte&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=standort_name",
+      "retrieved_at": "2026-11-13T17:44:41.494016+00:00",
+      "response_sha256": "e1eee7f5a67516b95dac3c8c31345334d1c6dabe62291e080d88a573b30767e9",
+      "bytes": 2386
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Astandorte&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=standort_name",
+      "retrieved_at": "2026-11-13T17:44:41.746834+00:00",
+      "response_sha256": "332a4fd4de9eba81b94fc6c5f4e525cdd5801e094f89855ff5283f9ea8132e32",
+      "bytes": 110767
+    },
+    {
+      "path": "raw/page-000080.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Astandorte&srsName=EPSG%3A3857&startIndex=80&count=100&sortBy=standort_name",
+      "retrieved_at": "2026-11-13T17:44:41.899791+00:00",
+      "response_sha256": "6bdbfebd841d47cbf15dfef944349d3c218f3092008efe71274737bc550b029f",
+      "bytes": 1013
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

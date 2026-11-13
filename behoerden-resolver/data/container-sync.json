@@ -1,0 +1,11 @@
+[
+  {
+    "source_id": "by_regierung",
+    "snapshot": "/data/snapshots/by_regierung--20261113T165059968961Z",
+    "status": "imported",
+    "run_id": 31,
+    "records_per_category": {
+      "regierungsprs": 7
+    }
+  }
+]

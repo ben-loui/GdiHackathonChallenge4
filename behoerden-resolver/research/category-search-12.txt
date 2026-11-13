@@ -1,0 +1,457 @@
+{
+  "categories": [
+    "veterinaeramt",
+    "umweltamt",
+    "gewerbeamt",
+    "ihk"
+  ],
+  "queries": [
+    {
+      "q": "\"Veterinäramt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Umweltamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Gewerbeamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Industrie Handelskammer Kammerbezirke\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    }
+  ]
+}
+00_Antworten_auf_Fragen_Hinweise_Stand_20260909.pdf · Bereitstellung, Hosting und Support einer Cloud-Anwendung für Tieruntersuchungen und Seuchenmanagement | VergabeHero (https://vergabehero.eu/ausschreibungen/bereitstellung-hosting-und-support-einer-cloud-anwendung-fuer-tieruntersuchungen--cmsy9ayth0drfgvc98b5ar9ot/unterlagen/cmuba3o3n0iw96gy2xosv1lr7)
+citeturn25search0 [wordlim: 200] Published: 2 months ago; Crawled: last week; FLI–WFS–Dienst, GeoJSON–Download, API)? ... 31.1) erfolgt ausschließlich durch das Personal der zuständigen Veterinärbehörde. ... Auch der Import von vorhandenen Shape-Dateien und externen WFS-Diensten wäre über diesen Weg möglich, ist – bezogen auf Geodaten – für die ausgeschriebene Anwendung aktuell jedoch nicht vorgesehen. ... Cloud-/Infrastrukturanbietern, die dem Recht eines Drittstaats unterliegen (Weisungs- oder Herausgabebindung gegenüber Drittstaats-Behörden), zulässig, sofern die Datenspeicherung innerhalb der EU erfolgt?
+B. FLI–WFS–Dienst, GeoJSON–Download, API)?
+
+Die Erstellung von Restriktionszonen in der ausgeschriebenen Anwendung (siehe Anlage 1b Pos. 31.1) erfolgt ausschließlich durch das Personal der zuständigen Veterinärbehörde. Vorgaben für ein innerhalb dieser Anwendung zu nutzendes Geo-Datenformat gibt es nicht.
+
+Darüber hinaus sollte eine Im- und Exportmöglichkeit von Geo-Daten in den Formaten GeoJSON, SHP und/oder KMZ vorgesehen werden, bspw. um Geodaten und Restriktionszonen manuell in und aus anderen behördlichen Systemen (z. B. webTSN) importieren zu können.
+
+Informationen zu Jagdbezirken (siehe Anlage 1b Pos. 35.2) können u. a. unter Verwendung der GIS-Schnittstelle der Condition – Integrierte Softwarelösungen GmbH abgerufen werden. Die Geodaten können hierbei in folgenden Formaten bzw. Diensten bereitgestellt werden:
+
+  * WFS (Web Feature Service) für die Übergabe an andere Systeme
+  * Shape-Dateien (.shp) als Dateiexport
+
+Auch der Import von vorhandenen Shape-Dateien und externen WFS-Diensten wäre über diesen Weg möglich, ist – bezogen auf Geodaten – für die ausgeschriebene Anwendung aktuell jedoch nicht vorgesehen.
+
+--------------------------------------------------------------------------------
+WMS Veterinärwesen und Verbraucherschutz Landkreis Diepholz - NUMIS (https://numis.niedersachsen.de/trefferanzeige?currentSelectorPage=1&docuuid=44fc66a0-c24a-4016-b60f-d4750249e65b&f=&rstart=7460)
+citeturn25search1 [wordlim: 200] Crawled: last month; Dieser Datensatz kann gemäß der Lizenz "Datenlizenz Deutschland Namensnennung 2.0" veröffentlicht werden. ... ##### Lage der Geodaten (in WGS84) ... INSPIRE-Themen  | Fuchsbandwurm infoMapAccessService inspireidentifiziert Lebensmittel Lebensmittelkontrolleure opendata Tierarzt Verbraucherschutz Versorgungswirtschaft und staatliche Dienste Veterinäramt [Button: Mehr ] Veterinärwesen [Button: Weniger ]
+
+#### URL des Zugangs (1)
+
+https://geo.diepholz.de/arcgis/services/Veterinaerwesen_und_Verbraucherschutz/MapServer/WMSServer?REQUEST=GetCapabilities&SERVICE=WMS
+
+#### Nutzungs­bedingun­gen
+
+Dieser Datensatz kann gemäß der Lizenz "Datenlizenz Deutschland Namensnennung 2.0" veröffentlicht werden.
+
+#### Ansprechpartner
+
+Landkreis Diepholz
+Fachdienst Kreisentwicklung, Team GIS-Büro
+Herr Blömer
+
+Josef.Bloemer@diepholz.de
+
+05441/976-1284
+
+https://www.diepholz.de/
+
+#### Vorschau
+
+WMS-Dienst Veterinärwesen und Verbraucherschutz Landkreis Diepholz
+
+Kartenansicht öffnen
+
+### Be­schrei­bung
+
+Kartendienst mit folgenden Themen: Bezirke der Lebensmittelkontrolleure
+
+#### Aktualität des Datensatzes
+
+Erstellung  | 14.04.2010
+
+Letzte Änderung  | 02.12.2020
+
+Status  | kontinuierliche Aktualisierung
+
+##### Lage der Geodaten (in WGS84)
+
+ | SW Länge/Breite  | NO Länge/Breite
+--- | --- | ---
+ | 8.12°/52.44°  | 9.29°/53.05°
+
+Koordinaten­system  | EPSG:25832
+
+### Verweise und Downloads
+
+#### URL des Zugangs (1)
+
+https://geo.diepholz.de/arcgis/services/Veterinaerwesen_und_Verbraucherschutz/MapServer/WMSServer?REQUEST=GetCapabilities&SERVICE=WMS
+
+### Nutzung
+
+Nutzungs­bedingun­gen  | Dieser Datensatz kann gemäß der Lizenz "Datenlizenz Deutschland Namensnennung 2.0" veröffentlicht werden.
+
+Zugriffs­beschränkun­gen  | Es gelten keine Zugriffsbeschränkungen
+
+### Kontakt
+
+##### Ansprechpartner
+
+Landkreis Diepholz
+Fachdienst Kreisentwicklung, Team GIS-Büro
+Herr Blömer Niedersachsenstr. 2
+49356 Diepholz
+Deutschland Josef.Bloemer@diepholz.de 05441/976-1284 https://www.diepholz.de/
+
+##### Vertrieb
+
+Landkreis Diepholz
+Fachdienst Kreisentwicklung
+GIS-Büro Niedersachsenstr. 2
+49356 Diepholz
+Deutschland 05441/976-1284/1287/1288
+
+### Fach­informationen
+
+#### Informationen zum Datensatz
+
+Art des Dienstes  | Darstellungsdienste
+
+Version  | OGC: WMS 1.3.0
+
+Fachliche Grundlage  | Landkreis Diepholz, Niedersachsenstr. 2, 49356 Diepholz
+
+##### Operation
+
+Name der Operation  | Beschreibung der Operation  | Aufruf der Operation
+--- | --- | ---
+GetCapabilities  |  | https://geo.diepholz.de/arcgis/services/Veterinaerwesen_und_Verbraucherschutz/MapServer/WMSServer?
+GetMap  |  | https://geo.diepholz.de/arcgis/services/Veterinaerwesen_und_Verbraucherschutz/MapServer/WMSServer?
+GetFeatureInfo  |  | https://geo.diepholz.de/arcgis/services/Veterinaerwesen_und_Verbraucherschutz/MapServer/WMSServer?
+
+Get­Ca­pa­bi­li­ties Do­ku­ment  | Get­Ca­pa­bi­li­ties an­zei­gen Kartenansicht öffnen
+
+#### Zusatzinformationen
+
+##### Kon­formi­tät
+
+Spezifi­kation der Kon­formi­tät  | Spezifi­kations­datum  | Grad der Kon­formi­tät  | Geprüft mit
+--- | --- | --- | ---
+VERORDNUNG (EG) Nr. 976/2009 DER KOMMISSION vom 19. Oktober 2009 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Netzdienste  | 20.10.2009  |  | VERORDNUNG (EG) Nr. 976/2009 DER KOMMISSION vom 19. Oktober 2009 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Netzdienste
+
+#### Schlag­worte
+
+INSPIRE-Themen  | Fuchsbandwurm infoMapAccessService inspireidentifiziert Lebensmittel Lebensmittelkontrolleure opendata Tierarzt Verbraucherschutz Versorgungswirtschaft und staatliche Dienste Veterinäramt [Button: Mehr ] Veterinärwesen [Button: Weniger ]
+
+### Informationen zum Metadatensatz
+
+Objekt-ID  | 44fc66a0-c24a-4016-b60f-d4750249e65b
+
+Aktualität der Metadaten  | 18.09.2025
+
+Sprache Metadatensatz  | Deutsch
+
+XML Dar­stellung  | Metadaten als XML herunter­laden
+
+Ansprechpartner (Metadatum)  | Josef.Bloemer@diepholz.de
+
+Metadatenquelle  | GDI-NI-Katalog (Geodateninfrastruktur Niedersachsen)
+ | Geodatenportal Niedersachsen
+ | Landesamt für Geoinformation und Landesvermessung Niedersachsen--------------------------------------------------------------------------------
+Gewerbeamt (https://develop-kreis-fs.de/buergerservice/abteilungen-und-sachgebiete/gewerbeamt.html)
+citeturn25search2 [wordlim: 200] Crawled: 5 months ago; Als Teil der Abteilung 3 -Öffentliche Sicherheit und Ordnung- nimmt das Sachgebiet 32 Aufgaben in verschiedenen Rechtsgebieten wahr. 
+
+ 
+
+So ist es neben den "klassischen" Aufgaben eines Gewerbeamtes, wie den gewerberechtlichen Erlaubnissen für Gaststätten, Spielhallen und das Bewachungsgewerbe sowie der Ausstellung von Reisegewerbekarten, auch für den rechtlichen Vollzug für die Fachbereiche des staatlichen Veterinäramtes, des staatlichen Gesundheitsamtes sowie der Lebensmittelüberwachung zuständig.   
+
+ 
+
+Im Veterinärbereich wird das Sachgebiet dabei hauptsächlich in den Bereichen Tierschutz und Tiergesundheit (Seuchenbekämpfung) tätig. ...   * Antrag auf Erteilung einer Erlaubnis zum Betrieb einer Spielhalle oder eines ähnlichen Unternehmens nach § 33i GewO ... gewerbeamt[at]kreis-fs.de
+
+# Amt für Gewerbe-, Veterinär- und Gesundheitsangelegenheiten
+
+#### ++++++Bitte beachten Sie die neuen Erreichbarkeiten das Sachgebietes ab November 2024.++++++
+
+Image
+
+Als Teil der Abteilung 3 -Öffentliche Sicherheit und Ordnung- nimmt das Sachgebiet 32 Aufgaben in verschiedenen Rechtsgebieten wahr. 
+
+ 
+
+So ist es neben den "klassischen" Aufgaben eines Gewerbeamtes, wie den gewerberechtlichen Erlaubnissen für Gaststätten, Spielhallen und das Bewachungsgewerbe sowie der Ausstellung von Reisegewerbekarten, auch für den rechtlichen Vollzug für die Fachbereiche des staatlichen Veterinäramtes, des staatlichen Gesundheitsamtes sowie derLebensmittelüberwachung zuständig.   
+
+ 
+
+Im Veterinärbereich wird das Sachgebiet dabei hauptsächlich in den Bereichen Tierschutz und Tiergesundheit (Seuchenbekämpfung) tätig. Auch wird die Trichinenuntersuchungsstelle sowie die Beauftragung der Jäger zur Entnahme der Trichinenproben durch das SG 32 organisiert.  
+
+ 
+
+Im Gesundheitsbereich liegen die Schwerpunkte auf der Erteilung der Heilpraktikererlaubnis, dem Infektionsschutz und der Kontrolle der Trinkwasserqualität.
+
+
+## Achtung
+
+Image
+
+Bitte beachten Sie, dass Gewerbemeldungen oder die Auskunft aus dem Gewerberegister ausschließlich über die zuständige (Betriebssitz-)Gemeinde erfolgen kann.
+
+Dort können Sie auch erfahren für welche Tätigkeiten eine Gewerbemeldung notwendig ist.
+
+Wir möchten zusätzlich darauf hinweisen, dass die Aufgaben der Gewerbaufsicht (z.B. Arbeitsschutz) durch die Regierung von Oberbayern wahrgenommen werden. Diese ist unter dem folgenden Internetauftritt erreichbar.
+
+
+## Tätigkeitsfelder des SG 32
+
+Image
+
+Gewerbeangelegenheiten
+Hier finden Sie alle Informationen betreffend der gewerberechtlichen Erlaubnisse sowie allgemeine Informationen zum Gewerberecht. 
+
+ 
+
+Veterinärangelegenheiten
+Hier finden Sie Informationen betreffend der Trichinenuntersuchungsstelle. Für fachspezifische Informationen können Sie sich an das staatliche Veterinäramt wenden.  
+
+ 
+
+Gesundheitsangelegenheiten
+Hier finden Sie Informationen betreffend der Heilpraktikererlaubnis sowie allgemeine Informationen rund um die Zuständigkeiten des SG 32 in diesem Bereich. Für fachspezifische Informationen können Sie sich an das staatliche Gesundheitsamt wenden.  
+
+ 
+
+Lebensmittelüberwachung
+Teilbereiche aus allen oben genannten Bereichen umfasst die Lebensmittelüberwachung. Aus diesem Grunde wird sie hier einzeln
+aufgeführt.
+
+## Dokumente
+
+Hier finden Sie alle online verfügbaren Dokumente des Sachgebiets 32. Weitere Informationen erhalten Sie den jeweiligen Themenseiten.
+
+#### Veterinärangelegenheiten
+
+  * Antrag auf Übertragung der Befugnis zur Probeentnahme
+
+  * Bestätigung des Jagdausübungsberechtigten zur Beauftragung
+
+  * Merkblatt Trichinenuntersuchung
+
+#### Gewerbeangelegenheiten
+
+#### Lebensmittelüberwachung
+
+  * Zuständigkeitsbereiche der Lebensmittelüberwachung
+
+  * Übersicht Eigenkontrollen des Lebensmittelunternehmers
+
+  * Temperaturkontrollen
+
+  * Reinigung/Desinfektion
+
+  * Merkblatt Reinigung
+
+  * Wareneingangskontrolle
+
+  * Schädlingsbekämpfung
+
+  * Personalschulung
+
+  * IfSG-Folgebelehrung
+
+  * Leitfaden für Vereinsfeiern
+
+  * Leitfaden für ehrenamtliche Helfer bei Vereinsfesten und ähnlichen Veranstaltungen
+
+## Kontakt
+
+Ihre Anfragen können Sie an das Funktionspostfach
+
+gewerbeamt[at]kreis-fs.de 
+
+bzw. für die Lebensmittelüberwachung unter Nennung des (geplanten) Betriebs-/Wohnsitzes an
+
+lue[at]kreis-fs.de senden.
+
+Sie erhalten daraufhin Antwort durch den zuständigen Sachbearbeiter.
+
+##### Kontakt
+
+Landratsamt Freising
+
+Landshuter Str. 31
+
+85356 Freising
+
+Tel.: 08161/600-0
+
+Der Landkreis Freising ist eine kommunale Gebietskörperschaft, vertreten durch Herrn Landrat Helmut Petz.
+
+##### Öffnungszeiten Zentrale Information
+
+Montag und Mittwoch  | 7 - 14 Uhr
+Dienstag und Donnerstag  | 7 - 16.30 Uhr
+Freitag  | 7 - 12 Uhr--------------------------------------------------------------------------------
+Gewerbedaten / Kommunales Gewerberegister | LUBW (https://rips-metadaten.lubw.de/trefferanzeige?action=doSearch&bw-0ec6d6cc=bw-aad4abbb&bw-555139e1=bw-6eaa132b&bw-b4c727cc=bw-ac59f329&bw-b6cec0d5=bw-fef654b3&bw-f2801ea0=bw-cf3cfdcf&distributor=Komm.ONE+Anstalt+des+%C3%B6ffentlichen+Rechts&docuuid=3d039bf2-e5fb-4db5-ad2e-9c6b9503013b&f=type%3Aopendata%3B&metadata_tree=bw-87fb1c01&type=metaclass_map)
+citeturn25search3 [wordlim: 200] Crawled: 4 weeks ago; Es handelt sich nicht um das von der Kommunalverwaltung geführte Verzeichnis (Gewerberegister) gemäß der Gewerbeordnung sondern um eine Teilmenge dessen. ... Die Branche wird vom Gewerbeamt ermittelt und im Gewerberegister hinterlegt. ... ##### Lage der Geodaten (in WGS84) ... Datensatz / Datenserie  | Datensatz
+
+##### Lage der Geodaten (in WGS84)
+
+ | SW Länge/Breite  | NO Länge/Breite
+--- | --- | ---
+Raumbezug des Datensatzes  | 7.2°/47.4°  | 10.7°/50°
+
+##### Höhe
+
+Minimum  | Maximum  | Maßeinheit  | Vertikaldatum
+--- | --- | --- | ---
+84.0  | 1495.0  | Meter  | DE_DHHN92_NH
+
+Erläuterung zum Raumbezug  | Baden-Württemberg
+
+Koordinatensystem  | EPSG 25832: ETRS89 / UTM Zone 32N
+
+### Nutzung
+
+Nutzungsbedingungen  | Es gelten die Bedingungen der Nutzungsvereinbarung für Daten des UIS "https://www.lubw.baden-wuerttemberg.de/umweltinformationssystem/nutzungsvereinbarung"
+
+Zugriffsbeschränkungen  | Zugang zu den Daten ist geschützt Öffentlicher Zugriff beschränkt entsprechend Artikel 13(1)(f) der INSPIRE-Richtlinie: f) aufgrund nachteiliger Auswirkungen auf die Vertraulichkeit personenbezogener Daten
+
+Anwendungs-einschränkungen  | Erläuterung: Name und Vorname können weitergegeben werden (§14 (6) GewO) Hinweis auf Nutzungseinschränkungen: Nach §14 (6) GewO dürfen die erhobenen Daten nur für die Überwachung der Gewerbeausübung sowie statistische Erhebungen verwendet werden. --------------------------------------------------------------------------------
+Aktuelle Zonierung TierseuchenGeolion (https://geolion.zh.ch/geodatensatz/4690)
+citeturn25search4 [wordlim: 200] Published: 2.8 years ago; Crawled: 2 months ago; Kontakt Datenherr Verantwortlich für Geodaten Beschreibung/Inhalt Datenstand Datenformat Ausdehnung Datenbezug Datengrundlage Elementen 428.1 - Aktuelle Zonierung Tierseuchen
+
+# Datensatz: Aktuelle Zonierung Tierseuchen ... Veterinäramt ... Im Zuge der Tierseuchenbekämpfung können Bund und Kantone bei einigen gesetzlich definierten Tierseuchen zeitlich befristet Gebiete und Zonen ausweisen, in denen bestimmte Auflagen gelten. ... Landwirtschaft; Gesundheit
+
+Kontakt Datenherr Verantwortlich für Geodaten Beschreibung/Inhalt Datenstand Datenformat Ausdehnung Datenbezug Datengrundlage Elementen 428.1 - Aktuelle Zonierung Tierseuchen
+
+# Datensatz: Aktuelle Zonierung Tierseuchen
+
+##### Datenherr
+
+Veterinäramt
+Tiergesundheit und Lebensmittelsicherheit
+Kewin Francis
+Waltersbachstrasse 5
+8090 Zürich
+Tel: +41 43 259 41 41
+Tel direkt: +41 43 257 45 65
+E-Mail: kewin.francis@veta.zh.ch
+www: https://www.zh.ch/de/gesundheitsdirektion/veterinaeramt.html
+
+##### Verantwortlich für Geodaten
+
+Veterinäramt
+Tiergesundheit und Lebensmittelsicherheit
+Kewin Francis
+Waltersbachstrasse 5
+8090 Zürich
+Tel: +41 43 259 41 41
+Tel direkt: +41 43 257 45 65
+E-Mail: kewin.francis@veta.zh.ch
+www: https://www.zh.ch/de/gesundheitsdirektion/veterinaeramt.html
+
+##### Datenherr
+
+Veterinäramt
+Tiergesundheit und Lebensmittelsicherheit
+Kewin Francis
+--------------------------------------------------------------------------------
+Verzeichnis der Gewerbeanzeigen - Verwaltungsdaten-Informationsplattform (https://www.verwaltungsdaten-informationsplattform.de/register/117)
+citeturn25search5 [wordlim: 200] Crawled: last month; Für die Führung des Registers ist das Gewerbeamt der jeweiligen Gemeinde zuständig. ... Das IT-Dienstleistungszentrum ITDZ Berlin ist für die technische Registerführung zuständig. ... Die Gewerbebehörde informiert folgende Stellen über eine Gewerbeanzeige: Industrie- und Handelskammern, Handwerkskammern, Registergerichte, DGUV (Deutsche Gesetzliche Unfallversicherung), Immissionsschutzstellen, Lebensmittelüberwachungsbehörden, Arbeitsschutzstellen, Mess- und Eichwesen, Statistische Landesämter, Zoll, Ausländerbehörden und Finanzamt. ... Der elektronische Datenaustausch zwischen den Behörden erfolgt auf Basis des XÖV-Standards XGewerbeordnung. ... GEVE4 von EDV (elektronische Datenverarbeitung) Ermtraud GmbH sowie GESO und IKOL-GW ({Abkürzung nicht bekannt}). ... GESO der HSH Soft- und Hardware Vertriebs GmbH (Gesellschaft mit beschränkter Haftung)
+## Administrative Registerführung
+
+### Vergleichbare Verwaltungsebene
+
+Kommunal
+
+### Ressort
+
+### Zuständigkeiten
+
+Für die Führung des Registers ist das Gewerbeamt der jeweiligen Gemeinde zuständig.
+
+Länderspezifische Unterschiede
+
+Details anzeigen
+
+keyboard_arrow_down
+
+  * Gebiet(e)Bayern:Unterschiede
+
+Das Landesamt für Digitalisierung, Breitband und Vermessung des Freistaates Bayern hostet die Daten für die bayerischen Gewerbeämter.
+
+  * Gebiet(e)Mecklenburg-Vorpommern:Unterschiede
+
+Die Daten werden entweder lokal gespeichert oder es wird sich eines IT-Dienstleisters bedient.
+
+  * Gebiet(e)Berlin:Unterschiede
+
+Das IT-Dienstleistungszentrum ITDZ Berlin ist für die technische Registerführung zuständig.
+
+  * Gebiet(e)Hessen:Unterschiede
+
+Die Daten werden primär vom kommunalen Gebietsrechenzentrum ekom21 gehostet.
+
+  * Gebiet(e)Hamburg:Unterschiede
+
+Die technische Registerführung wurde an Dataport übertragen.
+
+  * Gebiet(e)Baden-Württemberg:Unterschiede
+
+Es sind regionale Rechenzentren im Einsatz.
+--------------------------------------------------------------------------------
+Geodateninfrastruktur Nordrhein-Westfalen (GDI-NRW) (https://www.lkt-nrw.de/media/12690/handlungsempfehlung-der-kspv-zum-aufbau-einer-europaeischen-geodateninfrastruktur-inspire-15122021.pdf)
+citeturn25search12 [wordlim: 200] Published: 11 months ago; INSPIRE-THEMA: Anhang III – Landwirtschaftliche Anlagen und Aquakulturanlagen (Agricultural and Aquaculture Facilities - AF) ... Rechtsgrundlage für ... Kreis (Veterinäramt) ... Erörterung der Einschätzung: Der Datensatz wurde in der Betroffenheitsmatrix im wiki.gdi-de.org gelöscht.
+--------------------------------------------------------------------------------
+Meldung und Nutzung von Daten im (https://www.zoonosen.net/sites/default/files/redaktion/dateien/Probst.pdf)
+citeturn25search13 [wordlim: 200] Published: last year; TSN im Veterinäramt ... Nutzung freigegeben hat, stehen die Hauskoordinaten ... Alle Kataloge und Karten
+--------------------------------------------------------------------------------
+geve|Online – EDV Ermtraud GmbH (https://edv-ermtraud.de/produkte/gewerbeverwaltung-online-webmodule/geve-online/)
+citeturn25search6 [wordlim: 200] Crawled: 3 days ago; Ein wesentlicher praxisgerechter Fokus liegt auf den Gewerbemeldungen. geve|Online kann im Rahmen des bundesweiten “Portalverbundes” mit Serviceportalen eingebunden und in Zuständigkeitsfindern aller Art hinterlegt werden – beispielsweise im Bayern-Portal, via Einheitlichem Ansprechpartner (EAP 2.0) / Gewerbe-Serviceportal oder für IHK-Starterzentren. geve-Online ist vorbereitet zur Anbindung an zukünftige Servicekonten, insbesondere dem Nutzerkonto Bund (BundID). ...   * Der Sachbearbeiter im Gewerbeamt kann diese Datei automatisiert herunterladen, über geve|5 (Gewerbefachverfahren für das Gewerberegister) öffnen und einlesen. ... Image: Serviceportale - Portalverbund - wichtiger Bestandteil in der Umsetzung des Onlinezugangsgesetz (OZG)Anbindung und Integration unter Nutzung von Portal-Basisdiensten erfolgt in verbreitete Online-Plattformen bundesweit – beispielsweise BürgerPortal (der RegioIT), OpenR@thaus / OpenKreish@us (der Rechenzentren ITEBO, HannIT, KDO und KDG), Wirtschaftsserviceportal NRW (Landeslösung, WSP.NRW/GSP.NRW), Thüringer Antragssystem für Verwaltungsleistungen (ThAVEL, FJD (Thüringen) , Amt24 (Sachsen, OGW, Online-Gewerbedienst), Service BW (landesweites Serviceportal betrieben vom Ministerium für Inneres, Digitalisierung und Migration Baden-Württemberg) und BayernPortal (Bayerisches Staatsministerium für Digitales), kommunale Nolis-Portale).
+--------------------------------------------------------------------------------
+BMWi_Abschlussbericht_final 2008 12 04 (https://cdn.pressebox.de/a/4d7958f409fc6ea6/attachments/0175490.attachment/filename/leitmodell-existenzgruendungsverfahren-abschlussbericht%2Cproperty%3Dpdf%2Cbereich%3Dbmwi%2Csprache%3Dd.pdf)
+citeturn25search14 [wordlim: 200] Published: 17.9 years ago; Crawled: last week; Bei der Speicherung in der Datenbank des Verteilservices werden die Gründerdatensätze in der Form von gekapselten Unterdatensätzen abgelegt, die dort für einen begrenzten Zeitraum zum Download durch festgelegte und signierte externe Nutzer (Empfangsstellen) bereitstehen. ... Nach Eingang eines Gründerdatensatzes wird der Unterdatensatz ‚Gewerbeamt‘ direkt an das elektronische Fachverfahren des Gewerbeamts/Gewerberegisters übermittelt. ... Diese Weiterleitung erfolgt über die gleichen Schnittstellen wie die Übertragung der direkt von den Gewerbeämtern an den Verteilservice übermittelten Gewerbedaten⁶¹.
+--------------------------------------------------------------------------------
+Suche - GovData (https://data.gov.de/suche?hvd=has_hvd&openness=has_open&sort=title_desc&sourceportal=ec74990f-c51f-4378-845d-132b1f75a550)
+citeturn25search7 [wordlim: 200] Crawled: 3 weeks ago; Der Datensatz Verteilung der FFH-Arten in Nordrhein-Westfalen enthält Regionale Geodaten zur Verteilung der FFH-Arten im Sinne des INSPIRE Annex III Themas "Verteilung der Arten (SD)". ... Der Datensatz enthält Geo-Daten im Shape (ETRS89-System)- und GeoJSON-Format zur Umweltzone in Essen. ... Quelle: FB 62 - Amt für Geoinformation, Vermessung und Kataster / FB 59 - Umweltamt ... WFS
+--------------------------------------------------------------------------------
+LDBV 
+IT-DLZ 
+GEWAN | LRA – Benutzerhandbuch  
+Ver (https://www.gewan.de/mam/handbuecher/handbuch_gewan_landratsamt_v743.pdf)
+citeturn25search15 [wordlim: 200] Published: last year; GEWAN | LRA – Benutzerhandbuch ... Klicken Sie auf den Reiter Handwerkskarten, um alle Handwerkskarten des Betriebes und der ... Gewerbeamt aufgeführt hat, ansehen.
+--------------------------------------------------------------------------------
+Quellen & Methodik | Gewerbeämter.org (https://gewerbeaemter.org/quellen/)
+citeturn25search8 [wordlim: 200] Crawled: 3 weeks ago; ## Kontaktdaten ... Die Zuordnung der Gemeinden folgt den Zuständigkeiten, die die Länder im PVOG hinterlegen, und dem Gemeindeverzeichnis des Statistischen Bundesamts (Ämter, Verbands- und Samtgemeinden, Verwaltungsgemeinschaften). ... Postleitzahlen: © OpenStreetMap-Mitwirkende über OpenPLZ API, Lizenz ODbL.
+
+Eine Postleitzahl kann mehrere Zuständigkeitsbereiche berühren. ... Gemeinden ändern ihren Hebesatz per Satzung; maßgeblich ist der Steuerbescheid. ... Industrie- und Handelskammer und Handwerkskammer: die Kammer, die das PVOG für die Gemeinde als zuständig führt (Erlaubnis für Versicherungsvermittler nach § 34d GewO und Eintragung in die Handwerksrolle). ... Anmeldung, Gebühr und Bescheide laufen immer über das zuständige Gewerbeamt.
+--------------------------------------------------------------------------------
+Untitled (https://digibib.hs-nb.de/file/dbhsnb_thesis_0000003116/dbhsnb_derivate_0000003727/Bachelorarbeit-Koglin-2023.pdf)
+citeturn25search16 [wordlim: 200] Published: 3.1 years ago; BFN / BUNDESAMT FÜR NATURSCHUTZ [HRSG.] ... Naturschutzgesetz des Landes Sachsen-Anhalt (NatSchG LSA) vom 10. ... LOSCH, UMWELTAMT LANDKREIS SAALEKREIS (UNB), Schreiben vom 31.05.2023, ... Stilllegung/Nutzungsaufgabe der rückzubauenden Gleise. ... LAU SACHSEN-ANHALT / LANDESAMT FÜR UMWELT SACHSEN-ANHALT (o.A.): WFS-Daten
+--------------------------------------------------------------------------------
+Suche - GovData (https://www.govdata.de/suche?groups=gove&hvd=has_hvd&state=05)
+citeturn25search9 [wordlim: 200] Crawled: 3 months ago; download ... Punkthafte Darstellung der Standortbereiche für Luftverkehr im Rahmen des Landesentwicklungsplans Umwelt. ... Der Datensatz Bewirtschaftungsgebiete gemäß FFH-Richtlinie in Nordrhein-Westfalen enthält Regionale Geodaten zu Bewirtschaftungsgebieten im Sinne des INSPIRE Annex III Themas "Bewirtschaftungsgebiete, Schutzgebiete, geregelte Gebiete und Berichterstattungseinheiten (AM)". ... Der Datensatz Geregelte Gebiete in FFH-Gebieten in Nordrhein-Westfalen enthält Regionale Geodaten zu Geregelten Gebieten im Sinne des INSPIRE Annex III Themas "Bewirtschaftungsgebiete, Schutzgebiete, geregelte Gebiete und Berichterstattungseinheiten (AM)". ... Die Katasterkarte als Web Feature Service (WFS) Dienst mit tagesaktuellen Daten im ETRS89-System. ... Quelle: FB 62 - Amt für Geoinformation, Vermessung und Kataster / FB 59 - Umweltamt
+--------------------------------------------------------------------------------
+JAHRESBERICHT 2024 (https://www.uckermark.de/media/custom/3615_6082_1.PDF?1742973791=)
+citeturn25search17 [wordlim: 200] Published: 6 months ago; Umweltbereich sowie eigener Geodaten ist für das Umweltamt sehr wichtig, um die 
+Belange der einzelnen Fachbereiche (insbesondere UNB, UWB, UAWB, UBB) mit den ... Aktualisierung, Erfassung von Geodaten) sowie die Datenbereitstellung für die
+--------------------------------------------------------------------------------
+Suche - GovData (https://data.gov.de/suche?format=csv&format=wfs&groups=envi&sort=relevance_asc)
+citeturn25search10 [wordlim: 200] Crawled: last month;   * Datensatz Letzte Änderung: 14.06.2023 ... Naturdenkmale sind Einzelschöpfungen der Natur, deren besonderer Schutz aus wissenschaftlichen, naturgeschichtlichen oder landeskundlichen Gründen oder wegen ihrer Seltenheit, Eigenart oder Schönheit erforderlich ist. ... WFS ...     Stadt Bielefeld - Umweltamt ...     Umweltbetrieb der Stadt Bielefeld ...     Behörde für Umwelt, Klima, Energie und Agrarwirtschaft (BUKEA)
+--------------------------------------------------------------------------------
+Transparenzportal Hamburg (https://suche.transparenz.hamburg.de/dataset?forceWeb=true&groups=politik-und-wahlen&page=339&res_format=pdf)
+citeturn25search11 [wordlim: 200] Crawled: last month; [Input] Bevölkerung (880) [Input] Bildung & Wissenschaft (317) [Input] Geografie, Geologie & Geodaten (150) [Input] Gesetze & Justiz (299) [Input] Gesundheit (158) [Input] Infrastruktur, Bauen & Wohnen (302) [Input] Kultur, Sport & Tourismus (535) [Input] Öffentliche Verwaltung, Haushalt & Steuern (1128) [Input] Politik & Wahlen (13479) [Input] Soziales (715) [Input] Transport & Verkehr (151) [Input] Umwelt & Klima (225) [Input] Verbraucherschutz (245) [Input] Wirtschaft & Arbeit (293) ... [Input] Baugenehmigungen (17) [Input] Dienstanweisungen (170) [Input] Geodaten (2) [Input] Gutachten und Studien (47) [Input] Mitteilungen des Senats (463) [Input] Öffentliche Beschlüsse (8202) [Input] Öffentliche Pläne (15) [Input] Ohne gesetzliche Verpflichtung (11) [Input] Senatsbeschlüsse (3572) [Input] Sonstige Informationen von öffentlichem Interesse (155) [Input] Sonstige Verträge von öffentlichem Interesse (345) [Input] Statistiken und Tätigkeitsberichte (87) [Input] Umweltmessungen und Erhebungen (1) [Input] Unternehmensdaten (8) [Input] Veröffentlichungspflicht außerhalb HmbTG (2) [Input] Verträge der Daseinsvorsorge (101) [Input] Verwaltungspläne (164) [Input] Verwaltungsvorschriften (139)
+--------------------------------------------------------------------------------
+Veterinäramt (Deutschland) (https://de.wikipedia.org/wiki/Veterin%C3%A4ramt_%28Deutschland%29)
+citeturn25search18 [wordlim: 200] Crawled: 2.0 years ago; Veterinäramt oder Amt für Veterinärwesen ist in Deutschland die Bezeichnung für die Organisationseinheit auf der Ebene der Landkreise und kreisfreien Städte, die für das Veterinärwesen und meist auch für die Schlachttier- und Fleischuntersuchung, die Lebensmittelüberwachung und den Tierschutz zuständig ist. ... Während in den 1990er Jahren noch einige Länder die Veterinärämter als staatliche Behörden organisiert hatten, sind diese seitdem fast ausnahmslos in die Kommunalverwaltung überführt worden.
+--------------------------------------------------------------------------------
+Umweltamt (https://de.wikipedia.org/wiki/Umweltamt)
+citeturn25search19 [wordlim: 200] Crawled: 9 months ago; Umweltamt und Umweltbehörde sind verbreitete Bezeichnungen für Behörden, die mit dem Vollzug des Umweltrechts betraut sind. Sie sind in Deutschland oft Fachabteilungen der Verwaltungen von Landkreisen und kreisfreien Städten sowie in den Umweltministerien der Länder. ... Danach entstanden zum Beispiel um 1990 in Niedersachsen aus den Wasserwirtschaftsämtern die Staatlichen Ämter für Abfall- und Wasserwirtschaft. ... In Hessen gibt es Staatliche Umweltämter als Mittelbehörden im Bereich des Umweltrechts, welche den jeweiligen Regierungspräsidien zugeordnet sind. ... Die Zuständigkeit der jeweiligen Behörde ist in der Zuständigkeitsverordnung Umweltschutz NRW (ZustVU NRW) geregelt. ... * Ökologische Landwirtschaft
+--------------------------------------------------------------------------------
+Landesamt für Umweltschutz Sachsen-Anhalt (https://de.wikipedia.org/wiki/Landesamt_f%C3%BCr_Umweltschutz_Sachsen-Anhalt)
+citeturn25search20 [wordlim: 200] Crawled: 1.8 years ago;  Stellung  | Umweltamt ... Sie ist dem Ministerium für Wissenschaft, Energie, Klimaschutz und Umwelt des Landes Sachsen-Anhalt (bis 2021 Ministerium für Umwelt, Landwirtschaft und Energie) nachgeordnet. ... Das Landesamt für Umweltschutz berät und unterstützt das Ministerium und die oberen und unteren Wasser- und Naturschutzbehörden des Landes in fachlichen Fragestellungen. ... * Literatur von und über Landesamt für Umweltschutz Sachsen-Anhalt im Katalog der Deutschen Nationalbibliothek ... Koordinaten: 51° 29′ 3,6″ N, 12° 0′ 18,2″ O
+

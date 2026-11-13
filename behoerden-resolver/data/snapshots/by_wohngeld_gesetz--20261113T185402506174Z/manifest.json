@@ -1,0 +1,45 @@
+{
+  "format_version": 1,
+  "source": {
+    "kind": "authority",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Explicit reviewed statutory assignment to existing official polygons; preserve all original source fields, mark geometry repairs.",
+    "id": "by_wohngeld_gesetz",
+    "format": "statutory_by_wohngeld",
+    "scope": "DE-BY",
+    "routes": [
+      {
+        "category": "wohngeldstelle"
+      }
+    ],
+    "legal_basis": "https://www.gesetze-bayern.de/Content/Document/BayZustV-3",
+    "required_legal_clause": "sind die Landkreise und die kreisfreien Gemeinden.",
+    "documentation": "https://www.stmb.bayern.de/ser/buergerservice/index.php",
+    "license": "CC-BY-4.0 + statutory assignment (§5 UrhG)",
+    "attribution": "Bayerischer Verwaltungsatlas, CC BY 4.0; gesetzliche Zuordnung nach §3 ZustV Bayern",
+    "source_date": "2026-11-13 (legal assignment reviewed)",
+    "name_rule": "Use unchanged official institution name from by_kreis, explicitly acting as statutory Wohngeldbehörde; no fictional department name",
+    "coverage_claim": "Bayern: Landratsämter and independent city authorities acting as Wohngeldbehörde, per explicit §3 ZustV. Location refers to the dwelling, not any arbitrary point."
+  },
+  "completed_at": "2026-11-13T18:54:02.498166+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "wohngeldstelle": 96
+  },
+  "records_sha256": "696a175787b10cc3e9c9f9e1be099363cde194181ca9216a7ed3c40114c9671c",
+  "requests": [
+    {
+      "path": "raw/law.gz",
+      "request_url": "https://www.gesetze-bayern.de/Content/Document/BayZustV-3",
+      "retrieved_at": "2026-11-13T18:53:58.647486+00:00",
+      "response_sha256": "8652661ee374a6b9e5c69a2307c92f05532cd210fb146441bec6cf12542d945c",
+      "bytes": 28176
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "parent_records_sha256": "31d141501f52395eff1915558d0c7333dfb5e3fe53f3811cb275f2a760872cf6",
+  "statutory_assignment_reviewed": true
+}

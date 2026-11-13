@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom">
+<title xml:lang="de">INSPIRE Download Service Feed: INSPIRE US Thüringen ATOMFeed</title>
+	<subtitle>Dieser Downloaddienst (AtomFeed) stellt Inhalte zum Thema &quot;Versorgungswirtschaft und staatliche Dienste&quot; aus folgenden Quelldatens&#228;tzen im INSPIRE-Zielmodell dar: 
+-Plankrankenh&#228;user
+-Gesundheits&#228;mter
+-Veterin&#228;r- und Lebensmittel&#252;berwachungs&#228;mter
+-Jugend&#228;mter
+-Schulamtsbezirke
+-Hochschulstandorte
+-Abwasser Entsorgungsgebiete
+-Trinkwasser Versorgungsgebiete</subtitle>	<link href="https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=62c7705d-3fc7-483e-b2b3-c8374af12581" rel="describedby" type="application/xml" title="Download Service Feed Metadata"/>
+	<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/Service/Service_62c7705d-3fc7-483e-b2b3-c8374af12581.xml"  rel="self" type="application/atom+xml" title="INSPIRE Download Service Feed: INSPIRE US Th&#252;ringen ATOMFeed" hreflang="de"/>
+	<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/Service/Service_62c7705d-3fc7-483e-b2b3-c8374af12581.xml"  rel="alternate" type="application/atom+xml" title="INSPIRE Download Service Feed: INSPIRE US Th&#252;ringen ATOMFeed" hreflang="de"/>
+	<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/OpenSearch/request__getOpenSearchDescriptionDocument/service_identifier_code__62c7705d-3fc7-483e-b2b3-c8374af12581" rel="search" type="application/opensearchdescription+xml" title="OpenSearch Description" hreflang="de"/>
+	<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/Service/Service_62c7705d-3fc7-483e-b2b3-c8374af12581.xml</id>
+	<rights>Lizenz: Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.de) Namensnennung: &quot;&#169; GDI-Th&quot;
+{&quot;id&quot;:&quot;cc-by/4.0&quot;,&quot;name&quot;:&quot;Creative Commons BY 4.0&quot;,&quot;url&quot;:&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;,&quot;quelle&quot;: &quot;&#169; GDI-Th&quot;}</rights>	<updated>2026-11-03T16:18:25.000+01:00</updated>
+	<author>
+		<name>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</name>
+<email>kompetenzzentrum.gdi-th@tlbg.thueringen.de</email>	</author>
+			<entry>
+		<inspire_dls:spatial_dataset_identifier_code>2b629737-c245-44ce-92c5-a807ee2e9736</inspire_dls:spatial_dataset_identifier_code>		<inspire_dls:spatial_dataset_identifier_namespace>http://www.geoproxy.geoportal-th.de</inspire_dls:spatial_dataset_identifier_namespace>		<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="EPSG 25832"/>
+		<author>
+			<name>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</name>
+<email>kompetenzzentrum.gdi-th@tlbg.thueringen.de</email>		</author>
+		<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_2b629737-c245-44ce-92c5-a807ee2e9736.xml</id>
+		<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_2b629737-c245-44ce-92c5-a807ee2e9736.xml" rel="alternate" hreflang="de" type="application/atom+xml" title="INSPIRE US Ver- und Entsorgungsgebiete in Th&#252;ringen"/>
+		<link href="https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=2b629737-c245-44ce-92c5-a807ee2e9736" rel="describedby" type="application/xml" title="Download Service DataSet Metadata"/>
+		<rights>Lizenz: Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.de) Namensnennung: &quot;&#169; GDI-Th&quot;
+{&quot;id&quot;:&quot;cc-by/4.0&quot;,&quot;name&quot;:&quot;Creative Commons BY 4.0&quot;,&quot;url&quot;:&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;,&quot;quelle&quot;: &quot;&#169; GDI-Th&quot;}</rights>		<summary>Dieser Datensatz stellt Inhalte zum Thema &quot;Gemeinsame Versorgungsnetzelemente&quot; aus folgenden Quelldatens&#228;tzen im INSPIRE-Zielmodell dar: 
+-Abwasser Entsorgungsgebiete
+-Trinkwasser Versorgungsgebiete</summary>		<title>INSPIRE US Ver- und Entsorgungsgebiete in Th&#252;ringen</title>		<updated>2026-11-03T16:16:52.000+01:00</updated>
+		<georss:polygon>50.204 9.87 51.64 9.87 51.64 12.65 50.204 12.65 50.204 9.87</georss:polygon>	</entry>
+	<entry>
+		<inspire_dls:spatial_dataset_identifier_code>e718e9e9-8291-48a5-9475-fc3594af8f49</inspire_dls:spatial_dataset_identifier_code>		<inspire_dls:spatial_dataset_identifier_namespace>http://www.geoproxy.geoportal-th.de</inspire_dls:spatial_dataset_identifier_namespace>		<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="EPSG 25832"/>
+		<author>
+			<name>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</name>
+<email>kompetenzzentrum.gdi-th@tlbg.thueringen.de</email>		</author>
+		<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_e718e9e9-8291-48a5-9475-fc3594af8f49.xml</id>
+		<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_e718e9e9-8291-48a5-9475-fc3594af8f49.xml" rel="alternate" hreflang="de" type="application/atom+xml" title="INSPIRE US Hochschulstandorte Th&#252;ringen"/>
+		<link href="https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=e718e9e9-8291-48a5-9475-fc3594af8f49" rel="describedby" type="application/xml" title="Download Service DataSet Metadata"/>
+		<rights>Lizenz: Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.de) Namensnennung: &quot;&#169; GDI-Th&quot;
+{&quot;id&quot;:&quot;cc-by/4.0&quot;,&quot;name&quot;:&quot;Creative Commons BY 4.0&quot;,&quot;url&quot;:&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;,&quot;quelle&quot;: &quot;&#169; GDI-Th&quot;}</rights>		<summary>Dieser Datensatz enth&#228;lt die Standorte (Hauptsitze) der Hochschulen des Landes Th&#252;ringen nach &#167;1 Abs. 2 des Th&#252;ringer Hochschulgesetzes (Th&#252;rHG) f&#252;r das INSPIRE-Thema Versorgungswirtschaft und staatliche Dienste f&#252;r das Land Th&#252;ringen.</summary>		<title>INSPIRE US Hochschulstandorte Th&#252;ringen</title>		<updated>2026-11-03T16:16:52.000+01:00</updated>
+		<georss:polygon>50.204 9.87 51.64 9.87 51.64 12.65 50.204 12.65 50.204 9.87</georss:polygon>	</entry>
+	<entry>
+		<inspire_dls:spatial_dataset_identifier_code>dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</inspire_dls:spatial_dataset_identifier_code>		<inspire_dls:spatial_dataset_identifier_namespace>http://www.geoproxy.geoportal-th.de</inspire_dls:spatial_dataset_identifier_namespace>		<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="EPSG 25832"/>
+		<author>
+			<name>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</name>
+<email>kompetenzzentrum.gdi-th@tlbg.thueringen.de</email>		</author>
+		<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_dbee18e3-3b3b-4e9c-a38c-ec875ac82d92.xml</id>
+		<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_dbee18e3-3b3b-4e9c-a38c-ec875ac82d92.xml" rel="alternate" hreflang="de" type="application/atom+xml" title="INSPIRE US Th&#252;ringer Ministerium f&#252;r Soziales, Gesundheit, Arbeit und Familie (TMSGAF)"/>
+		<link href="https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=dbee18e3-3b3b-4e9c-a38c-ec875ac82d92" rel="describedby" type="application/xml" title="Download Service DataSet Metadata"/>
+		<rights>Lizenz: Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.de) Namensnennung: &quot;&#169; GDI-Th&quot;
+{&quot;id&quot;:&quot;cc-by/4.0&quot;,&quot;name&quot;:&quot;Creative Commons BY 4.0&quot;,&quot;url&quot;:&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;,&quot;quelle&quot;: &quot;&#169; GDI-Th&quot;}</rights>		<summary>Dieser Datensatz stellt Inhalte zum Thema &quot;Versorgungswirtschaft und staatliche Dienste&quot; aus folgenden Quelldatens&#228;tzen im INSPIRE-Zielmodell dar: 
+-Plankrankenh&#228;user
+-Gesundheits&#228;mter
+-Veterin&#228;r- und Lebensmittel&#252;berwachungs&#228;mter
+-Jugend&#228;mter</summary>		<title>INSPIRE US Th&#252;ringer Ministerium f&#252;r Soziales, Gesundheit, Arbeit und Familie (TMSGAF)</title>		<updated>2026-11-03T16:16:52.000+01:00</updated>
+		<georss:polygon>50.204 9.87 51.64 9.87 51.64 12.65 50.204 12.65 50.204 9.87</georss:polygon>	</entry>
+	<entry>
+		<inspire_dls:spatial_dataset_identifier_code>3a88540e-36ea-46f7-b70f-47c1db95cda9</inspire_dls:spatial_dataset_identifier_code>		<inspire_dls:spatial_dataset_identifier_namespace>http://www.geoproxy.geoportal-th.de</inspire_dls:spatial_dataset_identifier_namespace>		<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="EPSG 25832"/>
+		<author>
+			<name>Jens Heller</name>
+<email>jens.heller@tmbwk.thueringen.de</email>		</author>
+		<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_3a88540e-36ea-46f7-b70f-47c1db95cda9.xml</id>
+		<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_3a88540e-36ea-46f7-b70f-47c1db95cda9.xml" rel="alternate" hreflang="de" type="application/atom+xml" title="INSPIRE US Th&#252;ringer Ministerium f&#252;r Bildung, Wissenschaft und Kultur (TMBWK) Schulamtsbezirke in Th&#252;ringen"/>
+		<link href="https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=3a88540e-36ea-46f7-b70f-47c1db95cda9" rel="describedby" type="application/xml" title="Download Service DataSet Metadata"/>
+		<rights>Lizenz: Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.de) Namensnennung: &quot;&#169; GDI-Th&quot;
+{&quot;id&quot;:&quot;cc-by/4.0&quot;,&quot;name&quot;:&quot;Creative Commons BY 4.0&quot;,&quot;url&quot;:&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;,&quot;quelle&quot;: &quot;&#169; GDI-Th&quot;}</rights>		<summary>Dieser Datensatz enth&#228;lt die Schulamtsbezirke von Th&#252;ringen im INSPIRE Datenmodell des Themas &quot;Versorgungswirtschaft und staatliche Dienste&quot;. Die Staatlichen Schul&#228;mter in Th&#252;ringen sind die unteren Schulaufsichtsbeh&#246;rden. Sie erf&#252;llen schulfachliche und verwaltungsfachliche Aufgaben. Es handelt sich um einen Datensatz des Th&#252;ringer Ministerium f&#252;r Bildung, Wissenschaft und Kultur (TMBWK).</summary>		<title>INSPIRE US Th&#252;ringer Ministerium f&#252;r Bildung, Wissenschaft und Kultur (TMBWK) Schulamtsbezirke in Th&#252;ringen</title>		<updated>2026-11-03T16:16:52.000+01:00</updated>
+		<georss:polygon>50.204 9.87 51.64 9.87 51.64 12.65 50.204 12.65 50.204 9.87</georss:polygon>	</entry>
+</feed>

@@ -1,0 +1,27 @@
+[
+  {
+    "source_id": "nw_muenster_locations",
+    "snapshot": "data/snapshots/nw_muenster_locations--20261113T185015890709Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "sn_chemnitz_buerger_locations",
+    "snapshot": "data/snapshots/sn_chemnitz_buerger_locations--20261113T185018515223Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "sn_chemnitz_aemter_locations",
+    "snapshot": "data/snapshots/sn_chemnitz_aemter_locations--20261113T185019987105Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "mv_rostock_locations",
+    "snapshot": "data/snapshots/mv_rostock_locations--20261113T185020267835Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "hh_jugend_asd_locations",
+    "snapshot": "data/snapshots/hh_jugend_asd_locations--20261113T185021298556Z",
+    "status": "downloaded"
+  }
+]

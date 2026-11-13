@@ -1,0 +1,64 @@
+{
+  "category": "jobcenter",
+  "point": {
+    "lon": 8.466,
+    "lat": 49.488
+  },
+  "limitations": "BZB Open: Jobcenter-Bezirke; keine persönliche Anspruchsprüfung oder Ermittlung besonderer Fallzuständigkeiten.",
+  "matches": [
+    {
+      "authority_name": "Jobcenter Mannheim, Universitätsstadt",
+      "category": "jobcenter",
+      "source_id": "bzb_jobcenter",
+      "source_key": "ba_jobcenter.277",
+      "scope": "DE",
+      "source_date": null,
+      "evidence_url": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+      "geometry_repaired": false,
+      "properties": {
+        "id": "t64402",
+        "name": "Jobcenter Mannheim, Universitätsstadt",
+        "dst_id": "64402",
+        "uebergeord": "Agentur für Arbeit Mannheim"
+      },
+      "license": "dl-de/by-2-0",
+      "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+      "fetched_at": "2026-11-13T16:39:47.492270+00:00",
+      "on_boundary": false
+    }
+  ],
+  "national_coverage_guaranteed": false,
+  "status": "candidate",
+  "boundary_references": [],
+  "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+  "configured_sources": [
+    {
+      "source_id": "bzb_jobcenter",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+      "layer": "bzb-open:ba_jobcenter",
+      "scope": "DE",
+      "semantics": "authority",
+      "filter": null,
+      "license": "dl-de/by-2-0",
+      "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+      "verification": {
+        "checked_at": "2026-11-13T16:40:01.932210+00:00",
+        "status": "verified",
+        "checks": {
+          "capabilities": {
+            "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+            "sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f"
+          },
+          "schema": {
+            "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_jobcenter",
+            "sha256": "b9a312a16f9fc9ef182864508aa5022c8e10e0f58cffe5f41609fcaf15f8c2ce"
+          },
+          "sample": {
+            "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+            "sha256": "df627b374b883fa0ba9e9982def61c2e0e571ebc445f60d99199f1d47a29f576"
+          }
+        }
+      }
+    }
+  ]
+}

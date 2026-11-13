@@ -1,0 +1,79 @@
+{
+  "category": "rentenversicherung",
+  "point": {
+    "lon": 8.27,
+    "lat": 50.0
+  },
+  "limitations": "Zuständiger Versicherungsträger ist aus Versicherungsverhältnis/-konto zu bestimmen, nicht allein aus Wohnortpolygon.",
+  "matches": [
+    {
+      "authority_name": "Deutsche Rentenversicherung",
+      "category": "rentenversicherung",
+      "source_id": "osm_locations",
+      "source_key": "node/4447836465",
+      "scope": "DE-RP|DE-HE",
+      "source_date": "2026-11-13T17:46:31Z",
+      "evidence_url": "https://www.openstreetmap.org/node/4447836465",
+      "properties": {
+        "osm_id": 4447836465,
+        "osm_tags": {
+          "name": "Deutsche Rentenversicherung",
+          "phone": "+49 6131 2740",
+          "office": "government",
+          "website": "https://www.deutsche-rentenversicherung.de",
+          "addr:city": "Mainz",
+          "government": "social_security",
+          "wheelchair": "yes",
+          "addr:street": "Am Brand",
+          "addr:country": "DE",
+          "addr:postcode": "55116",
+          "opening_hours": "Mo 08:00-15:00; Tu 08:00-18:00; We 08:00-15:00, Th 08:00-18:00; Fr 08:00-12:00",
+          "social_security": "pension_fund",
+          "addr:housenumber": "31"
+        },
+        "osm_type": "node",
+        "source_quality": "community",
+        "location_method": "OSM node",
+        "classification_basis": "Conservative name patterns and explicit office/amenity tags; not an official category register",
+        "geometry_completeness": "location_only_no_jurisdiction_polygon"
+      },
+      "name_rule": {
+        "method": "Original official_name or name, conservative explicit name patterns and government/amenity tags; no assertion of official competence"
+      },
+      "run_id": 80,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2742701,
+          50.0007295
+        ]
+      },
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap-Mitwirkende, https://www.openstreetmap.org/copyright, ODbL 1.0",
+      "fetched_at": "2026-11-13T18:04:59.943647+00:00",
+      "source_quality": "community",
+      "distance_m": 316.71621849,
+      "geometry_repaired": false,
+      "kind": "authority_point",
+      "territorial_match_verified": false,
+      "case_competence_verified": false,
+      "geometry_completeness": "location_only_no_jurisdiction_polygon",
+      "match_type": "nearest_point_fallback",
+      "jurisdiction_verified": false
+    }
+  ],
+  "national_coverage_guaranteed": false,
+  "status": "non_spatial",
+  "required_context": "Zuständiger Versicherungsträger ist aus Versicherungsverhältnis/-konto zu bestimmen, nicht allein aus Wohnortpolygon.",
+  "backend": "local_point_fallback",
+  "requested_backend": "local",
+  "fallback_used": true,
+  "area_search_status": "non_spatial",
+  "point_search": {
+    "radius_km": 80,
+    "count": 1,
+    "limit": 1
+  },
+  "fallback_reason": "No matching jurisdiction polygon was found in the completed area search.",
+  "warning": "Nahegelegener Standort. Zuständigkeit nicht durch eine Fläche belegt; Nähe begründet keine fachliche oder persönliche Zuständigkeit."
+}

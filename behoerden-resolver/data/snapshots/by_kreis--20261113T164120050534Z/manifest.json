@@ -1,0 +1,115 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_kreis",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:KreisverwaltungsbehoerdenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "kreisverwaltung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "landratsaemter"
+          ]
+        },
+        "name_prefix_field": "bezeichnungZusatz"
+      },
+      {
+        "category": "stadtverwaltung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "rathaeuser-kreisfreie-staedte",
+            "landeshauptstadt"
+          ]
+        },
+        "name_prefix_field": "bezeichnungZusatz"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:41:05.623171+00:00",
+  "completed_at": "2026-11-13T16:41:20.040748+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 103,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "stadtverwaltung": 25,
+    "kreisverwaltung": 71
+  },
+  "source_subgroups": {
+    "bezirksverwaltungen": 7,
+    "rathaeuser-kreisfreie-staedte": 24,
+    "landeshauptstadt": 1,
+    "landratsaemter": 71
+  },
+  "records_sha256": "31d141501f52395eff1915558d0c7333dfb5e3fe53f3811cb275f2a760872cf6",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:41:06.361375+00:00",
+      "response_sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c",
+      "bytes": 89094
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche",
+      "retrieved_at": "2026-11-13T16:41:06.361818+00:00",
+      "response_sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378",
+      "bytes": 28008
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:06.552243+00:00",
+      "response_sha256": "e611b9fd50a61db7d85834b6177db23c92a571466e66f0cce4d5453f31784503",
+      "bytes": 2103259
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:10.105751+00:00",
+      "response_sha256": "78ede3564e5b09e34c774f3c9486d3cd834e7ff02029639eca38d350fada8f8c",
+      "bytes": 20714880
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=50&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:16.339132+00:00",
+      "response_sha256": "1b02ada0da2613781f501318b099d05a2b91bff5e88b97bdb048c066eb075178",
+      "bytes": 20479743
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=100&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:19.775744+00:00",
+      "response_sha256": "de6cd6f0136047a5ed9c68187f641f1b712d6465b5f3c8cb66dde2fbfb574c52",
+      "bytes": 1092180
+    },
+    {
+      "path": "raw/page-000103.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=103&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:20.039661+00:00",
+      "response_sha256": "125a1db479c44de934d28a96733c83967cffc413a4eca7971b15ef98cb7c6fb2",
+      "bytes": 1044
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

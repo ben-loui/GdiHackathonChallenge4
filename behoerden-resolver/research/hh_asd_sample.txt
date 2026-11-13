@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd https://registry.gdi-de.org/id/de.hh.up https://geodienste.hamburg.de/HH_WFS_ASD?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B+version%3D3.2&amp;TYPENAME=de.hh.up:standorte&amp;NAMESPACES=xmlns(de.hh.up,https%3A%2F%2Fregistry.gdi-de.org%2Fid%2Fde.hh.up)" xmlns:wfs="http://www.opengis.net/wfs/2.0" timeStamp="2026-11-13T18:40:53Z" xmlns:gml="http://www.opengis.net/gml/3.2" numberMatched="unknown" numberReturned="0">
+  <!--NOTE: numberReturned attribute should be 'unknown' as well, but this would not validate against the current version of the WFS 2.0 schema (change upcoming). See change request (CR 144): https://portal.opengeospatial.org/files?artifact_id=43925.-->
+  <wfs:member>
+    <de.hh.up:standorte xmlns:de.hh.up="https://registry.gdi-de.org/id/de.hh.up" gml:id="DE.HH.UP_STANDORTE_1151">
+      <de.hh.up:datensatzname>Allgemeiner Sozialer Dienst (ASD)</de.hh.up:datensatzname>
+      <de.hh.up:einrichtung_name>ASD Altstadt, Neustadt, St. Pauli, Finkenwerder, HafenCity</de.hh.up:einrichtung_name>
+      <de.hh.up:adresse>Caffamacherreihe 1-3</de.hh.up:adresse>
+      <de.hh.up:ort>20355 Hamburg</de.hh.up:ort>
+      <de.hh.up:anmerkung_ort>Keine</de.hh.up:anmerkung_ort>
+      <de.hh.up:internet>https://www.hamburg.de/mitte/allgemeiner-sozialer-dienst/</de.hh.up:internet>
+      <de.hh.up:mail>jugendamtregion1@hamburg-mitte.hamburg.de</de.hh.up:mail>
+      <de.hh.up:geom>
+        <!--Inlined geometry 'DE.HH.UP_STANDORTE_1151_DE.HH.UP_GEOM'-->
+        <gml:Point gml:id="DE.HH.UP_STANDORTE_1151_DE.HH.UP_GEOM" srsName="EPSG:3857">
+          <gml:pos>1111470.428 7086167.608</gml:pos>
+        </gml:Point>
+      </de.hh.up:geom>
+    </de.hh.up:standorte>
+  </wfs:member>
+  <wfs:member>
+    <de.hh.up:standorte xmlns:de.hh.up="https://registry.gdi-de.org/id/de.hh.up" gml:id="DE.HH.UP_STANDORTE_1152">
+      <de.hh.up:datensatzname>Allgemeiner Sozialer Dienst (ASD)</de.hh.up:datensatzname>
+      <de.hh.up:einrichtung_name>ASD Eingangsmanagement</de.hh.up:einrichtung_name>
+      <de.hh.up:adresse>Öjendorfer Weg 9</de.hh.up:adresse>
+      <de.hh.up:ort>22111 Hamburg</de.hh.up:ort>
+      <de.hh.up:anmerkung_ort>Eingangsmanagement für Region 2</de.hh.up:anmerkung_ort>
+      <de.hh.up:internet>https://www.hamburg.de/mitte/allgemeiner-sozialer-dienst/</de.hh.up:internet>
+      <de.hh.up:mail>jugendamtregion2@hamburg-mitte.hamburg.de</de.hh.up:mail>
+      <de.hh.up:geom>
+        <!--Inlined geometry 'DE.HH.UP_STANDORTE_1152_DE.HH.UP_GEOM'-->
+        <gml:Point gml:id="DE.HH.UP_STANDORTE_1152_DE.HH.UP_GEOM" srsName="EPSG:3857">
+          <gml:pos>1125086.996 7083595.115</gml:pos>
+        </gml:Point>
+      </de.hh.up:geom>
+    </de.hh.up:standorte>
+  </wfs:member>
+</wfs:FeatureCollection>

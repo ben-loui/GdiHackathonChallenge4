@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ZustV: &#xA7; 3 Wohngeldgesetz - B&#xFC;rgerservice</title>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" />
+      <link rel="stylesheet" href="/bundles/styles.css" />
+  
+
+  <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="fyxvNFVrU" async></script>
+</head>
+<body>
+<form action="/Search" id="searchForm" method="post">
+<nav class="navbar navbar-default navbar-fixed-top" aria-label="Seitennavigation">
+    <div class="row" id="header">
+        <div class="col-xs-12 col-sm-4" style="padding-right: 0px; padding-left: 0px;">
+            <a class="navbarItem" href="/" title="Zur Startseite von BAYERN.RECHT">
+                <img src="/Images/logo_bayern-recht.png" class="img-responsive pull-left hidden-xs" alt="Logo Bayern.Recht" />
+            </a>
+        </div>
+        <div id="portalLogo" class="col-xs-12 col-sm-8" style="padding-right: 0px; padding-left: 0px;">
+            <img src="/Images/logo_bayern.png" class="img-responsive pull-right hidden-xs" alt="Logo Bayern" />
+            <img src="/Images/logo_xs_bayern.png" class="img-responsive pull-right visible-xs" alt="Logo Bayern" />
+        </div>
+    </div>
+
+    <ul class="nav navbar-nav col-xs-8 col-sm-4 col-lg-3">
+        <li>
+                <a class="navbarItem" href="/" title="Zur Startseite von BAYERN.RECHT"><span style="font-size: 20px" class="glyphicon glyphicon-home"></span><span class="sr-only">Zur Startseite von BAYERN.RECHT</span></a>
+        </li>
+        <li>
+                <a at-target="lastSearch" class="navbarItem" href="/Search" title="Zur Trefferliste der letzten Suche"><span style="font-size: 20px" class="glyphicon glyphicon-list"></span><span class="sr-only">Zur Trefferliste der letzten Suche</span></a>
+        </li>
+    </ul>
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    
+    <div class="col-sm-5 col-lg-6" id="searchPanelDiv">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div style="padding:0px">
+              <div class="navbar-form">
+  <div at-target="searchSuggestInputGroup" class="input-group">
+    <input at-target="searchPanelBox" autocomplete="off" class="form-control" id="searchPanelBox" name="SearchFields.Content" aria-label="Suche" placeholder="Suche" title="Geben Sie die zu suchenden Begriffe wie Schlagworte, Aktenzeichen, Zitate in beliebiger Reihenfolge ein..." type="text" 
+           value="">
+    <div style="width: 85px" class="input-group-btn">
+      <button at-target="searchPanelBoxClearer" id="searchPanelBoxClearer" title="Suche zurücksetzen" class="btn btn-default" type="button"><i class="glyphicon glyphicon-trash"></i><span class="sr-only">Suche zurücksetzen</span></button>
+      <button at-target="searchPanelBoxSubmit" class="btn btn-default" title="Suche ausführen" type="submit" style="padding: 3px 14px"><i style="font-size: 21px" class="glyphicon glyphicon-search"></i><span class="sr-only">Suche ausführen</span></button>
+    </div>
+  </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+      <main class="container">
+            <div class="row">
+                
+
+<div id="navigation" role="navigation" class="col-sm-4 col-lg-3">
+    <h1 class="sr-only">Navigation</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">
+            Inhaltsverzeichnis
+        </h2>
+    </div>
+    <div id="toc" class="panel-collapse collapse in documentNavigationType">
+        <div class="panel-body">
+            <div class="tree">
+                <ul class="list-group">
+                    
+<li class="list-group-item node-tree expanded " data-level="1" data-nodeid="0" data-docid="BayZustV" data-parent="" data-rootid="BayZustV" title="Zust&#xE4;ndigkeitsverordnung (ZustV) Vom 16. Juni 2015 (GVBl. S. 184) BayRS 2015-1-1-V (&#xA7;&#xA7; 1&#x2013;100)">
+
+<span class="icon" role="button"><i class="click-collapse glyphicon glyphicon-minus"></i><span class="sr-only">Bereich reduzieren</span></span><span class="icon"><i></i></span><a style="font-weight: bold" href="/Content/Document/BayZustV">Zust&#xE4;ndigkeitsverordnung (ZustV) Vom 16. Juni 2015 (GVBl. S. 184) BayRS 2015-1-1-V (&#xA7;&#xA7; 1&#x2013;100)</a></li>
+
+<li class="list-group-item node-tree expanded " data-level="2" data-nodeid="1" data-docid="BayZustV-G1" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 1 Innere Verwaltung, Verwaltungsgerichtsbarkeit (&#xA7;&#xA7; 1&#x2013;8d)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-collapse glyphicon glyphicon-minus"></i><span class="sr-only">Bereich reduzieren</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G1">Teil 1 Innere Verwaltung, Verwaltungsgerichtsbarkeit (&#xA7;&#xA7; 1&#x2013;8d)</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="2" data-docid="BayZustV-1" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 1 Parteiengesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-1">&#xA7; 1 Parteiengesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="3" data-docid="BayZustV-2" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 2 Vereinsgesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-2">&#xA7; 2 Vereinsgesetz</a></li>
+
+<li class="list-group-item node-tree  node-selected" data-level="3" data-nodeid="4" data-docid="BayZustV-3" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 3 Wohngeldgesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-3">&#xA7; 3 Wohngeldgesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="5" data-docid="BayZustV-4" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 4 Grundsteuergesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-4">&#xA7; 4 Grundsteuergesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="6" data-docid="BayZustV-5" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 5 Gewerbesteuergesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-5">&#xA7; 5 Gewerbesteuergesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="7" data-docid="BayZustV-6" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 6 Namens&#xE4;nderungsrecht">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-6">&#xA7; 6 Namens&#xE4;nderungsrecht</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="8" data-docid="BayZustV-7" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 7 Landbeschaffungsgesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-7">&#xA7; 7 Landbeschaffungsgesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="9" data-docid="BayZustV-8" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 8 Schutzbereichgesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-8">&#xA7; 8 Schutzbereichgesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="10" data-docid="BayZustV-8a" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 8a Geldw&#xE4;schegesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-8a">&#xA7; 8a Geldw&#xE4;schegesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="11" data-docid="BayZustV-8b" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 8b eID-Karte-Gesetz">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-8b">&#xA7; 8b eID-Karte-Gesetz</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="12" data-docid="BayZustV-8c" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 8c Pass- und Personalausweiswesen">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-8c">&#xA7; 8c Pass- und Personalausweiswesen</a></li>
+
+<li class="list-group-item node-tree  " data-level="3" data-nodeid="13" data-docid="BayZustV-8d" data-parent="BayZustV-G1" data-rootid="BayZustV" title="&#xA7; 8d Gerichtliche Zust&#xE4;ndigkeit in Asylsachen">
+        <span class="indent"></span>
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-8d">&#xA7; 8d Gerichtliche Zust&#xE4;ndigkeit in Asylsachen</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="14" data-docid="BayZustV-G2" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 2 Verkehr (&#xA7;&#xA7; 9&#x2013;18)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G2">Teil 2 Verkehr (&#xA7;&#xA7; 9&#x2013;18)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="15" data-docid="BayZustV-G3" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 3 Justiz (&#xA7;&#xA7; 19&#x2013;23)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G3">Teil 3 Justiz (&#xA7;&#xA7; 19&#x2013;23)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="16" data-docid="BayZustV-G4" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 4 Unterricht, Kultus, Wissenschaft, Kunst (&#xA7;&#xA7; 24&#x2013;25a)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G4">Teil 4 Unterricht, Kultus, Wissenschaft, Kunst (&#xA7;&#xA7; 24&#x2013;25a)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="17" data-docid="BayZustV-G5" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 5 &#xD6;ffentliches Dienstrecht (&#xA7;&#xA7; 26&#x2013;32)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G5">Teil 5 &#xD6;ffentliches Dienstrecht (&#xA7;&#xA7; 26&#x2013;32)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="18" data-docid="BayZustV-G6" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 6 Steuern und Finanzen (&#xA7;&#xA7; 33&#x2013;36)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G6">Teil 6 Steuern und Finanzen (&#xA7;&#xA7; 33&#x2013;36)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="19" data-docid="BayZustV-G7" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 7 Gewerberecht (&#xA7;&#xA7; 37&#x2013;41)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G7">Teil 7 Gewerberecht (&#xA7;&#xA7; 37&#x2013;41)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="20" data-docid="BayZustV-G8" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 8 Wirtschaftsrecht (&#xA7;&#xA7; 42&#x2013;47b)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G8">Teil 8 Wirtschaftsrecht (&#xA7;&#xA7; 42&#x2013;47b)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="21" data-docid="BayZustV-G9" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 9 Umwelt- und Verbraucherschutzrecht (&#xA7;&#xA7; 48&#x2013;51j)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G9">Teil 9 Umwelt- und Verbraucherschutzrecht (&#xA7;&#xA7; 48&#x2013;51j)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="22" data-docid="BayZustV-G10" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 10 Ern&#xE4;hrung, Landwirtschaft und Forsten (&#xA7;&#xA7; 52&#x2013;62a)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G10">Teil 10 Ern&#xE4;hrung, Landwirtschaft und Forsten (&#xA7;&#xA7; 52&#x2013;62a)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="23" data-docid="BayZustV-G11" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 11 Soziales (&#xA7;&#xA7; 63&#x2013;64c)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G11">Teil 11 Soziales (&#xA7;&#xA7; 63&#x2013;64c)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="24" data-docid="BayZustV-G12" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 12 Gesundheit (&#xA7;&#xA7; 65&#x2013;69c)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G12">Teil 12 Gesundheit (&#xA7;&#xA7; 65&#x2013;69c)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="25" data-docid="BayZustV-G13" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 13 Fach&#xFC;bergreifende Zust&#xE4;ndigkeiten; Rechtshilfe (&#xA7;&#xA7; 70&#x2013;86)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G13">Teil 13 Fach&#xFC;bergreifende Zust&#xE4;ndigkeiten; Rechtshilfe (&#xA7;&#xA7; 70&#x2013;86)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="26" data-docid="BayZustV-G14" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 14 Ordnungswidrigkeiten (&#xA7;&#xA7; 87&#x2013;98a)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G14">Teil 14 Ordnungswidrigkeiten (&#xA7;&#xA7; 87&#x2013;98a)</a></li>
+
+<li class="list-group-item node-tree collapsed " data-level="2" data-nodeid="27" data-docid="BayZustV-G15" data-parent="BayZustV" data-rootid="BayZustV" title="Teil 15 Schlussvorschriften (&#xA7;&#xA7; 99&#x2013;100)">
+        <span class="indent"></span>
+
+<span class="icon" role="button"><i class="click-expand glyphicon glyphicon-plus"></i><span class="sr-only">Bereich erweitern</span></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-G15">Teil 15 Schlussvorschriften (&#xA7;&#xA7; 99&#x2013;100)</a></li>
+
+<li class="list-group-item node-tree  " data-level="2" data-nodeid="28" data-docid="BayZustV-NN1" data-parent="BayZustV" data-rootid="BayZustV" title="[Schlussformel]">
+        <span class="indent"></span>
+
+<span class="icon"><i class="glyphicon spacer"></i></span><span class="icon"><i></i></span><a style="font-weight: normal" href="/Content/Document/BayZustV-NN1">[Schlussformel]</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="content" class="col-sm-8 col-lg-9 " style="padding:0px">
+    <h1 class="sr-only">Inhalt</h1>
+    
+
+<div class="panel panel-default">
+    <div class="panel-heading" style="padding-top: 9px; padding-bottom: 8px">
+        <div class="panel-title row">
+            <div id="doc-metadata" class="col-xs-7 col-sm-6 col-md-7 col-lg-8">
+                <div class="row">
+                        <div class="col-md-4" style="padding-right: 0px; padding-left: 5px">
+                            <b>ZustV</b>
+                        </div>
+                        <div class="col-md-4" style="padding-right: 0px; padding-left: 5px">
+                            Text gilt ab: 01.10.2026
+                        </div>
+                        <div class="col-md-4" style="padding-right: 0px; padding-left: 5px">
+                            
+                        </div>
+                        <div class="col-md-4" style="padding-right: 0px; padding-left: 5px">
+                            Fassung: 16.06.2015
+                        </div>
+                        <div class="col-md-4" style="padding-right: 0px; padding-left: 5px">
+                            
+                        </div>
+                </div>
+            </div>
+            <div id="doc-toolbar" class="col-xs-5 col-sm-6 col-md-5 col-lg-4">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 toolbar-cmd text-right">
+                                <a style="font-weight:bold" href="/Content/Document/BayZustV/true" title="Gesamtes Gesetz auf einer Seite anzeigen"><span>Gesamtansicht</span></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="row pull-right">
+                            <div class="col-xs-2 toolbar-cmd" style="padding-left: 5px;">
+                                <button type="button" class="anchor-getLink" data-href="https://www.gesetze-bayern.de/Content/Document/BayZustV-3">
+                                    <img src="/Images/link.png" title="Link in Zwischenablage kopieren" alt="Link in Zwischenablage kopieren" />
+                                </button>
+                            </div>
+                            <div class="col-xs-2 toolbar-cmd">
+                                <button type="button" class="anchor-downloadDocument" at-target="downloadDocument"
+                                        aria-describedby="downloadDocumentPopover" data-bs-toggle="popover">
+                                    <span class="glyphicon glyphicon-arrow-down" title="Download"></span>
+                                    <span class="sr-only">Download</span>
+                              </button>
+                              <div id="downloadDocumentPopover" class="popover-template">
+                                <ul id="download-list" class="popover-list">
+                                  <li><a at-target="downloadDocumentPDF" href="/Content/Pdf/BayZustV-3?all=False" title="Download PDF"><img src="/Images/pdficon.png" alt="Download PDF" /></a></li>
+                                  <li><a at-target="downloadDocumentRTF" href="/Content/Rtf/BayZustV-3?all=False" title="Download RTF"><img src="/Images/rtficon.png" alt="Download RTF" /></a></li>
+                                  <li><a at-target="downloadDocumentZIP" href="/Content/Zip/BayZustV" title="Download ZIP"><img src="/Images/zipicon.png" alt="Download ZIP" /></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xs-2 toolbar-cmd">
+                                <button type="button" class="anchor-print" at-target="printDocument" onclick="window.open('/Content/Document/BayZustV-3?view=Print')" title="Drucken"><span class="glyphicon glyphicon-print"></span><span class="sr-only">Drucken</span></button>
+                            </div>
+
+                                <div class="col-xs-3 toolbar-cmd" style="padding-left:18px">
+                                        <a href="/Content/Document/BayZustV-2" title="Vorheriges Dokument"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Vorheriges Dokument</span></a>
+                                </div>
+                                <div class="col-xs-3 toolbar-cmd">
+                                        <a href="/Content/Document/BayZustV-4" title="Nächstes Dokument"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Nächstes Dokument</span></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cont">
+    
+            <div class="paraheading">
+              <div class="absatz paranr">§ 3</div>
+              <div class="absatz paratitel"> Wohngeldgesetz </div>
+              <div class="clearer"></div>
+            </div>
+            <div class="absatz paratext">(1) <sup class="satznr">1</sup>Wohngeldbehörden im Sinn des § 24 Abs. 1 Satz 1 des Wohngeldgesetzes (WoGG) sind die Landkreise und die kreisfreien Gemeinden. <sup class="satznr">2</sup>Sie nehmen die Aufgaben im Auftrag des Staates wahr.</div>
+            <div class="absatz paratext">(2) Fachaufsichtsbehörde für alle Regierungsbezirke und zentrale Landesstelle im Sinn des § 33 WoGG ist die Regierung von Unterfranken.</div>
+          
+</div>
+
+
+</div>
+        
+
+
+            </div>
+      </main>
+
+
+<footer class="row">
+    <ul>
+        <li class="col-sm-3">
+            <a href="http://www.bayern.de" target="_blank">Bayern.de</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="http://www.freistaat.bayern/" target="_blank">BayernPortal</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Datenschutz">Datenschutz</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Impressum">Impressum</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Barrierefreiheit">Barrierefreiheit</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="/Content/Document/Hilfe">Hilfe</a>
+        </li>
+        <li class="col-sm-3">
+            <a href="http://www.bayern.de/service/bayern-direkt-2/" target="_blank">Kontakt</a>
+        </li>
+        <li class="col-sm-3">
+            <button class="btn btn-link" id="adjustFontsize" type="button"
+                    aria-describedby="adjustFontsizePopover"
+                    data-bs-toggle="popover">
+                <span style="font-size: 55%" class="glyphicon glyphicon-font" title="Schriftgröße"></span>
+                <span style="font-size: 90%" class="glyphicon glyphicon-font" title="Schriftgröße"></span>
+                <span class="sr-only">Schriftgröße</span>
+            </button>
+          <div id="adjustFontsizePopover" class="popover-template">
+            <ul id="fontsize-list" class="popover-list">
+              <li><a id="btn-fontsize-small" href="/changefontsize?fontsize=small"><span>A</span></a></li>
+              <li><a id="btn-fontsize-normal" href="/changefontsize?fontsize=middle"><span>A</span></a></li>
+              <li><a id="btn-fontsize-large" href="/changefontsize?fontsize=large"><span>A</span></a></li>
+            </ul>
+          </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <a href="/changecontrast" title="Kontrastwechsel"><span style="font-size: 120%" class="glyphicon glyphicon-adjust"></span><span class="sr-only">Kontrastwechsel</span></a>
+        </li>
+    </ul>
+</footer><input name="__RequestVerificationToken" type="hidden" value="CfDJ8MnVDbMVCL9Pi97pNxm-cJwCand7L_zFGIHzma4jBl98_xP9sLV242PWh4KUVawII1z7hwpRfNjjku46l-0NaRgHAqTiynP3AuMJN14wYO95opU0qR7H32mBhHDjE5HzJJ6Xs3tBrxhQkCRBK27izDM" /></form>
+    <script type="text/plain" data-usercentrics="Matomo">
+        var _paq = _paq || [];
+        const regex = /-(?!bayern\.de)/g;
+        _paq.push(['setCustomUrl', location.href.replace(regex,'/') + '/']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        _paq.push(['setTrackerUrl', 'https://beck.matomo.cloud/matomo.php']);
+        _paq.push(['setSiteId', 4]);
+
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://beck.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+</script>
+
+
+    <script src="/bundles/jquery.js"></script>
+    
+    
+        <script src="/bundles/Scripts.js"></script>
+</body>
+</html>

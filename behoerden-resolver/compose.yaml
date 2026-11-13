@@ -1,0 +1,32 @@
+name: behoerden-resolver
+services:
+  db:
+    image: postgis/postgis:16-3.5
+    # Offizielles PostGIS-Image ist nicht für alle ARM-Versionen verfügbar.
+    platform: linux/amd64
+    environment:
+      POSTGRES_DB: authorities
+      POSTGRES_USER: resolver
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-resolver-local}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-55432}:5432"
+    volumes:
+      - postgis-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U resolver -d authorities"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  cli:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://resolver:${POSTGRES_PASSWORD:-resolver-local}@db:5432/authorities
+      RESOLVER_DATA_DIR: /data/snapshots
+    volumes:
+      - ./data:/data
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["categories"]
+volumes:
+  postgis-data:

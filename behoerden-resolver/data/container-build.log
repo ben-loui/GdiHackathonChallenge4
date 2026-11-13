@@ -1,0 +1,104 @@
+ Image behoerden-resolver-cli Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 586B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 335B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#3 DONE 12.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 91B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#5 resolve docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 133.78kB done
+#6 DONE 0.0s
+
+#7 [2/6] WORKDIR /app
+#7 CACHED
+
+#8 [3/6] COPY pyproject.toml requirements.lock ./
+#8 DONE 0.0s
+
+#9 [4/6] COPY src ./src
+#9 DONE 0.0s
+
+#10 [5/6] RUN pip install --no-cache-dir -r requirements.lock && pip install --no-cache-dir --no-deps .
+#10 0.972 Collecting psycopg==3.3.9 (from psycopg[binary]==3.3.9->-r requirements.lock (line 2))
+#10 1.059   Downloading psycopg-3.3.9-py3-none-any.whl.metadata (4.4 kB)
+#10 1.158 Collecting shapely==2.2.0 (from -r requirements.lock (line 3))
+#10 1.175   Downloading shapely-2.2.0-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl.metadata (6.7 kB)
+#10 1.226 Collecting pyproj==3.8.0 (from -r requirements.lock (line 4))
+#10 1.241   Downloading pyproj-3.8.0-cp312-cp312-manylinux_2_28_aarch64.whl.metadata (40 kB)
+#10 1.390 Collecting numpy==2.5.4 (from -r requirements.lock (line 5))
+#10 1.406   Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (6.6 kB)
+#10 1.431 Collecting certifi==2026.10.23 (from -r requirements.lock (line 6))
+#10 1.447   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#10 1.471 Collecting typing-extensions==4.16.0 (from -r requirements.lock (line 7))
+#10 1.486   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#10 1.586 Collecting psycopg-binary==3.3.9 (from psycopg[binary]==3.3.9->-r requirements.lock (line 2))
+#10 1.602   Downloading psycopg_binary-3.3.9-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+#10 1.619 Downloading psycopg-3.3.9-py3-none-any.whl (219 kB)
+#10 1.654 Downloading shapely-2.2.0-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl (2.2 MB)
+#10 1.741    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 24.6 MB/s eta 0:00:00
+#10 1.759 Downloading pyproj-3.8.0-cp312-cp312-manylinux_2_28_aarch64.whl (10.1 MB)
+#10 2.120    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 28.0 MB/s eta 0:00:00
+#10 2.136 Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (15.7 MB)
+#10 2.706    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 27.6 MB/s eta 0:00:00
+#10 2.721 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#10 2.749 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#10 2.769 Downloading psycopg_binary-3.3.9-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (4.1 MB)
+#10 2.949    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 22.5 MB/s eta 0:00:00
+#10 2.992 Installing collected packages: typing-extensions, psycopg-binary, numpy, certifi, shapely, pyproj, psycopg
+#10 4.924 Successfully installed certifi-2026.10.23 numpy-2.5.4 psycopg-3.3.9 psycopg-binary-3.3.9 pyproj-3.8.0 shapely-2.2.0 typing-extensions-4.16.0
+#10 4.925 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#10 5.061 
+#10 5.061 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#10 5.061 [notice] To update, run: pip install --upgrade pip
+#10 5.862 Processing /app
+#10 5.863   Installing build dependencies: started
+#10 7.290   Installing build dependencies: finished with status 'done'
+#10 7.291   Getting requirements to build wheel: started
+#10 7.597   Getting requirements to build wheel: finished with status 'done'
+#10 7.597   Preparing metadata (pyproject.toml): started
+#10 7.905   Preparing metadata (pyproject.toml): finished with status 'done'
+#10 7.906 Building wheels for collected packages: behoerden-resolver
+#10 7.907   Building wheel for behoerden-resolver (pyproject.toml): started
+#10 8.227   Building wheel for behoerden-resolver (pyproject.toml): finished with status 'done'
+#10 8.228   Created wheel for behoerden-resolver: filename=behoerden_resolver-0.2.0-py3-none-any.whl size=49308 sha256=6350346b373a850e4dd371c802f0221e27b8f4ddc6d7180aa0993370d880c62f
+#10 8.228   Stored in directory: /tmp/pip-ephem-wheel-cache-htj8einh/wheels/54/1b/b7/aa63e25c8f14f4f2ae7b04e6097bdecb770e455c5c1ee0a600
+#10 8.230 Successfully built behoerden-resolver
+#10 8.230 Installing collected packages: behoerden-resolver
+#10 8.246 Successfully installed behoerden-resolver-0.2.0
+#10 8.246 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#10 8.361 
+#10 8.361 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#10 8.361 [notice] To update, run: pip install --upgrade pip
+#10 DONE 8.5s
+
+#11 [6/6] COPY tests ./tests
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 2.4s done
+#12 exporting manifest sha256:baf2c0990097b92800ee6e9a8addeb587e11adf7fdbd79f814afdd9ce78f37ec done
+#12 exporting config sha256:7dab7be81e14c35ad5e73d809d95c9b44018aadca9496a773cc7c9d140a29164 done
+#12 exporting attestation manifest sha256:a9e042eb40340f4fc8841ba67dd2085c05342b18fae779b53096e147ced439d1 done
+#12 exporting manifest list sha256:c305b100495b84bafeb410c5083a6ed2175092c87ff20e0fdd6f8a545c35c804 done
+#12 naming to docker.io/library/behoerden-resolver-cli:latest done
+#12 unpacking to docker.io/library/behoerden-resolver-cli:latest
+#12 unpacking to docker.io/library/behoerden-resolver-cli:latest 0.5s done
+#12 DONE 2.9s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image behoerden-resolver-cli Built 

@@ -1,0 +1,65 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "osm_exact_offices",
+    "kind": "authority_point",
+    "scope": "DE",
+    "format": "osm",
+    "default_import": false,
+    "routes": [
+      {
+        "category": "bundesverwaltungsamt"
+      },
+      {
+        "category": "bundesamt_migration"
+      },
+      {
+        "category": "gewerbeamt"
+      },
+      {
+        "category": "familienkasse"
+      }
+    ],
+    "active": true,
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "documentation": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap-Mitwirkende, https://www.openstreetmap.org/copyright, ODbL 1.0",
+    "source_quality": "community",
+    "coverage_claim": "Nationwide location sample from exact OSM names Bundesverwaltungsamt, Bundesamt für Migration und Flüchtlinge, Gewerbeamt, Familienkasse. Only matching named OSM offices, not a complete register; no jurisdiction polygons. Worldwide query masked to official Germany boundary.",
+    "source_date": "timestamp_osm_base in raw response",
+    "name_rule": "Original official_name or name, conservative explicit name patterns and government/amenity tags; no assertion of official competence",
+    "modifications": "Filter to named relevant offices and official Germany boundary mask. Nodes retained; way/relation bounding-box centres explicitly labelled, not necessarily public entrances. No polygons inferred.",
+    "query_sha256": "5ae5ac6e9347fc6a3a2085fbe4ab9fd6092089f9309afaaf2cffa92d47144a28",
+    "refresh_policy": "Opt-in cached batch only. Not queried for each resolver request. Respect public API usage limits; use extracts or your own service for expansion.",
+    "query_file": "osm_exact_offices.overpass"
+  },
+  "completed_at": "2026-11-13T19:02:15.144389+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "bundesamt_migration": 11,
+    "bundesverwaltungsamt": 5,
+    "familienkasse": 2,
+    "gewerbeamt": 1
+  },
+  "records_sha256": "d728b989b36ec412d25f2a70767b7ca2cf927ca7967e41d0770857ddcd81b759",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://overpass-api.de/api/interpreter",
+      "retrieved_at": "2026-11-13T19:02:15.139358+00:00",
+      "response_sha256": "2ed745af87d633a52055d2844fd73bc4ae3e698c995ed83d465b5def0660f28e",
+      "bytes": 13584
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "classification_audit": {
+    "category_not_supported_by_tags_or_name": 11
+  },
+  "osm_base_timestamp": "2026-11-13T19:00:35Z",
+  "source_request_method": "GET",
+  "source_query": "[out:json][timeout:25];(nwr[\"name\"=\"Bundesverwaltungsamt\"];nwr[\"name\"=\"Bundesamt für Migration und Flüchtlinge\"];nwr[\"name\"=\"Gewerbeamt\"];nwr[\"name\"=\"Familienkasse\"];);out center tags;\n",
+  "germany_mask_records_sha256": "276b8b855f205156e79c99051c472a6202ca3f46caf4cd1da889d10d1ae1fbca",
+  "source_input": "downloaded export"
+}

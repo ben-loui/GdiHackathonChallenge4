@@ -1,0 +1,91 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_verwaltungsgericht_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:VerwaltungsgerichtsbarkeitStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "verwaltungsgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "verwaltungsgerichte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:37.564818+00:00",
+  "completed_at": "2026-11-13T17:44:38.067570+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 10,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "verwaltungsgericht": 6
+  },
+  "source_subgroups": {
+    "verwaltungsgerichtshof": 1,
+    "verwaltungsgerichtshof-aussenstellen": 1,
+    "verwaltungsgerichte": 6,
+    "landesanwaltschaft": 1,
+    "landesanwaltschaft-aussenstellen": 1
+  },
+  "records_sha256": "994a39f3f6c294b5960e7e64906726f24f47cc44e28082116f7a6e11e5262d1f",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:37.885724+00:00",
+      "response_sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c",
+      "bytes": 89094
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AVerwaltungsgerichtsbarkeitStandort",
+      "retrieved_at": "2026-11-13T17:44:37.886638+00:00",
+      "response_sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378",
+      "bytes": 28008
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AVerwaltungsgerichtsbarkeitStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:37.887451+00:00",
+      "response_sha256": "cb446df6bc1398de9e875a1347a71a1d0334fa7dcba32fdb2418ef25c5f9cf58",
+      "bytes": 2972
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AVerwaltungsgerichtsbarkeitStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:37.985044+00:00",
+      "response_sha256": "3a52b0c5fb7e4ae148aedb42d1625fbcde51475392e235f32a259e7a9bc88e3a",
+      "bytes": 20483
+    },
+    {
+      "path": "raw/page-000010.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AVerwaltungsgerichtsbarkeitStandort&srsName=EPSG%3A3857&startIndex=10&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:38.067045+00:00",
+      "response_sha256": "4ea8d56f350777f87360d79a08b0b45f35391250cf58e2c475e343a75c11710a",
+      "bytes": 1046
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

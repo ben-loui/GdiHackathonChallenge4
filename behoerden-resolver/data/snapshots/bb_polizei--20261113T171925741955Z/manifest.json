@@ -1,0 +1,83 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "bb_polizei",
+    "kind": "authority",
+    "scope": "DE-BB",
+    "format": "gml",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "name",
+        "name_replace_prefix": {
+          "PI ": "Polizeiinspektion "
+        }
+      }
+    ],
+    "documentation": "https://www.govdata.de/suche/daten/zustandigkeitsbereiche-der-polizei-brandenburgedb67",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Zentraldienst der Polizei Brandenburg (ZDPol), dl-de/by-2-0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "see original source record",
+    "endpoint": "https://inspire.brandenburg.de/services/polbb_wfs",
+    "layer": "app:inspektionen",
+    "request_crs": "EPSG:3857",
+    "sort_by": "bkz",
+    "geometry_field": "the_geom"
+  },
+  "started_at": "2026-11-13T17:19:23.099052+00:00",
+  "completed_at": "2026-11-13T17:19:25.740357+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 16,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "polizei": 16
+  },
+  "source_subgroups": {
+    "n/a": 16
+  },
+  "records_sha256": "c2ae933471c1bea97c5851d9f8828fc391f2c2ed9536af157f293d33a4286420",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:19:23.693570+00:00",
+      "response_sha256": "95b29cbb2909c66c0e3e768398901f1954f5ee01903c9e1f83153bee0e92caa1",
+      "bytes": 40009
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=app%3Ainspektionen",
+      "retrieved_at": "2026-11-13T17:19:23.693777+00:00",
+      "response_sha256": "44f33524a68874265d8e04b415022fe23b22c6dff0b2589d87b2b0e2357acdc6",
+      "bytes": 4264
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Ainspektionen&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=bkz",
+      "retrieved_at": "2026-11-13T17:19:23.726943+00:00",
+      "response_sha256": "0a185e972213e698a164af9717dc3b602e7ccbfa0c2468eec7b9494346029048",
+      "bytes": 342243
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Ainspektionen&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=bkz",
+      "retrieved_at": "2026-11-13T17:19:24.796709+00:00",
+      "response_sha256": "e499a556738d501be7be44086b5ed6f8067071515bb6e08004e7e33c41ba5e9b",
+      "bytes": 3718770
+    },
+    {
+      "path": "raw/page-000016.gz",
+      "request_url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Ainspektionen&srsName=EPSG%3A3857&startIndex=16&count=100&sortBy=bkz",
+      "retrieved_at": "2026-11-13T17:19:25.736937+00:00",
+      "response_sha256": "56c7e1ecbcc3638d38d2b2da7d5d8883af012f9cc404a10557e9e729e060dc40",
+      "bytes": 1016
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "source_id": "osm_locations",
+    "snapshot": "data/snapshots/osm_locations--20261113T180459943883Z",
+    "status": "imported",
+    "run_id": 52,
+    "records_per_category": {
+      "stadtverwaltung": 6,
+      "standesamt": 3,
+      "gesundheitsamt": 2,
+      "jobcenter": 2,
+      "jugendamt": 1,
+      "zoll": 3,
+      "rentenversicherung": 1,
+      "strassenverkehrsbehoerde": 1,
+      "umweltamt": 4,
+      "finanzamt": 3,
+      "ordnungsamt": 1,
+      "sozialamt": 2,
+      "zulassungsstelle": 2,
+      "veterinaeramt": 1,
+      "polizei": 1
+    }
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" >
+	<title>INSPIRE Dataset Feed: INSPIRE US Th&#252;ringer Ministerium f&#252;r Soziales, Gesundheit, Arbeit und Familie (TMSGAF)</title>	<subtitle>Dieser Datensatz stellt Inhalte zum Thema &quot;Versorgungswirtschaft und staatliche Dienste&quot; aus folgenden Quelldatens&#228;tzen im INSPIRE-Zielmodell dar: 
+-Plankrankenh&#228;user
+-Gesundheits&#228;mter
+-Veterin&#228;r- und Lebensmittel&#252;berwachungs&#228;mter
+-Jugend&#228;mter</subtitle>	<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_dbee18e3-3b3b-4e9c-a38c-ec875ac82d92.xml"  rel="self" type="application/atom+xml" title="INSPIRE Dataset Feed: INSPIRE US Th&#252;ringer Ministerium f&#252;r Soziales, Gesundheit, Arbeit und Familie (TMSGAF)" hreflang="de"/>
+	<link href="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/Service/Service_62c7705d-3fc7-483e-b2b3-c8374af12581.xml"  rel="up" type="application/atom+xml" title="INSPIRE Download Service Feed: INSPIRE US Th&#252;ringen ATOMFeed" hreflang="de"/>
+	<link href="https://geomis.geoportal-th.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;Elementsetname=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ID=dbee18e3-3b3b-4e9c-a38c-ec875ac82d92" rel="describedby" type="text/html" title="Download Service DataSet Metadata"/>
+	<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_dbee18e3-3b3b-4e9c-a38c-ec875ac82d92.xml</id>
+	<rights>Lizenz: Creative Commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.de) Namensnennung: &quot;&#169; GDI-Th&quot;
+{&quot;id&quot;:&quot;cc-by/4.0&quot;,&quot;name&quot;:&quot;Creative Commons BY 4.0&quot;,&quot;url&quot;:&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;,&quot;quelle&quot;: &quot;&#169; GDI-Th&quot;}</rights>	<updated>2026-11-03T16:16:52.000+01:00</updated>
+	<author>
+		<name>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</name>
+<email>kompetenzzentrum.gdi-th@tlbg.thueringen.de</email>	</author>
+	<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="EPSG 25832"/>
+			<entry>
+		<title>INSPIRE US Plankrankenh&#228;user, Gesundheits&#228;mter, Veterin&#228;r- und Lebensmittel&#252;berwachungs&#228;mter und Jugend&#228;mter in Th&#252;ringen</title>		<link href="http://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIRE_US_TMASGFF_EPSG_25832.gml" rel="alternate" type="application/gml+xml" bbox="50.204 9.87 51.64 12.65" time="2022-09-16T12:55:37.000+02:00" hreflang="ger" title="INSPIRE US Plankrankenh&#228;user, Gesundheits&#228;mter, Veterin&#228;r- und Lebensmittel&#252;berwachungs&#228;mter und Jugend&#228;mter in Th&#252;ringen" length="474745"/>
+		<id>http://www.geoproxy.geoportal-th.de/inspire-dl/atom/DataSet/DataSet_dbee18e3-3b3b-4e9c-a38c-ec875ac82d92/Entry/Entry_e8b8a1fb-0bb5-0df0-e053-2a27360a7569</id>
+		<updated>2022-09-16T12:49:55.000+02:00</updated>
+		<georss:polygon>50.204 9.87 51.64 9.87 51.64 12.65 50.204 12.65 50.204 9.87</georss:polygon>		<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="EPSG 25832"/>
+	</entry>
+</feed>

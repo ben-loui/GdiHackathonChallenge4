@@ -1,0 +1,79 @@
+{
+  "id": "kreisverwaltung",
+  "label": "Kreisverwaltung / Landratsamt",
+  "aliases": [
+    "Landratsamt",
+    "Kreisverwaltung",
+    "Kreisverwaltungsbehörde",
+    "Landkreis",
+    "Landratsämter"
+  ],
+  "coverage_status": "regional",
+  "resolution_mode": "spatial",
+  "limitations": "Explizite bayerische Landratsämter. Kreisfreie Städte werden als Stadtverwaltung geführt, nicht als erfundenes Landratsamt.",
+  "wfs": [
+    {
+      "source_id": "vg25_krs",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+      "layer": "vg25:vg25_krs",
+      "scope": "DE",
+      "semantics": "boundary_reference",
+      "filter": null,
+      "license": "CC-BY-4.0",
+      "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+      "verification": {
+        "checked_at": "2026-11-13T16:40:01.932210+00:00",
+        "status": "verified",
+        "checks": {
+          "capabilities": {
+            "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+            "sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6"
+          },
+          "schema": {
+            "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_krs",
+            "sha256": "c6145c602a3729783a9cd1df359c4f32e17e90b5199bd3de5343678beb7c3659"
+          },
+          "sample": {
+            "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+            "sha256": "3e38539ea9464a12f9881994fa79c404529fb1f647e64c9af49d3bb31ae14de2"
+          }
+        }
+      }
+    },
+    {
+      "source_id": "by_kreis",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:KreisverwaltungsbehoerdenFlaeche",
+      "scope": "DE-BY",
+      "semantics": "authority",
+      "filter": {
+        "behoerdenUntergruppe": [
+          "landratsaemter"
+        ]
+      },
+      "license": "CC-BY-4.0",
+      "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+      "verification": {
+        "checked_at": "2026-11-13T16:40:01.932210+00:00",
+        "status": "verified",
+        "checks": {
+          "capabilities": {
+            "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+            "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+          },
+          "schema": {
+            "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche",
+            "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+          },
+          "sample": {
+            "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+            "sha256": "e977d723076cb1a604185c353a6696061ffb9aaf0789b232dca0e880d20ec8e3"
+          }
+        }
+      }
+    }
+  ],
+  "local_derivations": [],
+  "local_table": "behoerden.kreisverwaltung",
+  "national_coverage_guaranteed": false
+}

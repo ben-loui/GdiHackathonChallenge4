@@ -1,0 +1,394 @@
+[
+  {
+    "source_id": "bb_kommunal_gebiete",
+    "run_id": 88,
+    "records_per_category": {
+      "stadtverwaltung": 141,
+      "kreisverwaltung": 14
+    }
+  },
+  {
+    "source_id": "bb_kommunal_locations",
+    "run_id": 89,
+    "records_per_category": {
+      "stadtverwaltung": 138,
+      "kreisverwaltung": 13
+    }
+  },
+  {
+    "source_id": "bb_polizei",
+    "run_id": 90,
+    "records_per_category": {
+      "polizei": 16
+    }
+  },
+  {
+    "source_id": "bb_polizei_locations",
+    "run_id": 91,
+    "records_per_category": {
+      "polizei": 80
+    }
+  },
+  {
+    "source_id": "bb_registry_locations",
+    "run_id": 92,
+    "records_per_category": {
+      "amtsgericht": 25,
+      "pflegekasse": 2,
+      "rentenversicherung": 1,
+      "finanzamt": 13,
+      "handwerkskammer": 3,
+      "ihk": 3,
+      "krankenkasse": 1,
+      "landgericht": 4,
+      "schulamt": 4,
+      "staatsanwaltschaft": 5,
+      "verwaltungsgericht": 3,
+      "auslaenderbehoerde": 1
+    }
+  },
+  {
+    "source_id": "by_finanzamt",
+    "run_id": 93,
+    "records_per_category": {
+      "finanzamt": 101
+    }
+  },
+  {
+    "source_id": "by_finanzamt_locations",
+    "run_id": 94,
+    "records_per_category": {
+      "finanzamt": 101
+    }
+  },
+  {
+    "source_id": "by_handwerkskammer",
+    "run_id": 95,
+    "records_per_category": {
+      "handwerkskammer": 7
+    }
+  },
+  {
+    "source_id": "by_handwerkskammer_locations",
+    "run_id": 96,
+    "records_per_category": {
+      "handwerkskammer": 7
+    }
+  },
+  {
+    "source_id": "by_ihk",
+    "run_id": 97,
+    "records_per_category": {
+      "ihk": 10
+    }
+  },
+  {
+    "source_id": "by_ihk_locations",
+    "run_id": 98,
+    "records_per_category": {
+      "ihk": 10
+    }
+  },
+  {
+    "source_id": "by_kreis",
+    "run_id": 99,
+    "records_per_category": {
+      "stadtverwaltung": 25,
+      "kreisverwaltung": 71
+    }
+  },
+  {
+    "source_id": "by_kreis_locations",
+    "run_id": 100,
+    "records_per_category": {
+      "stadtverwaltung": 25,
+      "kreisverwaltung": 71
+    }
+  },
+  {
+    "source_id": "by_polizei",
+    "run_id": 101,
+    "records_per_category": {
+      "polizei": 263
+    }
+  },
+  {
+    "source_id": "by_polizei_locations",
+    "run_id": 102,
+    "records_per_category": {
+      "polizei": 241
+    }
+  },
+  {
+    "source_id": "by_regierung",
+    "run_id": 103,
+    "records_per_category": {
+      "regierungsprs": 7
+    }
+  },
+  {
+    "source_id": "by_regierung_locations",
+    "run_id": 104,
+    "records_per_category": {
+      "regierungsprs": 7
+    }
+  },
+  {
+    "source_id": "by_schulamt",
+    "run_id": 105,
+    "records_per_category": {
+      "schulamt": 96
+    }
+  },
+  {
+    "source_id": "by_schulamt_locations",
+    "run_id": 106,
+    "records_per_category": {
+      "schulamt": 96
+    }
+  },
+  {
+    "source_id": "by_staatsanwaltschaft",
+    "run_id": 107,
+    "records_per_category": {
+      "staatsanwaltschaft": 22
+    }
+  },
+  {
+    "source_id": "by_staatsanwaltschaft_locations",
+    "run_id": 108,
+    "records_per_category": {
+      "staatsanwaltschaft": 22
+    }
+  },
+  {
+    "source_id": "by_verwaltungsgericht_gesetz",
+    "run_id": 109,
+    "records_per_category": {
+      "verwaltungsgericht": 6
+    }
+  },
+  {
+    "source_id": "by_verwaltungsgericht_locations",
+    "run_id": 110,
+    "records_per_category": {
+      "verwaltungsgericht": 6
+    }
+  },
+  {
+    "source_id": "by_wohngeld_gesetz",
+    "run_id": 111,
+    "records_per_category": {
+      "wohngeldstelle": 96
+    }
+  },
+  {
+    "source_id": "bzb_amtsgericht",
+    "run_id": 112,
+    "records_per_category": {
+      "amtsgericht": 650
+    }
+  },
+  {
+    "source_id": "bzb_arbeitsagentur",
+    "run_id": 113,
+    "records_per_category": {
+      "arbeitsagentur": 146
+    }
+  },
+  {
+    "source_id": "bzb_jobcenter",
+    "run_id": 114,
+    "records_per_category": {
+      "jobcenter": 404
+    }
+  },
+  {
+    "source_id": "bzb_landgericht",
+    "run_id": 115,
+    "records_per_category": {
+      "landgericht": 115
+    }
+  },
+  {
+    "source_id": "gemfa_vg25",
+    "run_id": 116,
+    "records_per_category": {
+      "stadtverwaltung": 3966,
+      "finanzamt": 411
+    }
+  },
+  {
+    "source_id": "he_schulamt",
+    "run_id": 117,
+    "records_per_category": {
+      "schulamt": 15
+    }
+  },
+  {
+    "source_id": "hh_finanzamt",
+    "run_id": 118,
+    "records_per_category": {
+      "finanzamt": 18
+    }
+  },
+  {
+    "source_id": "hh_jugend_asd_locations",
+    "run_id": 119,
+    "records_per_category": {
+      "jugendamt": 36
+    }
+  },
+  {
+    "source_id": "mv_rostock_locations",
+    "run_id": 120,
+    "records_per_category": {
+      "landgericht": 1,
+      "staatsanwaltschaft": 1,
+      "familienkasse": 1,
+      "arbeitsagentur": 1,
+      "amtsgericht": 1,
+      "zoll": 1,
+      "rentenversicherung": 1,
+      "sozialamt": 1,
+      "gesundheitsamt": 1,
+      "schulamt": 1,
+      "standesamt": 1,
+      "veterinaeramt": 2,
+      "umweltamt": 1,
+      "bafoegamt": 1,
+      "jugendamt": 1,
+      "jobcenter": 1
+    }
+  },
+  {
+    "source_id": "nw_bau_gesetz",
+    "run_id": 121,
+    "records_per_category": {
+      "bauamt": 211
+    }
+  },
+  {
+    "source_id": "nw_muenster_locations",
+    "run_id": 122,
+    "records_per_category": {
+      "buergeramt": 8,
+      "gesundheitsamt": 3,
+      "veterinaeramt": 3,
+      "jobcenter": 4,
+      "jugendamt": 2,
+      "standesamt": 1,
+      "zulassungsstelle": 1,
+      "arbeitsagentur": 1,
+      "umweltamt": 1,
+      "sozialamt": 2,
+      "ordnungsamt": 1,
+      "schulamt": 1
+    }
+  },
+  {
+    "source_id": "osm_exact_offices",
+    "run_id": 123,
+    "records_per_category": {
+      "bundesamt_migration": 11,
+      "bundesverwaltungsamt": 5,
+      "familienkasse": 2,
+      "gewerbeamt": 1
+    }
+  },
+  {
+    "source_id": "osm_locations",
+    "run_id": 124,
+    "records_per_category": {
+      "stadtverwaltung": 6,
+      "standesamt": 3,
+      "gesundheitsamt": 2,
+      "jobcenter": 2,
+      "jugendamt": 1,
+      "zoll": 3,
+      "rentenversicherung": 1,
+      "strassenverkehrsbehoerde": 1,
+      "umweltamt": 4,
+      "finanzamt": 3,
+      "ordnungsamt": 1,
+      "sozialamt": 2,
+      "zulassungsstelle": 2,
+      "veterinaeramt": 1,
+      "polizei": 1
+    }
+  },
+  {
+    "source_id": "regierung_vg25",
+    "run_id": 125,
+    "records_per_category": {
+      "regierungsprs": 12
+    }
+  },
+  {
+    "source_id": "sn_chemnitz_aemter_locations",
+    "run_id": 126,
+    "records_per_category": {
+      "stadtverwaltung": 1,
+      "ordnungsamt": 1,
+      "buergeramt": 1,
+      "umweltamt": 1,
+      "veterinaeramt": 1,
+      "schulamt": 1,
+      "sozialamt": 1,
+      "jugendamt": 1,
+      "gesundheitsamt": 1,
+      "bauamt": 1
+    }
+  },
+  {
+    "source_id": "sn_chemnitz_buerger_locations",
+    "run_id": 127,
+    "records_per_category": {
+      "buergeramt": 12
+    }
+  },
+  {
+    "source_id": "sn_kreis",
+    "run_id": 128,
+    "records_per_category": {
+      "kreisverwaltung": 10
+    }
+  },
+  {
+    "source_id": "th_health_locations",
+    "run_id": 129,
+    "records_per_category": {
+      "gesundheitsamt": 23,
+      "jugendamt": 23,
+      "veterinaeramt": 22
+    }
+  },
+  {
+    "source_id": "th_schulamt",
+    "run_id": 130,
+    "records_per_category": {
+      "schulamt": 5
+    }
+  },
+  {
+    "source_id": "vg25_gem",
+    "run_id": 131,
+    "records_per_category": {
+      "stadtverwaltung": 10974
+    }
+  },
+  {
+    "source_id": "vg25_krs",
+    "run_id": 132,
+    "records_per_category": {
+      "kreisverwaltung": 403
+    }
+  },
+  {
+    "source_id": "vg25_rbz",
+    "run_id": 133,
+    "records_per_category": {
+      "regierungsprs": 19
+    }
+  }
+]

@@ -1,0 +1,205 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "mv_rostock_locations",
+    "kind": "authority_point",
+    "scope": "DE-MV",
+    "format": "geojson_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://www.opendata-hro.de/dataset/behoerden",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "Hanse- und Universitätsstadt Rostock, OpenData.HRO, CC0 1.0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "uuid",
+    "routes": [
+      {
+        "category": "amtsgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb9b7cb4-10d4-11e5-abb0-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "landgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbd84d60-10d4-11e5-abc1-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "staatsanwaltschaft",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc35d836-10d4-11e5-abdc-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "familienkasse",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "2db4abaa-9e5b-11e5-a92b-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "arbeitsagentur",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbc2cb20-10d4-11e5-abbb-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "zoll",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbd11d4c-10d4-11e5-abbf-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "rentenversicherung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbdbe24a-10d4-11e5-abc2-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb93c1ea-10d4-11e5-abae-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "schulamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb901d1a-10d4-11e5-abad-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "standesamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc0fcc0e-10d4-11e5-abd1-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb5be2c0-10d4-11e5-ab9e-0050569b7e95",
+            "97dd1320-e7f3-11e8-9690-0050569946ac"
+          ]
+        }
+      },
+      {
+        "category": "umweltamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb69c4bc-10d4-11e5-aba2-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "bafoegamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc210e4c-10d4-11e5-abd6-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "jugendamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc1a3266-10d4-11e5-abd4-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "jobcenter",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbb14544-10d4-11e5-abb6-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "sozialamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb81fa00-10d4-11e5-aba9-0050569b7e95"
+          ]
+        }
+      }
+    ],
+    "download_url": "https://geo.sv.rostock.de/download/opendata/behoerden/behoerden.json",
+    "source_date": "2026-05-27 (metadata)"
+  },
+  "completed_at": "2026-11-13T18:50:20.254562+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "landgericht": 1,
+    "staatsanwaltschaft": 1,
+    "familienkasse": 1,
+    "arbeitsagentur": 1,
+    "amtsgericht": 1,
+    "zoll": 1,
+    "rentenversicherung": 1,
+    "sozialamt": 1,
+    "gesundheitsamt": 1,
+    "schulamt": 1,
+    "standesamt": 1,
+    "veterinaeramt": 2,
+    "umweltamt": 1,
+    "bafoegamt": 1,
+    "jugendamt": 1,
+    "jobcenter": 1
+  },
+  "records_sha256": "b4050745fbc04c67c2b9e3faffbd6d8ca710d16f4fee6aef29723663ca155eef",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://geo.sv.rostock.de/download/opendata/behoerden/behoerden.json",
+      "retrieved_at": "2026-11-13T18:50:20.245766+00:00",
+      "response_sha256": "9e215d49d0706da9a7eb3538580db378140787f56d059a1643f315e57372b33b",
+      "bytes": 95111
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_features": 97,
+  "classification_audit": {
+    "excluded_unrelated_authority_kind": 80
+  },
+  "location_coverage_only": true
+}

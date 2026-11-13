@@ -1,0 +1,83 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_ihk_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:IndustrieHandelskammernStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "ihk",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  "started_at": "2026-11-13T17:44:40.163881+00:00",
+  "completed_at": "2026-11-13T17:44:40.621803+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 10,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "ihk": 10
+  },
+  "source_subgroups": {
+    "ihk": 9,
+    "ihk-geschaeftsstellen": 1
+  },
+  "records_sha256": "30281ba0382290595d9e7ee2353c221f885605da6af3e6f1207de5a7064e4b91",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:44:40.436334+00:00",
+      "response_sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306",
+      "bytes": 35744
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AIndustrieHandelskammernStandort",
+      "retrieved_at": "2026-11-13T17:44:40.436786+00:00",
+      "response_sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289",
+      "bytes": 7576
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AIndustrieHandelskammernStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.437490+00:00",
+      "response_sha256": "0bc6856df9e3a4f3943d3fb3fad9eff0715ef179eafd03b2efcf31f04bb9be3b",
+      "bytes": 3156
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AIndustrieHandelskammernStandort&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.534106+00:00",
+      "response_sha256": "051bda9826f028a9e1829585db5f45387e58e5f480a53178ee9631ba7f8150ee",
+      "bytes": 21906
+    },
+    {
+      "path": "raw/page-000010.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AIndustrieHandelskammernStandort&srsName=EPSG%3A3857&startIndex=10&count=100&sortBy=id",
+      "retrieved_at": "2026-11-13T17:44:40.621310+00:00",
+      "response_sha256": "3964d676368d0873b677de6c25efc5fee69f35e27b1d2f00e4b0f4f90aed4a30",
+      "bytes": 1077
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

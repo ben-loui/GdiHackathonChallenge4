@@ -1,0 +1,2158 @@
+[
+  {
+    "id": "bzb_amtsgericht",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:gerichte_amtsgerichte",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "amtsgericht",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "dest_ge_nr",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "bzb_landgericht",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:gerichte_landgerichte",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "landgericht",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "dest_ge_nr",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "bzb_jobcenter",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:ba_jobcenter",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "jobcenter",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "bzb_arbeitsagentur",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:ba_arbeitsagenturen",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "arbeitsagentur",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "vg25_krs",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+    "layer": "vg25:vg25_krs",
+    "scope": "DE",
+    "kind": "boundary_reference",
+    "routes": [
+      {
+        "category": "kreisverwaltung",
+        "name_field": "gen"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "objid",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "vg25_rbz",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+    "layer": "vg25:vg25_rbz",
+    "scope": "DE",
+    "kind": "boundary_reference",
+    "routes": [
+      {
+        "category": "regierungsprs",
+        "name_field": "gen"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "objid",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "vg25_gem",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+    "layer": "vg25:vg25_gem",
+    "scope": "DE",
+    "kind": "boundary_reference",
+    "routes": [
+      {
+        "category": "stadtverwaltung",
+        "name_field": "gen"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "objid",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_kreis",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:KreisverwaltungsbehoerdenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "kreisverwaltung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "landratsaemter"
+          ]
+        },
+        "name_prefix_field": "bezeichnungZusatz"
+      },
+      {
+        "category": "stadtverwaltung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "rathaeuser-kreisfreie-staedte",
+            "landeshauptstadt"
+          ]
+        },
+        "name_prefix_field": "bezeichnungZusatz"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_regierung",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:RegierungenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "regierungsprs",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "regierungen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_verwaltungsgericht",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:VerwaltungsgerichtsbarkeitFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "verwaltungsgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "verwaltungsgerichte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": false,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": false,
+    "exclusion_reason": "Live-Vollabfrage am 13.11.2026 lieferte nur 4 Features: Verwaltungsgerichtshof und Landesanwaltschaft, keine erstinstanzlichen Verwaltungsgerichte. Metadatenbeschreibung allein reicht nicht."
+  },
+  {
+    "id": "by_polizei",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:PolizeiinspektionenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "polizeiinspektionen",
+            "polizeistationen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_finanzamt",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs",
+    "layer": "stmfh:SteuerverwaltungFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "finanzamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "finanzaemter",
+            "finanzaemter-aussenstellen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Finanzen und für Heimat.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_staatsanwaltschaft",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs",
+    "layer": "stmj:LandgerichteStaatsanwaltschaftenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "staatsanwaltschaft",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "staatsanwaltschaften"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Justiz.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_schulamt",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs",
+    "layer": "stmuk:SchulaemterFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "schulamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "schulaemter-landkreise",
+            "schulaemter-kreisfreie-staedte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium für Unterricht und Kultus.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_ihk",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:IndustrieHandelskammernFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "ihk",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_handwerkskammer",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:HandwerkskammernFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "handwerkskammer",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  {
+    "id": "by_verwaltungsgericht_gesetz",
+    "format": "derived",
+    "kind": "authority",
+    "scope": "DE-BY",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "verwaltungsgericht",
+        "name_field": "authority_name"
+      }
+    ],
+    "legal_basis": "https://www.gesetze-bayern.de/Content/Document/BayAGVwGO-1",
+    "mapping_reviewed_at": "2026-11-13",
+    "mapping_valid_from_in_source": "2022-05-01",
+    "mapping_file": "by_courts.csv",
+    "mapping_sha256": "b44bc17016f1ddf3f3d64c849f7f662a2a0de56357d56ad96d4b2ddf61621777",
+    "name_source": {
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:VerwaltungsgerichtsbarkeitStandort",
+      "response_sha256": "ee14acbe3f379cfb2acd67c1af212ddef61cea29873323910f613dadbd9827d8",
+      "verified_at": "2026-11-13",
+      "filter": {
+        "behoerdenUntergruppe": [
+          "verwaltungsgerichte"
+        ]
+      }
+    },
+    "boundary_source": "vg25_rbz",
+    "documentation": "https://www.gesetze-bayern.de/Content/Document/BayAGVwGO-1",
+    "license": "CC-BY-4.0; statutory assignment from official legislation (§5 UrhG)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration; Gebietszuordnung: Art. 1 Abs. 2 AGVwGO (Bayern).",
+    "modifications": "Manuell geprüfte gesetzliche Zuordnung von sieben amtlichen Regierungsbezirksschlüsseln zu sechs namentlich belegten Verwaltungsgerichten; Vereinigung der VG25-Flächen. Keine Vermutung nach nächstgelegenem Gerichtsstandort.",
+    "verification_required": false,
+    "coverage_claim": "Regional derived dataset, statutory mapping reviewed 2026-11-13. Mapping is not automatically updated with legislation."
+  },
+  {
+    "id": "hh_finanzamt",
+    "kind": "authority",
+    "scope": "DE-HH",
+    "format": "gml",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "finanzamt",
+        "name_field": "finanzamt_name",
+        "name_prefix_literal": "Finanzamt "
+      }
+    ],
+    "documentation": "https://www.geoportal.de/info/1998EDF3-C86D-4FBD-9CC5-B230E40EF47B",
+    "license": "dl-de/zero-2-0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": "Statistikamt Nord; Datenlizenz Deutschland Zero 2.0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "aenderungsdatum in source, layer metadata 2022/2026; inspect record freshness",
+    "endpoint": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke",
+    "layer": "de.hh.up:finanzamtbezirke",
+    "request_crs": "EPSG:3857",
+    "sort_by": "finanzamt_nr",
+    "geometry_field": "geom"
+  },
+  {
+    "id": "bb_polizei",
+    "kind": "authority",
+    "scope": "DE-BB",
+    "format": "gml",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "name",
+        "name_replace_prefix": {
+          "PI ": "Polizeiinspektion "
+        }
+      }
+    ],
+    "documentation": "https://www.govdata.de/suche/daten/zustandigkeitsbereiche-der-polizei-brandenburgedb67",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Zentraldienst der Polizei Brandenburg (ZDPol), dl-de/by-2-0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "see original source record",
+    "endpoint": "https://inspire.brandenburg.de/services/polbb_wfs",
+    "layer": "app:inspektionen",
+    "request_crs": "EPSG:3857",
+    "sort_by": "bkz",
+    "geometry_field": "the_geom"
+  },
+  {
+    "id": "gemfa_vg25",
+    "kind": "authority",
+    "scope": "DE",
+    "format": "gemfa",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "finanzamt"
+      },
+      {
+        "category": "stadtverwaltung"
+      }
+    ],
+    "documentation": "https://www.bzst.de/DE/Service/Behoerdenwegweiser/Finanzamtsuche/finanzamtsuche_node.html",
+    "license": "GEMFA officialWork (§5 Abs.1 UrhG) + VG25 CC-BY-4.0",
+    "license_url": "https://www.govdata.de/suche/daten/suche-nach-zustandigem-finanzamt",
+    "attribution": "GEMFA: Bundeszentralamt für Steuern (BZSt), amtliches Werk laut GovData; Geometrien: © BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Finance: verified whole-municipality subset, exclusions for ambiguous/address-level assignments; municipal administrations only if explicitly named Stadtverwaltung/Gemeindeverwaltung in GEMFA. Not every tax competence.",
+    "source_date": "export filename",
+    "download_url": "https://www.bzst.de/SharedDocs/Downloads/DE/GemFA/gemfa_xml_export_datei.zip?__blob=publicationFile",
+    "schema_url": "https://www.bzst.de/SharedDocs/Downloads/DE/GemFA/gemfa_xsd_beschreibungsdatei2.xml?__blob=publicationFile",
+    "name_rule": "Finanzamt element type + official Name; unique GemeindeRef joined to identical VG25 AGS, excluding contradictory address exceptions",
+    "boundary_source": "vg25_gem"
+  },
+  {
+    "id": "th_schulamt",
+    "kind": "authority",
+    "scope": "DE-TH",
+    "format": "inspire_gml_file",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "schulamt"
+      }
+    ],
+    "documentation": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/3a88540e-36ea-46f7-b70f-47c1db95cda9",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© GDI-Th, CC BY 4.0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2024-06-17 (Atom entry timestamp)",
+    "download_url": "https://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIREus_Schulamtsbezirke_EPSG25832.gml",
+    "request_crs": "EPSG:25832",
+    "name_rule": "Official INSPIRE gml:name and polygon serviceLocationByGeometry, no point buffering"
+  },
+  {
+    "id": "he_schulamt",
+    "kind": "authority",
+    "scope": "DE-HE",
+    "format": "csv_mapping",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "schulamt"
+      }
+    ],
+    "documentation": "https://schulaemter.hessen.de/ueber-uns/schulamtsbezirke",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; amtliche Behördennamen und sachliche Zuordnung aus verlinkter Quelle.",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2026-11-13 (assignment reviewed)",
+    "boundary_source": "vg25_krs",
+    "mapping_file": "he_schulaemter.csv",
+    "mapping_sha256": "632c0464a81dc194e9a9a651aabef80aa2abf376da04f09d2927ef68958721a5",
+    "name_rule": "Reviewed explicit authority-to-named-region assignment; exact official region keys, no nearest-location inference"
+  },
+  {
+    "id": "regierung_vg25",
+    "kind": "authority",
+    "scope": "DE-BW|DE-HE|DE-NW",
+    "format": "csv_mapping",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "regierungsprs"
+      }
+    ],
+    "documentation": "https://www.baden-wuerttemberg.de/de/unser-land/von-der-gemeinde-bis-zum-ministerium",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; amtliche Behördennamen und sachliche Zuordnung aus verlinkter Quelle.",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2026-11-13 (assignment reviewed)",
+    "boundary_source": "vg25_rbz",
+    "mapping_file": "regierung_vg25.csv",
+    "mapping_sha256": "290a94804ac6f41378b798f5cf2e156ecb6b8716d46cd1f019b47c60b2308aa7",
+    "name_rule": "Reviewed explicit authority-to-named-region assignment; exact official region keys, no nearest-location inference"
+  },
+  {
+    "id": "sn_kreis",
+    "kind": "authority",
+    "scope": "DE-SN",
+    "format": "csv_mapping",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "kreisverwaltung"
+      }
+    ],
+    "documentation": "https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities",
+    "license": "VG25 CC-BY-4.0 + Verwaltungsatlas Sachsen dl-de/by-2-0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; amtliche Behördennamen und sachliche Zuordnung aus verlinkter Quelle. Namensquelle: Verwaltungsatlas Sachsen, dl-de/by-2-0.",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2026-11-13 (assignment reviewed)",
+    "boundary_source": "vg25_krs",
+    "mapping_file": "sn_kreise.csv",
+    "mapping_sha256": "dceb4ae3397c7394e992dad6dc7993c1a90f0f016944e39929693bab53aea5af",
+    "name_rule": "Reviewed explicit authority-to-named-region assignment; exact official region keys, no nearest-location inference",
+    "component_licenses": [
+      {
+        "component": "VG25 geometry",
+        "license": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "component": "Saxony official authority names and assignment",
+        "license": "dl-de/by-2-0",
+        "url": "https://www.govdata.de/dl-de/by-2-0"
+      }
+    ]
+  },
+  {
+    "id": "by_finanzamt_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs",
+    "layer": "stmfh:SteuerverwaltungStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "finanzamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "finanzaemter",
+            "finanzaemter-aussenstellen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Finanzen und für Heimat.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_kreis_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:KreisverwaltungsbehoerdenStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "kreisverwaltung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "landratsaemter"
+          ]
+        },
+        "name_prefix_field": "bezeichnungZusatz"
+      },
+      {
+        "category": "stadtverwaltung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "rathaeuser-kreisfreie-staedte",
+            "landeshauptstadt"
+          ]
+        },
+        "name_prefix_field": "bezeichnungZusatz"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_regierung_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:RegierungenStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "regierungsprs",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "regierungen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_verwaltungsgericht_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:VerwaltungsgerichtsbarkeitStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "verwaltungsgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "verwaltungsgerichte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_polizei_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:PolizeiinspektionenStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "polizeiinspektionen",
+            "polizeistationen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_staatsanwaltschaft_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs",
+    "layer": "stmj:LandgerichteStaatsanwaltschaftenStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "staatsanwaltschaft",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "staatsanwaltschaften"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Justiz.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_schulamt_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs",
+    "layer": "stmuk:SchulaemterStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "schulamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "schulaemter-landkreise",
+            "schulaemter-kreisfreie-staedte"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium für Unterricht und Kultus.",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_ihk_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:IndustrieHandelskammernStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "ihk",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "by_handwerkskammer_locations",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:HandwerkskammernStandort",
+    "scope": "DE-BY",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "handwerkskammer",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche. Fachfilter und Namensregeln wie ausgewiesen.",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true,
+    "active": true,
+    "source_quality": "official"
+  },
+  {
+    "id": "bb_polizei_locations",
+    "kind": "authority_point",
+    "scope": "DE-BB",
+    "format": "gml",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "standort_name"
+      }
+    ],
+    "documentation": "https://www.govdata.de/suche/daten/zustandigkeitsbereiche-der-polizei-brandenburgedb67",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Zentraldienst der Polizei Brandenburg (ZDPol), dl-de/by-2-0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Police office locations in Brandenburg, no jurisdiction polygons.",
+    "source_date": "see original source record",
+    "endpoint": "https://inspire.brandenburg.de/services/polbb_wfs",
+    "layer": "app:standorte",
+    "request_crs": "EPSG:3857",
+    "sort_by": "standort_name",
+    "geometry_field": "the_geom",
+    "source_quality": "official"
+  },
+  {
+    "id": "th_health_locations",
+    "kind": "authority_point",
+    "scope": "DE-TH",
+    "format": "inspire_point_file",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "gesundheitsamt"
+      },
+      {
+        "category": "veterinaeramt"
+      },
+      {
+        "category": "jugendamt"
+      }
+    ],
+    "download_url": "https://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIRE_US_TMASGFF_EPSG_25832.gml",
+    "request_crs": "EPSG:25832",
+    "documentation": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© GDI-Th, CC BY 4.0",
+    "modifications": "Amtliche Punktstandorte, CRS-Transformation, Typfilter; Krankenhäuser ausgeschlossen. Keine Gebiete daraus konstruiert.",
+    "source_quality": "official",
+    "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+    "name_rule": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group",
+    "coverage_claim": "Locations only in Thüringen; no territorial coverage claim."
+  },
+  {
+    "id": "osm_locations",
+    "kind": "authority_point",
+    "scope": "DE-RP|DE-HE",
+    "format": "osm",
+    "default_import": false,
+    "routes": [
+      {
+        "category": "finanzamt"
+      },
+      {
+        "category": "gesundheitsamt"
+      },
+      {
+        "category": "jobcenter"
+      },
+      {
+        "category": "jugendamt"
+      },
+      {
+        "category": "ordnungsamt"
+      },
+      {
+        "category": "polizei"
+      },
+      {
+        "category": "rentenversicherung"
+      },
+      {
+        "category": "sozialamt"
+      },
+      {
+        "category": "stadtverwaltung"
+      },
+      {
+        "category": "standesamt"
+      },
+      {
+        "category": "strassenverkehrsbehoerde"
+      },
+      {
+        "category": "umweltamt"
+      },
+      {
+        "category": "veterinaeramt"
+      },
+      {
+        "category": "zoll"
+      },
+      {
+        "category": "zulassungsstelle"
+      }
+    ],
+    "active": true,
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "documentation": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap-Mitwirkende, https://www.openstreetmap.org/copyright, ODbL 1.0",
+    "source_quality": "community",
+    "coverage_claim": "Only a completed sample within 10 km of 50.0 N, 8.27 E (Mainz/Wiesbaden region). No nationwide location completeness. Larger nationwide and 16-city queries timed out and are NOT imported.",
+    "source_date": "timestamp_osm_base in raw response",
+    "name_rule": "Original official_name or name, conservative explicit name patterns and government/amenity tags; no assertion of official competence",
+    "modifications": "Filter to named relevant offices and official Germany boundary mask. Nodes retained; way/relation bounding-box centres explicitly labelled, not necessarily public entrances. No polygons inferred.",
+    "query_sha256": "ccfc17b20be91cd13b4d3edb40d8d4835c21bab5d6174c3ab8e51bd06e1838f6",
+    "refresh_policy": "Opt-in cached batch only. Not queried for each resolver request. Respect public API usage limits; use extracts or your own service for expansion."
+  },
+  {
+    "id": "nw_muenster_locations",
+    "kind": "authority_point",
+    "scope": "DE-NW",
+    "format": "geojson_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://opendata.stadt-muenster.de/dataset/beh%C3%B6rdenstandorte",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Stadt Münster, dl-de/by-2-0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "oid",
+    "routes": [
+      {
+        "category": "buergeramt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            1,
+            10,
+            16,
+            18,
+            19,
+            26,
+            27,
+            28
+          ]
+        }
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            2,
+            13,
+            47
+          ]
+        }
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            2,
+            13,
+            47
+          ]
+        }
+      },
+      {
+        "category": "jobcenter",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            6,
+            7,
+            8,
+            37
+          ]
+        }
+      },
+      {
+        "category": "jugendamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            9,
+            41
+          ]
+        }
+      },
+      {
+        "category": "standesamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            12
+          ]
+        }
+      },
+      {
+        "category": "zulassungsstelle",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            20
+          ]
+        }
+      },
+      {
+        "category": "arbeitsagentur",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            23
+          ]
+        }
+      },
+      {
+        "category": "umweltamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            29
+          ]
+        }
+      },
+      {
+        "category": "sozialamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            31,
+            50
+          ]
+        }
+      },
+      {
+        "category": "ordnungsamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            36
+          ]
+        }
+      },
+      {
+        "category": "schulamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            39
+          ]
+        }
+      }
+    ],
+    "download_url": "https://geo.stadt-muenster.de/mapserv/odbehoerdenstandorte_serv?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=behoerdenstandorte&OUTPUTFORMAT=geojson",
+    "count_url": "https://geo.stadt-muenster.de/mapserv/odbehoerdenstandorte_serv?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=behoerdenstandorte&RESULTTYPE=hits",
+    "source_date": "2026-09-16 (metadata)"
+  },
+  {
+    "id": "sn_chemnitz_buerger_locations",
+    "kind": "authority_point",
+    "scope": "DE-SN",
+    "format": "arcgis_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://www.arcgis.com/home/item.html?id=4da8c7af71bf412b803a6b3558344650",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Stadt Chemnitz, dl-de/by-2-0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "OBJECTID",
+    "routes": [
+      {
+        "category": "buergeramt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      }
+    ],
+    "endpoint": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Buergerservicestellen_FL_1/FeatureServer/0",
+    "source_date": "ArcGIS editingInfo.lastEditDate where available"
+  },
+  {
+    "id": "sn_chemnitz_aemter_locations",
+    "kind": "authority_point",
+    "scope": "DE-SN",
+    "format": "arcgis_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://www.arcgis.com/home/item.html?id=97e3e69fdf8541b59fb348b6061b8d2a",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Stadt Chemnitz, dl-de/by-2-0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "OBJECTID",
+    "routes": [
+      {
+        "category": "stadtverwaltung",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            3
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "ordnungsamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            9
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "buergeramt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            10
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "umweltamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            11
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            13
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "schulamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            14
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "sozialamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            15
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "jugendamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            16
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            17
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "bauamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            20
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      }
+    ],
+    "endpoint": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Aemter_FL_1/FeatureServer/0",
+    "source_date": "ArcGIS editingInfo.lastEditDate where available"
+  },
+  {
+    "id": "mv_rostock_locations",
+    "kind": "authority_point",
+    "scope": "DE-MV",
+    "format": "geojson_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://www.opendata-hro.de/dataset/behoerden",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "Hanse- und Universitätsstadt Rostock, OpenData.HRO, CC0 1.0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "uuid",
+    "routes": [
+      {
+        "category": "amtsgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb9b7cb4-10d4-11e5-abb0-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "landgericht",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbd84d60-10d4-11e5-abc1-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "staatsanwaltschaft",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc35d836-10d4-11e5-abdc-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "familienkasse",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "2db4abaa-9e5b-11e5-a92b-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "arbeitsagentur",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbc2cb20-10d4-11e5-abbb-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "zoll",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbd11d4c-10d4-11e5-abbf-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "rentenversicherung",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbdbe24a-10d4-11e5-abc2-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb93c1ea-10d4-11e5-abae-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "schulamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb901d1a-10d4-11e5-abad-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "standesamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc0fcc0e-10d4-11e5-abd1-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb5be2c0-10d4-11e5-ab9e-0050569b7e95",
+            "97dd1320-e7f3-11e8-9690-0050569946ac"
+          ]
+        }
+      },
+      {
+        "category": "umweltamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb69c4bc-10d4-11e5-aba2-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "bafoegamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc210e4c-10d4-11e5-abd6-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "jugendamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cc1a3266-10d4-11e5-abd4-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "jobcenter",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cbb14544-10d4-11e5-abb6-0050569b7e95"
+          ]
+        }
+      },
+      {
+        "category": "sozialamt",
+        "name_field": "bezeichnung",
+        "filter": {
+          "uuid": [
+            "cb81fa00-10d4-11e5-aba9-0050569b7e95"
+          ]
+        }
+      }
+    ],
+    "download_url": "https://geo.sv.rostock.de/download/opendata/behoerden/behoerden.json",
+    "source_date": "2026-05-27 (metadata)"
+  },
+  {
+    "id": "hh_jugend_asd_locations",
+    "kind": "authority_point",
+    "scope": "DE-HH",
+    "format": "gml",
+    "default_import": true,
+    "active": true,
+    "endpoint": "https://geodienste.hamburg.de/HH_WFS_ASD",
+    "layer": "de.hh.up:standorte",
+    "request_crs": "EPSG:3857",
+    "sort_by": "einrichtung_name",
+    "geometry_field": "geom",
+    "routes": [
+      {
+        "category": "jugendamt",
+        "name_field": "einrichtung_name"
+      }
+    ],
+    "documentation": "https://suche.transparenz.hamburg.de/dataset/allgemeiner-sozialer-dienst-asd-hamburg16",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Freie und Hansestadt Hamburg, Behörde für Schule, Familie und Berufsbildung, dl-de/by-2-0",
+    "source_quality": "official",
+    "coverage_claim": "Actual ASD office locations. ASD is explicitly part of the district Fachamt Jugend- und Familienhilfe. No jurisdiction inferred from point.",
+    "modifications": "Transform from EPSG:3857 to EPSG:4326, preserve original point attributes."
+  },
+  {
+    "kind": "authority",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Explicit reviewed statutory assignment to existing official polygons; preserve all original source fields, mark geometry repairs.",
+    "id": "by_wohngeld_gesetz",
+    "format": "statutory_by_wohngeld",
+    "scope": "DE-BY",
+    "routes": [
+      {
+        "category": "wohngeldstelle"
+      }
+    ],
+    "legal_basis": "https://www.gesetze-bayern.de/Content/Document/BayZustV-3",
+    "required_legal_clause": "sind die Landkreise und die kreisfreien Gemeinden.",
+    "documentation": "https://www.stmb.bayern.de/ser/buergerservice/index.php",
+    "license": "CC-BY-4.0 + statutory assignment (§5 UrhG)",
+    "attribution": "Bayerischer Verwaltungsatlas, CC BY 4.0; gesetzliche Zuordnung nach §3 ZustV Bayern",
+    "source_date": "2026-11-13 (legal assignment reviewed)",
+    "name_rule": "Use unchanged official institution name from by_kreis, explicitly acting as statutory Wohngeldbehörde; no fictional department name",
+    "coverage_claim": "Bayern: Landratsämter and independent city authorities acting as Wohngeldbehörde, per explicit §3 ZustV. Location refers to the dwelling, not any arbitrary point."
+  },
+  {
+    "kind": "authority",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Explicit reviewed statutory assignment to existing official polygons; preserve all original source fields, mark geometry repairs.",
+    "id": "nw_bau_gesetz",
+    "format": "statutory_nw_bau",
+    "scope": "DE-NW",
+    "routes": [
+      {
+        "category": "bauamt"
+      }
+    ],
+    "download_url": "https://dateien.open.nrw/download/kontaktdaten_ubab_nrw_stand_04.2024_0.xlsx",
+    "legal_basis": "https://recht.nrw.de/lrgv/gesetz/01092026-landesbauordnung-2018-bauo-nrw-2018/",
+    "required_legal_clause": "die Kreise für die übrigen kreisangehörigen Gemeinden.",
+    "documentation": "https://www.govdata.de/suche/daten/kontaktdaten-der-unteren-bauaufsichtsbehorden-in-nordrhein-westfalen-stand-april-2024",
+    "license": "Directory CC0-1.0 + VG25 CC-BY-4.0 + statutory assignment (§5 UrhG)",
+    "attribution": "Ministerium für Heimat, Kommunales, Bau und Digitalisierung des Landes NRW, CC0 1.0; © BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "source_date": "2024-07 (inside source spreadsheet; metadata title says April 2024)",
+    "mapping_reviewed_at": "2026-11-13",
+    "mapping_file": "nw_bau.csv",
+    "mapping_sha256": "f5a9cf84673957ea0d7946b8a97de0f572f4bdbf8f0cb9293f5681b9eebd1ce7",
+    "name_rule": "Original municipal institution name and department from the public directory, exact reviewed VG25 AGS/ARS mapping; counties exclude autonomous cities",
+    "coverage_claim": "General local lower building supervision, special competences excluded. Directory is dated 2024 and contains 211 rows although metadata advertise 212; audit preserves discrepancy. Current autonomous-city exceptions checked separately against statutory city list. Missing directory cities remain uncovered; never assigned to counties.",
+    "city_status_url": "https://recht.nrw.de/lrgv/rechtsverordnung/01012025-verordnung-zur-bestimmung-der-grossen-kreisangehoerigen-staedte-und/",
+    "city_status_file": "nw_city_status.csv",
+    "city_status_sha256": "95fd5023d22f1f4be3f18df1f6dcc792a954f3d4aa15d503adcbe40a2a6e379c"
+  },
+  {
+    "scope": "DE-BB",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Land Brandenburg, Serviceportal Brandenburg, dl-de/by-2-0",
+    "source_date": "No per-record date supplied; retrieval date retained separately",
+    "request_crs": "EPSG:25833",
+    "coordinate_crs_evidence": "Published UTM east/north values interpreted in Brandenburg UTM zone 33; BKG CRS registry and state reference-system rule, cross-checked for Potsdam. https://sg.geodatenzentrum.de/web_registry/crs-gdz/coordinateReferenceSystem/UTM33.html",
+    "modifications": "Strip repeated UTF-8 BOM; retain string identifiers and original records; transform actual UTM coordinates, do not geocode or infer points from town centroids.",
+    "name_rule": "Unchanged explicit authority designation in the public official registry; reviewed source categories",
+    "id": "bb_registry_locations",
+    "kind": "authority_point",
+    "format": "bb_registry_points",
+    "routes": [
+      {
+        "category": "finanzamt",
+        "ids": [
+          "{E5F0335D-B423-D476-8399-FE8065909A22}",
+          "{DAFC4425-9221-527A-D072-9BC57C95323F}",
+          "{6CBEBFA2-8DBA-714E-A6EE-74C7E29E9080}",
+          "{7D3F8056-DC10-EB4E-637E-0E3510F9918A}",
+          "{B1DD5B6C-3099-3854-323F-9A4F687AC8D2}",
+          "{02DC120C-0F8C-CEB1-9FF2-9FAA55802CF0}",
+          "{BECB6356-476C-BA29-C53B-8612C5C45ED2}",
+          "{F5D62E13-A076-E7ED-E6BF-649E9172B06F}",
+          "{926B516D-1776-311B-BB3D-797C16EC212A}",
+          "{AF47741C-7ED1-FB0C-806C-1AE5FE62755C}",
+          "{7A4EFE2B-428F-0930-33A1-A9EBC6CC4C79}",
+          "{6C0D20AA-D7DC-1DA3-6CC1-77102E02FA43}",
+          "{3405F1F0-C1A0-DEA8-BBBB-0D2653828110}"
+        ],
+        "name_pattern_reviewed": "^Finanzamt "
+      },
+      {
+        "category": "amtsgericht",
+        "ids": [
+          "{45EC9F0E-B96C-8310-A8B3-897D6E3E628B}",
+          "{D17A300D-FFBE-BCBF-7B7B-2876E1F27A54}",
+          "{9AB31787-8697-DD30-9E07-99F87F2EEC0C}",
+          "{8B83C76C-BD8F-3EE5-9C3A-65062DF604EA}",
+          "{0D6CA38B-2E40-2D7D-7A57-8D55C3D83243}",
+          "{D4A7AE5B-478F-FACE-EE25-33D99563CE04}",
+          "{B4D54FEE-5DF6-F396-EBA5-42874978F706}",
+          "{2CAAF020-2303-2B31-7364-F40866265A83}",
+          "{F29C5E8D-4697-BD9A-2E9B-297D10BD200F}",
+          "{B75AA2B7-BA5C-26B5-78B7-80E7FBE66BDF}",
+          "{C8C216DF-8BA8-802A-6D0A-2D1EEA1EF589}",
+          "{246A40DE-083F-7608-0220-AFEB46F2CBDB}",
+          "{08AEBA07-832E-1DE3-47CE-07E59B133C56}",
+          "{CE4A80F2-6F3A-BA94-360A-9F399E156139}",
+          "{4B5E4BE3-FAC2-D45F-3E72-15FF60CC3DB7}",
+          "{9F74F8AF-DB1F-BDD1-A02D-DA6DCE14739B}",
+          "{D1D5CA07-EBA2-103D-CC51-65B5445A8574}",
+          "{5062CC3C-CE63-B0E3-8803-993C2CE7F1DE}",
+          "{A46D6E9A-A480-847A-395C-4722BBC44940}",
+          "{73049A80-24A5-25B2-1B4E-CE8CA9387F64}",
+          "{4DA3118A-4CFA-F25D-6B11-380B27E5F805}",
+          "{108707E0-BF3A-5A66-2867-1DF714169A11}",
+          "{4AC0C195-3081-3783-75C1-1E1DA59ED18C}",
+          "{F29F5E9E-649D-1D53-FDB3-C441C9CAAB39}",
+          "{AECF8757-BB4A-2FFC-582C-D523A8256C5D}"
+        ],
+        "name_pattern_reviewed": "^Amtsgericht "
+      },
+      {
+        "category": "landgericht",
+        "ids": [
+          "{0252452B-300C-11F6-4DE6-E526096EA506}",
+          "{0191BBD7-09A5-7635-9190-40A966340007}",
+          "{8A1D3C9C-DF6B-1B5B-F16C-EAFB5A365765}",
+          "{0200915D-76D9-6829-4C2D-7E0F00430495}"
+        ],
+        "name_pattern_reviewed": "^Landgericht "
+      },
+      {
+        "category": "verwaltungsgericht",
+        "ids": [
+          "{F5939871-2AEE-2044-7AEF-0505C955DFEE}",
+          "{53A6CA70-6EE6-6973-5807-ECF22585DFC0}",
+          "{6A6FCE7D-F114-BBD2-CE8C-6A77526FA532}"
+        ],
+        "name_pattern_reviewed": "^Verwaltungsgericht "
+      },
+      {
+        "category": "staatsanwaltschaft",
+        "ids": [
+          "{67003C5E-6E32-D093-5566-E18F9339C095}",
+          "{E7273D25-E030-057D-41E1-701CB7C807A0}",
+          "{692197B3-3135-2715-0F12-4AF81D0BAE1B}",
+          "{92704514-AFC3-39E4-4931-D0D23E6F7EB9}",
+          "{9E2E12A6-7DD8-F9A2-4FB6-42B97CD68E56}"
+        ],
+        "name_pattern_reviewed": "^Staatsanwaltschaft "
+      },
+      {
+        "category": "handwerkskammer",
+        "ids": [
+          "{41C1E81B-913D-E884-DA6C-192F35635883}",
+          "{DDFFE8FE-995B-EE03-9077-12EE1AAE3056}",
+          "{31E37DE6-6FF7-C57A-EA51-F59C03CD3CD5}"
+        ],
+        "name_pattern_reviewed": "^Handwerkskammer "
+      },
+      {
+        "category": "ihk",
+        "ids": [
+          "{A25F9575-A9CE-137A-E1A0-99E1D9BC5189}",
+          "{015153B7-64DA-BCCF-600B-001EF588F236}",
+          "{4EE13800-0DD1-0DA8-75E5-F5157D219E6B}"
+        ],
+        "name_pattern_reviewed": "^Industrie- und Handelskammer "
+      },
+      {
+        "category": "schulamt",
+        "ids": [
+          "{AE120621-4882-E698-BDE8-FA16D9C0220E}",
+          "{D637E200-BEDA-08B2-B577-CEA58F534568}",
+          "{F39A228C-EB7A-2485-EE92-336386DA0317}",
+          "{9DA8DC1D-3406-4011-BFEC-69B6BAE8CAA7}"
+        ],
+        "name_pattern_reviewed": "^Staatliches Schulamt "
+      },
+      {
+        "category": "auslaenderbehoerde",
+        "ids": [
+          "{173099ED-82B0-16E8-4943-052C17AF1811}"
+        ],
+        "name_pattern_reviewed": "^Zentrale Ausländerbehörde$"
+      },
+      {
+        "category": "pflegekasse",
+        "ids": [
+          "{730F91B7-5C2C-311E-A38D-307E5F798034}",
+          "{66468C7E-0634-C9A8-FA50-42E100F32539}"
+        ],
+        "name_pattern_reviewed": " als Pflegekasse$"
+      },
+      {
+        "category": "krankenkasse",
+        "ids": [
+          "{A5B279FA-D02B-B703-43BC-6BD651E5C349}"
+        ],
+        "name_pattern_reviewed": "^Innungskrankenkasse Brandenburg und Berlin Hauptverwaltung$"
+      },
+      {
+        "category": "rentenversicherung",
+        "ids": [
+          "{C7895723-BB03-0A72-4410-AA261E2C4668}"
+        ],
+        "name_pattern_reviewed": "^Deutsche Rentenversicherung "
+      }
+    ],
+    "documentation": "https://service.brandenburg.de/service/de/adressen/behoerdenverzeichnis/~329004",
+    "download_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/bvdaten.csv",
+    "coverage_claim": "Filtered actual office locations in the Brandenburg official authority register. Includes specialised Zentrale Ausländerbehörde, not universal local immigration competence; insurers not determined by residence."
+  },
+  {
+    "scope": "DE-BB",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Land Brandenburg, Serviceportal Brandenburg, dl-de/by-2-0",
+    "source_date": "No per-record date supplied; retrieval date retained separately",
+    "request_crs": "EPSG:25833",
+    "coordinate_crs_evidence": "Published UTM east/north values interpreted in Brandenburg UTM zone 33; BKG CRS registry and state reference-system rule, cross-checked for Potsdam. https://sg.geodatenzentrum.de/web_registry/crs-gdz/coordinateReferenceSystem/UTM33.html",
+    "modifications": "Strip repeated UTF-8 BOM; retain string identifiers and original records; transform actual UTM coordinates, do not geocode or infer points from town centroids.",
+    "name_rule": "Unchanged explicit authority designation in the public official registry; reviewed source categories",
+    "id": "bb_kommunal_locations",
+    "kind": "authority_point",
+    "format": "bb_kommunal_points",
+    "routes": [
+      {
+        "category": "kreisverwaltung"
+      },
+      {
+        "category": "stadtverwaltung"
+      }
+    ],
+    "documentation": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/",
+    "download_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/kvdaten.csv",
+    "coverage_claim": "Actual locations for Landkreise and independent municipal administrations; shared/Amts-member institutions excluded."
+  },
+  {
+    "scope": "DE-BB",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license": "Brandenburg dl-de/by-2-0 + VG25 CC-BY-4.0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Land Brandenburg, Serviceportal Brandenburg, dl-de/by-2-0; © BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "source_date": "No per-record date supplied; retrieval date retained separately",
+    "request_crs": "EPSG:25833",
+    "coordinate_crs_evidence": "Published UTM east/north values interpreted in Brandenburg UTM zone 33; BKG CRS registry and state reference-system rule, cross-checked for Potsdam. https://sg.geodatenzentrum.de/web_registry/crs-gdz/coordinateReferenceSystem/UTM33.html",
+    "modifications": "Strip repeated UTF-8 BOM; retain string identifiers and original records; transform actual UTM coordinates, do not geocode or infer points from town centroids.",
+    "name_rule": "Unchanged explicit authority designation in the public official registry; reviewed source categories",
+    "id": "bb_kommunal_gebiete",
+    "kind": "authority",
+    "format": "bb_kommunal_areas",
+    "routes": [
+      {
+        "category": "kreisverwaltung"
+      },
+      {
+        "category": "stadtverwaltung"
+      }
+    ],
+    "documentation": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/",
+    "download_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/kvdaten.csv",
+    "coverage_claim": "Explicit named Landkreise and independent municipalities joined to exact identical VG25 ARS; member municipalities, shared administrations and Ämter are not assigned guessed territories."
+  },
+  {
+    "id": "osm_exact_offices",
+    "kind": "authority_point",
+    "scope": "DE",
+    "format": "osm",
+    "default_import": false,
+    "routes": [
+      {
+        "category": "bundesverwaltungsamt"
+      },
+      {
+        "category": "bundesamt_migration"
+      },
+      {
+        "category": "gewerbeamt"
+      },
+      {
+        "category": "familienkasse"
+      }
+    ],
+    "active": true,
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "documentation": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap-Mitwirkende, https://www.openstreetmap.org/copyright, ODbL 1.0",
+    "source_quality": "community",
+    "coverage_claim": "Nationwide location sample from exact OSM names Bundesverwaltungsamt, Bundesamt für Migration und Flüchtlinge, Gewerbeamt, Familienkasse. Only matching named OSM offices, not a complete register; no jurisdiction polygons. Worldwide query masked to official Germany boundary.",
+    "source_date": "timestamp_osm_base in raw response",
+    "name_rule": "Original official_name or name, conservative explicit name patterns and government/amenity tags; no assertion of official competence",
+    "modifications": "Filter to named relevant offices and official Germany boundary mask. Nodes retained; way/relation bounding-box centres explicitly labelled, not necessarily public entrances. No polygons inferred.",
+    "query_sha256": "5ae5ac6e9347fc6a3a2085fbe4ab9fd6092089f9309afaaf2cffa92d47144a28",
+    "refresh_policy": "Opt-in cached batch only. Not queried for each resolver request. Respect public API usage limits; use extracts or your own service for expansion.",
+    "query_file": "osm_exact_offices.overpass"
+  },
+  {
+    "id": "be_polizei_abschnitt",
+    "endpoint": "https://gdi.berlin.de/services/wfs/polizei",
+    "layer": "polizei:c_polizei_abschnitte",
+    "scope": "DE-BE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "langbezeic",
+        "name_prefix_literal": "Polizei Berlin, "
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "EPSG:25833",
+    "geojson_crs": "EPSG:25833",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://gdi.berlin.de/services/wfs/polizei?service=WFS&version=2.0.0&request=GetCapabilities",
+    "license": "dl-de/zero-2-0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": "Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin / Polizei Berlin; Datenlizenz Deutschland Zero 2.0",
+    "coverage_claim": "Polizeiabschnitte (Zuständigkeitsflächen) in Berlin; regional source; no nationwide coverage",
+    "modifications": "Transformation nach EPSG:4326 (GeoJSON in EPSG:25833 wird vor der Validierung umprojiziert); Polygonvalidierung, ggf. protokollierte Reparatur; Zusammensetzung amtlicher Namensfelder wie in name_rule ausgewiesen; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; geometry_repaired markiert. Literal-Präfix 'Polizei Berlin, ' vor der amtlichen Bezeichnung (langbezeic).",
+    "source_date": "see layer metadata / GetCapabilities",
+    "source_quality": "official",
+    "verification_required": true
+  },
+  {
+    "id": "bw_polizei_areas",
+    "endpoint": "https://owsproxy.lgl-bw.de/owsproxy/wfs/WFS_INSP_BW_Staatliche_Dienste_Polizei",
+    "layer": "us-govserv:GovernmentalService",
+    "scope": "DE-BW",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "polizei"
+      }
+    ],
+    "format": "inspire_govserv_areas",
+    "request_crs": "EPSG:25832",
+    "default_import": true,
+    "documentation": "https://gdk.gdi-de.org/geonetwork/srv/api/records/5ac9d573-b727-4678-9bc7-18f7ea0f9e40",
+    "license": "dl-de/zero-2-0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": "Präsidium Technik, Logistik, Service der Polizei Baden-Württemberg; Datenlizenz Deutschland Zero 2.0 (Nennung nicht erforderlich)",
+    "coverage_claim": "Only INSPIRE features that carry an explicit areaOfResponsibilityByPolygon; BW only; no nationwide coverage",
+    "name_rule": "Official INSPIRE gml:name and polygon areaOfResponsibilityByPolygon; serviceType must be policeService; no point buffering",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine Näherung, keine Ableitung aus Verwaltungsgrenzen.",
+    "source_date": "service metadata revision 2025-02-11",
+    "source_quality": "official",
+    "verification_required": true
+  },
+  {
+    "id": "bw_polizei_locations",
+    "endpoint": "https://owsproxy.lgl-bw.de/owsproxy/wfs/WFS_INSP_BW_Staatliche_Dienste_Polizei",
+    "layer": "us-govserv:GovernmentalService",
+    "scope": "DE-BW",
+    "kind": "authority_point",
+    "routes": [
+      {
+        "category": "polizei"
+      }
+    ],
+    "format": "inspire_govserv_points",
+    "request_crs": "EPSG:25832",
+    "default_import": true,
+    "documentation": "https://gdk.gdi-de.org/geonetwork/srv/api/records/5ac9d573-b727-4678-9bc7-18f7ea0f9e40",
+    "license": "dl-de/zero-2-0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": "Präsidium Technik, Logistik, Service der Polizei Baden-Württemberg; Datenlizenz Deutschland Zero 2.0 (Nennung nicht erforderlich)",
+    "coverage_claim": "Office locations only, not authority jurisdiction polygons.",
+    "name_rule": "Official INSPIRE gml:name; serviceType policeService; serviceLocationByGeometry point",
+    "modifications": "Amtlicher Standortpunkt nach EPSG:4326 transformiert; keine künstliche Fläche.",
+    "source_date": "service metadata revision 2025-02-11",
+    "source_quality": "official",
+    "verification_required": true
+  },
+  {
+    "id": "be_bezirke_gesetz",
+    "endpoint": "https://gdi.berlin.de/services/wfs/alkis_bezirke",
+    "layer": "alkis_bezirke:bezirksgrenzen",
+    "scope": "DE-BE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "jugendamt",
+        "name_field": "namgem",
+        "name_prefix_literal": "Bezirksamt ",
+        "name_suffix_literal": " von Berlin"
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "namgem",
+        "name_prefix_literal": "Bezirksamt ",
+        "name_suffix_literal": " von Berlin"
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "namgem",
+        "name_prefix_literal": "Bezirksamt ",
+        "name_suffix_literal": " von Berlin"
+      },
+      {
+        "category": "wohngeldstelle",
+        "name_field": "namgem",
+        "name_prefix_literal": "Bezirksamt ",
+        "name_suffix_literal": " von Berlin"
+      },
+      {
+        "category": "ordnungsamt",
+        "name_field": "namgem",
+        "name_prefix_literal": "Bezirksamt ",
+        "name_suffix_literal": " von Berlin"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "EPSG:25833",
+    "geojson_crs": "EPSG:25833",
+    "sort_by": "gem",
+    "default_import": false,
+    "documentation": "https://gdi.berlin.de/services/wfs/alkis_bezirke?service=WFS&version=2.0.0&request=GetCapabilities",
+    "legal_basis": "Verfassung von Berlin Art. 67 ff.; Bezirksverwaltungsgesetz (BezVG); Allgemeines Zuständigkeitsgesetz (AZG) Berlin",
+    "legal_review_required": true,
+    "license": "dl-de/zero-2-0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": "Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin; Datenlizenz Deutschland Zero 2.0",
+    "coverage_claim": "Opt-in (--all): official Bezirk polygons used as general territorial districts of the Bezirksamt. The Fachamt names and the competence per category must be reviewed against AZG before use; citywide competences (e.g. Ausländerbehörde, Kfz-Zulassung) are intentionally not routed.",
+    "name_rule": "'Bezirksamt ' + official Bezirksname (namgem) + ' von Berlin'; the Fachamt is not named (no invented department names)",
+    "modifications": "Transformation nach EPSG:4326 (GeoJSON in EPSG:25833 wird vor der Validierung umprojiziert); Polygonvalidierung, ggf. protokollierte Reparatur; Zusammensetzung amtlicher Namensfelder wie in name_rule ausgewiesen; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; geometry_repaired markiert.",
+    "source_date": "see layer metadata / GetCapabilities",
+    "source_quality": "official",
+    "verification_required": true
+  },
+  {
+    "id": "osm_states_locations",
+    "kind": "authority_point",
+    "scope": "DE",
+    "format": "osm",
+    "default_import": false,
+    "routes": [
+      {
+        "category": "amtsgericht"
+      },
+      {
+        "category": "arbeitsagentur"
+      },
+      {
+        "category": "auslaenderbehoerde"
+      },
+      {
+        "category": "bafoegamt"
+      },
+      {
+        "category": "bauamt"
+      },
+      {
+        "category": "buergeramt"
+      },
+      {
+        "category": "bundesamt_migration"
+      },
+      {
+        "category": "bundesverwaltungsamt"
+      },
+      {
+        "category": "familienkasse"
+      },
+      {
+        "category": "finanzamt"
+      },
+      {
+        "category": "gesundheitsamt"
+      },
+      {
+        "category": "gewerbeamt"
+      },
+      {
+        "category": "handwerkskammer"
+      },
+      {
+        "category": "ihk"
+      },
+      {
+        "category": "jobcenter"
+      },
+      {
+        "category": "jugendamt"
+      },
+      {
+        "category": "krankenkasse"
+      },
+      {
+        "category": "kreisverwaltung"
+      },
+      {
+        "category": "ordnungsamt"
+      },
+      {
+        "category": "pflegekasse"
+      },
+      {
+        "category": "polizei"
+      },
+      {
+        "category": "regierungsprs"
+      },
+      {
+        "category": "rentenversicherung"
+      },
+      {
+        "category": "schulamt"
+      },
+      {
+        "category": "sozialamt"
+      },
+      {
+        "category": "staatsanwaltschaft"
+      },
+      {
+        "category": "stadtverwaltung"
+      },
+      {
+        "category": "standesamt"
+      },
+      {
+        "category": "strassenverkehrsbehoerde"
+      },
+      {
+        "category": "umweltamt"
+      },
+      {
+        "category": "verwaltungsgericht"
+      },
+      {
+        "category": "veterinaeramt"
+      },
+      {
+        "category": "wohngeldstelle"
+      },
+      {
+        "category": "zoll"
+      },
+      {
+        "category": "zulassungsstelle"
+      }
+    ],
+    "active": true,
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "documentation": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap-Mitwirkende, https://www.openstreetmap.org/copyright, ODbL 1.0",
+    "source_quality": "community",
+    "coverage_claim": "Community OSM offices per Bundesland (office=government/insurance/association, amenity=police/courthouse/townhall) from scripts/osm_fetch_states.py; completeness depends on OSM mapping and tags; no official competence; never replaces polygon sources.",
+    "source_date": "timestamp_osm_base in raw response",
+    "name_rule": "Original official_name or name, conservative explicit name patterns and government/amenity tags; no assertion of official competence",
+    "modifications": "Filter to named relevant offices and official Germany boundary mask. Nodes retained; way/relation bounding-box centres explicitly labelled, not necessarily public entrances. No polygons inferred.",
+    "query_sha256": "9db4ab1b353904033b12e89b9dcff3cbaac6765d6de18ec9f926f9a65335ea48",
+    "refresh_policy": "Opt-in batch: run scripts/osm_fetch_states.py (one Overpass request per Bundesland, all 16 required), then sync --source osm_states_locations --input <file>. Never queried per resolver request.",
+    "query_file": "osm_states.overpass",
+    "requires_input": true
+  }
+]

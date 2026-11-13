@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WMS_Capabilities version="1.3.0" xmlns="http://www.opengis.net/wms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esri_wms="http://www.esri.com/wms" xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd http://www.esri.com/wms https://geodienste.sachsen.de/wms_smr_kommunales/guest?version=1.3.0%26service=WMS%26request=GetSchemaExtension">
+	<Service>
+		<Name>WMS</Name>
+		<Title>Verwaltungsatlas-Kommunales</Title>
+		<Abstract>Der Dienst stellt Daten des Verwaltungsatlas Sachsen dar. Er umfasst Raumordnungsbehörden, Planungsregionen, Verwaltungsgemeinschaften, Verwaltungsverbände und die Verwaltungssitze der Städte, Gemeinden und Landkreise. Weitere Informationen zum Dienst erhalten Sie im GeoMIS.Sachsen oder über die Metadatenanzeige, welche über folgende URL direkt aufrufbar ist: https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/3d8f8f83-7d4f-446f-b69e-2aca323d6a1b.</Abstract>
+		<KeywordList>
+			<Keyword>Verwaltungsatlas</Keyword>
+			<Keyword>Sachsen</Keyword>
+			<Keyword>Behörden</Keyword>
+			<Keyword>Verwaltung</Keyword>
+			<Keyword>Grenzen</Keyword>
+			<Keyword>Verwaltungseinheiten</Keyword>
+			<Keyword>Verwaltungsgemeinschaft</Keyword>
+			<Keyword>Verwaltungsverband</Keyword>
+			<Keyword>Planungsverband</Keyword>
+			<Keyword>Infrastruktur</Keyword>
+			<Keyword>Gesellschaft</Keyword>
+			<Keyword>Landratsämter</Keyword>
+			<Keyword>gemeindliche Kooperationsformen (VG/VV)</Keyword>
+			<Keyword>Verwaltungssitz gemeindlicher Kooperationsformen (VG/VV)</Keyword>
+			<Keyword>Regionalplanung</Keyword>
+			<Keyword>Stadtverwaltungen</Keyword>
+			<Keyword>landesweit</Keyword>
+			<Keyword>DE-SN</Keyword>
+			<Keyword>DE</Keyword>
+			<Keyword>SN</Keyword>
+			<Keyword>Bundesland Freistaat Sachsen</Keyword>
+			<Keyword>Gemeindeverwaltung</Keyword>
+			<Keyword>Kreisverwaltung</Keyword>
+			<Keyword>Verwaltungsgemeinschaften (VG) und -verbände (VV)</Keyword>
+			<Keyword>Verwaltungssitz VG/VV</Keyword>
+			<Keyword>Gebiet VG/VV</Keyword>
+			<Keyword>Raumordnungsbehörde</Keyword>
+			<Keyword>Regionale Planungsverbände (RPV)</Keyword>
+			<Keyword>Verbandsgeschäftsstelle RPV</Keyword>
+			<Keyword>Planungsregion</Keyword>
+			<Keyword>Gemeindeverwaltungen</Keyword>
+			<Keyword>Raumordnungsbehörden</Keyword>
+			<Keyword>sorbisch</Keyword>
+			<Keyword>Gemeinde</Keyword>
+		</KeywordList>
+		<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?"/>
+		<ContactInformation>
+			<ContactPersonPrimary>
+				<ContactPerson>GDI-Servicezentrum</ContactPerson>
+				<ContactOrganization>Landesamt für Geobasisinformation Sachsen (GeoSN)</ContactOrganization>
+			</ContactPersonPrimary>
+			<ContactPosition>Ansprechpartner</ContactPosition>
+			<ContactAddress>
+				<AddressType/>
+				<Address>Olbrichtplatz 3</Address>
+				<City>Dresden</City>
+				<StateOrProvince>Sachsen</StateOrProvince>
+				<PostCode>01099</PostCode>
+				<Country>Deutschland</Country>
+			</ContactAddress>
+			<ContactVoiceTelephone>+49 351 8283-8420</ContactVoiceTelephone>
+			<ContactFacsimileTelephone>+49 351 8283-6110</ContactFacsimileTelephone>
+			<ContactElectronicMailAddress>servicedesk@geosn.sachsen.de</ContactElectronicMailAddress>
+		</ContactInformation>
+		<Fees>Der Dienst ist kostenfrei und kann gemäß den Nutzungsbestimmungen von Datenlizenz Deutschland - Namensnennung - Version 2.0 (https://www.govdata.de/dl-de/by-2-0) unter Angabe der Quelle: "Verwaltungsatlas Sachsen" genutzt werden.</Fees>
+		<AccessConstraints>none</AccessConstraints>
+		<MaxWidth>4096</MaxWidth>
+		<MaxHeight>4096</MaxHeight>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<Format>text/xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?"/>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/png</Format>
+				<Format>image/png8</Format>
+				<Format>image/png24</Format>
+				<Format>image/png32</Format>
+				<Format>image/jpeg</Format>
+				<Format>image/tiff</Format>
+				<Format>image/gif</Format>
+				<Format>image/svg+xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?"/>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>application/vnd.esri.wms_raw_xml</Format>
+				<Format>application/vnd.esri.wms_featureinfo_xml</Format>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<Format>application%2Fgeo%2Bjson</Format>
+				<Format>application/geo+json</Format>
+				<Format>text/xml</Format>
+				<Format>text/html</Format>
+				<Format>text/plain</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?"/>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+			<esri_wms:GetStyles>
+				<Format>application/vnd.ogc.sld+xml</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?"/>
+						</Get>
+					</HTTP>
+				</DCPType>
+			</esri_wms:GetStyles>
+		</Request>
+		<Exception>
+			<Format>application/vnd.ogc.se_xml</Format>
+			<Format>application/vnd.ogc.se_inimage</Format>
+			<Format>application/vnd.ogc.se_blank</Format>
+			<Format>text/xml</Format>
+			<Format>XML</Format>
+		</Exception>
+		<Layer>
+			<Title>Verwaltungsatlas Kommunalverwaltung</Title>
+			<CRS>EPSG:4326</CRS>
+			<CRS>EPSG:25833</CRS>
+			<CRS>EPSG:4258</CRS>
+			<CRS>EPSG:25832</CRS>
+			<CRS>EPSG:31469</CRS>
+			<CRS>EPSG:31468</CRS>
+			<CRS>EPSG:31467</CRS>
+			<CRS>EPSG:31466</CRS>
+			<CRS>EPSG:3034</CRS>
+			<CRS>EPSG:3035</CRS>
+			<CRS>EPSG:3044</CRS>
+			<CRS>EPSG:3045</CRS>
+			<CRS>EPSG:3857</CRS>
+			<CRS>EPSG:3398</CRS>
+			<CRS>EPSG:3399</CRS>
+			<CRS>EPSG:2180</CRS>
+			<CRS>EPSG:5514</CRS>
+			<CRS>EPSG:5650</CRS>
+			<EX_GeographicBoundingBox>
+				<westBoundLongitude>11.7</westBoundLongitude>
+				<eastBoundLongitude>15.1</eastBoundLongitude>
+				<southBoundLatitude>50.1</southBoundLatitude>
+				<northBoundLatitude>51.7</northBoundLatitude>
+			</EX_GeographicBoundingBox>
+			<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+			<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+			<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+			<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+			<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+			<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+			<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+			<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+			<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+			<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+			<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+			<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+			<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+			<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+			<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+			<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+			<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+			<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+			<Layer queryable="1">
+				<Title>Regionale Planungsverbände (RPV)</Title>
+				<Abstract>Die Gruppenebene umfasst die Geschäftsstellen der Regionalen Planungsverbände (RPV) sowie deren Zuständigkeitsbereiche.</Abstract>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:25833</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:25832</CRS>
+				<CRS>EPSG:31469</CRS>
+				<CRS>EPSG:31468</CRS>
+				<CRS>EPSG:31467</CRS>
+				<CRS>EPSG:31466</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3044</CRS>
+				<CRS>EPSG:3045</CRS>
+				<CRS>EPSG:3857</CRS>
+				<CRS>EPSG:3398</CRS>
+				<CRS>EPSG:3399</CRS>
+				<CRS>EPSG:2180</CRS>
+				<CRS>EPSG:5514</CRS>
+				<CRS>EPSG:5650</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>11.7</westBoundLongitude>
+					<eastBoundLongitude>15.1</eastBoundLongitude>
+					<southBoundLatitude>50.1</southBoundLatitude>
+					<northBoundLatitude>51.7</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+				<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+				<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+				<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+				<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+				<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+				<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+				<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+				<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+				<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+				<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+				<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+				<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+				<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+				<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+				<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+				<Layer queryable="1">
+					<Name>regplverbbereich</Name>
+					<Title>Planungsregion</Title>
+					<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst die Zuständigkeitsbereiche der Regionalen Planungsverbände.</Abstract>
+					<CRS>EPSG:4326</CRS>
+					<CRS>EPSG:25833</CRS>
+					<CRS>EPSG:4258</CRS>
+					<CRS>EPSG:25832</CRS>
+					<CRS>EPSG:31469</CRS>
+					<CRS>EPSG:31468</CRS>
+					<CRS>EPSG:31467</CRS>
+					<CRS>EPSG:31466</CRS>
+					<CRS>EPSG:3034</CRS>
+					<CRS>EPSG:3035</CRS>
+					<CRS>EPSG:3044</CRS>
+					<CRS>EPSG:3045</CRS>
+					<CRS>EPSG:3857</CRS>
+					<CRS>EPSG:3398</CRS>
+					<CRS>EPSG:3399</CRS>
+					<CRS>EPSG:2180</CRS>
+					<CRS>EPSG:5514</CRS>
+					<CRS>EPSG:5650</CRS>
+					<EX_GeographicBoundingBox>
+						<westBoundLongitude>11.7</westBoundLongitude>
+						<eastBoundLongitude>15.1</eastBoundLongitude>
+						<southBoundLatitude>50.1</southBoundLatitude>
+						<northBoundLatitude>51.7</northBoundLatitude>
+					</EX_GeographicBoundingBox>
+					<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+					<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+					<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+					<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+					<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+					<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+					<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+					<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+					<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+					<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+					<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+					<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+					<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+					<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+					<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+					<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/html</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/8caf1ba9-328a-432d-a2fc-d652f311685d"/>
+					</MetadataURL>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/xml</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=8caf1ba9-328a-432d-a2fc-d652f311685d"/>
+					</MetadataURL>
+					<Style>
+						<Name>default</Name>
+						<Title>Planungsregion</Title>
+						<LegendURL width="184" height="64">
+							<Format>image/png</Format>
+							<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=regplverbbereich" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+						</LegendURL>
+					</Style>
+					<MaxScaleDenominator>5000000</MaxScaleDenominator>
+				</Layer>
+				<Layer queryable="1">
+					<Name>regplverbsitz</Name>
+					<Title>Verbandsgeschäftsstelle RPV</Title>
+					<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst die Geschäftsstellen der Regionalen Planungsverbände.</Abstract>
+					<CRS>EPSG:4326</CRS>
+					<CRS>EPSG:25833</CRS>
+					<CRS>EPSG:4258</CRS>
+					<CRS>EPSG:25832</CRS>
+					<CRS>EPSG:31469</CRS>
+					<CRS>EPSG:31468</CRS>
+					<CRS>EPSG:31467</CRS>
+					<CRS>EPSG:31466</CRS>
+					<CRS>EPSG:3034</CRS>
+					<CRS>EPSG:3035</CRS>
+					<CRS>EPSG:3044</CRS>
+					<CRS>EPSG:3045</CRS>
+					<CRS>EPSG:3857</CRS>
+					<CRS>EPSG:3398</CRS>
+					<CRS>EPSG:3399</CRS>
+					<CRS>EPSG:2180</CRS>
+					<CRS>EPSG:5514</CRS>
+					<CRS>EPSG:5650</CRS>
+					<EX_GeographicBoundingBox>
+						<westBoundLongitude>11.7</westBoundLongitude>
+						<eastBoundLongitude>15.1</eastBoundLongitude>
+						<southBoundLatitude>50.1</southBoundLatitude>
+						<northBoundLatitude>51.7</northBoundLatitude>
+					</EX_GeographicBoundingBox>
+					<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+					<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+					<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+					<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+					<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+					<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+					<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+					<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+					<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+					<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+					<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+					<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+					<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+					<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+					<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+					<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/html</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/8caf1ba9-328a-432d-a2fc-d652f311685d"/>
+					</MetadataURL>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/xml</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=8caf1ba9-328a-432d-a2fc-d652f311685d"/>
+					</MetadataURL>
+					<Style>
+						<Name>default</Name>
+						<Title>Verbandsgeschäftsstelle RPV</Title>
+						<LegendURL width="178" height="16">
+							<Format>image/png</Format>
+							<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=regplverbsitz" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+						</LegendURL>
+					</Style>
+					<MaxScaleDenominator>5000000</MaxScaleDenominator>
+				</Layer>
+			</Layer>
+			<Layer queryable="1">
+				<Name>raumordnung</Name>
+				<Title>Raumordnungsbehörde</Title>
+				<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst den Sitz der obersten Raumordnungs- und Landesplanungsbehörde sowie der oberen Raumordnungsbehörde.</Abstract>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:25833</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:25832</CRS>
+				<CRS>EPSG:31469</CRS>
+				<CRS>EPSG:31468</CRS>
+				<CRS>EPSG:31467</CRS>
+				<CRS>EPSG:31466</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3044</CRS>
+				<CRS>EPSG:3045</CRS>
+				<CRS>EPSG:3857</CRS>
+				<CRS>EPSG:3398</CRS>
+				<CRS>EPSG:3399</CRS>
+				<CRS>EPSG:2180</CRS>
+				<CRS>EPSG:5514</CRS>
+				<CRS>EPSG:5650</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>11.7</westBoundLongitude>
+					<eastBoundLongitude>15.1</eastBoundLongitude>
+					<southBoundLatitude>50.1</southBoundLatitude>
+					<northBoundLatitude>51.7</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+				<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+				<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+				<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+				<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+				<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+				<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+				<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+				<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+				<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+				<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+				<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+				<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+				<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+				<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+				<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+				<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<Format>text/html</Format>
+					<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/efed33eb-f1dc-45f0-8e21-584a3bd743bd"/>
+				</MetadataURL>
+				<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=efed33eb-f1dc-45f0-8e21-584a3bd743bd"/>
+				</MetadataURL>
+				<Style>
+					<Name>default</Name>
+					<Title>Raumordnungsbehörde</Title>
+					<LegendURL width="400" height="32">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=raumordnung" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<MaxScaleDenominator>5000000</MaxScaleDenominator>
+			</Layer>
+			<Layer queryable="1">
+				<Title>Verwaltungsgemeinschaften (VG) und -verbände (VV)</Title>
+				<Abstract>Die Gruppenebene umfasst die Sitze der Verwaltungsgemeinschaften (VG) und Verwaltungsverbände (VV) sowie deren Grenzen.</Abstract>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:25833</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:25832</CRS>
+				<CRS>EPSG:31469</CRS>
+				<CRS>EPSG:31468</CRS>
+				<CRS>EPSG:31467</CRS>
+				<CRS>EPSG:31466</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3044</CRS>
+				<CRS>EPSG:3045</CRS>
+				<CRS>EPSG:3857</CRS>
+				<CRS>EPSG:3398</CRS>
+				<CRS>EPSG:3399</CRS>
+				<CRS>EPSG:2180</CRS>
+				<CRS>EPSG:5514</CRS>
+				<CRS>EPSG:5650</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>11.7</westBoundLongitude>
+					<eastBoundLongitude>15.1</eastBoundLongitude>
+					<southBoundLatitude>50.1</southBoundLatitude>
+					<northBoundLatitude>51.7</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+				<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+				<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+				<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+				<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+				<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+				<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+				<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+				<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+				<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+				<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+				<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+				<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+				<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+				<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+				<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+				<Layer queryable="1">
+					<Name>vgbereich</Name>
+					<Title>Gebiet VG/VV</Title>
+					<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst die Verwaltungsgemeinschaften und Verwaltungsverbände.</Abstract>
+					<CRS>EPSG:4326</CRS>
+					<CRS>EPSG:25833</CRS>
+					<CRS>EPSG:4258</CRS>
+					<CRS>EPSG:25832</CRS>
+					<CRS>EPSG:31469</CRS>
+					<CRS>EPSG:31468</CRS>
+					<CRS>EPSG:31467</CRS>
+					<CRS>EPSG:31466</CRS>
+					<CRS>EPSG:3034</CRS>
+					<CRS>EPSG:3035</CRS>
+					<CRS>EPSG:3044</CRS>
+					<CRS>EPSG:3045</CRS>
+					<CRS>EPSG:3857</CRS>
+					<CRS>EPSG:3398</CRS>
+					<CRS>EPSG:3399</CRS>
+					<CRS>EPSG:2180</CRS>
+					<CRS>EPSG:5514</CRS>
+					<CRS>EPSG:5650</CRS>
+					<EX_GeographicBoundingBox>
+						<westBoundLongitude>11.7</westBoundLongitude>
+						<eastBoundLongitude>15.1</eastBoundLongitude>
+						<southBoundLatitude>50.1</southBoundLatitude>
+						<northBoundLatitude>51.7</northBoundLatitude>
+					</EX_GeographicBoundingBox>
+					<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+					<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+					<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+					<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+					<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+					<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+					<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+					<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+					<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+					<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+					<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+					<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+					<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+					<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+					<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+					<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/html</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/2b43377c-1454-4c98-9ea4-a651d60a1794"/>
+					</MetadataURL>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/xml</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=2b43377c-1454-4c98-9ea4-a651d60a1794"/>
+					</MetadataURL>
+					<Style>
+						<Name>default</Name>
+						<Title>Gebiet VG/VV</Title>
+						<LegendURL width="160" height="32">
+							<Format>image/png</Format>
+							<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=vgbereich" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+						</LegendURL>
+					</Style>
+					<MaxScaleDenominator>5000000</MaxScaleDenominator>
+				</Layer>
+				<Layer queryable="1">
+					<Name>vgsitz</Name>
+					<Title>Verwaltungssitz VG/VV</Title>
+					<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst die Sitze der Verwaltungsgemeinschaften und Verwaltungsverbände.</Abstract>
+					<CRS>EPSG:4326</CRS>
+					<CRS>EPSG:25833</CRS>
+					<CRS>EPSG:4258</CRS>
+					<CRS>EPSG:25832</CRS>
+					<CRS>EPSG:31469</CRS>
+					<CRS>EPSG:31468</CRS>
+					<CRS>EPSG:31467</CRS>
+					<CRS>EPSG:31466</CRS>
+					<CRS>EPSG:3034</CRS>
+					<CRS>EPSG:3035</CRS>
+					<CRS>EPSG:3044</CRS>
+					<CRS>EPSG:3045</CRS>
+					<CRS>EPSG:3857</CRS>
+					<CRS>EPSG:3398</CRS>
+					<CRS>EPSG:3399</CRS>
+					<CRS>EPSG:2180</CRS>
+					<CRS>EPSG:5514</CRS>
+					<CRS>EPSG:5650</CRS>
+					<EX_GeographicBoundingBox>
+						<westBoundLongitude>11.7</westBoundLongitude>
+						<eastBoundLongitude>15.1</eastBoundLongitude>
+						<southBoundLatitude>50.1</southBoundLatitude>
+						<northBoundLatitude>51.7</northBoundLatitude>
+					</EX_GeographicBoundingBox>
+					<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+					<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+					<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+					<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+					<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+					<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+					<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+					<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+					<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+					<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+					<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+					<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+					<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+					<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+					<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+					<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+					<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/html</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/2b43377c-1454-4c98-9ea4-a651d60a1794"/>
+					</MetadataURL>
+					<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<Format>text/xml</Format>
+						<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=2b43377c-1454-4c98-9ea4-a651d60a1794"/>
+					</MetadataURL>
+					<Style>
+						<Name>default</Name>
+						<Title>Verwaltungssitz VG/VV</Title>
+						<LegendURL width="310" height="16">
+							<Format>image/png</Format>
+							<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=vgsitz" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+						</LegendURL>
+					</Style>
+					<MaxScaleDenominator>5000000</MaxScaleDenominator>
+				</Layer>
+			</Layer>
+			<Layer queryable="1">
+				<Name>kreisverwaltung</Name>
+				<Title>Kreisverwaltung</Title>
+				<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst die Verwaltungen der Landkreise und kreisfreien Städte.</Abstract>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:25833</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:25832</CRS>
+				<CRS>EPSG:31469</CRS>
+				<CRS>EPSG:31468</CRS>
+				<CRS>EPSG:31467</CRS>
+				<CRS>EPSG:31466</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3044</CRS>
+				<CRS>EPSG:3045</CRS>
+				<CRS>EPSG:3857</CRS>
+				<CRS>EPSG:3398</CRS>
+				<CRS>EPSG:3399</CRS>
+				<CRS>EPSG:2180</CRS>
+				<CRS>EPSG:5514</CRS>
+				<CRS>EPSG:5650</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>11.7</westBoundLongitude>
+					<eastBoundLongitude>15.1</eastBoundLongitude>
+					<southBoundLatitude>50.1</southBoundLatitude>
+					<northBoundLatitude>51.7</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+				<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+				<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+				<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+				<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+				<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+				<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+				<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+				<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+				<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+				<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+				<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+				<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+				<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+				<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+				<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+				<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<Format>text/html</Format>
+					<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/efed33eb-f1dc-45f0-8e21-584a3bd743bd"/>
+				</MetadataURL>
+				<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=efed33eb-f1dc-45f0-8e21-584a3bd743bd"/>
+				</MetadataURL>
+				<Style>
+					<Name>default</Name>
+					<Title>Kreisverwaltung</Title>
+					<LegendURL width="274" height="32">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=kreisverwaltung" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<MaxScaleDenominator>5000000</MaxScaleDenominator>
+			</Layer>
+			<Layer queryable="1">
+				<Name>gmdverwaltung</Name>
+				<Title>Gemeindeverwaltung</Title>
+				<Abstract>Die Ebene beinhaltet Daten des Verwaltungsatlas Sachsen. Er umfasst die Verwaltungen der Städte und Gemeinden.</Abstract>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:25833</CRS>
+				<CRS>EPSG:4258</CRS>
+				<CRS>EPSG:25832</CRS>
+				<CRS>EPSG:31469</CRS>
+				<CRS>EPSG:31468</CRS>
+				<CRS>EPSG:31467</CRS>
+				<CRS>EPSG:31466</CRS>
+				<CRS>EPSG:3034</CRS>
+				<CRS>EPSG:3035</CRS>
+				<CRS>EPSG:3044</CRS>
+				<CRS>EPSG:3045</CRS>
+				<CRS>EPSG:3857</CRS>
+				<CRS>EPSG:3398</CRS>
+				<CRS>EPSG:3399</CRS>
+				<CRS>EPSG:2180</CRS>
+				<CRS>EPSG:5514</CRS>
+				<CRS>EPSG:5650</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>11.7</westBoundLongitude>
+					<eastBoundLongitude>15.1</eastBoundLongitude>
+					<southBoundLatitude>50.1</southBoundLatitude>
+					<northBoundLatitude>51.7</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="EPSG:4326" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25833" maxx="507152" maxy="5732828" minx="264013" miny="5549754"/>
+				<BoundingBox CRS="EPSG:4258" maxx="51.7" maxy="15.1" minx="50.1" miny="11.7"/>
+				<BoundingBox CRS="EPSG:25832" maxx="936115" maxy="5745305" minx="686577" miny="5553241"/>
+				<BoundingBox CRS="EPSG:31469" maxx="5734676" maxy="5507292" minx="5551530" miny="5264055"/>
+				<BoundingBox CRS="EPSG:31468" maxx="5734076" maxy="4721882" minx="5551571" miny="4478642"/>
+				<BoundingBox CRS="EPSG:31467" maxx="5747168" maxy="3936365" minx="5555025" miny="3686725"/>
+				<BoundingBox CRS="EPSG:31466" maxx="5768848" maxy="3150628" minx="5567116" miny="2893967"/>
+				<BoundingBox CRS="EPSG:3034" maxx="2779509" maxy="4352095" minx="2597233" miny="4113494"/>
+				<BoundingBox CRS="EPSG:3035" maxx="3188939" maxy="4685588" minx="3000042" miny="4438519"/>
+				<BoundingBox CRS="EPSG:3044" maxx="5745305" maxy="936115" minx="5553241" miny="686577"/>
+				<BoundingBox CRS="EPSG:3045" maxx="5732828" maxy="507152" minx="5549754" miny="264013"/>
+				<BoundingBox CRS="EPSG:3857" maxx="1680924" maxy="6746062" minx="1302438" miny="6463612"/>
+				<BoundingBox CRS="EPSG:3398" maxx="5733926" maxy="4721749" minx="5551444" miny="4478539"/>
+				<BoundingBox CRS="EPSG:3399" maxx="5734533" maxy="5507154" minx="5551406" miny="5263947"/>
+				<BoundingBox CRS="EPSG:2180" maxx="451212" maxy="230606" minx="255368" miny="-21675"/>
+				<BoundingBox CRS="EPSG:5514" maxx="-671845" maxy="-836278" minx="-934966" miny="-1048039"/>
+				<BoundingBox CRS="EPSG:5650" maxx="33507152" maxy="5732828" minx="33264013" miny="5549754"/>
+				<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<Format>text/html</Format>
+					<OnlineResource xlink:type="simple" xlink:href="https://geomis.sachsen.de/geomis-client/?lang=de#/datasets/iso/efed33eb-f1dc-45f0-8e21-584a3bd743bd"/>
+				</MetadataURL>
+				<MetadataURL type="ISO19115:2003" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple" xlink:href="https://www.geomis.sachsen.de/geomis-csw/api?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=efed33eb-f1dc-45f0-8e21-584a3bd743bd"/>
+				</MetadataURL>
+				<Style>
+					<Name>default</Name>
+					<Title>Gemeindeverwaltung</Title>
+					<LegendURL width="286" height="80">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="https://geodienste.sachsen.de/wms_smr_kommunales/guest?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=gmdverwaltung" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<MaxScaleDenominator>5000000</MaxScaleDenominator>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMS_Capabilities>

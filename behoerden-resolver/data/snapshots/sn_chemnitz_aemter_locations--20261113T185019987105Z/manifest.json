@@ -1,0 +1,168 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "sn_chemnitz_aemter_locations",
+    "kind": "authority_point",
+    "scope": "DE-SN",
+    "format": "arcgis_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://www.arcgis.com/home/item.html?id=97e3e69fdf8541b59fb348b6061b8d2a",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Stadt Chemnitz, dl-de/by-2-0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "OBJECTID",
+    "routes": [
+      {
+        "category": "stadtverwaltung",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            3
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "ordnungsamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            9
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "buergeramt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            10
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "umweltamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            11
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            13
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "schulamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            14
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "sozialamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            15
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "jugendamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            16
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            17
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      },
+      {
+        "category": "bauamt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            20
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      }
+    ],
+    "endpoint": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Aemter_FL_1/FeatureServer/0",
+    "source_date": "ArcGIS editingInfo.lastEditDate where available"
+  },
+  "completed_at": "2026-11-13T18:50:19.986061+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "stadtverwaltung": 1,
+    "ordnungsamt": 1,
+    "buergeramt": 1,
+    "umweltamt": 1,
+    "veterinaeramt": 1,
+    "schulamt": 1,
+    "sozialamt": 1,
+    "jugendamt": 1,
+    "gesundheitsamt": 1,
+    "bauamt": 1
+  },
+  "records_sha256": "2211890a3cada3e39a6d9120956a3d3f12e29a7a27623650b32aff92f8564839",
+  "requests": [
+    {
+      "path": "raw/metadata.gz",
+      "request_url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Aemter_FL_1/FeatureServer/0?f=json",
+      "retrieved_at": "2026-11-13T18:50:19.980276+00:00",
+      "response_sha256": "7d3d93382032baa6f356d672c50ce4621aee94c8e8a8a63a6e26e24d5e087fed",
+      "bytes": 12076
+    },
+    {
+      "path": "raw/ids.gz",
+      "request_url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Aemter_FL_1/FeatureServer/0/query?where=1%3D1&returnIdsOnly=true&f=json",
+      "retrieved_at": "2026-11-13T18:50:19.982075+00:00",
+      "response_sha256": "cb2649cf7424317cdbc8b64f399550cd56a87b6d8789a6c64577275409df6fb4",
+      "bytes": 117
+    },
+    {
+      "path": "raw/page-0.gz",
+      "request_url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Aemter_FL_1/FeatureServer/0/query?objectIds=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26&outFields=%2A&outSR=4326&f=geojson",
+      "retrieved_at": "2026-11-13T18:50:19.983465+00:00",
+      "response_sha256": "3dd24e9644a7b32ef176a7f8c5ff979c1e9da0c8c25fffecf0030cd73009cecc",
+      "bytes": 10195
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_features": 26,
+  "classification_audit": {
+    "excluded_unrelated_authority_kind": 16
+  },
+  "location_coverage_only": true
+}

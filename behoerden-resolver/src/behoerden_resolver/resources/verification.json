@@ -1,0 +1,566 @@
+{
+  "verified_at": "2026-11-13T17:57:14.763330+00:00",
+  "sources": [
+    {
+      "source_id": "bzb_amtsgericht",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+      "layer": "bzb-open:gerichte_amtsgerichte",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Agerichte_amtsgerichte",
+          "sha256": "e6bb7c4ce495057713077497454bbf0c6e375756444bb9f746fe36032140f83d"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+          "sha256": "ae85fe426d6984fdd34e128db840256327b8792a36e7daa492260716649bba05"
+        }
+      }
+    },
+    {
+      "source_id": "bzb_landgericht",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+      "layer": "bzb-open:gerichte_landgerichte",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Agerichte_landgerichte",
+          "sha256": "00aa05171279538246a41380253a709e806152a5c47c5ae0828e83feba8ade61"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_landgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+          "sha256": "8ffcb6285906ae1fde621872a1ea56c469e411b5a9f38143db3327c272083194"
+        }
+      }
+    },
+    {
+      "source_id": "bzb_jobcenter",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+      "layer": "bzb-open:ba_jobcenter",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "24c2cc600a9c59844ad62af20239000bfe6883203d4990c1f940b25d6fe0832b"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_jobcenter",
+          "sha256": "b9a312a16f9fc9ef182864508aa5022c8e10e0f58cffe5f41609fcaf15f8c2ce"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+          "sha256": "d24a1b9a49d2d48a90d484a9bd2b4126ba4d8ab7b9ca80c6cdbcdaca293f9c3a"
+        }
+      }
+    },
+    {
+      "source_id": "bzb_arbeitsagentur",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+      "layer": "bzb-open:ba_arbeitsagenturen",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_arbeitsagenturen",
+          "sha256": "4e28d7a08cccd9cc1fa6921f4bff25d0685f7722e83c0c8e9f23d3dfc9a57b94"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_arbeitsagenturen&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+          "sha256": "751abdbd17576d2a982a70d4d1a4b4e3bba58f97cd77bc32e14ff4a4eaafa405"
+        }
+      }
+    },
+    {
+      "source_id": "vg25_krs",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+      "layer": "vg25:vg25_krs",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_krs",
+          "sha256": "c6145c602a3729783a9cd1df359c4f32e17e90b5199bd3de5343678beb7c3659"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+          "sha256": "58ba9b9e95387f12557260e471bdc8f7a5bf73489240073160e6f8ace8b32d3d"
+        }
+      }
+    },
+    {
+      "source_id": "vg25_rbz",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+      "layer": "vg25:vg25_rbz",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "a0d81b31444498dfff354175a3b600c7b9e3421f1678c3cd80c0a4cfc668c1c7"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_rbz",
+          "sha256": "8e53a1f76ef217417a6e0d735643fbae1a97716630820f4a39c4fd4877fc26fa"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_rbz&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+          "sha256": "782314d77ce1abe07617e752d765b573d45556b54e9c464ac9a0182b93a906b9"
+        }
+      }
+    },
+    {
+      "source_id": "vg25_gem",
+      "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+      "layer": "vg25:vg25_gem",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6"
+        },
+        "schema": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_gem",
+          "sha256": "a775c01b9a123c7284541ec065493f5dbf8cfd3e5831964e281c7d2544d9aadb"
+        },
+        "sample": {
+          "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_gem&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+          "sha256": "a275f4577d1ec1c57c1cfe1f1d1c9a0877e04dd8c339b6b4ab51bebae6dc4375"
+        }
+      }
+    },
+    {
+      "source_id": "by_kreis",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:KreisverwaltungsbehoerdenFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "cd69906f09d35b66c033e592e2a27b1eb8451b2bf36c096a7c4515327af69339"
+        }
+      }
+    },
+    {
+      "source_id": "by_regierung",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:RegierungenFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3ARegierungenFlaeche",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3ARegierungenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "421fc645c87f5b6565b5addab8e97a73fe49b7c8f5d2adf7e6eaa1a198eeebeb"
+        }
+      }
+    },
+    {
+      "source_id": "by_verwaltungsgericht",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:VerwaltungsgerichtsbarkeitFlaeche",
+      "status": "excluded",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AVerwaltungsgerichtsbarkeitFlaeche",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AVerwaltungsgerichtsbarkeitFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "4a939cdf88a20ed3f396307af7427202bde26588e6192b8415bca1fd4b2d0cdf"
+        }
+      },
+      "reason": "Live-Vollabfrage am 13.11.2026 lieferte nur 4 Features: Verwaltungsgerichtshof und Landesanwaltschaft, keine erstinstanzlichen Verwaltungsgerichte. Metadatenbeschreibung allein reicht nicht."
+    },
+    {
+      "source_id": "by_polizei",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:PolizeiinspektionenFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3APolizeiinspektionenFlaeche",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "18207bdb12a1fe39ef1075523154e22be5b5ae450e62bac3d9fd79d1aa306191"
+        }
+      }
+    },
+    {
+      "source_id": "by_finanzamt",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs",
+      "layer": "stmfh:SteuerverwaltungFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "cbcd09bdb5e72bcb7b75aa51888c51240c1d05a2b5196ce29c904bd99ef299a8"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmfh%3ASteuerverwaltungFlaeche",
+          "sha256": "6c9b005b231dca1d4d0b91fb40008e0db9b759111e737f385dc836f691338ffd"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "51c5e18d2a9234d2842d2ac1ace13e1ea23e21a974b5cd6cc650217aee98f802"
+        }
+      }
+    },
+    {
+      "source_id": "by_staatsanwaltschaft",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs",
+      "layer": "stmj:LandgerichteStaatsanwaltschaftenFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "6fbf8023f615450bf28d861af76e040c9d6b85dfd032532ddd1d1e2632bce0a1"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenFlaeche",
+          "sha256": "0c03e8158dfe8b9b659706771b4667fc7e7cf18ee90671456a2bfe27550c374a"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "b1a0ca753ee08b35a548aa85726da316d071c81bac93ab611415f8789cc8e94d"
+        }
+      }
+    },
+    {
+      "source_id": "by_schulamt",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs",
+      "layer": "stmuk:SchulaemterFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "af9f86d7fd3db2e22ea1a882763df45cb27de04d6791b59cc62ccdc30b8851a1"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmuk%3ASchulaemterFlaeche",
+          "sha256": "15e07eaeb868cdf30c49ee51ecf1bd6c54e16c46f27594ad7dfa606b0a45f158"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "901628bfb359ab43443ec0d3d9f4a7532a276936ae0390d5cbfc25704e775951"
+        }
+      }
+    },
+    {
+      "source_id": "by_ihk",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+      "layer": "Sonstige:IndustrieHandelskammernFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AIndustrieHandelskammernFlaeche",
+          "sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AIndustrieHandelskammernFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "127913b01925661f0ab86e76a4d4b95d8344557926387f030c42b8f2bf76a960"
+        }
+      }
+    },
+    {
+      "source_id": "by_handwerkskammer",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+      "layer": "Sonstige:HandwerkskammernFlaeche",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AHandwerkskammernFlaeche",
+          "sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "8f756970381b56391f922c79c4cca6c2237fb5cf98d0ad49bd32cb96d61441f9"
+        }
+      }
+    },
+    {
+      "source_id": "hh_finanzamt",
+      "endpoint": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke",
+      "layer": "de.hh.up:finanzamtbezirke",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "d226570a435be79f899dd224b659706766c6c02a53f6f243f62f99a1e314032c"
+        },
+        "schema": {
+          "url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=de.hh.up%3Afinanzamtbezirke",
+          "sha256": "cac3d335d17e0688233b4c155bd56a4e9c4a7aeedf62703b37dd9b0eb72bacb3"
+        },
+        "sample": {
+          "url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Afinanzamtbezirke&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=finanzamt_nr",
+          "sha256": "e3aba794913474946a61c98e4258968acdecb8d54f19a187cecc9280939e0070"
+        }
+      }
+    },
+    {
+      "source_id": "bb_polizei",
+      "endpoint": "https://inspire.brandenburg.de/services/polbb_wfs",
+      "layer": "app:inspektionen",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "95b29cbb2909c66c0e3e768398901f1954f5ee01903c9e1f83153bee0e92caa1"
+        },
+        "schema": {
+          "url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=app%3Ainspektionen",
+          "sha256": "44f33524a68874265d8e04b415022fe23b22c6dff0b2589d87b2b0e2357acdc6"
+        },
+        "sample": {
+          "url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Ainspektionen&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=bkz",
+          "sha256": "fb11e631c899e3116e7760dd267818a6693dbfc1eeb80ba837f8951cd4338026"
+        }
+      }
+    },
+    {
+      "source_id": "by_finanzamt_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs",
+      "layer": "stmfh:SteuerverwaltungStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "cbcd09bdb5e72bcb7b75aa51888c51240c1d05a2b5196ce29c904bd99ef299a8"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmfh%3ASteuerverwaltungStandort",
+          "sha256": "6c9b005b231dca1d4d0b91fb40008e0db9b759111e737f385dc836f691338ffd"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "5f69bf8863e82adb84923b71c562d282cb403108db88959b1e3732fe07e620a0"
+        }
+      }
+    },
+    {
+      "source_id": "by_kreis_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:KreisverwaltungsbehoerdenStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AKreisverwaltungsbehoerdenStandort",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "4753dd3170245c2ba7d1b5393b2819b26bc609349153c7e2375a082a59c75a34"
+        }
+      }
+    },
+    {
+      "source_id": "by_regierung_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:RegierungenStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3ARegierungenStandort",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3ARegierungenStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "55a15aaae575fff38b4a478b26f8701046105c19a37d6fd5af42b3f6cfe8f977"
+        }
+      }
+    },
+    {
+      "source_id": "by_verwaltungsgericht_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:VerwaltungsgerichtsbarkeitStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AVerwaltungsgerichtsbarkeitStandort",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AVerwaltungsgerichtsbarkeitStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "cc39d4a1584a4ba5468dbe676f32a21d2c1b8ca50e3d7c0d10a6839949923a22"
+        }
+      }
+    },
+    {
+      "source_id": "by_polizei_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:PolizeiinspektionenStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3APolizeiinspektionenStandort",
+          "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "3b08790f01d349f34de05048c9718c1e107db31b3c26ae72499ebc8e7e86c6d4"
+        }
+      }
+    },
+    {
+      "source_id": "by_staatsanwaltschaft_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs",
+      "layer": "stmj:LandgerichteStaatsanwaltschaftenStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "6fbf8023f615450bf28d861af76e040c9d6b85dfd032532ddd1d1e2632bce0a1"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenStandort",
+          "sha256": "0c03e8158dfe8b9b659706771b4667fc7e7cf18ee90671456a2bfe27550c374a"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "b93587350cd64c12c03c5b443728323279dff84118514deda1295e54696115ec"
+        }
+      }
+    },
+    {
+      "source_id": "by_schulamt_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs",
+      "layer": "stmuk:SchulaemterStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "af9f86d7fd3db2e22ea1a882763df45cb27de04d6791b59cc62ccdc30b8851a1"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmuk%3ASchulaemterStandort",
+          "sha256": "15e07eaeb868cdf30c49ee51ecf1bd6c54e16c46f27594ad7dfa606b0a45f158"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmuk-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmuk%3ASchulaemterStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "fb5280f5e52bde9cd0448d1585a1d4318a6d894f548b201195e5b049e2bdcbb1"
+        }
+      }
+    },
+    {
+      "source_id": "by_ihk_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+      "layer": "Sonstige:IndustrieHandelskammernStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AIndustrieHandelskammernStandort",
+          "sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AIndustrieHandelskammernStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "671b9bd17d5cdd88683a5b25de09c87a4c180784abfd53be8b4cfe4b7c7e696a"
+        }
+      }
+    },
+    {
+      "source_id": "by_handwerkskammer_locations",
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+      "layer": "Sonstige:HandwerkskammernStandort",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306"
+        },
+        "schema": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AHandwerkskammernStandort",
+          "sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289"
+        },
+        "sample": {
+          "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernStandort&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+          "sha256": "df03cbd065bc23c1f1cbebb152fba38aaac4e0a16767dd4ebd2e7e7dc348586a"
+        }
+      }
+    },
+    {
+      "source_id": "bb_polizei_locations",
+      "endpoint": "https://inspire.brandenburg.de/services/polbb_wfs",
+      "layer": "app:standorte",
+      "status": "verified",
+      "checks": {
+        "capabilities": {
+          "url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+          "sha256": "95b29cbb2909c66c0e3e768398901f1954f5ee01903c9e1f83153bee0e92caa1"
+        },
+        "schema": {
+          "url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=app%3Astandorte",
+          "sha256": "4a572fb8c63291439bab1f62850c0ee13e8906b5f31375593f34e9de65a5d178"
+        },
+        "sample": {
+          "url": "https://inspire.brandenburg.de/services/polbb_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app%3Astandorte&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=standort_name",
+          "sha256": "c87c8b42f29001c74772ea6c109b1b132ee0dfdfb0caec20ec0e3c7f3fdfc6e4"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "hh_finanzamt",
+    "kind": "authority",
+    "scope": "DE-HH",
+    "format": "gml",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "finanzamt",
+        "name_field": "finanzamt_name",
+        "name_prefix_literal": "Finanzamt "
+      }
+    ],
+    "documentation": "https://www.geoportal.de/info/1998EDF3-C86D-4FBD-9CC5-B230E40EF47B",
+    "license": "dl-de/zero-2-0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": "Statistikamt Nord; Datenlizenz Deutschland Zero 2.0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "aenderungsdatum in source, layer metadata 2022/2026; inspect record freshness",
+    "endpoint": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke",
+    "layer": "de.hh.up:finanzamtbezirke",
+    "request_crs": "EPSG:3857",
+    "sort_by": "finanzamt_nr",
+    "geometry_field": "geom"
+  },
+  "started_at": "2026-11-13T17:19:22.391478+00:00",
+  "completed_at": "2026-11-13T17:19:23.098106+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 18,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "finanzamt": 18
+  },
+  "source_subgroups": {
+    "n/a": 18
+  },
+  "records_sha256": "84636e5dfb2c60cf0944095b972353571256fc8b72eeba785501393817da81d8",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T17:19:22.713581+00:00",
+      "response_sha256": "d226570a435be79f899dd224b659706766c6c02a53f6f243f62f99a1e314032c",
+      "bytes": 29979
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=de.hh.up%3Afinanzamtbezirke",
+      "retrieved_at": "2026-11-13T17:19:22.713825+00:00",
+      "response_sha256": "13f6ce13868c25ed6f732233fee6c7d030ae7354dcaf3b6cb3efda2619f05920",
+      "bytes": 2062
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Afinanzamtbezirke&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=finanzamt_nr",
+      "retrieved_at": "2026-11-13T17:19:22.714529+00:00",
+      "response_sha256": "3c223460cb50bb911d32bc3c7e9752b1977d641dd36616f5e80fc91de839c6f2",
+      "bytes": 15173
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Afinanzamtbezirke&srsName=EPSG%3A3857&startIndex=0&count=100&sortBy=finanzamt_nr",
+      "retrieved_at": "2026-11-13T17:19:22.878969+00:00",
+      "response_sha256": "3d08f1a9f53952f60d223a6de9d38a33e9aee793d1d5dc9d62259cd8ea5719e4",
+      "bytes": 313527
+    },
+    {
+      "path": "raw/page-000018.gz",
+      "request_url": "https://geodienste.hamburg.de/HH_WFS_Finanzamtbezirke?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Afinanzamtbezirke&srsName=EPSG%3A3857&startIndex=18&count=100&sortBy=finanzamt_nr",
+      "retrieved_at": "2026-11-13T17:19:23.096610+00:00",
+      "response_sha256": "927328eb900882b0f97eb36b4587ca3223f072521fc75226d43e75b8370574b6",
+      "bytes": 1062
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

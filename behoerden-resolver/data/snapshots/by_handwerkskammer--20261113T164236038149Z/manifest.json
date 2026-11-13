@@ -1,0 +1,80 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_handwerkskammer",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs",
+    "layer": "Sonstige:HandwerkskammernFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "handwerkskammer",
+        "name_field": "bezeichnung"
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:42:29.136103+00:00",
+  "completed_at": "2026-11-13T16:42:36.035244+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 7,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "handwerkskammer": 7
+  },
+  "source_subgroups": {
+    "hwk": 7
+  },
+  "records_sha256": "1c97d6d567d1751e75e5b40f97f2647f3be320fdddd3207d5646dd3ba41063b4",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:42:31.922165+00:00",
+      "response_sha256": "f8f057a00a73d554540d625b71dc2a8769f5b05bda9b0ed6416e39f17c29d306",
+      "bytes": 35744
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=Sonstige%3AHandwerkskammernFlaeche",
+      "retrieved_at": "2026-11-13T16:42:31.922359+00:00",
+      "response_sha256": "d541abb39afb5483edf0bf6c6b0f6775cdcdec7675cfc00a4cc3ec6f82acd289",
+      "bytes": 7576
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:32.105601+00:00",
+      "response_sha256": "5fb3c13f9418eee631935b619e0fb5c03451907e96a85f96daaf16097bc518cb",
+      "bytes": 2103324
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernFlaeche&srsName=EPSG%3A3857&startIndex=0&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:34.216907+00:00",
+      "response_sha256": "68f8db188fba45997627e7c378589219e79f967144ed12727dcac7b49344411c",
+      "bytes": 12119665
+    },
+    {
+      "path": "raw/page-000007.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_sonstige_institutionen-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=Sonstige%3AHandwerkskammernFlaeche&srsName=EPSG%3A3857&startIndex=7&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:36.030076+00:00",
+      "response_sha256": "0a0863a8a6f88e1512a38537dad0380bfa10e67f0ec2e0b3254ac880483400db",
+      "bytes": 1069
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

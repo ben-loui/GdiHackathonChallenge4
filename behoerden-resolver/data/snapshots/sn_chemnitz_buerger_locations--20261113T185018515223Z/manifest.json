@@ -1,0 +1,78 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "sn_chemnitz_buerger_locations",
+    "kind": "authority_point",
+    "scope": "DE-SN",
+    "format": "arcgis_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://www.arcgis.com/home/item.html?id=4da8c7af71bf412b803a6b3558344650",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Stadt Chemnitz, dl-de/by-2-0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "OBJECTID",
+    "routes": [
+      {
+        "category": "buergeramt",
+        "name_field": "BEZEICHNUNG",
+        "filter": {
+          "OBJECTID": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "name_prefix_literal": "Stadt Chemnitz – "
+      }
+    ],
+    "endpoint": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Buergerservicestellen_FL_1/FeatureServer/0",
+    "source_date": "ArcGIS editingInfo.lastEditDate where available"
+  },
+  "completed_at": "2026-11-13T18:50:18.509448+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "buergeramt": 12
+  },
+  "records_sha256": "9badcc6cdfd6327d49085423ae3be7352681c009e3a83f78d4b08490bcf55a3e",
+  "requests": [
+    {
+      "path": "raw/metadata.gz",
+      "request_url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Buergerservicestellen_FL_1/FeatureServer/0?f=json",
+      "retrieved_at": "2026-11-13T18:50:18.492152+00:00",
+      "response_sha256": "21f76faa63acc9f48635de13f9102c81df110485a225be7f7cb23d20ec4fcec4",
+      "bytes": 12125
+    },
+    {
+      "path": "raw/ids.gz",
+      "request_url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Buergerservicestellen_FL_1/FeatureServer/0/query?where=1%3D1&returnIdsOnly=true&f=json",
+      "retrieved_at": "2026-11-13T18:50:18.493317+00:00",
+      "response_sha256": "0eea900c5d2d5876e423fb279149fa33661bd24e57d331911b8c8554a86a5e86",
+      "bytes": 75
+    },
+    {
+      "path": "raw/page-0.gz",
+      "request_url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Buergerservicestellen_FL_1/FeatureServer/0/query?objectIds=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12&outFields=%2A&outSR=4326&f=geojson",
+      "retrieved_at": "2026-11-13T18:50:18.506753+00:00",
+      "response_sha256": "5741b6eb4ab0ac909d6566e6e14f747e5f79ced4c8eea97d7dd4d5acfbc33add",
+      "bytes": 5076
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_features": 12,
+  "classification_audit": {},
+  "location_coverage_only": true
+}

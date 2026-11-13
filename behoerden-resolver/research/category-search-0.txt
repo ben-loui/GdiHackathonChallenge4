@@ -1,0 +1,371 @@
+{
+  "categories": [
+    "ordnungsamt",
+    "buergeramt",
+    "standesamt",
+    "auslaenderbehoerde"
+  ],
+  "queries": [
+    {
+      "q": "\"Ordnungsamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Bürgeramt Meldebehörde\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Standesamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Ausländerbehörde\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    }
+  ]
+}
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/7.fassung/20250501_datensatz_v7.html)
+citeturn22search0 [wordlim: 200] Published: 1.5 years ago; Crawled: yesterday; DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt ... Das Behördenkennzeichen der Ausländerbehörde, die für den Aufenthalt einer ausländische Person zuständig ist. ... § 10 Asylbewerberleistungsgesetz für Leistungen nach diesem Gesetz örtlich zuständig ist. ... Bezirk der Ausländerbehörde, auf den sich eine Wohnsitzauflage, räumliche Beschränkung, Wohnsitzregelung oder Wohnsitzverpflichtung bezieht, wenn die Angabe in Datenblatt Nr.
+
+# Kapitel 11. 010 Zuständigkeit
+
+Inhaltsverzeichnis
+
+010.01 Zuständige Aufnahmeeinrichtung
+010.02 Zuständige Aufnahmeeinrichtung (Freitext)
+010.03 Zuständige Ausländerbehörde
+010.04 Zuständige Ausländerbehörde (Freitext)
+010.05 Zuständige Asylbewerberleistungsbehörde
+010.06 Zuständige Asylbewerberleistungsbehörde (Freitext)
+010.07 Jugendamt der vorläufigen Inobhutnahme
+010.08 Jugendamt der vorläufigen Inobhutnahme (Freitext)
+010.09 Endgültig zuständiges Jugendamt
+010.10 Endgültig zuständiges Jugendamt (Freitext)
+010.11 Zuständiges Bundesland
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 23.06.2022  | 010
+Gruppenname  | Häufigkeit  | 0..1
+Zuständigkeit
+Beschreibung der Gruppe
+Weitere zuständige Behörden, welche auf Grund gesetzlich zugewiesener Aufgaben ebenfalls involviert sind.
+Beinhaltet
+
+  * 010.01 - Zuständige Aufnahmeeinrichtung
+  * 010.02 - Zuständige Aufnahmeeinrichtung (Freitext)
+  * 010.03 - Zuständige Ausländerbehörde
+  * 010.04 - Zuständige Ausländerbehörde (Freitext)
+  * 010.05 - Zuständige Asylbewerberleistungsbehörde
+  * 010.06 - Zuständige Asylbewerberleistungsbehörde (Freitext)
+  * 010.07 - Jugendamt der vorläufigen Inobhutnahme
+  * 010.08 - Jugendamt der vorläufigen Inobhutnahme (Freitext)
+  * 010.09 - Endgültig zuständiges Jugendamt
+  * 010.10 - Endgültig zuständiges Jugendamt (Freitext)
+  * 010.11 - Zuständiges Bundesland
+
+Feldbezeichnung
+Zuständige Aufnahmeeinrichtung (Freitext)
+Feldlänge  | 25  | Fest/Variabel  | variabel  | Häufigkeit  | 0..1  | Vorgaben  | text
+Beschreibung des Feldinhalts
+Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.
+Rechtliche Grundlagen
+AsylG: § 7, § 8, § 45, § 46, §§ 50 - 54
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+## 010.03 Zuständige Ausländerbehörde
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 24.08.2022  | 010.03
+Feldbezeichnung
+Zuständige Ausländerbehörde
+Feldlänge  | 6  | Fest/Variabel  | fest  | Häufigkeit  | 0..1  | Vorgaben  | behoerdenkennzeichen
+Beschreibung des Feldinhalts
+Das Behördenkennzeichen der Ausländerbehörde, die für den Aufenthalt einer ausländische Person zuständig ist.
+Hinweise zur Datenqualität
+Bezeichnet die jeweilige Behördenkennung einer Ausländerbehörde (ABH), Zentralen Ausländerbehörde (ZAB) oder Aufnahmeeinrichtung (AE).
+Rechtliche Grundlagen
+AufenthG: § 71 Abs. 1
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+## 010.04 Zuständige Ausländerbehörde (Freitext)
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 01.08.2024  | 010.04
+Feldbezeichnung
+Zuständige Ausländerbehörde (Freitext)
+Feldlänge  | 25  | Fest/Variabel  | variabel  | Häufigkeit  | 0..1  | Vorgaben  | text
+Beschreibung des Feldinhalts
+Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.
+Rechtliche Grundlagen
+AufenthG: § 71 Abs. 1
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+## 010.05 Zuständige Asylbewerberleistungsbehörde
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 23.06.2022  | 010.05
+Feldbezeichnung
+Zuständige Asylbewerberleistungsbehörde
+Feldlänge  | 6  | Fest/Variabel  | fest  | Häufigkeit  | 0..1  | Vorgaben  | behoerdenkennzeichen
+Beschreibung des Feldinhalts
+Das Behördenkennzeichen der Behörde, die gem. § 10 Asylbewerberleistungsgesetz für Leistungen nach diesem Gesetz örtlich zuständig ist. Die für die Durchführung dieses Gesetzes zuständigen Behörden werden durch die Landesregierungen oder die von ihnen beauftragten obersten Landesbehörden bestimmt.
+Rechtliche Grundlagen
+AsylbLG: § 10
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+## 010.06 Zuständige Asylbewerberleistungsbehörde (Freitext)
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 09.11.2022  | 010.06
+Feldbezeichnung
+Zuständige Asylbewerberleistungsbehörde (Freitext)
+Feldlänge  | 25  | Fest/Variabel  | variabel  | Häufigkeit  | 0..1  | Vorgaben  | text
+Beschreibung des Feldinhalts
+Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.
+Rechtliche Grundlagen
+AsylbLG: § 10
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+--------------------------------------------------------------------------------
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/3.fassung/20240401_datensatz_v3.html)
+citeturn22search1 [wordlim: 200] Published: 2.6 years ago; Crawled: today; DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Blatt ... Das Behördenkennzeichen der Ausländerbehörde, die für den Aufenthalt einer ausländische Person zuständig ist. ... § 10 Asylbewerberleistungsgesetz für Leistungen nach diesem Gesetz örtlich zuständig ist. ... Der Bezirk der Ausländerbehörde, auf den sich die räumliche Beschränkung bezieht, wenn die Angabe in Datenblatt Nr.
+# Kapitel 10. 010 Zuständigkeit
+
+Inhaltsverzeichnis
+
+010.01 Zuständige Aufnahmeeinrichtung
+010.02 Zuständige Aufnahmeeinrichtung (Freitext)
+010.03 Zuständige Ausländerbehörde
+010.04 Zuständige Ausländerbehörde (Freitext)
+010.05 Zuständige Asylbewerberleistungsbehörde
+010.06 Zuständige Asylbewerberleistungsbehörde (Freitext)
+010.07 Jugendamt der vorläufigen Inobhutnahme
+010.08 Jugendamt der vorläufigen Inobhutnahme (Freitext)
+010.09 Endgültig zuständiges Jugendamt
+010.10 Endgültig zuständiges Jugendamt (Freitext)
+010.11 Zuständiges Bundesland
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Blatt
+ | 010
+Gruppenname  | Häufigkeit  | 0..1
+Zuständigkeit
+Beschreibung der Gruppe
+Weitere zuständige Behörden, welche auf Grund gesetzlich zugewiesener Aufgaben ebenfalls involviert sind.
+Beinhaltet
+
+  * 010.01 - Zuständige Aufnahmeeinrichtung
+  * 010.02 - Zuständige Aufnahmeeinrichtung (Freitext)
+--------------------------------------------------------------------------------
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/5.fassung/20241201_datensatz_v5.html)
+citeturn22search2 [wordlim: 200] Published: 2.0 years ago; Crawled: today; DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt ... Das Behördenkennzeichen der Ausländerbehörde, die für den Aufenthalt einer ausländische Person zuständig ist. ... Das Behördenkennzeichen der Ausländerbehörde, auf deren Bezirk der Aufenthalt beschränkt ist.
+## 010.02 Zuständige Aufnahmeeinrichtung (Freitext)
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 1.8.2024  | 010.02
+Feldbezeichnung
+Zuständige Aufnahmeeinrichtung (Freitext)
+Feldlänge  | 25  | Fest/Variabel  | variabel  | Häufigkeit  | 0..1  | Vorgaben  | Text
+Beschreibung des Feldinhalts
+Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.
+Rechtliche Grundlagen
+AsylG: § 7, § 8, § 45, § 46, §§ 50 - 54
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+## 010.03 Zuständige Ausländerbehörde
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 24.8.2022  | 010.03
+Feldbezeichnung
+Zuständige Ausländerbehörde
+Feldlänge  | 6  | Fest/Variabel  | fest  | Häufigkeit  | 0..1  | Vorgaben  | Behördenkennzeichen
+Beschreibung des Feldinhalts
+Das Behördenkennzeichen der Ausländerbehörde, die für den Aufenthalt einer ausländische Person zuständig ist.
+Hinweise zur Datenqualität
+Bezeichnet die jeweilige Behördenkennung einer Ausländerbehörde (ABH), Zentralen Ausländerbehörde (ZAB) oder Aufnahmeeinrichtung (AE).
+Rechtliche Grundlagen
+AufenthG: § 71 Abs. 1
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+## 010.04 Zuständige Ausländerbehörde (Freitext)
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 1.8.2024  | 010.04
+Feldbezeichnung
+Zuständige Ausländerbehörde (Freitext)
+Feldlänge  | 25  | Fest/Variabel  | variabel  | Häufigkeit  | 0..1  | Vorgaben  | Text
+Beschreibung des Feldinhalts
+Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.
+Rechtliche Grundlagen
+AufenthG: § 71 Abs. 1
+Darstellungsform
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+--------------------------------------------------------------------------------
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/7.fassung/diff_v6_v7.pdf)
+citeturn22search12 [wordlim: 200] Published: 1.5 years ago; Crawled: last week; Datensatz für das Ausländerwesen ... <td colspan="4">Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.</td>
+Datensatz für das Ausländerwesen  
+010.04 Zuständige Ausländerbehörde (Freitext)
+
+# 010.04 Zuständige Ausländerbehörde (Freitext)
+
+<table id="e1">
+<tr>
+<th colspan="2">DATENSATZ FÜR DAS AUSLÄNDERWESEN</th>
+<th>Stand</th>
+<th>Blatt</th>
+</tr>
+<tr>
+<td colspan="2"></td>
+<td>01.08.2024</td>
+<td>010.04</td>
+</tr>
+<tr>
+<td colspan="4">Feldbezeichnung</td>
+</tr>
+<tr>
+<td colspan="4">Zuständige Ausländerbehörde (Freitext)</td>
+</tr>
+<tr>
+<td>Feldlänge</td>
+<td>25</td>
+<td>Fest/Variabel</td>
+<td>variabel</td>
+</tr>
+<tr>
+<td>Häufigkeit</td>
+<td>0..1</td>
+<td>Vorgaben</td>
+<td>text</td>
+</tr>
+<tr>
+<td colspan="4">Beschreibung des Feldinhalts</td>
+</tr>
+<tr>
+<td colspan="4">Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.</td>
+</tr>
+<tr>
+<td colspan="4">Rechtliche Grundlagen</td>
+</tr>
+<tr>
+<td colspan="4">AufenthG: § 71 Abs. 1</td>
+</tr>
+<tr>
+<td colspan="4">Darstellungsform</td>
+</tr>
+<tr>
+<td colspan="4"></td>
+</tr>
+<tr>
+<td colspan="4">Bestandteil der Gruppe</td>
+</tr>
+<tr>
+<td colspan="4">010 - Zuständigkeit</td>
+</tr>
+</table>
+
+-[[6]]+-[[7]]+. Fassung  
+Seite 79--------------------------------------------------------------------------------
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/9.fassung/20261001_datensatz_v9.html)
+citeturn22search3 [wordlim: 200] Published: last month; Crawled: today; DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt ... DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt ... Die bereits bestehende Codeliste wurde im Zusammenhang mit der Einführung des GEAS um entsprechende Codes zu einer Wohnsitzauflage, räumlichen Beschränkung, Wohnsitzregelung oder Wohnsitzverpflichtung erweitert. ... Eine räumliche Beschränkung verpflichtet eine ausländische Person, sich ausschließlich in einem bestimmten Bereich physisch aufzuhalten. ... Im Falle einer Freiheitsentziehung zur Sicherung der Abschiebung oder der Überstellung in einen anderen Mitgliedstaat im Rahmen des ZBV wird hiermit das Behördenkennzeichen des anordnenden Gerichts übermittelt. ... Mit diesem Feld können erläuternde Hinweise zu übermittelten Metadaten gespeichert werden. ... Das Behördenkennzeichen der Ausländerbehörde, auf deren Bezirk der Aufenthalt beschränkt ist.
+## 010.11 Zuständiges Bundesland
+
+DATENSATZ FÜR DAS AUSLÄNDERWESEN  | Stand  | Blatt
+ | 11.01.2022  | 010.11
+Feldbezeichnung
+Zuständiges Bundesland
+Feldlänge  |  | Fest/Variabel  | fest  | Häufigkeit  | 0..1  | Vorgaben  | code
+Beschreibung des Feldinhalts
+Das Bundesland, in dem sich die zuständige Ausländerbehörde oder Aufnahmeeinrichtung befindet.
+Rechtliche Grundlagen
+Darstellungsform
+urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland
+Bestandteil der Gruppe
+010 - Zuständigkeit
+
+--------------------------------------------------------------------------------
+Die Eintragung der hauptsächlichen Zuständigkeit ist notwendig, solange der Datensatz in der A-Datei oder als archivierbarer Datensatz in der B-Datei ist. Eine hauptsächliche Zuständigkeit entfällt, sobald der Datensatz als archivierter Datensatz in der B-Datei ist, vgl. II.3.. (https://www.hamburg.de/resource/blob/91964/6bc1d616cdf4fa2abb2a046f47ddd44e/weisung-1-2020-data.pdf)
+citeturn22search13 [wordlim: 200] Published: 6.7 years ago; Crawled: last week; Die Eintragung der hauptsächlichen Zuständigkeit ist notwendig, solange der Datensatz in der A-Datei oder als archivierbarer Datensatz in der B-Datei ist. ... ABSCHLIESSENDE AUFZÄHLUNG HAUPTSÄCHLICH ZUSTÄNDIGER ANWENDERINNEN UND ANWENDER: Die hauptsächlichen Zuständigkeiten von Datensätzen haben ausschließlich folgende Anwenderinnen und Anwender im Einwohner-Zentralamt und in den Bezirksämtern:
+
+In der Zentralen Ausländerbehörde (Einwohner-Zentralamt) sind es die Anwenderinnen und Anwender des Sachgebietes Sicherheitsaufgaben E 311, des Sachgebietes für Einreiseangelegenheiten mit Visum E 313, der Ländersachgebiete E 321, E 322, E 323, dem Sachgebiet für DÜ und DU+ / BPol-Länder, dem Sachgebiet für u.a.
+Die Eintragung der hauptsächlichen Zuständigkeit ist notwendig, solange der Datensatz in der A-Datei oder als archivierbarer Datensatz in der B-Datei ist. Eine hauptsächliche Zuständigkeit entfällt, sobald der Datensatz als archivierter Datensatz in der B-Datei ist, vgl. II.3..
+
+ABSCHLIESSENDE AUFZÄHLUNG HAUPTSÄCHLICH ZUSTÄNDIGER ANWENDERINNEN UND ANWENDER: Die hauptsächlichen Zuständigkeiten von Datensätzen haben ausschließlich folgende Anwenderinnen und Anwender im Einwohner-Zentralamt und in den Bezirksämtern:
+
+In der Zentralen Ausländerbehörde (Einwohner-Zentralamt) sind es die Anwenderinnen und Anwender des Sachgebietes Sicherheitsaufgaben E 311, des Sachgebietes für Einreiseangelegenheiten mit Visum E 313, der Ländersachgebiete E 321, E 322, E 323, dem Sachgebiet für DÜ und DU+ / BPol-Länder, dem Sachgebiet für u.a. Umverteilungen E 325, dem Sachgebiet für Risikopersonen/Straftäter und –haft / GERAS, dem Sachgebiet für Erstregistrierungen E 331 und dem Sachgebiet für u.a. EU-Obdachlose E 332.
+
+<visual_element id="e1">
+Großes, einfarbig schwarzes Rechteck unterhalb des Absatzes zur Zentralen Ausländerbehörde; darin sind keine Beschriftungen oder Details erkennbar.
+</visual_element>
+
+In den Bezirken sind es die Anwenderinnen und Anwender der Ausländerabteilungen Altona A/EA, Bergedorf B/EA, Billstedt BI/EA, Eimsbüttel E/EA, Hamburg-Mitte M/EA, Hamburg-Nord N/EA, Harburg H/EA Wandsbek W/EA und das Hamburger Welcome Center M/HWC.
+
+Seite 7--------------------------------------------------------------------------------
+| 12 478 Drucksache 18 / Schriftliche Anfrage --- | --- 18. Wahlperiode | 12 478 Drucksache 18 / (https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/s18-12478.pdf)
+citeturn22search14 [wordlim: 200] Published: 9.0 years ago; Senatsverwaltung für Inneres und Sport ... Wie sind die erhobenen Datensätze von Meldungen über ordnungsamt.berlin.de oder die App ... behördengenerierten Datenbankwerte geordnet? ... von Meldungen, die sowohl die Datensatzstruktur der webbasierten Version von ... WINTERDIENSTHLSTLNBEREICH
+--------------------------------------------------------------------------------
+Landesrecht BW - § 3 AAZuVO | Landesnorm Baden-Württemberg | Örtliche Zuständigkeit der Ausländerbehörden | § 3 - Örtliche Zuständigkeit der Ausländerbehörden | gültig ab: 11.04.2024 (https://www.landesrecht-bw.de/bsbw/document/jlr-NNLBW00007F1DNN00000000022)
+citeturn22search4 [wordlim: 200] Crawled: last week; § 3 - Örtliche Zuständigkeit der Ausländerbehörden ... ### Verordnung der Landesregierung und des Justizministeriums über Zuständigkeiten nach dem Aufenthaltsgesetz, ... (1) Örtlich zuständig ist die Ausländerbehörde, in deren Dienstbezirk sich der Ausländer gewöhnlich aufhält oder, soweit kein gewöhnlicher Aufenthalt im Bundesgebiet auf Grund eines Auslandsaufenthalts besteht, sich aufzuhalten beabsichtigt.
+--------------------------------------------------------------------------------
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/1.fassung/20230317_datensatz.html)
+citeturn22search5 [wordlim: 200] Published: 3.7 years ago; Crawled: yesterday; Der Datensatz für das Ausländerwesen (DSAusländer) wird auf Grundlage des Gesetzes über das Ausländerzentralregister (AZRG) von der durch das Bundesministerium des Innern und für Heimat (BMI) beauftragten Geschäftsstelle (GS) DSAusländer beim Bundesamt für Migration und Flüchtlinge (BAMF) herausgegeben. ... Um bei der Datenübermittlung an das AZR durch Behörden aus Bund, Ländern und Kommunen die notwendige Datenqualität herzustellen und zu erhalten, muss die Semantik der Daten im AZR eindeutig beschrieben sein. ... Eine räumliche Beschränkung verpflichtet eine ausländische Person, sich ausschließlich in einem bestimmten Bereich physisch aufzuhalten. ... Der Bezirk der Ausländerbehörde, auf den sich die räumliche Beschränkung bezieht, wenn die Angabe in Datenblatt Nr.
+--------------------------------------------------------------------------------
+| 27 064 Drucksache 18 / Schriftliche Anfrage --- | --- 18. Wahlperiode | 27 064 Drucksache 18 /Schriftliche Anfrage (https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27064.pdf)
+citeturn22search15 [wordlim: 200] Published: 7 months ago; Hausnummer, PLZ, Geodaten, Anmerkung zum Ort, letzte Änderung, Rückmeldung ... https://daten.berlin.de/datensaetze/ordnungsamt-online zur Verfügung gestellten offenen ... Das Landesamt für Bürger- und Ordnungsangelegenheiten nimmt die Aufgaben der
+--------------------------------------------------------------------------------
+AsylZBV - Asylzuständigkeitsbestimmungsverordnung (https://www.gesetze-im-internet.de/asylzbv_2026/BJNR07F0B0026.html)
+citeturn22search6 [wordlim: 200] Published: 6 months ago; Crawled: yesterday; (1) Die Ausländerbehörde, die einer Person, deren Daten zuvor nach Artikel 22 Absatz 2 oder Artikel 23 Absatz 2 der Verordnung (EU) 2024/1358 in Eurodac gespeichert wurden, einen Aufenthaltstitel ausgestellt hat, ist zuständig für die Ausführung der Verordnung (EU) 2024/1358 in Bezug auf die Markierung der einschlägigen Datensätze nach Artikel 31 Absatz 4 der Verordnung (EU) 2024/1358. ... (5) Das Bundesministerium des Innern ist für die Übermittlung der Verzeichnisse der auf Eurodac zugriffsberechtigten Behörden nach Artikel 40 Absatz 2 und Artikel 61 Absatz 1 der Verordnung (EU) 2024/1358 und die Führung der Listen gemäß Artikel 5 Absatz 2 und 3 der Verordnung (EU) 2024/1358 zuständig.
+--------------------------------------------------------------------------------
+spezifikation.book (https://www.osci.de/xauslaender131/xauslaender131Spezifikation.pdf)
+citeturn22search16 [wordlim: 200] Crawled: last year; Die in § 90 b AufenthG geforderte gegenseitige Übermittlung der Datenbestände von Ausländer- und Meldebehörden soll unter Beachtung folgender Grundsätze erfolgen: ... Melde- und Ausländerbehörde im gleichen Zuständigkeitsbereich vereinbaren einen Stichtag für den Datenabgleich. ... - In der Ausländerbehörde liegt ein Datensatz vor, zu dem kein Datensatz aus der Meldebehörde übermittelt wurde.
+--------------------------------------------------------------------------------
+Quellen & Methodik | Ausländerbehörden.org (https://auslaenderbehoerden.org/quellen/)
+citeturn22search7 [wordlim: 200] Crawled: last month; ## Kontaktdaten ... Die Zuordnung der Gemeinden folgt den Zuständigkeitsregeln der Länder: Kreise und kreisfreie Städte, dazu Städte mit eigener Ausländerbehörde. ... Postleitzahlen: © OpenStreetMap-Mitwirkende über OpenPLZ API, Lizenz ODbL.
+
+Eine Postleitzahl kann mehrere Zuständigkeitsbereiche berühren. ... Ausländerbehörden.org ist ein unabhängiges Verzeichnis und keine Behörde.
+--------------------------------------------------------------------------------
+Meldedatensatz zum Abruf Bereitstellung / Landkreis Wolfenbüttel (https://www.lkwf.de/Themen-Leistungen/Leistungen/Dienstleistungen-A-Z/Meldedatensatz-zum-Abruf-Bereitstellung.php?FID=3282.2619.1&ModID=10)
+citeturn22search8 [wordlim: 200] Crawled: last month; Mit dem Meldedatensatz zum Abruf können Sie die zu Ihrer Person im Melderegister gespeicherten Meldedaten elektronisch bereitstellen lassen, um diese in einem Online-Verwaltungsverfahren weiterzuverwenden. Die Daten werden von der Meldebehörde als unveränderbarer, maschinenlesbarer Datensatz bereitgestellt und können direkt in elektronische Verwaltungsleistungen nach dem Onlinezugangsgesetz (OZG) übernommen werden. ... Die Zuständigkeit liegt bei der Meldebehörde bzw. dem Bürgeramt in Ihrer Wohnortgemeinde.
+--------------------------------------------------------------------------------
+<visual_element id="e1"> (https://www.dksr.city/wp-content/uploads/2024/02/openbydata_HVD_Handreichung.pdf)
+citeturn22search17 [wordlim: 200] Crawled: last week; Schließen Sie sich wie schon über 50 Kommunen, Ministerien und Behörden dem Portal an. ... In der Praxis gibt es oft mehrere Datensätze und Datenquellen, die Tabelle **ersetzt also nicht die Beschäftigung mit der Verordnung vor Ort. ... **Schritt 1: Welcher Fachbereich ist (auf kommunaler Ebene) für welche Datensätze verantwortlich? ... | Geodaten | Fachbereiche Bau und Stadtentwicklung; Verkehrsamt/Ordnungsamt Zuständige für Geodaten & GIS, Geoportal |
+--------------------------------------------------------------------------------
+WFS der Jagdbezirke im Landkreis Osterholz - NUMIS (https://numis.niedersachsen.de/trefferanzeige?docuuid=d505eee1-7e3a-4bf2-859a-2b74f69ede18)
+citeturn22search9 [wordlim: 200] Published: 4.7 years ago; Crawled: last month; Deutschland ordnungsamt@landkreis-osterholz.de 04791 930-1851 https://www.landkreis-osterholz.de ... #### Informationen zum Datensatz
+
+Art des Dienstes  | Download-Dienste ... Basisdaten  | Erfassung auf Basis von Flurstücken ... Name der Operation  | Beschreibung der Operation  | Aufruf der Operation ... GetCapabilities  |  | https://gis.landkreis-osterholz.de/arcgis/services/www/JagdbezirkeWWW/MapServer/WFSServer?
+--------------------------------------------------------------------------------
+Suche - GovData (https://www.govdata.de/suche?sort=title_desc&tags=verwaltungseinheiten&type=all)
+citeturn22search10 [wordlim: 200] Crawled: 4 months ago;   * Datensatz Letzte Änderung: 14.01.2026 ... Übersicht der Wahllokale Herausgeber: Stadt Norderstedt Ordnungsamt Wahlamt E-Mail: wahlamt@norderstedt.de Telefon: 040 535 95 509 Fortschreibung: laufend / Stand: 25.07.2025 ... WFS_SRVC ... download ... Umringslinien der Wahlbezirke im Bereich der Stadt Elmshorn ... Die Verwaltungseinheiten sind aus Geobasisdaten abgeleitet und in einem GIS als flächenhafte Objekte aufbereitet.
+--------------------------------------------------------------------------------
+Ausländerdatei A und B - Verwaltungsdaten-Informationsplattform (https://www.verwaltungsdaten-informationsplattform.de/register/258)
+citeturn22search11 [wordlim: 200] Crawled: 2 weeks ago; Die Ausländerbehörden führen als sachlich zuständige Behörden der Bundesländer zwei Dateisysteme zur Registrierung personenbezogener Daten von Ausländerinnen und Ausländern sowie deren ausländerrechtlichen Maßnahmen. ... Die personenbezogenen Grunddaten sind in die Ausländerdatei B zu übernehmen, sobald der Ausländer / die Ausländerin gestorben, aus dem Bezirk der Ausländerbehörde fortgezogen oder die Rechtsstellung eines Deutschen erworben hat.
+--------------------------------------------------------------------------------
+Ausländerbehörde (https://de.wikipedia.org/wiki/Ausl%C3%A4nderbeh%C3%B6rde)
+citeturn22search18 [wordlim: 200] Crawled: 1.8 years ago; Eine Ausländerbehörde (regional unterschiedlich zumeist als ALB oder ABH abgekürzt; auch ZAB für Zentrale Ausländerbehörde) oder Ausländeramt (ALA) besteht in Deutschland zumeist in jedem Landkreis oder in einer kreisfreien Stadt mit der Aufgabe des Vollzugs des Ausländerrechts. ... Ausländerbehörden sind zuständig für die Erteilung oder Versagung von Aufenthaltserlaubnissen nach den jeweiligen Aufenthaltszwecken des Aufenthaltsgesetzes, der Entscheidung über die Erteilung von Niederlassungserlaubnissen, der Entscheidung und ggf. ... 1 Aufenthaltsgesetz sind für aufenthalts- und passrechtliche Maßnahmen und Entscheidungen nach dem Aufenthaltsgesetz die Ausländerbehörden zuständig. ... Im Anschluss melden sie bei den zuständigen Behörden die jeweiligen Flüge an. ... Daneben besteht eine Verpflichtung der Ausländerbehörde auf Unterrichtung der Stellen, die mit Schwarzarbeit, Gewerberecht und Strafverfolgung befasst sind.
+--------------------------------------------------------------------------------
+Landesamt für Einwanderung (https://de.wikipedia.org/wiki/Landesamt_f%C3%BCr_Einwanderung)
+citeturn22search19 [wordlim: 200] Crawled: 3 months ago; Das Landesamt für Einwanderung (LEA) ist die Ausländerbehörde der deutschen Hauptstadt. ... Der zwischen 1937 und 1938 nach Plänen des Architekten Egon Eiermann errichtete Bau diente ursprünglich als Verwaltungsgebäude der Auer-Gesellschaft. ... Das Landesamt für Einwanderung nimmt als Ausländerbehörde von Berlin den Vollzug des Ausländerrechts wahr. ... Die Behörde ist in sieben Abteilungen gegliedert (Stand: 2024): ... In: Behörden Spiegel.
+--------------------------------------------------------------------------------
+Standesamt (https://de.wikipedia.org/wiki/Standesamt)
+citeturn22search20 [wordlim: 200] Crawled: last month; Januar 1876 im restlichen Gebiet des Deutschen Reiches) ein Amt zur Erledigung der im Personenstandsgesetz vorgesehenen Aufgaben, insbesondere zur Führung der Personenstandsregister, zur Erstellung von Personenstandsurkunden und anderem. ... August 2001 auch Anmeldungen von Lebenspartnerschaften) und Durchführung der Eheschließung und Begründung von Lebenspartnerschaften gehört die Ausstellung von Personenstandsurkunden zu den häufigsten Tätigkeiten im Standesamt, wo der Standesbeamte als Urkundsbeamter innerhalb seines Geschäftsbereiches öffentliche Urkunden ausstellt. ... In allen Bundesländern mit Ausnahme von Berlin, Brandenburg, Hessen und Nordrhein-Westfalen sind die Standesämter auch für die Entgegennahme von Erklärungen zum Kirchenaustritt zuständig. ... Die Standesämter in Österreich sind Behörde der mittelbaren Bundesverwaltung und unterstehen der jeweiligen Bezirkshauptmannschaft bzw. dem Magistrat.
+--------------------------------------------------------------------------------
+Ausländerzentralregister (https://de.wikipedia.org/wiki/Ausl%C3%A4nderzentralregister)
+citeturn22search21 [wordlim: 200] Crawled: last month; Das Ausländerzentralregister (AZR) ist eine vom Bundesverwaltungsamt (BVA) betriebene Datenbank, in der personenbezogene Datensätze von Ausländern gespeichert werden. ... Februar 2016 in Kraft getretenen Datenaustauschverbesserungsgesetzes (BGBl. ... Dabei werden Grundpersonalien, Aliaspersonalien, Bearbeitungsvermerke (u. a. zuständige Ausländerbehörde und Aktenzeichen), Ausweisungen, Abschiebungen (jeweils mit weiteren Angaben), Zurückweisungen, Auflagen, Beschränkungen, Visa usw. gespeichert. ... Zugriff auf diese große Datenbank haben 6.500 Partnerbehörden, darunter u. a. alle Ausländerbehörden, das BAMF, die  Beauftragten der Bundesregierung für Migration, Flüchtlinge und Integration, die deutschen Polizei- und Zolldienststellen (via INPOL-neu) und Arbeitsagenturen und JobCenter. ... Rechtsgrundlage für das AZR ist das AZR-Gesetz (BGBl.
+--------------------------------------------------------------------------------
+Ordnungsamt (https://de.wikipedia.org/wiki/Ordnungsamt)
+citeturn22search22 [wordlim: 200] Crawled: 2 days ago; Amt für öffentliche Ordnung ist in Deutschland und in einigen Gemeinden in Österreich die Bezeichnung für eine Organisationseinheit innerhalb der Kommunalverwaltung, in der üblicherweise die Aufgabe der Abwehr von Gefahren für die öffentliche Sicherheit oder Ordnung wahrgenommen wird, soweit diese nicht landesgesetzlich speziellen Behörden zugewiesen sind. ... Die Zuständigkeiten des Ordnungsamtes sind in Deutschland aufgrund länderspezifischer Besonderheiten, der Einwohnerzahl der Gemeinde und der gemeindlichen Organisationshoheit in den einzelnen Gemeinden sehr unterschiedlich. Das Ordnungsamt nimmt nicht nur – mehr oder minder umfassend – die Aufgaben der örtlichen Ordnungsbehörde wahr, sondern fast immer auch noch weitere Aufgaben, die landesgesetzlich bestimmten Sonderordnungsbehörden zugewiesen sind. ... Nach dem Muster-Verwaltungsgliederungsplan der KGSt (Kommunale Gemeinschaftsstelle für Verwaltungsmanagement) ist es mit der Ordnungsnummer 32 dem Bereich Rechts-, Sicherheits- und Ordnungsverwaltung zugegliedert.
+--------------------------------------------------------------------------------
+Berlin Immigration Office (https://en.wikipedia.org/wiki/Berlin_Immigration_Office)
+citeturn22search23 [wordlim: 200] Crawled: last month; Its service has been criticised by many users as unfriendly, German-only, and non-digitised, much like the former Ausländerbehörde.
+

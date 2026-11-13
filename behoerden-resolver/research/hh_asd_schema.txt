@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:de.hh.up="https://registry.gdi-de.org/id/de.hh.up" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="https://registry.gdi-de.org/id/de.hh.up" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <element name="standorte" substitutionGroup="gml:AbstractFeature">
+    <complexType>
+      <complexContent>
+        <extension base="gml:AbstractFeatureType">
+          <sequence>
+            <element name="datensatzname" minOccurs="0" type="string"/>
+            <element name="einrichtung_name" minOccurs="0" type="string"/>
+            <element name="adresse" minOccurs="0" type="string"/>
+            <element name="ort" minOccurs="0" type="string"/>
+            <element name="anmerkung_ort" minOccurs="0" type="string"/>
+            <element name="internet" minOccurs="0" type="string"/>
+            <element name="mail" minOccurs="0" type="string"/>
+            <element name="geom" minOccurs="0" type="gml:PointPropertyType"/>
+          </sequence>
+        </extension>
+      </complexContent>
+    </complexType>
+  </element>
+</schema>

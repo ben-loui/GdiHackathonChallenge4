@@ -1,0 +1,57 @@
+[
+  {
+    "source_id": "by_finanzamt_locations",
+    "snapshot": "data/snapshots/by_finanzamt_locations--20261113T174436463898Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_kreis_locations",
+    "snapshot": "data/snapshots/by_kreis_locations--20261113T174437093738Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_regierung_locations",
+    "snapshot": "data/snapshots/by_regierung_locations--20261113T174437564135Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_verwaltungsgericht_locations",
+    "snapshot": "data/snapshots/by_verwaltungsgericht_locations--20261113T174438068241Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_polizei_locations",
+    "snapshot": "data/snapshots/by_polizei_locations--20261113T174439036379Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_staatsanwaltschaft_locations",
+    "snapshot": "data/snapshots/by_staatsanwaltschaft_locations--20261113T174439558813Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_schulamt_locations",
+    "snapshot": "data/snapshots/by_schulamt_locations--20261113T174440163584Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_ihk_locations",
+    "snapshot": "data/snapshots/by_ihk_locations--20261113T174440622355Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_handwerkskammer_locations",
+    "snapshot": "data/snapshots/by_handwerkskammer_locations--20261113T174441048374Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "bb_polizei_locations",
+    "snapshot": "data/snapshots/bb_polizei_locations--20261113T174441902772Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "th_health_locations",
+    "snapshot": "data/snapshots/th_health_locations--20261113T174442476015Z",
+    "status": "downloaded"
+  }
+]

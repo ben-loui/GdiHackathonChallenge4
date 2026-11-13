@@ -1,0 +1,109 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "osm_locations",
+    "kind": "authority_point",
+    "scope": "DE-RP|DE-HE",
+    "format": "osm",
+    "default_import": false,
+    "routes": [
+      {
+        "category": "finanzamt"
+      },
+      {
+        "category": "gesundheitsamt"
+      },
+      {
+        "category": "jobcenter"
+      },
+      {
+        "category": "jugendamt"
+      },
+      {
+        "category": "ordnungsamt"
+      },
+      {
+        "category": "polizei"
+      },
+      {
+        "category": "rentenversicherung"
+      },
+      {
+        "category": "sozialamt"
+      },
+      {
+        "category": "stadtverwaltung"
+      },
+      {
+        "category": "standesamt"
+      },
+      {
+        "category": "strassenverkehrsbehoerde"
+      },
+      {
+        "category": "umweltamt"
+      },
+      {
+        "category": "veterinaeramt"
+      },
+      {
+        "category": "zoll"
+      },
+      {
+        "category": "zulassungsstelle"
+      }
+    ],
+    "active": true,
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "documentation": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap-Mitwirkende, https://www.openstreetmap.org/copyright, ODbL 1.0",
+    "source_quality": "community",
+    "coverage_claim": "Only a completed sample within 10 km of 50.0 N, 8.27 E (Mainz/Wiesbaden region). No nationwide location completeness. Larger nationwide and 16-city queries timed out and are NOT imported.",
+    "source_date": "timestamp_osm_base in raw response",
+    "name_rule": "Original official_name or name, conservative explicit name patterns and government/amenity tags; no assertion of official competence",
+    "modifications": "Filter to named relevant offices and official Germany boundary mask. Nodes retained; way/relation bounding-box centres explicitly labelled, not necessarily public entrances. No polygons inferred.",
+    "query_sha256": "ccfc17b20be91cd13b4d3edb40d8d4835c21bab5d6174c3ab8e51bd06e1838f6",
+    "refresh_policy": "Opt-in cached batch only. Not queried for each resolver request. Respect public API usage limits; use extracts or your own service for expansion."
+  },
+  "completed_at": "2026-11-13T18:04:59.943647+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "stadtverwaltung": 6,
+    "standesamt": 3,
+    "gesundheitsamt": 2,
+    "jobcenter": 2,
+    "jugendamt": 1,
+    "zoll": 3,
+    "rentenversicherung": 1,
+    "strassenverkehrsbehoerde": 1,
+    "umweltamt": 4,
+    "finanzamt": 3,
+    "ordnungsamt": 1,
+    "sozialamt": 2,
+    "zulassungsstelle": 2,
+    "veterinaeramt": 1,
+    "polizei": 1
+  },
+  "records_sha256": "e39f28fbed4585932b02b18a21dc599b37c3140d1a22fcaa4d62cc42d0c6f89d",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://overpass-api.de/api/interpreter",
+      "retrieved_at": "2026-11-13T18:04:59.935350+00:00",
+      "response_sha256": "aa8382d50503464368058292c04b68cd21f8036fd60388c55f9c3408d55fe95b",
+      "bytes": 54828
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "classification_audit": {
+    "category_not_supported_by_tags_or_name": 75,
+    "no_office_name": 3
+  },
+  "osm_base_timestamp": "2026-11-13T17:46:31Z",
+  "source_request_method": "GET",
+  "source_query": "[out:json][timeout:30];nwr(around:10000,50,8.27)[\"office\"=\"government\"];out center tags;\n",
+  "germany_mask_records_sha256": "276b8b855f205156e79c99051c472a6202ca3f46caf4cd1da889d10d1ae1fbca",
+  "source_input": "downloaded export"
+}

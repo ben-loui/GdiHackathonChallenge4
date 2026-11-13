@@ -1,0 +1,1491 @@
+[
+  {
+    "category": "gesundheitsamt",
+    "point": {
+      "lon": 11.589,
+      "lat": 50.927
+    },
+    "limitations": "Landratsamt-Geometrien werden nicht ohne amtliche Fachzuordnung zu Gesundheitsämtern umgedeutet.",
+    "matches": [
+      {
+        "authority_name": "Stadtverwaltung Jena - Gesundheitsamt",
+        "category": "gesundheitsamt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11595093StadtverwaltungJenaGesundheitsamt",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForHealth",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11595093StadtverwaltungJenaGesundheitsamt\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Stadtverwaltung Jena - Gesundheitsamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11595093StadtverwaltungJenaGesundheitsamt</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Jena</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>3</ns6:locatorDesignator>\n              <ns6:postCode>07743</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Lutherplatz</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:telephoneVoice>03641 - 49 31- 20/-21</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>682114.0637275898 5645269.391726813</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.59164,
+            50.93027
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 408.39146203,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      },
+      {
+        "authority_name": "Landratsamt Weimarer Land - Gesundheitsamt",
+        "category": "gesundheitsamt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11515102LandratsamtWeimarerLandGesundheitsamt",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForHealth",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11515102LandratsamtWeimarerLandGesundheitsamt\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Landratsamt Weimarer Land - Gesundheitsamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11515102LandratsamtWeimarerLandGesundheitsamt</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Apolda</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>28</ns6:locatorDesignator>\n              <ns6:postCode>99510</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Bahnhofstraße</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:telephoneVoice>03644 - 540 580</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>676591.4892416688 5655683.95288899</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.51819,
+            51.02555
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 12038.71836638,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      },
+      {
+        "authority_name": "Landratsamt Saale-Holzland-Kreis - Gesundheitsamt",
+        "category": "gesundheitsamt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11735086LandratsamtSaaleHolzlandKreisGesundhei",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForHealth",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11735086LandratsamtSaaleHolzlandKreisGesundhei\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Landratsamt Saale-Holzland-Kreis - Gesundheitsamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11735086LandratsamtSaaleHolzlandKreisGesundhei</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Stadtroda</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>15b</ns6:locatorDesignator>\n              <ns6:postCode>07646</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Heinrich-Heine-Straße</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:telephoneVoice>036691 - 708 -33/-34</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>692553.8156562499 5637965.092251076</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.73618,
+            50.86127
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 12676.68374435,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "nearby_candidates",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [],
+    "backend": "local_point_fallback",
+    "requested_backend": "local",
+    "fallback_used": true,
+    "area_search_status": "no_local_data",
+    "point_search": {
+      "radius_km": 40,
+      "count": 3,
+      "limit": 3
+    },
+    "fallback_reason": "No matching jurisdiction polygon was found in the completed area search.",
+    "warning": "Nahegelegener Standort. Zuständigkeit nicht durch eine Fläche belegt; Nähe begründet keine fachliche oder persönliche Zuständigkeit."
+  },
+  {
+    "category": "veterinaeramt",
+    "point": {
+      "lon": 11.589,
+      "lat": 50.927
+    },
+    "limitations": "Keine importierte explizite Veterinärbehörden-Gebietszuordnung.",
+    "matches": [
+      {
+        "authority_name": "Landratsamt des Landkreises Weimarer Land - Veterinär- und Lebensmittelüberwachungsamt",
+        "category": "veterinaeramt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11515102LandratsamtDesLandkreisesWeimarerLandV",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForHealth",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11515102LandratsamtDesLandkreisesWeimarerLandV\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Landratsamt des Landkreises Weimarer Land - Veterinär- und Lebensmittelüberwachungsamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11515102LandratsamtDesLandkreisesWeimarerLandV</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Apolda</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>28</ns6:locatorDesignator>\n              <ns6:postCode>99510</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Bahnhofstraße</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:electronicMailAddress>Post.Veterinaeramt@WL.Thueringen.de</ns5:electronicMailAddress>\n          <ns5:telephoneVoice>03644 - 540 301</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>676591.4892416688 5655683.95288899</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.51819,
+            51.02555
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 12038.71836638,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      },
+      {
+        "authority_name": "Zweckverband Veterinär- und Lebensmittelüberwachungsamt Jena-Saale-Holzland",
+        "category": "veterinaeramt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11725085ZweckverbandVeterinaerUndLebensmittelu",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForHealth",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11725085ZweckverbandVeterinaerUndLebensmittelu\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Zweckverband Veterinär- und Lebensmittelüberwachungsamt Jena-Saale-Holzland</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11725085ZweckverbandVeterinaerUndLebensmittelu</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Stadtroda</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>18</ns6:locatorDesignator>\n              <ns6:postCode>07646</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Kirchweg</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:electronicMailAddress>info@zvl.thueringen.de</ns5:electronicMailAddress>\n          <ns5:telephoneVoice>036428 - 540 9840</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>692102.740978491 5637416.245741814</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.72949,
+            50.85649
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 12619.07486523,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      },
+      {
+        "authority_name": "Stadtverwaltung Weimar - Veterinär- und Lebensmittelüberwachungsamt",
+        "category": "veterinaeramt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11325098StadtverwaltungWeimarVeterinaerUndLebe",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForHealth",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11325098StadtverwaltungWeimarVeterinaerUndLebe\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Stadtverwaltung Weimar - Veterinär- und Lebensmittelüberwachungsamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11325098StadtverwaltungWeimarVeterinaerUndLebe</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Weimar</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>17</ns6:locatorDesignator>\n              <ns6:postCode>99423</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Schwanseestraße</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:electronicMailAddress>veterinaeramt@stadtweimar.de</ns5:electronicMailAddress>\n          <ns5:telephoneVoice>03643 - 762 851</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>662866.1848332493 5650520.695629017</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.32033,
+            50.98321
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 19886.90016275,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "nearby_candidates",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [],
+    "backend": "local_point_fallback",
+    "requested_backend": "local",
+    "fallback_used": true,
+    "area_search_status": "no_local_data",
+    "point_search": {
+      "radius_km": 40,
+      "count": 3,
+      "limit": 3
+    },
+    "fallback_reason": "No matching jurisdiction polygon was found in the completed area search.",
+    "warning": "Nahegelegener Standort. Zuständigkeit nicht durch eine Fläche belegt; Nähe begründet keine fachliche oder persönliche Zuständigkeit."
+  },
+  {
+    "category": "jugendamt",
+    "point": {
+      "lon": 11.589,
+      "lat": 50.927
+    },
+    "limitations": "Örtliche Jugendhilfeträger und Ausnahmen müssen explizit zugeordnet werden; keine Kreispauschale.",
+    "matches": [
+      {
+        "authority_name": "Stadtverwaltung Jena - Jugendamt",
+        "category": "jugendamt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11595093StadtverwaltungJenaJugendamt",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForSocialProtection",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11595093StadtverwaltungJenaJugendamt\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Stadtverwaltung Jena - Jugendamt</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11595093StadtverwaltungJenaJugendamt</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Jena</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>13</ns6:locatorDesignator>\n              <ns6:postCode>07743</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Am Anger</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:electronicMailAddress>jugendamt@jena.de</ns5:electronicMailAddress>\n          <ns5:telephoneVoice>03641 - 49 27 06</ns5:telephoneVoice>\n          <ns5:website>https://startseite.jena.de/</ns5:website>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>682153.0958638178 5645299.705814414</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForSocialProtection\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.59221,
+            50.93053
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 452.93017582,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      },
+      {
+        "authority_name": "Landratsamt Weimarer Land",
+        "category": "jugendamt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11515102LandratsamtWeimarerLand",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForSocialProtection",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11515102LandratsamtWeimarerLand\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Landratsamt Weimarer Land</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11515102LandratsamtWeimarerLand</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Apolda</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>28</ns6:locatorDesignator>\n              <ns6:postCode>99510</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Bahnhofstraße</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:electronicMailAddress>post.jugendamt@wl.thueringen.de</ns5:electronicMailAddress>\n          <ns5:telephoneVoice>03644 - 540 541</ns5:telephoneVoice>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>676591.4892416688 5655683.95288899</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForSocialProtection\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.51819,
+            51.02555
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 12038.71836638,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      },
+      {
+        "authority_name": "Stadtverwaltung Weimar - Amt für Familie und Soziales",
+        "category": "jugendamt",
+        "source_id": "th_health_locations",
+        "source_key": "GovernmentalService_DETH11325098StadtverwaltungWeimarAmtFuerFamilieUnd",
+        "scope": "DE-TH",
+        "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+        "evidence_url": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+        "properties": {
+          "service_type": "administrationForSocialProtection",
+          "source_quality": "official",
+          "source_record_xml": "<ns0:GovernmentalService xmlns:ns0=\"http://inspire.ec.europa.eu/schemas/us-govserv/5.0\" xmlns:ns1=\"http://www.opengis.net/gml/3.2\" xmlns:ns2=\"http://www.w3.org/1999/xlink\" xmlns:ns4=\"http://inspire.ec.europa.eu/schemas/base/4.0\" xmlns:ns5=\"http://inspire.ec.europa.eu/schemas/base2/2.0\" xmlns:ns6=\"http://inspire.ec.europa.eu/schemas/ad/4.0\" xmlns:ns7=\"http://inspire.ec.europa.eu/schemas/gn/4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ns1:id=\"GovernmentalService_DETH11325098StadtverwaltungWeimarAmtFuerFamilieUnd\">\n      <ns1:metaDataProperty ns2:href=\"https://geomis.geoportal-th.de/geonetwork/srv/ger/catalog.search#/metadata/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92\" />\n      <ns1:identifier codeSpace=\"http://inspire.ec.europa.eu/ids\">https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns1:identifier>\n      <ns1:name>Stadtverwaltung Weimar - Amt für Familie und Soziales</ns1:name>\n      <ns0:beginLifespanVersion xsi:nil=\"true\" />\n      <ns0:inspireId>\n        <ns4:Identifier>\n          <ns4:localId>GovernmentalService_DETH11325098StadtverwaltungWeimarAmtFuerFamilieUnd</ns4:localId>\n          <ns4:namespace>https://registry.gdi-de.org/id/de.th.csw/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92</ns4:namespace>\n        </ns4:Identifier>\n      </ns0:inspireId>\n      <ns0:pointOfContact>\n        <ns5:Contact>\n          <ns5:address>\n            <ns6:AddressRepresentation>\n              <ns6:adminUnit>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"http://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Weimar</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:adminUnit>\n              <ns6:locatorDesignator>17</ns6:locatorDesignator>\n              <ns6:postCode>99423</ns6:postCode>\n              <ns6:thoroughfare>\n                <ns7:GeographicalName>\n                  <ns7:language>deu</ns7:language>\n                  <ns7:nativeness ns2:href=\"https://inspire.ec.europa.eu/codelist/NativenessValue/endonym\" />\n                  <ns7:nameStatus ns2:href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue/official\" />\n                  <ns7:sourceOfName nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:pronunciation nilReason=\"other:unpopulated\" xsi:nil=\"true\" />\n                  <ns7:spelling>\n                    <ns7:SpellingOfName>\n                      <ns7:text>Schwanseestraße</ns7:text>\n                      <ns7:script>Latn</ns7:script>\n                    </ns7:SpellingOfName>\n                  </ns7:spelling>\n                </ns7:GeographicalName>\n              </ns6:thoroughfare>\n            </ns6:AddressRepresentation>\n          </ns5:address>\n          <ns5:electronicMailAddress>familienamt@stadtweimar.de</ns5:electronicMailAddress>\n          <ns5:telephoneVoice>03643 - 762 960</ns5:telephoneVoice>\n          <ns5:website>https://stadt.weimar.de/stadtverwaltung/organisationseinheit/amt-fuer-familie-und-soziales-10/</ns5:website>\n        </ns5:Contact>\n      </ns0:pointOfContact>\n      <ns0:serviceLocation>\n        <ns0:ServiceLocationType>\n          <ns0:serviceLocationByGeometry>\n            <ns1:Point srsName=\"http://www.opengis.net/def/crs/EPSG/0/25832\" srsDimension=\"2\">\n              <ns1:pos>662866.1848332493 5650520.695629017</ns1:pos>\n            </ns1:Point>\n          </ns0:serviceLocationByGeometry>\n        </ns0:ServiceLocationType>\n      </ns0:serviceLocation>\n      <ns0:serviceType ns2:href=\"http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForSocialProtection\" />\n    </ns0:GovernmentalService>\n  ",
+          "geometry_completeness": "location_only_no_jurisdiction_polygon"
+        },
+        "name_rule": {
+          "method": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group"
+        },
+        "run_id": 50,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            11.32033,
+            50.98321
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "© GDI-Th, CC BY 4.0",
+        "fetched_at": "2026-11-13T17:44:42.475623+00:00",
+        "source_quality": "official",
+        "distance_m": 19886.90016275,
+        "geometry_repaired": false,
+        "kind": "authority_point",
+        "territorial_match_verified": false,
+        "case_competence_verified": false,
+        "geometry_completeness": "location_only_no_jurisdiction_polygon",
+        "match_type": "nearest_point_fallback",
+        "jurisdiction_verified": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "nearby_candidates",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [],
+    "backend": "local_point_fallback",
+    "requested_backend": "local",
+    "fallback_used": true,
+    "area_search_status": "no_local_data",
+    "point_search": {
+      "radius_km": 30,
+      "count": 3,
+      "limit": 3
+    },
+    "fallback_reason": "No matching jurisdiction polygon was found in the completed area search.",
+    "warning": "Nahegelegener Standort. Zuständigkeit nicht durch eine Fläche belegt; Nähe begründet keine fachliche oder persönliche Zuständigkeit."
+  },
+  {
+    "category": "jobcenter",
+    "point": {
+      "lon": 8.466,
+      "lat": 49.488
+    },
+    "limitations": "BZB Open: Jobcenter-Bezirke; keine persönliche Anspruchsprüfung oder Ermittlung besonderer Fallzuständigkeiten.",
+    "matches": [
+      {
+        "authority_name": "Jobcenter Mannheim, Universitätsstadt",
+        "category": "jobcenter",
+        "source_id": "bzb_jobcenter",
+        "source_key": "ba_jobcenter.277",
+        "scope": "DE",
+        "source_date": null,
+        "evidence_url": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "t64402",
+          "name": "Jobcenter Mannheim, Universitätsstadt",
+          "dst_id": "64402",
+          "uebergeord": "Agentur für Arbeit Mannheim"
+        },
+        "name_rule": {
+          "name_field": "name"
+        },
+        "run_id": 27,
+        "kind": "authority",
+        "license": "dl-de/by-2-0",
+        "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+        "fetched_at": "2026-11-13T16:39:47.492270+00:00",
+        "on_boundary": false,
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  8.4973,
+                  49.4113
+                ],
+                [
+                  8.4986,
+                  49.4146
+                ],
+                [
+                  8.4998,
+                  49.4173
+                ],
+                [
+                  8.5017,
+                  49.4211
+                ],
+                [
+                  8.5033,
+                  49.4238
+                ],
+                [
+                  8.5064,
+                  49.4283
+                ],
+                [
+                  8.5073,
+                  49.4299
+                ],
+                [
+                  8.508,
+                  49.4311
+                ],
+                [
+                  8.5084,
+                  49.4328
+                ],
+                [
+                  8.5082,
+                  49.4345
+                ],
+                [
+                  8.5078,
+                  49.436
+                ],
+                [
+                  8.507,
+                  49.4375
+                ],
+                [
+                  8.5057,
+                  49.4391
+                ],
+                [
+                  8.5045,
+                  49.4401
+                ],
+                [
+                  8.5026,
+                  49.4412
+                ],
+                [
+                  8.5008,
+                  49.442
+                ],
+                [
+                  8.4989,
+                  49.4427
+                ],
+                [
+                  8.4956,
+                  49.4433
+                ],
+                [
+                  8.4919,
+                  49.4437
+                ],
+                [
+                  8.488,
+                  49.444
+                ],
+                [
+                  8.4818,
+                  49.4441
+                ],
+                [
+                  8.4725,
+                  49.4435
+                ],
+                [
+                  8.4692,
+                  49.4433
+                ],
+                [
+                  8.4642,
+                  49.4432
+                ],
+                [
+                  8.4598,
+                  49.4433
+                ],
+                [
+                  8.4555,
+                  49.4438
+                ],
+                [
+                  8.4542,
+                  49.444
+                ],
+                [
+                  8.4524,
+                  49.4444
+                ],
+                [
+                  8.4509,
+                  49.4448
+                ],
+                [
+                  8.4495,
+                  49.4453
+                ],
+                [
+                  8.4484,
+                  49.4459
+                ],
+                [
+                  8.4473,
+                  49.4464
+                ],
+                [
+                  8.4463,
+                  49.447
+                ],
+                [
+                  8.445,
+                  49.4478
+                ],
+                [
+                  8.4444,
+                  49.4483
+                ],
+                [
+                  8.4435,
+                  49.4493
+                ],
+                [
+                  8.4427,
+                  49.4502
+                ],
+                [
+                  8.4423,
+                  49.451
+                ],
+                [
+                  8.4419,
+                  49.452
+                ],
+                [
+                  8.4416,
+                  49.4529
+                ],
+                [
+                  8.4415,
+                  49.4539
+                ],
+                [
+                  8.4416,
+                  49.4548
+                ],
+                [
+                  8.4419,
+                  49.4559
+                ],
+                [
+                  8.4423,
+                  49.4567
+                ],
+                [
+                  8.4429,
+                  49.4576
+                ],
+                [
+                  8.4435,
+                  49.4584
+                ],
+                [
+                  8.4443,
+                  49.4592
+                ],
+                [
+                  8.4453,
+                  49.4598
+                ],
+                [
+                  8.4473,
+                  49.461
+                ],
+                [
+                  8.4493,
+                  49.4616
+                ],
+                [
+                  8.4519,
+                  49.4623
+                ],
+                [
+                  8.4561,
+                  49.4635
+                ],
+                [
+                  8.4581,
+                  49.4639
+                ],
+                [
+                  8.4599,
+                  49.4645
+                ],
+                [
+                  8.4609,
+                  49.465
+                ],
+                [
+                  8.4624,
+                  49.4663
+                ],
+                [
+                  8.4634,
+                  49.4681
+                ],
+                [
+                  8.4638,
+                  49.4692
+                ],
+                [
+                  8.4638,
+                  49.4704
+                ],
+                [
+                  8.4629,
+                  49.4729
+                ],
+                [
+                  8.4605,
+                  49.476
+                ],
+                [
+                  8.4588,
+                  49.4779
+                ],
+                [
+                  8.4571,
+                  49.4798
+                ],
+                [
+                  8.4527,
+                  49.4838
+                ],
+                [
+                  8.4497,
+                  49.4861
+                ],
+                [
+                  8.4472,
+                  49.4881
+                ],
+                [
+                  8.4453,
+                  49.4895
+                ],
+                [
+                  8.444,
+                  49.4912
+                ],
+                [
+                  8.443,
+                  49.4927
+                ],
+                [
+                  8.4423,
+                  49.4941
+                ],
+                [
+                  8.4416,
+                  49.4959
+                ],
+                [
+                  8.4412,
+                  49.4978
+                ],
+                [
+                  8.4406,
+                  49.4996
+                ],
+                [
+                  8.4397,
+                  49.5023
+                ],
+                [
+                  8.4353,
+                  49.5128
+                ],
+                [
+                  8.4239,
+                  49.5406
+                ],
+                [
+                  8.4231,
+                  49.5418
+                ],
+                [
+                  8.422,
+                  49.5436
+                ],
+                [
+                  8.4202,
+                  49.5457
+                ],
+                [
+                  8.4173,
+                  49.5491
+                ],
+                [
+                  8.4157,
+                  49.5514
+                ],
+                [
+                  8.4147,
+                  49.5539
+                ],
+                [
+                  8.4142,
+                  49.556
+                ],
+                [
+                  8.4141,
+                  49.5583
+                ],
+                [
+                  8.4143,
+                  49.5604
+                ],
+                [
+                  8.4146,
+                  49.562
+                ],
+                [
+                  8.4151,
+                  49.5633
+                ],
+                [
+                  8.416,
+                  49.5652
+                ],
+                [
+                  8.4174,
+                  49.5673
+                ],
+                [
+                  8.4194,
+                  49.5697
+                ],
+                [
+                  8.4211,
+                  49.5717
+                ],
+                [
+                  8.422,
+                  49.5731
+                ],
+                [
+                  8.4227,
+                  49.5742
+                ],
+                [
+                  8.4235,
+                  49.5761
+                ],
+                [
+                  8.4239,
+                  49.5778
+                ],
+                [
+                  8.4239,
+                  49.5791
+                ],
+                [
+                  8.4239,
+                  49.5797
+                ],
+                [
+                  8.4231,
+                  49.5819
+                ],
+                [
+                  8.4224,
+                  49.5834
+                ],
+                [
+                  8.4245,
+                  49.5841
+                ],
+                [
+                  8.4252,
+                  49.5844
+                ],
+                [
+                  8.4298,
+                  49.5847
+                ],
+                [
+                  8.4383,
+                  49.5839
+                ],
+                [
+                  8.4394,
+                  49.5851
+                ],
+                [
+                  8.4402,
+                  49.5865
+                ],
+                [
+                  8.4406,
+                  49.5879
+                ],
+                [
+                  8.4405,
+                  49.5894
+                ],
+                [
+                  8.4432,
+                  49.5899
+                ],
+                [
+                  8.446,
+                  49.5904
+                ],
+                [
+                  8.4486,
+                  49.5905
+                ],
+                [
+                  8.4542,
+                  49.5902
+                ],
+                [
+                  8.4571,
+                  49.59
+                ],
+                [
+                  8.461,
+                  49.5897
+                ],
+                [
+                  8.4643,
+                  49.5895
+                ],
+                [
+                  8.4661,
+                  49.5885
+                ],
+                [
+                  8.4729,
+                  49.5851
+                ],
+                [
+                  8.4758,
+                  49.5845
+                ],
+                [
+                  8.4741,
+                  49.582
+                ],
+                [
+                  8.4744,
+                  49.581
+                ],
+                [
+                  8.4799,
+                  49.5786
+                ],
+                [
+                  8.4799,
+                  49.5745
+                ],
+                [
+                  8.495,
+                  49.573
+                ],
+                [
+                  8.5008,
+                  49.5672
+                ],
+                [
+                  8.5171,
+                  49.5554
+                ],
+                [
+                  8.5225,
+                  49.5509
+                ],
+                [
+                  8.5263,
+                  49.548
+                ],
+                [
+                  8.5324,
+                  49.5364
+                ],
+                [
+                  8.5368,
+                  49.5324
+                ],
+                [
+                  8.5416,
+                  49.5286
+                ],
+                [
+                  8.5445,
+                  49.5271
+                ],
+                [
+                  8.5509,
+                  49.5245
+                ],
+                [
+                  8.5525,
+                  49.5237
+                ],
+                [
+                  8.5564,
+                  49.5216
+                ],
+                [
+                  8.5669,
+                  49.5191
+                ],
+                [
+                  8.5696,
+                  49.5201
+                ],
+                [
+                  8.5711,
+                  49.5211
+                ],
+                [
+                  8.5726,
+                  49.5206
+                ],
+                [
+                  8.5731,
+                  49.5215
+                ],
+                [
+                  8.5791,
+                  49.5202
+                ],
+                [
+                  8.5814,
+                  49.5198
+                ],
+                [
+                  8.5834,
+                  49.5194
+                ],
+                [
+                  8.5828,
+                  49.5139
+                ],
+                [
+                  8.5855,
+                  49.5126
+                ],
+                [
+                  8.5832,
+                  49.5119
+                ],
+                [
+                  8.5815,
+                  49.51
+                ],
+                [
+                  8.5809,
+                  49.5091
+                ],
+                [
+                  8.5825,
+                  49.5082
+                ],
+                [
+                  8.585,
+                  49.505
+                ],
+                [
+                  8.5862,
+                  49.5036
+                ],
+                [
+                  8.587,
+                  49.5027
+                ],
+                [
+                  8.5877,
+                  49.5018
+                ],
+                [
+                  8.5812,
+                  49.4998
+                ],
+                [
+                  8.5764,
+                  49.4983
+                ],
+                [
+                  8.5726,
+                  49.4965
+                ],
+                [
+                  8.5739,
+                  49.4948
+                ],
+                [
+                  8.5747,
+                  49.4937
+                ],
+                [
+                  8.5685,
+                  49.4925
+                ],
+                [
+                  8.5647,
+                  49.4933
+                ],
+                [
+                  8.561,
+                  49.4912
+                ],
+                [
+                  8.5585,
+                  49.4911
+                ],
+                [
+                  8.5559,
+                  49.4907
+                ],
+                [
+                  8.554,
+                  49.4883
+                ],
+                [
+                  8.5524,
+                  49.4865
+                ],
+                [
+                  8.5511,
+                  49.4848
+                ],
+                [
+                  8.5501,
+                  49.4834
+                ],
+                [
+                  8.5491,
+                  49.4819
+                ],
+                [
+                  8.5483,
+                  49.4805
+                ],
+                [
+                  8.5471,
+                  49.4785
+                ],
+                [
+                  8.5466,
+                  49.4774
+                ],
+                [
+                  8.5498,
+                  49.4774
+                ],
+                [
+                  8.5501,
+                  49.4774
+                ],
+                [
+                  8.553,
+                  49.4771
+                ],
+                [
+                  8.5562,
+                  49.4761
+                ],
+                [
+                  8.5581,
+                  49.475
+                ],
+                [
+                  8.5615,
+                  49.4723
+                ],
+                [
+                  8.5629,
+                  49.4707
+                ],
+                [
+                  8.5642,
+                  49.4691
+                ],
+                [
+                  8.5666,
+                  49.466
+                ],
+                [
+                  8.568,
+                  49.4647
+                ],
+                [
+                  8.5686,
+                  49.4642
+                ],
+                [
+                  8.5692,
+                  49.464
+                ],
+                [
+                  8.5699,
+                  49.4638
+                ],
+                [
+                  8.5699,
+                  49.4631
+                ],
+                [
+                  8.5711,
+                  49.4627
+                ],
+                [
+                  8.5743,
+                  49.4619
+                ],
+                [
+                  8.5793,
+                  49.4604
+                ],
+                [
+                  8.5824,
+                  49.4596
+                ],
+                [
+                  8.5841,
+                  49.4602
+                ],
+                [
+                  8.5851,
+                  49.4604
+                ],
+                [
+                  8.5887,
+                  49.4599
+                ],
+                [
+                  8.5901,
+                  49.4595
+                ],
+                [
+                  8.589,
+                  49.4583
+                ],
+                [
+                  8.5869,
+                  49.4559
+                ],
+                [
+                  8.5832,
+                  49.4512
+                ],
+                [
+                  8.5778,
+                  49.4443
+                ],
+                [
+                  8.5773,
+                  49.4436
+                ],
+                [
+                  8.5793,
+                  49.4429
+                ],
+                [
+                  8.5806,
+                  49.4426
+                ],
+                [
+                  8.5838,
+                  49.4417
+                ],
+                [
+                  8.5851,
+                  49.4414
+                ],
+                [
+                  8.5876,
+                  49.4336
+                ],
+                [
+                  8.5829,
+                  49.4289
+                ],
+                [
+                  8.5846,
+                  49.4282
+                ],
+                [
+                  8.5829,
+                  49.4265
+                ],
+                [
+                  8.5796,
+                  49.4262
+                ],
+                [
+                  8.5778,
+                  49.4253
+                ],
+                [
+                  8.5731,
+                  49.4236
+                ],
+                [
+                  8.5736,
+                  49.42
+                ],
+                [
+                  8.5731,
+                  49.4181
+                ],
+                [
+                  8.5735,
+                  49.4158
+                ],
+                [
+                  8.571,
+                  49.416
+                ],
+                [
+                  8.5697,
+                  49.4165
+                ],
+                [
+                  8.5661,
+                  49.4172
+                ],
+                [
+                  8.5649,
+                  49.4174
+                ],
+                [
+                  8.5649,
+                  49.418
+                ],
+                [
+                  8.5601,
+                  49.4178
+                ],
+                [
+                  8.5451,
+                  49.4174
+                ],
+                [
+                  8.5455,
+                  49.4162
+                ],
+                [
+                  8.5433,
+                  49.4167
+                ],
+                [
+                  8.5394,
+                  49.4158
+                ],
+                [
+                  8.5376,
+                  49.4152
+                ],
+                [
+                  8.539,
+                  49.4137
+                ],
+                [
+                  8.5388,
+                  49.412
+                ],
+                [
+                  8.5336,
+                  49.4124
+                ],
+                [
+                  8.5312,
+                  49.4111
+                ],
+                [
+                  8.5292,
+                  49.4117
+                ],
+                [
+                  8.5285,
+                  49.4122
+                ],
+                [
+                  8.5275,
+                  49.4126
+                ],
+                [
+                  8.5264,
+                  49.4129
+                ],
+                [
+                  8.5247,
+                  49.4131
+                ],
+                [
+                  8.5248,
+                  49.4138
+                ],
+                [
+                  8.525,
+                  49.4148
+                ],
+                [
+                  8.5252,
+                  49.4162
+                ],
+                [
+                  8.5248,
+                  49.4179
+                ],
+                [
+                  8.5226,
+                  49.4182
+                ],
+                [
+                  8.5222,
+                  49.4174
+                ],
+                [
+                  8.5193,
+                  49.416
+                ],
+                [
+                  8.516,
+                  49.4159
+                ],
+                [
+                  8.5127,
+                  49.4142
+                ],
+                [
+                  8.5108,
+                  49.4133
+                ],
+                [
+                  8.5079,
+                  49.4128
+                ],
+                [
+                  8.5052,
+                  49.412
+                ],
+                [
+                  8.5034,
+                  49.411
+                ],
+                [
+                  8.5029,
+                  49.4119
+                ],
+                [
+                  8.5001,
+                  49.4116
+                ],
+                [
+                  8.4973,
+                  49.4113
+                ]
+              ]
+            ]
+          ]
+        },
+        "geometry_completeness": "official_source_or_documented_derived_polygon",
+        "match_type": "polygon_cover",
+        "territorial_match_verified": true,
+        "case_competence_verified": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "bzb_jobcenter",
+        "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+        "layer": "bzb-open:ba_jobcenter",
+        "scope": "DE",
+        "semantics": "authority",
+        "filter": null,
+        "license": "dl-de/by-2-0",
+        "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+        "verification": {
+          "checked_at": "2026-11-13T17:23:13.379639+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "24c2cc600a9c59844ad62af20239000bfe6883203d4990c1f940b25d6fe0832b"
+            },
+            "schema": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_jobcenter",
+              "sha256": "b9a312a16f9fc9ef182864508aa5022c8e10e0f58cffe5f41609fcaf15f8c2ce"
+            },
+            "sample": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+              "sha256": "b0aa8a04d516c7b78658f684660ff39cb207d3b5dc438d960d07e12c2f432f91"
+            }
+          }
+        }
+      }
+    ],
+    "backend": "local",
+    "requested_backend": "local",
+    "fallback_used": false
+  }
+]

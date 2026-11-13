@@ -1,0 +1,417 @@
+{
+  "categories": [
+    "jugendamt",
+    "sozialamt",
+    "familienkasse",
+    "wohngeldstelle"
+  ],
+  "queries": [
+    {
+      "q": "\"Jugendamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Sozialamt\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Familienkasse\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Wohngeldstelle\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    }
+  ]
+}
+§ 3 KiGAbV - Einzelnorm (https://www.gesetze-im-internet.de/kigabv/__3.html)
+citeturn23search0 [wordlim: 200] Crawled: 2 weeks ago; (3) Die Familienkasse der Bundesagentur für Arbeit ergänzt den Datensatz nach Absatz 2 um ... Die Familienkasse der Bundesagentur für Arbeit stellt den ergänzten Datensatz zum Abruf bereit.
+
+# Verordnung über den automatisierten Abruf von Kindergelddaten durch die Bezügestellen des öffentlichen Dienstes (Kindergelddaten-Abrufverordnung - KiGAbV)
+§ 3 Verfahren des Datenabrufs
+
+(1) Personen, denen eine Abrufberechtigung nach § 2 Absatz 1 erteilt worden ist, haben sich bei der Familienkasse der Bundesagentur für Arbeit einmalig zu registrieren und bei jedem Datenabruf gegenüber der Familienkasse zu authentisieren. Ein Datenabruf erfolgt nach amtlich vorgeschriebenem Datensatz durch Datenfernübertragung. Das Bundesministerium der Finanzen gibt den amtlich vorgeschriebenen Datensatz im Bundessteuerblatt bekannt.
+
+(2) Für den Datenabruf mittels Datensatz sind der Familienkasse folgende Angaben mitzuteilen:
+
+1.
+    
+
+die von der Familienkasse der Bundesagentur für Arbeit vergebene Kindergeldnummer,
+
+2.
+    
+
+das Ordnungskriterium, unter dem die jeweilige Stelle des öffentlichen Dienstes den maßgebenden Sachverhalt intern führt,
+
+3.
+    
+
+den oder die Vornamen des zu berücksichtigenden Kindes und
+
+4.
+    
+
+den Tag der Geburt des zu berücksichtigenden Kindes.
+
+(3) Die Familienkasse der Bundesagentur für Arbeit ergänzt den Datensatz nach Absatz 2 um
+
+1.
+    
+
+Zeiträume, für die ein Kindergeldanspruch für das zu berücksichtigende Kind besteht oder bestand, oder
+
+2.
+    
+
+Zeiträume, für die Kindergeld für das zu berücksichtigende Kind zurückgefordert wurde.
+
+Die Familienkasse der Bundesagentur für Arbeit stellt den ergänzten Datensatz zum Abruf bereit.
+
+(4) Die technischen Maßnahmen und organisatorischen Einrichtungen für den Datenabruf stellt jede am automatisierten Abrufverfahren beteiligte Stelle für ihren Bereich bereit.--------------------------------------------------------------------------------
+Datenbestände der Familienkassen - Verwaltungsdaten-Informationsplattform (https://www.verwaltungsdaten-informationsplattform.de/register/73)
+citeturn23search1 [wordlim: 200] Crawled: last month; Insgesamt gibt es 14 Familienkassen der Bundesagentur für Arbeit und etwa 8.000 dezentrale Familienkassen bei öffentlich-rechtlichen Arbeitgebern. ... Das Registermodernisierungsgesetz schreibt vor, dass über die Registermodernisierungsbehörde (BVA (Bundesverwaltungsamt)) der Datenaustausch abzuwickeln ist. ... Die Familienkassen der BA (Bundesagentur für Arbeit) verfügen nur über Daten für Kindergeldberechtigte im eigenen Zuständigkeitsbereich. ... Die Datenbestände zum Kindergeld und Kinderzuschlag werden von den Familienkassen (Familienkasse Direktion der BA (Bundesagentur für Arbeit) und alle Familienkassen des öffentlichen Dienstes) geführt. ...   * Personendaten von Berechtigten und Kindern aus dem Identifikationsnummernregister des BZSt (Bundeszentralamt für Steuern), Daten zu Kindergeldzahlungen aus dem Identifikationsnummernregister des BZSt (Bundeszentralamt für Steuern) und Verlust des Freizügigkeitsrechts von EU (Europäische Union)- / EWR (Europäischer Wirtschaftsraum)-Bürgern gemäß §18f AZRG (Gesetz über das Ausländerzentralregister).
+## Inhalte des Registers
+
+### Qualität
+
+Die Familienkassen der BA (Bundesagentur für Arbeit) verfügen nur über Daten für Kindergeldberechtigte im eigenen Zuständigkeitsbereich. Familienkassen des öffentlichen Dienstes verfügen über eigene Daten. Diese werden auch nicht an die BA (Bundesagentur für Arbeit) übertragen. Die Daten zu den Kindergeldberechtigten stellen damit einen Ausschnitt aus der Grundgesamtheit dar.
+
+Bei den Kinderzuschlag-Beziehenden ist der Datenbestand vollständig. Er umfasst die Grundgesamtheit aller Fälle.
+
+### Periodizität und Aktualität
+
+Daten werden bei erstmaligem Antrag auf Kindergeld oder Kinderzuschlag sowie bei Änderungsmitteilungen gespeichert.
+
+Die Daten sind aktuell. Datenänderungen werden entweder von Berechtigten oder über Datenabgleiche mit dem Identifikationsnummernregister des BZSt (Bundeszentralamt für Steuern), dem Ausländerzentralregister und den Daten der Meldebehörden bekannt.
+
+### Informationsobjekte (Einheiten, über die Daten geführt werden)
+
+## Administrative Registerführung
+
+### Vergleichbare Verwaltungsebene
+
+Bund
+
+### Ressort
+
+### Datenhaltende Stellen
+
+### Zuständigkeiten
+
+Die Datenbestände zum Kindergeld und Kinderzuschlag werden von den Familienkassen (Familienkasse Direktion der BA (Bundesagentur für Arbeit) und alle Familienkassen des öffentlichen Dienstes) geführt.
+
+### Öffentliche Datenbereitstellung
+
+Kein
+
+### Nicht-öffentlicher Datenzugang
+
+Der digitale automatisierte Abruf erfolgt für folgende berechtigte Stellen:
+
+  * Bezügestellen des öffentlichen Dienstes gemäß § 68 Abs. (Absatz) 4 EStG (Einkommensteuergesetz),
+  * Dienststellen der Bundesagentur für Arbeit im Rahmen des SGB (Sozialgesetzbuch) III gemäß § 68 Abs. (Absatz) 5 EStG (Einkommensteuergesetz),
+  * gemeinsame Einrichtungen (gE) im Rahmen des SGB (Sozialgesetzbuch) II gemäß § 68 Abs. (Absatz) 5 EStG (Einkommensteuergesetz),
+  * Caisse d’allocations familiales (CAF - Frankreich),
+  * Caisse pour l’avenir des enfants (CAE - Luxemburg) sowie
+  * elektronische Kindergeldstatistik (eKist) gemäß § 4 StStatG (Gesetz über Steuerstatistiken).
+
+Ein schriftlicher Auszug erfolgt an folgende berechtigte Stellen:
+
+  * Dienststellen der Bundesagentur für Arbeit im Rahmen des SGB (Sozialgesetzbuch) III gemäß § 21 Abs. (Absatz) 4 SGB (Sozialgesetzbuch) X sowie
+  * gemeinsame Einrichtungen (gE) und zugelassene kommunale Träger (zKT) im Rahmen des SGB (Sozialgesetzbuch) II gemäß § 21 Abs. (Absatz) 4 SGB (Sozialgesetzbuch) X.
+
+### Datenlieferungen (eingehend/ ausgehend)
+
+Dateneingang erfolgt bei Antragsstellung oder Änderungsmitteilung.
+
+Datenausgang erfolgt bei Übermittlung ausgewählter personenbezogener Daten an Sozialleistungsträger, soweit dies für deren Aufgabenerfüllung erforderlich ist.
+
+Eingehende Datenlieferungen:
+
+  * Personendaten von Berechtigten und Kindern aus dem Onlineportal der Familienkassen,
+  * Einkommens- und Vermögensdaten von Kindern und Berechtigten aus dem Onlineportal der Familienkassen,
+  * Personendaten von Berechtigten und Kindern aus dem Identifikationsnummernregister des BZSt (Bundeszentralamt für Steuern), Daten zu Kindergeldzahlungen aus dem Identifikationsnummernregister des BZSt (Bundeszentralamt für Steuern) und Verlust des Freizügigkeitsrechts von EU (Europäische Union)- / EWR (Europäischer Wirtschaftsraum)-Bürgern gemäß §18f AZRG (Gesetz über das Ausländerzentralregister).
+--------------------------------------------------------------------------------
+627-25-vor (https://dserver.bundestag.de/brd/2025/0627-25.pdf)
+citeturn23search12 [wordlim: 200] Published: last year; Crawled: last year; 3. die Familienkasse, soweit sie für das Kindergeld nach dem Bundeskindergeldgesetz zuständig ist, ... 1. die bei den für das Kindergeld nach dem zehnten Abschnitt des Einkommensteuergesetzes zuständigen Stellen der Familienkasse der Bundesagentur für Arbeit (datenliefernde Stelle) gespeichert sind, und
+Drucksache 627/25
+
+Verordnung zum Abruf von Kindergelddaten durch Sozialleistungsträger
+
+(Sozialleistungsträger-Datenabruf-Verordnung – SozKiGAbV)
+
+Vom ...
+
+Das Bundesministerium der Finanzen verordnet auf Grund des § 68 Absatz 5 des Einkommensteuergesetzes in der Fassung der Bekanntmachung vom 8. Oktober 2009 (BGBl. I S. 3366, 3862), das zuletzt durch Artikel 1 des Gesetzes vom 14. Juli 2025 (BGBl. 2025 I Nr. 161) geändert worden ist:
+
+§ 1
+
+Anwendungsbereich
+
+(1) Diese Verordnung gilt für den automatisierten Abruf von Daten durch die folgenden abrufberechtigten Stellen:
+
+1. die Leistungsträger, die nach § 19 Absatz 2 des Ersten Buches Sozialgesetzbuch für Leistungen der Arbeitsförderung zuständig sind,
+
+2. die Leistungsträger, die nach § 19a Absatz 2 des Ersten Buches Sozialgesetzbuch für Leistungen der Grundsicherung für Arbeitsuchende zuständig sind,
+
+3. die Familienkasse, soweit sie für das Kindergeld nach dem Bundeskindergeldgesetz zuständig ist,
+
+4. die Leistungsträger, die nach § 25 Absatz 3 des Ersten Buches Sozialgesetzbuch in Verbindung mit § 7 Absatz 3 des Bundeskindergeldgesetzes für Leistungen für Bildung und Teilhabe zuständig sind,
+
+5. die Leistungsträger, die nach § 28 Absatz 2 des Ersten Buches Sozialgesetzbuch für Leistungen der Sozialhilfe zuständig sind, und
+
+6. die für den Vollzug des Unterhaltsvorschussgesetzes zuständigen Stellen (Unterhaltsvorschussstellen).
+
+(2) Daten nach Absatz 1 sind Daten,
+
+1. die bei den für das Kindergeld nach dem zehnten Abschnitt des Einkommensteuergesetzes zuständigen Stellen der Familienkasse der Bundesagentur für Arbeit (datenliefernde Stelle) gespeichert sind, und
+
+2. die den für eine Kindergeldzahlung maßgebenden Sachverhalt betreffen.--------------------------------------------------------------------------------
+Wohngeld - Verwaltungsportal Hessen (https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_8967519&regschl=064380003003)
+citeturn23search2 [wordlim: 200] Crawled: 2 months ago; In den Städten Bad Homburg vor der Höhe, Fulda, Hanau, Marburg, Rüsselsheim und Wetzlar wenden Sie sich bitte anstatt an den Landkreis an die Wohngeldstelle vor Ort.
+
+Eine Liste der Wohngeldstellen in Hessen erhalten Sie als Download (pdf) auf der Seite des Hessischen Ministeriums für Wirtschaft, Energie, Verkehr und Landesentwicklung.
+## Zuständigkeit
+
+An die Wohngeldstelle Ihrer Kreisfreien Stadt oder Ihres Landkreises. In den Städten Bad Homburg vor der Höhe, Fulda, Hanau, Marburg, Rüsselsheim und Wetzlar wenden Sie sich bitte anstatt an den Landkreis an die Wohngeldstelle vor Ort.
+
+Eine Liste der Wohngeldstellen in Hessen erhalten Sie als Download (pdf) auf der Seite des Hessischen Ministeriums für Wirtschaft, Energie, Verkehr und Landesentwicklung. Dort finden Sie auch den Link zu einem (unverbindlichen) Online-Wohngeldrechner.
+
+  * Wohngeld
+
+(Hessisches Ministerium für Wirtschaft, Energie, Verkehr und Wohnen)
+
+## Ansprechpartner
+
+### Fachdienst SGB XII, Asyl und sonstige soziale Leistungen - Sonstige Soziale Leistungen - Wohngeldbehörde
+
+#### Adresse
+
+##### Hausanschrift
+
+Werner-Hilpert-Straße 1
+63128 Dietzenbach
+
+Kontakt speichern
+
+#### Kontakt
+
+Telefon Festnetz: 06074 8180-4165
+
+Telefon Festnetz: 06074 8180-3154
+
+Fax: 06074 8180-3919
+
+#### Kontaktperson
+
+  * ##### Frau Rückert ( Wohngeldbehörde )
+
+###### Hausanschrift
+
+Werner-Hilpert-Straße 1
+63128 Dietzenbach
+
+Kontakt speichern
+
+E-Mail: j.rueckert@kreis-offenbach.de
+
+Telefon Festnetz: 06074 8180-4229
+
+  * ##### Frau Hetzer ( Wohngeldbehörde )
+
+###### Hausanschrift
+
+Werner-Hilpert-Straße 1
+63128 Dietzenbach
+
+Kontakt speichern
+
+E-Mail: s.hetzer@kreis-offenbach.de
+
+Telefon Festnetz: 06074 8180-4232
+
+  * ##### Frau Pesoldt ( Wohngeldbehörde )
+
+###### Hausanschrift
+
+Werner-Hilpert-Straße 1
+63128 Dietzenbach
+
+Kontakt speichern
+
+E-Mail: alisa.pesoldt@kreis-offenbach.de
+
+Telefon Festnetz: 06074 8180-4218
+
+  * ##### Herr Alaoui ( Wohngeldbehörde )
+
+###### Hausanschrift
+
+Werner-Hilpert-Straße 1
+63128 Dietzenbach
+
+Kontakt speichern
+
+E-Mail: c.alaoui@kreis-offenbach.de
+
+Telefon Festnetz: 06074 8180-3004
+
+  * ##### Frau Beckmann ( Wohngeldbehörde )
+
+--------------------------------------------------------------------------------
+§ 3 EUKiGAbV - Einzelnorm (https://www.gesetze-im-internet.de/eukigabv/__3.html)
+citeturn23search3 [wordlim: 200] Crawled: 3 weeks ago; Ist der Familienkasse-BA zu dem Datensatz kein Bezug zum zwischen- und überstaatlichen Recht bekannt, hat der ausländische Träger zusätzlich den Grund des Datenabrufs und den Bezug zum zwischen- und überstaatlichen Recht mitzuteilen; ein Datenabruf nach Satz 1 Nummer 2 ist in diesem Fall unzulässig. ... (3) Die Familienkasse-BA ergänzt den Datensatz nach Absatz 2 um die Daten, die für die abrufende Stelle zur Koordinierung der Familienleistungen erforderlich sind und die im Datensystem der Familienkasse-BA hinterlegt sind.
+
+(3) Die Familienkasse-BA ergänzt den Datensatz nach Absatz 2 um die Daten, die für die abrufende Stelle zur Koordinierung der Familienleistungen erforderlich sind und die im Datensystem der Familienkasse-BA hinterlegt sind. Der Datenabruf ist zu beschränken auf folgende
+
+1.
+    
+
+Daten des zu berücksichtigenden Kindes:
+
+a)
+    
+
+die Identifikationsnummer im Sinne des § 139b der Abgabenordnung,
+
+b)
+    
+
+die im Mitgliedstaat des ausländischen Trägers vergebene Identifikationsnummer,
+
+c)
+    
+
+die Vornamen und den Nachnamen sowie frühere Namen,
+
+d)
+    
+
+den Tag der Geburt,
+
+e)
+    
+
+das Geschlecht,
+
+f)
+    
+
+die Staatsangehörigkeit,
+
+g)
+    
+
+die gegenwärtige oder die letzte bekannte Anschrift oder den gewöhnlichen Aufenthalt sowie den Tag des Ein- und Auszugs,
+
+h)
+    
+
+die Vornamen und den Nachnamen der Eltern,
+
+i)
+    
+
+die Haushaltszugehörigkeit des Kindes im Sinne des § 64 Absatz 2 Satz 1 des Einkommensteuergesetzes,
+
+j)
+    
+
+in den Fällen des § 64 Absatz 3 des Einkommensteuergesetzes: den Vornamen und den Nachnamen der Person, die die höchste Unterhaltsrente zahlt,
+--------------------------------------------------------------------------------
+Stadt Münster: Amt für Wohnungswesen und Quartiersentwicklung - Hinweise zum Datenschutz bei der Beantragung von Wohngeld nach dem Wohngeldgesetz (WoGG) (https://www.stadt-muenster.de/wohnungsamt/wohngeld/datenschutz)
+citeturn23search4 [wordlim: 200] Crawled: today; # Stadt Münster: Amt für Wohnungswesen und Quartiersentwicklung - Hinweise zum Datenschutz bei der Beantragung von Wohngeld nach dem Wohngeldgesetz (WoGG) ... Soweit es für die Durchführung des Wohngeldgesetzes bzw. zur Ermittlung der für das Wohngeld maßgeblichen Verhältnisse im Einzelfall erforderlich ist, werden Ihre Daten manuell bzw. automati­siert verarbeitet (d. h. insbesondere: erhoben, erfasst, geordnet, gespeichert und übermittelt; vgl. ... Zur Vermeidung und Aufdeckung der rechtswidrigen Inanspruchnahme von Wohngeld wird ein re­gelmäßiger Datenabgleich für alle Haushaltsmitglieder, auch in automatisierter Form, insbesondere mit der Datenstelle der Rentenversicherung durchgeführt (§ 33 Abs. 2 und 5 WoGG in Verbindung mit §§ 16 bis 21 WoGV). ... Sollten Sie mit den Auskünften Ihrer Wohngeldbehörde bzw. mit der von ihr vorgenommenen Verar-beitung personenbezogener Daten nicht einverstanden sein, können Sie sich mit einer Beschwerde an die Landesbeauftragte für Datenschutz und Informationssicherheit Nordrhein-Westfalen als Auf­sichtsbehörde wenden.
+1 Nr. 1 Buchstabe b Dop­pelbuchstabe bb bzw. Nr. 2 AO.
+
+Die Kosten für Auskunftsersuchen bei Banken und Kreditinstituten hat die/der Mitwirkungspflichtige der Wohngeldbehörde zu erstatten (vgl. § 23 Abs. 4 Satz 4 WoGG).
+
+### 6. Manueller bzw. automatisierter Datenabgleich
+
+Zur Vermeidung und Aufdeckung der rechtswidrigen Inanspruchnahme von Wohngeld wird ein re­gelmäßiger Datenabgleich für alle Haushaltsmitglieder, auch in automatisierter Form, insbesondere mit der Datenstelle der Rentenversicherung durchgeführt (§ 33 Abs. 2 und 5 WoGG in Verbindung mit §§ 16 bis 21 WoGV). Es darf z. B. abgeglichen werden, ob während des Wohngeldbezugs Ar­beitslosengeld II gezahlt wird, ob eine versicherungspflichtige oder geringfügige Beschäftigung be­steht oder in welcher Höhe Kapitalerträge zufließen, für die ein Freistellungsauftrag erteilt worden ist. Ebenso ist ein Abgleich mit der Meldebehörde zu Meldeanschriften, Wohnungsstatus und Zeitpunkt von Ummeldungen möglich.
+
+Zudem besteht die Möglichkeit eines Kontenabrufs beim Bundeszentralamt für Steuern nach § 93 Abs. 8 Satz 1 Nr. 1 Buchstabe e AO.
+
+Verdachtsfälle auf Betrug werden grundsätzlich bei der Staatsanwaltschaft angezeigt.
+--------------------------------------------------------------------------------
+Information nach Artikel 13 und Artikel 14 der Datenschutz-Grundverordnung (DSGVO) Wohngeld (https://www.freudenberg-stadt.de/Quicknavigation/Datenschutz/Information-nach-Artikel-13-und-Artikel-14-der-Datenschutz-Grundverordnung-DSGVO-Wohngeld/)
+citeturn23search5 [wordlim: 200] Crawled: 3 weeks ago; Im Zusammenhang mit der Beantragung von Wohngeld nach Wohngeldgesetz (WoGG) werden von ... Soweit es für die Durchführung des WoGG beziehungsweise zur Ermittlung der für das Wohngeld ... Wohngeldstelle der Stadt Freudenberg haben Sie als Antragstellerin oder Antragsteller und/oder Ihre ...   * bei anderen Stellen im Zusammenhang von zwischen diesen und den Haushaltsmitgliedern bestehenden Rechtsverhältnissen (beispielsweise beim Wohnungsgeber über das Mietverhältnis, bei Banken und Kreditinstituten beispielsweise über das über das Arbeitseinkommen) und bei anderen Personen im Hinblick auf möglicherweise gegen diese Personen bestehende Rechtsansprüche oder deren Voraussetzungen (beispielsweise unterhaltsverpflichtete Eltern, frühere oder getrennt lebende Ehegatten) – siehe auch § 23 WoGG. ... a) Stammdaten/Kontaktdaten: ... Städte und Gemeinden, Einwohnermeldebehörden anderer Städte und Gemeinden, Datenstelle der ... Arbeitslosengeld II gezahlt wird, ob eine versicherungspflichtige oder geringfügige Beschäftigung ... Information und Technik Nordrhein-Westfalen (Landesbetrieb IT.NRW) als amtliche Statistikstelle des
+Leistungsgewährung:
+beispielsweise Daten über die Einkommensverhältnisse und Vermögensverhältnisse, Daten über
+den Bezug von Sozialleistungen (Leistungszeitraum, Leistungshöhe, Leistungsart), Daten zu
+Wohnraummietverträgen, Daten über Unterhaltsansprüche/Regressansprüche, Daten zur
+Krankenversicherung/Rentenversicherung/Pflegeversicherung, Daten zur Dauer und Beendigung
+eventueller Beschäftigungsverhältnisse, Vollstreckungsdaten, Daten zu Verfahren nach dem
+Ordnungswidrigkeitengesetz (OWiG).
+
+4.2.2 Quellen der erhobenen Daten
+
+Wir erheben personenbezogene Daten aus folgenden Datenquellen:
+Antragstellerin oder Antragsteller, Angehörige, Haushaltsangehörige, andere Bewohnerinnen und
+Bewohner der Wohnung, Jobcenter, Agentur für Arbeit, andere Fachdienste, Wohngeldstellen anderer
+Städte und Gemeinden, Einwohnermeldebehörden anderer Städte und Gemeinden, Datenstelle der
+Deutschen Rentenversicherung, Bundeszentralamt für Steuern, Ämter für Ausbildungsförderung,
+Familienkasse, Finanzamt, Unterhaltsvorschussstelle, andere Fachdienste, Banken und
+Kreditinstitute, Arbeitgeber, Wohnungsgebende, Unterhaltspflichtige, Polizei, Staatsanwaltschaft,
+Gerichte, zuständige Landesstelle für den Datenabgleich.
+Dabei handelt es sich sowohl um öffentlich-zugängliche als auch um nicht öffentlich-zugängliche
+Quellen. Öffentlich zugängliche Quellen sind beispielsweise das Internet, öffentliche Register (wie
+Melderegister, Handelsregister), die Grundbuchämter oder öffentliche Bekanntmachungen.
+--------------------------------------------------------------------------------
+Soziales - Behördliche Einrichtungen - GovData (https://www.govdata.de/suche/daten/soziales-behordliche-einrichtungen)
+citeturn23search6 [wordlim: 200] Published: 4.2 years ago; Crawled: 3 weeks ago; Datensatz ... Herausgeber: Stadt Norderstedt, Sozialamt ... WFS Soziales - Behördliche Einrichtungen Stadt Norderstedt (Downloaddienst)  | 14.01.2026  | WFS_SRVC  | zur Ressource Ressourcenlink in Zwischenablage kopieren Image
+--------------------------------------------------------------------------------
+Sozialamt - GovData (https://www.govdata.de/suche/daten/sozialamt)
+citeturn23search7 [wordlim: 200] Published: 3 months ago; Crawled: 2 months ago; Datensatz
+
+# Sozialamt
+
+Orte von Interesse (XErleben) - Behörde - Sozialamt, Sozialbüro, Versorgungsamt, Stadtteilwerkstatt Dortmund.
+
+## Ressourcen und Datenlinks ...     Download Metadaten
+--------------------------------------------------------------------------------
+Gemeinde Windeck (https://gemeinde-windeck.de/wp-content/uploads/2026/01/Datenschutzerklaerung-Wohngeldstelle-S32.pdf)
+citeturn23search13 [wordlim: 200] Published: 2.7 years ago; Der Sachbereich 32 Soziales – Wohngeldstelle – der Gemeinde Windeck erhebt folgende ... a) Stammdaten/Kontaktdaten: ... Wohnung, Jobcenter, Agentur für Arbeit, andere Fachdienste, Wohngeldstellen anderer 
+Städte/Gemeinden, Einwohnermeldebehörden anderer Städte, Datenstelle der Deutschen
+--------------------------------------------------------------------------------
+Allgemeiner Sozialer Dienst (ASD) Hamburg | MetaVer (https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/trefferanzeige_237131_snap_26.HTML)
+citeturn23search8 [wordlim: 200] Published: 6.2 years ago; Crawled: last month; Download WFS Allgemeiner Sozialer Dienst (ASD) Hamburg (GML) ... Zur genaueren Beschreibung der Daten und Datenverantwortung nutzen Sie bitte den Verweis zur Datensatzbeschreibung. ... Im Bereich der Jugendhilfe fungiert die Sozialbehörde als oberste Landesjugendbehörde und Landesjugendamt und nimmt überbezirkliche Aufgaben wahr. ... Suchbegriffe  | Beratung Bevölkerung und Gesellschaft Eltern Erziehung Geodaten Hamburg Hilfe hmbtg hmbtg_09_geodaten Kind [Button: Mehr ] Kindeswohlgefährdung opendata Scheidung Trennung Unterstützung [Button: Weniger ]
+--------------------------------------------------------------------------------
+§ 13 BKGG - Einzelnorm (https://www.gesetze-im-internet.de/bkgg_1996/__13.html)
+citeturn23search9 [wordlim: 200] Crawled: yesterday; (1) Für die Entgegennahme des Antrages und die Entscheidungen über den Anspruch ist die Familienkasse (§ 7 Absatz 2) zuständig, in deren Bezirk der Berechtigte seinen Wohnsitz hat. ... (3) Der Vorstand der Bundesagentur kann für bestimmte Bezirke oder Gruppen von Berechtigten die Entscheidungen über den Anspruch auf Kindergeld und Kinderzuschlag einheitlich einer anderen Familienkasse übertragen.
+--------------------------------------------------------------------------------
+Datensatz für das Ausländerwesen (https://www.osci.de/dsauslaender/4.fassung/20240801_datensatz_v4.pdf)
+citeturn23search14 [wordlim: 200] Crawled: last week; Datensatz für das Ausländerwesen  
+010.10 Endgültig zuständiges Jugendamt (Freitext) ... <td colspan="8">Die Bezeichnung der zuständigen Behörde, falls kein Behördenkennzeichen für diese Behörde vorhanden ist.</td>
+--------------------------------------------------------------------------------
+4 Verfahren (https://www.bmbfsfj.bund.de/resource/blob/243236/a81e922c7e43128d76c4299778d83e89/richtlinien-zum-beeg-data.pdf)
+citeturn23search15 [wordlim: 200] Published: 9 months ago; „Verbindungsstelle“ im Wortgebrauch der VO und der DVO gemäß § 4 des Gesetzes zur Koordinierung der Systeme der sozialen Sicherheit in Europa für den Bereich des Kindergeldes, des Kinderzuschlages, des Elterngeldes und des Erziehungsgeldes nach den Rechtsvorschriften der Länder ist in Deutschland die Familienkasse Direktion der Bundesagentur für Arbeit (Familienkasse Direktion, 90327 Nürnberg; Familienkasse-Direktion@arbeitsagentur.de; Familienkasse-Direktion.RV1@arbeitsagentur.de). ... catId=1028&langId=de (Funktion „Suche nach Zuständigkeiten“; Funktion „erweiterte Suche“, Land wählen; unter „Funktion“ „Verbindungsstelle“ und unter „Zweige der sozialen Sicherheit“ Familienleistungen – Leistungen für Kindererziehung“ wählen).
+--------------------------------------------------------------------------------
+Bundesportal | Weiterleistung für Wohngeld beantragen (https://verwaltung.bund.de/leistungsverzeichnis/DE/leistung/99107023037001/herausgeber/RP-230369125/region/070000000000)
+citeturn23search10 [wordlim: 200] Published: 3.1 years ago; Crawled: 2 months ago;   * eine Person, die durch die Obdachlosenbehörde in Obdachlosenunterkünfte oder in Wohnraum Dritter eingewiesen ist, auch wenn das Nutzungsentgelt (welches sich nicht zum Beispiel nach der Anzahl der Tage bemisst oder nach erwachsenen Personen und Kindern gestaffelt ist) an die Obdachlosenbehörde gezahlt wird ...   * Eigentümerinnen und Eigentümer einer landwirtschaftlichen Vollerwerbsstelle, falls Wohn- und Wirtschaftsteil voneinander getrennt sind und für den Wohnteil eine Wohngeldlastenberechnung aufgestellt werden kann, ... Um die rechtswidrige Inanspruchnahme von Wohngeld zu vermeiden oder aufzudecken, darf die Wohngeldbehörde die Angaben aller Haushaltsmitglieder regelmäßig durch einen Datenabgleich – auch in automatisierter Form – insbesondere mit der Datenstelle der Rentenversicherung, überprüfen.
+--------------------------------------------------------------------------------
+Kinderschutznetzwerke - GovData (https://www.govdata.de/suche/daten/kinderschutznetzwerke?ids=d42de3a7-e009-4d58-ae0c-81d6fb414dd1)
+citeturn23search11 [wordlim: 200] Published: 1.2 years ago; Crawled: 3 months ago; Zuständigkeitsbereiche der Kinderschutznetzwerke des Jugendamtes (510) in Bielefeld. ... Kinderschutznetzwerke - wfs  | 26.08.2025  | WFS  | zur Ressource Ressourcenlink in Zwischenablage kopieren Image ... ## Details zum Datensatz ...     Download Metadaten ...     Stadt Bielefeld - Amt für Jugend und Familie - Jugendamt
+--------------------------------------------------------------------------------
+1504231 (https://dserver.bundestag.de/btd/15/042/1504231.pdf)
+citeturn23search16 [wordlim: 200] Published: 22.0 years ago; Crawled: last week; Die Betroffenen sind von der Wohngeldstelle in geeigneter Weise auf die Datenübermittlung hinzuweisen. ... Durch die ausdrückliche Nennung kann bei dieser Vermittlungsstelle auch im Wege des Ermittlungsersuchens im Einzelfall der notwendige Datenabgleich erfolgen. ... Mangels gesetzlicher Regelung ist den Wohngeldstellen bisher im Verdachtsfall nur möglich, eine individuelle Einzelanfrage durchzuführen. Zur Vermeidung von Doppelzahlungen beim Wohngeld und der Verhinderung von Leistungsmissbrauch ist es erforderlich, dass die für Wohngeld zuständigen Stellen die Ermächtigung erhalten, auch auf dem Wege des automatisierten Datenabgleichs zu prüfen, ob Wohngeldberechtigte zu Unrecht Leistungen doppelt beziehen.
+--------------------------------------------------------------------------------
+Bundesrat 
+Drucksache 
+ 559/2/07
+ 
+ 
+19.09.07 (https://www.umwelt-online.de/PDFBR/2007/0559_2D2_2D07.pdf)
+citeturn23search17 [wordlim: 200] Published: 9 months ago; vorschrift für die (Rück)-Übermittlung an die übermittelnde Wohngeldstelle ... übermittelnde Wohngeldstelle ist aber die Stelle, die die Daten verarbeitet, die ... Der Begriff "Behörde" ist durch "Stelle" zu ersetzen. ... einer Behörde und bei Organisationseinheiten zu erfassen, die keine Behörden ... keine Aufgabe der öffentlichen Verwaltung ist.
+--------------------------------------------------------------------------------
+Familienkasse (https://de.wikipedia.org/wiki/Familienkasse)
+citeturn23search18 [wordlim: 200] Crawled: 8 months ago; Die Familienkasse ist eine deutsche Bundesfinanzbehörde. ... Neben den besonderen Dienststellen der Bundesagentur für Arbeit wurden im Bereich des öffentlichen Dienstes der Körperschaften, Anstalten und Stiftungen des öffentlichen Rechts Familienkassen eingerichtet. Bis 2016 gab es neben den 14 Familienkassen der Bundesagentur für Arbeit etwa 8.000 dezentrale Familienkassen bei öffentlich-rechtlichen Arbeitgebern. ... Für Ausländer, die weder unbeschränkt steuerpflichtig sind noch einen Wohnsitz/gewöhnlichen Aufenthaltsort in Deutschland haben, gelten besondere Regelungen nach dem Bundeskindergeldgesetz. ... Darüber hinaus sind die Familienkassen der Bundesagentur für Arbeit auch für die Berechnung und die Auszahlung des Kinderzuschlags nach § 6a Bundeskindergeldgesetz zuständig. ... *  bzst.de: Kontaktdaten der Landesfamilienkassen (Memento vom 7.
+--------------------------------------------------------------------------------
+Wohngeld (https://de.wikipedia.org/wiki/Wohngeld)
+citeturn23search19 [wordlim: 200] Crawled: last month; Die Wohngeldstelle kann darüber hinaus im Einzelnen überprüfen: ... Grundsätzlich können auch Ausländer während eines Deutschlandaufenthalts Wohngeldansprüche haben (§ 3 Abs. ... Bei Rechtsstreitigkeiten im Bereich des Wohngeldes ist die Verwaltungsgerichtsbarkeit zuständig. ... Grundsätzlich ist hier das Jahreseinkommen zugrunde zu legen, zu dem neben der Summe der Einkünfte im Sinne des Steuerrechts auch bestimmte steuerfreie Bezüge nach § 14 Abs. ... Dies gilt insbesondere für Bürgergeld, Leistungen für Auszubildende, Übergangsgeld, Verletztengeld, Grundsicherung im Alter und bei Erwerbsminderung, Hilfe zum Lebensunterhalt, Kriegsopferfürsorge, Leistungen nach dem Asylbewerberleistungsgesetz sowie Pflegegeld nach dem SGB VIII. ... Eine Wohngeldbehörde darf jedoch Menschen, welche einen Antrag auf Wohngeld gestellt haben, nicht abweisen mit der Begründung, diese müssen bei einer anderen Behörde aus § 7 WoGG eine andere Leistung beantragen. Das Bestehen eines Anspruches auf sonstige Leistungen anderer Behörden allein genügt nicht zur Ablehnung.
+--------------------------------------------------------------------------------
+Familienkasse Bayern Süd (https://de.wikipedia.org/wiki/Familienkasse_Bayern_S%C3%BCd)
+citeturn23search20 [wordlim: 200] Crawled: 10 months ago; Die Familienkasse Bayern Süd ist für die Auszahlung des Kindergeldes nach dem Einkommensteuergesetz (EStG) und des Kinderzuschlags nach dem Bundeskindergeldgesetz (BKGG) für die Landkreise und kreisfreien Städte in folgenden Agenturbezirken der Bundesagentur für Arbeit zuständig: Augsburg, Deggendorf, Freising, Ingolstadt, Kempten/Memmingen, Landshut/Pfarrkirchen, München, Passau, Regensburg, Rosenheim, Traunstein, Weilheim. ... Durch die Online-Dienste des Bezügestellenservices werden öffentlichen Diensten Informationen, die zur Berechnung von kindergeldabhängigen Gehalts- und Bezügebestandteilen erforderlich sind, datensicher zur Verfügung gestellt. ... *  Gesetz zur Beendigung der Sonderzuständigkeit der Familienkassen des öffentlichen Dienstes im Bereich des Bundes, vom 8.
+--------------------------------------------------------------------------------
+Kindergeld (Deutschland) (https://de.wikipedia.org/wiki/Kindergeld_%28Deutschland%29)
+citeturn23search21 [wordlim: 200] Crawled: 2 weeks ago; Januar 2024 sind ausschließlich die Familienkassen der Bundesagentur für Arbeit für die Kindergeldbearbeitung zuständig. ... Bei volljährigen Kindern, für die Kindergeld gezahlt wird, erstreckt sich die Mitwirkungspflicht auch auf diese (§ 68 EStG). ... Zuständige Finanzbehörde für die Verfolgung von Steuerstraftaten und Steuerordnungswidrigkeiten im Zusammenhang mit der Festsetzung von Kindergeld nach dem EStG ist die Familienkasse.
+--------------------------------------------------------------------------------
+Jugendamt (https://de.wikipedia.org/wiki/Jugendamt)
+citeturn23search22 [wordlim: 200] Crawled: last month; Das deutsche Jugendamt ist eine Organisationseinheit innerhalb der Kommunalverwaltung, deren rechtliche Grundlagen sich im Achten Buch Sozialgesetzbuch (SGB VIII) – Kinder- und Jugendhilfe – finden. ... * Literatur von und über Jugendamt im Katalog der Deutschen Nationalbibliothek ... Diese haben einen weiten Gestaltungsspielraum in der Frage, wie sie die Pflichtaufgabe Kinder- und Jugendhilfe konkret in ihrem Zuständigkeitsbereich umsetzen. Insoweit besteht nur eine Rechtsaufsicht über die Kommunalverwaltungen und damit auch über die Jugendämter, die bei den jeweils zuständigen staatlichen Behörden (z. ... ### Beteiligung der Zivilgesellschaft
+

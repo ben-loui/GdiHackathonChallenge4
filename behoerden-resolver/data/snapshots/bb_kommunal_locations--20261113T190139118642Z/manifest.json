@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "source": {
+    "scope": "DE-BB",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Land Brandenburg, Serviceportal Brandenburg, dl-de/by-2-0",
+    "source_date": "No per-record date supplied; retrieval date retained separately",
+    "request_crs": "EPSG:25833",
+    "coordinate_crs_evidence": "Published UTM east/north values interpreted in Brandenburg UTM zone 33; BKG CRS registry and state reference-system rule, cross-checked for Potsdam. https://sg.geodatenzentrum.de/web_registry/crs-gdz/coordinateReferenceSystem/UTM33.html",
+    "modifications": "Strip repeated UTF-8 BOM; retain string identifiers and original records; transform actual UTM coordinates, do not geocode or infer points from town centroids.",
+    "name_rule": "Unchanged explicit authority designation in the public official registry; reviewed source categories",
+    "id": "bb_kommunal_locations",
+    "kind": "authority_point",
+    "format": "bb_kommunal_points",
+    "routes": [
+      {
+        "category": "kreisverwaltung"
+      },
+      {
+        "category": "stadtverwaltung"
+      }
+    ],
+    "documentation": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/",
+    "download_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/kvdaten.csv",
+    "coverage_claim": "Actual locations for Landkreise and independent municipal administrations; shared/Amts-member institutions excluded."
+  },
+  "completed_at": "2026-11-13T19:01:39.118359+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "stadtverwaltung": 138,
+    "kreisverwaltung": 13
+  },
+  "records_sha256": "e6f0450d6afdbf95f7748493fffd4bdecd319636b6819d57c7104b6168414624",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/kvdaten.csv",
+      "retrieved_at": "2026-11-13T19:01:39.113283+00:00",
+      "response_sha256": "9b3ecb4a5f8c5195d478553d937eb3fd5f15bf61ec2d866f318aa1ebe1b1533b",
+      "bytes": 109604
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_directory_rows": 478,
+  "classification_audit": {
+    "excluded_shared_municipal_office_role": 323,
+    "invalid_original_coordinate": 3,
+    "missing_original_coordinates": 1
+  },
+  "invalid_coordinate_rows": [
+    {
+      "source_key": "120700173173",
+      "east": "282039.7315895144.238",
+      "north": "5895088.160"
+    },
+    {
+      "source_key": "120650198198",
+      "east": "375858.5905862260.100",
+      "north": "5862304.704"
+    },
+    {
+      "source_key": "120690665665",
+      "east": "325629.6955776643.387",
+      "north": "5776695.186"
+    }
+  ],
+  "source_input": "verified HTTPS download"
+}

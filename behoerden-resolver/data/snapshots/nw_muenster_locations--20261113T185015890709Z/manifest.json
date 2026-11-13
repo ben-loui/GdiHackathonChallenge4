@@ -1,0 +1,188 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "nw_muenster_locations",
+    "kind": "authority_point",
+    "scope": "DE-NW",
+    "format": "geojson_points",
+    "default_import": true,
+    "active": true,
+    "documentation": "https://opendata.stadt-muenster.de/dataset/beh%C3%B6rdenstandorte",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Stadt Münster, dl-de/by-2-0",
+    "source_quality": "official",
+    "name_rule": "Original named official office; source-specific reviewed category routes. No area inferred.",
+    "coverage_claim": "Only actual office points in the advertised local dataset; no jurisdiction or nationwide completeness.",
+    "modifications": "Original point coordinates transformed only where necessary. All original properties retained; unrelated institution types excluded.",
+    "id_field": "oid",
+    "routes": [
+      {
+        "category": "buergeramt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            1,
+            10,
+            16,
+            18,
+            19,
+            26,
+            27,
+            28
+          ]
+        }
+      },
+      {
+        "category": "gesundheitsamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            2,
+            13,
+            47
+          ]
+        }
+      },
+      {
+        "category": "veterinaeramt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            2,
+            13,
+            47
+          ]
+        }
+      },
+      {
+        "category": "jobcenter",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            6,
+            7,
+            8,
+            37
+          ]
+        }
+      },
+      {
+        "category": "jugendamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            9,
+            41
+          ]
+        }
+      },
+      {
+        "category": "standesamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            12
+          ]
+        }
+      },
+      {
+        "category": "zulassungsstelle",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            20
+          ]
+        }
+      },
+      {
+        "category": "arbeitsagentur",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            23
+          ]
+        }
+      },
+      {
+        "category": "umweltamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            29
+          ]
+        }
+      },
+      {
+        "category": "sozialamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            31,
+            50
+          ]
+        }
+      },
+      {
+        "category": "ordnungsamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            36
+          ]
+        }
+      },
+      {
+        "category": "schulamt",
+        "name_field": "name",
+        "filter": {
+          "oid": [
+            39
+          ]
+        }
+      }
+    ],
+    "download_url": "https://geo.stadt-muenster.de/mapserv/odbehoerdenstandorte_serv?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=behoerdenstandorte&OUTPUTFORMAT=geojson",
+    "count_url": "https://geo.stadt-muenster.de/mapserv/odbehoerdenstandorte_serv?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=behoerdenstandorte&RESULTTYPE=hits",
+    "source_date": "2026-09-16 (metadata)"
+  },
+  "completed_at": "2026-11-13T18:50:15.889594+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "buergeramt": 8,
+    "gesundheitsamt": 3,
+    "veterinaeramt": 3,
+    "jobcenter": 4,
+    "jugendamt": 2,
+    "standesamt": 1,
+    "zulassungsstelle": 1,
+    "arbeitsagentur": 1,
+    "umweltamt": 1,
+    "sozialamt": 2,
+    "ordnungsamt": 1,
+    "schulamt": 1
+  },
+  "records_sha256": "b6417a87cdf462be1a58cf065eb7bf2a619c991d6078121d455c6cb7c4b68426",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://geo.stadt-muenster.de/mapserv/odbehoerdenstandorte_serv?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=behoerdenstandorte&OUTPUTFORMAT=geojson",
+      "retrieved_at": "2026-11-13T18:50:15.884691+00:00",
+      "response_sha256": "dc664f8e2bf9b2552b374df810f17fd13658e15555a7e7b1c4986e4a31b5f1a1",
+      "bytes": 22793
+    },
+    {
+      "path": "raw/count.gz",
+      "request_url": "https://geo.stadt-muenster.de/mapserv/odbehoerdenstandorte_serv?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=behoerdenstandorte&RESULTTYPE=hits",
+      "retrieved_at": "2026-11-13T18:50:15.885675+00:00",
+      "response_sha256": "fea62918eb25e805810c31db616126fef0b4519a039b13b3e34e0300a5b7906f",
+      "bytes": 796
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_features": 57,
+  "classification_audit": {
+    "excluded_unrelated_authority_kind": 32
+  },
+  "location_coverage_only": true
+}

@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "source": {
+    "scope": "DE-BB",
+    "default_import": true,
+    "active": true,
+    "source_quality": "official",
+    "license": "Brandenburg dl-de/by-2-0 + VG25 CC-BY-4.0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "Land Brandenburg, Serviceportal Brandenburg, dl-de/by-2-0; © BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf",
+    "source_date": "No per-record date supplied; retrieval date retained separately",
+    "request_crs": "EPSG:25833",
+    "coordinate_crs_evidence": "Published UTM east/north values interpreted in Brandenburg UTM zone 33; BKG CRS registry and state reference-system rule, cross-checked for Potsdam. https://sg.geodatenzentrum.de/web_registry/crs-gdz/coordinateReferenceSystem/UTM33.html",
+    "modifications": "Strip repeated UTF-8 BOM; retain string identifiers and original records; transform actual UTM coordinates, do not geocode or infer points from town centroids.",
+    "name_rule": "Unchanged explicit authority designation in the public official registry; reviewed source categories",
+    "id": "bb_kommunal_gebiete",
+    "kind": "authority",
+    "format": "bb_kommunal_areas",
+    "routes": [
+      {
+        "category": "kreisverwaltung"
+      },
+      {
+        "category": "stadtverwaltung"
+      }
+    ],
+    "documentation": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/",
+    "download_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/kvdaten.csv",
+    "coverage_claim": "Explicit named Landkreise and independent municipalities joined to exact identical VG25 ARS; member municipalities, shared administrations and Ämter are not assigned guessed territories."
+  },
+  "completed_at": "2026-11-13T19:00:00.029406+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "stadtverwaltung": 141,
+    "kreisverwaltung": 14
+  },
+  "records_sha256": "bea568a03fffeb0c4ef7848b8326c2eeeaf1683bd09e59339036a9e13fb075d5",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://service.brandenburg.de/service/de/adressen/kommunalverzeichnis/kvdaten.csv",
+      "retrieved_at": "2026-11-13T18:59:57.676038+00:00",
+      "response_sha256": "9b3ecb4a5f8c5195d478553d937eb3fd5f15bf61ec2d866f318aa1ebe1b1533b",
+      "bytes": 109604
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_directory_rows": 478,
+  "classification_audit": {
+    "excluded_amts_or_shared_administration_not_inferred": 323
+  },
+  "source_input": "verified HTTPS download"
+}

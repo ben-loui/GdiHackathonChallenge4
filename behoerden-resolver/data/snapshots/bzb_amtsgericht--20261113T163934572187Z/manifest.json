@@ -1,0 +1,157 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "bzb_amtsgericht",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:gerichte_amtsgerichte",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "amtsgericht",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "dest_ge_nr",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:39:24.315062+00:00",
+  "completed_at": "2026-11-13T16:39:34.569961+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 650,
+  "expected_features": 650,
+  "terminal_empty_page": false,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "amtsgericht": 650
+  },
+  "source_subgroups": {
+    "n/a": 650
+  },
+  "records_sha256": "cf11f73c19de989b55db035a129e11f6f4b3209bc94a1665552317c80021b766",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:39:24.817478+00:00",
+      "response_sha256": "0b05e7f3a0d7ad3bf077cd001f74f2f9e04d6bda1874a8edfac7d94fa9baf480",
+      "bytes": 97447
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Agerichte_amtsgerichte",
+      "retrieved_at": "2026-11-13T16:39:24.818321+00:00",
+      "response_sha256": "e6bb7c4ce495057713077497454bbf0c6e375756444bb9f746fe36032140f83d",
+      "bytes": 1268
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:24.823686+00:00",
+      "response_sha256": "73085769f59ea7de969984e1c8214534f5e5bd4b724863e515ea6903c8283c34",
+      "bytes": 22113
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:25.421857+00:00",
+      "response_sha256": "33aebd1faac776ac662fe4ec9e9dc83b01995d651ffccaec1a9cf63a3e78a91a",
+      "bytes": 890549
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=50&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:26.149451+00:00",
+      "response_sha256": "90d84b78b8bcd6d4be696450e1194f36ccb991dde665c6b14b8022fbf21d1f3d",
+      "bytes": 765179
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=100&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:26.728874+00:00",
+      "response_sha256": "771ebbbfe2e028cf73e7d51264f8350645e176d91b6c6a9366884e75c219d746",
+      "bytes": 464863
+    },
+    {
+      "path": "raw/page-000150.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=150&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:27.288334+00:00",
+      "response_sha256": "7ff2806277810e6009bb0d40004637d3d1dd6f8ac866360fbeb5eb93407acdc7",
+      "bytes": 548702
+    },
+    {
+      "path": "raw/page-000200.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=200&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:27.832767+00:00",
+      "response_sha256": "5a697c306ed08f562ad42de76b452e097d4f1deceab530aac51b0ea00a296ef0",
+      "bytes": 494409
+    },
+    {
+      "path": "raw/page-000250.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=250&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:28.392981+00:00",
+      "response_sha256": "d30bdbdab10f1565655a1027ef7c23c34170520076f839fc1010370858f63563",
+      "bytes": 715953
+    },
+    {
+      "path": "raw/page-000300.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=300&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:28.990062+00:00",
+      "response_sha256": "024db48c42a98648a94b5c0397911dcd852f3541368d2fa73e0162b4a8dbd367",
+      "bytes": 592568
+    },
+    {
+      "path": "raw/page-000350.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=350&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:29.553633+00:00",
+      "response_sha256": "10aaa6bcb26c5aac147eea57f125c1f02fd9f47d8b11d75f0a73401fbe24370f",
+      "bytes": 581066
+    },
+    {
+      "path": "raw/page-000400.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=400&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:30.265807+00:00",
+      "response_sha256": "68f58baa5bee03104dd5c0c0407a114a7c4f0c356ed0409e8089a3aa699cfa4e",
+      "bytes": 826712
+    },
+    {
+      "path": "raw/page-000450.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=450&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:31.213818+00:00",
+      "response_sha256": "fed94fdd02e8a4ff01700d57895b03cb3a41c22fea8a22f5ae2fcaaf0d958393",
+      "bytes": 1473315
+    },
+    {
+      "path": "raw/page-000500.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=500&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:32.258858+00:00",
+      "response_sha256": "af57f2d281425b2988c57bfce4d57b30bab4bdf36fe5745072f3710441240bc7",
+      "bytes": 1218680
+    },
+    {
+      "path": "raw/page-000550.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=550&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:33.395025+00:00",
+      "response_sha256": "bde06cd92882fcf43c36cf06ed017ea3dafd2d714979e0cc865e8382982a4369",
+      "bytes": 1472332
+    },
+    {
+      "path": "raw/page-000600.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=600&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:34.339187+00:00",
+      "response_sha256": "017760d7c61b8ae97b2e564f3b90eb99cdd40b2ea4be410efbbb9a79978bf9ba",
+      "bytes": 941416
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

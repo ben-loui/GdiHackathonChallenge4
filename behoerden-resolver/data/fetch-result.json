@@ -1,0 +1,72 @@
+[
+  {
+    "source_id": "bzb_amtsgericht",
+    "snapshot": "data/snapshots/bzb_amtsgericht--20261113T163934572187Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "bzb_landgericht",
+    "snapshot": "data/snapshots/bzb_landgericht--20261113T163939421275Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "bzb_jobcenter",
+    "snapshot": "data/snapshots/bzb_jobcenter--20261113T163947494120Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "bzb_arbeitsagentur",
+    "snapshot": "data/snapshots/bzb_arbeitsagentur--20261113T163952780337Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "vg25_krs",
+    "snapshot": "data/snapshots/vg25_krs--20261113T164048673383Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "vg25_rbz",
+    "snapshot": "data/snapshots/vg25_rbz--20261113T164105600584Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_kreis",
+    "snapshot": "data/snapshots/by_kreis--20261113T164120050534Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_regierung",
+    "snapshot": "data/snapshots/by_regierung--20261113T164124538383Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_polizei",
+    "snapshot": "data/snapshots/by_polizei--20261113T164143962585Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_finanzamt",
+    "snapshot": "data/snapshots/by_finanzamt--20261113T164204849167Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_staatsanwaltschaft",
+    "snapshot": "data/snapshots/by_staatsanwaltschaft--20261113T164214567674Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_schulamt",
+    "snapshot": "data/snapshots/by_schulamt--20261113T164224828740Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_ihk",
+    "snapshot": "data/snapshots/by_ihk--20261113T164229135052Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "by_handwerkskammer",
+    "snapshot": "data/snapshots/by_handwerkskammer--20261113T164236038149Z",
+    "status": "downloaded"
+  }
+]

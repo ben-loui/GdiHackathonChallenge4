@@ -1,0 +1,87 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "bzb_landgericht",
+    "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+    "layer": "bzb-open:gerichte_landgerichte",
+    "scope": "DE",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "landgericht",
+        "name_field": "name"
+      }
+    ],
+    "format": "geojson",
+    "request_crs": "urn:ogc:def:crs:OGC::CRS84",
+    "sort_by": "dest_ge_nr",
+    "default_import": true,
+    "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+    "license": "dl-de/by-2-0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "DE advertised dataset",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:39:34.573760+00:00",
+  "completed_at": "2026-11-13T16:39:39.419532+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 115,
+  "expected_features": 115,
+  "terminal_empty_page": false,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "landgericht": 115
+  },
+  "source_subgroups": {
+    "n/a": 115
+  },
+  "records_sha256": "168fdd93265527a1e03cb1a2154a06b91a29a45472f2d4ca58e042535bda65ab",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:39:34.958201+00:00",
+      "response_sha256": "0b05e7f3a0d7ad3bf077cd001f74f2f9e04d6bda1874a8edfac7d94fa9baf480",
+      "bytes": 97447
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Agerichte_landgerichte",
+      "retrieved_at": "2026-11-13T16:39:34.958507+00:00",
+      "response_sha256": "00aa05171279538246a41380253a709e806152a5c47c5ae0828e83feba8ade61",
+      "bytes": 1268
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_landgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:34.972498+00:00",
+      "response_sha256": "be005565123deec488f580712e8ff27f01e58e83c8e6482fe9974e48f61a99e3",
+      "bytes": 80171
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_landgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:35.999610+00:00",
+      "response_sha256": "97a4273fad58e76d62d8230492a7a773280e8aadf531e388f196f6cc0c86b23f",
+      "bytes": 1911808
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_landgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=50&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:37.692828+00:00",
+      "response_sha256": "85e45b9a39affc705195a6b5616b73f68634ade7fbd09e7d2177716ec62316b0",
+      "bytes": 2515910
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_landgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=100&count=50&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+      "retrieved_at": "2026-11-13T16:39:39.124153+00:00",
+      "response_sha256": "6e9ce34402e4a4c1d3d0c331c626e565f124a30ba12dae96aad4f5cd090fd8e2",
+      "bytes": 1170151
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

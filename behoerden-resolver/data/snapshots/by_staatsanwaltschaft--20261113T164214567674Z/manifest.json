@@ -1,0 +1,86 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_staatsanwaltschaft",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs",
+    "layer": "stmj:LandgerichteStaatsanwaltschaftenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "staatsanwaltschaft",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "staatsanwaltschaften"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Justiz.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:42:04.850604+00:00",
+  "completed_at": "2026-11-13T16:42:14.563662+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 44,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "staatsanwaltschaft": 22
+  },
+  "source_subgroups": {
+    "landgerichte": 22,
+    "staatsanwaltschaften": 22
+  },
+  "records_sha256": "3b0a6b40798bba6316fb488263b6223d2ad3bb942fa0bc8929dbe9c0862a7eaf",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:42:05.239779+00:00",
+      "response_sha256": "6fbf8023f615450bf28d861af76e040c9d6b85dfd032532ddd1d1e2632bce0a1",
+      "bytes": 40634
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenFlaeche",
+      "retrieved_at": "2026-11-13T16:42:05.240173+00:00",
+      "response_sha256": "0c03e8158dfe8b9b659706771b4667fc7e7cf18ee90671456a2bfe27550c374a",
+      "bytes": 12780
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:05.284443+00:00",
+      "response_sha256": "6fe8974691b45b18e4ca81d331db58a2518e6a85889b26b7ee96f6a660ff4d0e",
+      "bytes": 509097
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:11.127903+00:00",
+      "response_sha256": "31ecb01cd3d049afea0daed2d9172a6b7ba9f3296bc80646beff80e9c263d4d2",
+      "bytes": 35813917
+    },
+    {
+      "path": "raw/page-000044.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmj-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmj%3ALandgerichteStaatsanwaltschaftenFlaeche&srsName=EPSG%3A3857&startIndex=44&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:42:14.537864+00:00",
+      "response_sha256": "e103c4f1f127e7016b9d074c7781ebf3c80a812fe7f9dfc83bbe209689f3030a",
+      "bytes": 1051
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

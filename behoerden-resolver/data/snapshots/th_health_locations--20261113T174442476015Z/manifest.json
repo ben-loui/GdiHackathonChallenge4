@@ -1,0 +1,56 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "th_health_locations",
+    "kind": "authority_point",
+    "scope": "DE-TH",
+    "format": "inspire_point_file",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "gesundheitsamt"
+      },
+      {
+        "category": "veterinaeramt"
+      },
+      {
+        "category": "jugendamt"
+      }
+    ],
+    "download_url": "https://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIRE_US_TMASGFF_EPSG_25832.gml",
+    "request_crs": "EPSG:25832",
+    "documentation": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/dbee18e3-3b3b-4e9c-a38c-ec875ac82d92",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© GDI-Th, CC BY 4.0",
+    "modifications": "Amtliche Punktstandorte, CRS-Transformation, Typfilter; Krankenhäuser ausgeschlossen. Keine Gebiete daraus konstruiert.",
+    "source_quality": "official",
+    "source_date": "2022-09-16 (Atom entry; freshness limitation retained)",
+    "name_rule": "Official gml:name, source serviceType and explicit health/veterinary names; advertised Jugendamt records from social protection group",
+    "coverage_claim": "Locations only in Thüringen; no territorial coverage claim."
+  },
+  "completed_at": "2026-11-13T17:44:42.475623+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "gesundheitsamt": 23,
+    "jugendamt": 23,
+    "veterinaeramt": 22
+  },
+  "records_sha256": "a8cc0752b059f0e5aaa31e5feb734147aeded6cd3e2a24de0e867247fba1cc68",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIRE_US_TMASGFF_EPSG_25832.gml",
+      "retrieved_at": "2026-11-13T17:44:42.398656+00:00",
+      "response_sha256": "24192ad151a1ed03d3cae036356799c8b069b9bde0b87b6f66f35effa25a2690",
+      "bytes": 474857
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "classification_audit": {
+    "excluded_records": {
+      "not_one_of_the_three_authority_categories": 53
+    },
+    "note": "Original office locations; hospitals excluded. Social protection records in this specific dataset are the advertised Jugendämter."
+  }
+}

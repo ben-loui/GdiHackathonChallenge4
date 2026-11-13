@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RKI PLZTool</title>
+    <link rel="shortcut icon" href="/PLZTool/favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/PLZTool/favicon.ico" />
+    <link href="/PLZTool/Content/css?v=feQ-gXorgLXsOsRgkKYOZvQDNysITSh_FAUvifX0jys1" rel="stylesheet"/>
+
+    <script src="/PLZTool/bundles/modernizr?v=HhNsJUFW8CuFkWhikUDyf5iaNXhIQqcgENOn5HNOhg01"></script>
+
+    <script src="/PLZTool/bundles/jquery?v=bN3RzutCvXCytIQAapNBRHcSoPNVUA1hTqerTzrBp5c1"></script>
+
+    
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://www.rki.de">
+                    <img src="/PLZTool/Content/images/rki_logo.gif" alt="RKI-Logo" />
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    
+
+<ul class="list-unstyled list-inline culture-selection">
+
+        <li class="culture-item">
+            <a lang="en-GB" href="/PLZTool/en-GB">
+                    <img src="/PLZTool/Content/images/en-GB.png" />
+            </a>
+        </li>
+        <li class="culture-item">
+            <a lang="es-ES" href="/PLZTool/es-ES">
+                    <img src="/PLZTool/Content/images/es-ES.png" />
+            </a>
+        </li>
+        <li class="culture-item">
+            <a lang="fr-FR" href="/PLZTool/fr-FR">
+                    <img src="/PLZTool/Content/images/fr-FR.png" />
+            </a>
+        </li>
+</ul>
+
+<script type="text/javascript">
+        (function () {
+            var options = {
+                cookieName: "lang",
+                cookieDaysUntilExpire: 365,
+                elementType: "a",
+                attributeName: "lang"
+            };
+
+            function changeLanguage(lang) {
+                var date = new Date();
+                date.setTime(date.getTime() + (options.cookieDaysUntilExpire * 24 * 60 * 60 * 1000));
+                var expires = '; expires=' + date.toGMTString();
+
+                document.cookie = options.cookieName + '=' + lang + expires + '; path=/';
+            };
+
+            var elementSelector = options.elementType + "[" + options.attributeName + "]";
+            $(elementSelector).click(function () {
+                changeLanguage($(this).attr(options.attributeName));
+            });
+        })();
+</script>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Gesundheitsamt nach Postleitzahl oder Ort</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+
+
+
+
+<form action="/PLZTool/" class="form-horizontal" method="get">    <div class="form-group">
+        <div class="col-xs-12">
+            <div class="input-group">
+                <input class="form-control" id="q" name="q" placeholder="Postleitzahl oder Ort eingeben..." type="search" value="" />
+                <span class="input-group-btn">
+                    <input class="btn btn-default" type="submit" value="Suchen" />
+                </span>
+            </div>
+        </div>
+    </div>
+</form>
+
+                    </div>
+                </div>
+                <footer>
+                    <p>Copyright &#169; Robert Koch-Institut. Alle Rechte vorbehalten, soweit nicht ausdr&#252;cklich anders vermerkt.</p>
+                    <p>
+                        <a href="http://tools.rki.de/Legal.htm">Impressum</a>&nbsp;
+                        <a href="http://tools.rki.de/Privacy.htm">Datenschutzerkl&#228;rung</a>
+                        
+                    </p>
+                </footer>
+            </div>
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Hilfe</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ol class="slim">
+                                    <li>
+                                        Geben sie eine Postleitzahl oder einen Ort ein
+                                    </li>
+                                    <li>
+                                        Dr&#252;cken sie auf Suchen
+                                    </li>
+                                    <li>
+                                        W&#228;hlen sie das Gesundheitsamt aus der Liste der Gesundheits&#228;mter aus
+                                    </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="/PLZTool/bundles/bootstrap?v=uBBLny9uAhri_SgYJsb_fdxgr9x_dYqvoi11_HENWD81"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var onTransmittingSiteSelectionChanged = function (selectedValue) {
+                location.hash = selectedValue;
+
+                $.ajax({
+                    url: '/PLZTool/Home/GetTransmittingSiteView',
+                    type: "POST",
+                    data: { code: selectedValue },
+                    success: function (result) {
+                        $("#transmittingSiteDetail").html(result);
+                    },
+                    error: function () {
+                        if (!$("#transmittingSiteDetail #error").length) {
+                            $("#transmittingSiteDetail").html('<div id="error" role="alert" class="alert alert-danger alert-dismissible fade in">' +
+                                '<button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">&times;</span></button>' +
+                                '<p>Es ist ein unerwarter Fehler aufgetreten!</p>' +
+                                '</div>');
+                        }
+                    }
+                });
+            };
+
+            $("#SelectedAddress_Code").change(function () {
+                onTransmittingSiteSelectionChanged(this.value);
+            });
+
+            if (location.hash && location.hash.length > 0) {
+                var selection = location.hash.slice(1);
+                if (selection && $("#SelectedAddress_Code").val() != selection && $("#SelectedAddress_Code option[value='" + selection + "']").length) {
+                    $("#SelectedAddress_Code").val(selection);
+                    onTransmittingSiteSelectionChanged(selection);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- bearbeitet mit XMLSpy v2026 (x64) (https://www.altova.com) von Informationstechnikzentrum Bund (Informationstechnikzentrum Bund) -->
+<!-- Mit XMLSpy v2016 sp1 (x64) (http://www.altova.com) von ZIVIT (Zentrum für Informationsverarbeitung und Informationstechnik (ZIVIT)) bearbeitet -->
+<xs:schema xmlns="http://www.itzbund.de/GEMFA/Export/01" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.itzbund.de/GEMFA/Export/01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="GemfaExport">
+		<xs:annotation>
+			<xs:documentation>Datenexport aus der GEMFA-DB</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FinanzamtListe">
+					<xs:annotation>
+						<xs:documentation>Liste der Finanzaemter</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Finanzamt" type="FinanzamtType" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Das einzelne Finanzamt</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VorgesetzteFinanzbehoerdeListe">
+					<xs:annotation>
+						<xs:documentation>Die Liste der vorgesetzten Finanzbehoerden</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="VorgesetzteFinanzbehoerde" type="FinanzbehoerdeType" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Die einzelne vorgesetzte Finanzbehoerde</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AufgabenListe">
+					<xs:annotation>
+						<xs:documentation>Die Liste der Aufgaben, die ein Finanzamt haben kann</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Aufgabe" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Die einzelne Aufgabe</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="AufgabeId" type="xs:ID" use="required">
+										<xs:annotation>
+											<xs:documentation>
+			                  Technische ID für die Gemeinde, wird zum Referenzieren verwendet
+			                </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Bezeichnung" use="required">
+										<xs:annotation>
+											<xs:documentation>Die Bezeichnung der Aufgabe</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Art" use="required">
+										<xs:annotation>
+											<xs:documentation>
+			                  Die Art der Aufgabe, eingeschränkt auf die Werte der Enumeration.
+			                </xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Bundesweit"/>
+												<xs:enumeration value="Landesweit"/>
+												<xs:enumeration value="Oertlich"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BundeslandListe">
+					<xs:annotation>
+						<xs:documentation>Die Liste der Bundeslaender</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Bundesland" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Das einzelne Bundesland</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GemeindeListe">
+											<xs:annotation>
+												<xs:documentation>Die Liste der Gemeinden</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Gemeinde" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>Die einzelne Gemeinde</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Adresse" type="AdresseType">
+																	<xs:annotation>
+																		<xs:documentation>
+			                                Die Adresse der Gemeinde als Großkundenadresse, Postfachadresse oder
+			                                Hausanschrift
+			                              </xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+																<xs:element name="OrtListe">
+																	<xs:annotation>
+																		<xs:documentation>
+			                                Die Liste der Orte, die zu der Gemeinde gehoeren
+			                              </xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="Ort" maxOccurs="unbounded">
+																				<xs:annotation>
+																					<xs:documentation>Der einzelne Ort</xs:documentation>
+																				</xs:annotation>
+																				<xs:complexType>
+																					<xs:attribute name="PLZ">
+																						<xs:annotation>
+																							<xs:documentation>Die PLZ der Gemeinde</xs:documentation>
+																						</xs:annotation>
+																					</xs:attribute>
+																					<xs:attribute name="Name" use="required">
+																						<xs:annotation>
+																							<xs:documentation>Der Name des Ortes</xs:documentation>
+																						</xs:annotation>
+																					</xs:attribute>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="GemeindeId" type="xs:ID" use="required">
+																<xs:annotation>
+																	<xs:documentation>
+			                              Technische ID für die Gemeinde, wird zum Referenzieren verwendet
+			                            </xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="AGS">
+																<xs:annotation>
+																	<xs:documentation>
+			                              Der amtliche Gemeindeschlüssel für diese Gemeinde
+			                            </xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="Kreis">
+																<xs:annotation>
+																	<xs:documentation>Der Kreis der Gemeinde</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="Regierungsbezirk">
+																<xs:annotation>
+																	<xs:documentation>Der Regierungsbezirk der Gemeinde</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="PLZ">
+																<xs:annotation>
+																	<xs:documentation>Die PLZ der Gemeinde</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="Name">
+																<xs:annotation>
+																	<xs:documentation>Der Name der Gemeinde</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="Anrede">
+																<xs:annotation>
+																	<xs:documentation>Die Anrede der Gemeinde</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="GemarkungListe" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Gemarkung" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="Nummer" use="required">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:minLength value="6"/>
+																		<xs:maxLength value="6"/>
+																		<xs:pattern value="\d{6}"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="Name" type="xs:string" use="required"/>
+															<xs:attribute name="FinanzamtRef" type="xs:IDREF" use="required">
+																<xs:annotation>
+																	<xs:documentation>Die Referenz auf die ID des zuständigen Finanzamtes.</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Name" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation>Der Name des Bundeslandes</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Kürzel" use="optional">
+										<xs:annotation>
+											<xs:documentation>Das Kürzel des Bundeslandes</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:minLength value="2"/>
+												<xs:maxLength value="2"/>
+												<xs:whiteSpace value="collapse"/>
+												<xs:enumeration value="BW"/>
+												<xs:enumeration value="BY"/>
+												<xs:enumeration value="BE"/>
+												<xs:enumeration value="BB"/>
+												<xs:enumeration value="HB"/>
+												<xs:enumeration value="HH"/>
+												<xs:enumeration value="HE"/>
+												<xs:enumeration value="MV"/>
+												<xs:enumeration value="ND"/>
+												<xs:enumeration value="NW"/>
+												<xs:enumeration value="RP"/>
+												<xs:enumeration value="SL"/>
+												<xs:enumeration value="SN"/>
+												<xs:enumeration value="ST"/>
+												<xs:enumeration value="SH"/>
+												<xs:enumeration value="TH"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AdressezustaendigkeitListe" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>Erfasst werden hier die Zuständigkeiten eines Finanzamtes zu einer Adresse, wenn diese nicht bereits durch die Verknüpfung eines Finanzamtes mit einer Gemeinde (vgl. Element Gemeindeliste eines Finanzamtes) abgebildet ist.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Adressezustaendigkeit" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="FinanzamtRef" type="xs:IDREF" use="required">
+										<xs:annotation>
+											<xs:documentation>Die Referenz auf die ID des zuständigen Finanzamtes.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="PLZ" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation>
+			                  Die Postleitzahl für die die Zuständigkeit definiert ist.
+			                </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Ort" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation>Der Ortsname für den die Zuständigkeit definiert ist.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Strasse" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation>
+			                  Der Straßennamen für den die Zuständigkeit definiert ist.
+			                </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="HausNrVon" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation>
+			                  Der Startwert der Hausnummern für den die Zuständigkeit definiert ist.
+			                </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="HausNrBis" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation>
+			                  Der Endwert der Hausnummern für den die Zuständigkeit definiert ist.
+			                </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="HausNrArt" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation>
+			                  Die Art des Hausnummernbereiches, gibt an ob die Hausnummern gerade, ungerade oder
+			                  fortlaufend verlaufen.
+			                </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="GemeindeKey">
+			<xs:selector xpath="BundeslandListe/Bundesland/GemeindeListe/Gemeinde"/>
+			<xs:field xpath="@GemeindeId"/>
+		</xs:key>
+		<xs:keyref name="GemeindeKeyRef" refer="GemeindeKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/GemeindeListe/Gemeinde"/>
+			<xs:field xpath="@GemeindeRef"/>
+		</xs:keyref>
+		<xs:key name="AufgabeKey">
+			<xs:selector xpath="AufgabenListe/Aufgabe"/>
+			<xs:field xpath="@AufgabeId"/>
+		</xs:key>
+		<xs:keyref name="AufgabeAbgegebenKeyRef" refer="AufgabeKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/AbgegebeneAufgabeListe/Aufgabe"/>
+			<xs:field xpath="@AufgabeRef"/>
+		</xs:keyref>
+		<xs:keyref name="AufgabeAufgenommenKeyRef" refer="AufgabeKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/AufgenommeAufgabeListe/Aufgabe"/>
+			<xs:field xpath="@AufgabeRef"/>
+		</xs:keyref>
+		<xs:key name="VorgesetzteFinanzbehoerdeKey">
+			<xs:selector xpath="VorgesetzteFinanzbehoerdeListe/VorgesetzteFinanzbehoerde"/>
+			<xs:field xpath="@FinanzbehoerdeId"/>
+		</xs:key>
+		<xs:keyref name="VorgesetzteFinanzbehoerdeRef" refer="VorgesetzteFinanzbehoerdeKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/VorgesetzteFinanzbehoerde"/>
+			<xs:field xpath="@VorgesetzteFinanzbehoerdeRef"/>
+		</xs:keyref>
+		<xs:key name="FinanzamtKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt"/>
+			<xs:field xpath="@FinanzbehoerdeId"/>
+		</xs:key>
+		<xs:keyref name="FinanzamtHauptstelleRef" refer="FinanzamtKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/Hauptstelle"/>
+			<xs:field xpath="@FinanzamtRef"/>
+		</xs:keyref>
+		<xs:keyref name="FinanzamtAussenstelleRef" refer="FinanzamtKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/AussenstelleListe/Aussenstelle"/>
+			<xs:field xpath="@FinanzamtRef"/>
+		</xs:keyref>
+		<xs:keyref name="FinanzamtAufgabeAbgegebenRef" refer="FinanzamtKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/AbgegebeneAufgabeListe/Aufgabe"/>
+			<xs:field xpath="@FinanzamtRef"/>
+		</xs:keyref>
+		<xs:keyref name="FinanzamtAufgabeAufgenommenRef" refer="FinanzamtKey">
+			<xs:selector xpath="FinanzamtListe/Finanzamt/AufgenommeAufgabeListe/Aufgabe/FinanzamtListe/Finanzamt"/>
+			<xs:field xpath="@FinanzamtRef"/>
+		</xs:keyref>
+	</xs:element>
+	<xs:complexType name="AdresseType">
+		<xs:annotation>
+			<xs:documentation>Die kleinste Form einer Adresse (z.B. eine Grosskundenadresse)</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="PLZ" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Die PLZ der Adresse</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Ort" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Der Ort der Adresse</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="PostfachType">
+		<xs:annotation>
+			<xs:documentation>Darstellung einer Postfachadresse</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="AdresseType">
+				<xs:attribute name="Postfachnummer" type="xs:string" use="required">
+					<xs:annotation>
+						<xs:documentation>Die Postfachnummer der Postfachadresse</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="HausanschriftType">
+		<xs:annotation>
+			<xs:documentation>Darstellung einer Hausanschrift</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="AdresseType">
+				<xs:attribute name="Strasse" type="xs:string" use="required">
+					<xs:annotation>
+						<xs:documentation>Die Strasse der Hausanschrift</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="HausNr" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Die Hausnummer der Hausanschrift</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="HausNrZusatz" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Der Hausnummernzusatz der Hausanschrift</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="KontaktType">
+		<xs:annotation>
+			<xs:documentation>Ein Kontakt kann eine Telefonnummer, eine Faxnummer, E-Mail usw. sein</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="Bezeichnung" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Die Bezeichnung des Kontaktes. Der Text soll nach Möglichkeit für die Anzeige verwendet werden.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Inhalt" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Der eigentliche Wert für den Kontakt</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="FinanzbehoerdeType" abstract="false">
+		<xs:annotation>
+			<xs:documentation>Allgemeine Beschreibung einer Finanzbehoerde</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AdresseListe">
+				<xs:annotation>
+					<xs:documentation>Die Liste der Adresse zu einer Finanzbehoerbe</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Adresse" type="AdresseType" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Die einzelne Adresse. Kann eine Grosskundenadresse (AdresseType), eine Postfachadresse oder eine Hausanschrift sein.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="KontaktListe">
+				<xs:annotation>
+					<xs:documentation>Die Liste der Kontaktangaben zu einer Finanzbehoerde</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Kontakt" type="KontaktType" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Die einzelne Kontaktangabe, z.B. Telefonnummer, Fax, Mail, usw.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="FinanzbehoerdeId" type="xs:ID" use="required">
+			<xs:annotation>
+				<xs:documentation>Technische ID für die Finanzbehoerde, wird zum Referenzieren verwendet.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Name" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Der Name der Finanzbehoerde</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="FinanzamtType">
+		<xs:annotation>
+			<xs:documentation>Erweiterung der Finanzbehoerde zum Finanzamt</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="FinanzbehoerdeType">
+				<xs:sequence>
+					<xs:element name="BankverbindungListe">
+						<xs:annotation>
+							<xs:documentation>Die Liste der Bankverbindungen zu dem Finanzamt</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Bankverbindung" type="BankverbindungType" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Die einzelne Bankverbindung</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="OeffnungszeitListe" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Die Liste der Angaben zu den Oeffnungszeiten zu dem Finanzamt</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Oeffnungszeit" type="xs:string" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Die einzelne Angabe zu den Oeffnungszeiten als String</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="BemerkungListe" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Die Liste der Bemerkungen zu dem Finanzamt</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Bemerkung" type="xs:string" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Die einzelne Bemerkung als String</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="AbgegebeneAufgabeListe" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Die Liste der abgegebenen Aufgaben</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Aufgabe" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Die einzelne abgegebene Aufgabe</xs:documentation>
+									</xs:annotation>
+									<xs:complexType>
+										<xs:attribute name="AufgabeRef" type="xs:IDREF" use="required">
+											<xs:annotation>
+												<xs:documentation>
+				                  Die Referenz auf die technische ID der Aufgabe, die abgegeben worden ist
+				                </xs:documentation>
+											</xs:annotation>
+										</xs:attribute>
+										<xs:attribute name="FinanzamtRef" type="xs:IDREF" use="required">
+											<xs:annotation>
+												<xs:documentation>
+				                  Die Referenz auf die technische ID des Finanzamtes, an die die Aufgabe abgegeben
+				                  worden ist
+				                </xs:documentation>
+											</xs:annotation>
+										</xs:attribute>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="AufgenommeAufgabeListe" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Die Liste der aufgenommenen Aufgaben</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Aufgabe" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Die einzelne aufgenommene Aufgabe</xs:documentation>
+									</xs:annotation>
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="FinanzamtListe" minOccurs="0">
+												<xs:annotation>
+													<xs:documentation>
+				                    Die Liste der Finanzaemter, fuer die die Aufgabe aufgenommen worden ist. Die Liste
+				                    ist nicht vorhanden, wenn es sich um eine Landesweite oder Bundesweite Aufgabe
+				                    handelt.
+				                  </xs:documentation>
+												</xs:annotation>
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="Finanzamt" maxOccurs="unbounded">
+															<xs:annotation>
+																<xs:documentation>Das einzelne Finanzamt</xs:documentation>
+															</xs:annotation>
+															<xs:complexType>
+																<xs:attribute name="FinanzamtRef" type="xs:IDREF" use="required">
+																	<xs:annotation>
+																		<xs:documentation>
+				                              Die Referenz auf die technische ID des Finanzamtes, von dem die Aufgabe
+				                              aufgenommen worden ist.
+				                            </xs:documentation>
+																	</xs:annotation>
+																</xs:attribute>
+															</xs:complexType>
+														</xs:element>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+										<xs:attribute name="AufgabeRef" type="xs:IDREF" use="required">
+											<xs:annotation>
+												<xs:documentation>
+				                  Die Referenz auf die technische ID der Aufgabe, die aufgenommen worden ist
+				                </xs:documentation>
+											</xs:annotation>
+										</xs:attribute>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="VorgesetzteFinanzbehoerde" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Die vorgesetzte Finanzbehoerde des Finanzamtes</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:attribute name="VorgesetzteFinanzbehoerdeRef" type="xs:IDREF" use="required">
+								<xs:annotation>
+									<xs:documentation>
+				            Die Referenz auf die technische ID der vorgesetzten Finanzbehoerde
+				          </xs:documentation>
+								</xs:annotation>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+					<xs:choice>
+						<xs:annotation>
+							<xs:documentation>
+				        Ein Finanzamt kann optional entweder eine Hauptstelle oder eine Aussenstelle sein und
+				        entsprechend auf das Gegenstück verweisen
+				      </xs:documentation>
+						</xs:annotation>
+						<xs:element name="Hauptstelle" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Als Aussenstelle bestitzt ein Finanzamt eine Hauptstelle</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:attribute name="FinanzamtRef" type="xs:IDREF" use="required">
+									<xs:annotation>
+										<xs:documentation>
+				              Die Referenz auf die technische ID des Hauptstellen Finanzamtes
+				            </xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AussenstelleListe" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>
+				          Als Hauptstelle besitzt ein Finanzamt eine Menge von Aussenstellen
+				        </xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Aussenstelle" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Die einzelne Aussenstelle</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:attribute name="FinanzamtRef" type="xs:IDREF" use="required">
+												<xs:annotation>
+													<xs:documentation>
+				                    Die Referenz auf die technische ID des Aussenstellen Finanzamtes
+				                  </xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+					<xs:element name="GemeindeListe" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Die Liste der Gemeinden fuer die das Finanzamt zustaendig ist</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Gemeinde" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Die einzelne Gemeinde</xs:documentation>
+									</xs:annotation>
+									<xs:complexType>
+										<xs:attribute name="GemeindeRef" type="xs:IDREF" use="required">
+											<xs:annotation>
+												<xs:documentation>Die Referenz auf die technische ID der Gemeinde</xs:documentation>
+											</xs:annotation>
+										</xs:attribute>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Datenschutz" type="DSBType" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="BuFaNr" type="xs:string" use="required">
+					<xs:annotation>
+						<xs:documentation>Die Bundesfinanzamtsnummer</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="Verteiler" type="xs:boolean">
+					<xs:annotation>
+						<xs:documentation>Das Kennzeichen, ob es sich bei dem Finanzamt um ein Verteilerfinanzamt handelt.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="BankverbindungType">
+		<xs:annotation>
+			<xs:documentation>Beschreibung einer Bankverbindung</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="IBAN" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Die IBAN der Bankverbindung</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="BIC" type="xs:string">
+			<xs:annotation>
+				<xs:documentation>Die BIC der Bankverbindung</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Finanzinstitut" type="xs:string">
+			<xs:annotation>
+				<xs:documentation>Der Name des Finanzinstituts von der Bankverbindung</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Kontoinhaber" type="xs:string">
+			<xs:annotation>
+				<xs:documentation>Der Name des Kontoinhabers von der Bankverbindung</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="DSBType">
+		<xs:annotation>
+			<xs:documentation>Angaben zum/zur Verantwortlichen für den Datenschutz.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AdresseListe">
+				<xs:annotation>
+					<xs:documentation>Die Liste der Adresse des/der Verantwortlichen für den Datenschutz.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Adresse" type="AdresseType" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Die einzelne Adresse. Kann eine Grosskundenadresse (AdresseType), eine Postfachadresse
+                  oder eine Hausanschrift sein.
+                </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="KontaktListe">
+				<xs:annotation>
+					<xs:documentation>Die Liste der Kontaktangaben des/der Verantwortlichen für den Datenschutz.
+          </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Kontakt" type="KontaktType" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Die einzelne Kontaktangabe, z.B. Telefonnummer, Fax, Mail, usw.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="Bezeichnung" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Die Bezeichnung des/der Verantwortlichen für den Datenschutz.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>

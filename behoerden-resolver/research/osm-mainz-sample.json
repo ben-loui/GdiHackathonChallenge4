@@ -1,0 +1,2138 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-13T17:46:31Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 264098692,
+  "lat": 50.0006948,
+  "lon": 8.2756085,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housename": "Brückenturm",
+    "addr:housenumber": "55",
+    "addr:postcode": "55116",
+    "addr:street": "Rheinstraße",
+    "alt_name": "Vollzugsdienst",
+    "email": "rechts-und-ordnungsamt@stadt.mainz.de",
+    "government": "public_safety",
+    "name": "Zentraler Vollzugs- und Ermittlungsdienst",
+    "office": "government",
+    "opening_hours": "24/7",
+    "operator": "Stadt Mainz",
+    "phone": "+49 6131 12-2477",
+    "website": "https://mainz.de/vv/oe/zentraler-vollzugs-und-ermittlungsdienst.php",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 473769645,
+  "lat": 50.0098423,
+  "lon": 8.3507336,
+  "tags": {
+    "addr:city": "Hochheim am Main",
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:postcode": "65239",
+    "addr:street": "Kirchstraße",
+    "amenity": "townhall",
+    "government": "register_office",
+    "name": "Standesamt",
+    "office": "government",
+    "opening_hours": "\"nach Vereinbarung\"",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 599614033,
+  "lat": 50.0635283,
+  "lon": 8.2540751,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "65189",
+    "addr:street": "Konradinerallee",
+    "government": "yes",
+    "name": "Jobcenter / Gesundheitsamt",
+    "office": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 772115199,
+  "lat": 50.0670934,
+  "lon": 8.2503063,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "98-102",
+    "addr:postcode": "65189",
+    "addr:street": "Mainzer Str.",
+    "check_date": "2023-09-01",
+    "contact:bluesky": "hlz.bsky.social",
+    "contact:mastodon": "@hlz@hessen.social",
+    "contact:website": "https://hlz.hessen.de/",
+    "government": "education",
+    "name": "Hessische Landeszentrale für politische Bildung",
+    "office": "government",
+    "phone": "+4961132554051",
+    "wikidata": "Q1615896",
+    "wikimedia_commons": "File:Hessische Staatskanzlei.jpg",
+    "wikipedia": "de:Hessische Landeszentrale für politische Bildung"
+  }
+},
+{
+  "type": "node",
+  "id": 1587667087,
+  "lat": 50.0787156,
+  "lon": 8.2391942,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "65185",
+    "addr:street": "Luisenplatz",
+    "email": "poststelle@hkm.hessen.de",
+    "fax": "+49 611 368 2099",
+    "government": "ministry",
+    "name": "Hessisches Kultusministerium",
+    "office": "government",
+    "phone": "+49 611 368 0",
+    "toilets:wheelchair": "yes",
+    "website": "https://kultusministerium.hessen.de",
+    "wheelchair": "yes",
+    "wikidata": "Q28738801"
+  }
+},
+{
+  "type": "node",
+  "id": 1729689845,
+  "lat": 50.0025800,
+  "lon": 8.2608966,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "3-5",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiserstraße",
+    "check_date": "2026-10-03",
+    "name": "Stadtverwaltung Mainz, Standort Stadthaus",
+    "office": "government",
+    "opening_hours": "Mo,We 07:30-17:30; Tu,Th 07:30-13:00; Apr-Feb Fr 07:30-14:30; Nov-Mar Fr 07:30-17:30",
+    "operator": "Stadt Mainz",
+    "website": "https://www.mainz.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1729689850,
+  "lat": 50.0677035,
+  "lon": 8.2268814,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "4-6",
+    "addr:postcode": "65187",
+    "addr:street": "Dostojewskistraße",
+    "fax": "+49 611 3663435",
+    "government": "administrative",
+    "name": "Hessen Mobil",
+    "office": "government",
+    "phone": "+49 611 3660",
+    "website": "https://mobil.hessen.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q1615776"
+  }
+},
+{
+  "type": "node",
+  "id": 1796722257,
+  "lat": 50.0019527,
+  "lon": 8.2489697,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "7 b",
+    "addr:postcode": "55122",
+    "addr:street": "John-F.-Kennedy-Straße",
+    "name": "Stadtverwaltung Mainz, Ortsverwaltung Mainz-Hartenberg/Münchfeld",
+    "note": "Export von Daten aus mobilemenschen.de",
+    "office": "government",
+    "opening_hours": "Fr off; Mo,We,Th 08:00-12:00; Tu 14:00-17:00",
+    "website": "https://www.mainz.de/WGAPublisher/online/html/default/mkuz-5xmfwe.de.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1797811385,
+  "lat": 50.0227555,
+  "lon": 8.2243777,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "136",
+    "addr:postcode": "55120",
+    "addr:street": "Hauptstraße",
+    "government": "yes",
+    "name": "Ortsverwaltung Mainz-Mombach",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-12:00; Tu 14:00-18:00; Fr off",
+    "website": "https://www.mainz.de/vv/oe/ortsverwaltungen/mombach.phpuz-5xmg2w.de.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2529259094,
+  "lat": 50.0055014,
+  "lon": 8.2716768,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:postcode": "55116",
+    "addr:street": "Platz der Mainzer Republik",
+    "check_date:opening_hours": "2023-02-01",
+    "contact:mastodon": "https://social.bund.de/@ltrlp",
+    "name": "Landtag Rheinland-Pfalz",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes",
+    "wheelchair:description": "Rampenaufgang über Restaurant erreichbar",
+    "wikidata": "Q314690",
+    "wikipedia": "de:Landtag Rheinland-Pfalz"
+  }
+},
+{
+  "type": "node",
+  "id": 3726115597,
+  "lat": 50.0006243,
+  "lon": 8.2683013,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "6",
+    "addr:postcode": "55116",
+    "addr:street": "Am Kronberger Hof",
+    "check_date:opening_hours": "2022-09-28",
+    "name": "Landeszentrale für politische Bildung RLP",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3848946560,
+  "lat": 50.0632902,
+  "lon": 8.2540828,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "11",
+    "addr:postcode": "65189",
+    "addr:street": "Konradinerallee",
+    "government": "youth_welfare_department",
+    "name": "Jugendamt Wiesbaden",
+    "office": "government",
+    "website": "http://www.meine-stadt.de/wiesbaden",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3870504124,
+  "lat": 50.0188743,
+  "lon": 8.2520075,
+  "tags": {
+    "addr:housename": "Gebäude 25",
+    "government": "customs",
+    "name": "Hauptzollamt Mainz Abfst. Hafen",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 3957109883,
+  "lat": 50.0337581,
+  "lon": 8.2443890,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "190",
+    "addr:postcode": "65203",
+    "addr:street": "Rheingaustraße",
+    "check_date": "2026-07-25",
+    "check_date:opening_hours": "2023-11-21",
+    "government": "customs",
+    "name": "Zollamt Wiesbaden",
+    "office": "government",
+    "opening_hours": "Mo-Th 07:00-15:15; Fr 07:00-14:30",
+    "phone": "+49 611 58070",
+    "toilets:wheelchair": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4019998659,
+  "lat": 50.0710768,
+  "lon": 8.2523530,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "65189",
+    "addr:street": "Gustav-Stresemann-Ring",
+    "check_date": "2025-12-08",
+    "contact:email": "poststelle@itzbund.de",
+    "contact:fax": "+49 22899 680-5050",
+    "contact:phone": "+49 22899 680-0",
+    "contact:website": "https://www.itzbund.de/",
+    "government": "it",
+    "name": "Informationstechnikzentrum Bund",
+    "name:de": "Informationstechnikzentrum Bund",
+    "name:en": "Federal Information Technology Centre",
+    "office": "government",
+    "short_name": "ITZBund",
+    "wikidata": "Q23786362",
+    "wikimedia_commons": "Category:Informationstechnikzentrum Bund",
+    "wikipedia": "de:Informationstechnikzentrum Bund"
+  }
+},
+{
+  "type": "node",
+  "id": 4441346165,
+  "lat": 49.9960531,
+  "lon": 8.4098654,
+  "tags": {
+    "addr:city": "Rüsselsheim am Main",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "65428",
+    "addr:street": "Dammgasse",
+    "check_date": "2023-05-02",
+    "government": "social_services",
+    "name": "Fachbereich Jugend und Senioren, Bereich Jugendförderung",
+    "office": "government",
+    "website": "https://www.ruesselsheim.de/bereich-jugendfoerderung.html"
+  }
+},
+{
+  "type": "node",
+  "id": 4447836465,
+  "lat": 50.0007295,
+  "lon": 8.2742701,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "31",
+    "addr:postcode": "55116",
+    "addr:street": "Am Brand",
+    "government": "social_security",
+    "name": "Deutsche Rentenversicherung",
+    "office": "government",
+    "opening_hours": "Mo 08:00-15:00; Tu 08:00-18:00; We 08:00-15:00, Th 08:00-18:00; Fr 08:00-12:00",
+    "phone": "+49 6131 2740",
+    "social_security": "pension_fund",
+    "website": "https://www.deutsche-rentenversicherung.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4518719880,
+  "lat": 50.0024629,
+  "lon": 8.2664368,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "31",
+    "addr:postcode": "55116",
+    "addr:street": "Große Bleiche",
+    "check_date": "2025-03-18",
+    "email": "info@haus-burgund.de",
+    "fax": "+49 6131 234319",
+    "government": "yes",
+    "name": "Haus Burgund-Franche-Comté",
+    "office": "government",
+    "opening_hours": "Mo-Th 10:00-13:00, Fr 10:00-13:00, Mo-Th 14:00-18:00",
+    "phone": "+49 6131 234317",
+    "toilets:wheelchair": "yes",
+    "website": "http://haus-burgund.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4556947490,
+  "lat": 50.0835186,
+  "lon": 8.2838705,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "11a",
+    "addr:postcode": "65191",
+    "addr:street": "Poststraße",
+    "government": "yes",
+    "name": "Landeshaupstadt Wiesbaden",
+    "name:de": "Landeshaupstadt Wiesbaden",
+    "name:it": "Ufficio comunale Wiesbaden (Bierstadt)",
+    "office": "government",
+    "opening_hours": "Mo 08:00-13:00; We 07:30-12:00,14:00-18:00; Fr 07:30-12:30",
+    "phone": "+49 611 317240",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4563359791,
+  "lat": 50.0027697,
+  "lon": 8.2677934,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "1",
+    "addr:postcode": "55116",
+    "addr:street": "Löwenhofstraße",
+    "name": "Stadtverwaltung Mainz, Stadthaus Große Bleiche",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-14:00",
+    "phone": "+49 6131 120",
+    "website": "https://www.mainz.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4830744322,
+  "lat": 50.0732475,
+  "lon": 8.2472362,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "35",
+    "addr:postcode": "65185",
+    "addr:street": "Mainzer Straße",
+    "description": "Nebenstelle",
+    "email": "poststelle@havs-wie.hessen.de",
+    "government": "yes",
+    "name": "Hessisches Amt für Versorgung und Soziales",
+    "office": "government",
+    "source": "survey",
+    "website": "https://rp-giessen.hessen.de/soziales/versorgungsverwaltung/landesversorgungsamt-und-hessische-%C3%A4mter-f%C3%BCr-versorgung-und-soziales",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5083905721,
+  "lat": 50.0823615,
+  "lon": 8.2414211,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "1-3",
+    "addr:postcode": "65183",
+    "addr:street": "Schloßplatz",
+    "contact:mastodon": "HessischerLandtag@social.bund.de",
+    "fax": "+49 611 350434",
+    "government": "legislative",
+    "name": "Hessischer Landtag",
+    "office": "government",
+    "phone": "+49 611 3500",
+    "short_name": "HLT",
+    "website": "https://hessischer-landtag.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 5424621822,
+  "lat": 49.9978312,
+  "lon": 8.2676560,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "3-5",
+    "addr:postcode": "55116",
+    "addr:street": "Schillerplatz",
+    "check_date:opening_hours": "2024-05-19",
+    "government": "ministry",
+    "name": "Ministerium des Innern, für Integration und Verkehr des Landes Rheinland-Pfalz",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://mdi.rlp.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5425525014,
+  "lat": 50.0042230,
+  "lon": 8.2664543,
+  "tags": {
+    "addr:housenumber": "61",
+    "addr:street": "Mittlere Bleiche",
+    "admin_level": "4",
+    "check_date": "2025-02-03",
+    "contact:email": "poststelle@mwg.rlp.de",
+    "government": "ministry",
+    "name": "Ministerium für Wissenschaft, Weiterbildung und Gesundheit",
+    "office": "government",
+    "old_name": "Ministerium für Wissenschaft und Gesundheit",
+    "opening_hours:signed": "no",
+    "website": "https://mwg.rlp.de/",
+    "wikidata": "Q15835282"
+  }
+},
+{
+  "type": "node",
+  "id": 5514975151,
+  "lat": 50.0861929,
+  "lon": 8.2449309,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "2/2a",
+    "addr:postcode": "65193",
+    "addr:street": "Sonnenberger Straße",
+    "check_date": "2023-09-25",
+    "government": "ministry",
+    "name": "Hessisches Ministerium für Arbeit, Integration, Jugend und Soziales",
+    "office": "government",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "start_date": "09.04.2018",
+    "website": "https://soziales.hessen.de",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5635048101,
+  "lat": 50.0113850,
+  "lon": 8.2520926,
+  "tags": {
+    "check_date": "2025-07-19",
+    "check_date:opening_hours": "2023-06-04",
+    "government": "public_service",
+    "name": "Landesbetrieb Daten und Information",
+    "office": "government",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5720387328,
+  "lat": 50.0049106,
+  "lon": 8.2722860,
+  "tags": {
+    "admin_level": "4",
+    "check_date": "2024-09-08",
+    "government": "ministry",
+    "name": "Staatskanzlei Rheinland-Pfalz",
+    "office": "government",
+    "opening_hours": "24/7",
+    "website": "https://stk.rlp.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q2325008",
+    "wikipedia": "de:Staatskanzlei Rheinland-Pfalz"
+  }
+},
+{
+  "type": "node",
+  "id": 5747394766,
+  "lat": 49.9766115,
+  "lon": 8.2916442,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "55130",
+    "addr:street": "Heinrich-von-Brentano-Straße",
+    "contact:email": "poststelle.lvherpsl@thw.de",
+    "contact:fax": "+49 6131 9297290",
+    "contact:phone": "+49 6131 92970",
+    "contact:website": "https://www.lv-herpsl.thw.de/",
+    "government": "emergency",
+    "name": "THW Landesverband Hessen, Rheinland-Pfalz, Saarland",
+    "office": "government",
+    "operator": "Bundesanstalt Technisches Hilfswerk",
+    "operator:short": "THW",
+    "operator:wikidata": "Q697698",
+    "ref:thw": "LVRP",
+    "thw:lv": "THW Landesverband Hessen, Rheinland-Pfalz, Saarland",
+    "wikidata": "Q121438065"
+  }
+},
+{
+  "type": "node",
+  "id": 5779178586,
+  "lat": 49.9766435,
+  "lon": 8.2781463,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "16",
+    "addr:postcode": "55129",
+    "addr:street": "Elly-Beinhorn-Straße",
+    "check_date:opening_hours": "2022-11-18",
+    "email": "fuehrerscheinstelle@stadt.mainz.de",
+    "fax": "+49 6131 12-2511",
+    "name": "Landeshauptstadt Mainz - Fahrerlaubnisbehörde (Führerscheinstelle)",
+    "office": "government",
+    "opening_hours": "Mo,Fr 08:00-12:00; Tu 08:00-15:00; Th 08:00-12:00,13:00-17:30",
+    "phone": "+49 6131 12-2424",
+    "website": "https://mainz.de/vv/oe/verkehrsabteilung/fahrerlaubnisbehoerde-fuehrerscheinstelle"
+  }
+},
+{
+  "type": "node",
+  "id": 5819755088,
+  "lat": 50.0047287,
+  "lon": 8.2684792,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "1",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiser-Friedrich-Straße",
+    "admin_level": "4",
+    "check_date": "2025-02-03",
+    "government": "ministry",
+    "name": "Ministerium für Landwirtschaft, Weinbau, Unwelt und Forsten",
+    "office": "government",
+    "old_name": "Ministerium für Klimaschutz, Umwelt, Energie und Mobilität",
+    "phone": "+49 6131 16-0",
+    "website": "https://mkuem.rlp.de/",
+    "wikidata": "Q1330854"
+  }
+},
+{
+  "type": "node",
+  "id": 6123489727,
+  "lat": 49.9603009,
+  "lon": 8.2275022,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "38",
+    "addr:postcode": "55127",
+    "addr:street": "Im Borner Grund",
+    "email": "ortsverwaltung.marienborn@stadt-mainz.de",
+    "government": "administrative",
+    "name": "Ortsverwaltung Mainz-Marienborn",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:30-11:30, We 14:00-18:00",
+    "operator": "Landeshauptstadt Mainz",
+    "phone": "+49 6131 36 6631",
+    "website": "https://www.mainz.de/vv/oe/ortsverwaltungen/marienborn.php",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6395348400,
+  "lat": 50.0647341,
+  "lon": 8.2335931,
+  "tags": {
+    "government": "yes",
+    "name": "Bewährungshilfe",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 6442920685,
+  "lat": 50.0127487,
+  "lon": 8.2862593,
+  "tags": {
+    "name:en": "Auto Registration",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 6486434879,
+  "lat": 50.0725505,
+  "lon": 8.2136760,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "42",
+    "addr:postcode": "65197",
+    "addr:street": "Im Rad",
+    "government": "archive",
+    "name": "Stadtarchiv Wiesbaden",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-12:00; We 08:00-18:00",
+    "website": "https://www.wiesbaden.de/kultur/archive/archive/index.php",
+    "wikidata": "Q28720136"
+  }
+},
+{
+  "type": "node",
+  "id": 6643516997,
+  "lat": 49.9963170,
+  "lon": 8.2809779,
+  "tags": {
+    "check_date": "2025-03-31",
+    "description": "Landesbetrieb LBB Zentrale",
+    "name": "LBB",
+    "office": "government",
+    "website": "https://lbb.rlp.de"
+  }
+},
+{
+  "type": "node",
+  "id": 6779393520,
+  "lat": 50.0814206,
+  "lon": 8.2416219,
+  "tags": {
+    "check_date:opening_hours": "2026-10-30",
+    "government": "yes",
+    "level": "0",
+    "name": "Mobilitätszentrale von ESWE Verkehr",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-18:00; Sa 08:00-15:00",
+    "website": "https://www.eswe-verkehr.de/vorverkaufsstellen.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7616971943,
+  "lat": 50.0780746,
+  "lon": 8.2412192,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "37",
+    "addr:postcode": "65185",
+    "addr:street": "Rheinstraße",
+    "government": "statistics",
+    "name": "Hessisches Statistisches Landesamt",
+    "office": "government",
+    "website": "https://statistik.hessen.de/",
+    "wikidata": "Q1353379",
+    "wikipedia": "de:Hessisches Statistisches Landesamt"
+  }
+},
+{
+  "type": "node",
+  "id": 7976838933,
+  "lat": 49.9938566,
+  "lon": 8.2257499,
+  "tags": {
+    "admin_level": "6",
+    "contact:website": "https://www.mainz-bingen.de/de/Aemter-Abteilungen/Gesundheit/",
+    "government": "healthcare",
+    "name": "Gesundheitsamt Mainz-Bingen",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 8042889651,
+  "lat": 50.0380967,
+  "lon": 8.3224532,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "65205",
+    "addr:street": "Mechtildshausen",
+    "government": "register_office",
+    "office": "government",
+    "phone": "+49 611 73 74 660"
+  }
+},
+{
+  "type": "node",
+  "id": 8892451477,
+  "lat": 50.0057025,
+  "lon": 8.2668853,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiser-Friedrich-Straße",
+    "check_date": "2025-02-07",
+    "check_date:opening_hours": "2023-02-01",
+    "government": "environment",
+    "name": "Landesamt für Umwelt",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "short_name": "LfU",
+    "wikidata": "Q1802063",
+    "wikipedia": "de:Landesamt für Umwelt Rheinland-Pfalz"
+  }
+},
+{
+  "type": "node",
+  "id": 8892451478,
+  "lat": 50.0059104,
+  "lon": 8.2657287,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "9",
+    "addr:postcode": "55116",
+    "addr:street": "Stiftsstraße",
+    "check_date": "2025-02-16",
+    "name": "Ministerium für Wirtschaft, Tourismus, Energie und Klimaschutz",
+    "office": "government",
+    "old_name": "Ministerium für Wirtschaft, Verkehr, Landwirtschaft und Weinbau",
+    "opening_hours:signed": "no",
+    "website": "https://mwvlw.rlp.de/",
+    "wikidata": "Q1937091",
+    "wikipedia": "de:Ministerium für Wirtschaft, Verkehr, Landwirtschaft und Weinbau Rheinland-Pfalz"
+  }
+},
+{
+  "type": "node",
+  "id": 8989969296,
+  "lat": 49.9828233,
+  "lon": 8.2901616,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "32",
+    "addr:postcode": "55130",
+    "addr:street": "Wilhelm-Theodor-Römheld-Straße",
+    "check_date:opening_hours": "2023-06-05",
+    "government": "it",
+    "name": "Landesbetrieb Daten und Information",
+    "office": "government",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9371951593,
+  "lat": 50.0041384,
+  "lon": 8.2663739,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "61",
+    "addr:postcode": "55116",
+    "addr:street": "Mittlere Bleiche",
+    "admin_level": "4",
+    "check_date": "2025-02-03",
+    "contact:email": "poststelle@bm.rlp.de",
+    "government": "ministry",
+    "name": "Ministerium für Bildung",
+    "office": "government",
+    "website": "https://bm.rlp.de/",
+    "wikidata": "Q26822309"
+  }
+},
+{
+  "type": "node",
+  "id": 9493016093,
+  "lat": 50.0819783,
+  "lon": 8.2406763,
+  "tags": {
+    "name": "Bürgerburo",
+    "office": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9732186592,
+  "lat": 50.0804348,
+  "lon": 8.2359564,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "26",
+    "addr:postcode": "65185",
+    "addr:street": "Schwalbacher Straße",
+    "check_date": "2026-07-23",
+    "government": "social_services",
+    "level": "0",
+    "name": "Amt für Soziale Arbeit. Sozialleistungs- und Jobcenter. Standort Nord",
+    "office": "government",
+    "opening_hours": "Mo, We 08:00-16:00; Tu, Th, Fr 08:00-12:00",
+    "phone": "+49 611 317593",
+    "website": "https://www.wiesbaden.de/vv/medien/merk/51/sozialdienst/Standorte_der_Bezirkssozialarbeit.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 9868222552,
+  "lat": 50.0360145,
+  "lon": 8.2442264,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "65203",
+    "addr:street": "Glarusstraße",
+    "name": "Landesbetrieb Hessisches Landeslabor Wiesbaden",
+    "office": "government",
+    "website": "https://lhl.hessen.de"
+  }
+},
+{
+  "type": "node",
+  "id": 9868222553,
+  "lat": 50.0348599,
+  "lon": 8.2428512,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "186",
+    "addr:postcode": "65203",
+    "addr:street": "Rheingaustraße",
+    "air_conditioning": "no",
+    "alt_name": "HLNUG",
+    "baby_feeding": "no",
+    "check_date": "2025-04-09",
+    "email": "kontakt@hlnug.hessen.de",
+    "fax": "+49 611 6939 555",
+    "government": "yes",
+    "level": "-1;4",
+    "name": "Hessisches Landesamt für Naturschutz, Umwelt und Geologie",
+    "office": "government",
+    "old_name": "Rheinkaserne",
+    "phone": "+49 611 6939-0",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.hlnug.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q1615981",
+    "wikipedia": "de:HLNUG"
+  }
+},
+{
+  "type": "node",
+  "id": 10132993485,
+  "lat": 50.0638921,
+  "lon": 8.2716912,
+  "tags": {
+    "contact:phone": "+49 611 8130",
+    "contact:website": "https://www.finanzamt-wiesbaden.de",
+    "government": "tax",
+    "name": "Finanzamt Wiesbaden",
+    "office": "government",
+    "opening_hours": "Mo,Tu,Th 09:00-15:30; We 13:30-18:00; Fr 07:00-12:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10157176817,
+  "lat": 50.0714158,
+  "lon": 8.2539905,
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:postcode": "65189",
+    "addr:street": "Gustav-Stresemann-Ring",
+    "name": "Umweltamt Wiesbaden",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 10719139026,
+  "lat": 50.0741785,
+  "lon": 8.2555205,
+  "tags": {
+    "check_date:opening_hours": "2025-11-25",
+    "fax": "+49 611 156349",
+    "name": "Landeswohlfahrtsverband Hessen",
+    "office": "government",
+    "opening_hours": "Mo-Th 07:30-15:30; Fr 07:30-13:30",
+    "phone": "+49 611 1560"
+  }
+},
+{
+  "type": "node",
+  "id": 11028086234,
+  "lat": 50.0712152,
+  "lon": 8.2385788,
+  "tags": {
+    "check_date:opening_hours": "2025-10-17",
+    "government": "ministry",
+    "name": "Hessisches Ministerium für Wirtschaft, Energie, Verkehr und Wohnen",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "phone": "+49 611 8150",
+    "website": "https://wirtschaft.hessen.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q649814",
+    "wikipedia": "de:Hessisches Ministerium für Wirtschaft, Energie, Verkehr und Wohnen"
+  }
+},
+{
+  "type": "node",
+  "id": 11028088169,
+  "lat": 50.0861138,
+  "lon": 8.2430757,
+  "tags": {
+    "fax": "+49 611 32113708",
+    "government": "ministry",
+    "name": "Hessische Staatskanzlei",
+    "office": "government",
+    "phone": "+49 611 320",
+    "toilets:wheelchair": "yes",
+    "website": "https://stk.hessen.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q1615909",
+    "wikipedia": "de:Hessische Staatskanzlei"
+  }
+},
+{
+  "type": "node",
+  "id": 11134170442,
+  "lat": 50.0817107,
+  "lon": 8.2373239,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "7",
+    "addr:postcode": "65183",
+    "addr:street": "Kleine Schwalbacher Straße",
+    "check_date:opening_hours": "2024-10-03",
+    "email": "ordnungsamt@wiesbaden.de",
+    "government": "yes",
+    "name": "Ordnungsamt",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://www.wiesbaden.de/vv/oe/07/31/141010100000003413.php#SP-tabs-vv:2"
+  }
+},
+{
+  "type": "node",
+  "id": 11425422252,
+  "lat": 49.9289467,
+  "lon": 8.3037909,
+  "tags": {
+    "government": "register_office",
+    "name": "Standesamt Verbandsgemeinde Bodenheim",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 11634389302,
+  "lat": 50.0029500,
+  "lon": 8.2697667,
+  "tags": {
+    "government": "ministry",
+    "name": "Ministerium für Wirtschaft, Verkehr, Landwirtschaft und Weinbau - Nebengebäude",
+    "office": "government",
+    "website": "https://mwvlw.rlp.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 11913396548,
+  "lat": 50.0804212,
+  "lon": 8.2428486,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "16",
+    "addr:postcode": "65185",
+    "addr:street": "Friedrichstraße",
+    "government": "office",
+    "name": "Wahlamt",
+    "office": "government",
+    "phone": "+49 611 314953",
+    "website": "https://www.wiesbaden.de/vv/oe/04/30/141010100000002650.php#SP-tabs-vv:1",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11980224724,
+  "lat": 50.0002102,
+  "lon": 8.2659437,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "3",
+    "addr:postcode": "55116",
+    "addr:street": "Kleine Langgasse",
+    "name": "Regionalstelle Wasserwirtschaft, Abfallwirtschaft und Bodenschutz",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 12012370480,
+  "lat": 49.9820721,
+  "lon": 8.2454816,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "8-12",
+    "addr:postcode": "55128",
+    "addr:street": "Bahnstraße",
+    "email": "ortsverwaltung.bretzenheim@stadt.mainz.de",
+    "government": "public_service",
+    "name": "Stadtverwaltung Mainz, Ortsverwaltung Mainz-Bretzenheim",
+    "note": "Provisorischer Standort in der Heinrich-Mumbächer-Schule",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-12:00; We 15:00-18:00; Fr off",
+    "phone": "+49 6131 12-38811",
+    "website": "https://www.mainz.de/WGAPublisher/online/html/default/mkuz-5xmguc.de.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12465659640,
+  "lat": 49.9555594,
+  "lon": 8.2552946,
+  "tags": {
+    "name": "Zollamt",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 12768992767,
+  "lat": 50.0129519,
+  "lon": 8.2592062,
+  "tags": {
+    "government": "social_security",
+    "name": "Landesamt für Soziales, Jugend und Versorgung",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 12830884401,
+  "lat": 50.0790619,
+  "lon": 8.2458512,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "65185",
+    "addr:street": "Wilhelmstraße",
+    "government": "data_protection",
+    "name": "Der Hessische Beauftragte für Datenschutz und Informationsfreiheit",
+    "office": "government",
+    "short_name": "HBDI",
+    "website": "https://datenschutz.hessen.de"
+  }
+},
+{
+  "type": "node",
+  "id": 12997455342,
+  "lat": 50.0787512,
+  "lon": 8.2368968,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "65185",
+    "addr:street": "Kirchgasse",
+    "contact:email": "zukunftswerk@wiesbaden.de",
+    "contact:phone": "+49 611 316154",
+    "contact:website": "https://zukunftswerk.wiesbaden.de",
+    "description": "Arbeits- und Begegnungsräume / Stadtlabor für smarte, nachhaltige und digitale Projekte",
+    "level": "2",
+    "name": "Zukunftswerk",
+    "office": "government",
+    "opening_hours": "Mo,Tu,Fr 09:00-16:00; We,Th 09:00-17:30",
+    "quiet_hours": "Th 15:00-17:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13114035512,
+  "lat": 50.0061167,
+  "lon": 8.2676228,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "1",
+    "addr:postcode": "55116",
+    "addr:street": "Diether-von-Isenburg-Straße",
+    "government": "administrative",
+    "name": "Verwaltung des Landtags Rheinland-Pfalz",
+    "office": "government",
+    "website": "https://landtag-rlp.de/de/parlament/landtagsverwaltung.htm"
+  }
+},
+{
+  "type": "node",
+  "id": 13130485168,
+  "lat": 50.0725446,
+  "lon": 8.2465622,
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "65185",
+    "addr:street": "Friedrich-Ebert-Allee",
+    "email": "poststelle@hmdis.hessen.de",
+    "government": "ministry",
+    "int_name": "Hessian ministry of interior",
+    "office": "government",
+    "official_name": "Hessisches Ministerium des Innern und für Sport",
+    "phone": "+49 611 353 0",
+    "roof:shape": "flat",
+    "website": "https://innen.hessen.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q1615993"
+  }
+},
+{
+  "type": "node",
+  "id": 13446476875,
+  "lat": 50.0026904,
+  "lon": 8.2591676,
+  "tags": {
+    "check_date:opening_hours": "2026-01-24",
+    "government": "youth_welfare_department",
+    "name": "Haus des Jugendrechts Mainz",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://www.hdjr-mainz.de"
+  }
+},
+{
+  "type": "node",
+  "id": 14119904801,
+  "lat": 50.0051312,
+  "lon": 8.2637843,
+  "tags": {
+    "fax": "+49 6131 96030-99",
+    "government": "administrative",
+    "name": "Struktur- und Genehmigungsdirektion Süd - Regionalstelle Gewerbeaufsicht",
+    "office": "government",
+    "phone": "+49 6131 96030-0",
+    "website": "https://sgdsued.rlp.de"
+  }
+},
+{
+  "type": "node",
+  "id": 14133981787,
+  "lat": 50.0628808,
+  "lon": 8.3426828,
+  "tags": {
+    "government": "register_office",
+    "name": "Standesamt Nordenstadt",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 14360084052,
+  "lat": 49.9765762,
+  "lon": 8.2784770,
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "16",
+    "addr:postcode": "55129",
+    "addr:street": "Elly-Beinhorn-Straße",
+    "check_date:opening_hours": "2022-11-18",
+    "email": "fuehrerscheinstelle@stadt.mainz.de",
+    "fax": "+49 6131 12-2511",
+    "name": "Landeshauptstadt Mainz - Kfz-Zulassungsbehörde (Zulassungsstelle)",
+    "office": "government",
+    "opening_hours": "Mo-Fr 07:30-12:00; Tu 07:30-15:00; Th 07:30-12:00,13:00-17:30",
+    "phone": "+49 6131 12-2424",
+    "website": "https://mainz.de/vv/oe/verkehrsabteilung/kfz-zulassung/kfz-zulassungsbehoerde-Zulassungsstelle"
+  }
+},
+{
+  "type": "way",
+  "id": 23097232,
+  "center": {
+    "lat": 50.0023836,
+    "lon": 8.2616243
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiserstraße",
+    "building": "public",
+    "building:levels": "7",
+    "check_date": "2024-05-08",
+    "name": "Stadthaus, Kreyßig-Flügel",
+    "office": "government",
+    "old_name": "Bundesbahndirektion Mainz",
+    "source:position": "HiRes aerial imagery",
+    "start_date": "1938",
+    "wheelchair": "yes",
+    "wikipedia": "de:Stadthaus (Mainz)"
+  }
+},
+{
+  "type": "way",
+  "id": 24316679,
+  "center": {
+    "lat": 50.0046974,
+    "lon": 8.2670477
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "55116",
+    "addr:street": "Bauhofstraße",
+    "building": "office",
+    "building:levels": "1",
+    "check_date": "2025-03-18",
+    "check_date:opening_hours": "2023-02-01",
+    "contact:phone": "+49 6131 160",
+    "government": "ministry",
+    "name": "Ministerium für Arbeit, Soziales, Frauen, Familie und Jugend",
+    "office": "government",
+    "old_name": "Ministerium für Arbeit, Soziales, Transformation und Digitalisierung Rheinland-Pfalz",
+    "opening_hours:signed": "no",
+    "roof:shape": "flat",
+    "wheelchair": "yes",
+    "wikidata": "Q1717202",
+    "wikipedia": "de:Ministerium für Arbeit, Soziales, Transformation und Digitalisierung Rheinland-Pfalz"
+  }
+},
+{
+  "type": "way",
+  "id": 24316892,
+  "center": {
+    "lat": 50.0051527,
+    "lon": 8.2673746
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "5",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiser-Friedrich-Straße",
+    "admin_level": "4",
+    "building": "public",
+    "building:colour": "mintcream",
+    "building:material": "plaster",
+    "check_date:opening_hours": "2023-02-01",
+    "contact:email": "poststelle@fm.rlp.de",
+    "government": "ministry",
+    "name": "Ministerium der Finanzen",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://fm.rlp.de/",
+    "wikidata": "Q18629214"
+  }
+},
+{
+  "type": "way",
+  "id": 24317179,
+  "center": {
+    "lat": 50.0060060,
+    "lon": 8.2685339
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "3",
+    "addr:postcode": "55116",
+    "addr:street": "Ernst-Ludwig-Straße",
+    "building": "public_building",
+    "building:levels": "4",
+    "check_date": "2025-08-10",
+    "check_date:opening_hours": "2025-08-10",
+    "name": "Ministerium der Justiz und für Verbraucherschutz Rheinland-Pfalz",
+    "office": "government",
+    "old_name": "Ministerium der Justiz Rheinland-Pfalz",
+    "opening_hours": "Mo-Fr 09:30-12:00, Mo-Th 14:00-15:00",
+    "wikidata": "Q18629215"
+  }
+},
+{
+  "type": "way",
+  "id": 24317297,
+  "center": {
+    "lat": 49.9996884,
+    "lon": 8.2647867
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:postcode": "55116",
+    "addr:street": "Schillerstraße",
+    "building": "public",
+    "building:levels": "6",
+    "contact:email": "Poststelle@fa-mz.fin-rlp.de",
+    "contact:website": "https://www.finanzamt-mainz-mitte.de",
+    "government": "tax",
+    "name": "Finanzamt Mainz",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-12:00,14:00-15:30; Fr 08:00-12:00",
+    "phone": "+49 6131 5520",
+    "ref:bufa": "2726",
+    "roof:levels": "1",
+    "roof:shape": "hipped",
+    "website": "https://fa-mainz.rlp.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 24334648,
+  "center": {
+    "lat": 49.9758921,
+    "lon": 8.2727725
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "55129",
+    "addr:street": "Emy-Roeder-Straße",
+    "building": "public",
+    "government": "tax",
+    "name": "Finanzamt Mainz - Außenstelle",
+    "office": "government",
+    "ref:bufa": "2728",
+    "roof:colour": "grey",
+    "roof:shape": "hipped",
+    "website": "https://finanzamt-mainz.fin-rlp.de/wir-ueber-uns/standorte"
+  }
+},
+{
+  "type": "way",
+  "id": 36866249,
+  "center": {
+    "lat": 50.0766925,
+    "lon": 8.2594874
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "65189",
+    "addr:street": "Moltkering",
+    "building": "yes",
+    "government": "yes",
+    "name": "Karrierecenter der Bundeswehr Mainz",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 39171473,
+  "center": {
+    "lat": 50.0668902,
+    "lon": 8.2493529
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "65189",
+    "addr:street": "Murnaustraße",
+    "atm": "yes",
+    "building": "yes",
+    "check_date:opening_hours": "2025-10-17",
+    "government": "administrative",
+    "name": "Sportamt Wiesbaden",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 40020236,
+  "center": {
+    "lat": 50.0479873,
+    "lon": 8.2276049
+  },
+  "tags": {
+    "building": "office",
+    "government": "yes",
+    "name": "Gebäude A",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-16:00"
+  }
+},
+{
+  "type": "way",
+  "id": 47403283,
+  "center": {
+    "lat": 49.9755134,
+    "lon": 8.2718520
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "55129",
+    "addr:street": "Emy-Roeder-Straße",
+    "building": "public",
+    "fax": "+49 6131 5578 950",
+    "government": "public_safety",
+    "name": "Landesuntersuchungsamt Rheinland-Pfalz - Institut für Lebensmittelchemie und Arzneimittelprüfung",
+    "office": "government",
+    "phone": "+49 6131 5578 0",
+    "source": "yahoo sat",
+    "website": "https://lua.rlp.de",
+    "wikipedia": "de:Landesuntersuchungsamt Rheinland-Pfalz"
+  }
+},
+{
+  "type": "way",
+  "id": 53832248,
+  "center": {
+    "lat": 49.9575033,
+    "lon": 8.2017440
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "55127",
+    "addr:street": "Brucknerstraße",
+    "building": "office",
+    "email": "mainz.gdws@wsv.bund.de",
+    "fax": "+49 6131 979-155",
+    "government": "transportation",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Generaldirektion Wasserstraßen und Schifffahrt Standort Mainz",
+    "office": "government",
+    "phone": "+49 6131 979-0",
+    "website": "https://www.gdws.wsv.bund.de",
+    "wikipedia": "de:Wasser- und Schifffahrtsdirektion Südwest"
+  }
+},
+{
+  "type": "way",
+  "id": 55887220,
+  "center": {
+    "lat": 50.0707444,
+    "lon": 8.2520173
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "65189",
+    "addr:street": "Gustav-Stresemann-Ring",
+    "check_date": "2026-09-23",
+    "check_date:opening_hours": "2026-09-23",
+    "contact:mastodon": "@destatis@social.bund.de",
+    "email": "post@destatis.de",
+    "government": "statistics",
+    "instagram": "statistisches.bundesamt",
+    "landuse": "commercial",
+    "name": "Statistisches Bundesamt",
+    "name:de": "Statistisches Bundesamt",
+    "name:en": "Federal Statistical Office of Germany",
+    "name:es": "Oficina Federal de Estadística de Alemania",
+    "name:pl": "Federalny Urząd Statystyczny Niemiec",
+    "not:building": "yes",
+    "office": "government",
+    "opening_hours": "Mo-Fr 06:00-20:00",
+    "phone": "+49 611 750",
+    "short_name": "Destatis",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.destatis.de/",
+    "wheelchair": "yes",
+    "wikidata": "Q764739",
+    "wikimedia_commons": "Category:Statistisches Bundesamt"
+  }
+},
+{
+  "type": "way",
+  "id": 56409443,
+  "center": {
+    "lat": 50.0707974,
+    "lon": 8.2622796
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "16",
+    "addr:postcode": "65189",
+    "addr:street": "Abraham-Lincoln-Straße",
+    "building": "commercial",
+    "building:levels": "7",
+    "name": "LBIH",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-16:30; Fr 08:00-15:00",
+    "source": "Yahoo",
+    "website": "https://lbih.hessen.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 58389747,
+  "center": {
+    "lat": 50.0705562,
+    "lon": 8.2622840
+  },
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Abraham-Lincoln-Straße",
+    "building": "commercial",
+    "building:levels": "6",
+    "name": "LBIH",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-16:30; Fr 08:00-15:00",
+    "source": "Yahoo",
+    "website": "https://lbih.hessen.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 70534806,
+  "center": {
+    "lat": 50.0054293,
+    "lon": 8.2676118
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "5a",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiser-Friedrich-Straße",
+    "building": "office",
+    "building:levels": "6",
+    "check_date": "2025-03-05",
+    "check_date:opening_hours": "2023-02-01",
+    "government": "ministry",
+    "name": "Ministerium für Kommunen, Bauen, Wohnen und Kultur",
+    "office": "government",
+    "old_name": "Ministerium für Familie, Frauen, Kultur und Integration",
+    "opening_hours:signed": "no",
+    "roof:levels": "0",
+    "wheelchair": "yes",
+    "wikidata": "Q21040649"
+  }
+},
+{
+  "type": "way",
+  "id": 76492235,
+  "center": {
+    "lat": 50.0765168,
+    "lon": 8.2429279
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "30;32",
+    "addr:postcode": "65185",
+    "addr:street": "Bahnhofstraße",
+    "building": "yes",
+    "check_date": "2026-10-22",
+    "government": "ministry",
+    "name": "Hessisches Ministerium der Finanzen",
+    "office": "government",
+    "source": "Yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 79250179,
+  "center": {
+    "lat": 50.0044326,
+    "lon": 8.2656692
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "55116",
+    "addr:street": "Schießgartenstraße",
+    "building": "government",
+    "check_date": "2025-02-16",
+    "name": "Amt für soziale Angelegenheiten",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 122494499,
+  "center": {
+    "lat": 50.0006876,
+    "lon": 8.2682050
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "55116",
+    "addr:street": "Am Kronberger Hof",
+    "building": "office",
+    "building:levels": "4",
+    "check_date:opening_hours": "2022-09-28",
+    "name": "Landeszentrale für politische Bildung Rheinland-Pfalz",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 144450792,
+  "center": {
+    "lat": 50.0506477,
+    "lon": 8.2021038
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "65201",
+    "addr:street": "Stielstraße",
+    "building": "yes",
+    "fax": "+49 611 313966",
+    "government": "yes",
+    "name": "Kfz-Zulassungsstelle",
+    "office": "government",
+    "opening_hours": "Mo 07:00-13:00; Tu,Th,Fr 08:00-13:00; We 08:00-18:00; Sa 09:00-12:00",
+    "phone": "+49 611 318310",
+    "website": "https://www.wiesbaden.de/vv/oe/07/34/141010100000002555.php",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 202493050,
+  "center": {
+    "lat": 49.9947612,
+    "lon": 8.3157585
+  },
+  "tags": {
+    "addr:city": "Ginsheim-Gustavsburg",
+    "addr:housenumber": "32",
+    "addr:postcode": "65462",
+    "addr:street": "Dr.-Herrmann-Straße",
+    "building": "public",
+    "building:levels": "3",
+    "government": "administrative",
+    "name": "Gemeindeverwaltung Gustavsburg",
+    "office": "government",
+    "opening_hours": "Mo-We 09:00-14:00; Th 09:00-12:30,13:30-18:00; Fr 09:00-12:00; Sa,Su,PH off",
+    "roof:levels": "1",
+    "roof:shape": "hipped"
+  }
+},
+{
+  "type": "way",
+  "id": 204722080,
+  "center": {
+    "lat": 50.0005048,
+    "lon": 8.2654682
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "29",
+    "addr:postcode": "55116",
+    "addr:street": "Große Langgasse",
+    "building": "office",
+    "building:levels": "4",
+    "name": "Amt für Veterinär- und Gesundheitswesen",
+    "office": "government",
+    "opening_hours": "\"nach Vereinbarung\"",
+    "roof:levels": "1",
+    "roof:material": "slate",
+    "roof:shape": "hipped",
+    "source": "Bing",
+    "source:date": "2012",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 221853535,
+  "center": {
+    "lat": 50.0724408,
+    "lon": 8.2473789
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "65185",
+    "addr:street": "Friedrich-Ebert-Allee",
+    "building:levels": "2",
+    "building:part": "civic",
+    "government": "yes",
+    "int_name": "Hessian Interior ministry",
+    "office": "government",
+    "official_name": "Hessisches Ministerium des Innern und für Sport",
+    "phone": "+49 611 353 0",
+    "website": "https://hmdis.hessen.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 238725531,
+  "center": {
+    "lat": 50.0141971,
+    "lon": 8.2567668
+  },
+  "tags": {
+    "building": "office",
+    "building:levels": "8",
+    "check_date:opening_hours": "2023-06-05",
+    "name": "Landesamt für Soziales, Jugend und Versorgung",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "roof:levels": "0",
+    "toilets:wheelchair": "yes",
+    "website": "https://lsjv.rlp.de/de/startseite/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 238734265,
+  "center": {
+    "lat": 50.0641243,
+    "lon": 8.2324743
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "1",
+    "addr:postcode": "65187",
+    "addr:street": "Teutonenstraße",
+    "alt_name": "Gebäude 007",
+    "building": "office",
+    "government": "yes",
+    "name": "Amt für Veterinärwesen und Verbraucherschutz",
+    "office": "government",
+    "roof:shape": "hipped"
+  }
+},
+{
+  "type": "way",
+  "id": 265881567,
+  "center": {
+    "lat": 50.0750419,
+    "lon": 8.2463244
+  },
+  "tags": {
+    "building": "yes",
+    "building:levels": "4",
+    "government": "ministry",
+    "name": "Hessisches Ministerum der Finanzen",
+    "note": "Bing an dieser Stelle veraltet (5/2016), Gebäude mit GPS und Fotos erfasst.",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 381836692,
+  "center": {
+    "lat": 50.0645468,
+    "lon": 8.2318555
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "3a",
+    "addr:postcode": "65187",
+    "addr:street": "Teutonenstraße",
+    "building": "office",
+    "government": "yes",
+    "name": "Gebäude 001 A",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 389118966,
+  "center": {
+    "lat": 50.0475578,
+    "lon": 8.2281445
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "45",
+    "addr:postcode": "65203",
+    "addr:street": "Äppelallee",
+    "alt_name": "BKA",
+    "amenity": "police",
+    "check_date:opening_hours": "2023-02-09",
+    "government": "yes",
+    "landuse": "commercial",
+    "name": "Bundeskriminalamt II",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "wikidata": "Q56030"
+  }
+},
+{
+  "type": "way",
+  "id": 467410132,
+  "center": {
+    "lat": 50.0054762,
+    "lon": 8.2732707
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "10",
+    "addr:postcode": "55116",
+    "addr:street": "Adenauer-Ufer",
+    "building": "service",
+    "check_date:opening_hours": "2025-01-07",
+    "government": "environment",
+    "name": "Rheinwasser-Untersuchungsstation Mainz-Wiesbaden",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "operator": "Landesamt für Umwelt (LfU)",
+    "start_date": "13. August 1976",
+    "website": "http://www.rheinwasseruntersuchungsstation.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 497212242,
+  "center": {
+    "lat": 50.0396899,
+    "lon": 8.2015382
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "13",
+    "addr:postcode": "65201",
+    "addr:street": "Hafenweg",
+    "building": "office",
+    "check_date": "2025-02-11",
+    "government": "yes",
+    "name": "WSA Bingen Abz. Wiesbaden",
+    "office": "government",
+    "operator": "Wasserstraßen- und Schifffahrtsverwaltung des Bundes"
+  }
+},
+{
+  "type": "way",
+  "id": 624264986,
+  "center": {
+    "lat": 50.0481887,
+    "lon": 8.2275858
+  },
+  "tags": {
+    "building": "office",
+    "government": "yes",
+    "name": "Gebäude B",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-16:00"
+  }
+},
+{
+  "type": "way",
+  "id": 624264987,
+  "center": {
+    "lat": 50.0477044,
+    "lon": 8.2287462
+  },
+  "tags": {
+    "building": "office",
+    "government": "yes",
+    "name": "Gebäude C",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-16:00"
+  }
+},
+{
+  "type": "way",
+  "id": 624264988,
+  "center": {
+    "lat": 50.0477106,
+    "lon": 8.2292434
+  },
+  "tags": {
+    "building": "office",
+    "government": "yes",
+    "name": "Gebäude F",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-16:00"
+  }
+},
+{
+  "type": "way",
+  "id": 960743612,
+  "center": {
+    "lat": 50.0740037,
+    "lon": 8.2474401
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "29",
+    "addr:postcode": "65185",
+    "addr:street": "Mainzer Straße",
+    "government": "data_protection",
+    "landuse": "commercial",
+    "name": "Hessische Zentrale für Datenverarbeitung",
+    "office": "government",
+    "short_name": "HZD",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q1572543",
+    "wikipedia": "de:Hessische Zentrale für Datenverarbeitung"
+  }
+},
+{
+  "type": "way",
+  "id": 1005879152,
+  "center": {
+    "lat": 50.0157159,
+    "lon": 8.3687576
+  },
+  "tags": {
+    "addr:city": "Hochheim am Main",
+    "addr:country": "DE",
+    "addr:housenumber": "2c",
+    "addr:postcode": "65239",
+    "addr:street": "Dr.-Ruben-Rausing-Straße",
+    "building": "commercial",
+    "name": "Stadtwerke (Bauhof)",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 1428233167,
+  "center": {
+    "lat": 50.0725042,
+    "lon": 8.2469244
+  },
+  "tags": {
+    "building": "civic",
+    "government": "yes",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 1436976280,
+  "center": {
+    "lat": 49.9780799,
+    "lon": 8.2713177
+  },
+  "tags": {
+    "government": "public_service",
+    "name": "Grün- und Umweltamt Stadt Mainz",
+    "office": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 409793,
+  "center": {
+    "lat": 50.0756247,
+    "lon": 8.2462784
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:housenumber": "8",
+    "addr:postcode": "65185",
+    "addr:street": "Friedrich-Ebert-Allee",
+    "alt_name": "Hessisches Finanzministerium",
+    "building": "yes",
+    "building:levels": "4",
+    "government": "ministry",
+    "name": "Hessisches Ministerium der Finanzen",
+    "office": "government",
+    "type": "multipolygon",
+    "wikidata": "Q28738800"
+  }
+},
+{
+  "type": "relation",
+  "id": 2031399,
+  "center": {
+    "lat": 50.0046532,
+    "lon": 8.2686634
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "3",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiser-Friedrich-Straße",
+    "building": "office",
+    "building:colour": "white",
+    "building:levels": "5",
+    "government": "ministry",
+    "name": "Ministerium für Klimaschutz, Umwelt, Energie und Mobilität",
+    "office": "government",
+    "roof:levels": "0",
+    "roof:shape": "flat",
+    "start_date": "1999",
+    "type": "multipolygon",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 3357069,
+  "center": {
+    "lat": 50.0701419,
+    "lon": 8.2520306
+  },
+  "tags": {
+    "addr:city": "Wiesbaden",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "65189",
+    "addr:street": "Gustav-Stresemann-Ring",
+    "check_date": "2025-12-10",
+    "government": "statistics",
+    "name": "Statistisches Bundesamt",
+    "name:en": "Federal Statistical Office of Germany",
+    "office": "government",
+    "short_name": "Destatis",
+    "type": "site",
+    "website": "https://www.destatis.de/",
+    "wikidata": "Q764739",
+    "wikimedia_commons": "Category:Statistisches Bundesamt",
+    "wikipedia": "de:Statistisches Bundesamt"
+  }
+},
+{
+  "type": "relation",
+  "id": 8426116,
+  "center": {
+    "lat": 50.0027117,
+    "lon": 8.2606439
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "55116",
+    "addr:street": "Kaiserstraße",
+    "building": "office",
+    "building:levels": "7",
+    "building:material": "concrete",
+    "changing_table": "yes",
+    "changing_table:location": "dedicated_room",
+    "height": "42",
+    "name": "Stadthaus, Lauteren-Flügel",
+    "office": "government",
+    "type": "multipolygon",
+    "wikipedia": "de:Stadthaus (Mainz)"
+  }
+},
+{
+  "type": "relation",
+  "id": 8469084,
+  "center": {
+    "lat": 49.9751306,
+    "lon": 8.2728488
+  },
+  "tags": {
+    "addr:city": "Mainz",
+    "addr:housenumber": "5",
+    "addr:postcode": "55129",
+    "addr:street": "Emy-Roeder-Straße",
+    "building": "public",
+    "email": "office@lgb-rlp.de",
+    "fax": "+49 6131 9254123",
+    "government": "geology",
+    "name": "Landesamt für Geologie und Bergbau",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-15:30; Fr 08:00-13:00",
+    "phone": "+49 6131 92540",
+    "type": "multipolygon",
+    "website": "https://www.lgb-rlp.de/",
+    "wikidata": "Q28738857",
+    "wikipedia": "de:Landesamt für Geologie und Bergbau"
+  }
+}
+
+  ]
+}

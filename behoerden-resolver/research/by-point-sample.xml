@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://gdi.bayern/stmi https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=text%2Fxml%3B+subtype%3Dgml%2F3.2.1&amp;TYPENAME=stmi:PolizeiinspektionenStandort&amp;NAMESPACES=xmlns(stmi,http%3A%2F%2Fgdi.bayern%2Fstmi)" xmlns:wfs="http://www.opengis.net/wfs/2.0" timeStamp="2026-11-13T17:43:01Z" xmlns:gml="http://www.opengis.net/gml/3.2" numberMatched="unknown" numberReturned="0">
+  <!--NOTE: numberReturned attribute should be 'unknown' as well, but this would not validate against the current version of the WFS 2.0 schema (change upcoming). See change request (CR 144): https://portal.opengeospatial.org/files?artifact_id=43925.-->
+  <wfs:member>
+    <stmi:PolizeiinspektionenStandort xmlns:stmi="http://gdi.bayern/stmi" gml:id="STMI_POLIZEIINSPEKTIONENSTANDORT_b9de4149-7636-484c-8814-a933ff04dbb3">
+      <stmi:bezeichnung>Polizeiinspektion Lauf a.d.Pegnitz</stmi:bezeichnung>
+      <stmi:behoerdenGruppe>Polizeiinspektionen / -stationen</stmi:behoerdenGruppe>
+      <stmi:behoerdenUntergruppe>polizeiinspektionen</stmi:behoerdenUntergruppe>
+      <stmi:dienststellenSchluessel>355115</stmi:dienststellenSchluessel>
+      <stmi:dienststellenSchluesselLfdnr>0</stmi:dienststellenSchluesselLfdnr>
+      <stmi:rechtsgrundlageBeschreibung>Verordnung zur Durchführung des Polizeiorganisationsgesetzes (DVPOG)</stmi:rechtsgrundlageBeschreibung>
+      <stmi:rechtsgrundlageUrl>http://www.gesetze-bayern.de/Content/Document/BayDVPOG</stmi:rechtsgrundlageUrl>
+      <stmi:bayernPortalUrl>https://www.bayernportal.de/dokumente/behoerde/6221782949</stmi:bayernPortalUrl>
+      <stmi:homepage>https://www.polizei.bayern.de/wir-ueber-uns/organisation/dienststellen/0900515060000.html</stmi:homepage>
+      <stmi:anschriftStrasse>Holzgartenstraße 10</stmi:anschriftStrasse>
+      <stmi:anschriftOrt>Lauf a.d.Pegnitz</stmi:anschriftOrt>
+      <stmi:anschriftPlz>91207</stmi:anschriftPlz>
+      <stmi:telefon>+49 (0)9123 9407-0</stmi:telefon>
+      <stmi:telefax>+49 (0)9123 9407-20</stmi:telefax>
+      <stmi:id>465</stmi:id>
+      <stmi:stand>2008-02-05</stmi:stand>
+      <stmi:geometry>
+        <!--Inlined geometry 'STMI_POLIZEIINSPEKTIONENSTANDORT_b9de4149-7636-484c-8814-a933ff04dbb3_STMI_GEOMETRY'-->
+        <gml:Point gml:id="STMI_POLIZEIINSPEKTIONENSTANDORT_b9de4149-7636-484c-8814-a933ff04dbb3_STMI_GEOMETRY" srsName="EPSG:3857">
+          <gml:pos>1255832.5782676982 6361314.4629902470</gml:pos>
+        </gml:Point>
+      </stmi:geometry>
+    </stmi:PolizeiinspektionenStandort>
+  </wfs:member>
+</wfs:FeatureCollection>

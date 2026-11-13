@@ -1,0 +1,125 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_polizei",
+    "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+    "layer": "stmi:PolizeiinspektionenFlaeche",
+    "scope": "DE-BY",
+    "kind": "authority",
+    "routes": [
+      {
+        "category": "polizei",
+        "name_field": "bezeichnung",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "polizeiinspektionen",
+            "polizeistationen"
+          ]
+        }
+      }
+    ],
+    "format": "gml",
+    "request_crs": "EPSG:3857",
+    "sort_by": "id",
+    "default_import": true,
+    "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+    "modifications": "Transformation nach EPSG:4326; Polygonvalidierung, ggf. protokollierte Reparatur; Filter nach amtlicher Untergruppe; Zusammensetzung amtlicher Namensfelder; keine Grenzvereinfachung. GEOS make_valid: sämtliche Polygonteile beibehalten; ggf. kollabierte Linien-/Punktreste ohne Fläche entfernt; geometry_repaired markiert.",
+    "coverage_claim": "regional source; no nationwide coverage",
+    "source_date": "per-feature stand/wsk/beginn when available; otherwise see source documentation",
+    "verification_required": true
+  },
+  "started_at": "2026-11-13T16:41:24.540600+00:00",
+  "completed_at": "2026-11-13T16:41:43.946937+00:00",
+  "layer_fetch_complete": true,
+  "observed_features": 269,
+  "expected_features": null,
+  "terminal_empty_page": true,
+  "pagination_consistency": "unique IDs, stable sort and total/terminal-page checked; remote transactions are not guaranteed",
+  "records_per_category": {
+    "polizei": 263
+  },
+  "source_subgroups": {
+    "polizeiinspektionen": 242,
+    "polizeistationen": 21,
+    "fahndungsinspektionen": 1,
+    "fahndungsstationen": 1,
+    "n/a": 4
+  },
+  "records_sha256": "c70af5d0817a0560373b2551fde155b8340ca055561fde92830b4dbd9016dd22",
+  "requests": [
+    {
+      "path": "raw/capabilities.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+      "retrieved_at": "2026-11-13T16:41:24.867111+00:00",
+      "response_sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c",
+      "bytes": 89094
+    },
+    {
+      "path": "raw/schema.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3APolizeiinspektionenFlaeche",
+      "retrieved_at": "2026-11-13T16:41:24.868059+00:00",
+      "response_sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378",
+      "bytes": 28008
+    },
+    {
+      "path": "raw/sample.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:24.872945+00:00",
+      "response_sha256": "a0d8ee11422f4ceca71bd84177622d522ee89242d440f48366070983cac2d208",
+      "bytes": 41326
+    },
+    {
+      "path": "raw/page-000000.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:26.540674+00:00",
+      "response_sha256": "8cc9a04a946188d7318d22da3312b23ea51ce8d0f332e1f75b753ce9a7be055b",
+      "bytes": 8748311
+    },
+    {
+      "path": "raw/page-000050.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=50&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:29.847996+00:00",
+      "response_sha256": "eeed8b474cf1b88a2be1b74315f6c84188067d2f997303a2e444e25dbf3ba257",
+      "bytes": 12008612
+    },
+    {
+      "path": "raw/page-000100.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=100&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:33.763145+00:00",
+      "response_sha256": "dc25e3476acdc1f66b5d555382e7e09bbeb9cf5e4eb4f11b7e248ab53c8e56f0",
+      "bytes": 12986608
+    },
+    {
+      "path": "raw/page-000150.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=150&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:37.758028+00:00",
+      "response_sha256": "37f8b43885d425d8e8c6ecedba07d813ef8ff82c79222b9de21cc049b54836eb",
+      "bytes": 9896452
+    },
+    {
+      "path": "raw/page-000200.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=200&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:40.844795+00:00",
+      "response_sha256": "5f49573036d4ec362eca3c2d502ea78831fd09f86fdb71d6b57c7a7ede5aec80",
+      "bytes": 9173405
+    },
+    {
+      "path": "raw/page-000250.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=250&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:43.196759+00:00",
+      "response_sha256": "9b0b113e5c4572810ec717aecd21fcc0281407c061a011d72864c772d5a6dd9e",
+      "bytes": 4569156
+    },
+    {
+      "path": "raw/page-000269.gz",
+      "request_url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=269&count=50&sortBy=id",
+      "retrieved_at": "2026-11-13T16:41:43.943251+00:00",
+      "response_sha256": "7c8717c487c1de79a9a3134526b93807d9fd0edbb6bd11e79c57f80ee15f8923",
+      "bytes": 1038
+    }
+  ],
+  "national_authority_coverage_guaranteed": false
+}

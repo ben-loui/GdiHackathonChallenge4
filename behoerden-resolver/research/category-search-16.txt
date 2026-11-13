@@ -1,0 +1,222 @@
+{
+  "categories": [
+    "handwerkskammer",
+    "rentenversicherung",
+    "krankenkasse",
+    "pflegekasse"
+  ],
+  "queries": [
+    {
+      "q": "\"Handwerkskammer Kammerbezirke\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Rentenversicherung\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Krankenkasse\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    },
+    {
+      "q": "\"Pflegekasse\" Zuständigkeitsbereiche Geodaten Datensatz WFS Download"
+    }
+  ]
+}
+Abruf der Krankenkasse - GKV-Datenaustausch (https://www.gkv-datenaustausch.de/arbeitgeber/abfrage_krankenkasse/abfrage_krankenkassen.jsp)
+citeturn26search0 [wordlim: 200] Crawled: today; # Abruf der Krankenkasse ...   * Anlage 1 - Abfrage Mitgliedschaft Krankenkasse (PDF, 358 KB) gültig ab 01.01.2024 - nicht barrierefrei
+
+# Abruf der Krankenkasse
+
+## In dieser Rubrik finden Sie die Grundsätze zum elektronischen Abruf der
+
+## zuständigen Krankenkasse nach § 28a Absatz 3e SGB IV einschließlich deren Anlagen sowie die Verfahrensbeschreibung inklusive Anlagen.
+
+### Grundsätze
+
+  * Grundsätze (PDF, 352 KB) gültig ab 01.01.2024 - nicht barrierefrei
+
+### Grundsätze - Anlagen
+
+  * Anlage 1 - Abfrage Mitgliedschaft Krankenkasse (PDF, 358 KB) gültig ab 01.01.2024 - nicht barrierefrei
+  * Anlage 2 - Angabe Mitgliedschaft Krankenkasse (PDF, 357 KB) gültig ab 01.01.2024 - nicht barrierefrei
+
+### Verfahrensbeschreibung
+
+  * Verfahrensbeschreibung (PDF, 218 KB) gültig ab 01.01.2024 - nicht barrierefrei
+
+### Verfahrensbeschreibung - Anlagen
+
+  * Anlage 1 - Abfrage der Mitgliedschaft durch den GKV-Spitzenverband (PDF, 355 KB) gültig ab 01.01.2024 - nicht barrierefrei
+  * Anlage 2 - Rückmeldung der Mitgliedschaft an den GKV-Spitzenverband (PDF, 358 KB) gültig ab 01.01.2024 - nicht barrierefrei
+
+### XML
+
+  * XML Schemata für die Grundsätze (ZIP, 15 KB) XML Schemata für die Umsetzung der Anlage 1 und 2 der Grundsätze gültig ab 01.01.2024, Stand 07.05.2024 - nicht barrierefrei
+  * XML Schemata für die Verfahrensbeschreibung (ZIP, 13 KB) XML Schemata für die Umsetzung der Anlage 1 und 2 der Verfahrensbeschreibung gültig ab 01.01.2024 - nicht barrierefrei--------------------------------------------------------------------------------
+Zuständigkeitsbereich der Kassen - www.bundesamtsozialesicherung.de (https://www.bundesamtsozialesicherung.de/de/themen/krankenversicherung/zustaendigkeitsbereich-der-kassen/)
+citeturn26search1 [wordlim: 200] Published: 6 months ago; Crawled: 2 days ago; Es ist von den Krankenkassen regelmäßig zu überprüfen, ob sich Änderungen im Kassenbereich ergeben haben, insbesondere vor dem Hintergrund der Auswirkungen auf die regionale Zuständigkeit des Trägers sowie die zuständige Aufsichtsbehörde einer Kasse. ... Der Zuständigkeitsbereich bestimmt sich entsprechend den jeweiligen Eigenheiten der Kassenarten nach unterschiedlichen Merkmalen, u.a. bei nicht geöffneten Betriebskrankenkassen durch den Betriebssitz. ... Sollten bei dem Trägerbetrieb Veränderungen der betrieblichen Struktur eintreten und sich mithin auch der Zuständigkeitsbereich der Kasse ändern, so könnte dies auch Auswirkungen auf den Erstreckungsbereich einer Krankenkasse haben.
+
+Krankenversicherung
+
+# Zuständigkeitsbereich der Kassen
+
+Es ist von den Krankenkassen regelmäßig zu überprüfen, ob sich Änderungen im Kassenbereich ergeben haben, insbesondere vor dem Hintergrund der Auswirkungen auf die regionale Zuständigkeit des Trägers sowie die zuständige Aufsichtsbehörde einer Kasse. Die Sachverhaltsermittlung zum Kassenbereich und die damit verbundene Darlegungspflicht trifft jede Krankenkasse.
+
+Die Krankenkassen können über den Kassenbereich nicht disponieren. Die Kasse hat insoweit keine Satzungsautonomie, maßgeblich ist das Territorium, in dem ihre Satzung gilt.
+
+Der Zuständigkeitsbereich bestimmt sich entsprechend den jeweiligen Eigenheiten der Kassenarten nach unterschiedlichen Merkmalen, u.a. bei nicht geöffneten Betriebskrankenkassen durch den Betriebssitz.
+
+Es kommt dabei auf die tatsächlichen Verhältnisse, d.h. auf das gegenwärtige Bestehen oder Nichtbestehen von Betrieben (bzw. bei IKK´en auf die festen Arbeitsstätten der Innungsbetriebe) an.
+
+Aus Gründen der Satzungsklarheit für potentielle Versicherte müssen die Betriebe/Betriebsteile und Gebiete der Länder, in welchen das Satzungsrecht gilt, in der Satzung einzeln aufgeführt werden. Je nach Umfang bietet sich ggf. dafür eine Anlage zur Satzung an.
+
+Sollten bei dem Trägerbetrieb Veränderungen der betrieblichen Struktur eintreten und sich mithin auch der Zuständigkeitsbereich der Kasse ändern, so könnte dies auch Auswirkungen auf den Erstreckungsbereich einer Krankenkasse haben. Gegebenenfalls würde sich die regionale Zuständigkeit auf andere Regionen erweitern oder reduzieren.
+
+Der Kassenbereich ist Bestandteil der Satzung, so dass Änderungen vom Verwaltungsrat beschlossen und der Aufsichtsbehörde zur Genehmigung vorgelegt werden müssen.--------------------------------------------------------------------------------
+DEUTSCHE RENTENVERSICHERUNG BUND, BERLIN (https://www.dsrv.info/SharedDocs/Downloads/DE/20_Unsere_Verfahren/01_nationaler_Datenaustausch/03_Arbeitgeber/10_Downloads_Services/02_A1_GML_rvBEA/_config/GENEHMIGT_rvBEA_GG_ab_01_07_2022.pdf?__blob=publicationFile&v=3)
+citeturn26search12 [wordlim: 200] Published: 7 months ago; Datensatz Werteliste_AG (ZUZA) ... 3 | Bezeichnung | Metadaten |  | Elementname Metadaten | Typ | Länge | Art M | Häufigkeit 1 | Erläuterung ... 5 | Bezeichnung |  | Datentyp Version | Elementname Datenyp_Version | Typ an | Länge 5 | Art M | Häufigkeit 1 | Erläuterung Zulässig ist nur eine Version im Format n.n.n wobei n für eine beliebige Zahl steht. ... Die Anzahl der Werte kann innerhalb der hier festgelegten Vorgaben variieren, beispielsweise wird nicht immer eine Faxnummer oder ein Postfach mitgeliefert.
+Datensatz Werteliste_AG (ZUZA)
+Zeichendarstellung:
+an = alphanummerisches Feld
+n   = numerisches Feld
+M = Mussfeld; die Information ist immer anzugeben
+m = bedingtes Mussfeld, die Information ist anzugeben, sofern sie zur Verfügung steht
+Zeile Nr. 1 | Bezeichnung Werteliste_AG |  |  | Elementname | Typ | Länge | Art M | Häufigkeit 1 | Erläuterung
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Zeile Nr. 2 | Bezeichnung | Versionsnummer |  | Elementname Versionsnummer (A) | Typ an | Länge 5 | Art M | Häufigkeit 1 | Erläuterung Zulässig ist nur eine Version im Format n.n.n wobei n für eine beliebige Zahl steht.
+Zeile Nr. 3 | Bezeichnung | Metadaten |  | Elementname Metadaten | Typ | Länge | Art M | Häufigkeit 1 | Erläuterung
+Zeile Nr. 4 | Bezeichnung |  | Datentyp | Elementname Datentyp | Typ an | Länge 32 | Art M | Häufigkeit 1 | Erläuterung zulässig ist nur "Info_rvBEA"
+Zeile Nr. 5 | Bezeichnung |  | Datentyp Version | Elementname Datenyp_Version | Typ an | Länge 5 | Art M | Häufigkeit 1 | Erläuterung Zulässig ist nur eine Version im Format n.n.n wobei n für eine beliebige Zahl steht.
+--------------------------------------------------------------------------------
+Titel (https://www.vdek.com/vertragspartner/Datenaustausch_GKV-SPV_MDK/Pflege_4-1/_jcr_content/par/download_0/file.res/FVB_DA_SPV_MDK_Pflege_V4_0_2016_05_26.pdf)
+citeturn26search13 [wordlim: 200] Published: 10.5 years ago; Crawled: 11 months ago; Zu diesem Zweck wird den Pflegekassen durch den MDS eine Tabelle zur Verfügung gestellt, so dass anhand der Postleitzahl des Versicherten die Zuständigkeit hergeleitet werden kann (Anhang 1 zur Anlage 2 „Technische Anlage“). ... Nach der Auftragserledigung übersendet der MDK den vereinbarten Datensatz (Datensatz Gutachtliche Stellungnahme) an die Annahmestelle der zuständigen Pflegekasse. Dabei wird dem Prinzip gefolgt, dass auf jede elektronische Beauftragung genau eine elektronische Antwort über den Datenaustausch erfolgen muss (1zu1-Beziehung).
+DA SPV/MDK – FVB Version 4.0 – Stand: 26.05.2016
+
+Die Organisation der Arbeitskreise obliegt dem Federführer. Dieser organisiert die Einberufungen, führt die Moderationen und erstellt die Ergebnisprotokolle der Sitzungen. Darüber hinaus ist er die zentrale Anlaufstelle für die Weitergabe der relevanten Unterlagen. Bei Bedarf können die beiden Arbeitskreise vom Federführer auch zu einer gemeinsamen Sitzung einberufen werden.
+
+4 Datenfluss im Datenaustausch Pflege
+
+Die beteiligten Pflegekassen (SPV) senden den elektronischen Begutachtungsauftrag an die Annahmestelle des zuständigen MDK. Die Zuständigkeit richtet sich in Anlehnung an § 281 Abs. 1 SGB V grundsätzlich nach dem Wohnort des Versicherten. Zu diesem Zweck wird den Pflegekassen durch den MDS eine Tabelle zur Verfügung gestellt, so dass anhand der Postleitzahl des Versicherten die Zuständigkeit hergeleitet werden kann (Anhang 1 zur Anlage 2 „Technische Anlage“). Der Pflegekasse bleibt es jedoch unbenommen, entsprechend getroffener Festlegungen direkt einen MDK zu benennen. Die Weiterleitung des Auftrags an die die Begutachtung durchführende Stelle erfolgt durch den gewählten MDK.
+
+Nach der Auftragserledigung übersendet der MDK den vereinbarten Datensatz (Datensatz Gutachtliche Stellungnahme) an die Annahmestelle der zuständigen Pflegekasse. Dabei wird dem Prinzip gefolgt, dass auf jede elektronische Beauftragung genau eine elektronische Antwort über den Datenaustausch erfolgen muss (1zu1-Beziehung). Der gesamte Geschäftsprozess wird in den folgenden Abbildungen dargestellt.
+
+FVB_DA_SPV_MDK_Pflege_V4_0_2016_05_26.doc  Seite 7 von 19--------------------------------------------------------------------------------
+Häufige Fragen - www.bundesamtsozialesicherung.de (https://www.bundesamtsozialesicherung.de/de/themen/vertragstransparenzstelle/haeufige-fragen/)
+citeturn26search2 [wordlim: 200] Published: 1.3 years ago; Crawled: yesterday; Das BAS wird in Zweifelsfällen bei der betreffenden Krankenkasse hinsichtlich des Auftragsverhältnisses Nachfragen stellen. (Alle Krankenkassen, Verbände, Dienstleister und Arbeitsgemeinschaften sind, nach erfolgter Registrierung im Portal, berechtigt Datensätze zu liefern.) ... Beispiel: Eine bundesweit geöffnete Krankenkasse schließt einen Vertrag nach § 140a SGB V mit einer Kassenärztlichen Vereinigung.
+
+
+2. Wer ist berechtigt Datensätze zu liefern?
+    
+
+Grundsätzlich ist die jeweilige Krankenkasse verpflichtet, die für Sie relevanten Daten zu liefern. Sofern die Krankenkassen einen Verband, einen Dienstleister oder eine Arbeitsgemeinschaft beauftragt haben, die Datenmeldung für sie vorzunehmen, kann auch über diese, bzw. diesen, die entsprechenden Meldung erfolgen. Das BAS wird in Zweifelsfällen bei der betreffenden Krankenkasse hinsichtlich des Auftragsverhältnisses Nachfragen stellen. (Alle Krankenkassen, Verbände, Dienstleister und Arbeitsgemeinschaften sind, nach erfolgter Registrierung im Portal, berechtigt Datensätze zu liefern.)
+
+3. Datenfeld: „Vertragsbeginn“: Welches Datum ist maßgeblich?
+    
+
+Hier ist auf den zwischen den Vertragspartnern vereinbarten Beginn abzustellen. Sofern eine Krankenkasse einem bereits bestehenden Vertrag beitritt, ist auf das Datum des Wirksamwerdens des Beitritts der jeweiligen Krankenkasse abzustellen. 
+
+4. Datenfeld: „Vertragsende“: Welches Datum ist anzugeben?
+    
+
+Maßgeblich ist das Datum der Beendigung des Vertrages der meldenden Krankenkasse. Der Vertrag ist dann beendet, wenn nach erfolgter Kündigungserklärung und dem Ablauf einer ggf. vereinbarten Kündigungsfrist der Kündigungstermin eintritt. Der Umstand, dass vertragsärztliche Leistungen möglicherweise auch nach der Beendigung des Vertrages noch abgerechnet werden können, hat auf die Angabe des Tags des Vertragsendes keinen Einfluss.
+
+--------------------------------------------------------------------------------
+DA GKV/SPV - MD – Anlage 1.6 Version 2.1 - 02.12.2024 (https://www.vdek.com/vertragspartner/Datenaustausch_GKV-SPV_MDK/weitere-begutachtungsbereiche-2-1/_jcr_content/par/download_8/file.res/Datendefinition_Anl1-6_DA_GKVSPV_MD_WBB_V2_1_20241202.pdf)
+citeturn26search14 [wordlim: 200] Published: 11 months ago; In diesem Dokument werden die Datensätze zum Austausch von Daten zwischen den Kranken-/Pflegekassen und dem Medizinischen
+Dienst der Krankenversicherungen (MD) für „weitere Begutachtungsbereiche“ spezifiziert. Hiermit sind Begutachtungsbereiche ge- ... Für jede Beauftragung des MD durch die Kranken-/Pflegekasse wird ein Datensatz (XML-Schema) definiert.
+Für jede Beauftragung des MD durch die Kranken-/Pflegekasse wird ein Datensatz (XML-Schema) definiert. Gleichermaßen erfolgt die
+Beantwortung durch den MD mit einem Datensatz (XML-Schema).
+Die Datensätze im Datenaustausch mit dem MD bestehen aus verfahrensspezifischen Segmenten und verfahrensübergreifend verein-
+heitlichten Stammdatensegmenten. In diesem Dokument wird auf Stammdaten zu Versicherten, Arzt, Krankenkasse und MD verwie-
+sen. Diese Stammdaten werden im Dokument „Verfahrensübergreifende Datendefinition“ (Anlage 1 zur verfahrensübergreifenden
+fachlichen Verfahrensbeschreibung) gepflegt. Es gelten stets die Versionen der Dokumente, die im Schlüssel V „TA_Version“ des ver-
+fahrensspezifischen Schlüsselverzeichnisses (siehe Anhang 1) genannt sind.
+Die Kopfstellen der beteiligten Institutionen führen definierte und standardisierte Plausibilitätsprüfungen durch. Dateien mit tech-
+nisch oder inhaltlich fehlerhaften Datensätzen werden nicht weitergeleitet. Der Absender erhält entsprechende Fehlerhinweise und
+die Gelegenheit, die Datei im richtigen Format erneut zur Verfügung zu stellen.
+Die nachfolgenden Kapitel enthalten die Spezifikationen der Datensätze.
+Seite 5 von 16--------------------------------------------------------------------------------
+Deutsche Rentenversicherung Bund (https://www.informationsportal.de/wp-content/uploads/grundsaetze_uebermittlung_01012025.pdf)
+citeturn26search15 [wordlim: 200] Published: 2.5 years ago; Crawled: last week; Für die Datenübermittlung zwischen den Arbeitgebern und der Datenstelle der Träger der Rentenversicherung (DSRV) sind die nachstehend beschriebenen Datensätze mit den zugehörigen Datenbausteinen in der jeweils geltenden Fassung zu verwenden (vgl. ... Der Datensatz Kommunikation ist entsprechend der Gemeinsamen Grundsätze für die Kommunikationsdaten nach § 28b Absatz 1 Satz 1 Nr. ... ### 4.3 Datensätze im Bereich Entgeltbuchhaltung
+4 Datensätze der Arbeitgeber
+
+Für die Datenübermittlung zwischen den Arbeitgebern und der Datenstelle der Träger der Rentenversicherung (DSRV) sind die nachstehend beschriebenen Datensätze mit den zugehörigen Datenbausteinen in der jeweils geltenden Fassung zu verwenden (vgl. Anlagen 1 und 2). Zusätzlich sind die Gemeinsamen Grundsätze für die Kommunikationsdaten nach § 28b Absatz 1 Satz 1 Nr. 4 SGB IV in der jeweils geltenden Fassung zu berücksichtigen.
+
+Jede Datei beginnt mit einem Vorlaufsatz (VOSZ), es folgt ein Datensatz Kommunikation (DSKO) und endet mit einem Nachlaufsatz (NCSZ). Zwischen DSKO und NCSZ sind die verfahrensspezifischen Datensätze zu liefern. Diese beinhalten ausschließlich Daten zu einer konkreten Betriebsnummer, welche im Feld „Betriebsnummer des Verursachers der Datei (BBNRVU)“ des Datensatzes Steuerung (DSST) angegeben werden muss.
+
+Die prüfrelevanten Daten sind durch eine gesicherte und verschlüsselte Datenübertragung (vgl. Abschnitt 6) im eXTra-Standard zu übermitteln.
+
+### 4.1 Vorlaufsatz
+
+Der Vorlaufsatz ist entsprechend den Gemeinsamen Grundsätzen für die Kommunikationsdaten nach § 28b Absatz 1 Satz 1 Nr. 4 SGB IV zu liefern.
+
+### 4.2 Datensatz Kommunikation
+
+Der Datensatz Kommunikation ist entsprechend der Gemeinsamen Grundsätze für die Kommunikationsdaten nach § 28b Absatz 1 Satz 1 Nr. 4 SGB IV zu liefern.
+
+### 4.3 Datensätze im Bereich Entgeltbuchhaltung
+
+Für die Datenübermittlung sind ausschließlich die in der nachstehenden Aufstellung beschriebenen Datensätze mit den zugehörigen Datenbausteinen zu verwenden (vgl. Anlage 1).
+
+Die Datensätze DSST, DSAG und DSAN sind obligatorisch und stellen somit den Mindestumfang einer Lieferung dar.
+
+Treffen ein oder mehrere der in den weiteren Datensätzen und Datenbausteinen beschriebenen Sachverhalte zu, müssen diese zusätzlich gemeldet werden.
+
+- Datensatz Steuerung (DSST)
+- Datensatz Zugangseröffnung (DSZE)
+- Datensatz Fragebogen (DSFB)
+
+Seite 16 von 35--------------------------------------------------------------------------------
+Anhang 5 
+ 
+zur Anlage 1 
+ 
+Kostenträgerdatei (https://gkv-datenaustausch.de/media/dokumente/leistungserbringer_1/pflege/technische_anlagen_archiv_1/TA1_ANH5_20230413_105_oA.pdf)
+citeturn26search16 [wordlim: 200] Published: 1.8 years ago; Basis der Kostenträgerdatei ist das IK der Pflegekasse. ... Datenannahmestellen der Pflegekassen für elektronische und papierge- ... Leistungsbereiche incl. ... www.gkv-datenaustausch.de zum Download bereitgestellt.
+--------------------------------------------------------------------------------
+31. Datenverarbeitung in der Rentenversicherung (https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Fachliteratur_Kommentare_Gesetzestexte/Studientexte/Datenverarbeitung/31_datenverarbeitung_in_der_rv.pdf?__blob=publicationFile&v=11)
+citeturn26search17 [wordlim: 200] Published: 8 months ago; Crawled: last week; Datenverarbeitung in der Rentenversicherung — 34/120 ... Die DSRV ist nicht nur ein verlässlicher Kommunikationspartner zu Trägern der Deutschen Rentenversicherung oder anderen Sozialversicherungsträgern, sondern unterhält unter anderem auch Datenverbindungen zur Justiz, Arbeitgebern, Kommunen oder zum Zoll. Die DSRV verarbeitet jährlich etwa 2 Milliarden Datensätze. ... Beide Spalten sind über seitliche blaue Verbindungslinien mit dem zentralen Bereich „Kommunikationspartner der DSRV“ verbunden.
+--------------------------------------------------------------------------------
+FAQ (https://das-pflege.de/faq)
+citeturn26search3 [wordlim: 200] Crawled: today; Versorgungsvertrag oder Bestätigung der zuständigen Pflegekasse) ... Die Pflegeeinrichtung kann jeden Tag jedes Monats wählen, mit Ausnahme gesetzlicher Feiertage, die jedes Jahr auf dasselbe Datum fallen, z.B. ... Softwareanbieter sind in der Gestaltung ihrer Softwareprodukte frei, haben allerdings bei der Umsetzung zwingend die Vorgaben der Spezifikation (beispielsweise Datensatzbeschreibung, Datenprüfung und -übermittlung) zu beachten. ... Diese teilen der Datenauswertungsstelle Pflege (DAS) nach Prüfung des Versorgungsvertrages mit, dass die Pflegeeinrichtungen von der Verpflichtung zur Erhebung und Übermittlung von Indikatorendaten an die Datenauswertungsstelle Pflege (DAS) befreit sind. ... Für technische Fragen zur Spezifikation ist die Datenauswertungsstelle zuständig.
+--------------------------------------------------------------------------------
+Sonstige Leistungserbringer - GKV-Datenaustausch (https://www.gkv-datenaustausch.de/leistungserbringer/sonstige_leistungserbringer/sonstige_leistungserbringer.jsp)
+citeturn26search4 [wordlim: 200] Crawled: today; ## Die Technische Arbeitsgruppe der Gesetzlichen Krankenversicherung für das Teilprojekt Sonstige Leistungserbringer hat grundsätzliche Festlegungen und Richtlinien zur Abwicklung des Datenaustauschs nach § 302 Abs. ...   * Anlage 5 zum Datenaustausch nach § 302 SGB V vom 27.09.2018 (PDF, 215 KB) Inhalt der Urbelege; anzuwenden ab 27.09.2018 ...   * Gemeinsame Umsetzungsempfehlungen zum Korrekturverfahren Hebammen vom 09.05.2022 (PDF, 85 KB) Gemeinsame Umsetzungsempfehlungen zum Korrekturverfahren im Hebammenbereich (Technische Anlage 1 Version 18 und höher) ...   * Infoschreiben TK zum Zuständigkeitswechsel bei der Abrechnungsprüfung Haushaltshilfe zum 1. ... Eine Nutzung für andere Bereiche ist in der Regel nicht möglich.
+--------------------------------------------------------------------------------
+Datentransparenz bei Gesundheitsdaten - GKV-Spitzenverband (https://www.gkv-spitzenverband.de/krankenversicherung/forschung_modellvorhaben/gesundheitsdaten/f_gesundheitsdaten.jsp)
+citeturn26search5 [wordlim: 200] Crawled: today; Zur Stärkung des Schutzes der Versichertendaten wird zusätzlich eine Vertrauensstelle einbezogen und die Versichertendaten werden bereits in der Krankenkasse pseudonymisiert. ... Dazu werden die Abrechnungsdaten von den gesetzlichen Krankenkassen gesammelt und auf Vollständigkeit, Plausibilität und Konsistenz geprüft. ... ### Erweiterung des Datensatzes geplant ... Außerdem werden der Datenkranz stark erweitert und zukünftig auch die Abrechnungsdaten von Heilmittel-, Hilfsmittel- und DiGA-Verordnungen, Hebammenleistungen, Krankentransporten, der häuslichen Krankenpflege, ambulanten Krankenhausleistungen, Arbeitsunfähigkeits- und Pflegedaten übermittelt. ...   * Positionspapier: Digitalstrategie für eine zukunftsgerichtete Gesundheitsversorgung (Langfassung) (PDF, 330 KB)
+--------------------------------------------------------------------------------
+All Layers and Tables (Gesundheit_Soziales/AdressBuch_DSGVO) (https://maps.kreis-borken.de/gdisecman/rest/services/Gesundheit_Soziales/AdressBuch_DSGVO/MapServer/layers)
+citeturn26search6 [wordlim: 200] Crawled: last month; ### Layer: Krankenkasse: Hauptsitz (421) ...     * SUBJECT ( type: esriFieldTypeString, alias: Bezeichnung der Institution, length: 100 )
+--------------------------------------------------------------------------------
+Datenaustausch mit der KNAPPSCHAFT | Knappschaft-Bahn-See (https://www.arbeitgeberversicherung.de/DE/Services/FuerLeistungserbringer/Datenaustausch/105/datenaustausch_node)
+citeturn26search7 [wordlim: 200] Crawled: today; ### Informationsmaterial zum Download ...   * Elektronische Datenübermittlung von Abrechnungsdaten an die KNAPPSCHAFT: Ergänzende Informationen für IK-basierte Verfahren PDF, 405KB, Datei ist barrierefrei/barrierearm ...   * Die Webseite der Sammel- und Verteilstelle IK (SVI)
+--------------------------------------------------------------------------------
+So rechnen wir: die Zahlen auf unseren Ortsseiten | PflegeAuswahl (https://www.pflegeauswahl.de/daten/so-rechnen-wir)
+citeturn26search8 [wordlim: 200] Crawled: today; Welches Regionalbüro Alter, Pflege und Demenz für den Kreis zuständig ist, mit Anschrift und Telefon. ...   * Heimfinder NRW (Ministerium für Arbeit, Gesundheit und Soziales des Landes Nordrhein-Westfalen, Datenlizenz Deutschland – Namensnennung – Version 2.0), Meldungen der letzten 7 Tage vor dem nächtlichen Datenlauf, zuletzt November 2026 ...     Gezählt werden die Einträge aus OpenStreetMap (Apotheken; Arztpraxen mit Fachrichtung Allgemeinmedizin), deren Punkt höchstens 3 km von der Ortsmitte entfernt liegt (Luftlinie); deshalb „mindestens“. ...   * Bundesamt für Kartographie und Geodäsie (BKG), Geographische Namen 1 : 250 000 (GN250) (https://gdz.bkg.bund.de/index.php/default/open-data/geographische-namen-1-250-000-gn250.html), © BKG (2026) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_gn250.pdf; verändert: gefiltert und zu Orten und Gemeinden zusammengefasst ...   * GeoNames, GeoNames Postal Codes DE (https://download.geonames.org/export/zip/DE.zip), GeoNames (CC BY 4.0), Lizenz https://creativecommons.org/licenses/by/4.0/, Abzug vom 28.08.2026; verändert: je Postleitzahl der Mittelpunkt ihrer Punkte
+--------------------------------------------------------------------------------
+Methodische Grundlagen (https://www.versorgungsatlas.de/der-versorgungsatlas/methodische-grundlagen)
+citeturn26search9 [wordlim: 200] Crawled: last month; Alle Analysen, die für den Versorgungsatlas erstellt werden, berücksichtigen die methodischen Standards, die in den Leitlinien Gute Praxis Sekundärdatenanalyse und den Leitlinien und Empfehlungen zur Sicherung von guter Epidemiologischer Praxis der Deutschen Gesellschaft für Epidemiologie (DGEpi) sowie in der STandardisierten BerichtsROutine für Sekundärdaten Analysen (STROSA) beschrieben sind. ... Um dennoch patientenbezogene Behandlungsverläufe beobachten zu können, wird aus der pseudonymisierten Versichertennummer, den Institutskennzeichen der jeweiligen Krankenkasse und dem Geburtsdatum jeweils eine „Patienten-Entität“ gebildet.
+
+Die Grundpopulation für die Analysen setzt sich aus derart „gebildeten“ Patienten zusammen, die im jeweiligen Kalenderjahr mindestens einen Arztkontakt hatten und/oder ein Rezept zu Lasten der gesetzlichen Krankenversicherung in einer Apotheke eingelöst haben. ... Zur Verfügung stehen folgende regionalen Strukturen: Bundesländer, Bereiche der Kassenärztlichen Vereinigungen (KV-Bereiche), Raumordnungsregionen (ROR), Kreise (Landkreise und kreisfreie Städte) und Mittelbereiche, die je nach Thema, Design und Methodik des Berichts in unterschiedlichem Umfang genutzt werden.
+--------------------------------------------------------------------------------
+FAQ zum vollelektronischen Abrechnungsverfahren | Kompetenzzentrum Digitalisierung und Pflege (https://www.kompetenzzentrum-pflege.digital/digitale-anwendungen/vollelektronisches-abrechnungsverfahren/faq)
+citeturn26search10 [wordlim: 200] Crawled: today; Fangen Sie zunächst mit der Übermittlung der Daten an eine Pflegekasse an und erweitern Sie schrittweise die Übermittlung der Abrechnungen an weitere Pflegekassen. ... Umfangreiche Informationen haben wir für Sie auf unserer Internetseite im Bereich Kommunikation im Medizinwesen (KIM) zusammengestellt. ... Sie steuern innerhalb der Abrechnungssoftware den Fluss der Daten und der Papierbelege. ... Nehmen Sie bei Bedarf Kontakt zu Ihrem Hersteller für Ihre Pflegedokumentationssoftware und/oder die Pflegekasse auf und teilen Sie den konkreten Fall (unter Nennung der KIM-Empfangsadresse, der Fehlernachricht und Angabe des Abrechnungsdatensatzes) mit.
+--------------------------------------------------------------------------------
+Datenannahmestelle finden: IK der Krankenkasse nachschlagen (https://ortavis.com/datenannahmestelle-finden)
+citeturn26search11 [wordlim: 200] Published: last month; Crawled: yesterday; Krankenkasse oder IK [Input: z. ... Übermittlungswege ... Für das vierte Quartal 2026 sind auf gkv-datenaustausch.de bereits neuere Dateien für AOK, Betriebs-, Innungs- und Ersatzkassen veröffentlicht (Stand der Prüfung: 29.09.2026). ...     Das IK der Krankenkasse von der Versichertenkarte oder aus der Verordnung. ... 1 SGB V: Pflicht der Leistungserbringer im Bereich der Heil- und Hilfsmittel zur Abrechnung im Wege elektronischer Datenübertragung.
+--------------------------------------------------------------------------------
+Forschungsdatenzentrum der Rentenversicherung (https://de.wikipedia.org/wiki/Forschungsdatenzentrum_der_Rentenversicherung)
+citeturn26search18 [wordlim: 200] Crawled: 7 months ago; Es ist eine Einrichtung der Deutschen Rentenversicherung Bund und an zwei Standorten, in Berlin und in Würzburg, angesiedelt. ... Diese Mikrodaten werden aufbereitet und als faktisch bzw. absolut anonymisierte Datenprodukte in den Formaten SPSS, STATA und SAS veröffentlicht.
+## Datensätze der Rentenversicherung und Angebot des FDZ-RV ... Hinzu kommen noch Sondererhebungen, die unter Umständen mehrere dieser Bereiche gleichzeitig betreffen und nicht nur Daten zu bestimmten Berichtsjahren liefern, sondern auch Längsschnittdatensätze umfassen, die die Versicherungsbiographien abbilden.
+--------------------------------------------------------------------------------
+Deutsche Rentenversicherung Westfalen (https://de.wikipedia.org/wiki/Deutsche_Rentenversicherung_Westfalen)
+citeturn26search19 [wordlim: 200] Crawled: 3 months ago; Die Deutsche Rentenversicherung Westfalen ist zuständig für die Regierungsbezirke Münster, Arnsberg und Detmold. ... Träger der gesetzlichen Rentenversicherung sind keine unmittelbaren staatlichen Behörden, sondern rechtsfähige Körperschaften des öffentlichen Rechts mit Selbstverwaltung. ... Die Vertreterversammlung bildet außerdem die Widerspruchsstelle, in der die von den Versicherten oder Arbeitgebern erhobenen Widersprüche gegen Verwaltungsakte der Deutschen Rentenversicherung Westfalen bearbeitet werden. ... Zu den Aufgaben gehören insbesondere die Leitung und Beaufsichtigung des gesamten Dienstbetriebes, die Feststellung und Erfüllung von Ansprüchen im Rentenbereich und im Beitragsbereich, die Bewilligung und Durchführung von Leistungen zur Rehabilitation, die Vorbereitung des Haushaltsplanes und die Regelung personeller Angelegenheiten. ... *  https://www.deutsche-rentenversicherung.de/Westfalen/DE/Ueber-uns/Jahresbericht_2025/unser-kerngeschaeft-die-rente/antraege-zugaenge-rentenbestand ... Koordinaten: 51° 58′ 41″ N, 7° 38′ 15″ O
+--------------------------------------------------------------------------------
+Sozialversicherungsträger (https://de.wikipedia.org/wiki/Sozialversicherungstr%C3%A4ger)
+citeturn26search20 [wordlim: 200] Crawled: 1.7 years ago; Zuständig sind die Orts-, Betriebs- und Innungskrankenkassen, die Sozialversicherung für Landwirtschaft, Forsten und Gartenbau als landwirtschaftliche Krankenkasse, die Deutsche Rentenversicherung Knappschaft-Bahn-See und die Ersatzkassen (§ 21 Abs. ... Zuständig sind die gewerblichen Berufsgenossenschaften, die Sozialversicherung für Landwirtschaft, Forsten und Gartenbau als landwirtschaftliche Berufsgenossenschaft, die Gemeindeunfallversicherungsverbände, die Feuerwehr-Unfallkassen, die Unfallkassen der Länder und Gemeinden, die gemeinsamen Unfallkassen für den Landes- und kommunalen Bereich und die Unfallversicherung Bund und Bahn (§ 22 Abs. ... ### Gesetzliche Rentenversicherung einschließlich der Alterssicherung der Landwirte
+--------------------------------------------------------------------------------
+Versicherungsnummer (https://de.wikipedia.org/wiki/Versicherungsnummer)
+citeturn26search21 [wordlim: 200] Crawled: last year;  38 | Deutsche Rentenversicherung Knappschaft-Bahn-See (Wirtschaftsbereich Bahn) ...  80 | Deutsche Rentenversicherung Knappschaft-Bahn-See (Berlin, Bremen, Hamburg, Niedersachsen, Westfalen und Schleswig-Holstein) ... Juni 1949 geborenen männlichen Versicherten, dessen Geburtsname mit C beginnt und dessen Versicherungsnummer von der Deutschen Rentenversicherung für die Region Niederbayern-Oberpfalz vergeben wurde.
+--------------------------------------------------------------------------------
+Handwerkskammer Hamburg (https://de.wikipedia.org/wiki/Handwerkskammer_Hamburg)
+citeturn26search22 [wordlim: 200] Crawled: 4 weeks ago; Aufgabe der Handwerkskammer ist es, die Interessen des Gesamthandwerks zu vertreten und die Belange des Handwerks im Zuge der Selbstverwaltung selbst zu regeln. Die Handwerkskammer übt die Rechtsaufsicht über die 49 Innungen aus, die für fachliche Aufgaben des jeweils von ihnen repräsentierten Handwerks zuständig sind. ... Als Vertretung von rund 15.000 Handwerksbetrieben in Hamburg engagiert sich die Handwerkskammer als öffentlich-rechtliche Institution für ihre Mitglieder in verschiedenen Bereichen. ... Beispielsweise bezieht der Präsident der Handwerkskammer in verschiedenen lokalen Medien Stellung zu aktuellen Themen oder Fachleute der Kammer verhandeln mit Behörden, Senat, Bezirksversammlungen und Wirtschaftsverbänden, um die besten Rahmenbedingungen für den Erfolg des Hamburger Handwerks zu schaffen. ... Rechtsberatung Neben der kostenlosen rechtlichen Beratung bietet die Handwerkskammer Hamburg auch Unterstützung bei der Schlichtung von Streitigkeiten und hilft mit der Vermittlung von Sachverständigen. ... *  Deutscher PR-Preis der DPRG: Das sind die Gewinner 2019. ... Koordinaten: 53° 33′ 12″ N, 9° 58′ 37″ O
+

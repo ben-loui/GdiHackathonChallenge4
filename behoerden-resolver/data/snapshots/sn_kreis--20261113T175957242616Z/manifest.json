@@ -1,0 +1,49 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "sn_kreis",
+    "kind": "authority",
+    "scope": "DE-SN",
+    "format": "csv_mapping",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "kreisverwaltung"
+      }
+    ],
+    "documentation": "https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities",
+    "license": "VG25 CC-BY-4.0 + Verwaltungsatlas Sachsen dl-de/by-2-0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0; Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; amtliche Behördennamen und sachliche Zuordnung aus verlinkter Quelle. Namensquelle: Verwaltungsatlas Sachsen, dl-de/by-2-0.",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2026-11-13 (assignment reviewed)",
+    "boundary_source": "vg25_krs",
+    "mapping_file": "sn_kreise.csv",
+    "mapping_sha256": "dceb4ae3397c7394e992dad6dc7993c1a90f0f016944e39929693bab53aea5af",
+    "name_rule": "Reviewed explicit authority-to-named-region assignment; exact official region keys, no nearest-location inference",
+    "component_licenses": [
+      {
+        "component": "VG25 geometry",
+        "license": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "component": "Saxony official authority names and assignment",
+        "license": "dl-de/by-2-0",
+        "url": "https://www.govdata.de/dl-de/by-2-0"
+      }
+    ]
+  },
+  "completed_at": "2026-11-13T17:59:57.241920+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "kreisverwaltung": 10
+  },
+  "records_sha256": "117fd14ea8478cd8c0bf651f46b37952cf3b530728d3cc6525b40bf64569b59a",
+  "requests": [],
+  "national_authority_coverage_guaranteed": false,
+  "derivation_complete": true,
+  "mapping_sha256": "dceb4ae3397c7394e992dad6dc7993c1a90f0f016944e39929693bab53aea5af",
+  "parent_snapshot": "vg25_krs--20261113T164048673383Z"
+}

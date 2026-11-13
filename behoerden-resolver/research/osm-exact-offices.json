@@ -1,0 +1,531 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-13T19:00:35Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 94579090,
+  "lat": 52.3755839,
+  "lon": 9.7278603,
+  "tags": {
+    "created_by": "JOSM",
+    "name": "Familienkasse"
+  }
+},
+{
+  "type": "node",
+  "id": 314762906,
+  "lat": 48.5726601,
+  "lon": 13.4588422,
+  "tags": {
+    "description": "Familienkasse Bayern Süd der Bundesagentur für Arbeit",
+    "name": "Familienkasse"
+  }
+},
+{
+  "type": "node",
+  "id": 3122606456,
+  "lat": 53.2601940,
+  "lon": 10.4362022,
+  "tags": {
+    "contact:email": "Familienkasse-Niedersachsen-Bremen@arbeitsagentur.de",
+    "contact:fax": "+49 4131 7896-179",
+    "contact:phone": "0800 4555530",
+    "contact:website": "http://www.arbeitsagentur.de/web/content/DE/dienststellen/rdnsb/stade/Agentur/BuergerinnenundBuerger/Kindergeld/index.htm",
+    "name": "Familienkasse",
+    "office": "employment_agency",
+    "official_name": "Familienkasse der Bundesagentur für Arbeit",
+    "opening_hours": "Mo,Tu 08:00-12:00; We 12:00-13:00; Th 08:00-13:00; Th 15:00-18:00",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4254692698,
+  "lat": 48.4771697,
+  "lon": 9.2509340,
+  "tags": {
+    "alt_name": "Bundesamt für Migration und Flüchtlinge - Außenstelle Reutlingen/Eningen u.A.",
+    "contact:mastodon": "https://social.bund.de/@bamf",
+    "contact:website": "http://www.bamf.de/",
+    "fixme": "vermutlich geschlossen, ist nicht mehr auf der Website des BAMF",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government",
+    "short_name": "BAMF",
+    "wikidata": "Q1005470",
+    "wikipedia": "de:Bundesamt für Migration und Flüchtlinge"
+  }
+},
+{
+  "type": "node",
+  "id": 4405674847,
+  "lat": 49.0241158,
+  "lon": 8.4561790,
+  "tags": {
+    "addr:city": "Karlsruhe",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "76139",
+    "addr:street": "Pfizerstraße",
+    "addr:suburb": "Hagsfeld",
+    "admin_level": "2",
+    "contact:mastodon": "https://social.bund.de/@bamf",
+    "government": "migration",
+    "level": "0",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-14:00",
+    "short_name": "BAMF",
+    "wikidata": "Q1005470",
+    "wikipedia": "de:Bundesamt für Migration und Flüchtlinge"
+  }
+},
+{
+  "type": "node",
+  "id": 4455045190,
+  "lat": 49.7256570,
+  "lon": 6.5931134,
+  "tags": {
+    "addr:housenumber": "34a",
+    "addr:street": "Gottbillstraße",
+    "government": "migration",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "name:de": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 4606978254,
+  "lat": 50.9846957,
+  "lon": 6.8877017,
+  "tags": {
+    "admin_level": "2",
+    "government": "administrative",
+    "name": "Bundesverwaltungsamt",
+    "name:en": "Federal Office of Administration",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-16:30; PH off",
+    "phone": "+49 221 7580",
+    "website": "https://bva.bund.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4798465690,
+  "lat": 49.4304779,
+  "lon": 11.0975677,
+  "tags": {
+    "addr:city": "Nürnberg",
+    "addr:country": "DE",
+    "addr:housenumber": "210",
+    "addr:postcode": "90461",
+    "addr:street": "Frankenstraße",
+    "check_date:opening_hours": "2024-10-18",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government",
+    "opening_hours:signed": "no",
+    "website": "https://www.bamf.de",
+    "wheelchair": "yes",
+    "wikidata": "Q1005470",
+    "wikipedia": "de:Bundesamt für Migration und Flüchtlinge"
+  }
+},
+{
+  "type": "node",
+  "id": 4856263802,
+  "lat": 52.4863414,
+  "lon": 13.3305318,
+  "tags": {
+    "addr:city": "Berlin",
+    "addr:country": "DE",
+    "addr:housenumber": "23",
+    "addr:postcode": "10715",
+    "addr:street": "Badensche Straße",
+    "admin_level": "2",
+    "branch": "Berlin (Qualifizierungszentrum)",
+    "contact:mastodon": "https://social.bund.de/@bamf",
+    "contact:website": "https://www.bamf.de/",
+    "government": "migration",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "name:ar": "المكتب الاتحادي للهجرة واللاجئين",
+    "name:cs": "Spolkový úřad pro migraci a uprchlíky",
+    "name:de": "Bundesamt für Migration und Flüchtlinge",
+    "name:en": "Federal Office for Migration and Refugees",
+    "name:fa": "اداره فدرال مهاجرت و پناهندگان",
+    "name:nl": "Federale dienst voor Migratie en Vluchtelingen",
+    "name:ru": "Федеральное ведомство по делам миграции и беженцев",
+    "office": "government",
+    "opening_hours": "Mo-Fr 07:00-13:00",
+    "short_name": "BAMF",
+    "wikidata": "Q1005470",
+    "wikipedia": "de:Bundesamt für Migration und Flüchtlinge"
+  }
+},
+{
+  "type": "node",
+  "id": 5859558852,
+  "lat": 53.3759620,
+  "lon": 10.6333186,
+  "tags": {
+    "fax": "+493884720199",
+    "government": "migration",
+    "level": "1;2",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government",
+    "phone": "+4938847200"
+  }
+},
+{
+  "type": "node",
+  "id": 7472187726,
+  "lat": 51.4760122,
+  "lon": 7.1930956,
+  "tags": {
+    "addr:city": "Bochum",
+    "addr:housenumber": "165",
+    "addr:postcode": "44793",
+    "addr:street": "Alleestraße",
+    "government": "migration",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 7714226871,
+  "lat": 51.6902624,
+  "lon": 7.8587547,
+  "tags": {
+    "name": "Bundesverwaltungsamt",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-16:30; Fr 08:00-15:00; Sa,Su,PH off"
+  }
+},
+{
+  "type": "node",
+  "id": 8190057435,
+  "lat": 51.3354781,
+  "lon": 12.3811133,
+  "tags": {
+    "addr:city": "Leipzig",
+    "addr:country": "DE",
+    "addr:housenumber": "5-9",
+    "addr:postcode": "04103",
+    "addr:street": "Seeburgstraße",
+    "admin_level": "2",
+    "check_date:opening_hours": "2024-01-11",
+    "contact:instagram": "https://www.instagram.com/bva.bund/",
+    "contact:kununu": "https://www.kununu.com/de/bundesverwaltungsamt2",
+    "contact:linkedin": "https://www.linkedin.com/company/27088497/",
+    "contact:xing": "https://www.xing.com/companies/bundesverwaltungsamt",
+    "contact:youtube": "https://www.youtube.com/channel/UCGuTS_MpUN92Sm3W_s-0n2w",
+    "government": "administrative",
+    "name": "Bundesverwaltungsamt",
+    "office": "government",
+    "official_name": "Bundesverwaltungsamt Standort Leipzig",
+    "old_name": "Bundesamt für zentrale Dienste und offene Vermögensfragen Dienstsitz Leipzig",
+    "opening_hours:signed": "no",
+    "operator": "Bundesverwaltungsamt",
+    "short_name": "BVA",
+    "website": "https://www.bva.bund.de/SharedDocs/Standorte/DE/BVA/BVA_Leipzig.html",
+    "wikidata": "Q1009218",
+    "wikipedia": "de:Bundesverwaltungsamt"
+  }
+},
+{
+  "type": "node",
+  "id": 8221769813,
+  "lat": 52.4161548,
+  "lon": 9.7327723,
+  "tags": {
+    "name": "Familienkasse",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 9347501972,
+  "lat": 48.8371058,
+  "lon": 12.9592967,
+  "tags": {
+    "addr:city": "Deggendorf",
+    "addr:housenumber": "32",
+    "addr:postcode": "94469",
+    "addr:street": "Hindenburgstraße",
+    "branch": "Deggendorf",
+    "name": "Familienkasse",
+    "office": "employment_agency",
+    "opening_hours": "Mo-Fr 08:00-12:00",
+    "website": "https://www.arbeitsagentur.de/vor-ort/familienkasse/familienkasse-bayern-sued-deggendorf.html"
+  }
+},
+{
+  "type": "node",
+  "id": 9494827970,
+  "lat": 52.0280678,
+  "lon": 8.5545570,
+  "tags": {
+    "addr:city": "Bielefeld",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "33609",
+    "addr:street": "Am Stadtholz",
+    "alt_name": "BAMF",
+    "check_date": "2026-01-05",
+    "email": "service@bamf.bund.de",
+    "government": "migration",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government",
+    "phone": "+49 911 94336222",
+    "social_facility": "outreach",
+    "social_facility:for": "migrant"
+  }
+},
+{
+  "type": "node",
+  "id": 9584589218,
+  "lat": 50.5938578,
+  "lon": 8.7258958,
+  "tags": {
+    "addr:city": "Gießen",
+    "addr:housenumber": "13",
+    "addr:postcode": "35394",
+    "addr:street": "Lufthansastraße",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13427660419,
+  "lat": 49.9594212,
+  "lon": 11.5949106,
+  "tags": {
+    "addr:city": "Bayreuth",
+    "addr:housenumber": "4",
+    "addr:postcode": "95448",
+    "addr:street": "Dr.-Hans-Frisch-Straße",
+    "government": "public_service",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 14094559607,
+  "lat": 51.0586166,
+  "lon": 13.7042561,
+  "tags": {
+    "government": "migration",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 14102715947,
+  "lat": 48.1227992,
+  "lon": 11.5489459,
+  "tags": {
+    "name": "Gewerbeamt",
+    "office": "government",
+    "opening_hours": "\"Nur mit Termin\""
+  }
+},
+{
+  "type": "way",
+  "id": 24569913,
+  "center": {
+    "lat": 53.1507313,
+    "lon": 8.2846332
+  },
+  "tags": {
+    "amenity": "refugee_site",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "old_name": "Bundesamt für Migration und Flüchtlinge"
+  }
+},
+{
+  "type": "way",
+  "id": 25640079,
+  "center": {
+    "lat": 50.9691075,
+    "lon": 6.9709240
+  },
+  "tags": {
+    "access": "permissive",
+    "amenity": "parking",
+    "name": "Bundesverwaltungsamt",
+    "parking": "surface",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 29084728,
+  "center": {
+    "lat": 52.5542679,
+    "lon": 13.2019452
+  },
+  "tags": {
+    "building": "yes",
+    "building:levels": "4",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "source": "Geoportal Berlin / Hausumringe"
+  }
+},
+{
+  "type": "way",
+  "id": 92537185,
+  "center": {
+    "lat": 52.4976615,
+    "lon": 13.3317116
+  },
+  "tags": {
+    "building": "service",
+    "building:levels": "2",
+    "name": "Bundesverwaltungsamt"
+  }
+},
+{
+  "type": "way",
+  "id": 142522099,
+  "center": {
+    "lat": 53.5688916,
+    "lon": 13.2681616
+  },
+  "tags": {
+    "addr:city": "Neubrandenburg",
+    "addr:country": "DE",
+    "addr:housenumber": "3-5",
+    "addr:postcode": "17034",
+    "addr:street": "Passage",
+    "building": "office",
+    "name": "Familienkasse",
+    "office": "insurance"
+  }
+},
+{
+  "type": "way",
+  "id": 186016110,
+  "center": {
+    "lat": 54.0629337,
+    "lon": 10.0008339
+  },
+  "tags": {
+    "addr:city": "Neumünster",
+    "addr:housenumber": "148",
+    "addr:postcode": "24539",
+    "addr:street": "Haart",
+    "amenity": "social_facility",
+    "building": "yes",
+    "check_date": "2024-12-25",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "social_facility": "refugee_camp"
+  }
+},
+{
+  "type": "way",
+  "id": 283658646,
+  "center": {
+    "lat": 50.9165482,
+    "lon": 6.9861671
+  },
+  "tags": {
+    "addr:city": "Köln",
+    "addr:country": "DE",
+    "addr:housenumber": "101",
+    "addr:postcode": "51105",
+    "addr:street": "Poller Kirchweg",
+    "building": "office",
+    "building:levels": "4",
+    "building:use": "residential;office",
+    "name": "Bundesamt für Migration und Flüchtlinge",
+    "website": "https://www.bamf.de"
+  }
+},
+{
+  "type": "relation",
+  "id": 21187,
+  "center": {
+    "lat": 50.9700073,
+    "lon": 6.9703539
+  },
+  "tags": {
+    "addr:city": "Köln",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "50735",
+    "addr:street": "Barbarastraße",
+    "building": "yes",
+    "building:use": "public",
+    "government": "yes",
+    "image": "https://commons.wikimedia.org/wiki/File:Bundesverwaltungsamt_-_Zentrale_K%C3%B6ln_%287598-7600%29.jpg",
+    "name": "Bundesverwaltungsamt",
+    "office": "government",
+    "opening_hours": "Mo-Fr 08:00-16:30",
+    "type": "multipolygon",
+    "website": "https://www.bva.bund.de/",
+    "wikidata": "Q1009218",
+    "wikimedia_commons": "Category:Bundesverwaltungsamt",
+    "wikipedia": "de:Bundesverwaltungsamt"
+  }
+},
+{
+  "type": "relation",
+  "id": 324142,
+  "center": {
+    "lat": 51.4222488,
+    "lon": 9.9124247
+  },
+  "tags": {
+    "addr:city": "Friedland",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "37133",
+    "addr:street": "Heimkehrerstraße",
+    "building": "government",
+    "name": "Bundesverwaltungsamt",
+    "phone": "+49 228 99358-9299",
+    "ref": "16",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 15603145,
+  "center": {
+    "lat": 50.9438993,
+    "lon": 6.8886823
+  },
+  "tags": {
+    "addr:city": "Köln",
+    "addr:country": "DE",
+    "addr:housenumber": "125",
+    "addr:postcode": "50933",
+    "addr:street": "Eupener Straße",
+    "addr:suburb": "Braunsfeld",
+    "building": "office",
+    "building:levels": "7",
+    "email": "kommunikation@bva.bund.de",
+    "government": "administrative",
+    "name": "Bundesverwaltungsamt",
+    "office": "government",
+    "roof:shape": "flat",
+    "type": "multipolygon",
+    "website": "https://www.bva.bund.de",
+    "wikidata": "Q1009218",
+    "wikipedia": "de:Bundesverwaltungsamt"
+  }
+}
+
+  ]
+}

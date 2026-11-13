@@ -1,0 +1,11 @@
+key,authority_name,ars,evidence_url
+14521,Landratsamt Erzgebirgskreis,14521,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14522,Landratsamt Mittelsachsen,14522,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14523,Landratsamt Vogtlandkreis,14523,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14524,Landratsamt Zwickau,14524,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14625,Landratsamt Bautzen,14625,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14627,Landratsamt Meißen,14627,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14626,Landratsamt Görlitz,14626,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14628,Landratsamt Sächsische Schweiz-Osterzgebirge,14628,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14729,Landratsamt Leipzig,14729,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities
+14730,Landratsamt Nordsachsen,14730,https://geodienste.sachsen.de/wms_smr_kommunales/guest?SERVICE=WMS&REQUEST=GetCapabilities

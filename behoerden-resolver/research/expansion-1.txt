@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html class="no-js" data-js-iconsprite="//transparenz.hamburg.de/resource/crblob/5538/8179fee99b1ac3c691ed5d3365353592/icon-sprite-svg-data.svg" dir="ltr" lang="de">
+ 
+    <head>
+    
+
+<title>Hamburger Finanzamtsbezirke</title>  
+
+
+  <meta charset="utf-8"/>
+  <!-- ID = 796340 -->
+  <title>
+   Transparenzportal Hamburg
+  </title>
+  <meta content="Das Transparenzportal Hamburg ist der zentrale Zugang zu aktuellen Daten und Informationen der Hamburgischen Verwaltung." name="description"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <link href="//transparenz.hamburg.de/resource/crblob/5602/55e7f7a5a99cdf5ffb9916800ea6079c/apple-touch-icon-png-data.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="//transparenz.hamburg.de/resource/crblob/5608/ee44bdf656f31ecb1a0b5a7c4d3f3a15/favicon-32x32-png-data.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="//transparenz.hamburg.de/resource/crblob/1228186/a0b3ae44abe118ec198db73516473075/android-chrome-192x192-png-data.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="//transparenz.hamburg.de/resource/crblob/1228188/4c81b85971770b1552df61770a5021bc/android-chrome-512x512-png-data.png" rel="icon" sizes="512x512" type="image/png"/>
+  <link color="#e30613" href="//transparenz.hamburg.de/resource/crblob/5612/68c7fab0ff7d3f827165dbb11c434394/safari-pinned-tab-svg-data.svg" rel="mask-icon"/>
+  <link href="//transparenz.hamburg.de/resource/crblob/5604/f18fa8c1c89d66f29e6091680bebf3c6/favicon-ico-data.ico" rel="shortcut icon">
+   <meta content="#ffffff" name="msapplication-TileColor"/>
+   <meta content="//transparenz.hamburg.de/resource/crblob/5610/3b094bb1c12f6ecb0af921d0b645c424/mstile-150x150-png-data.png" name="msapplication-TileImage"/>
+   <meta content="#ffffff" name="theme-color"/>
+   <link href="//transparenz.hamburg.de" rel="canonical"/>
+   <script>
+    document.documentElement.className = document.documentElement.className.replace(/no-js/g, "js");
+   </script>
+   <link crossorigin="anonymous" href="https://transparenz.hamburg.de/resource/themes/skhh/css/skhh-5598-21.css" integrity="sha512-81mML2QUUPUKV6cwllwcbDC4pc5WpyLRv1CnQp4ja7tZfdJ5ftR1xk/SxxLZQZ/9rDhLEoAgCiGsVeOxr0FuXA==" rel="stylesheet"/>
+   <script>
+    cm_p13n={ap:[],sc:[],fr:[],_cm_p13n:undefined,registerProvider:function(providerId){cm_p13n.ap.push(providerId)},pushSegment:function(segmentName){cm_p13n.pushVariant(segmentName)},pushVariant:function(variantId){cm_p13n.sc.push({m:"v",v:variantId});cm_p13n.run()},collectFragments:function(){document.querySelectorAll("[data-cm-fragment-link]").forEach(function(element){const fragmentUrl=element.getAttribute("data-cm-fragment-link");const html=element.textContent;cm_p13n.fr.push({u:fragmentUrl,h:html});element.remove()})},parseWindowLocation:function(){try{var search=window.location.search.substring(1);var params=search.split("&");for(var i=0;i<params.length;i++){var pair=params[i].split("=");if(decodeURIComponent(pair[0])==="p13n_experiences"){if(pair.length>1){var json=JSON.parse(decodeURIComponent(pair[1].replace(/\+/g," ")));if(json&&json.segment){cm_p13n.pushVariant(json.segment)}if(json&&json.variants){json.variants.forEach(function(v){cm_p13n.pushVariant(v)})}return}}}}catch(e){}},completed:function(providerId){cm_p13n.sc.push({m:"c",p:providerId});cm_p13n.run()},run:function(){const _p13n=cm_p13n._cm_p13n;if(_p13n){const fr=cm_p13n.fr;cm_p13n.fr=[];fr.forEach(function(f){_p13n.pushFragment(f.u,f.h)});const sc=cm_p13n.sc;cm_p13n.sc=[];sc.forEach(function(c){if(c.m==="v"){_p13n.pushVariant(c.v)}else if(c.m==="c"){_p13n.completed(c.p)}})}}};
+   </script>
+  </link>
+ </head>
+ <!-- Layout: default -->
+ <body class="skhh-page skhh-page--one-col" id="top" style="">
+  <h1 class="skhh-heading sr-only">
+   Transparenzportal
+  </h1>
+  <!-- Page: Navigation = 796340, Content = 796340} -->
+  <header class="skhh-header" data-js-header="">
+   <nav class="skhh-nav-meta skhh-header__nav-meta" data-js-meta-nav="">
+    <strong class="sr-only">
+     Servicemenü
+    </strong>
+    <div class="skhh-container">
+     <div class="skhh-nav-meta__container">
+      <div class="skhh-nav-meta__meta-group">
+      </div>
+      <div class="skhh-logo skhh-nav-meta__logo">
+       <img alt="Logo Frei und Hansestadt Hamburg" class="skhh-img" src="https://transparenz.hamburg.de/resource/crblob/5572/775233e28f1b2c102430a0c05ee8a2f2/hamburg-logo-svg-data.svg"/>
+      </div>
+     </div>
+    </div>
+   </nav>
+   <div class="skhh-banner skhh-banner--campaign">
+    <div class="skhh-banner__container">
+     <figure class="skhh-figure skhh-banner__image">
+      <div class="skhh-figure__picture-wrapper">
+       <picture class="skhh-picture">
+        <source media="(min-width: 0px) and (max-width: 767px)" srcset="https://transparenz.hamburg.de/resource/image/796630/banner_76x7/768/70/7b97a7e73694b13c203e71bdc0dc093a/1EDB9415FC86B2EFE23B6AF7F0321978/staatsarchiv-gebaeude-header.webp"/>
+        <source media="(min-width: 768px) and (max-width: 1023px)" srcset="https://transparenz.hamburg.de/resource/image/796630/banner_76x7/1024/94/7b97a7e73694b13c203e71bdc0dc093a/CE391A0BC7672BD4931C57ED49DE89E8/staatsarchiv-gebaeude-header.webp"/>
+        <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="https://transparenz.hamburg.de/resource/image/796630/banner_76x7/1200/110/7b97a7e73694b13c203e71bdc0dc093a/8ED240623D2B0043FE725AFA11B3819C/staatsarchiv-gebaeude-header.webp"/>
+        <source media="(min-width: 1200px)" srcset="https://transparenz.hamburg.de/resource/image/796630/banner_76x7/1900/175/7b97a7e73694b13c203e71bdc0dc093a/270D93A8B2C2CD5460E8C023F5F3C45A/staatsarchiv-gebaeude-header.webp"/>
+        <img alt="Aussenansicht des Staatsarchivs Hamburg" class="skhh-img" src="https://transparenz.hamburg.de/resource/image/796630/banner_76x7/1900/175/7b97a7e73694b13c203e71bdc0dc093a/270D93A8B2C2CD5460E8C023F5F3C45A/staatsarchiv-gebaeude-header.webp"/>
+       </picture>
+      </div>
+     </figure>
+    </div>
+   </div>
+   <nav class="skhh-sticky-sos-nav" data-js-sticky-sos-nav="">
+    <div class="skhh-sticky-sos-nav__container">
+     <div class="skhh-sticky-sos-nav__menu-panel" id="skhh-sticky-sos-nav-menu-panel">
+      <a class="skhh-button skhh-sticky-sos-nav__button skhh-button--dark skhh-button--icon-top" href="https://transparenz.hamburg.de/team-transparenzportal-796384" id="contact">
+       <span class="skhh-label skhh-button__label">
+        Kontakt
+       </span>
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--mail skhh-button__icon" focusable="false" height="12" role="img" width="19">
+        <use xlink:href="#icon-mail">
+        </use>
+       </svg>
+      </a>
+      <a class="skhh-button skhh-sticky-sos-nav__button skhh-button--dark skhh-button--icon-top" href="https://transparenz.hamburg.de/news" id="currentNews">
+       <span class="skhh-label skhh-button__label">
+        News
+       </span>
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--note skhh-button__icon" focusable="false" height="57" role="img" width="53">
+        <use xlink:href="#icon-note">
+        </use>
+       </svg>
+      </a>
+      <button class="skhh-button skhh-sticky-sos-nav__button skhh-button--icon-top skhh-sticky-sos-nav__button--mobile-only" data-js-print="" id="print2" type="button">
+       <span class="skhh-label skhh-button__label">
+        Drucken
+       </span>
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--print skhh-button__icon" focusable="false" height="34" role="img" width="30">
+        <use xlink:href="#icon-print">
+        </use>
+       </svg>
+      </button>
+     </div>
+     <div class="skhh-sticky-sos-nav__menu-toggle">
+      <button aria-controls="skhh-sticky-sos-nav-menu-panel" class="skhh-button skhh-sticky-sos-nav__button skhh-button--icon-top skhh-button--light skhh-sticky-sos-nav__button--close" data-js-collapse="" id="close" type="button">
+       <span class="skhh-label skhh-button__label">
+        Schließen
+       </span>
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--close skhh-button__icon" focusable="false" height="22" role="img" width="22">
+        <use xlink:href="#icon-close">
+        </use>
+       </svg>
+      </button>
+      <button aria-controls="skhh-sticky-sos-nav-menu-panel" class="skhh-button skhh-button--icon-top skhh-button--sos skhh-sticky-sos-nav__button--open" data-js-collapse="{'initOpenDesktop': true}" id="open" type="button">
+       <span class="skhh-label skhh-button__label sr-only">
+        Öffnen
+       </span>
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--more-horizontal skhh-button__icon" focusable="false" height="6" role="img" width="28">
+        <use xlink:href="#icon-more-horizontal">
+        </use>
+       </svg>
+      </button>
+     </div>
+    </div>
+    <div class="skhh-sticky-sos-nav__overlay">
+    </div>
+   </nav>
+   <div class="skhh-container skhh-header-main skhh-header__main" data-js-header-main="">
+    <div class="skhh-header__container">
+     <nav class="skhh-main-navigation" data-js-main-nav="">
+      <button aria-controls="skhh-header-main-navigation-menu-panel" class="skhh-button skhh-button--transparent skhh-main-navigation__menu-toggle" data-js-collapse="{'actionOutside': false}" id="skhh-main-navigation-toggle">
+       <span class="skhh-label skhh-button__label">
+        Themen
+       </span>
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--menu skhh-button__icon" focusable="false" height="24" role="img" width="30">
+        <use xlink:href="#icon-menu">
+        </use>
+       </svg>
+      </button>
+      <div class="skhh-main-navigation__panel" id="skhh-header-main-navigation-menu-panel">
+       <svg aria-hidden="true" class="skhh-icon skhh-icon--bow skhh-main-navigation__bow" focusable="false" height="32" role="img" width="267">
+        <use xlink:href="#icon-bow">
+        </use>
+       </svg>
+       <div class="skhh-main-navigation__panel-head">
+        <button aria-controls="skhh-header-main-navigation-menu-panel" class="skhh-button skhh-button--transparent skhh-main-navigation__close-toggle" data-js-collapse="{'actionOutside': false}">
+         <span class="skhh-label skhh-button__label">
+          Schließen
+         </span>
+         <svg aria-hidden="true" class="skhh-icon skhh-icon--close skhh-button__icon" focusable="false" height="22" role="img" width="22">
+          <use xlink:href="#icon-close">
+          </use>
+         </svg>
+        </button>
+       </div>
+       <div class="skhh-container">
+        <nav class="skhh-main-navigation__link-container">
+         <div aria-hidden="false" class="skhh-main-navigation__level skhh-main-navigation__level--1" data-js-level="1" id="skhh-main-navigation__level-1" tabindex="-1">
+          <span class="skhh-icon-label skhh-main-navigation__notice">
+           <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-icon-label__icon" focusable="false" height="24" role="img" width="24">
+            <use xlink:href="#icon-arrow-m">
+            </use>
+           </svg>
+           <span class="skhh-icon-label__text">
+            Mehr anzeigen
+           </span>
+          </span>
+          <div class="skhh-main-navigation__level-1-head">
+           <!-- Disabled link of current page -->
+           <strong class="skhh-heading skhh-heading--3 skhh-main-navigation__link-group-heading">
+            <a class="skhh-link skhh-main-navigation__link--current skhh-main-navigation__link">
+             <span class="skhh-label skhh-link__text">
+              Transparenzportal
+             </span>
+            </a>
+           </strong>
+           <ul class="skhh-main-navigation__top-topics">
+           </ul>
+          </div>
+          <ul class="skhh-main-navigation__link-list">
+           <li class="skhh-main-navigation__link-list-item">
+            <button aria-controls="skhh-nav-main__level-level1-796348" aria-expanded="false" class="skhh-button skhh-button--icon-right skhh-button--transparent skhh-main-navigation__link-list-button" data-js-navigation-btn="" tabindex="-1" type="button">
+             <span class="skhh-label skhh-button__label">
+              Über uns
+             </span>
+             <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-button__icon" focusable="false" height="24" role="img" width="24">
+              <use xlink:href="#icon-arrow-m">
+              </use>
+             </svg>
+            </button>
+            <div aria-hidden="true" class="skhh-main-navigation__level skhh-main-navigation__level--2" data-js-level="2" id="skhh-nav-main__level-level1-796348" tabindex="-1">
+             <span class="skhh-icon-label skhh-main-navigation__notice">
+              <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-icon-label__icon" focusable="false" height="24" role="img" width="24">
+               <use xlink:href="#icon-arrow-m">
+               </use>
+              </svg>
+              <span class="skhh-icon-label__text">
+               Mehr anzeigen
+              </span>
+             </span>
+             <ul class="skhh-main-navigation__link-list">
+              <li class="skhh-main-navigation__link-list-item skhh-main-navigation__link-list-item--top">
+               <button aria-controls="skhh-main-navigation__level-1" aria-expanded="false" class="skhh-button skhh-button--icon-right skhh-button--transparent skhh-main-navigation__back-button" data-js-back-btn="" tabindex="-1" type="button">
+                <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-button__icon" focusable="false" height="24" role="img" width="24">
+                 <use xlink:href="#icon-arrow-m">
+                 </use>
+                </svg>
+                <span class="skhh-label skhh-button__label">
+                 zurück
+                </span>
+               </button>
+               <a aria-hidden="true" class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link--active skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/ueber-uns" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Über uns
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/fachliche-leitstelle-transparenzportal-796330" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Das Team des Transparenzportals
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/staatsarchiv-796332" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Das Staatsarchiv
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/technik-796334" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Die Technik
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/aenderungsprotokoll-796336" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Änderungsprotokoll
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/nutzungsstatistik-796338" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Die Nutzungsstatistik
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </li>
+           <li class="skhh-main-navigation__link-list-item">
+            <button aria-controls="skhh-nav-main__level-level1-796474" aria-expanded="false" class="skhh-button skhh-button--icon-right skhh-button--transparent skhh-main-navigation__link-list-button" data-js-navigation-btn="" tabindex="-1" type="button">
+             <span class="skhh-label skhh-button__label">
+              Das Transparenzportal
+             </span>
+             <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-button__icon" focusable="false" height="24" role="img" width="24">
+              <use xlink:href="#icon-arrow-m">
+              </use>
+             </svg>
+            </button>
+            <div aria-hidden="true" class="skhh-main-navigation__level skhh-main-navigation__level--2" data-js-level="2" id="skhh-nav-main__level-level1-796474" tabindex="-1">
+             <span class="skhh-icon-label skhh-main-navigation__notice">
+              <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-icon-label__icon" focusable="false" height="24" role="img" width="24">
+               <use xlink:href="#icon-arrow-m">
+               </use>
+              </svg>
+              <span class="skhh-icon-label__text">
+               Mehr anzeigen
+              </span>
+             </span>
+             <ul class="skhh-main-navigation__link-list">
+              <li class="skhh-main-navigation__link-list-item skhh-main-navigation__link-list-item--top">
+               <button aria-controls="skhh-main-navigation__level-1" aria-expanded="false" class="skhh-button skhh-button--icon-right skhh-button--transparent skhh-main-navigation__back-button" data-js-back-btn="" tabindex="-1" type="button">
+                <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-button__icon" focusable="false" height="24" role="img" width="24">
+                 <use xlink:href="#icon-arrow-m">
+                 </use>
+                </svg>
+                <span class="skhh-label skhh-button__label">
+                 zurück
+                </span>
+               </button>
+               <a aria-hidden="true" class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link--active skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/das-transparenzportal" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Das Transparenzportal
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/das-hamburgische-transparenzgesetz-796448" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Das Hamburgische Transparenzgesetz
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/gesetzestext-des-hmbtg-796514" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Gesetzestext des HmbTG
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/die-auskunftspflicht-nach-hmbtg-796452" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Die Auskunftspflicht nach HmbTG
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/mehr-transparenz-in-hamburg-796454" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Mehr Transparenz in Hamburg
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/informationsgegenstaende-796516" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Die Informationsgegenstände
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/open-data-796518" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Open Data
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/verwendung-der-daten-aus-dem-transparenzportal-796520" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Verwendung der Daten aus dem Transparenzportal
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </li>
+           <li class="skhh-main-navigation__link-list-item">
+            <button aria-controls="skhh-nav-main__level-level1-796586" aria-expanded="false" class="skhh-button skhh-button--icon-right skhh-button--transparent skhh-main-navigation__link-list-button" data-js-navigation-btn="" tabindex="-1" type="button">
+             <span class="skhh-label skhh-button__label">
+              News
+             </span>
+             <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-button__icon" focusable="false" height="24" role="img" width="24">
+              <use xlink:href="#icon-arrow-m">
+              </use>
+             </svg>
+            </button>
+            <div aria-hidden="true" class="skhh-main-navigation__level skhh-main-navigation__level--2" data-js-level="2" id="skhh-nav-main__level-level1-796586" tabindex="-1">
+             <span class="skhh-icon-label skhh-main-navigation__notice">
+              <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-icon-label__icon" focusable="false" height="24" role="img" width="24">
+               <use xlink:href="#icon-arrow-m">
+               </use>
+              </svg>
+              <span class="skhh-icon-label__text">
+               Mehr anzeigen
+              </span>
+             </span>
+             <ul class="skhh-main-navigation__link-list">
+              <li class="skhh-main-navigation__link-list-item skhh-main-navigation__link-list-item--top">
+               <button aria-controls="skhh-main-navigation__level-1" aria-expanded="false" class="skhh-button skhh-button--icon-right skhh-button--transparent skhh-main-navigation__back-button" data-js-back-btn="" tabindex="-1" type="button">
+                <svg aria-hidden="true" class="skhh-icon km1-icon--arrow-m skhh-button__icon" focusable="false" height="24" role="img" width="24">
+                 <use xlink:href="#icon-arrow-m">
+                 </use>
+                </svg>
+                <span class="skhh-label skhh-button__label">
+                 zurück
+                </span>
+               </button>
+               <a aria-hidden="true" class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link--active skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/news" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 News
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/10-jahre-transparenzportal-hamburg-984066" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 10 Jahre Transparenzportal Hamburg
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/hvd-im-transparenzportal-886338" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Hochwertige Datensätze (HVD) im Transparenzportal
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/hausmitteilung-aufarbeitung-des-kolonialzeit-erbes-796576" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Strategie zur Aufarbeitung des Kolonialzeit-Erbes
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/relaunch-des-transparenzportals-796442" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Relaunch des Transparenzportals
+                </span>
+               </a>
+              </li>
+              <li class="skhh-main-navigation__link-list-item">
+               <a class="skhh-button skhh-button--transparent skhh-main-navigation__link-list-link" href="https://transparenz.hamburg.de/unter-der-motorhaube-des-transparenzportals-796440" tabindex="-1">
+                <span class="skhh-label skhh-button__label">
+                 Unter der Motorhaube des Transparenzportals
+                </span>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </li>
+          </ul>
+         </div>
+        </nav>
+       </div>
+      </div>
+     </nav>
+     <p class="skhh-paragraph skhh-paragraph--small skhh-header__text">
+      Transparenzportal
+     </p>
+     <div class="skhh-searchbox skhh-header__search">
+      <div class="skhh-searchbox__container">
+       <div class="skhh-searchbox__flex-wrapper">
+        <button aria-controls="skhh-searchbox-search-panel-440" class="skhh-button skhh-button--light skhh-searchbox__search-toggle skhh-searchbox__search-toggle--opener" data-js-collapse="{'actionOutside': false}" id="skhh-searchbox-search-toggle" type="button">
+         <span class="skhh-label skhh-button__label">
+          Suche
+         </span>
+         <svg aria-hidden="true" class="skhh-icon skhh-icon--search skhh-button__icon" focusable="false" height="30" role="img" width="30">
+          <use xlink:href="#icon-search">
+          </use>
+         </svg>
+        </button>
+        <form action="/796664!search" class="skhh-form skhh-searchbox__search-form" enctype="multipart/form-data" method="get" role="search">
+         <input class="skhh-input skhh-input--hidden" id="state" name="state" type="hidden" value=""/>
+         <div aria-labelledby="skhh-searchbox-search-toggle" class="skhh-searchbox__search-panel" id="skhh-searchbox-search-panel-440">
+          <input aria-label="Sucheingabefeld" class="skhh-input skhh-input--search skhh-searchbox__search-input" data-js-search-autocomplete="/796664!suggest" id="query" name="query" placeholder="Suchbegriff eingeben" spellcheck="true" type="search" value=""/>
+          <input class="skhh-input skhh-input--search skhh-searchbox__search-input skhh-autocomplete-hint" disabled="disabled" name="searchInputAutoComplete" type="search"/>
+         </div>
+         <button class="skhh-button skhh-button--light skhh-searchbox__search-toggle" type="submit">
+          <span class="skhh-label skhh-button__label">
+           Suche
+          </span>
+          <svg aria-hidden="true" class="skhh-icon skhh-icon--search skhh-button__icon" focusable="false" height="30" role="img" width="30">
+           <use xlink:href="#icon-search">
+           </use>
+          </svg>
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <svg aria-hidden="true" class="skhh-icon skhh-icon--bow skhh-header__bow" focusable="false" height="32" role="img" width="267">
+    <use xlink:href="#icon-bow">
+    </use>
+   </svg>
+  </header>
+  
+
+
+    
+
+
+
+    
+
+
+
+   <script>
+       if (!window.console) console = {log: function() {}};
+    </script>
+
+
+    <script>
+        var spell_enable = "True";
+    </script>
+
+    
+    <link rel="stylesheet" type="text/css" href="/ewwtheme/tg-portal.css" />    
+    <link rel="stylesheet" href="/ewwtheme/flatpickr.css">
+
+    <style>
+        #topbar #topbar-categories ul li {z-index: 9999;}
+   
+        /* hand mouse cursor without href  */
+        a:hover {
+            cursor:pointer;
+        }
+    </style>
+
+
+<main class="skhh-main skhh-page__main">  
+
+
+      <!-- START Topbar komplett entfernt -->
+
+<!-- // END Topbar -->
+<!-- START Header -->
+<div class="skhh-intro-component">
+    
+    <svg class="skhh-icon skhh-icon--bow skhh-intro-component__bow" role="img" width="144" height="41" focusable="false" aria-hidden="true">
+        <use xlink:href="#icon-bow" />
+    </svg>
+
+    <div class="skhh-banner skhh-banner--default">
+        <div class="skhh-banner__container">            
+            <h2 class="skhh-heading skhh-banner__headline">
+              Transparenzportal Hamburg
+            </h2>            
+        </div>
+    </div>
+</div>
+<!-- // END Header -->
+
+<!-- START Main -->
+
+     <!-- <div id="main" role="main"> -->
+       
+
+
+
+
+
+    
+    
+    
+<div class="skhh-searchbox-component">
+  <div class="skhh-container">
+
+      <div class="skhh-searchbox skhh-searchbox-component__searchbox">
+          <div class="skhh-searchbox__container">
+
+              <div class="skhh-searchbox__flex-wrapper">
+
+                  <form class="skhh-form skhh-searchbox__search-form" action="#" method="get" role="search" id="simple_search">
+              
+                      <script>document.querySelector("form").setAttribute("action", "")</script>
+                                            
+                      <div id="skhh-searchbox-search-panel-199" class="skhh-searchbox__search-panel skhh-searchbox__search-panel--no-toggle" aria-labelledby="skhh-searchbox-search-toggle">
+
+                          
+                          
+                          <input type="search" id="simple_search_field"  name="q" value=""  data-js-search-autocomplete="/spell?field=all&amp;suggest=true" class="skhh-input skhh-input--search skhh-searchbox__search-input" spellcheck="true" placeholder=" Portal durchsuchen " aria-label=" Sucheingabefeld ">
+
+                          <input type="search" name="searchInputAutoComplete" class="skhh-input skhh-input--search skhh-searchbox__search-input skhh-autocomplete-hint" disabled="disabled">
+                      </div>
+
+                      <button class="skhh-button skhh-button--light skhh-searchbox__search-toggle" type="submit" id="send_simple_search">
+
+                          <span class="skhh-label skhh-button__label">
+                              Suchen
+                          </span>
+
+                          <svg class="skhh-icon skhh-icon--search skhh-button__icon" role="img" width="30" height="30" focusable="false" aria-hidden="true">
+                              <use xlink:href="#icon-search" />
+                          </svg>
+
+                      </button>
+
+                      <div class="advanced-search-button">
+                                      
+                          <a href="/advanced_search" class="skhh-link skhh-link--button">
+                              <span class="skhh-label skhh-link__text">
+                                  Erweiterte Suche                    
+                              </span>
+                          </a>        
+                      </div>
+                                                  
+                  </form>      
+                     
+              </div>                                        
+          </div>
+      </div>
+      
+      <div class="mobile-advanced-search-button">
+      <a href="/advanced_search" class="skhh-link skhh-link--button">
+          <span class="skhh-label skhh-link__text">
+              Erweiterte Suche                    
+          </span>
+      </a>      
+      </div>
+    
+      
+
+      
+      
+  </div>
+</div>
+
+
+
+
+    
+    <div class="skhh-container">
+        <div class="skhh-row">
+            <article class="skhh-article skhh-main__article">
+                <!-- Start left -->
+                
+        <div class="skhh-richtext" id="detail-page">
+
+            <div class="skhh-rte-embedded-component" id="tg-back-to-list-button">
+               
+              <a href="javascript:history.back()" class="skhh-link skhh-link--icon-left">
+                      
+                <img class="skhh-customer-icon skhh-customer-icon--btn skhh-button__icon" src="/ewwtheme/icons/icon-arrow-back.svg" width="34" height="46" focusable="false" aria-hidden="true" />
+        
+                <span class="skhh-label skhh-link__text sr-only">
+                    Zurück zur Trefferliste            
+                </span>            
+            </a>
+
+                <span class="skhh-topline skhh-topline--small"></span>
+            </div>
+
+            <div class="skhh-rte-embedded-component">
+                <h1 class="skhh-heading skhh-heading--1 skhh-article__heading">Hamburger Finanzamtsbezirke</h1>
+            </div>
+
+            <div class="skhh-rte-embedded-component">
+              <h2 class="skhh-heading skhh-heading--2">Veröffentlichende Stelle</h2>              
+              <p>Statistisches Amt für Hamburg und Schleswig-Holstein</p>            
+            </div>
+          
+            <div class="skhh-rte-embedded-component">
+              <h2 class="skhh-heading skhh-heading--2">Ver&ouml;ffentlichungsdatum</h2>
+              <p>23.01.2025</p>    
+            </div>           
+
+             
+              <h2 class="sr-only">Beschreibung</h2>
+                
+                                  
+            <figure class="skhh-figure skhh-figure--float skhh-figure--float-left">
+              <div class="skhh-figure__picture-wrapper">
+                <picture class="skhh-picture skhh-figure__picture" data-cm-metadata="CMPicture">                  
+                  <img class="skhh-img preview_image" src="https://geodienste.hamburg.de/wms_hh_finanzamtbezirke?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;FORMAT=image/png&amp;BBOX=546000,5916000,589000,5959000&amp;WIDTH=256&amp;HEIGHT=256&amp;STYLES=&amp;CRS=EPSG:25832&amp;LAYERS=finanzamtbezirke,informations_annahmestellen" alt="Kartendarstellung des Datensatzes">
+                </picture>                                
+              </div>                                 
+            </figure>                                                                   
+                      
+            
+              <p>Finanzamtsbezirke der Stadt Hamburg</p>
+                
+    
+                        
+            <div class="skhh-rte-embedded-component">
+              <h2 class="skhh-heading skhh-heading--2">Schlagw&ouml;rter</h2>
+              <p>
+                <span class="tag_wrap">
+                  <span class="tag_field">
+                    
+                    Finanzamtbezirke,
+                    
+                    Finanzamtsbezirke,
+                    
+                    Geodaten
+                    
+                  </span>
+                  
+              </p>                
+            </div>              
+            
+
+            
+            
+            
+
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+            
+                 
+
+               
+            <div class="skhh-rte-embedded-component">
+              <h2 class="skhh-heading skhh-heading--2">Ressourcen (8)</h2>     
+              
+              
+                 
+
+              <p id="resource1">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_finanzamtbezirke_215973_snap_7.GML" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download Download WFS Hamburger Finanzamtbezirke (GML) (Format: GML)</span>                
+                <span class="skhh-label skhh-link__text">Download WFS Hamburger Finanzamtbezirke (GML)</span>            
+              </a>
+              <br />
+              GML
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                    8.1 KB)
+                                                            
+              
+                 
+
+              <p id="resource2">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_finanzamtbezirke_194355_snap_3.XSD" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download Download WFS-Schemadatei Hamburger Finanzamtbezirke (XSD) (Format: XSD)</span>                
+                <span class="skhh-label skhh-link__text">Download WFS-Schemadatei Hamburger Finanzamtbezirke (XSD)</span>            
+              </a>
+              <br />
+              XSD
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                    2.0 KB)
+                                                            
+              
+                 
+
+              <p id="resource3">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_finanzamtbezirke_202371_snap_1.XML" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download WFS Finanzamtbezirke Hamburg (Format: XML)</span>                
+                <span class="skhh-label skhh-link__text">WFS Finanzamtbezirke Hamburg</span>            
+              </a>
+              <br />
+              XML
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                    29.3 KB)
+                                                            
+              
+                 
+
+              <p id="resource4">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wms_finanzamtbezirke_202372_snap_1.XML" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download WMS Finanzamtbezirke Hamburg (Format: XML)</span>                
+                <span class="skhh-label skhh-link__text">WMS Finanzamtbezirke Hamburg</span>            
+              </a>
+              <br />
+              XML
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                    0.54 KB)
+                                                            
+              
+                 
+
+              <p id="resource5">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/landing-page_186218_snap_2.json" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download OGC API - Features (OAF) Landing Page (Format: OAF)</span>                
+                <span class="skhh-label skhh-link__text">OGC API - Features (OAF) Landing Page</span>            
+              </a>
+              <br />
+              OAF
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                    2.2 KB)
+                                                            
+              
+                 
+
+              <p id="resource6">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/finanzamtbezirke_csv_215974_snap_7.zip" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download Download Finanzamtbezirke Hamburg (CSV) (Format: HTML)</span>                
+                <span class="skhh-label skhh-link__text">Download Finanzamtbezirke Hamburg (CSV)</span>            
+              </a>
+              <br />
+              HTML
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                 0.23 MB)
+                                                            
+              
+                 
+
+              <p id="resource7">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/finanzamtbezirke_json_215975_snap_7.zip" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download Download Finanzamtbezirke Hamburg (GeoJSON) (Format: HTML)</span>                
+                <span class="skhh-label skhh-link__text">Download Finanzamtbezirke Hamburg (GeoJSON)</span>            
+              </a>
+              <br />
+              HTML
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                 0.45 MB)
+                                                            
+              
+                 
+
+              <p id="resource8">
+              <a href="https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/trefferanzeige_215976_snap_7.HTML" class="skhh-link skhh-link--default" target="_blank">
+                <span class="sr-only">Download Metadatenbeschreibung aus dem MetaVer (Format: HTML)</span>                
+                <span class="skhh-label skhh-link__text">Metadatenbeschreibung aus dem MetaVer</span>            
+              </a>
+              <br />
+              HTML
+              (Gr&ouml;&szlig;e:
+              
+                
+                
+                 0.13 MB)
+                                                            
+              
+              </p>
+            </div>
+            
+                                  
+          <div class="skhh-rte-embedded-component">
+            <div class="skhh-table">
+              <div class="skhh-container">
+                <div class="skhh-richtext">
+                  <div class="skhh-table__wrapper">
+                    <table>
+                    <tbody>
+                                       
+                  
+                                       
+                    </tbody>
+                    </table>
+                  </div>
+                </div>              
+              </div>    
+            </div>      
+          </div>           
+        </div>
+    
+      
+                <!-- Ende left -->
+            </article>                        
+            <aside class="skhh-sidebar skhh-main__sidebar">
+                <!-- Start right -->
+                             
+        <h2 class="sr-only">Info-Spalte</h2>
+
+          <div class="skhh-article-functions">
+
+            <div class="skhh-article-functions__container">
+
+                <button id="print1" class="skhh-button skhh-button--icon-top skhh-button--light skhh-article-functions__button" type="button" data-js-print>
+
+                    <span class="skhh-label skhh-button__label">
+                        Drucken
+
+                    </span>
+
+                    <svg class="skhh-icon skhh-icon--print skhh-button__icon" role="img" width="30" height="34" focusable="false" aria-hidden="true">
+                        <use xlink:href="#icon-print" />
+                    </svg>
+                </button>
+                
+                
+                
+
+                <a id="mailto" class="skhh-button skhh-button--icon-top skhh-button--light skhh-article-functions__button"                  
+                  href="mailto:Transparenzportal@bkm.hamburg.de?subject=Anfrage%20zum%20Registereintrag:%20hamburger-finanzamtsbezirke4&body=Sehr%20geehrte%20Damen%20und%20Herren,%0A%0Azu%20folgendem%20Eintrag%20habe%20ich%20eine%20Anmerkung/Frage:%0A%0ATitel:%20Hamburger%20Finanzamtsbezirke%0A%0ADokument-ID:%20hamburger-finanzamtsbezirke4%0A%0AURL:%20http://suche.transparenz.hamburg.de/dataset/hamburger-finanzamtsbezirke4%0A%0AMein%20Kommentar:%0A%0AViele%20Grüße,%0A">
+
+                    <span class="skhh-label skhh-button__label">
+                        Feedback
+                    </span>
+                    
+                    <svg class="skhh-icon skhh-icon--mail skhh-fractal-icon-view__icon" role="img" width="30" height="34" focusable="false" aria-hidden="true">
+                      <use xlink:href="#icon-mail" />
+                    </svg>
+                </a>          
+
+                <button id="share1" class="skhh-button skhh-button--icon-top skhh-button--light skhh-article-functions__button" type="button" aria-controls="skhh-article-functions-share-panel" data-js-collapse>
+
+                    <span class="skhh-label skhh-button__label">
+                        Teilen
+
+                    </span>
+
+                    <svg class="skhh-icon skhh-icon--share skhh-button__icon" role="img" width="30" height="30" focusable="false" aria-hidden="true">
+                        <use xlink:href="#icon-share" />
+                    </svg>
+                </button>
+
+                <div id="skhh-article-functions-reader-panel" class="skhh-article-functions__reader-panel">
+
+                    <button class="skhh-button skhh-button--transparent skhh-article-functions__close-button" aria-controls="skhh-article-functions-reader-panel" data-js-collapse>
+
+                        <svg class="skhh-icon skhh-icon--close skhh-button__icon" role="img" width="22" height="22" focusable="false" aria-hidden="true">
+                            <use xlink:href="#icon-close" />
+                        </svg>
+
+                        <span class="skhh-label skhh-button__label sr-only">
+                            Kapitelfunktion schließen
+
+                        </span>
+
+                    </button>
+
+                    <link href="//vrweb15.linguatec.org/VoiceReaderWeb15User/player20/styles/black/player_skin.css" rel="stylesheet" type="text/css" />
+                    <script type="text/javascript">
+                        <!--
+                        vrweb_player_form = '1';
+                        vrweb_player_type = 'hover';
+                        vrweb_player_color = 'black';
+                        vrweb_guilang = 'de';
+                        vrweb_icon = '05';
+                        vrweb_iconcolor = 'black';
+                        vrweb_lang = 'de-DE';
+                        vrweb_highlight_word = '1';
+                        vrweb_brhandling = '1';
+                        vrweb_exclelementsclass = 'skhh-slider, skhh-figure'
+                        vrweb_readelementsname = 'article'
+                        //
+                        -->
+                    </script>
+                    <script type="text/javascript" charset="UTF-8" src="//vrweb15.linguatec.org/VoiceReaderWeb15User/player20/scripts/readpremium20.min.js"></script>
+
+                    <script type="text/javascript">
+                        <!--
+                        vrweb_customerid = '11379';
+                        vrweb_guilang = 'de';
+                        vrweb_icon = '05';
+                        vrweb_iconcolor = 'black';
+                        vrweb_read_selections = '1'
+                        //
+                        -->
+                    </script>
+                    <script type="text/javascript" charset="UTF-8" src="//vrweb15.linguatec.org/VoiceReaderWeb15User/player20/scripts/readpremium20.min.js"></script>
+                </div>
+
+                <div id="skhh-article-functions-share-panel" class="skhh-article-functions__share-panel">
+
+                    <button class="skhh-button skhh-button--transparent skhh-article-functions__close-button" aria-controls="skhh-article-functions-share-panel" data-js-collapse>
+
+                        <svg class="skhh-icon skhh-icon--close skhh-button__icon" role="img" width="22" height="22" focusable="false" aria-hidden="true">
+                            <use xlink:href="#icon-close" />
+                        </svg>
+
+                        <span class="skhh-label skhh-button__label sr-only">
+                            Kapitelfunktion schließen
+
+                        </span>
+
+                    </button>
+
+                    <div class="skhh-share-module skhh-article-functions__share-module shariff" data-services='[facebook, twitter, whatsapp, xing, linkedin]' data-button-style="icon" data-theme="white" data-js-share-buttons>
+                        <!-- Share buttons generated here by shariff plugin according to data-services list-->
+                    </div>
+                </div>
+            </div>
+          </div>
+    
+          <div class="skhh-teaser skhh-teaser--text-with-link skhh-teaser--box skhh-sidebar__item" id="details-additional-info">
+            <div class="skhh-teaser__container">
+              <div class="skhh-teaser-text skhh-teaser-text--col2 skhh-teaser__teaser-text">
+
+                    <div class="skhh-teaser-text__head">                      
+                        <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="type">
+                            Datentyp
+                        </h3>
+                    </div>
+                    <p class="skhh-paragraph skhh-paragraph--small" id="id-type">Datensatz</p>
+
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="registerobject_type">
+                        Informations&shy;gegenstand
+                      </h3>
+                    </div>                    
+                    <p class="skhh-paragraph skhh-paragraph--small" id="id-registerobject_type">
+                      
+                      Geodaten
+                      
+                    </p>
+
+                    
+
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="groups">
+                        Kategorie
+                      </h3>
+                    </div>                                    
+                    <ul class="skhh-paragraph skhh-paragraph--small" id="id-groups">
+                      
+                      <li id="top-infrastruktur-bauen-und-wohnen" class="top-detail-page">
+                        Infrastruktur, Bauen &amp; Wohnen
+                      </li>
+                      
+                      <li id="top-verwaltung-haushalt-und-steuern" class="top-detail-page">
+                        Öffentliche Verwaltung, Haushalt &amp; Steuern
+                      </li>
+                      
+                    </ul>  
+
+
+                    
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="temporal_coverage">
+                        Zeitbezug
+                      </h3>
+                    </div>
+                    <p class="skhh-paragraph skhh-paragraph--small" id="id-temporal_coverage">
+                        von
+                        
+                        23.02.2022
+                                                            
+                        bis
+                        
+                        kein Enddatum gesetzt
+                                                                                      
+                    </p>                                                 
+                                                                             
+
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="odg">
+                        Metadaten nach ODG
+                      </h3>
+                    </div>
+                      <ul class="skhh-paragraph skhh-paragraph--small" id="id-odg">
+                        <li>
+                          <a href="http://suche.transparenz.hamburg.de/api/3/action/package_show?id=hamburger-finanzamtsbezirke4" class="skhh-link">
+                            <span class="skhh-label skhh-link__text">Download (JSON)</span>                    
+                          </a>
+                        </li>
+		      </ul>
+		    </div>
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="dcat-ap">
+                        Metadaten nach DCAT-AP.de
+                      </h3>
+                    </div>
+
+                    <ul class="skhh-paragraph skhh-paragraph--small" id="id-dcat-ap">
+                      <li>
+                        <a href="http://suche.transparenz.hamburg.de/dataset/hamburger-finanzamtsbezirke4.n3" class="skhh-link">
+                          <span class="skhh-label skhh-link__text">Download (N3)</span>                    
+                        </a>
+                      </li>                    
+                      <li>
+                        <a href="http://suche.transparenz.hamburg.de/dataset/hamburger-finanzamtsbezirke4.rdf" class="skhh-link">
+                          <span class="skhh-label skhh-link__text">Download (RDF)</span>                        
+                        </a>
+                      </li>                    
+                      <li>
+                        <a href="http://suche.transparenz.hamburg.de/dataset/hamburger-finanzamtsbezirke4.ttl" class="skhh-link">
+                          <span class="skhh-label skhh-link__text">Download (TTL)</span>
+                        </a>
+                      </li>                    
+                      <li>
+                        <a href="http://suche.transparenz.hamburg.de/dataset/hamburger-finanzamtsbezirke4.xml" class="skhh-link">
+                          <span class="skhh-label skhh-link__text">Download (XML)</span>
+                        </a>
+                      </li>                    
+                      <li>
+                        <a href="http://suche.transparenz.hamburg.de/dataset/hamburger-finanzamtsbezirke4.jsonld" class="skhh-link">
+                          <span class="skhh-label skhh-link__text">Download (JSONLD)</span>
+                        </a>
+                      </li>                                        
+                    </ul>                      
+                    
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="license">
+                        Lizenz
+                      </h3>
+                    </div>
+                    <p class="skhh-paragraph skhh-paragraph--small" id="id-license">
+                      <a href="https://www.govdata.de/dl-de/zero-2-0" class="skhh-link" target="_blank">
+                        Datenlizenz Deutschland – Zero – Version 2.0</a>
+                    </p>
+
+                    <div class="skhh-teaser-text__head">                      
+                      <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline" id="">
+                        Namensnennung
+                      </h3>
+                    </div>
+                    <p class="skhh-paragraph skhh-paragraph--small" id="id-">
+                      
+                      
+                      Statistikamt Nord
+                      
+                      
+                    </p>
+
+                    
+
+                                           
+                                 
+                                                                              
+                            <div class="skhh-teaser-text__head">                      
+                                <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline">                        
+                                    Ältere Version
+                                </h3>
+                            </div>                                                                                       
+                            <a href="/dataset/hamburger-finanzamtsbezirke3"  class="skhh-link" aria-label="Version vom 07.08.2024">
+                              07.08.2024
+                            </a>                                                                                
+                        
+                        
+                           
+                            <div class="skhh-teaser-text__head">                      
+                                <h3 class="skhh-heading skhh-heading--3 skhh-teaser-text__headline">                        
+                                    Neuere Version
+                                </h3>
+                            </div>                                                                                                               
+                            <a href="/dataset/hamburger-finanzamtsbezirke5" title="Version vom 11.07.2025">
+                              11.07.2025
+                            </a>                                                                                                        
+                                                   
+                    
+              </div>
+            </div>
+          </div>          
+      
+                <!-- Ende right -->           
+            </aside>            
+        </div>
+    </div>
+    
+    
+ 
+
+
+</main>  
+
+       
+
+
+  <footer class="skhh-footer">
+   <div class="skhh-container skhh-footer__main">
+    <div class="skhh-footer__container">
+     <div class="skhh-footer__text">
+      <h2 class="skhh-heading skhh-footer__headline">
+       Transparenzportal Hamburg
+      </h2>
+      <p class="skhh-paragraph skhh-footer__paragraph skhh-paragraph--small">
+       Das Transparenzportal Hamburg ist das im Hamburgischen Transparenzgesetz (HmbTG) geforderte Informationsregister, über das alle per Gesetz veröffentlichungspflichtigen Informationen anonym recherchiert werden können. Es ist der zentrale Zugang zu aktuellen Daten und Informationen der Hamburger Verwaltung und stellt, um die leichte Auffindbarkeit der gesuchten Inhalte zu gewährleisten, eine Suche über den Volltext aller Datensätze bereit.
+      </p>
+     </div>
+     <div class="skhh-footer__linklist-group">
+      <div class="skhh-footer__linklist skhh-footer__linklist--sub-links">
+       <h2 class="skhh-heading skhh-footer__linklist__headline skhh-footer__headline">
+        Unterseiten
+       </h2>
+       <ul class="skhh-footer__link-group">
+        <li class="skhh-footer__link-group-item">
+         <a class="skhh-link skhh-footer__link" href="https://transparenz.hamburg.de/ueber-uns">
+          <span class="skhh-label skhh-link__text">
+           Über uns
+          </span>
+         </a>
+        </li>
+        <li class="skhh-footer__link-group-item">
+         <a class="skhh-link skhh-footer__link" href="https://transparenz.hamburg.de/das-transparenzportal">
+          <span class="skhh-label skhh-link__text">
+           Das Transparenzportal
+          </span>
+         </a>
+        </li>
+        <li class="skhh-footer__link-group-item">
+         <a class="skhh-link skhh-footer__link" href="https://transparenz.hamburg.de/news">
+          <span class="skhh-label skhh-link__text">
+           News
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <nav class="skhh-nav-meta skhh-nav-meta--copyright skhh-nav-meta--dark skhh-footer__nav-meta">
+    <strong class="sr-only">
+     Servicemenü
+    </strong>
+    <div class="skhh-container">
+     <div class="skhh-nav-meta__container">
+      <div class="skhh-nav-meta__meta-group skhh-nav-meta__meta-group--has-separator">
+       <ul class="skhh-nav-meta__link-list">
+        <li class="skhh-nav-meta__link-list-item">
+         <a class="skhh-link" href="https://transparenz.hamburg.de/erklaerung-zur-barrierefreiheit-796466">
+          <span class="skhh-label skhh-link__text">
+           Erklärung zur Barrierefreiheit
+          </span>
+         </a>
+        </li>
+        <li class="skhh-nav-meta__link-list-item">
+         <a class="skhh-link" href="https://transparenz.hamburg.de/impressum-796468">
+          <span class="skhh-label skhh-link__text">
+           Impressum
+          </span>
+         </a>
+        </li>
+        <li class="skhh-nav-meta__link-list-item">
+         <a class="skhh-link" href="https://transparenz.hamburg.de/datenschutzerklaerung-796458">
+          <span class="skhh-label skhh-link__text">
+           Datenschutzerklärung
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <span class="skhh-nav-meta__copyright" translate="no">
+       www.transparenz.hamburg.de
+      </span>
+     </div>
+    </div>
+   </nav>
+  
+    
+    <script src="/ewwtheme/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/ewwtheme/URI.min.js"></script>
+<script type="text/javascript" src="/ewwtheme/jquery.URI.min.js"></script>
+<script src="/ewwtheme/flatpickr.js"></script>
+<script src="/ewwtheme/flatpickr-de.js"></script>
+<script type="text/javascript" src="/ewwtheme/moment.js"></script>
+<script type="text/javascript" src="/ewwtheme/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="/ewwtheme/tg-portal.js"></script>
+    </footer>
+
+  <noscript class="cm-javascript">
+  </noscript>
+  <script defer="false" src="https://transparenz.hamburg.de/resource/themes/skhh/js/commons-5616-14.js">
+  </script>
+  <script defer="false" src="https://transparenz.hamburg.de/resource/themes/skhh/js/index-997478-21.js">
+  </script>
+  <script>
+   window.addEventListener('load', function () {
+if (typeof Tracking != "undefined" && 'false' === 'true') {
+window.tracking = window.tracking || new Tracking('', document.title, 'transparenzportal_796340.navigationspunkt');
+window.tracking.initialize();
+}
+}, false);
+  </script>
+ </body>
+</html>
+  

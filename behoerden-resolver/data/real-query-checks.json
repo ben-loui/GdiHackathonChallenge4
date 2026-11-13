@@ -1,0 +1,775 @@
+[
+  {
+    "category": "jobcenter",
+    "point": {
+      "lon": 8.466,
+      "lat": 49.488
+    },
+    "limitations": "BZB Open: Jobcenter-Bezirke; keine persönliche Anspruchsprüfung oder Ermittlung besonderer Fallzuständigkeiten.",
+    "matches": [
+      {
+        "authority_name": "Jobcenter Mannheim, Universitätsstadt",
+        "category": "jobcenter",
+        "source_id": "bzb_jobcenter",
+        "source_key": "ba_jobcenter.277",
+        "scope": "DE",
+        "source_date": null,
+        "evidence_url": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "t64402",
+          "name": "Jobcenter Mannheim, Universitätsstadt",
+          "dst_id": "64402",
+          "uebergeord": "Agentur für Arbeit Mannheim"
+        },
+        "license": "dl-de/by-2-0",
+        "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+        "fetched_at": "2026-11-13T16:39:47.492270+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "bzb_jobcenter",
+        "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+        "layer": "bzb-open:ba_jobcenter",
+        "scope": "DE",
+        "semantics": "authority",
+        "filter": null,
+        "license": "dl-de/by-2-0",
+        "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f"
+            },
+            "schema": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Aba_jobcenter",
+              "sha256": "b9a312a16f9fc9ef182864508aa5022c8e10e0f58cffe5f41609fcaf15f8c2ce"
+            },
+            "sample": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Aba_jobcenter&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=id&outputFormat=application%2Fjson",
+              "sha256": "df627b374b883fa0ba9e9982def61c2e0e571ebc445f60d99199f1d47a29f576"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "amtsgericht",
+    "point": {
+      "lon": 8.27,
+      "lat": 50.0
+    },
+    "limitations": "BZB Open: allgemeine Amtsgerichtsbezirke, keine zentralisierten Register-, Insolvenz- oder anderen Spezialzuständigkeiten.",
+    "matches": [
+      {
+        "authority_name": "Amtsgericht Mainz",
+        "category": "amtsgericht",
+        "source_id": "bzb_amtsgericht",
+        "source_key": "gerichte_amtsgerichte.310",
+        "scope": "DE",
+        "source_date": null,
+        "evidence_url": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+        "geometry_repaired": false,
+        "properties": {
+          "name": "Amtsgericht Mainz",
+          "dest_ge_nr": "072304",
+          "mjbw_ge_nr": "20710303",
+          "uebergeord": "Landgericht Mainz"
+        },
+        "license": "dl-de/by-2-0",
+        "attribution": "© BKG (Jahr des Datenbezugs) dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_bzb-open.pdf",
+        "fetched_at": "2026-11-13T16:39:34.569961+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "bzb_amtsgericht",
+        "endpoint": "https://sgx.geodatenzentrum.de/wfs_bzb_open",
+        "layer": "bzb-open:gerichte_amtsgerichte",
+        "scope": "DE",
+        "semantics": "authority",
+        "filter": null,
+        "license": "dl-de/by-2-0",
+        "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-behoerdenzustaendigkeitsbereiche-open-wfs-bzb-open.html",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "ad657865a2f40f00f405b152b691f24f4b8d4574ed1daa1a8eaad5004e32671f"
+            },
+            "schema": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=bzb-open%3Agerichte_amtsgerichte",
+              "sha256": "e6bb7c4ce495057713077497454bbf0c6e375756444bb9f746fe36032140f83d"
+            },
+            "sample": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_bzb_open?service=WFS&version=2.0.0&request=GetFeature&typeNames=bzb-open%3Agerichte_amtsgerichte&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=dest_ge_nr&outputFormat=application%2Fjson",
+              "sha256": "ed315d77c8ea285279f1add77188a49c58fd124c37c78720679f728f99ca1a02"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "kreisverwaltung",
+    "point": {
+      "lon": 11.615,
+      "lat": 48.065
+    },
+    "limitations": "Explizite bayerische Landratsämter. Kreisfreie Städte werden als Stadtverwaltung geführt, nicht als erfundenes Landratsamt.",
+    "matches": [
+      {
+        "authority_name": "Landratsamt München",
+        "category": "kreisverwaltung",
+        "source_id": "by_kreis",
+        "source_key": "STMI_KREISVERWALTUNGSBEHOERDENFLAECHE_e9398948-4002-487f-9acd-c839897ab9a4",
+        "scope": "DE-BY",
+        "source_date": "2024-11-27",
+        "evidence_url": "https://www.bayernportal.de/dokumente/behoerde/93442507417",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "2390",
+          "email": "poststelle@lra-m.bayern.de",
+          "stand": "2024-11-27",
+          "telefax": "+49 (0)89 6221-2278",
+          "telefon": "+49 (0)89 6221-0",
+          "homepage": "https://www.landkreis-muenchen.de",
+          "bezeichnung": "München",
+          "anschriftOrt": "München",
+          "anschriftPlz": "81541",
+          "bayernPortalUrl": "https://www.bayernportal.de/dokumente/behoerde/93442507417",
+          "behoerdenGruppe": "Regierungen, Bezirks- und Kreisverwaltungen",
+          "kurzbezeichnung": "LRA M",
+          "anschriftStrasse": "Mariahilfplatz 17",
+          "landkreisKurzbez": "M",
+          "bezeichnungZusatz": "Landratsamt",
+          "gebietsschluessel": "09184000",
+          "rechtsgrundlageUrl": "http://www.gesetze-bayern.de/Content/Document/BayLKrO",
+          "behoerdenUntergruppe": "landratsaemter",
+          "dienststellenSchluessel": "318253",
+          "rechtsgrundlageBeschreibung": "Landkreisordnung für den Freistaat Bayern (Landkreisordnung - LKrO)",
+          "dienststellenSchluesselLfdnr": "0"
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+        "fetched_at": "2026-11-13T16:41:20.040748+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [
+      {
+        "area_name": "München",
+        "source_id": "vg25_krs",
+        "properties": {
+          "gf": 9,
+          "ade": 4,
+          "ags": "09184",
+          "ars": "09184",
+          "bem": "--",
+          "bez": "Landkreis",
+          "bsg": 1,
+          "gen": "München",
+          "ibz": 43,
+          "lkz": "BY",
+          "nbd": "ja",
+          "wsk": "2010-12-31Z",
+          "nuts": "DE21H",
+          "sn_g": "000",
+          "sn_k": "84",
+          "sn_l": "09",
+          "sn_r": "1",
+          "ags_0": "09184000",
+          "ars_0": "091840000000",
+          "fk_s3": "R",
+          "objid": "DEBKGVGB00000C8Y",
+          "sn_v1": "00",
+          "sn_v2": "00",
+          "beginn": "2026-03-31Z",
+          "sdv_ars": "091620000000"
+        }
+      }
+    ],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "vg25_krs",
+        "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+        "layer": "vg25:vg25_krs",
+        "scope": "DE",
+        "semantics": "boundary_reference",
+        "filter": null,
+        "license": "CC-BY-4.0",
+        "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6"
+            },
+            "schema": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_krs",
+              "sha256": "c6145c602a3729783a9cd1df359c4f32e17e90b5199bd3de5343678beb7c3659"
+            },
+            "sample": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+              "sha256": "3e38539ea9464a12f9881994fa79c404529fb1f647e64c9af49d3bb31ae14de2"
+            }
+          }
+        }
+      },
+      {
+        "source_id": "by_kreis",
+        "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+        "layer": "stmi:KreisverwaltungsbehoerdenFlaeche",
+        "scope": "DE-BY",
+        "semantics": "authority",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "landratsaemter"
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+            },
+            "schema": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche",
+              "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+            },
+            "sample": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+              "sha256": "e977d723076cb1a604185c353a6696061ffb9aaf0789b232dca0e880d20ec8e3"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "regierungsprs",
+    "point": {
+      "lon": 11.615,
+      "lat": 48.065
+    },
+    "limitations": "Bayerische Regierungen. VG25-Regierungsbezirke sind nur Grenzreferenzen; keine Übertragung auf alle Länder.",
+    "matches": [
+      {
+        "authority_name": "Regierung von Oberbayern",
+        "category": "regierungsprs",
+        "source_id": "by_regierung",
+        "source_key": "STMI_REGIERUNGENFLAECHE_2048587b-fd9d-4e6c-b438-59ddd559f596",
+        "scope": "DE-BY",
+        "source_date": "2026-09-08",
+        "evidence_url": "https://www.bayernportal.de/dokumente/behoerde/83553804377",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "2151",
+          "email": "poststelle@reg-ob.bayern.de",
+          "stand": "2026-09-08",
+          "telefax": "+49 (8)9 2176-2914",
+          "telefon": "+49 (8)9 2176-0",
+          "homepage": "https://www.regierung.oberbayern.bayern.de/",
+          "bezeichnung": "Regierung von Oberbayern",
+          "anschriftOrt": "München",
+          "anschriftPlz": "80538",
+          "bayernPortalUrl": "https://www.bayernportal.de/dokumente/behoerde/83553804377",
+          "behoerdenGruppe": "Regierungen, Bezirks- und Kreisverwaltungen",
+          "kurzbezeichnung": "Reg OB",
+          "anschriftStrasse": "Maximilianstraße 39",
+          "gebietsschluessel": "09100000",
+          "rechtsgrundlageUrl": "http://www.gesetze-bayern.de/Content/Document/BayVerf",
+          "behoerdenUntergruppe": "regierungen",
+          "dienststellenSchluessel": "318006",
+          "rechtsgrundlageBeschreibung": "Verfassung des Freistaates Bayern",
+          "dienststellenSchluesselLfdnr": "0"
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+        "fetched_at": "2026-11-13T16:41:24.535582+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [
+      {
+        "area_name": "Oberbayern",
+        "source_id": "vg25_rbz",
+        "properties": {
+          "gf": 9,
+          "ade": 3,
+          "ags": "091",
+          "ars": "091",
+          "bem": "--",
+          "bez": "Regierungsbezirk",
+          "bsg": 1,
+          "gen": "Oberbayern",
+          "ibz": 30,
+          "lkz": "BY",
+          "nbd": "ja",
+          "wsk": "2017-03-12Z",
+          "nuts": "DE21",
+          "sn_g": "000",
+          "sn_k": "00",
+          "sn_l": "09",
+          "sn_r": "1",
+          "ags_0": "09100000",
+          "ars_0": "091000000000",
+          "fk_s3": "R",
+          "objid": "DEBKGVGB00000CDW",
+          "sn_v1": "00",
+          "sn_v2": "00",
+          "beginn": "2026-03-31Z",
+          "sdv_ars": "091620000000"
+        }
+      }
+    ],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "vg25_rbz",
+        "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+        "layer": "vg25:vg25_rbz",
+        "scope": "DE",
+        "semantics": "boundary_reference",
+        "filter": null,
+        "license": "CC-BY-4.0",
+        "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6"
+            },
+            "schema": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_rbz",
+              "sha256": "8e53a1f76ef217417a6e0d735643fbae1a97716630820f4a39c4fd4877fc26fa"
+            },
+            "sample": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_rbz&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+              "sha256": "3c63aab5623df8d5c295b2f5a358c4c15a7e71504922ea3ec14d2b29b27964f2"
+            }
+          }
+        }
+      },
+      {
+        "source_id": "by_regierung",
+        "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+        "layer": "stmi:RegierungenFlaeche",
+        "scope": "DE-BY",
+        "semantics": "authority",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "regierungen"
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+            },
+            "schema": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3ARegierungenFlaeche",
+              "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+            },
+            "sample": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3ARegierungenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+              "sha256": "a543c616689187fd5bc91eb69106416cbeee78f6406676e4ae59c9bf0ad13518"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "verwaltungsgericht",
+    "point": {
+      "lon": 12.1,
+      "lat": 49.01
+    },
+    "limitations": "Bayern: örtliche Bezirke der sechs Verwaltungsgerichte aus Art. 1 Abs. 2 AGVwGO und VG25-Regierungsbezirken abgeleitet. Sachliche oder spezielle Verfahrenszuständigkeiten sind nicht eingeschlossen. Der Standortpunkt allein wird nicht als Gebiet verwendet.",
+    "matches": [
+      {
+        "authority_name": "Bayerisches Verwaltungsgericht Regensburg",
+        "category": "verwaltungsgericht",
+        "source_id": "by_verwaltungsgericht_gesetz",
+        "source_key": "32",
+        "scope": "DE-BY",
+        "source_date": "2026-11-13",
+        "evidence_url": "https://www.gesetze-bayern.de/Content/Document/BayAGVwGO-1",
+        "geometry_repaired": true,
+        "properties": {
+          "region_ars": [
+            "092",
+            "093"
+          ],
+          "legal_basis": "https://www.gesetze-bayern.de/Content/Document/BayAGVwGO-1",
+          "mapping_sha256": "b44bc17016f1ddf3f3d64c849f7f662a2a0de56357d56ad96d4b2ddf61621777",
+          "boundary_source": "vg25_rbz",
+          "court_evidence_url": "https://www.bayernportal.de/dokumente/behoerde/1444341223",
+          "mapping_reviewed_at": "2026-11-13",
+          "boundary_source_keys": [
+            "vg25_rbz.14",
+            "vg25_rbz.15"
+          ],
+          "boundary_snapshot_completed_at": "2026-11-13T16:41:05.598097+00:00",
+          "boundary_snapshot_records_sha256": "75264a7f23e273dbff8edbeb997e0a77553fb4ea5cbbd59f6afd6c27b759fb63"
+        },
+        "license": "CC-BY-4.0; statutory assignment from official legislation (§5 UrhG)",
+        "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration; Gebietszuordnung: Art. 1 Abs. 2 AGVwGO (Bayern).",
+        "fetched_at": "2026-11-13T16:44:46.676922+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": []
+  },
+  {
+    "category": "finanzamt",
+    "point": {
+      "lon": 11.615,
+      "lat": 48.065
+    },
+    "limitations": "Allgemeiner Finanzamtsbezirk; Steuerart, Rechtsform und Sonderzuständigkeiten zusätzlich prüfen.",
+    "matches": [
+      {
+        "authority_name": "Finanzamt München",
+        "category": "finanzamt",
+        "source_id": "by_finanzamt",
+        "source_key": "STMFH_STEUERVERWALTUNGFLAECHE_c13b5ccc-611d-4ece-bd22-0d31e9aac757",
+        "scope": "DE-BY",
+        "source_date": "2026-01-21",
+        "evidence_url": "https://www.bayernportal.de/dokumente/behoerde/8523088170528",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "315109",
+          "stand": "2026-01-21",
+          "telefon": "+49 (0)89 1252-0",
+          "bezeichnung": "Finanzamt München",
+          "anschriftOrt": "München",
+          "anschriftPlz": "80335",
+          "bayernPortalUrl": "https://www.bayernportal.de/dokumente/behoerde/8523088170528",
+          "behoerdenGruppe": "Steuerverwaltung",
+          "anschriftStrasse": "Deroystraße 20",
+          "rechtsgrundlageUrl": "http://www.gesetze-bayern.de/Content/Document/BayZustVSt",
+          "behoerdenUntergruppe": "finanzaemter",
+          "dienststellenSchluessel": "691881",
+          "rechtsgrundlageBeschreibung": "Verordnung über Organisation und Zuständigkeiten in der Bayerischen Steuerverwaltlung (ZustVSt)",
+          "dienststellenSchluesselLfdnr": "0"
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Finanzen und für Heimat.",
+        "fetched_at": "2026-11-13T16:42:04.838527+00:00",
+        "on_boundary": false
+      },
+      {
+        "authority_name": "Finanzamt München Dienstgebäude Deroystraße 12",
+        "category": "finanzamt",
+        "source_id": "by_finanzamt",
+        "source_key": "STMFH_STEUERVERWALTUNGFLAECHE_c4af8439-e838-4438-bc73-7860eab758bd",
+        "scope": "DE-BY",
+        "source_date": "2026-01-21",
+        "evidence_url": "https://www.bayernportal.de/dokumente/behoerde/54110149207",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "1136",
+          "stand": "2026-01-21",
+          "telefon": "+49 (0)89 1252-0",
+          "homepage": "http://www.finanzamt-muenchen.de",
+          "bezeichnung": "Finanzamt München Dienstgebäude Deroystraße 12",
+          "anschriftOrt": "München",
+          "anschriftPlz": "80335",
+          "bayernPortalUrl": "https://www.bayernportal.de/dokumente/behoerde/54110149207",
+          "behoerdenGruppe": "Steuerverwaltung",
+          "kurzbezeichnung": "FA M",
+          "anschriftStrasse": "Deroystraße 12",
+          "rechtsgrundlageUrl": "http://www.gesetze-bayern.de/Content/Document/BayZustVSt",
+          "behoerdenUntergruppe": "finanzaemter-aussenstellen",
+          "dienststellenSchluessel": "691881",
+          "rechtsgrundlageBeschreibung": "Verordnung über Organisation und Zuständigkeiten in der Bayerischen Steuerverwaltlung (ZustVSt)",
+          "dienststellenSchluesselLfdnr": "1"
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium der Finanzen und für Heimat.",
+        "fetched_at": "2026-11-13T16:42:04.838527+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "ambiguous",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "by_finanzamt",
+        "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs",
+        "layer": "stmfh:SteuerverwaltungFlaeche",
+        "scope": "DE-BY",
+        "semantics": "authority",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "finanzaemter",
+            "finanzaemter-aussenstellen"
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "cbcd09bdb5e72bcb7b75aa51888c51240c1d05a2b5196ce29c904bd99ef299a8"
+            },
+            "schema": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmfh%3ASteuerverwaltungFlaeche",
+              "sha256": "6c9b005b231dca1d4d0b91fb40008e0db9b759111e737f385dc836f691338ffd"
+            },
+            "sample": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmfh-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmfh%3ASteuerverwaltungFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+              "sha256": "aaecbdd331744e5b6d3f751103eeaa55dbbd285f4d3d0c090acb167b77f84dba"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "polizei",
+    "point": {
+      "lon": 11.615,
+      "lat": 48.065
+    },
+    "limitations": "Nur Polizeiinspektionen/-stationen in Bayern. Keine Übertragung auf Bundespolizei, Kriminal- oder Verkehrspolizei.",
+    "matches": [
+      {
+        "authority_name": "Polizeiinspektion 31 Unterhaching",
+        "category": "polizei",
+        "source_id": "by_polizei",
+        "source_key": "STMI_POLIZEIINSPEKTIONENFLAECHE_b32220e9-0901-4212-b373-7f19156ed57e",
+        "scope": "DE-BY",
+        "source_date": "2010-04-20",
+        "evidence_url": "https://www.bayernportal.de/dokumente/behoerde/2110863535",
+        "geometry_repaired": false,
+        "properties": {
+          "id": "218",
+          "stand": "2010-04-20",
+          "telefax": "+49 (0)89 61562-254",
+          "telefon": "+49 (0)89 61562-0",
+          "homepage": "https://www.polizei.bayern.de/wir-ueber-uns/organisation/dienststellen/0900812100000.html",
+          "bezeichnung": "Polizeiinspektion 31 Unterhaching",
+          "anschriftOrt": "Unterhaching",
+          "anschriftPlz": "82008",
+          "bayernPortalUrl": "https://www.bayernportal.de/dokumente/behoerde/2110863535",
+          "behoerdenGruppe": "Polizeiinspektionen / -stationen",
+          "anschriftStrasse": "Ottobrunner Straße 7",
+          "rechtsgrundlageUrl": "http://www.gesetze-bayern.de/Content/Document/BayDVPOG",
+          "behoerdenUntergruppe": "polizeiinspektionen",
+          "dienststellenSchluessel": "385310",
+          "rechtsgrundlageBeschreibung": "Verordnung zur Durchführung des Polizeiorganisationsgesetzes (DVPOG)",
+          "dienststellenSchluesselLfdnr": "0"
+        },
+        "license": "CC-BY-4.0",
+        "attribution": "Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration.",
+        "fetched_at": "2026-11-13T16:41:43.946937+00:00",
+        "on_boundary": false
+      }
+    ],
+    "national_coverage_guaranteed": false,
+    "status": "candidate",
+    "boundary_references": [],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "by_polizei",
+        "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+        "layer": "stmi:PolizeiinspektionenFlaeche",
+        "scope": "DE-BY",
+        "semantics": "authority",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "polizeiinspektionen",
+            "polizeistationen"
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+            },
+            "schema": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3APolizeiinspektionenFlaeche",
+              "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+            },
+            "sample": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3APolizeiinspektionenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+              "sha256": "5fe2726b56ed8c612c228f4b4c75866f1d5c723ac7038b3285d7ca4ebc7a7007"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "kreisverwaltung",
+    "point": {
+      "lon": 8.27,
+      "lat": 50.0
+    },
+    "limitations": "Explizite bayerische Landratsämter. Kreisfreie Städte werden als Stadtverwaltung geführt, nicht als erfundenes Landratsamt.",
+    "matches": [],
+    "national_coverage_guaranteed": false,
+    "status": "no_coverage_at_point",
+    "boundary_references": [
+      {
+        "area_name": "Mainz",
+        "source_id": "vg25_krs",
+        "properties": {
+          "gf": 9,
+          "ade": 4,
+          "ags": "07315",
+          "ars": "07315",
+          "bem": "--",
+          "bez": "Kreisfreie Stadt",
+          "bsg": 1,
+          "gen": "Mainz",
+          "ibz": 40,
+          "lkz": "RP",
+          "nbd": "ja",
+          "wsk": "1969-06-06Z",
+          "nuts": "DEB35",
+          "sn_g": "000",
+          "sn_k": "15",
+          "sn_l": "07",
+          "sn_r": "3",
+          "ags_0": "07315000",
+          "ars_0": "073150000000",
+          "fk_s3": "K",
+          "objid": "DEBKGVGB00000C6U",
+          "sn_v1": "00",
+          "sn_v2": "00",
+          "beginn": "2026-03-31Z",
+          "sdv_ars": "073150000000"
+        }
+      }
+    ],
+    "match_semantics": "general territorial candidates; category and point do not establish case-specific legal competence",
+    "configured_sources": [
+      {
+        "source_id": "vg25_krs",
+        "endpoint": "https://sgx.geodatenzentrum.de/wfs_vg25",
+        "layer": "vg25:vg25_krs",
+        "scope": "DE",
+        "semantics": "boundary_reference",
+        "filter": null,
+        "license": "CC-BY-4.0",
+        "documentation": "https://gdz.bkg.bund.de/index.php/default/wfs-verwaltungsgebiete-1-25-000-stand-31-12-wfs-vg25.html",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "829af188084de0965222944bcef87179334f5cfae6eb8afc71ac436d9b16f0c6"
+            },
+            "schema": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=vg25%3Avg25_krs",
+              "sha256": "c6145c602a3729783a9cd1df359c4f32e17e90b5199bd3de5343678beb7c3659"
+            },
+            "sample": {
+              "url": "https://sgx.geodatenzentrum.de/wfs_vg25?service=WFS&version=2.0.0&request=GetFeature&typeNames=vg25%3Avg25_krs&srsName=urn%3Aogc%3Adef%3Acrs%3AOGC%3A%3ACRS84&startIndex=0&count=1&sortBy=objid&outputFormat=application%2Fjson",
+              "sha256": "3e38539ea9464a12f9881994fa79c404529fb1f647e64c9af49d3bb31ae14de2"
+            }
+          }
+        }
+      },
+      {
+        "source_id": "by_kreis",
+        "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+        "layer": "stmi:KreisverwaltungsbehoerdenFlaeche",
+        "scope": "DE-BY",
+        "semantics": "authority",
+        "filter": {
+          "behoerdenUntergruppe": [
+            "landratsaemter"
+          ]
+        },
+        "license": "CC-BY-4.0",
+        "documentation": "https://geoportal.bayern.de/geoportalbayern/seiten/dienste",
+        "verification": {
+          "checked_at": "2026-11-13T16:40:01.932210+00:00",
+          "status": "verified",
+          "checks": {
+            "capabilities": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+              "sha256": "2fc0272f41841ebe1a5a4d2c3ff9affdae1304c6ec0aa856bf488cfa369c970c"
+            },
+            "schema": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche",
+              "sha256": "7d6aaf1ca3bc81db2c0cd31ca78d79cb10f2c9b9c10aee5e38dfa77c3564d378"
+            },
+            "sample": {
+              "url": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=stmi%3AKreisverwaltungsbehoerdenFlaeche&srsName=EPSG%3A3857&startIndex=0&count=1&sortBy=id",
+              "sha256": "e977d723076cb1a604185c353a6696061ffb9aaf0789b232dca0e880d20ec8e3"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "krankenkasse",
+    "point": {
+      "lon": 8.27,
+      "lat": 50.0
+    },
+    "limitations": "Mitgliedschaft und Wahlrecht bestimmen den Träger; ein Wohnortpolygon bestimmt keine Krankenkasse.",
+    "matches": [],
+    "national_coverage_guaranteed": false,
+    "status": "non_spatial",
+    "required_context": "Mitgliedschaft und Wahlrecht bestimmen den Träger; ein Wohnortpolygon bestimmt keine Krankenkasse."
+  }
+]

@@ -1,0 +1,25 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  postgis:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:16-3.5
+        env:
+          POSTGRES_DB: authorities_test
+          POSTGRES_USER: resolver
+          POSTGRES_PASSWORD: resolver-test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U resolver -d authorities_test"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.lock && python -m pip install -e '.[test]'
+      - run: python -m pytest -q
+        env:
+          TEST_DATABASE_URL: postgresql://resolver:resolver-test@127.0.0.1:5432/authorities_test

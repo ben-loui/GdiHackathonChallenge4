@@ -1,0 +1,374 @@
+{
+  "generated_at": "2026-11-13T18:06:15.767943+00:00",
+  "snapshots": [
+    {
+      "directory": "data/snapshots/bb_polizei--20261113T171925741955Z",
+      "source_id": "bb_polizei",
+      "records_per_category": {
+        "polizei": 16
+      },
+      "records_sha256": "c2ae933471c1bea97c5851d9f8828fc391f2c2ed9536af157f293d33a4286420",
+      "records_file_bytes": 2382821,
+      "completed_at": "2026-11-13T17:19:25.740357+00:00"
+    },
+    {
+      "directory": "data/snapshots/bb_polizei_locations--20261113T174441902772Z",
+      "source_id": "bb_polizei_locations",
+      "records_per_category": {
+        "polizei": 80
+      },
+      "records_sha256": "4cbe1ccc4f9fea7f5a13fae8a0d15384426c5ce83c7380b9f6f960df00ea2403",
+      "records_file_bytes": 6745,
+      "completed_at": "2026-11-13T17:44:41.902242+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_finanzamt--20261113T164204849167Z",
+      "source_id": "by_finanzamt",
+      "records_per_category": {
+        "finanzamt": 101
+      },
+      "records_sha256": "ba0f0d950278be134282386e8db0bf0a64c1d5d8a087d0df367450d8a3f99068",
+      "records_file_bytes": 18454764,
+      "completed_at": "2026-11-13T16:42:04.838527+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_finanzamt_locations--20261113T174436463898Z",
+      "source_id": "by_finanzamt_locations",
+      "records_per_category": {
+        "finanzamt": 101
+      },
+      "records_sha256": "2a3cf4877d6ce34eebbc66cb51372aff28373246e465967be965d854f839a994",
+      "records_file_bytes": 13399,
+      "completed_at": "2026-11-13T17:44:36.463591+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_handwerkskammer--20261113T164236038149Z",
+      "source_id": "by_handwerkskammer",
+      "records_per_category": {
+        "handwerkskammer": 7
+      },
+      "records_sha256": "1c97d6d567d1751e75e5b40f97f2647f3be320fdddd3207d5646dd3ba41063b4",
+      "records_file_bytes": 4831716,
+      "completed_at": "2026-11-13T16:42:36.035244+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_handwerkskammer_locations--20261113T174441048374Z",
+      "source_id": "by_handwerkskammer_locations",
+      "records_per_category": {
+        "handwerkskammer": 7
+      },
+      "records_sha256": "4e81bd09cc163212ce6e74952383c77a0bbe4faf6589eb568c5d33306cdd914d",
+      "records_file_bytes": 1610,
+      "completed_at": "2026-11-13T17:44:41.048121+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_ihk--20261113T164229135052Z",
+      "source_id": "by_ihk",
+      "records_per_category": {
+        "ihk": 10
+      },
+      "records_sha256": "d48cd2c423ed22f2d117e59c3a7e8d1bf3cd1e2873977c56ed167c7ab1fbc03b",
+      "records_file_bytes": 4758569,
+      "completed_at": "2026-11-13T16:42:29.132201+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_ihk_locations--20261113T174440622355Z",
+      "source_id": "by_ihk_locations",
+      "records_per_category": {
+        "ihk": 10
+      },
+      "records_sha256": "30281ba0382290595d9e7ee2353c221f885605da6af3e6f1207de5a7064e4b91",
+      "records_file_bytes": 2181,
+      "completed_at": "2026-11-13T17:44:40.621803+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_kreis--20261113T164120050534Z",
+      "source_id": "by_kreis",
+      "records_per_category": {
+        "stadtverwaltung": 25,
+        "kreisverwaltung": 71
+      },
+      "records_sha256": "31d141501f52395eff1915558d0c7333dfb5e3fe53f3811cb275f2a760872cf6",
+      "records_file_bytes": 12589347,
+      "completed_at": "2026-11-13T16:41:20.040748+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_kreis_locations--20261113T174437093738Z",
+      "source_id": "by_kreis_locations",
+      "records_per_category": {
+        "stadtverwaltung": 25,
+        "kreisverwaltung": 71
+      },
+      "records_sha256": "30a7a5100f1195a0637cd0b0d5fbbf0799e0155bec1e94c4bdcc1740e6c91188",
+      "records_file_bytes": 15296,
+      "completed_at": "2026-11-13T17:44:37.093466+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_polizei--20261113T164143962585Z",
+      "source_id": "by_polizei",
+      "records_per_category": {
+        "polizei": 263
+      },
+      "records_sha256": "c70af5d0817a0560373b2551fde155b8340ca055561fde92830b4dbd9016dd22",
+      "records_file_bytes": 22661341,
+      "completed_at": "2026-11-13T16:41:43.946937+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_polizei_locations--20261113T174439036379Z",
+      "source_id": "by_polizei_locations",
+      "records_per_category": {
+        "polizei": 241
+      },
+      "records_sha256": "e5775b23a1663f80e0c06e30f552ac5b979dc6a4ffe0440ef9f96f995e5cb9b5",
+      "records_file_bytes": 31473,
+      "completed_at": "2026-11-13T17:44:39.035819+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_regierung--20261113T165059968961Z",
+      "source_id": "by_regierung",
+      "records_per_category": {
+        "regierungsprs": 7
+      },
+      "records_sha256": "12602a31064290ab228d65b4cb66d87be302e32fb784d4b7585004d23bd6c633",
+      "records_file_bytes": 4311452,
+      "completed_at": "2026-11-13T16:50:59.959242+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_regierung_locations--20261113T174437564135Z",
+      "source_id": "by_regierung_locations",
+      "records_per_category": {
+        "regierungsprs": 7
+      },
+      "records_sha256": "62d2417b6d2bc5c82b8dbfefcc403f292a5cbd46dca526addeca105adcb51370",
+      "records_file_bytes": 1706,
+      "completed_at": "2026-11-13T17:44:37.563615+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_schulamt--20261113T164224828740Z",
+      "source_id": "by_schulamt",
+      "records_per_category": {
+        "schulamt": 96
+      },
+      "records_sha256": "4239a164eeb0d2b56e347ae3394bf9c0757564487dae52b12bee075e113cc6b7",
+      "records_file_bytes": 12567354,
+      "completed_at": "2026-11-13T16:42:24.821182+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_schulamt_locations--20261113T174440163584Z",
+      "source_id": "by_schulamt_locations",
+      "records_per_category": {
+        "schulamt": 96
+      },
+      "records_sha256": "cf2298a3d05f3c5833bef28a83b4d8aa4c50c6431402edd9b3e2ad2ac3126678",
+      "records_file_bytes": 14248,
+      "completed_at": "2026-11-13T17:44:40.163343+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_staatsanwaltschaft--20261113T164214567674Z",
+      "source_id": "by_staatsanwaltschaft",
+      "records_per_category": {
+        "staatsanwaltschaft": 22
+      },
+      "records_sha256": "3b0a6b40798bba6316fb488263b6223d2ad3bb942fa0bc8929dbe9c0862a7eaf",
+      "records_file_bytes": 7155668,
+      "completed_at": "2026-11-13T16:42:14.563662+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_staatsanwaltschaft_locations--20261113T174439558813Z",
+      "source_id": "by_staatsanwaltschaft_locations",
+      "records_per_category": {
+        "staatsanwaltschaft": 22
+      },
+      "records_sha256": "9d51f7fc5670509740fa45e2df8242e6776aa57c2e88a87b54d627709741dba4",
+      "records_file_bytes": 3813,
+      "completed_at": "2026-11-13T17:44:39.558270+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_verwaltungsgericht_gesetz--20261113T164446677609Z",
+      "source_id": "by_verwaltungsgericht_gesetz",
+      "records_per_category": {
+        "verwaltungsgericht": 6
+      },
+      "records_sha256": "270926ff42b940fbde99a8ae7afc11b7b3cc3df90d66e6dcff025ceb98e084f6",
+      "records_file_bytes": 703899,
+      "completed_at": "2026-11-13T16:44:46.676922+00:00"
+    },
+    {
+      "directory": "data/snapshots/by_verwaltungsgericht_locations--20261113T174438068241Z",
+      "source_id": "by_verwaltungsgericht_locations",
+      "records_per_category": {
+        "verwaltungsgericht": 6
+      },
+      "records_sha256": "994a39f3f6c294b5960e7e64906726f24f47cc44e28082116f7a6e11e5262d1f",
+      "records_file_bytes": 1542,
+      "completed_at": "2026-11-13T17:44:38.067570+00:00"
+    },
+    {
+      "directory": "data/snapshots/bzb_amtsgericht--20261113T163934572187Z",
+      "source_id": "bzb_amtsgericht",
+      "records_per_category": {
+        "amtsgericht": 650
+      },
+      "records_sha256": "cf11f73c19de989b55db035a129e11f6f4b3209bc94a1665552317c80021b766",
+      "records_file_bytes": 2769929,
+      "completed_at": "2026-11-13T16:39:34.569961+00:00"
+    },
+    {
+      "directory": "data/snapshots/bzb_arbeitsagentur--20261113T163952780337Z",
+      "source_id": "bzb_arbeitsagentur",
+      "records_per_category": {
+        "arbeitsagentur": 146
+      },
+      "records_sha256": "2fda7d938c3a5c2b0d3a17849b139e39d254a4e45b119f5d99dcc4e88ed477d0",
+      "records_file_bytes": 1639046,
+      "completed_at": "2026-11-13T16:39:52.779222+00:00"
+    },
+    {
+      "directory": "data/snapshots/bzb_jobcenter--20261113T163947494120Z",
+      "source_id": "bzb_jobcenter",
+      "records_per_category": {
+        "jobcenter": 404
+      },
+      "records_sha256": "72fbf5ed01f278c2bd940293802e7e407e4bdd39b15600b382d02ff5efc05687",
+      "records_file_bytes": 2409013,
+      "completed_at": "2026-11-13T16:39:47.492270+00:00"
+    },
+    {
+      "directory": "data/snapshots/bzb_landgericht--20261113T163939421275Z",
+      "source_id": "bzb_landgericht",
+      "records_per_category": {
+        "landgericht": 115
+      },
+      "records_sha256": "168fdd93265527a1e03cb1a2154a06b91a29a45472f2d4ca58e042535bda65ab",
+      "records_file_bytes": 1524932,
+      "completed_at": "2026-11-13T16:39:39.419532+00:00"
+    },
+    {
+      "directory": "data/snapshots/gemfa_vg25--20261113T172407121830Z",
+      "source_id": "gemfa_vg25",
+      "records_per_category": {
+        "stadtverwaltung": 3966,
+        "finanzamt": 411
+      },
+      "records_sha256": "122024bc230ef409e806fd37b8d4e02030e1cee4d34827e1e57b5e75c8a5b6b0",
+      "records_file_bytes": 26820056,
+      "completed_at": "2026-11-13T17:24:07.099961+00:00"
+    },
+    {
+      "directory": "data/snapshots/he_schulamt--20261113T171928911801Z",
+      "source_id": "he_schulamt",
+      "records_per_category": {
+        "schulamt": 15
+      },
+      "records_sha256": "feb0b131a4074080728c4239ed94c8b3932e86a9e7cd8805fcc007521d373471",
+      "records_file_bytes": 325972,
+      "completed_at": "2026-11-13T17:19:28.911129+00:00"
+    },
+    {
+      "directory": "data/snapshots/hh_finanzamt--20261113T171923098603Z",
+      "source_id": "hh_finanzamt",
+      "records_per_category": {
+        "finanzamt": 18
+      },
+      "records_sha256": "84636e5dfb2c60cf0944095b972353571256fc8b72eeba785501393817da81d8",
+      "records_file_bytes": 192226,
+      "completed_at": "2026-11-13T17:19:23.098106+00:00"
+    },
+    {
+      "directory": "data/snapshots/osm_locations--20261113T180459943883Z",
+      "source_id": "osm_locations",
+      "records_per_category": {
+        "stadtverwaltung": 6,
+        "standesamt": 3,
+        "gesundheitsamt": 2,
+        "jobcenter": 2,
+        "jugendamt": 1,
+        "zoll": 3,
+        "rentenversicherung": 1,
+        "strassenverkehrsbehoerde": 1,
+        "umweltamt": 4,
+        "finanzamt": 3,
+        "ordnungsamt": 1,
+        "sozialamt": 2,
+        "zulassungsstelle": 2,
+        "veterinaeramt": 1,
+        "polizei": 1
+      },
+      "records_sha256": "e39f28fbed4585932b02b18a21dc599b37c3140d1a22fcaa4d62cc42d0c6f89d",
+      "records_file_bytes": 4306,
+      "completed_at": "2026-11-13T18:04:59.943647+00:00"
+    },
+    {
+      "directory": "data/snapshots/regierung_vg25--20261113T171930847328Z",
+      "source_id": "regierung_vg25",
+      "records_per_category": {
+        "regierungsprs": 12
+      },
+      "records_sha256": "6610c5c9ed01ffd08fc4d65940dfd818c1a44b214ac03c16cc424bbea179328d",
+      "records_file_bytes": 876082,
+      "completed_at": "2026-11-13T17:19:30.846503+00:00"
+    },
+    {
+      "directory": "data/snapshots/sn_kreis--20261113T175957242616Z",
+      "source_id": "sn_kreis",
+      "records_per_category": {
+        "kreisverwaltung": 10
+      },
+      "records_sha256": "117fd14ea8478cd8c0bf651f46b37952cf3b530728d3cc6525b40bf64569b59a",
+      "records_file_bytes": 418243,
+      "completed_at": "2026-11-13T17:59:57.241920+00:00"
+    },
+    {
+      "directory": "data/snapshots/th_health_locations--20261113T174442476015Z",
+      "source_id": "th_health_locations",
+      "records_per_category": {
+        "gesundheitsamt": 23,
+        "jugendamt": 23,
+        "veterinaeramt": 22
+      },
+      "records_sha256": "a8cc0752b059f0e5aaa31e5feb734147aeded6cd3e2a24de0e867247fba1cc68",
+      "records_file_bytes": 12505,
+      "completed_at": "2026-11-13T17:44:42.475623+00:00"
+    },
+    {
+      "directory": "data/snapshots/th_schulamt--20261113T171927635309Z",
+      "source_id": "th_schulamt",
+      "records_per_category": {
+        "schulamt": 5
+      },
+      "records_sha256": "0ba2e7ec273e89f0f8f3b2c0204022a774c078944c7a4d154ebeebc2414627a0",
+      "records_file_bytes": 2046808,
+      "completed_at": "2026-11-13T17:19:27.633739+00:00"
+    },
+    {
+      "directory": "data/snapshots/vg25_gem--20261113T172234252994Z",
+      "source_id": "vg25_gem",
+      "records_per_category": {
+        "stadtverwaltung": 10974
+      },
+      "records_sha256": "9e4447d1825a1874891645a49c68044784066cdd6c230cb6a303e7e9c5e4044c",
+      "records_file_bytes": 34013738,
+      "completed_at": "2026-11-13T17:22:34.227670+00:00"
+    },
+    {
+      "directory": "data/snapshots/vg25_krs--20261113T164048673383Z",
+      "source_id": "vg25_krs",
+      "records_per_category": {
+        "kreisverwaltung": 403
+      },
+      "records_sha256": "276b8b855f205156e79c99051c472a6202ca3f46caf4cd1da889d10d1ae1fbca",
+      "records_file_bytes": 8815599,
+      "completed_at": "2026-11-13T16:40:48.667108+00:00"
+    },
+    {
+      "directory": "data/snapshots/vg25_rbz--20261113T164105600584Z",
+      "source_id": "vg25_rbz",
+      "records_per_category": {
+        "regierungsprs": 19
+      },
+      "records_sha256": "75264a7f23e273dbff8edbeb997e0a77553fb4ea5cbbd59f6afd6c27b759fb63",
+      "records_file_bytes": 1644219,
+      "completed_at": "2026-11-13T16:41:05.598097+00:00"
+    }
+  ]
+}

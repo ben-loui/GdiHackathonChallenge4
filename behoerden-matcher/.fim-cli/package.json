@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@maschinenlesbar.org/fim-portal-cli": "^0.9.0"
+  }
+}

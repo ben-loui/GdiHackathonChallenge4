@@ -1,0 +1,42 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "th_schulamt",
+    "kind": "authority",
+    "scope": "DE-TH",
+    "format": "inspire_gml_file",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "schulamt"
+      }
+    ],
+    "documentation": "https://geomis.geoportal-th.de/geonetwork/srv/api/records/3a88540e-36ea-46f7-b70f-47c1db95cda9",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© GDI-Th, CC BY 4.0",
+    "modifications": "Transformiert nach EPSG:4326, validiert; ggf. gekennzeichnete Reparatur. Keine pauschalen fachlichen Zuständigkeiten aus Verwaltungsgrenzen.",
+    "coverage_claim": "Only explicit source records; regional or partial coverage, no nationwide guarantee",
+    "source_date": "2024-06-17 (Atom entry timestamp)",
+    "download_url": "https://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIREus_Schulamtsbezirke_EPSG25832.gml",
+    "request_crs": "EPSG:25832",
+    "name_rule": "Official INSPIRE gml:name and polygon serviceLocationByGeometry, no point buffering"
+  },
+  "completed_at": "2026-11-13T17:19:27.633739+00:00",
+  "layer_fetch_complete": true,
+  "records_per_category": {
+    "schulamt": 5
+  },
+  "records_sha256": "0ba2e7ec273e89f0f8f3b2c0204022a774c078944c7a4d154ebeebc2414627a0",
+  "requests": [
+    {
+      "path": "raw/source.gz",
+      "request_url": "https://www.geoproxy.geoportal-th.de/download-service/extern/giz/INSPIREus_Schulamtsbezirke_EPSG25832.gml",
+      "retrieved_at": "2026-11-13T17:19:26.735759+00:00",
+      "response_sha256": "ff3de8562a3b08d502b3d875798686e68f4ede924455168a35bcbfbccc448e2f",
+      "bytes": 1868549
+    }
+  ],
+  "national_authority_coverage_guaranteed": false,
+  "observed_features": 5
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "source_id": "bb_registry_locations",
+    "snapshot": "data/snapshots/bb_registry_locations--20261113T185954699600Z",
+    "status": "downloaded"
+  },
+  {
+    "source_id": "bb_kommunal_locations",
+    "status": "failed",
+    "error": "could not convert string to float: '282039.7315895144.238'"
+  },
+  {
+    "source_id": "bb_kommunal_gebiete",
+    "snapshot": "data/snapshots/bb_kommunal_gebiete--20261113T190000030731Z",
+    "status": "downloaded"
+  }
+]

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.deegree.org/app https://inspire.brandenburg.de/services/polbb_wfs?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B+version%3D3.2&amp;TYPENAME=app:standorte&amp;NAMESPACES=xmlns(app,http%3A%2F%2Fwww.deegree.org%2Fapp)" xmlns:wfs="http://www.opengis.net/wfs/2.0" timeStamp="2026-11-13T17:43:03Z" xmlns:gml="http://www.opengis.net/gml/3.2" numberMatched="unknown" numberReturned="0">
+  <!--NOTE: numberReturned attribute should be 'unknown' as well, but this would not validate against the current version of the WFS 2.0 schema (change upcoming). See change request (CR 144): https://portal.opengeospatial.org/files?artifact_id=43925.-->
+  <wfs:member>
+    <app:standorte xmlns:app="http://www.deegree.org/app" gml:id="standorte_87">
+      <app:standort_name>Teltow, Polizeirevier</app:standort_name>
+      <app:typ_kurz>revier, insprev</app:typ_kurz>
+      <app:typ_lang>Polizeirevier, Polizeiinspektion</app:typ_lang>
+      <app:direktion>Potsdam, Polizeiinspektion</app:direktion>
+      <app:strasse>Potsdamer Straße</app:strasse>
+      <app:hausnummer>3</app:hausnummer>
+      <app:plz>14513</app:plz>
+      <app:ort>Teltow</app:ort>
+      <app:telefon>03328 437-0</app:telefon>
+      <app:fax>0331 28346151641</app:fax>
+      <app:oeffnungszeiten>24/7</app:oeffnungszeiten>
+      <app:link>https://polizei.brandenburg.de/standorte_und_erreichbarkeiten/id/66335</app:link>
+      <app:ostwert>1.00</app:ostwert>
+      <app:nordwert>1.00</app:nordwert>
+      <app:hinweis>durchgehend geöffnet</app:hinweis>
+      <app:the_geom>
+        <!--Inlined geometry 'standorte_87_APP_THE_GEOM'-->
+        <gml:MultiPoint gml:id="standorte_87_APP_THE_GEOM" srsName="EPSG:3857">
+          <gml:pointMember>
+            <gml:Point gml:id="GEOMETRY_32eabf0d-4099-4282-be57-d6ac0f6a3b72" srsName="EPSG:3857">
+              <gml:pos>1473996.962 6871999.064</gml:pos>
+            </gml:Point>
+          </gml:pointMember>
+        </gml:MultiPoint>
+      </app:the_geom>
+    </app:standorte>
+  </wfs:member>
+</wfs:FeatureCollection>

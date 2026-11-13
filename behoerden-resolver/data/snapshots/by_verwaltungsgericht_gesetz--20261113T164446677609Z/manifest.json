@@ -1,0 +1,58 @@
+{
+  "format_version": 1,
+  "source": {
+    "id": "by_verwaltungsgericht_gesetz",
+    "format": "derived",
+    "kind": "authority",
+    "scope": "DE-BY",
+    "default_import": true,
+    "routes": [
+      {
+        "category": "verwaltungsgericht",
+        "name_field": "authority_name"
+      }
+    ],
+    "legal_basis": "https://www.gesetze-bayern.de/Content/Document/BayAGVwGO-1",
+    "mapping_reviewed_at": "2026-11-13",
+    "mapping_valid_from_in_source": "2022-05-01",
+    "mapping_file": "by_courts.csv",
+    "mapping_sha256": "b44bc17016f1ddf3f3d64c849f7f662a2a0de56357d56ad96d4b2ddf61621777",
+    "name_source": {
+      "endpoint": "https://gdiserv.bayern.de/srv1970/services/verwaltungsatlas_stmi-wfs",
+      "layer": "stmi:VerwaltungsgerichtsbarkeitStandort",
+      "response_sha256": "ee14acbe3f379cfb2acd67c1af212ddef61cea29873323910f613dadbd9827d8",
+      "verified_at": "2026-11-13",
+      "filter": {
+        "behoerdenUntergruppe": [
+          "verwaltungsgerichte"
+        ]
+      }
+    },
+    "boundary_source": "vg25_rbz",
+    "documentation": "https://www.gesetze-bayern.de/Content/Document/BayAGVwGO-1",
+    "license": "CC-BY-4.0; statutory assignment from official legislation (§5 UrhG)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© BKG (Jahr des Datenbezugs) CC BY 4.0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg25.pdf; Datenquellen: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de und Bayerisches Staatsministerium des Innern, für Sport und Integration; Gebietszuordnung: Art. 1 Abs. 2 AGVwGO (Bayern).",
+    "modifications": "Manuell geprüfte gesetzliche Zuordnung von sieben amtlichen Regierungsbezirksschlüsseln zu sechs namentlich belegten Verwaltungsgerichten; Vereinigung der VG25-Flächen. Keine Vermutung nach nächstgelegenem Gerichtsstandort.",
+    "verification_required": false,
+    "coverage_claim": "Regional derived dataset, statutory mapping reviewed 2026-11-13. Mapping is not automatically updated with legislation."
+  },
+  "completed_at": "2026-11-13T16:44:46.676922+00:00",
+  "layer_fetch_complete": true,
+  "derivation_complete": true,
+  "observed_features": 6,
+  "expected_features": 6,
+  "records_per_category": {
+    "verwaltungsgericht": 6
+  },
+  "records_sha256": "270926ff42b940fbde99a8ae7afc11b7b3cc3df90d66e6dcff025ceb98e084f6",
+  "mapping_sha256": "b44bc17016f1ddf3f3d64c849f7f662a2a0de56357d56ad96d4b2ddf61621777",
+  "mapping_reviewed_at": "2026-11-13",
+  "parent_snapshot": {
+    "directory": "vg25_rbz--20261113T164105600584Z",
+    "records_sha256": "75264a7f23e273dbff8edbeb997e0a77553fb4ea5cbbd59f6afd6c27b759fb63",
+    "completed_at": "2026-11-13T16:41:05.598097+00:00"
+  },
+  "national_authority_coverage_guaranteed": false,
+  "note": "Derived locally; completion date is not a fresh legal or name-source verification"
+}
